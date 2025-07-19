@@ -16,8 +16,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/contact-info";
           },
-        },{id: "nav-infinite-loop-spell",
-          title: "Infinite loop spell",
+        },{id: "nav-quot-infinite-loop-spell-quot-gt-nil",
+          title: "{&quot;{Infinite loop spell}&quot;=&gt;nil}",
           description: "",
           section: "Navigation",
           handler: () => {
