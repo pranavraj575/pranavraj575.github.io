@@ -148,12 +148,42 @@
   "languages": [
     {
       "language": "Python",
-      "fluency": "Native speaker",
       "icon": "favicon.ico"
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
+      "language": "Julia",
+      "icon": ""
+    },
+    {
+      "language": "Mathematica",
+      "icon": ""
+    },
+    {
+      "language": "R",
+      "icon": ""
+    },
+    {
+      "language": "Java",
+      "icon": ""
+    },
+    {
+      "language": "C++",
+      "icon": ""
+    },
+    {
+      "language": "Ocatave",
+      "icon": ""
+    },
+    {
+      "language": "SML",
+      "icon": ""
+    },
+    {
+      "language": "Golang",
+      "icon": ""
+    },
+    {
+      "language": "Matlab",
       "icon": ""
     }
   ],

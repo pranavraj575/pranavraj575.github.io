@@ -18,12 +18,14 @@
             {% endfor %}
             <td colspan="{{ i }}" class="list-group-category">{{ content.language }}</td>
           </tr>
-          <tr>
-            <td></td>
-            <td class="list-group-name">
-              <b>{{ content.fluency }}</b>
-            </td>
-          </tr>
+          {% if content.fluency %}
+            <tr>
+              <td></td>
+              <td class="list-group-name">
+                <b>{{ content.fluency }}</b>
+              </td>
+            </tr>
+          {% endif %}
         </tbody>
       </table>
     </div>
