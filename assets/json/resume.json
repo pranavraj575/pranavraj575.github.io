@@ -161,19 +161,5 @@
       ],
       "startDate": "2025-02-04"
     }
-  ],
-
-  "test category": [
-    {
-      "name": "will this also show up?",
-      "summary": "",
-      "highlights": [
-        "Used the attention patterns of trained Reinforcement Learning (RL) agents to infer how a real bee makes movement decisions",
-        "Built a goal-conditioned RL environment in OpenAI Gym to train a UAV to imitate bee behaviors using bee-like input sensors",
-        "Used SHAP values, a tool for explaining model output, to measure visual regions that trained RL agents pay attention to"
-      ],
-      "startDate": "2025-02-04",
-      "endDate": "2025-02-04"
-    }
   ]
 }

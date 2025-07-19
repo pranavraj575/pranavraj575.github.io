@@ -1,6 +1,5 @@
 ---
 layout: page
-permalink: /submenu-test/
 title: submenus
 nav: true
 nav_order: 8
@@ -9,8 +8,9 @@ children:
   - title: repositories
     permalink: /repos
   - title: divider
+  - title: infinite loop spell
+    permalink: /infinite-loop
+  - title: divider
   - title: run 3
     permalink: https://www.coolmathgames.com/0-run-3
 ---
-
-# test what happens if i do this
