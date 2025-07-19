@@ -1,6 +1,6 @@
 ---
 layout: about
-title: <a href="/" target="_self"><i class="fa fa-fw fa-home"></i> Home</a>
+title: <a href="/" target="_self"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>
 permalink: /
 subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
