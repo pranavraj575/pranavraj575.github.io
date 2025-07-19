@@ -38,13 +38,45 @@
   "projects": [
     {
       "name": "Understanding visual attention beehind bee-inspired UAV navigation",
-      "summary": "summary",
+      "location": "Canberra, Australia",
+      "affiliation": "University of New South Wales",
+      "subaffiliation": "Bioengineering Group",
+      "pi": "Sridhar Ravi",
       "highlights": [
         "Used the attention patterns of trained Reinforcement Learning (RL) agents to infer how a real bee makes movement decisions",
         "Built a goal-conditioned RL environment in OpenAI Gym to train a UAV to imitate bee behaviors using bee-like input sensors",
         "Used SHAP values, a tool for explaining model output, to measure visual regions that trained RL agents pay attention to"
       ],
       "startDate": "2025-02-04"
+    },
+    {
+      "name": "AlephZero: Extending AlphaZero to Infinite Boards",
+      "location": "Pittsburgh, USA",
+      "affiliation": "Independent Research",
+      "pi": "Pranav Rajbhandari",
+      "summary": "",
+      "highlights": [
+        "Defined and analyzed $\\aleph_0$ <b>board games</b>, a class of games with potentially unbounded action spaces. Interesting examples include <a href=\"https://www.jenga.com/about.php\">'Jenga'</a> and <a href=\"https://en.wikipedia.org/wiki/5D_Chess_with_Multiverse_Time_Travel\">'5D Chess with Multiverse Time Travel'</a>, as well as classic games like <a href=\"https://www.chess.com/\">'Chess'</a> and <a href=\"https://www.cooltictactoe.com/\">'Tic-Tac-Toe'</a>",
+        "Developed AlephZero, an extension of AlphaZero able to learn optimal policies in $\\aleph_0$ board games",
+        "Utilized transformer architectures to define policy networks and value networks able to take multi-dimensional sequential input",
+        "Compared approach to standard algorithms such as AlphaZero, Deep Q-Learning, and Monte Carlo Tree Search"
+      ],
+      "startDate": "2024-04-20"
+    },
+    {
+      "name": "Fine Tuning Swimming Locomotion Learned from Mosquito Larvae",
+      "affiliation": "University of New South Wales; U.S. Naval Research Laboratory",
+      "location": "Canberra, Australia",
+      "pi": "Sridhar Ravi; Donald Sofge",
+      "summary": "",
+      "highlights": [
+        "Optimized swimming locomotion copied from mosquito larvae for use on a robotic platform",
+        "Utilized Reinforcement Learning to guide a local search algorithm optimizing swimming locomotion",
+        "Designed an OpenAI Gym environment utilizing a Computational Fluid Dynamics (CFD) model for training",
+        "Sped up the training process by using a pre-trained deep neural network to accurately predict forces on a robotic swimmer",
+        "Compared performance of various architectures, including Deep Neural Networks, Recurrent Neural Networks, and LSTMs"
+      ],
+      "startDate": "2024-01-19"
     }
   ],
   "publications": [
