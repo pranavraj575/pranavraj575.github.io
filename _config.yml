@@ -43,6 +43,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
+show_page_headers: false # show header and description in the page
 
 navbar_fixed: true
 footer_enabled: false
@@ -94,8 +95,8 @@ lsi: false # produce an index for related posts
 pagination:
   enabled: true
 
-related_blog_posts:
-  enabled: true
+related_blog_posts: # say 'if u are interested in this post, look at these'
+  enabled: false
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
