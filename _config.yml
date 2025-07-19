@@ -257,7 +257,7 @@ jekyll-archives:
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
-display_tags: ["cat"] # these tags will be displayed on the front page of your blog
+display_tags: [] # these tags will be displayed on the front page of your blog
 display_categories: ["cat-egory"] # these categories will be displayed on the front page of your blog
 category_icon: "<i class=\"fa-solid fa-inbox fa-sm\"></i>"
 
