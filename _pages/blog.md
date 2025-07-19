@@ -1,9 +1,9 @@
 ---
 layout: default
-permalink: /blog/
-title: blog
+permalink: /aminals/
+title: Animal photos
 nav: true
-nav_order: 8
+nav_order: 6
 pagination:
   enabled: true
   collection: posts
