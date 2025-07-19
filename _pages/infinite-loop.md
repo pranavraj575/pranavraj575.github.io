@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /infinite-loop/
-title: {"{Infinite loop spell}"}
+title: "Infinite~loop spell"
 excerpt: "what"
 author_profile: false
 redirect_from: 
