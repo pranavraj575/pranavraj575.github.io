@@ -65,7 +65,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "https://www.coolmathgames.com/0-run-3";
               },
-            },{id: "news-starting-mld-phd-at-cmu-in-september-hooray",
+            },{id: "post-high-quality-wildlife-photography",
+        
+          title: "High-quality wildlife photography",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/cat/";
+          
+        },
+      },{id: "news-starting-mld-phd-at-cmu-in-september-hooray",
           title: 'Starting MLD PhD at CMU in September (hooray!)',
           description: "",
           section: "News",},{id: "news-making-a-website",
