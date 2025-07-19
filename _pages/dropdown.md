@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /submenu-test/
 title: submenus
 nav: true
 nav_order: 8
