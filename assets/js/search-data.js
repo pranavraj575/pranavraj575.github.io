@@ -94,7 +94,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/plotly/";
+            window.location.href = "/blog/2025/plotly_name_change/";
           
         },
       },{id: "post-a-post-with-image-galleries",
