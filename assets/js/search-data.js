@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-a-href-target-self-i-class-fa-fa-fw-fa-home-i-nbsp-home-a",
-    title: "<a href="/" target="_self"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>",
+    id: "nav-i-class-fa-fa-fw-fa-home-i-nbsp-home",
+    title: "<i class="fa fa-fw fa-home"></i>&nbsp;Home",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
