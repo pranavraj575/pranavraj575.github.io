@@ -76,6 +76,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/cat/";
           
         },
+      },{id: "post-meevis",
+        
+          title: "Meevis",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/meebis/";
+          
+        },
       },{id: "news-starting-mld-phd-at-cmu-in-september-hooray",
           title: 'Starting MLD PhD at CMU in September (hooray!)',
           description: "",
