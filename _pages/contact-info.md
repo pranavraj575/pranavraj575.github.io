@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /contact-info
-title: "Contact&nbsp;info"
+title: "contact&nbsp;info"
 excerpt: "info for contact"
 author_profile: false
 nav: true

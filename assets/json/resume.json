@@ -35,54 +35,17 @@
       "courses": []
     }
   ],
-  "work": [
+  "projects": [
     {
-      "name": "University of New South Wales Bioengineering Group",
-      "location": "Canberra, Australia",
-      "position": "Researcher",
-      "url": "https://www.bioeng-unsw.com/about",
-      "startDate": "2025-02-04",
-      "endDate": "2025-08-04",
-      "summary": "Worked in bio-inspired robotics, applied AI/ML techniques to tasks like UAV flying and robotic swimmer locomotion.",
-      "highlights": ["bio-inspired robotics"]
+      "name": "Understanding visual attention beehind bee-inspired UAV navigation",
+      "summary": "summary",
+      "highlights": [
+        "Used the attention patterns of trained Reinforcement Learning (RL) agents to infer how a real bee makes movement decisions",
+        "Built a goal-conditioned RL environment in OpenAI Gym to train a UAV to imitate bee behaviors using bee-like input sensors",
+        "Used SHAP values, a tool for explaining model output, to measure visual regions that trained RL agents pay attention to"
+      ],
+      "startDate": "2025-02-04"
     }
-  ],
-  "volunteer": [
-  ],
-  "awards": [
-    {
-      "title": "Dean’s List, High Honors (8 semesters)",
-      "date": "2024-05-12",
-      "awarder": "Carnegie Mellon University",
-      "summary": ""
-    },
-    {
-      "title": "Senior Leadership Recognition Award",
-      "date": "2024-05-10",
-      "awarder": "Carnegie Mellon University",
-      "summary": ""
-    },
-    {
-      "title": "Dr. William Brown Academic Achievement Award",
-      "date": "2024-05-01",
-      "awarder": "Carnegie Mellon University",
-      "summary": ""
-    },
-    {
-      "title": "Tartan Leaders of Tomorrow",
-      "date": "2024-05-01",
-      "awarder": "Carnegie Mellon University",
-      "summary": ""
-    },
-    {
-      "title": "Winner of AI/ML Innovation Challenge",
-      "date": "2023-03-04",
-      "awarder": "Naval Surface Warfare Center Dahlgren Division",
-      "url": "https://www.navsea.navy.mil/Media/News/Article-View/Article/3323954/coding-to-win-nswcdd-hosts-inaugural-artificial-intelligence-and-machine-learni/",
-      "summary": "Was awarded \\$50,000 cash prize at three-day competition hosted by the US Navy; Designed algorithm to protect ships from enemy missiles"
-    }
-  ],
-  "certificates": [
   ],
   "publications": [
     {
@@ -143,12 +106,59 @@
       "url": "https://symposium.foragerone.com/meeting-of-the-minds-2022/presentations/45991"
     }
   ],
+  "work": [
+    {
+      "name": "University of New South Wales Bioengineering Group",
+      "location": "Canberra, Australia",
+      "position": "Researcher",
+      "url": "https://www.bioeng-unsw.com/about",
+      "startDate": "2025-02-04",
+      "endDate": "2025-08-04",
+      "summary": "Worked in bio-inspired robotics, applied AI/ML techniques to tasks like UAV flying and robotic swimmer locomotion.",
+      "highlights": ["bio-inspired robotics"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Dean’s List, High Honors (8 semesters)",
+      "date": "2024-05-12",
+      "awarder": "Carnegie Mellon University",
+      "summary": ""
+    },
+    {
+      "title": "Senior Leadership Recognition Award",
+      "date": "2024-05-10",
+      "awarder": "Carnegie Mellon University",
+      "summary": ""
+    },
+    {
+      "title": "Dr. William Brown Academic Achievement Award",
+      "date": "2024-05-01",
+      "awarder": "Carnegie Mellon University",
+      "summary": ""
+    },
+    {
+      "title": "Tartan Leaders of Tomorrow",
+      "date": "2024-05-01",
+      "awarder": "Carnegie Mellon University",
+      "summary": ""
+    },
+    {
+      "title": "Winner of AI/ML Innovation Challenge",
+      "date": "2023-03-04",
+      "awarder": "Naval Surface Warfare Center Dahlgren Division",
+      "url": "https://www.navsea.navy.mil/Media/News/Article-View/Article/3323954/coding-to-win-nswcdd-hosts-inaugural-artificial-intelligence-and-machine-learni/",
+      "summary": "Was awarded \\$50,000 cash prize at three-day competition hosted by the US Navy; Designed algorithm to protect ships from enemy missiles"
+    }
+  ],
+  "certificates": [
+  ],
   "skills": [
   ],
   "languages": [
     {
       "language": "Python",
-      "icon": "favicon.ico"
+      "icon": "🐍"
     },
     {
       "language": "Julia",
@@ -160,11 +170,11 @@
     },
     {
       "language": "R",
-      "icon": ""
+      "icon": "🏴‍☠️"
     },
     {
       "language": "Java",
-      "icon": ""
+      "icon": "☕"
     },
     {
       "language": "C++",
@@ -180,7 +190,7 @@
     },
     {
       "language": "Golang",
-      "icon": ""
+      "icon": "🦫"
     },
     {
       "language": "Matlab",
@@ -189,33 +199,19 @@
   ],
   "interests": [
     {
-      "name": "Machine Learning",
-      "icon": "fa-solid fa-tag",
+      "name": "Artificial Intelligence",
       "keywords": [
-        "AI",
-        "ML"
       ]
     },
     {
-      "name": "Topology",
-      "icon": "fa-solid fa-tag",
+      "name": "Mathematics",
       "keywords": [
-        "Math"
+        "Topology"
       ]
     }
   ],
   "references": [
   ],
-  "projects": [
-    {
-      "name": "Understanding visual attention beehind bee-inspired UAV navigation",
-      "summary": "",
-      "highlights": [
-        "Used the attention patterns of trained Reinforcement Learning (RL) agents to infer how a real bee makes movement decisions",
-        "Built a goal-conditioned RL environment in OpenAI Gym to train a UAV to imitate bee behaviors using bee-like input sensors",
-        "Used SHAP values, a tool for explaining model output, to measure visual regions that trained RL agents pay attention to"
-      ],
-      "startDate": "2025-02-04"
-    }
+  "volunteer": [
   ]
 }
