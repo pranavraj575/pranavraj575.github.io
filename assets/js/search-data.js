@@ -86,11 +86,11 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-cat",
+            },{id: "post-high-quality-wildlife-photography",
         
-          title: "cat",
+          title: "High quality wildlife photography",
         
-        description: "cat",
+        description: "test of yesterday",
         section: "Posts",
         handler: () => {
           
@@ -101,7 +101,7 @@ ninja.data = [{
         
           title: "High quality wildlife photography",
         
-        description: "teting new post",
+        description: "",
         section: "Posts",
         handler: () => {
           
