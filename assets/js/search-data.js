@@ -72,19 +72,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/people/";
           },
-        },{id: "dropdown-bookshelf",
-              title: "bookshelf",
+        },{id: "dropdown-infinite-loop-spell",
+              title: "infinite loop spell",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/books/";
+                window.location.href = "/infinite-loop";
               },
-            },{id: "dropdown-blog",
-              title: "blog",
+            },{id: "dropdown-run-3",
+              title: "run 3",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/blog/";
+                window.location.href = "https://www.coolmathgames.com/0-run-3";
               },
             },{id: "post-high-quality-wildlife-photography",
         
