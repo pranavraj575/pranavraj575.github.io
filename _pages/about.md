@@ -1,6 +1,6 @@
 ---
 layout: about
-title: <a href="/" target="_self"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>
+title: <i class="fa fa-fw fa-home"></i>&nbsp;Home
 permalink: /
 subtitle: The strongest
 
@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Researcher</p>
+    <p>Researcher</p><br>
     <p>Canberra, Australia</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
