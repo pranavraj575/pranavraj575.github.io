@@ -4,7 +4,7 @@ layout: default
 <div class="post">
   <header class="post-header">
     {% if page.type == 'categories' %}
-      <h1 class="post-title"><i class="fa-solid fa-tag fa-sm"></i> {{ page.title }}</h1>
+      <h1 class="post-title">{{ site.category_icon }} {{ page.title }}</h1>
       <p class="post-description">an archive of {{ page.collection_name }} in this category</p>
     {% elsif page.type == 'year' %}
       <h1 class="post-title"><i class="fa-solid fa-calendar fa-sm"></i> {{ page.date | date: '%Y' }}</h1>

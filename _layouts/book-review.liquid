@@ -91,7 +91,7 @@ layout: default
       {% if categories != '' %}
         &nbsp;&middot;&nbsp;
         {% for category in page.categories %}
-          <a href="{{ category | slugify | prepend: '/books/category/' | relative_url }}"> <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
+          <a href="{{ category | slugify | prepend: '/books/category/' | relative_url }}"> {{ site.category_icon }} {{ category }}</a>
           {% unless forloop.last %}
             &nbsp;
           {% endunless %}

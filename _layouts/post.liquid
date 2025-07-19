@@ -46,9 +46,9 @@ layout: default
         &nbsp; &middot; &nbsp;
         {% for category in page.categories %}
           {% if url_beginning == '/blog/' %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}"> site.category_icon {{ category -}}</a>
+            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}"> {{ site.category_icon }} {{ category -}}</a>
           {% else %}
-            site.category_icon {{ category }}
+            {{ site.category_icon }} {{ category }}
           {% endif %}
           {% unless forloop.last %}
             &nbsp;
