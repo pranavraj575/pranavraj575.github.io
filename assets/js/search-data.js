@@ -58,6 +58,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
+        },{id: "nav-animal-photos",
+          title: "Animal photos",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/aminals/index.html";
+          },
         },{id: "nav-people",
           title: "people",
           description: "members of the lab or group",
@@ -79,14 +86,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "nav-blog",
-          title: "blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{id: "post-cat",
+            },{id: "post-cat",
         
           title: "cat",
         
