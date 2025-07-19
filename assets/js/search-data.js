@@ -65,7 +65,10 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "https://www.coolmathgames.com/0-run-3";
               },
-            },{id: "news-making-a-website",
+            },{id: "news-starting-mld-phd-at-cmu-in-september-hooray",
+          title: 'Starting MLD PhD at CMU in September (hooray!)',
+          description: "",
+          section: "News",},{id: "news-making-a-website",
           title: 'Making a website',
           description: "",
           section: "News",},{id: "projects-project-1",
