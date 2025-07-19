@@ -97,9 +97,9 @@ ninja.data = [{
             window.location.href = "/blog/2025/cat/";
           
         },
-      },{id: "post-new-post-test",
+      },{id: "post-high-quality-wildlife-photography",
         
-          title: "new post test",
+          title: "High quality wildlife photography",
         
         description: "teting new post",
         section: "Posts",
