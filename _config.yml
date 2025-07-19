@@ -259,6 +259,7 @@ jekyll-archives:
 
 display_tags: ["cat"] # these tags will be displayed on the front page of your blog
 display_categories: ["cat-egory"] # these categories will be displayed on the front page of your blog
+category_icon: "<i class=\"fa-solid fa-dropbox fa-sm\"></i>"
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
