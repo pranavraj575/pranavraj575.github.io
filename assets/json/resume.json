@@ -77,6 +77,118 @@
         "Compared performance of various architectures, including Deep Neural Networks, Recurrent Neural Networks, and LSTMs"
       ],
       "startDate": "2024-01-19"
+    },
+    {
+      "name": "Transformer guided coevolution: Team selection in multiagent adversarial games",
+      "affiliation": "U.S. Naval Research Laboratory",
+      "location": "Washington, D.C., USA",
+      "pi": "Donald Sofge; Prithviraj Dasgupta",
+      "summary": "",
+      "highlights": [
+        "Developed BERTeam, an algorithm to learn diverse and cooperative team selection for multiagent adversarial team games",
+        "Evaluated algorithm on Pyquaticus, a simulation of robotic Marine Capture-The-Flag",
+        "Used Masked Language Modeling to teach optimal team composition to BERTeam's transformer architecture",
+        "Cotrained BERTeam with Coevolutionary Deep Reinforcement Learning to select teams from a diverse population of agents",
+        "Compared result of training with established algorithms in literature",
+        "Developed and maintained unstable_baselines3, a Python package extending stable_baselines3 to multiagent environments"
+      ],
+      "startDate": "2024-07-01",
+      "endDate": "2024-10-16"
+    },
+    {
+      "name": "Geodesic complexity? It's actually quite simplex",
+      "affiliation": "Carnegie Mellon University",
+      "subaffiliation": "Department of Mathematical Sciences",
+      "location": "Pittsburgh, USA",
+      "pi": "Florian Frick",
+      "summary": "",
+      "highlights": [
+        "Explored geodesic complexity, a measure of difficulty for creating an efficient continuous motion plan on a metric space",
+        "Designed a technique utilizing local properties of a space to lower bound its geodesic complexity",
+        "Created and proved correctness of an algorithm calculating cut loci on surfaces of polyhedra, a property related to their geodesic complexity",
+        "Applied these techniques to produce a novel result for the geodesic complexity of the octahedron",
+        "Proved existing geodesic complexity bounds in a new way, displaying the utility of our general method"
+      ],
+      "startDate": "2023-08-28",
+      "endDate": "2024-05-12"
+    },
+    {
+      "name": "Utilizing Sim-to-Real Methods for Training a Robot Arm",
+      "affiliation": "Carnegie Mellon University",
+      "subaffiliation": "Reliable Autonomous Systems Laboratory",
+      "location": "Pittsburgh, USA",
+      "pi": "Reid Simmons",
+      "summary": "",
+      "highlights": [
+        "Led a team of four to design and maintain an OpenAI Gym environment for a Kinova Jaco Gen3 6DOF robot arm",
+        "Simulated a model of the robot arm compatible with the control scheme of the physical arm using the Gazebo simulator",
+        "Utilized ROS to handle communication between the robot arm and Python scripts",
+        "Trained a 'real life filter' with the CycleGAN algorithm to make photo-realistic simulation images used for training",
+        "Implemented a training pipeline for a robotic manipulation task, trained in simulation and refined on the real arm"
+      ],
+      "startDate": "2023-01-17",
+      "endDate": "2024-05-12"
+    },
+    {
+      "name": "Learning NEAT Emergent Behavior in Robot Swarms",
+      "affiliation": "U.S. Naval Research Laboratory",
+      "location": "Washington, D.C., USA",
+      "pi": "Donald Sofge",
+      "summary": "",
+      "highlights": [
+        "Developed an algorithm for training local policies to produce emergent behaviors in a robot swarm",
+        "Designed a training pipeline applying the NeuroEvolution of Augmenting Topologies (NEAT) algorithm to robot swarm control",
+        "Tested the algorithm's performance on a variety of tasks and simulated robotic swarms using the CoppeliaSim simulator",
+        "Utilized ROS to handle communication between Python scripts and robotic swarms (both real and simulated)"
+      ],
+      "startDate": "2023-05-22",
+      "endDate": "2023-08-11"
+    },
+    {
+      "name": "UAV Routing for Enhancing the Performance of a Classifier-in-the-loop",
+      "affiliation": "U.S. Naval Research Laboratory",
+      "location": "Washington, D.C., USA",
+      "pi": "Swaroop Darbha",
+      "summary": "",
+      "highlights": [
+        "Collaborated on an interdisciplinary research project optimizing the information gained from targets by robot swarms",
+        "Designed a heuristic algorithm for planning robot paths inspired by approximate solutions to the Traveling Salesman Problem",
+        "Utilized Mathematica software, as well as methods from <a href=\"https://www.cmu.edu/mcs/grad/programs/ms-data-analytics/courses/10725-convex-optimization.html\">'Convex Optimization'</a> to optimize solutions for large test cases",
+        "Tested our algorithm on both generated and real-life problem instances using Julia and the Gurobi optimizer"
+      ],
+      "startDate": "2023-05-22",
+      "endDate": "2023-08-11"
+    },
+    {
+      "name": "Comparing Transfer Learning Methods for Continuous Reinforcement Learning",
+      "affiliation": "U.S. Naval Research Laboratory",
+      "location": "Washington, D.C., USA",
+      "pi": "Laura Hiatt",
+      "summary": "",
+      "highlights": [
+        "Planned and executed a research project evaluating various transfer learning methods on robot arm manipulation tasks",
+        "Designed an OpenAI Gym environment for a robotic manipulation task using the MuJoCo simulator",
+        "Compared the performance of known transfer learning methods in transferring knowledge between Deep Neural Networks",
+        "Utilized ROS to handle communication between the robot arm and Python scripts"
+      ],
+      "startDate": "2022-05-23",
+      "endDate": "2022-08-12"
+    },
+    {
+      "name": "Creating a Strategic Agent to Play Jenga",
+      "affiliation": "Carnegie Mellon University",
+      "subaffiliation": "Reliable Autonomous Systems Laboratory",
+      "location": "Pittsburgh, USA",
+      "pi": "Reid Simmons",
+      "summary": "",
+      "highlights": [
+        "Planned and executed a research project evaluating the performance of various adversarial AI algorithms playing Jenga",
+        "Implemented algorithms such as Monte Carlo Tree Search, Deep Q-Networks, and Inverse Reinforcement Learning",
+        "Created a statistical model to estimate the stability of a Jenga tower for use in Model Based Reinforcement Learning",
+        "Trained the model through repeatedly sampling stabilities of towers with the PyBullet physics engine"
+      ],
+      "startDate": "2021-02-15",
+      "endDate": "2022-05-12"
     }
   ],
   "publications": [
