@@ -97,6 +97,28 @@ ninja.data = [{
             window.location.href = "/blog/2025/cat/";
           
         },
+      },{id: "post-new-post-test",
+        
+          title: "new post test",
+        
+        description: "teting new post",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/test-new-post-tags/";
+          
+        },
+      },{id: "post-new-post-test",
+        
+          title: "new post test",
+        
+        description: "teting new post",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/test-new-post/";
+          
+        },
       },{id: "post-cat",
         
           title: "cat",
