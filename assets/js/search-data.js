@@ -51,8 +51,8 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/repos";
               },
-            },{id: "dropdown-infinite-loop-spell",
-              title: "infinite loop spell",
+            },{id: "dropdown-infinite-load-spell",
+              title: "infinite load spell",
               description: "",
               section: "Dropdown",
               handler: () => {
