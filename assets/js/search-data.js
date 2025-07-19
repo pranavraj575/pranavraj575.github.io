@@ -16,8 +16,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/contact-info";
           },
-        },{id: "nav-infinite-loop",
-          title: "Infinite loop",
+        },{id: "nav-infinite-loop-spell",
+          title: "Infinite loop spell",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -416,15 +416,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-making-a-website",
+      },{id: "news-making-a-website",
           title: 'Making a website',
           description: "",
           section: "News",},{id: "projects-project-1",
