@@ -22,6 +22,19 @@
       }
     ]
   },
+  "education": [
+    {
+      "institution": "Carnegie Mellon University",
+      "location": "Pittsburgh, USA",
+      "url": "https://www.cs.cmu.edu/",
+      "area": "Bachelor of Science in Artificial Intelligence; additional major in Discrete Mathematics and Logic",
+      "studyType": "BS",
+      "startDate": "2020-08-01",
+      "endDate": "2024-05-12",
+      "score": "4.0/4.0",
+      "courses": []
+    }
+  ],
   "work": [
     {
       "name": "University of New South Wales Bioengineering Group",
@@ -35,19 +48,6 @@
     }
   ],
   "volunteer": [
-  ],
-  "education": [
-    {
-      "institution": "Carnegie Mellon University",
-      "location": "Pittsburgh, USA",
-      "url": "https://www.cs.cmu.edu/",
-      "area": "Bachelor of Science in Artificial Intelligence; additional major in Discrete Mathematics and Logic",
-      "studyType": "BS",
-      "startDate": "2020-08-01",
-      "endDate": "2024-05-12",
-      "score": "4.0/4.0",
-      "courses": []
-    }
   ],
   "awards": [
     {
