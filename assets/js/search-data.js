@@ -9,19 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-contact-amp-nbsp-info",
-          title: "contact&amp;nbsp;info",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/contact-info";
-          },
-        },{id: "nav-publications",
+  },{id: "nav-publications",
           title: "publications",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
+          },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
           },
         },{id: "nav-projects",
           title: "projects",
@@ -30,12 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-cv",
-          title: "cv",
+        },{id: "nav-contact-amp-nbsp-info",
+          title: "contact&amp;nbsp;info",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/contact-info";
           },
         },{id: "nav-animal-amp-nbsp-photos",
           title: "animal&amp;nbsp;photos",
