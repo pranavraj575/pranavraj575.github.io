@@ -4,7 +4,7 @@
     "label": "Researcher",
     "image": "",
     "email": "prajbhan@alumni.cmu.edu",
-    "phone": "(912) 123-4567",
+    "phone": "",
     "url": "https://pranavraj575.github.io",
     "summary": "I am interested in AI/ML, Topology, and long walks on the beach",
     "location": {
@@ -54,28 +54,24 @@
       "title": "Dean’s List, High Honors (8 semesters)",
       "date": "2024-05-12",
       "awarder": "Carnegie Mellon University",
-      "url": "",
       "summary": ""
     },
     {
       "title": "Senior Leadership Recognition Award",
       "date": "2024-05-10",
       "awarder": "Carnegie Mellon University",
-      "url": "",
       "summary": ""
     },
     {
       "title": "Dr. William Brown Academic Achievement Award",
       "date": "2024-05-01",
       "awarder": "Carnegie Mellon University",
-      "url": "",
       "summary": ""
     },
     {
       "title": "Tartan Leaders of Tomorrow",
       "date": "2024-05-01",
       "awarder": "Carnegie Mellon University",
-      "url": "",
       "summary": ""
     },
     {
@@ -83,7 +79,7 @@
       "date": "2023-03-04",
       "awarder": "Naval Surface Warfare Center Dahlgren Division",
       "url": "https://www.navsea.navy.mil/Media/News/Article-View/Article/3323954/coding-to-win-nswcdd-hosts-inaugural-artificial-intelligence-and-machine-learni/",
-      "summary": "Was awarded \\$50,000 cash prize at three-day competition hosted by the US Navy\nDesigned algorithm to protect ships from enemy missiles"
+      "summary": "Was awarded \\$50,000 cash prize at three-day competition hosted by the US Navy; Designed algorithm to protect ships from enemy missiles"
     }
   ],
   "certificates": [
@@ -91,10 +87,34 @@
   "publications": [
     {
       "name": "Transformer Guided Coevolution: Improved Team Formation in Multiagent Adversarial Games",
-      "publisher": "Proc. of the 24th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2025), Detroit, Michigan, USA, May 19 – 23, 2025",
+      "publisher": "Proc. of the 24th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2025)",
       "releaseDate": "2025-05-21",
       "url": "https://dl.acm.org/doi/10.5555/3709347.3743990",
-      "summary": "With the increasing number of autonomous platforms in everyday life, forming coordinated teams of agents becomes vital. To solve this, we propose BERTeam, an algorithm inspired by Natural Language Processing. BERTeam trains a transformer-based deep neural network to select from a population of agents."
+      "summary": ""
+    },
+    {
+      "name": "Learning NEAT Emergent Behaviors in Robot Swarms",
+      "authors": "Pranav Rajbhandari and Donald Sofge",
+      "publisher": "2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
+      "releaseDate": "2024-12-11",
+      "url": "https://doi.org/10.1109/ROBIO64047.2024.10907512",
+      "summary": ""
+    },
+    {
+      "name": "Fine Tuning Swimming Locomotion Learned from Mosquito Larvae",
+      "publisher": "2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
+      "releaseDate": "2024-12-13",
+      "url": "https://doi.org/10.1109/ROBIO64047.2024.10907546",
+      "summary": ""
+    },
+    {
+      "name": "UAV Routing for Enhancing the Performance of a Classifier-in-the-loop",
+      "authors": "Kumar, Deepak Prakash and Pranav Rajbhandari and McGuire, Loy and Darbha, Swaroop and Sofge, Donald",
+      "publisher": "2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
+      "releaseDate": "2024-09-14",
+      "url": "https://doi.org/10.1007/s10846-024-02169-1",
+      "summary": "",
+      "doi": "10.1007/s10846-024-02169-1"
     }
   ],
   "skills": [

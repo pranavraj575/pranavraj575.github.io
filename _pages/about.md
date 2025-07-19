@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>CMU Machine Learning PhD student</p>
+    <p>Researcher</p>
     <p>Canberra, Australia</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
