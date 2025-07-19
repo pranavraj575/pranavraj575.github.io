@@ -45,7 +45,7 @@ ninja.data = [{
             window.location.href = "/cv/";
           },
         },{id: "nav-animal-amp-nbsp-photos",
-          title: "Animal&amp;nbsp;photos",
+          title: "animal&amp;nbsp;photos",
           description: "",
           section: "Navigation",
           handler: () => {
