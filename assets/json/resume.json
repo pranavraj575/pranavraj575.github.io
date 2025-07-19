@@ -133,38 +133,47 @@
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Machine Learning",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "AI",
+        "ML"
+      ]
+    },
+    {
+      "name": "Topology",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Math"
       ]
     }
   ],
   "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Understanding visual attention beehind bee-inspired UAV navigation",
+      "summary": "",
+      "highlights": [
+        "Used the attention patterns of trained Reinforcement Learning (RL) agents to infer how a real bee makes movement decisions",
+        "Built a goal-conditioned RL environment in OpenAI Gym to train a UAV to imitate bee behaviors using bee-like input sensors",
+        "Used SHAP values, a tool for explaining model output, to measure visual regions that trained RL agents pay attention to"
+      ],
+      "startDate": "2025-02-04"
+    }
+  ],
+
+  "test category": [
+    {
+      "name": "will this also show up?",
+      "summary": "",
+      "highlights": [
+        "Used the attention patterns of trained Reinforcement Learning (RL) agents to infer how a real bee makes movement decisions",
+        "Built a goal-conditioned RL environment in OpenAI Gym to train a UAV to imitate bee behaviors using bee-like input sensors",
+        "Used SHAP values, a tool for explaining model output, to measure visual regions that trained RL agents pay attention to"
+      ],
+      "startDate": "2025-02-04",
+      "endDate": "2025-02-04"
     }
   ]
 }
