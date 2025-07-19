@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-a-href-target-self-i-class-fa-fa-fw-fa-home-i-home-a",
-    title: "<a href="/" target="_self"><i class="fa fa-fw fa-home"></i> Home</a>",
+    id: "nav-a-href-target-self-i-class-fa-fa-fw-fa-home-i-nbsp-home-a",
+    title: "<a href="/" target="_self"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -17,7 +17,7 @@ ninja.data = [{
             window.location.href = "/contact-info";
           },
         },{id: "nav-infinite-amp-nbsp-loop-amp-nbsp-spell",
-          title: "Infinite&amp;nbsp;loop&amp;nbsp;spell",
+          title: "infinite&amp;nbsp;loop&amp;nbsp;spell",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -37,26 +37,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "nav-cv",
           title: "cv",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
-          },
-        },{id: "nav-teaching",
-          title: "teaching",
-          description: "Materials for courses you taught. Replace this text with your description.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
           },
         },{id: "nav-animal-amp-nbsp-photos",
           title: "Animal&amp;nbsp;photos",
@@ -65,19 +51,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/aminals/index.html";
           },
-        },{id: "nav-people",
-          title: "people",
-          description: "members of the lab or group",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/people/";
-          },
-        },{id: "dropdown-infinite-loop-spell",
-              title: "infinite loop spell",
+        },{id: "dropdown-repositories",
+              title: "repositories",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/infinite-loop";
+                window.location.href = "/repos";
               },
             },{id: "dropdown-run-3",
               title: "run 3",
