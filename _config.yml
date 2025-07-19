@@ -98,6 +98,7 @@ pagination:
 related_blog_posts: # say 'if u are interested in this post, look at these'
   enabled: false
   max_related: 5
+display_read_times: false
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.

@@ -112,6 +112,7 @@
       "subname": "Ames Research Center",
       "location": "Mountain View, USA",
       "position": "Researcher",
+      "mentor": "Manoj Agrawal",
       "startDate": "2023-01-24",
       "endDate": "2023-05-12",
       "summary": "",
@@ -119,22 +120,54 @@
         "Created an AI system to automate calling airport TMI events, especially Ground Stops and Ground Delay Programs",
         "Explored Imitation Reinforcement Learning methods to compete against the baseline of training a classifier model",
         "Processed historical data and created models to approximate decision processes using Python and R"
-      ]
+      ],
+      "hours": "20"
     },
     {
       "name": "Carnegie Mellon University",
-
       "location": "Pittsburgh, USA",
       "position": "Teaching Assistant",
+      "mentor": "Stephanie Rosenthal, Irina Gheorghiciuc, Mikael Kuusela",
       "startDate": "2021-08-23",
       "endDate": "2022-12-21",
-      "summary": "Teaching assistant for <a href=\"https://www.cs.cmu.edu/~15281/\">{'AI: Representation and Problem Solving'}</a> (3 semesters), <a href=\"https://www.math.cmu.edu/~mradclif/teaching/127S19/syllabus.html\">'Concepts of Mathematics'</a> (1 semester),\\\\ and <a href=\"https://jshuieh.github.io/syllabus/36218Syllabus.pdf\">{'Probability Theory for Computer Scientists'}</a> (1 semester)",
+      "summary": "For <a href=\"https://www.cs.cmu.edu/~15281/\">'AI: Representation and Problem Solving'</a> (3 semesters), <a href=\"https://www.math.cmu.edu/~mradclif/teaching/127S19/syllabus.html\">'Concepts of Mathematics'</a> (1 semester), and <a href=\"https://jshuieh.github.io/syllabus/36218Syllabus.pdf\">'Probability Theory for Computer Scientists'</a> (1 semester)",
       "highlights": [
         "Collaborated in a team of up to 10 Teaching Assistants to manage classes of up to 100 students",
         "Planned and led class-wide review sessions, as well as recitations of about 20 students",
         "Held office hours to help students understand course material in a one-on-one setting",
         "Created, tested, and graded programming assignments and written homework"
-      ]
+      ],
+      "hours": "15, 10, 10"
+    },
+    {
+      "name": "Carnegie Mellon University",
+      "location": "Pittsburgh, USA",
+      "position": "Research Assistant",
+      "mentor": "David Brown",
+      "startDate": "2021-05-17",
+      "endDate": "2021-08-20",
+      "summary": "",
+      "highlights": [
+        "Collaborated with a team of three researchers to develop and maintain an R package for Natural Language Processing",
+        "Utilized Rust’s BERT Natural Language Processing to tokenize and classify strings in R"
+      ],
+      "hours": "10"
+    },
+    {
+      "name": "Centers for Disease Control and Prevention",
+      "subname": "Chronic Viral Diseases Branch Immunology Lab",
+      "location": "Atlanta, USA",
+      "position": "Programmer",
+      "mentor": "Gitika Panicker",
+      "startDate": "2020-12-14",
+      "endDate": "2021-01-29",
+      "summary": "",
+      "highlights": [
+        "Designed a Constraint Satisfaction Problem instance to automate generating laboratory experiment setup procedures",
+        "Utilized Python and R to automate post-experiment data processing",
+        "Refined and deployed these programs across the laboratory after prototyping and incorporating feedback from lab members"
+      ],
+      "hours": "10"
     }
   ],
   "awards": [
