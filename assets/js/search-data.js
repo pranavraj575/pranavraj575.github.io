@@ -16,8 +16,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/contact-info";
           },
-        },{id: "nav-quot-infinite-loop-spell-quot-gt-nil",
-          title: "{&quot;{Infinite loop spell}&quot;=&gt;nil}",
+        },{id: "nav-infinite-loop-spell",
+          title: "Infinite~loop spell",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -87,17 +87,6 @@ ninja.data = [{
                 window.location.href = "/blog/";
               },
             },{id: "post-high-quality-wildlife-photography",
-        
-          title: "High quality wildlife photography",
-        
-        description: "test of yesterday",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/cat/";
-          
-        },
-      },{id: "post-high-quality-wildlife-photography",
         
           title: "High quality wildlife photography",
         
