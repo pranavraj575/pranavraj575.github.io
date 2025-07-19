@@ -65,18 +65,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "https://www.coolmathgames.com/0-run-3";
               },
-            },{id: "post-high-quality-wildlife-photography",
-        
-          title: "High quality wildlife photography",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/cat/";
-          
-        },
-      },{id: "news-making-a-website",
+            },{id: "news-making-a-website",
           title: 'Making a website',
           description: "",
           section: "News",},{id: "projects-project-1",
