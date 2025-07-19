@@ -97,6 +97,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/cat/";
           
         },
+      },{id: "post-cat",
+        
+          title: "cat",
+        
+        description: "cat",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/cat_olden/";
+          
+        },
       },{id: "post-a-post-with-image-galleries",
         
           title: "a post with image galleries",
