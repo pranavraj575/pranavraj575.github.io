@@ -46,7 +46,7 @@ pagination:
       {% endif %}
       {% for category in site.display_categories %}
         <li>
-          site.category_icon <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+          {site.category_icon} <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -166,7 +166,7 @@ pagination:
           &nbsp; &middot; &nbsp;
             {% for category in post.categories %}
             <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
-              site.category_icon {{ category }}</a>
+              {{ site.category_icon }} {{ category }}</a>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}
