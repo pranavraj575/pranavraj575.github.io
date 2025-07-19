@@ -86,15 +86,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "post-cat",
         
-          title: "a post with plotly.js",
+          title: "cat",
         
-        description: "this is what included plotly.js code could look like",
+        description: "cat",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/plotly_name_change/";
+            window.location.href = "/blog/2025/cat/";
           
         },
       },{id: "post-a-post-with-image-galleries",
