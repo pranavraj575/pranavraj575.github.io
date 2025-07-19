@@ -76,17 +76,6 @@ ninja.data = [{
             window.location.href = "/blog/2025/cat/";
           
         },
-      },{id: "post-old-high-quality-wildlife-photography",
-        
-          title: "old High quality wildlife photography",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/cat/";
-          
-        },
       },{id: "news-making-a-website",
           title: 'Making a website',
           description: "",
