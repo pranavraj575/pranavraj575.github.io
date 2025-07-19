@@ -8,7 +8,7 @@ children:
   - title: repositories
     permalink: /repos
   - title: divider
-  - title: infinite loop spell
+  - title: infinite load spell
     permalink: /infinite-loop
   - title: divider
   - title: run 3

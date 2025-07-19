@@ -45,6 +45,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
+footer_enabled: false
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
