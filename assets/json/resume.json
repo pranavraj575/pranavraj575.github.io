@@ -405,19 +405,22 @@
   ],
   "activities": [
     {
-      "title": "Carnegie Mellon University Super Informal Topology Discussion Group",
+      "name": "Carnegie Mellon University Super Informal Topology Discussion Group",
+      "location": "Pittsburgh, USA",
       "startDate": "2023-08-01",
       "endDate": "2024-05-12",
       "summary": "Presenter, Member"
     },
     {
-      "title": "Carnegie Mellon University Track & Field",
+      "name": "Carnegie Mellon University Track & Field",
+      "location": "Pittsburgh, USA",
       "startDate": "2020-08-01",
       "endDate": "2024-05-12",
       "summary": "Sprint Team Captian"
     },
     {
-      "title": "Carnegie Mellon University PRISM Club",
+      "name": "Carnegie Mellon University PRISM Club",
+      "location": "Pittsburgh, USA",
       "startDate": "2020-08-01",
       "endDate": "2024-05-12",
       "summary": "Volunteer, Member"
