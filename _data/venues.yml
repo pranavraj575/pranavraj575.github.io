@@ -1,9 +1,10 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"IEEE ROBIO":
+  url: https://ieeexplore.ieee.org/xpl/conhome/1000856/all-proceedings
+  color: "#420dab"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"JIRS":
+  url: https://link.springer.com/journal/10846
+  color: "#FFFFFF"
 
 "Vision":
   color: "#009f36"
