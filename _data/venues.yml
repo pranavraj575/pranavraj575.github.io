@@ -1,10 +1,10 @@
 "IEEE ROBIO":
   url: https://ieeexplore.ieee.org/xpl/conhome/1000856/all-proceedings
-  color: "#420dab"
 
 "JIRS":
   url: https://link.springer.com/journal/10846
-  color: "#FFFFFF"
+  color: "rgb(0, 21, 255)"
 
-"Vision":
-  color: "#009f36"
+"AAMAS":
+  url: https://www.ifaamas.org/
+  color: "#591777"
