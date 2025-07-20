@@ -36,7 +36,7 @@ layout: default
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
         <!-- Social -->
-        {% if page.social %}
+        {% if page.social and site.social_in_profile %}
           <div class="social">
             <div class="contact-icons">{% include social.liquid %}</div>
             <div class="contact-note">{{ site.contact_note }}</div>
@@ -72,7 +72,7 @@ layout: default
     {% endif %}
 
     <!-- Social -->
-    {% if page.social %}
+    {% if page.social and !site.social_in_profile %}
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
 

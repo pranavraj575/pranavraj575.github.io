@@ -52,6 +52,7 @@ search_enabled: true
 socials_in_search: true
 posts_in_search: true
 bib_search: true
+social_in_profile: true # put social near the profile pic on main page instead of at bottom
 
 # Dimensions
 max_width: 930px
