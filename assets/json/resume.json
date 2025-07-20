@@ -32,7 +32,48 @@
       "startDate": "2020-08-01",
       "endDate": "2024-05-12",
       "score": "4.0/4.0",
-      "courses": []
+      "topics": [
+        {
+          "name": "Artificial Intelligence",
+          "courses": [
+            {
+              "name": "AI: Representation & Problem Solving",
+              "url": "https://www.cs.cmu.edu/~./15281/"
+            },
+            {
+              "name": "Deep Reinforcement Learning \\& Control",
+              "url": "https://cmudeeprl.github.io/403website_s22/"
+            },
+            {
+              "name": "Advanced Deep Learning",
+              "url": "https://machinelearningcmu.github.io/S24-10707/"
+            },
+            {
+              "name": "Natural Language Processing",
+              "url": "https://www.cs.cmu.edu/~ehn/11-611/"
+            },
+            {
+              "name": "Convex Optimization",
+              "url": "https://www.cmu.edu/mcs/grad/programs/ms-data-analytics/courses/10725-convex-optimization.html"
+            },
+            {
+              "name": "Art \\& Machine Learning",
+              "url": "https://sites.google.com/view/artml23s/"
+            },
+            {
+              "v": "Autonomous Agents",
+              "url": "https://www.cs.cmu.edu/~15482/"
+            },
+            {
+              "name": "Search Engines",
+              "url": "https://boston.lti.cs.cmu.edu/classes/11-642/"
+            }
+          ]
+        },
+        {
+          "name": "Mathematics"
+        }
+      ]
     }
   ],
   "projects": [
@@ -354,8 +395,7 @@
   "languages": [
     {
       "language": "Python",
-      "icon": "🐍",
-      "items": ["item 1","item 2","item 3"]
+      "icon": "🐍"
     },
     {
       "language": "Julia"

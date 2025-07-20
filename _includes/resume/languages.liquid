@@ -16,16 +16,16 @@
             {% for item in content.items %}
               {% assign i = i | plus: 1 %}
             {% endfor %}
-            <td colspan="{{ i }}" class="list-group-category">{{ content.language }}</td>
+            <td colspan="{{ i }}" class="list-group-category">{{ content.language }}{% if content.fluency %}(content.fluency){% endif %}</td>
           </tr>
-          {% if content.fluency %}
+          {% for item in content.items %}
             <tr>
               <td></td>
               <td class="list-group-name">
-                <b>{{ content.fluency }}</b>
+                <b>{{ item }}</b>
               </td>
             </tr>
-          {% endif %}
+          {% endfor %}
         </tbody>
       </table>
     </div>
