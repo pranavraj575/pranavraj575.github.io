@@ -1,6 +1,6 @@
 ---
 layout: about
-title: <i class="fa fa-fw fa-home"></i>&nbsp;Home
+title: <i class="fa fa-fw fa-home"></i>&nbsp;home
 permalink: /
 subtitle: The strongest
 
@@ -10,6 +10,7 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>Researcher</p><br>
+    <p>University of New South Wales</p><br>
     <p>Canberra, Australia</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
