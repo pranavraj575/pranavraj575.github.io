@@ -62,7 +62,7 @@
               "url": "https://sites.google.com/view/artml23s/"
             },
             {
-              "v": "Autonomous Agents",
+              "name": "Autonomous Agents",
               "url": "https://www.cs.cmu.edu/~15482/"
             },
             {
@@ -83,14 +83,6 @@
               "url": "https://www.math.cmu.edu/~slepcev/syl_651_16.pdf"
             },
             {
-              "name": "Graph Theory",
-              "url": "http://coursecatalog.web.cmu.edu/schools-colleges/melloncollegeofscience/departmentofmathematicalsciences/courses/\\#:~:text=Graph theory uses,50 minute lectures)"
-            },
-            {
-              "name": "Game Theory",
-              "url": "https://www.coursicle.com/cmu/courses/PHI/80705/"
-            },
-            {
               "name": "Dynamics of Polish Groups",
               "url": "https://www.cmu.edu/math/courses/special-topics.html"
             },
@@ -101,6 +93,14 @@
             {
               "name": "Extremal Combinatorics",
               "url": "https://www.math.cmu.edu/~ploh/2022-738.shtml"
+            },
+            {
+              "name": "Graph Theory",
+              "url": "http://coursecatalog.web.cmu.edu/schools-colleges/melloncollegeofscience/departmentofmathematicalsciences/courses/\\#:~:text=Graph theory uses,50 minute lectures)"
+            },
+            {
+              "name": "Game Theory",
+              "url": "https://www.coursicle.com/cmu/courses/PHI/80705/"
             },
             {
               "name": "Modern Regression",
