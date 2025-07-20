@@ -354,15 +354,14 @@
   "languages": [
     {
       "language": "Python",
-      "icon": "🐍"
+      "icon": "🐍",
+      "items": ["item 1","item 2","item 3"]
     },
     {
-      "language": "Julia",
-      "icon": ""
+      "language": "Julia"
     },
     {
-      "language": "Mathematica",
-      "icon": ""
+      "language": "Mathematica"
     },
     {
       "language": "R",
@@ -373,24 +372,20 @@
       "icon": "☕"
     },
     {
-      "language": "C++",
-      "icon": ""
+      "language": "C++"
     },
     {
-      "language": "Ocatave",
-      "icon": ""
+      "language": "Ocatave"
     },
     {
-      "language": "SML",
-      "icon": ""
+      "language": "SML"
     },
     {
       "language": "Golang",
       "icon": "🦫"
     },
     {
-      "language": "Matlab",
-      "icon": ""
+      "language": "Matlab"
     }
   ],
   "interests": [
