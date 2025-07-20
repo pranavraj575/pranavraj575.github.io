@@ -13,7 +13,117 @@ nav_order: 4
 
 <a href="mailto:{{ site.data.socials.email | encode_email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true" style="color:#d44638"></i> {{ site.data.socials.silly_email | default: site.data.socials.email }} </a>
 
-<div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-        <div class="contact-note">{{ site.contact_note }}</div>
-</div>
+{% for social in site.data.socials %}
+  {% case social[0] %}
+    {% when 'acm_id' %}
+      <a href="https://dl.acm.org/profile/{{ social[1] }}/" title="ACM DL"><i class="ai ai-acm" style="color:var(--global-text-color)"></i></a>
+    {% when 'blogger_url' %}
+      <a href="{{ social[1] }}" title="Blogger"><i class="fa-brands fa-blogger-b" style="color:var(--global-text-color)"></i></a>
+    {% when 'bluesky_url' %}
+      <a href="{{ social[1] }}" title="Bluesky"><i class="fa-brands fa-bluesky" style="color:var(--global-text-color)"></i></a>
+    {% when 'dblp_url' %}
+      <a href="{{ social[1] }}" title="DBLP"><i class="ai ai-dblp" style="color:var(--global-text-color)"></i></a>
+    {% when 'discord_id' %}
+      <a href="https://discord.com/users/{{ social[1] }}" title="Discord"><i class="fa-brands fa-discord" style="color:var(--global-text-color)"></i></a>
+    {% when 'email' %}
+      <i class="fa-solid fa-envelope" style="color:#d44638"></i> Email: <a href="mailto:{{ social[1] | encode_email }}" title="email">{{ site.data.socials.silly_email | default: site.data.socials.email }}</a>
+    {% when 'facebook_id' %}
+      <a href="https://facebook.com/{{ social[1] }}" title="Facebook"><i class="fa-brands fa-facebook" style="color:var(--global-text-color)"></i></a>
+    {% when 'flickr_id' %}
+      <a href="https://www.flickr.com/{{ social[1] }}" title="Flickr"><i class="fa-brands fa-flickr" style="color:var(--global-text-color)"></i></a>
+    {% when 'github_username' %}
+      <a href="https://github.com/{{ social[1] }}" title="GitHub"><i class="fa-brands fa-github" style="color:#420dab"></i></a>
+    {% when 'gitlab_username' %}
+      <a href="https://gitlab.com/{{ social[1] }}" title="GitLab"><i class="fa-brands fa-gitlab" style="color:var(--global-text-color)"></i></a>
+    {% when 'hal_id' %}
+      <a href="https://cv.hal.science/{{ social[1] }}/" title="HAL"><i class="ai ai-hal" style="color:var(--global-text-color)"></i></a>
+    {% when 'ieee_id' %}
+      <a href="https://ieeexplore.ieee.org/author/{{ social[1] }}/" title="IEEE Xplore"><i class="ai ai-ieee" style="color:var(--global-text-color)"></i></a>
+    {% when 'inspirehep_id' %}
+      <a href="https://inspirehep.net/authors/{{ social[1] }}" title="Inspire HEP"><i class="ai ai-inspire" style="color:var(--global-text-color)"></i></a>
+    {% when 'instagram_id' %}
+      <a href="https://instagram.com/{{ social[1] }}" title="Instagram"><i class="fa-brands fa-instagram" style="color:var(--global-text-color)"></i></a>
+    {% when 'kaggle_id' %}
+      <a href="https://www.kaggle.com/{{ social[1] }}" title="Kaggle"><i class="fa-brands fa-kaggle" style="color:var(--global-text-color)"></i></a>
+    {% when 'keybase_username' %}
+      <a href="https://keybase.io/{{ social[1] }}" title="Keybase"><i class="fa-brands fa-keybase" style="color:var(--global-text-color)"></i></a>
+    {% when 'lastfm_id' %}
+      <a href="https://www.last.fm/user/{{ social[1] }}" title="Last FM"><i class="fa-brands fa-lastfm" style="color:var(--global-text-color)"></i></a>
+    {% when 'lattes_id' %}
+      <a href="http://lattes.cnpq.br/{{ social[1] }}" target="_blank" title="Lattes"><i class="ai ai-lattes" style="color:var(--global-text-color)"></i></a>
+    {% when 'leetcode_id' %}
+      <a href="https://leetcode.com/u/{{ social[1] }}/" target="_blank" title="LeetCode"><i class="si si-leetcode" style="color:var(--global-text-color)"></i></a>
+    {% when 'linkedin_username' %}
+      <a href="https://www.linkedin.com/in/{{ social[1] }}" title="LinkedIn"><i class="fa-brands fa-linkedin" style="color:#0a66c2"></i></a>
+    {% when 'mastodon_username' %}
+      <a rel="me" href="https://{{ social[1] }}" title="Mastodon"><i class="fa-brands fa-mastodon" style="color:var(--global-text-color)"></i></a>
+    {% when 'medium_username' %}
+      <a href="https://medium.com/@{{ social[1] }}" title="Medium"><i class="fa-brands fa-medium" style="color:var(--global-text-color)"></i></a>
+    {% when 'orcid_id' %}
+      <a href="https://orcid.org/{{ social[1] }}" title="ORCID"><i class="ai ai-orcid" style="color:#a6ce39"></i></a>
+    {% when 'osf_id' %}
+      <a href="https://osf.io/{{ social[1] }}/" title="Open Science Framework"><i class="ai ai-osf" style="color:var(--global-text-color)"></i></a>
+    {% when 'pinterest_id' %}
+      <a href="https://www.pinterest.com/{{ social[1] }}" title="Pinterest"><i class="fa-brands fa-pinterest" style="color:var(--global-text-color)"></i></a>
+    {% when 'publons_id' %}
+      <a href="https://publons.com/a/{{ social[1] }}/" title="Publons"><i class="ai ai-publons" style="color:var(--global-text-color)"></i></a>
+    {% when 'quora_username' %}
+      <a href="https://www.quora.com/profile/{{ social[1] }}" title="Quora"><i class="fa-brands fa-quora" style="color:var(--global-text-color)"></i></a>
+    {% when 'research_gate_profile' %}
+      <a href="https://www.researchgate.net/profile/{{ social[1] }}/" title="ResearchGate"><i class="ai ai-researchgate" style="color:var(--global-text-color)"></i></a>
+    {% when 'rss_icon' %}
+      <a href="{{ site.baseurl }}/feed.xml" title="RSS Feed"><i class="fa-solid fa-square-rss" style="color:var(--global-text-color)"></i></a>
+    {% when 'scholar_userid' %}
+      <a href="https://scholar.google.com/citations?user={{ social[1] }}" title="Google Scholar"><i class="fas fa-fw fa-graduation-cap" style="color:#326ac4"></i></a>
+    {% when 'scopus_id' %}
+      <a href="https://www.scopus.com/authid/detail.uri?authorId={{ social[1] }}" title="Scopus"><i class="ai ai-scopus" style="color:var(--global-text-color)"></i></a>
+    {% when 'semanticscholar_id' %}
+      <a href="https://www.semanticscholar.org/author/{{ social[1] }}" title="Semantic Scholar"><i class="ai ai-semantic-scholar" style="color:var(--global-text-color)"></i></a>
+    {% when 'spotify_id' %}
+      <a href="https://open.spotify.com/user/{{ social[1] }}" title="Spotify"><i class="fa-brands fa-spotify" style="color:var(--global-text-color)"></i></a>
+    {% when 'stackoverflow_id' %}
+      <a href="https://stackoverflow.com/users/{{ social[1] }}" title="Stackoverflow"><i class="fa-brands fa-stack-overflow" style="color:var(--global-text-color)"></i></a>
+    {% when 'strava_userid' %}
+      <a href="https://www.strava.com/athletes/{{ social[1] }}" title="Strava"><i class="fa-brands fa-strava" style="color:var(--global-text-color)"></i></a>
+    {% when 'telegram_username' %}
+      <a href="https://telegram.me/{{ social[1] }}" title="telegram"><i class="fa-brands fa-telegram" style="color:var(--global-text-color)"></i></a>
+    {% when 'unsplash_id' %}
+      <a href="https://unsplash.com/@{{ social[1] }}" title="Unsplash"><i class="fa-brands fa-unsplash" style="color:var(--global-text-color)"></i></a>
+    {% when 'wechat_qr' %}
+      <a id="WeChatBtn" title="WeChat"><i class="fa-brands fa-weixin" style="color:var(--global-text-color)"></i></a>
+      <div id="WeChatMod" class="wechat-modal">
+        <img src="{{ social[1] | prepend: 'assets/img/' | relative_url }}" alt="WeChat QR" id="WeChatQR">
+      </div>
+      <script defer src="{{ '/assets/js/wechat.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+    {% when 'whatsapp_number' %}
+      <a href="https://wa.me/{{ social[1] }}" title="whatsapp"><i class="fa-brands fa-whatsapp" style="color:var(--global-text-color)"></i></a>
+    {% when 'wikidata_id' %}
+      <a href="https://www.wikidata.org/wiki/{{ social[1] }}" title="Wikidata"><i class="fa-solid fa-barcode" style="color:var(--global-text-color)"></i></a>
+    {% when 'wikipedia_id' %}
+      <a href="https://wikipedia.org/wiki/User:{{ social[1] }}" title="Wikipedia"><i class="fa-brands fa-wikipedia-w" style="color:var(--global-text-color)"></i></a>
+    {% when 'work_url' %}
+      <a href="{{ social[1] }}" title="Work"><i class="fa-solid fa-briefcase" style="color:var(--global-text-color)"></i></a>
+    {% when 'x_username' %}
+      <a href="https://twitter.com/{{ social[1] }}" title="X"><i class="fa-brands fa-x-twitter" style="color:var(--global-text-color)"></i></a>
+    {% when 'youtube_id' %}
+      <a href="https://youtube.com/@{{ social[1] }}" title="YouTube"><i class="fa-brands fa-youtube" style="color:var(--global-text-color)"></i></a>
+    {% when 'zotero_username' %}
+      <a href="https://www.zotero.org/{{ social[1] }}" title="Zotero"><i class="ai ai-zotero" style="color:var(--global-text-color)"></i></a>
+    {% when 'custom_social' %}
+      <a href="{{ social[1].url }}" title="{{ social[1].title }}">
+        {% assign file_ext = social[1].logo | split: '.' | last %}
+        {% if file_ext == 'svg' %}
+          <svg>
+            <image xlink:href="{% if social[1].logo contains '://' %}{{ social[1].logo }}{% else %}{{ social[1].logo | relative_url }}{% endif %}" />
+          </svg>
+        {% else %}
+          <img
+            src="{% if social[1].logo contains '://' %}{{ social[1].logo }}{% else %}{{ social[1].logo | relative_url }}{% endif %}"
+            alt="{{ social[1].title }}"
+          >
+        {% endif %}
+      </a>
+    {% else %}
+  {% endcase %}
+  <br>
+{% endfor %}
