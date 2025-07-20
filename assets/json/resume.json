@@ -42,7 +42,7 @@
               "url": "https://www.cs.cmu.edu/~./15281/"
             },
             {
-              "name": "Deep Reinforcement Learning \\& Control",
+              "name": "Deep Reinforcement Learning & Control",
               "url": "https://cmudeeprl.github.io/403website_s22/"
             },
             {
@@ -58,7 +58,7 @@
               "url": "https://www.cmu.edu/mcs/grad/programs/ms-data-analytics/courses/10725-convex-optimization.html"
             },
             {
-              "name": "Art \\& Machine Learning",
+              "name": "Art & Machine Learning",
               "url": "https://sites.google.com/view/artml23s/"
             },
             {
@@ -72,7 +72,41 @@
           ]
         },
         {
-          "name": "Mathematics"
+          "name": "Mathematics",
+          "courses": [
+            {
+              "name": "Algebraic Topology",
+              "url": "https://www.math.cmu.edu/~ffrick/syllabus21752.pdf"
+            },
+            {
+              "name": "General Topology",
+              "url": "https://www.math.cmu.edu/~slepcev/syl_651_16.pdf"
+            },
+            {
+              "name": "Graph Theory",
+              "url": "http://coursecatalog.web.cmu.edu/schools-colleges/melloncollegeofscience/departmentofmathematicalsciences/courses/\\#:~:text=Graph theory uses,50 minute lectures)"
+            },
+            {
+              "name": "Game Theory",
+              "url": "https://www.coursicle.com/cmu/courses/PHI/80705/"
+            },
+            {
+              "name": "Dynamics of Polish Groups",
+              "url": "https://www.cmu.edu/math/courses/special-topics.html"
+            },
+            {
+              "name": "Probabilistic Combinatorics",
+              "url": "https://www.coursicle.com/cmu/courses/MSC/21737/"
+            },
+            {
+              "name": "Extremal Combinatorics",
+              "url": "https://www.math.cmu.edu/~ploh/2022-738.shtml"
+            },
+            {
+              "name": "Modern Regression",
+              "url": "https://www.stat.cmu.edu/~larry/=stat401/"
+            }
+          ]
         }
       ]
     }
