@@ -26,13 +26,13 @@ nav_order: 4
     {% when 'discord_id' %}
       <a href="https://discord.com/users/{{ social[1] }}" title="Discord"><i class="fa-brands fa-discord" style="color:var(--global-text-color)"></i></a>
     {% when 'email' %}
-      <i class="fa-solid fa-envelope" style="color:#d44638"></i> Email: <a href="mailto:{{ social[1] | encode_email }}" title="email">{{ site.data.socials.silly_email | default: site.data.socials.email }}</a>
+      <i class="fa-solid fa-envelope" style="color:#d44638"></i> Email: <a href="mailto:{{ social[1] | encode_email }}" title="email">{{ site.data.socials.silly_email | default: social[1] }}</a>
     {% when 'facebook_id' %}
       <a href="https://facebook.com/{{ social[1] }}" title="Facebook"><i class="fa-brands fa-facebook" style="color:var(--global-text-color)"></i></a>
     {% when 'flickr_id' %}
       <a href="https://www.flickr.com/{{ social[1] }}" title="Flickr"><i class="fa-brands fa-flickr" style="color:var(--global-text-color)"></i></a>
     {% when 'github_username' %}
-      <a href="https://github.com/{{ social[1] }}" title="GitHub"><i class="fa-brands fa-github" style="color:#420dab"></i></a>
+      <i class="fa-brands fa-github" style="color:#420dab"></i><a href="https://github.com/{{ social[1] }}" title="GitHub">Github: {{ social[1] }}</a>
     {% when 'gitlab_username' %}
       <a href="https://gitlab.com/{{ social[1] }}" title="GitLab"><i class="fa-brands fa-gitlab" style="color:var(--global-text-color)"></i></a>
     {% when 'hal_id' %}
@@ -54,13 +54,13 @@ nav_order: 4
     {% when 'leetcode_id' %}
       <a href="https://leetcode.com/u/{{ social[1] }}/" target="_blank" title="LeetCode"><i class="si si-leetcode" style="color:var(--global-text-color)"></i></a>
     {% when 'linkedin_username' %}
-      <a href="https://www.linkedin.com/in/{{ social[1] }}" title="LinkedIn"><i class="fa-brands fa-linkedin" style="color:#0a66c2"></i></a>
+      <i class="fa-brands fa-linkedin" style="color:#0a66c2"></i> <a href="https://www.linkedin.com/in/{{ social[1] }}" title="LinkedIn">LinkedIn: {{ social[1] }}</a>
     {% when 'mastodon_username' %}
       <a rel="me" href="https://{{ social[1] }}" title="Mastodon"><i class="fa-brands fa-mastodon" style="color:var(--global-text-color)"></i></a>
     {% when 'medium_username' %}
       <a href="https://medium.com/@{{ social[1] }}" title="Medium"><i class="fa-brands fa-medium" style="color:var(--global-text-color)"></i></a>
     {% when 'orcid_id' %}
-      <a href="https://orcid.org/{{ social[1] }}" title="ORCID"><i class="ai ai-orcid" style="color:#a6ce39"></i></a>
+      <i class="ai ai-orcid" style="color:#a6ce39"></i><a href="https://orcid.org/{{ social[1] }}" title="ORCID">ORCID: {{ social[1] }}</a>
     {% when 'osf_id' %}
       <a href="https://osf.io/{{ social[1] }}/" title="Open Science Framework"><i class="ai ai-osf" style="color:var(--global-text-color)"></i></a>
     {% when 'pinterest_id' %}
@@ -70,11 +70,11 @@ nav_order: 4
     {% when 'quora_username' %}
       <a href="https://www.quora.com/profile/{{ social[1] }}" title="Quora"><i class="fa-brands fa-quora" style="color:var(--global-text-color)"></i></a>
     {% when 'research_gate_profile' %}
-      <a href="https://www.researchgate.net/profile/{{ social[1] }}/" title="ResearchGate"><i class="ai ai-researchgate" style="color:var(--global-text-color)"></i></a>
+      <i class="ai ai-researchgate" style="color:var(--global-text-color)"></i><a href="https://www.researchgate.net/profile/{{ social[1] }}/" title="ResearchGate">ResearchGate: {{ social[1] }}</a>
     {% when 'rss_icon' %}
       <a href="{{ site.baseurl }}/feed.xml" title="RSS Feed"><i class="fa-solid fa-square-rss" style="color:var(--global-text-color)"></i></a>
     {% when 'scholar_userid' %}
-      <a href="https://scholar.google.com/citations?user={{ social[1] }}" title="Google Scholar"><i class="fas fa-fw fa-graduation-cap" style="color:#326ac4"></i></a>
+      <i class="fas fa-fw fa-graduation-cap" style="color:#326ac4"></i><a href="https://scholar.google.com/citations?user={{ social[1] }}" title="Google Scholar">Google Scholar: {{ site.scholar.first_name.first }}</a>
     {% when 'scopus_id' %}
       <a href="https://www.scopus.com/authid/detail.uri?authorId={{ social[1] }}" title="Scopus"><i class="ai ai-scopus" style="color:var(--global-text-color)"></i></a>
     {% when 'semanticscholar_id' %}
