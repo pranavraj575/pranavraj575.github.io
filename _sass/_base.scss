@@ -442,6 +442,53 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Social (profile)
+
+.social-profile {
+  text-align: center;
+
+  .contact-icons {
+    font-size: 2rem;
+
+    a {
+      img {
+        width: 3.2rem;
+        height: 3.2rem;
+        margin-bottom: 1rem;
+      }
+
+      svg {
+        width: 3.5rem;
+        height: 4rem;
+        margin-bottom: 0.5rem;
+
+        image {
+          width: 3.5rem;
+          height: 3.5rem;
+        }
+      }
+
+      i::before {
+        //commenting this here so I can change the icon colors manually in _includes/social.liquid
+        //color: var(--global-text-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        i::before {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+  }
+
+  .contact-note {
+    font-size: 0.8rem;
+  }
+}
+
 .wechat-modal {
   display: none;
   position: fixed;
