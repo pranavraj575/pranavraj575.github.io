@@ -130,7 +130,6 @@
       "location": "Pittsburgh, USA",
       "affiliation": "Independent Research",
       "pi": "Pranav Rajbhandari",
-      "summary": "",
       "highlights": [
         "Defined and analyzed $\\aleph_0$ <b>board games</b>, a class of games with potentially unbounded action spaces. Interesting examples include <a href=\"https://www.jenga.com/about.php\">'Jenga'</a> and <a href=\"https://en.wikipedia.org/wiki/5D_Chess_with_Multiverse_Time_Travel\">'5D Chess with Multiverse Time Travel'</a>, as well as classic games like <a href=\"https://www.chess.com/\">'Chess'</a> and <a href=\"https://www.cooltictactoe.com/\">'Tic-Tac-Toe'</a>",
         "Developed AlephZero, an extension of AlphaZero able to learn optimal policies in $\\aleph_0$ board games",
@@ -144,7 +143,6 @@
       "affiliation": "University of New South Wales; U.S. Naval Research Laboratory",
       "location": "Canberra, Australia",
       "pi": "Sridhar Ravi; Donald Sofge",
-      "summary": "",
       "highlights": [
         "Optimized swimming locomotion copied from mosquito larvae for use on a robotic platform",
         "Utilized Reinforcement Learning to guide a local search algorithm optimizing swimming locomotion",
@@ -159,7 +157,6 @@
       "affiliation": "U.S. Naval Research Laboratory",
       "location": "Washington, D.C., USA",
       "pi": "Donald Sofge; Prithviraj Dasgupta",
-      "summary": "",
       "highlights": [
         "Developed BERTeam, an algorithm to learn diverse and cooperative team selection for multiagent adversarial team games",
         "Evaluated algorithm on Pyquaticus, a simulation of robotic Marine Capture-The-Flag",
@@ -177,7 +174,6 @@
       "subaffiliation": "Department of Mathematical Sciences",
       "location": "Pittsburgh, USA",
       "pi": "Florian Frick",
-      "summary": "",
       "highlights": [
         "Explored geodesic complexity, a measure of difficulty for creating an efficient continuous motion plan on a metric space",
         "Designed a technique utilizing local properties of a space to lower bound its geodesic complexity",
@@ -194,7 +190,6 @@
       "subaffiliation": "Reliable Autonomous Systems Laboratory",
       "location": "Pittsburgh, USA",
       "pi": "Reid Simmons",
-      "summary": "",
       "highlights": [
         "Led a team of four to design and maintain an OpenAI Gym environment for a Kinova Jaco Gen3 6DOF robot arm",
         "Simulated a model of the robot arm compatible with the control scheme of the physical arm using the Gazebo simulator",
@@ -210,7 +205,6 @@
       "affiliation": "U.S. Naval Research Laboratory",
       "location": "Washington, D.C., USA",
       "pi": "Donald Sofge",
-      "summary": "",
       "highlights": [
         "Developed an algorithm for training local policies to produce emergent behaviors in a robot swarm",
         "Designed a training pipeline applying the NeuroEvolution of Augmenting Topologies (NEAT) algorithm to robot swarm control",
@@ -225,7 +219,6 @@
       "affiliation": "U.S. Naval Research Laboratory",
       "location": "Washington, D.C., USA",
       "pi": "Swaroop Darbha",
-      "summary": "",
       "highlights": [
         "Collaborated on an interdisciplinary research project optimizing the information gained from targets by robot swarms",
         "Designed a heuristic algorithm for planning robot paths inspired by approximate solutions to the Traveling Salesman Problem",
@@ -240,7 +233,6 @@
       "affiliation": "U.S. Naval Research Laboratory",
       "location": "Washington, D.C., USA",
       "pi": "Laura Hiatt",
-      "summary": "",
       "highlights": [
         "Planned and executed a research project evaluating various transfer learning methods on robot arm manipulation tasks",
         "Designed an OpenAI Gym environment for a robotic manipulation task using the MuJoCo simulator",
@@ -256,7 +248,6 @@
       "subaffiliation": "Reliable Autonomous Systems Laboratory",
       "location": "Pittsburgh, USA",
       "pi": "Reid Simmons",
-      "summary": "",
       "highlights": [
         "Planned and executed a research project evaluating the performance of various adversarial AI algorithms playing Jenga",
         "Implemented algorithms such as Monte Carlo Tree Search, Deep Q-Networks, and Inverse Reinforcement Learning",
@@ -273,24 +264,21 @@
       "authors": "Pranav Rajbhandari and Prithviraj Dasgupta and Donald Sofge",
       "publisher": "Proc. of the 24th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2025)",
       "releaseDate": "2025-05-21",
-      "url": "https://dl.acm.org/doi/10.5555/3709347.3743990",
-      "summary": ""
+      "url": "https://dl.acm.org/doi/10.5555/3709347.3743990"
     },
     {
       "name": "Learning NEAT Emergent Behaviors in Robot Swarms",
       "authors": "Pranav Rajbhandari and Donald Sofge",
       "publisher": "2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
       "releaseDate": "2024-12-11",
-      "url": "https://doi.org/10.1109/ROBIO64047.2024.10907512",
-      "summary": ""
+      "url": "https://doi.org/10.1109/ROBIO64047.2024.10907512"
     },
     {
       "name": "Fine Tuning Swimming Locomotion Learned from Mosquito Larvae",
       "authors": "Pranav Rajbhandari and Dhileep, Karthick and Ravi, Sridhar and Sofge, Donald",
       "publisher": "2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
       "releaseDate": "2024-12-13",
-      "url": "https://doi.org/10.1109/ROBIO64047.2024.10907546",
-      "summary": ""
+      "url": "https://doi.org/10.1109/ROBIO64047.2024.10907546"
     },
     {
       "name": "UAV Routing for Enhancing the Performance of a Classifier-in-the-loop",
@@ -298,7 +286,6 @@
       "publisher": "2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
       "releaseDate": "2024-09-14",
       "url": "https://doi.org/10.1007/s10846-024-02169-1",
-      "summary": "",
       "doi": "10.1007/s10846-024-02169-1"
     }
   ],
@@ -306,23 +293,23 @@
     {
       "name": "Learning Emergent Behavior in Robot Swarms with NEAT",
       "authors": "Pranav Rajbhandari and Donald Sofge",
+      "location": "San Diego, USA",
       "publisher": "Naval Applications of Machine Learning",
-      "releaseDate": "2024-03-11",
-      "summary": ""
+      "releaseDate": "2024-03-11"
     },
     {
       "name": "Sim-to-real Transfer Reinforcement Learning",
       "authors": "Pranav Rajbhandari and Sophia Zalewski and Reid Simmons",
       "publisher": "Carnegie Mellon University Meeting of the Minds",
-      "releaseDate": "2023-05-03",
-      "summary": ""
+      "location": "Pittsburgh, USA",
+      "releaseDate": "2023-05-03"
     },
     {
       "name": "Creating Agents to Learn Jenga",
       "authors": "Pranav Rajbhandari and Reid Simmons",
       "publisher": "Carnegie Mellon University Meeting of the Minds",
+      "location": "Pittsburgh, USA",
       "releaseDate": "2022-05-02",
-      "summary": "",
       "url": "https://symposium.foragerone.com/meeting-of-the-minds-2022/presentations/45991"
     }
   ],
@@ -335,7 +322,6 @@
       "mentor": "Manoj Agrawal",
       "startDate": "2023-01-24",
       "endDate": "2023-05-12",
-      "summary": "",
       "highlights": [
         "Created an AI system to automate calling airport TMI events, especially Ground Stops and Ground Delay Programs",
         "Explored Imitation Reinforcement Learning methods to compete against the baseline of training a classifier model",
@@ -366,7 +352,6 @@
       "mentor": "David Brown",
       "startDate": "2021-05-17",
       "endDate": "2021-08-20",
-      "summary": "",
       "highlights": [
         "Collaborated with a team of three researchers to develop and maintain an R package for Natural Language Processing",
         "Utilized Rust’s BERT Natural Language Processing to tokenize and classify strings in R"
@@ -381,7 +366,6 @@
       "mentor": "Gitika Panicker",
       "startDate": "2020-12-14",
       "endDate": "2021-01-29",
-      "summary": "",
       "highlights": [
         "Designed a Constraint Satisfaction Problem instance to automate generating laboratory experiment setup procedures",
         "Utilized Python and R to automate post-experiment data processing",
@@ -394,26 +378,22 @@
     {
       "title": "Dean’s List, High Honors (8 semesters)",
       "date": "2024-05-12",
-      "awarder": "Carnegie Mellon University",
-      "summary": ""
+      "awarder": "Carnegie Mellon University"
     },
     {
       "title": "Senior Leadership Recognition Award",
       "date": "2024-05-10",
-      "awarder": "Carnegie Mellon University",
-      "summary": ""
+      "awarder": "Carnegie Mellon University"
     },
     {
       "title": "Dr. William Brown Academic Achievement Award",
       "date": "2024-05-01",
-      "awarder": "Carnegie Mellon University",
-      "summary": ""
+      "awarder": "Carnegie Mellon University"
     },
     {
       "title": "Tartan Leaders of Tomorrow",
       "date": "2024-05-01",
-      "awarder": "Carnegie Mellon University",
-      "summary": ""
+      "awarder": "Carnegie Mellon University"
     },
     {
       "title": "Winner of AI/ML Innovation Challenge",
@@ -423,9 +403,25 @@
       "summary": "Was awarded \\$50,000 cash prize at three-day competition hosted by the US Navy; Designed algorithm to protect ships from enemy missiles"
     }
   ],
-  "certificates": [
-  ],
-  "skills": [
+  "activities": [
+    {
+      "title": "Carnegie Mellon University Super Informal Topology Discussion Group",
+      "startDate": "2023-08-01",
+      "endDate": "2024-05-12",
+      "summary": "Presenter, Member"
+    },
+    {
+      "title": "Carnegie Mellon University Track & Field",
+      "startDate": "2020-08-01",
+      "endDate": "2024-05-12",
+      "summary": "Sprint Team Captian"
+    },
+    {
+      "title": "Carnegie Mellon University PRISM Club",
+      "startDate": "2020-08-01",
+      "endDate": "2024-05-12",
+      "summary": "Volunteer, Member"
+    }
   ],
   "languages": [
     {

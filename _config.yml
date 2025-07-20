@@ -641,6 +641,7 @@ jsonresume:
   - awards
   - certificates
   - skills
+  - activities
   - languages
   - interests
   - references
