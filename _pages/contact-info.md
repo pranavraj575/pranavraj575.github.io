@@ -26,7 +26,7 @@ nav_order: 4
     {% when 'discord_id' %}
       <a href="https://discord.com/users/{{ social[1] }}" title="Discord"><i class="fa-brands fa-discord" style="color:var(--global-text-color)"></i></a>
     {% when 'email' %}
-      <i class="fa-solid fa-envelope" style="color:#d44638"></i> Email: <a href="mailto:{{ social[1] | encode_email }}" title="email">{{ site.data.socials.silly_email | default: social[1] }}</a>
+      <p><i class="fa-solid fa-envelope" style="color:#d44638"></i> Email: <a href="mailto:{{ social[1] | encode_email }}" title="email">{{ site.data.socials.silly_email | default: social[1] }}</a></p>
     {% when 'facebook_id' %}
       <a href="https://facebook.com/{{ social[1] }}" title="Facebook"><i class="fa-brands fa-facebook" style="color:var(--global-text-color)"></i></a>
     {% when 'flickr_id' %}
