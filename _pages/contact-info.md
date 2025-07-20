@@ -8,7 +8,7 @@ nav: false
 ---
 
 
-# Contact info
+# contact info
 
 <div>
   {% include social_list.liquid %}

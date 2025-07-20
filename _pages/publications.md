@@ -7,6 +7,8 @@ nav: true
 nav_order: 1
 ---
 
+## publications
+
 <!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->
