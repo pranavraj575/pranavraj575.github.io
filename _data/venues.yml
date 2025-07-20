@@ -8,3 +8,7 @@
 "AAMAS":
   url: https://www.ifaamas.org/
   color: "#591777"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"
