@@ -5,8 +5,8 @@ nav: true
 nav_order: 6
 dropdown: true
 children:
-  - title: repositories
-    permalink: /repos
+  - title: contact info
+    permalink: /contact-info
   - title: divider
   - title: infinite load spell
     permalink: /infinite-loop
