@@ -2,7 +2,7 @@
 layout: about
 title: <i class="fa fa-fw fa-home"></i>&nbsp;home
 permalink: /
-subtitle: The strongest
+subtitle: 
 
 profile:
   align: right
