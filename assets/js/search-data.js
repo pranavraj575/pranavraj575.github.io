@@ -23,12 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-contact-amp-nbsp-info",
-          title: "contact&amp;nbsp;info",
-          description: "",
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "github repositories",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/contact-info";
+            window.location.href = "/repos/";
           },
         },{id: "nav-animal-amp-nbsp-photos",
           title: "animal&amp;nbsp;photos",
@@ -37,12 +37,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/aminals/index.html";
           },
-        },{id: "dropdown-repositories",
-              title: "repositories",
+        },{id: "dropdown-contact-info",
+              title: "contact info",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/repos";
+                window.location.href = "/contact-info";
               },
             },{id: "dropdown-infinite-load-spell",
               title: "infinite load spell",
