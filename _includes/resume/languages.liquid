@@ -11,21 +11,11 @@
             {% else %}
               <td class="list-group-category-icon"></td>
             {% endif %}
-            <!-- Calculate colspan number for category title -->
-            {% assign i = 1 %}
-            {% for item in content.items %}
-              {% assign i = i | plus: 1 %}
-            {% endfor %}
-            <td colspan="{{ i }}" class="list-group-category">{{ content.language }}{% if content.fluency %}(content.fluency){% endif %}</td>
+            <td colspan="1" class="list-group-name">
+              {% if content.icon %}{{ content.icon }}&nbsp;{% else %}•&nbsp;{% endif %}
+              {{ content.language }}{% if content.fluency %}(content.fluency){% endif %}
+            </td>
           </tr>
-          {% for item in content.items %}
-            <tr>
-              <td></td>
-              <td class="list-group-name">
-                <b>{{ item }}</b>
-              </td>
-            </tr>
-          {% endfor %}
         </tbody>
       </table>
     </div>
