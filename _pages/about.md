@@ -27,4 +27,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am interested in AI/ML, Topology, and long walks on the beach
+I am interested in AI/ML, Topology, and long walks on the beach.
+
+Research statement [here](/research-statement).

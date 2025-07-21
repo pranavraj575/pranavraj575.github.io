@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 permalink: /social-profiles
 title: "social&nbsp;profiles"
 excerpt: "info for socials"
