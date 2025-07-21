@@ -428,43 +428,43 @@
   ],
   "languages": [
     {
-      "language": "Python",
+      "name": "Python",
       "icon": "🐍",
       "ico_icon": "/assets/img/icons/python.png"
     },
     {
-      "language": "Julia",
+      "name": "Julia",
       "ico_icon": "/assets/img/icons/julia.png"
     },
     {
-      "language": "Mathematica",
+      "name": "Mathematica",
       "ico_icon": "/assets/img/icons/mathematica.png"
     },
     {
-      "language": "R",
+      "name": "R",
       "icon": "🏴‍☠️"
     },
     {
-      "language": "Java",
+      "name": "Java",
       "icon": "☕"
     },
     {
-      "language": "C++",
+      "name": "C++",
       "ico_icon": "/assets/img/icons/cpp.png"
     },
     {
-      "language": "Ocatave",
+      "name": "Ocatave",
       "ico_icon": "/assets/img/icons/octave.png"
     },
     {
-      "language": "SML"
+      "name": "SML"
     },
     {
-      "language": "Golang",
+      "name": "Golang",
       "icon": "🦫"
     },
     {
-      "language": "Matlab",
+      "name": "Matlab",
       "ico_icon": "/assets/img/icons/matlab.png"
     }
   ]
