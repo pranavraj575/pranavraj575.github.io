@@ -4,11 +4,32 @@ permalink: /research-statement
 title: "research&nbsp;statement"
 excerpt: "past research summary, future research goals"
 author_profile: false
+statement_pdf: research_statement.pdf
 nav: false
 ---
 
-
-# Research Statement
+<header class="post-header">
+  <h1 class="post-title">
+    {{ page.title }}
+    {% if page.statement_pdf %}
+      <a
+        {% if page.statement_pdf contains '://' %}
+          href="{{ page.statement_pdf }}"
+        {% else %}
+          href="{{ page.statement_pdf | prepend: 'assets/pdf/' | relative_url }}"
+        {% endif %}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="float-right"
+      >
+        <i class="fa-solid fa-file-pdf"></i>
+      </a>
+    {% endif %}
+  </h1>
+  {% if page.description %}
+    <p class="post-description">{{ page.description }}</p>
+  {% endif %}
+</header>
 
 My research focuses on developing ML algorithms for strategic scenarios.
 By exploring complexities in both adversarial and cooperative systems, I plan to advance AI’s ability to function effectively in these environments.
