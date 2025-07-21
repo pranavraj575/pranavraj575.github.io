@@ -37,7 +37,7 @@ By exploring complexities in both adversarial and cooperative systems, I plan to
 ## Strategic Agents
 Many of my research projects focus on developing AI agents for competitive settings, providing a foundation for more intricate multiagent interactions.
 
-In the Reliable Autonomous Systems Lab (RASL) at Carnegie Mellon University (CMU), I designed AI agents to play Jenga, a non-deterministic, adversarial game.
+In the [Reliable Autonomous Systems Lab (RASL)](https://www.ri.cmu.edu/robotics-groups/reliable-autonomous-systems-lab/) at Carnegie Mellon University (CMU), I designed AI agents to play Jenga, a non-deterministic, adversarial game.
 By adapting existing methods like AlphaZero and Monte Carlo Tree Search, I created agents capable of strategically choosing which blocks to remove, keeping the tower stable while making the opponent’s moves difficult.
 
 I continue this work with my current AlephZero project, which extends AlphaZero’s algorithm to a wider class of ‘board games’ whose board size varies throughout a game.
@@ -66,7 +66,7 @@ Overall, my work in this area advances the coordination of groups of agents in c
 ## Reinforcement Learning and Robotics
 
 My research also concerns robotic control through Reinforcement Learning (RL).
-At RASL, I focused on training a robotic grasping task in simulation.
+At [RASL](https://www.ri.cmu.edu/robotics-groups/reliable-autonomous-systems-lab/), I focused on training a robotic grasping task in simulation.
 I used CycleGAN as a ‘real-life’ filter, facilitating transfer to a physical robot by training on more realistic images.
 In a similar project at the NRL, I explored transfer learning in the context of robotic manipulation.
 Through this project, I compared strategies for transferring knowledge across RL agents trained on related tasks.
