@@ -8,12 +8,8 @@ let toggleThemeSetting = () => {
     setThemeSetting("light");
   } else if (themeSetting == "light") {
     setThemeSetting("dark");
-  } else if (themeSetting == "dark") {
-    setThemeSetting("abomination");
-  } else if (themeSetting == "abomination") {
-    setThemeSetting("light");
   } else {
-    setThemeSetting("system");
+    setThemeSetting("light");
   }
 };
 
