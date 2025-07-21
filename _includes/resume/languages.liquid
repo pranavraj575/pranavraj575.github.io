@@ -11,9 +11,17 @@
             {% else %}
               <td class="list-group-category-icon"></td>
             {% endif %}
+            {% if content.ico_icon %}
+              {% assign language_icon = {% include figure.liquid path=content.ico_icon class="img-fluid z-depth-1" zoomable=false %} %}
+            {% else %}
+              {% if content.icon %}
+                {% assign language_icon = { content.icon }}&nbsp;&nbsp; %}
+              {% else %}
+                {% assign language_icon = &nbsp;&nbsp;•&nbsp;&nbsp; %}
+              {% endif %}
+            {% endif %}
             <td colspan="1" class="list-group-name">
-              {% if content.icon %}{{ content.icon }}&nbsp;&nbsp;{% else %}&nbsp;•&nbsp;&nbsp;{% endif %}
-              {{ content.language }}{% if content.fluency %}(content.fluency){% endif %}
+              {{ language_icon }}{{ content.language }}{% if content.fluency %}(content.fluency){% endif %}
             </td>
           </tr>
         </tbody>

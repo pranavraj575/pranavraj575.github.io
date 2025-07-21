@@ -429,8 +429,8 @@
   "languages": [
     {
       "language": "Python",
-      "old_icon": "🐍",
-      "icon": "icons/python.ico"
+      "icon": "🐍",
+      "ico_icon": "/assets/img/icons/python.png"
     },
     {
       "language": "Julia"
