@@ -433,10 +433,12 @@
       "ico_icon": "/assets/img/icons/python.png"
     },
     {
-      "language": "Julia"
+      "language": "Julia",
+      "ico_icon": "/assets/img/icons/julia.png"
     },
     {
-      "language": "Mathematica"
+      "language": "Mathematica",
+      "ico_icon": "/assets/img/icons/mathematica.png"
     },
     {
       "language": "R",
@@ -447,10 +449,12 @@
       "icon": "☕"
     },
     {
-      "language": "C++"
+      "language": "C++",
+      "ico_icon": "/assets/img/icons/cpp.png"
     },
     {
-      "language": "Ocatave"
+      "language": "Ocatave",
+      "ico_icon": "/assets/img/icons/octave.png"
     },
     {
       "language": "SML"
@@ -460,7 +464,8 @@
       "icon": "🦫"
     },
     {
-      "language": "Matlab"
+      "language": "Matlab",
+      "ico_icon": "/assets/img/icons/matlab.png"
     }
   ]
 }
