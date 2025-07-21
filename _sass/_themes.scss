@@ -57,6 +57,10 @@
     display: none;
   }
 
+  #light-toggle-abomination {
+    display: none;
+  }
+
   .only-light {
     display: block;
   }
@@ -224,13 +228,13 @@ html[data-theme-setting="abomination"] {
     display: none;
   }
 
+  #light-toggle-light {
+    display: none;
+  }
+
   #light-toggle-abomination {
     padding-left: 10px;
     padding-top: 12px;
     display: block;
-  }
-
-  #light-toggle-light {
-    display: none;
   }
 }
