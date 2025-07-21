@@ -80,11 +80,11 @@ ninja.data = [{
             window.location.href = "/blog/2025/meebis/";
           
         },
-      },{id: "news-starting-mld-phd-at-cmu-in-september-hooray",
-          title: 'Starting MLD PhD at CMU in September (hooray!)',
-          description: "",
-          section: "News",},{id: "news-making-a-website",
+      },{id: "news-making-a-website",
           title: 'Making a website',
+          description: "",
+          section: "News",},{id: "news-starting-mld-phd-at-cmu",
+          title: 'Starting MLD PhD at CMU',
           description: "",
           section: "News",},{
         id: 'social-email',
