@@ -429,7 +429,8 @@
   "languages": [
     {
       "language": "Python",
-      "icon": "🐍"
+      "old_icon": "🐍",
+      "icon": "icons/python.ico"
     },
     {
       "language": "Julia"

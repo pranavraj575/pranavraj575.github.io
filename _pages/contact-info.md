@@ -1,14 +1,14 @@
 ---
 layout: page
-permalink: /contact-info
-title: "contact&nbsp;info"
-excerpt: "info for contact"
+permalink: /social-profiles
+title: "social&nbsp;profiles"
+excerpt: "info for socials"
 author_profile: false
 nav: false
 ---
 
 
-# contact info
+# social profiles
 
 <div>
   {% include social_list.liquid %}
