@@ -125,19 +125,19 @@ html[data-theme="dark"] {
 
 html[data-theme="abomination"] {
   color-scheme: light;
-  --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #efcc00;
-  --global-text-color-light: #ffdc00;
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
+  --global-bg-color: #ffff00;
+  --global-code-bg-color: #dfdf00;
+  --global-text-color: #420dab;
+  --global-text-color-light: #690dab;
+  --global-theme-color: #420dab;
+  --global-hover-color: #420dab;;
+  --global-hover-text-color: #ff0000;
+  --global-footer-bg-color: #000000;
+  --global-footer-text-color: #010101;
+  --global-footer-link-color: #010101;
   --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
+  --global-divider-color: #000000;
+  --global-card-bg-color: #000000;
   --global-back-to-top-bg-color: rgba(
     #{color.channel($white-color, "red", $space: rgb)},
     #{color.channel($white-color, "green", $space: rgb)},
