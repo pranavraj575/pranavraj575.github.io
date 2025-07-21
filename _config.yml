@@ -326,7 +326,7 @@ filtered_bibtex_keywords:
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
 max_author_limit: 3 # leave blank to always show all authors
 # if shortening authors, shorten to this amount
-truncated_author_len: 3 # leave blank to default to max_author_limit
+truncated_author_len: 2 # leave blank to default to max_author_limit
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
