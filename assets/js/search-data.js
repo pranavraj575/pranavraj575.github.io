@@ -37,7 +37,14 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/aminals/index.html";
           },
-        },{id: "dropdown-social-profiles",
+        },{id: "dropdown-research-statement",
+              title: "research statement",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/research-statement";
+              },
+            },{id: "dropdown-social-profiles",
               title: "social profiles",
               description: "",
               section: "Dropdown",
