@@ -21,6 +21,7 @@
               {% endif %}
             {% endif %}
             <td colspan="1" class="list-group-name">
+               {% include figure.liquid path=content.ico_icon class="img-fluid z-depth-1" zoomable=false width=1rem %}
               {{ language_icon }}{{ content.language }}{% if content.fluency %}(content.fluency){% endif %}
             </td>
           </tr>
