@@ -5,8 +5,8 @@ nav: true
 nav_order: 6
 dropdown: true
 children:
-  - title: contact info
-    permalink: /contact-info
+  - title: social profiles
+    permalink: /social-profiles
   - title: divider
   - title: infinite load spell
     permalink: /infinite-loop
