@@ -155,7 +155,7 @@ for (i = 0; i < coll.length; i++) {
 
 <script>
 var expanding_things = document.getElementsByClassName("expanding-things");
-expanding_things.addEventListener("click", function() {
+expanding_things[0].addEventListener("click", function() {
   this.classList.toggle("active");
   var coll = document.getElementsByClassName("my_collapsible");
   var i;
