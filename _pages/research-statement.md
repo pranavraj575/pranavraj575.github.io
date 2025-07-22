@@ -31,6 +31,12 @@ nav: false
 My research focuses on developing Machine Learning algorithms for strategic scenarios.
 By exploring complexities in both adversarial and cooperative systems, I plan to advance the ability of AI to function effectively in these environments.
 
+
+<button type="button" class="my_collapsible">Open Collapsible</button>
+<div class="my_content">
+  <p>HELP ME HELLLP HELLLPPP</p>
+</div> 
+
 ## Strategic Agents
 
 Many of my research projects focus on developing AI agents for competitive settings, providing a foundation for more intricate multiagent interactions.
@@ -117,3 +123,22 @@ My research seeks to improve strategic decision making in multiagent systems, cr
 This will lead to better understanding of the abilities and limitations of AI in decision making, as well as potentially providing insight to mechanisms of decision making in humans.
 Additionally, my work has practical applications in areas that would benefit from strategic collaborative agents, such as healthcare, industry, and autonomous exploration.
 Overall, I hope to contribute to a future where autonomous agents can act strategically and cooperatively in complex real-world scenarios.
+
+
+
+<script>
+var coll = document.getElementsByClassName("my_collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
