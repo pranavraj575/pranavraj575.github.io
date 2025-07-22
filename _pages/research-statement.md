@@ -31,13 +31,6 @@ nav: false
 My research focuses on developing Machine Learning algorithms for strategic scenarios.
 By exploring complexities in both adversarial and cooperative systems, I plan to advance the ability of AI to function effectively in these environments.
 
-<div class="stuff-and-things">
-<button type="button" class="my_collapsible">Open Collapsible</button>
-<div class="my_collapsible_content">
-  <p>HELP ME HELLLP HELLLPPP</p>
-</div> 
-</div> 
-
 <div class="card mt-3 p-3">
 <h2 class="my_collapsible font-weight-medium">Strategic Agents</h2>
 <div class="my_collapsible_content">
@@ -108,51 +101,50 @@ Overall, my work in this area is focused on improving efficient training methods
 <div class="card mt-3 p-3">
 <h2 class="my_collapsible font-weight-medium">Future Research</h2>
 <div class="my_collapsible_content">
-
 My research will focus on enhancing strategic AI’s utility in multiagent systems.
 Broad domains that interest me include adversarial game playing and multiagent cooperation.
-
-<div class="card mt-3 p-3">
-<h2 class="my_collapsible font-weight-medium">test subdiv</h2>
-<div class="my_collapsible_content">
-hellllp meeeeeeee
-</div>
-
-<h3>Strategic agents in adversarial settings</h3>
-
-Adversarial settings (particularly board games) are commonly used to measure improvements in AI, as they directly compare strategic ability of competitors.
-I plan to further explore my work in this area, expanding the classes of games that agents are able to master.
-I am specifically interested in imperfect information games (e.g. poker and other card games), where a strategic agent must reason about the knowledge other players have, and behave accordingly.
-This creates a more challenging scenario, requiring complex and innovative approaches.
-Additionally, solutions can be more applicable to real-world scenarios, where complete information is often not given.
-<br>
-<br>
-I also plan to explore social/diplomacy games based on communication (e.g. Settlers of Catan, Werewolf).
-Recent developments in language models allow for stronger understanding of language, as well as more realistic text generation.
-Developing a strategic planner that interacts with players through language models could allow an agent to better understand and navigate the social dynamics in these games.
-This work could also contribute to making agents behave more naturally in human-AI interactions.
-<br>
-<br>
-<h3>ML and Game Theory</h3>
-
-Grounding problems in a mathematical framework allows easier theoretical analyses of solutions.
-I plan to combine my work with my background in discrete mathematics to formulate tasks as game theoretic scenarios, then develop and analyze algorithms to solve them.
-<br>
-<br>
-One particular topic I plan to explore is the team selection problem in my BERTeam project.
-This scenario can be rephrased as a normal form game, where coaches each choose a team to compete in a multiagent environment.
-I plan to update BERTeam’s model, loss, and training method to construct an algorithm that approaches a Nash Equilibrium in this game.
-<br>
-<br>
-<h3> Cooperation in complex tasks</h3>
-
-As autonomous agents become more common in everyday life, coordination between them will become more useful in solving complex tasks.
-Continuing my work with multiagent/swarm control, I plan to develop frameworks for cooperation in challenging environments.
-<br>
-<br>
-One specific direction I would like to explore is learning robotic tasks that must be solved by teamwork between multiple agents.
-This combines my past work in multiagent cooperation and robotics, and can be applied to areas like autonomous search and rescue and disaster relief as well as manipulation tasks like multiple robot assembly.
-Improving coordination in these scenarios will greatly improve our ability to automate difficult or dangerous tasks, reducing the risk for human workers.
+    <div class="card mt-3 p-3">
+    <h3 class="my_collapsible font-weight-medium">Strategic agents in adversarial settings</h3>
+    <div class="my_collapsible_content">
+    Adversarial settings (particularly board games) are commonly used to measure improvements in AI, as they directly compare strategic ability of competitors.
+    I plan to further explore my work in this area, expanding the classes of games that agents are able to master.
+    I am specifically interested in imperfect information games (e.g. poker and other card games), where a strategic agent must reason about the knowledge other players have, and behave accordingly.
+    This creates a more challenging scenario, requiring complex and innovative approaches.
+    Additionally, solutions can be more applicable to real-world scenarios, where complete information is often not given.
+    <br>
+    <br>
+    I also plan to explore social/diplomacy games based on communication (e.g. Settlers of Catan, Werewolf).
+    Recent developments in language models allow for stronger understanding of language, as well as more realistic text generation.
+    Developing a strategic planner that interacts with players through language models could allow an agent to better understand and navigate the social dynamics in these games.
+    This work could also contribute to making agents behave more naturally in human-AI interactions.
+    </div>
+    </div>
+    <br>
+    <br>
+    <div class="card mt-3 p-3">
+    <h3 class="my_collapsible font-weight-medium">ML and Game Theory</h3>
+    <div class="my_collapsible_content">
+    Grounding problems in a mathematical framework allows easier theoretical analyses of solutions.
+    I plan to combine my work with my background in discrete mathematics to formulate tasks as game theoretic scenarios, then develop and analyze algorithms to solve them.
+    <br>
+    <br>
+    One particular topic I plan to explore is the team selection problem in my BERTeam project.
+    This scenario can be rephrased as a normal form game, where coaches each choose a team to compete in a multiagent environment.
+    I plan to update BERTeam’s model, loss, and training method to construct an algorithm that approaches a Nash Equilibrium in this game.
+    </div>
+    </div>
+    <div class="card mt-3 p-3">
+    <h3 class="my_collapsible font-weight-medium">Cooperation in complex tasks</h3>
+    <div class="my_collapsible_content">
+    As autonomous agents become more common in everyday life, coordination between them will become more useful in solving complex tasks.
+    Continuing my work with multiagent/swarm control, I plan to develop frameworks for cooperation in challenging environments.
+    <br>
+    <br>
+    One specific direction I would like to explore is learning robotic tasks that must be solved by teamwork between multiple agents.
+    This combines my past work in multiagent cooperation and robotics, and can be applied to areas like autonomous search and rescue and disaster relief as well as manipulation tasks like multiple robot assembly.
+    Improving coordination in these scenarios will greatly improve our ability to automate difficult or dangerous tasks, reducing the risk for human workers.
+    </div>
+    </div>
 </div>
 </div>
 
