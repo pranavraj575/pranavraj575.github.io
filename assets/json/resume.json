@@ -467,5 +467,26 @@
       "name": "Matlab",
       "ico_icon": "/assets/img/icons/matlab.png"
     }
+  ],
+  "other languages": [
+    {
+      "name": "English",
+      "fluency": "Native"
+    },
+    {
+      "name": "Nepali",
+      "fluency": "Native"
+    },
+    {
+      "name": "Latin"
+    }
+  ],
+  "other other languages": [
+    {
+      "name": "Morse Code"
+    },
+    {
+      "name": "Braille"
+    }
   ]
 }
