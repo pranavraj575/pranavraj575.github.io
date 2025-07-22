@@ -94,55 +94,55 @@ ninja.data = [{
           title: 'Starting MLD PhD at CMU',
           description: "",
           section: "News",},{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%70%72%61%6A%62%68%61%6E@%61%6C%75%6D%6E%69.%63%6D%75.%65%64%75", "_blank");
-        },
-      },{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%70%72%61%6A%62%68%61%6E@%61%6C%75%6D%6E%69.%63%6D%75.%65%64%75", "_blank");
-        },
-      },{
-        id: 'social-github',
-        title: 'GitHub',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://github.com/pranavraj575", "_blank");
-        },
-      },{
-        id: 'social-linkedin',
-        title: 'LinkedIn',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.linkedin.com/in/pravna", "_blank");
-        },
-      },{
-        id: 'social-orcid',
-        title: 'ORCID',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://orcid.org/0009-0004-4933-5204", "_blank");
-        },
-      },{
-        id: 'social-researchgate',
-        title: 'ResearchGate',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.researchgate.net/profile/Pranav-Rajbhandari/", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=9WoH1FoAAAAJ", "_blank");
-        },
-      },{
+          id: 'social-email',
+          title: 'email',
+          section: 'Socials',
+          handler: () => {
+            window.open("mailto:%70%72%61%6A%62%68%61%6E@%61%6C%75%6D%6E%69.%63%6D%75.%65%64%75", "_blank");
+          },
+        },{
+          id: '',
+          title: 'email',
+          section: 'Socials',
+          handler: () => {
+            window.open("mailto:%70%72%61%6A%62%68%61%6E@%61%6C%75%6D%6E%69.%63%6D%75.%65%64%75", "_blank");
+          },
+        },{
+          id: 'social-github',
+          title: 'GitHub',
+          section: 'Socials',
+          handler: () => {
+            window.open("https://github.com/pranavraj575", "_blank");
+          },
+        },{
+          id: 'social-linkedin',
+          title: 'LinkedIn',
+          section: 'Socials',
+          handler: () => {
+            window.open("https://www.linkedin.com/in/pravna", "_blank");
+          },
+        },{
+          id: 'social-orcid',
+          title: 'ORCID',
+          section: 'Socials',
+          handler: () => {
+            window.open("https://orcid.org/0009-0004-4933-5204", "_blank");
+          },
+        },{
+          id: 'social-researchgate',
+          title: 'ResearchGate',
+          section: 'Socials',
+          handler: () => {
+            window.open("https://www.researchgate.net/profile/Pranav-Rajbhandari/", "_blank");
+          },
+        },{
+          id: 'social-scholar',
+          title: 'Google Scholar',
+          section: 'Socials',
+          handler: () => {
+            window.open("https://scholar.google.com/citations?user=9WoH1FoAAAAJ", "_blank");
+          },
+        },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
