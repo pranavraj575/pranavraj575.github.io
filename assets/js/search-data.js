@@ -30,8 +30,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repos/";
           },
-        },{id: "nav-animal-amp-nbsp-photos",
-          title: "animal&amp;nbsp;photos",
+        },{id: "nav-animal-photos",
+          title: "animal photos",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -101,11 +101,11 @@ ninja.data = [{
           window.open("mailto:%70%72%61%6A%62%68%61%6E@%61%6C%75%6D%6E%69.%63%6D%75.%65%64%75", "_blank");
         },
       },{
-        id: 'social-silly_email',
-        title: 'Silly_email',
+        id: 'social-email',
+        title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("", "_blank");
+          window.open("mailto:%70%72%61%6A%62%68%61%6E@%61%6C%75%6D%6E%69.%63%6D%75.%65%64%75", "_blank");
         },
       },{
         id: 'social-github',
@@ -158,6 +158,15 @@ ninja.data = [{
       section: 'Theme',
       handler: () => {
         setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'abomination-theme',
+      title: 'Burn your retinas',
+      description: 'Change the theme of the site to Abomination',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("abomination");
       },
     },
     {
