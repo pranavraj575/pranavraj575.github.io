@@ -38,6 +38,13 @@ By exploring complexities in both adversarial and cooperative systems, I plan to
 </div> 
 </div> 
 
+<div class="card mt-3 p-3">
+<h3 class="card-title font-weight-medium">title</h3>
+<div>
+  content
+</div>
+</div>
+
 ## Strategic Agents
 
 Many of my research projects focus on developing AI agents for competitive settings, providing a foundation for more intricate multiagent interactions.
@@ -133,7 +140,7 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("my_collapsible_active");
     var my_collapsible_content = this.nextElementSibling;
     if (my_collapsible_content.style.display === "block") {
       my_collapsible_content.style.display = "none";
