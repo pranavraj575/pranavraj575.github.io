@@ -1,4 +1,4 @@
-<div class="list-groups">
+<div class="list-groups" style="padding-top:0.69420rem">
   {% for content in data[1] %}
     <div class="list-group col-md-4">
       <table class="table-cv list-group-table">
@@ -22,7 +22,7 @@
                   &nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
                 {% endif %}
               {% endif %}
-              {{ content.name }}{% if content.fluency %}(content.fluency){% endif %}</h6>
+              {{ content.name }}{% if content.fluency %}({{ content.fluency }}){% endif %}</h6>
             </td>
           </tr>
         </tbody>

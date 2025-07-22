@@ -486,7 +486,8 @@
       "name": "Morse Code"
     },
     {
-      "name": "Braille"
+      "name": "Braille",
+      "ico_icon": "/assets/img/icons/UNUNUN.png"
     }
   ]
 }
