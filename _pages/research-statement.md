@@ -177,24 +177,17 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
-
 <script>
 var expanding_things = document.getElementsByClassName("expanding-all");
-var k;
-for (k = 0; i<expanding_things.length; k++)
-{
-  expanding_things[k].addEventListener("click", function() 
-  {
-    var coll = document.getElementsByClassName("my_collapsible"); 
-    var i;
-    for (i = 0; i < coll.length; i++) 
-    {
-      if (!coll[i].classList.contains("active"))
-      {
-        coll[i].classList.toggle("active");
-      }
-      coll[i].nextElementSibling.style.display = "block";
+var i;
+for (i = 0; i < expanding_things.length; i++) {
+  expanding_things[i].addEventListener("click", function() {
+    var coll = document.getElementsByClassName("my_collapsible");
+    var j;
+    for (j = 0; j < coll.length; j++) {
+      coll[j].classList.toggle("active");
+      coll[j].nextElementSibling.style.display = "block";
     }
-  }
-});
+  });
+}
 </script>
