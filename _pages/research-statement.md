@@ -11,7 +11,7 @@ nav: false
 <header class="post-header">
   <h1 class="post-title">
     Research Statement
-    <button type="button" class="expanding-all">expand all</button>
+    <button type="button" class="expanding-all" style="background-color:var(--global-bg-color);border-color:#00000000">expand all</button>
     {% if page.statement_pdf %}
       <a
         {% if page.statement_pdf contains '://' %}
