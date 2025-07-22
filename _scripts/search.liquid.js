@@ -291,9 +291,9 @@ ninja.data = [
           {%- assign social_title = social[0] | capitalize -%}
           {%- capture social_url %}"{{ social[1].url }}"{% endcapture -%}
         {%- else -%}
-          {%- assign social_id = "" -%}
+          {%- assign social_id = null -%}
       {%- endcase -%}
-      {%- if social_id != "" -%}
+      {%- if social_id -%}
         {
           id: '{{ social_id }}',
           title: '{{ social_title }}',
