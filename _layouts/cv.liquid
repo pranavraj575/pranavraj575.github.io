@@ -6,6 +6,7 @@ layout: default
     <header class="post-header">
       <h1 class="post-title">
         {{ page.title }}
+        <button type="button" class="expanding_things">expand all</button>
         {% if page.cv_pdf %}
           <a
             {% if page.cv_pdf contains '://' %}
@@ -148,4 +149,17 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+</script>
+
+
+
+<script>
+var expanding_things = document.getElementsByClassName("expanding_things");
+expanding_things.addEventListener("click", function() {
+  var coll = document.getElementsByClassName("my_collapsible");
+  for (i = 0; i < coll.length; i++) {
+    coll[i].classList.toggle("active");
+    coll[i].nextElementSibling.style.display = "block";
+  }
+});
 </script>
