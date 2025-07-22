@@ -12,8 +12,9 @@
               <td class="list-group-category-icon"></td>
             {% endif %}
             <td colspan="1" class="list-group-name">
+              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
               {% if content.ico_icon %}
-                <img src={{ content.ico_icon }} class="img-fluid" height="auto" loading="eager" width="15.2 rem" title={{ content.name }}>&nbsp;&nbsp;
+                <img src={{ content.ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
               {% else %}
                 {% if content.icon %}
                   {{ content.icon }}&nbsp;&nbsp;
@@ -21,7 +22,7 @@
                   &nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
                 {% endif %}
               {% endif %}
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.name }}{% if content.fluency %}(content.fluency){% endif %}</h6>
+              {{ content.name }}{% if content.fluency %}(content.fluency){% endif %}</h6>
             </td>
           </tr>
         </tbody>
