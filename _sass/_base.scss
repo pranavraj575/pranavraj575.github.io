@@ -153,10 +153,10 @@ ul.task-list input[type="checkbox"] {
 .my_collapsible {
   background-color: var(--global-card-bg-color);
   cursor: pointer;
-  padding-top: .420rem;
-  padding-right: .420rem;
+  padding-top: 6.9px;
+  padding-right: 6.9px;
   padding-bottom: 0rem;
-  padding-left: .420rem;
+  padding-left: 6.9px;
   width: 100%;
   border: none;
   text-align: left;
@@ -173,7 +173,7 @@ ul.task-list input[type="checkbox"] {
 
 /* Style the collapsible content. Note: hidden by default */
 .my_collapsible_content {
-  padding: 0 1rem;
+  padding: 0 10px;
   display: none;
   overflow: hidden;
 }
