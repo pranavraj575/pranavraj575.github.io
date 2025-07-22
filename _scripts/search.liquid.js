@@ -286,10 +286,11 @@ ninja.data = [
           {%- assign social_id = "social-zotero" -%}
           {%- assign social_title = "Zotero" -%}
           {%- capture social_url %}"https://www.zotero.org/{{ social[1] }}"{% endcapture -%}
-        {%- else -%}
+        {%- when "custom_social" -%}
           {%- assign social_id = "social-" | append: social[0] -%}
           {%- assign social_title = social[0] | capitalize -%}
           {%- capture social_url %}"{{ social[1].url }}"{% endcapture -%}
+        {%- else -%}
       {%- endcase -%}
       {
         id: '{{ social_id }}',
@@ -318,6 +319,15 @@ ninja.data = [
       section: 'Theme',
       handler: () => {
         setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'abomination-theme',
+      title: 'Burn your retinas',
+      description: 'Change the theme of the site to Abomination',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("abomination");
       },
     },
     {

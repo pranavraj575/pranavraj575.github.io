@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /aminals/
-title: "animal&nbsp;photos"
+title: "animal photos"
 nav: true
 nav_order: 5
 pagination:
