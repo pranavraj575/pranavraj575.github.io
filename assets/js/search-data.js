@@ -76,17 +76,6 @@ ninja.data = [{
             window.location.href = "/blog/2025/cat/";
           
         },
-      },{id: "post-roos",
-        
-          title: "Roos",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/roo/";
-          
-        },
       },{id: "post-meevis",
         
           title: "Meevis",
