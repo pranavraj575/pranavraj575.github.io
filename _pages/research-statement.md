@@ -13,7 +13,7 @@ expand_all_button: true
   <h1 class="post-title">
     Research Statement
     <div class="float-right">
-      <button type="button" class="expanding-all" style="background-color:var(--global-bg-color);border-color:#00000000;padding:0 1rem">expand all</button>
+      <button type="button" class="expanding-all" style="background-color:var(--global-bg-color);border-color:#00000000;padding:0 10px">expand all</button>
       {% if page.statement_pdf %}
         <a
           {% if page.statement_pdf contains '://' %}
