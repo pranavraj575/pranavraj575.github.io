@@ -293,7 +293,7 @@ ninja.data = [
         {%- else -%}
           {%- assign social_id = "" -%}
       {%- endcase -%}
-      {%- if social_id -%}
+      {%- if social_id != "" -%}
         {
           id: '{{ social_id }}',
           title: '{{ social_title }}',
