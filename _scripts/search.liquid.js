@@ -291,15 +291,18 @@ ninja.data = [
           {%- assign social_title = social[0] | capitalize -%}
           {%- capture social_url %}"{{ social[1].url }}"{% endcapture -%}
         {%- else -%}
+          {%- assign social_id = "" -%}
       {%- endcase -%}
-      {
-        id: '{{ social_id }}',
-        title: '{{ social_title }}',
-        section: 'Socials',
-        handler: () => {
-          window.open({{ social_url }}, "_blank");
+      {%- if social_id -%}
+        {
+          id: '{{ social_id }}',
+          title: '{{ social_title }}',
+          section: 'Socials',
+          handler: () => {
+            window.open({{ social_url }}, "_blank");
+          },
         },
-      },
+      {%- endif -%}
     {%- endfor -%}
   {%- endif -%}
   {%- if site.enable_darkmode -%}
