@@ -31,10 +31,11 @@ nav: false
 My research focuses on developing Machine Learning algorithms for strategic scenarios.
 By exploring complexities in both adversarial and cooperative systems, I plan to advance the ability of AI to function effectively in these environments.
 
-
+<div class="stuff-and-things">
 <button type="button" class="my_collapsible">Open Collapsible</button>
 <div class="content">
   <p>HELP ME HELLLP HELLLPPP</p>
+</div> 
 </div> 
 
 ## Strategic Agents
