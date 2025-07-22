@@ -33,7 +33,7 @@ By exploring complexities in both adversarial and cooperative systems, I plan to
 
 <div class="stuff-and-things">
 <button type="button" class="my_collapsible">Open Collapsible</button>
-<div class="content">
+<div class="my_collapsible_content">
   <p>HELP ME HELLLP HELLLPPP</p>
 </div> 
 </div> 
@@ -134,11 +134,11 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
+    var my_collapsible_content = this.nextElementSibling;
+    if (my_collapsible_content.style.display === "block") {
+      my_collapsible_content.style.display = "none";
     } else {
-      content.style.display = "block";
+      my_collapsible_content.style.display = "block";
     }
   });
 }
