@@ -32,14 +32,6 @@ My research focuses on developing Machine Learning algorithms for strategic scen
 By exploring complexities in both adversarial and cooperative systems, I plan to advance the ability of AI to function effectively in these environments.
 
 ## Strategic Agents
-<div class="links">
-  <a class="testttt btn btn-sm z-depth-0" role="button">
-    test1
-  </a>
-</div>
-<div class="testttt hidden">
-  <p>Many of my research projects focus on developing AI agents for competitive settings, providing a foundation for more intricate multiagent interactions.</p>
-</div>
 
 Many of my research projects focus on developing AI agents for competitive settings, providing a foundation for more intricate multiagent interactions.
 
