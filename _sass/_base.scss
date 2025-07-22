@@ -153,7 +153,10 @@ ul.task-list input[type="checkbox"] {
 .my_collapsible {
   background-color: var(--global-card-bg-color);
   cursor: pointer;
-  padding: 18px;
+  padding-top: .420rem;
+  padding-right: .420rem;
+  padding-bottom: 0rem;
+  padding-left: .420rem;
   width: 100%;
   border: none;
   text-align: left;
@@ -164,10 +167,13 @@ ul.task-list input[type="checkbox"] {
 .my_collapsible:hover {
   color: var(--global-hover-color);
 }
+.expanding-all:hover{
+  color: var(--global-hover-color);
+}
 
 /* Style the collapsible content. Note: hidden by default */
 .my_collapsible_content {
-  padding: 0 18px;
+  padding: 0 1rem;
   display: none;
   overflow: hidden;
 }
