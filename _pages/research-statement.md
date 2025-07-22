@@ -39,17 +39,21 @@ By exploring complexities in both adversarial and cooperative systems, I plan to
 </div> 
 
 <div class="card mt-3 p-3">
-<h3 class="my_collapsible card-title font-weight-medium">Strategic Agents</h3>
+<h2 class="my_collapsible font-weight-medium">Strategic Agents</h2>
 <div class="my_collapsible_content">
+
 Many of my research projects focus on developing AI agents for competitive settings, providing a foundation for more intricate multiagent interactions.
-
-In the [Reliable Autonomous Systems Lab (RASL)](https://www.ri.cmu.edu/robotics-groups/reliable-autonomous-systems-lab/) at Carnegie Mellon University (CMU), I designed AI agents to play Jenga, a non-deterministic, adversarial game.
+<br>
+<br>
+In the <a href="https://www.ri.cmu.edu/robotics-groups/reliable-autonomous-systems-lab/">Reliable Autonomous Systems Lab (RASL)</a> at Carnegie Mellon University (CMU), I designed AI agents to play Jenga, a non-deterministic, adversarial game.
 By adapting existing methods like AlphaZero and Monte Carlo Tree Search, I created agents capable of strategically choosing which blocks to remove, keeping the tower stable while making the opponent’s moves difficult.
-
+<br>
+<br>
 I continue this work with my current AlephZero project, which extends AlphaZero’s algorithm to a wider class of ‘board games’ whose board size varies throughout a game.
 I approach solving these games by using a seq-to-seq model to create a context-dependent encoding of each board position, trained with AlphaZero’s algorithm.
 This allows AlephZero to learn games such as ‘Jenga’ and ‘5D Chess with Multiverse Time Travel’, which motivated my research.
-
+<br>
+<br>
 These projects focus on single agent strategic settings where the agent must perform well against various different opponents.
 They have potential applications in fields like human-robot interaction.
 </div>
