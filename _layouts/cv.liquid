@@ -158,11 +158,25 @@ var expanding_things = document.getElementsByClassName("expanding-all");
 for (var i = 0; i < expanding_things.length; i++) {
   expanding_things[i].addEventListener("click", function() {
     var coll = document.getElementsByClassName("my_collapsible");
+    var all_expanded = true;
     for (var j = 0; j < coll.length; j++) {
       if (!coll[j].classList.contains("active")){
-        coll[j].classList.toggle("active");
+        all_expanded = false;
       }
-      coll[j].nextElementSibling.style.display = "block";
+    }
+
+    for (var j = 0; j < coll.length; j++) {
+      // if everything is expanded, we toggle all active menus
+      // if everything is not expanded, we toggle all inactive menus
+      if (coll[j].classList.contains("active") == all_expanded){
+        coll[j].classList.toggle("active");
+        var my_collapsible_content = coll[j].nextElementSibling;
+        if (my_collapsible_content.style.display === "block") {
+          my_collapsible_content.style.display = "none";
+        } else {
+          my_collapsible_content.style.display = "block";
+        }
+      }
     }
   });
 }
