@@ -1,6 +1,6 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
-  {% assign publications = data[1] | sort: 'releaseDate' | reverse %}
-  {% for content in publications %}
+  {% assign presentations = data[1] | sort: 'releaseDate' | reverse %}
+  {% for content in presentations %}
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
@@ -12,6 +12,16 @@
                   <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ date }}</span>
                 </td>
               </tr>
+              {% if (data[0] == 'presentations') and content.location %}
+                <tr>
+                  <td>
+                    <p class="location">
+                      <i class="fa-solid fa-location-dot iconlocation"></i>
+                      {{ content.location }}
+                    </p>
+                  </td>
+                </tr>
+              {% endif %}
             </tbody>
           </table>
         </div>
