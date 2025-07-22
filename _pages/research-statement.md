@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /research-statement
-title: "Research&nbsp;Statement"
+title: "research&nbsp;statement"
 excerpt: "past research summary, future research goals"
 author_profile: false
 statement_pdf: research_statement.pdf
@@ -10,7 +10,7 @@ nav: false
 
 <header class="post-header">
   <h1 class="post-title">
-    {{ page.title }}
+    Research Statement
     {% if page.statement_pdf %}
       <a
         {% if page.statement_pdf contains '://' %}
@@ -26,15 +26,13 @@ nav: false
       </a>
     {% endif %}
   </h1>
-  {% if page.description %}
-    <p class="post-description">{{ page.description }}</p>
-  {% endif %}
 </header>
 
 My research focuses on developing ML algorithms for strategic scenarios.
 By exploring complexities in both adversarial and cooperative systems, I plan to advance AI’s ability to function effectively in these environments.
 
 ## Strategic Agents
+
 Many of my research projects focus on developing AI agents for competitive settings, providing a foundation for more intricate multiagent interactions.
 
 In the [Reliable Autonomous Systems Lab (RASL)](https://www.ri.cmu.edu/robotics-groups/reliable-autonomous-systems-lab/) at Carnegie Mellon University (CMU), I designed AI agents to play Jenga, a non-deterministic, adversarial game.
@@ -95,7 +93,7 @@ Recent developments in language models allow for stronger understanding of langu
 Developing a strategic planner that interacts with players through language models could allow an agent to better understand and navigate the social dynamics in these games.
 This work could also contribute to making agents behave more naturally in human-AI interactions.
 
-### ML and game theory
+### ML and Game Theory
 
 Grounding problems in a mathematical framework allows easier theoretical analyses of solutions.
 I plan to combine my work with my background in discrete mathematics to formulate tasks as game theoretic scenarios, then develop and analyze algorithms to solve them.
