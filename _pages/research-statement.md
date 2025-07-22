@@ -11,21 +11,22 @@ nav: false
 <header class="post-header">
   <h1 class="post-title">
     Research Statement
-    <button type="button" class="expanding-all" style="background-color:var(--global-bg-color);border-color:#00000000">expand all</button>
-    {% if page.statement_pdf %}
-      <a
-        {% if page.statement_pdf contains '://' %}
-          href="{{ page.statement_pdf }}"
-        {% else %}
-          href="{{ page.statement_pdf | prepend: 'assets/pdf/' | relative_url }}"
-        {% endif %}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="float-right"
-      >
-        <i class="fa-solid fa-file-pdf"></i>
-      </a>
-    {% endif %}
+    <div class="float-right">
+      <button type="button" class="expanding-all" style="background-color:var(--global-bg-color);border-color:#00000000">expand all</button>
+      {% if page.statement_pdf %}
+        <a
+          {% if page.statement_pdf contains '://' %}
+            href="{{ page.statement_pdf }}"
+          {% else %}
+            href="{{ page.statement_pdf | prepend: 'assets/pdf/' | relative_url }}"
+          {% endif %}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-file-pdf"></i>
+        </a>
+      {% endif %}
+    </div>
   </h1>
 </header>
 
