@@ -11,6 +11,7 @@ nav: false
 <header class="post-header">
   <h1 class="post-title">
     Research Statement
+    <button type="button" class="expanding-all">expand all</button>
     {% if page.statement_pdf %}
       <a
         {% if page.statement_pdf contains '://' %}
@@ -174,4 +175,26 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+</script>
+
+
+<script>
+var expanding_things = document.getElementsByClassName("expanding-all");
+var k;
+for (k = 0; i<expanding_things.length; k++)
+{
+  expanding_things[k].addEventListener("click", function() 
+  {
+    var coll = document.getElementsByClassName("my_collapsible"); 
+    var i;
+    for (i = 0; i < coll.length; i++) 
+    {
+      if (!coll[i].classList.contains("active"))
+      {
+        coll[i].classList.toggle("active");
+      }
+      coll[i].nextElementSibling.style.display = "block";
+    }
+  }
+});
 </script>
