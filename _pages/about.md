@@ -1,6 +1,6 @@
 ---
 layout: about
-title: <i class="fa fa-fw fa-home"></i>&nbsp;home
+title: home
 permalink: /
 subtitle: 
 
