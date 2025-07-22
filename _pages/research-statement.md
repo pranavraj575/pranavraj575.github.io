@@ -33,7 +33,7 @@ By exploring complexities in both adversarial and cooperative systems, I plan to
 
 
 <button type="button" class="my_collapsible">Open Collapsible</button>
-<div class="my_content">
+<div class="content">
   <p>HELP ME HELLLP HELLLPPP</p>
 </div> 
 
