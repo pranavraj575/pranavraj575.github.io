@@ -31,8 +31,8 @@ layout: default
         {% for entry in site.data.cv %}
           <a class="anchor" id="{{ entry.title }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-            <div>
+            <h3 class="my_collapsible card-title font-weight-medium">{{ entry.title }}</h3>
+            <div class="my_collapsible_content>
               {% if entry.type == 'list' %}
                 {% include cv/list.liquid %}
               {% elsif entry.type == 'map' %}
@@ -129,3 +129,23 @@ layout: default
     </article>
   </div>
 {% endunless %}
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("my_collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var my_collapsible_content = this.nextElementSibling;
+    if (my_collapsible_content.style.display === "block") {
+      my_collapsible_content.style.display = "none";
+    } else {
+      my_collapsible_content.style.display = "block";
+    }
+  });
+}
+</script>
