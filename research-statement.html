@@ -17,13 +17,13 @@ for (i = 0; i < coll.length; i++) {
 }
 </script> <script>
 var expanding_things = document.getElementsByClassName("expanding-all");
-var i;
-for (i = 0; i < expanding_things.length; i++) {
+for (var i = 0; i < expanding_things.length; i++) {
   expanding_things[i].addEventListener("click", function() {
     var coll = document.getElementsByClassName("my_collapsible");
-    var j;
-    for (j = 0; j < coll.length; j++) {
-      coll[j].classList.toggle("active");
+    for (var j = 0; j < coll.length; j++) {
+      if (!coll[j].classList.contains("active")){
+        coll[j].classList.toggle("active");
+      }
       coll[j].nextElementSibling.style.display = "block";
     }
   });
