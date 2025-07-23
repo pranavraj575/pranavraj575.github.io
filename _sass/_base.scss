@@ -167,6 +167,9 @@ ul.task-list input[type="checkbox"] {
 .my_collapsible:hover {
   color: var(--global-hover-color);
 }
+.expanding-all{
+  cursor: pointer;
+}
 .expanding-all:hover{
   color: var(--global-hover-color);
 }
