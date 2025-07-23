@@ -457,6 +457,9 @@
       "ico_icon": "/assets/img/icons/octave.png"
     },
     {
+      "name": "SML"
+    },
+    {
       "name": "Golang",
       "icon": "🦫"
     },
