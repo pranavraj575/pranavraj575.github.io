@@ -24,9 +24,8 @@ expand_all_button: true
           {% endif %}
           target="_blank"
           rel="noopener noreferrer"
-          style="padding-right:10px"
         >
-          <i class="fa-solid fa-file-pdf float-left"></i>
+          <i class="fa-solid fa-file-pdf float-left" style="padding-right:10px"></i>
         </a>
       {% endif %}
   </h1>
