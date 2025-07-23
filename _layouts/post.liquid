@@ -48,7 +48,7 @@ layout: default
           {% if url_beginning == '/aminals/' %}
             <a href="{{ category | slugify | prepend: '/aminals/category/' | relative_url }}"> {{ site.category_icon }} {{ category -}}</a>
           {% else %}
-            {{ site.category_icon }} {{ category }}
+            url_beginning{{ site.category_icon }} {{ category }}
           {% endif %}
           {% unless forloop.last %}
             &nbsp;
