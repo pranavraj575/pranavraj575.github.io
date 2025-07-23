@@ -87,6 +87,17 @@ ninja.data = [{
             window.location.href = "/aminals/2025/bird/";
           
         },
+      },{id: "post-roos",
+        
+          title: "Roos",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/roo/";
+          
+        },
       },{id: "post-meevis",
         
           title: "meevis",
@@ -107,6 +118,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/aminals/2025/jinx/";
+          
+        },
+      },{id: "post-a-post-with-advanced-image-components",
+        
+          title: "a post with advanced image components",
+        
+        description: "this is what advanced image components could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2024/advanced-images/";
           
         },
       },{id: "news-making-a-website",
