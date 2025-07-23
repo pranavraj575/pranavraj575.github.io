@@ -78,13 +78,24 @@ ninja.data = [{
         },
       },{id: "post-meevis",
         
-          title: "Meevis",
+          title: "meevis",
         
         description: "",
         section: "Posts",
         handler: () => {
           
             window.location.href = "/blog/2025/meebis/";
+          
+        },
+      },{id: "post-jinx",
+        
+          title: "jinx",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/jinx/";
           
         },
       },{id: "news-making-a-website",
