@@ -7,6 +7,7 @@ author_profile: false
 statement_pdf: research_statement.pdf
 nav: false
 expand_all_button: true
+og_image: /assets/img/cool_bunny.jpg
 ---
 
 <header class="post-header">

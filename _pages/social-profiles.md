@@ -5,6 +5,7 @@ title: "social&nbsp;profiles"
 excerpt: "info for socials"
 author_profile: false
 nav: false
+og_image: /assets/img/cool_bunny.jpg
 ---
 
 

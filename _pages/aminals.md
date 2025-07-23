@@ -4,6 +4,7 @@ permalink: /aminals/
 title: "animal photos"
 nav: true
 nav_order: 5
+og_image: /assets/img/cool_bunny.jpg
 pagination:
   enabled: true
   collection: posts

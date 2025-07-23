@@ -4,6 +4,7 @@ title: other
 nav: true
 nav_order: 6
 dropdown: true
+og_image: /assets/img/cool_bunny.jpg
 children:
   - title: research statement
     permalink: /research-statement

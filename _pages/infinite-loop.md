@@ -9,6 +9,7 @@ redirect_from:
   - /infinite-loop.html
 nav: false
 nav_order: 1
+og_image: /assets/img/cool_bunny.jpg
 ---
 
 # there are bugs in my skin

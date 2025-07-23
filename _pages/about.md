@@ -3,6 +3,7 @@ layout: about
 title: home
 permalink: /
 subtitle: 
+og_image: /assets/img/cool_bunny.jpg
 
 profile:
   align: right
