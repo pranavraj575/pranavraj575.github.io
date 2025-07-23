@@ -1,8 +1,12 @@
 <div class="list-groups" style="padding-top:13px">
-  {% if data[1].length < 4 %}
-    {% assign language_colwidth=4 %}
+  {% assign num_languages = 0 %}
+  {% for content in data[1] %}
+    {% assign num_languages = num_languages | plus: 1 %}
+  {% endfor %}
+  {% if num_languages < 4 %}
+    {% assign language_colwidth = 12 | divided_by: num_languages %}
   {% else %}
-    {% assign language_colwidth=3 %}
+    {% assign language_colwidth = 3 %}
   {% endif %}
   {% for content in data[1] %}
     <div class="list-group col-md-{{ language_colwidth }}">
