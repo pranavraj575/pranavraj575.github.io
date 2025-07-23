@@ -89,7 +89,7 @@ ninja.data = [{
         },
       },{id: "post-roos",
         
-          title: "Roos",
+          title: "roos",
         
         description: "",
         section: "Posts",
@@ -118,17 +118,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/aminals/2025/jinx/";
-          
-        },
-      },{id: "post-a-post-with-advanced-image-components",
-        
-          title: "a post with advanced image components",
-        
-        description: "this is what advanced image components could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/aminals/2024/advanced-images/";
           
         },
       },{id: "news-making-a-website",
