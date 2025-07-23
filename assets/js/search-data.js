@@ -76,6 +76,17 @@ ninja.data = [{
             window.location.href = "/aminals/2025/cat/";
           
         },
+      },{id: "post-bird",
+        
+          title: "bird",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/bird/";
+          
+        },
       },{id: "post-meevis",
         
           title: "meevis",
