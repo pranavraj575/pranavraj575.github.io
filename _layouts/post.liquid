@@ -5,7 +5,8 @@ layout: default
 {% assign tags = page.tags | join: '' %}
 {% assign categories = page.categories | join: '' %}
 {% assign url_beginning = page.url | slice: 0, 6 %}
-{% assign url_beginning = page.url %}
+{% assign url_beginning = page.url | split: "/" %}
+{% assign url_beginning = url_beginning[1] %}
 
 {% if page._styles %}
   <!-- Page/Post style -->
@@ -49,7 +50,7 @@ layout: default
           {% if url_beginning == '/aminals/' %}
             <a href="{{ category | slugify | prepend: '/aminals/category/' | relative_url }}"> {{ site.category_icon }} {{ category -}}</a>
           {% else %}
-            {{ url_beginning }}{{ site.category_icon }} {{ category }}
+            {{ site.category_icon }} {{ category }}
           {% endif %}
           {% unless forloop.last %}
             &nbsp;
