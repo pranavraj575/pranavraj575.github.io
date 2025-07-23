@@ -12,8 +12,9 @@ expand_all_button: true
 <header class="post-header">
   <h1 class="post-title">
     Research Statement
-    <div class="float-right">
-      <button type="button" class="expanding-all" style="background-color:var(--global-bg-color);border-color:#00000000;padding:0 10px">expand all</button>
+    <div class="float-right expanding-all">
+      expand all
+    </div>
       {% if page.statement_pdf %}
         <a
           {% if page.statement_pdf contains '://' %}
@@ -23,11 +24,11 @@ expand_all_button: true
           {% endif %}
           target="_blank"
           rel="noopener noreferrer"
+          style="padding-right:10px"
         >
-          <i class="fa-solid fa-file-pdf"></i>
+          <i class="fa-solid fa-file-pdf float-left"></i>
         </a>
       {% endif %}
-    </div>
   </h1>
 </header>
 
