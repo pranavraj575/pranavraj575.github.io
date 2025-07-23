@@ -35,7 +35,7 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/aminals/index.html";
+            window.location.href = "/aminals/";
           },
         },{id: "dropdown-research-statement",
               title: "research statement",
@@ -73,7 +73,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/cat/";
+            window.location.href = "/aminals/2025/cat/";
           
         },
       },{id: "post-meevis",
@@ -84,7 +84,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/meebis/";
+            window.location.href = "/aminals/2025/meebis/";
           
         },
       },{id: "post-jinx",
@@ -95,7 +95,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/jinx/";
+            window.location.href = "/aminals/2025/jinx/";
           
         },
       },{id: "news-making-a-website",
