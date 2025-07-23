@@ -6,7 +6,13 @@
   {% if num_languages < 4 %}
     {% assign language_colwidth = 12 | divided_by: num_languages %}
   {% else %}
-    {% assign language_colwidth = 3 %}
+    {% assign rows_if_three_per_row = num_languages times: 1.0 | divided_by: 3.0 | ceil %}
+    {% assign rows_if_four_per_row = num_languages times: 1.0 | divided_by: 4.0 | ceil %}
+    {% if rows_if_three_per_row <= rows_if_four_per_row %}
+      {% assign language_colwidth = 4 %}
+    {% else %}
+      {% assign language_colwidth = 3 %}
+    {% endif %}
   {% endif %}
   {% for content in data[1] %}
     <div class="list-group col-md-{{ language_colwidth }}">
