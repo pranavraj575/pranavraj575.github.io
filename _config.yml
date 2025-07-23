@@ -86,7 +86,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: bloghaj # blog_name will be displayed in your blog page
 blog_description: desc in config
-permalink: /blog/:year/:title/
+permalink: /aminals/:year/:title/
 lsi: false # produce an index for related posts
 
 # Pagination
@@ -249,14 +249,14 @@ jekyll-archives:
   posts:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
     permalinks:
-      year: "/blog/:year/"
-      tags: "/blog/:type/:name/"
-      categories: "/blog/:type/:name/"
+      year: "/aminals/:year/"
+      tags: "/aminals/:type/:name/"
+      categories: "/aminals/:type/:name/"
   books:
     enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
 
 display_tags: [] # these tags will be displayed on the front page of your blog
-display_categories: ["cat-egory"] # these categories will be displayed on the front page of your blog
+display_categories: ["cat-egory", "dog-egory"] # these categories will be displayed on the front page of your blog
 category_icon: "<i class=\"fa-solid fa-inbox fa-sm\"></i>"
 
 # -----------------------------------------------------------------------------
