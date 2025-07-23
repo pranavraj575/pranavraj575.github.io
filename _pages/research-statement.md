@@ -55,7 +55,6 @@ By exploring complexities in both adversarial and cooperative systems, I plan to
   </div>
 </div>
 
-
 <div class="card mt-3 p-3">
   <h2 class="my_collapsible font-weight-medium">Multiagent Systems</h2>
   <div class="my_collapsible_content"> 
@@ -78,7 +77,6 @@ By exploring complexities in both adversarial and cooperative systems, I plan to
   </div>
 </div>
 
-
 <div class="card mt-3 p-3">
   <h2 class="my_collapsible font-weight-medium">Reinforcement Learning and Robotics</h2>
   <div class="my_collapsible_content"> 
@@ -97,8 +95,6 @@ By exploring complexities in both adversarial and cooperative systems, I plan to
     Overall, my work in this area is focused on improving efficient training methods to develop robotic agents more adept at complex tasks, with applications in domains like manufacturing and human-robot interaction.
   </div>
 </div>
-
-
 
 <div class="card mt-3 p-3">
   <h2 class="my_collapsible font-weight-medium">Future Research</h2>
@@ -148,15 +144,12 @@ By exploring complexities in both adversarial and cooperative systems, I plan to
   </div>
 </div>
 
-
-
 <div class="card mt-3 p-3">
-<h2 class="my_collapsible font-weight-medium">Broader Impact/Significance</h2>
-<div class="my_collapsible_content">
-
-My research seeks to improve strategic decision making in multiagent systems, creating well-coordinated and adaptable agents.
-This will lead to better understanding of the abilities and limitations of AI in decision making, as well as potentially providing insight to mechanisms of decision making in humans.
-Additionally, my work has practical applications in areas that would benefit from strategic collaborative agents, such as healthcare, industry, and autonomous exploration.
-Overall, I hope to contribute to a future where autonomous agents can act strategically and cooperatively in complex real-world scenarios.
-</div>
+  <h2 class="my_collapsible font-weight-medium">Broader Impact/Significance</h2>
+  <div class="my_collapsible_content">
+    My research seeks to improve strategic decision making in multiagent systems, creating well-coordinated and adaptable agents.
+    This will lead to better understanding of the abilities and limitations of AI in decision making, as well as potentially providing insight to mechanisms of decision making in humans.
+    Additionally, my work has practical applications in areas that would benefit from strategic collaborative agents, such as healthcare, industry, and autonomous exploration.
+    Overall, I hope to contribute to a future where autonomous agents can act strategically and cooperatively in complex real-world scenarios.
+  </div>
 </div>
