@@ -67,7 +67,7 @@ ninja.data = [{
               },
             },{id: "post-high-quality-wildlife-photography",
         
-          title: "High-quality wildlife photography",
+          title: "high-quality wildlife photography",
         
         description: "",
         section: "Posts",
