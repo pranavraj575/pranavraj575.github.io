@@ -9,9 +9,9 @@ let toggleThemeSetting = () => {
   } else if (themeSetting == "light") {
     setThemeSetting("dark");
   } else if (themeSetting == "dark") {
-    setThemeSetting("abomination");
-  } else if (themeSetting == "abomination") {
     setThemeSetting("light");
+  } else if (themeSetting == "abomination") {
+    setThemeSetting("dark");
   } else {
     setThemeSetting("system");
   }
