@@ -345,7 +345,7 @@ ninja.data = [
   {%- endif -%}
 ];
 
-category_thingies = [
+list_of_category_lists = [
   {%- for collection in site.collections -%}
     {%- if collection.label == 'posts' and site.posts_in_search == false -%}
       {% continue %}
@@ -355,46 +355,50 @@ category_thingies = [
     {%- else -%}
       {%- assign this_collection_label = collection.label -%}
     {%- endif -%}
-    {%- for item in collection.docs -%}
-      {%- for category in item.categories -%}
-        {
-          {%- assign title = category | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
-          id: "category-{{ this_collection_label }}-{{ title | slugify }}",
-          title: '{{ title | escape | emojify | truncatewords: 13 }}',
-          description: "{{ category | strip_html | strip_newlines | escape | strip }}",
-          section: "{{ this_collection_label }} categories",
-          {%- unless item.inline -%}
-            handler: () => {
-              window.location.href = "{{ this_collection_label | append: '/category/' | append: category | relative_url }}";
-            },
-          {%- endunless -%}
-        },
+    [
+      {%- for item in collection.docs -%}
+        {%- for category in item.categories -%}
+          {
+            {%- assign title = category | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
+            id: "category-{{ this_collection_label }}-{{ title | slugify }}",
+            title: '{{ title | escape | emojify | truncatewords: 13 }}',
+            description: "{{ category | strip_html | strip_newlines | escape | strip }}",
+            section: "{{ this_collection_label }} categories",
+            {%- unless item.inline -%}
+              handler: () => {
+                window.location.href = "{{ this_collection_label | append: '/category/' | append: category | relative_url }}";
+              },
+            {%- endunless -%}
+          },
+        {%- endfor -%}
       {%- endfor -%}
-    {%- endfor -%}
+    ],
   {%- endfor -%}
 ];
 
-//count occurrences of each tag
-countegory_thingies = {};
-for (i = 0; i < category_thingies.length; i++){
-  if (!(category_thingies[i] in countegory_thingies)){
-    countegory_thingies[category_thingies[i]] = 0;
-  }
-  countegory_thingies[category_thingies[i]] += 1;
-}
-
-// deduplicate ids
-for (i = 0; i < category_thingies.length; i++){
-  for (j = i + 1; j < category_thingies.length; j++){
-    if (category_thingies[i].id == category_thingies[j].id){
-      category_thingies.splice(j, 1); // splice removes the spliced element from list for some reason
-      j -= 1;
+for (category_list in list_of_category_lists){
+  //count occurrences of each tag
+  countegory_thingies = {};
+  for (i = 0; i < category_list.length; i++){
+    if (!(category_list[i] in countegory_thingies)){
+      countegory_thingies[category_list[i]] = 0;
     }
+    countegory_thingies[category_list[i]] += 1;
   }
-};
 
-// sort by occurrence
-category_thingies.sort(function(a,b){return countegory_thingies[a]-countegory_thingies[b];});
+  // deduplicate ids
+  for (i = 0; i < category_list.length; i++){
+    for (j = i + 1; j < category_list.length; j++){
+      if (category_list[i].id == category_list[j].id){
+        category_list.splice(j, 1); // splice removes the spliced element from list for some reason
+        j -= 1;
+      }
+    }
+  };
 
-// concatenate
-ninja.data = ninja.data.concat(category_thingies);
+  // sort by occurrence
+  category_list.sort(function(a,b){return countegory_thingies[b]-countegory_thingies[a];});
+
+  // concatenate
+  ninja.data = ninja.data.concat(category_list);
+}
