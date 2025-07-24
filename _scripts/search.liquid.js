@@ -394,7 +394,7 @@ for (i = 0; i < category_thingies.length; i++){
 };
 
 // sort by occurrence
-category_thingies.sort(function(a,b){return countegory_thingies[b]-countegory_thingies[a];});
+category_thingies.sort(function(a,b){return countegory_thingies[a]-countegory_thingies[b];});
 
 // concatenate
 ninja.data = ninja.data.concat(category_thingies);
