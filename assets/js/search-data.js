@@ -65,79 +65,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "https://www.coolmathgames.com/0-run-3";
               },
-            },{id: "post-high-quality-wildlife-photography",
-        
-          title: "high-quality wildlife photography",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/aminals/2025/cat/";
-          
-        },
-      },{id: "post-bird",
-        
-          title: "bird",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/aminals/2025/birb/";
-          
-        },
-      },{id: "post-roos",
-        
-          title: "roos",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/aminals/2025/roo/";
-          
-        },
-      },{id: "post-meevis",
-        
-          title: "meevis",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/aminals/2025/meebis/";
-          
-        },
-      },{id: "post-jinx",
-        
-          title: "jinx",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/aminals/2025/jinx/";
-          
-        },
-      },{id: "post-image-test",
-        
-          title: "image test",
-        
-        description: "this is what advanced image components could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/aminals/2024/advanced-images/";
-          
-        },
-      },{id: "news-making-a-website",
-          title: 'Making a website',
-          description: "",
-          section: "News",},{id: "news-starting-mld-phd-at-cmu",
-          title: 'Starting MLD PhD at CMU',
-          description: "",
-          section: "News",},{
+            },{
           id: 'social-email',
           title: 'email',
           section: 'Socials',
@@ -214,7 +142,79 @@ ninja.data = [{
       handler: () => {
         setThemeSetting("abomination");
       },
-    },];
+    },{id: "post-high-quality-wildlife-photography",
+        
+          title: "high-quality wildlife photography",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/cat/";
+          
+        },
+      },{id: "post-bird",
+        
+          title: "bird",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/birb/";
+          
+        },
+      },{id: "post-roos",
+        
+          title: "roos",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/roo/";
+          
+        },
+      },{id: "post-meevis",
+        
+          title: "meevis",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/meebis/";
+          
+        },
+      },{id: "post-jinx",
+        
+          title: "jinx",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/jinx/";
+          
+        },
+      },{id: "post-image-test",
+        
+          title: "image test",
+        
+        description: "this is what advanced image components could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2024/advanced-images/";
+          
+        },
+      },{id: "news-making-a-website",
+          title: 'Making a website',
+          description: "",
+          section: "News",},{id: "news-starting-mld-phd-at-cmu",
+          title: 'Starting MLD PhD at CMU',
+          description: "",
+          section: "News",},];
 
 list_of_category_lists = [[],
     [],[],
