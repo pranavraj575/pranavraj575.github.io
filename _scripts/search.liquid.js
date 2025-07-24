@@ -370,13 +370,26 @@ category_thingies = [
   {%- endfor -%}
 ];
 
-ninja.data.concat(category_thingies);
-// deduplicate ids (from categories/tags potentially)
-for (i = 0; i < ninja.data.length; i++){
-  for (j = i + 1; j < ninja.data.length; j++){
-    if (ninja.data[i].id == ninja.data[j].id){
-      ninja.data.splice(j, 1); // splice removes the spliced element from list for some reason
+// deduplicate ids
+for (i = 0; i < category_thingies.length; i++){
+  for (j = i + 1; j < category_thingies.length; j++){
+    if (category_thingies[i].id == category_thingies[j].id){
+      category_thingies.splice(j, 1); // splice removes the spliced element from list for some reason
       j -= 1;
     }
   }
 };
+
+//count occurrences of each tag
+countegory_thingies = {};
+for (i = 0; i < category_thingies.length; i++){
+  if (!(category_thingies[i] in countegory_thingies)){
+    countegory_thingies[category_thingies[i]] = 0;
+  }
+  countegory_thingies[category_thingies[i]] += 1;
+}
+
+// sort by occurrence
+category_thingies.sort(function(a,b){return countegory_thingies[b]-countegory_thingies[a];});
+
+ninja.data.concat(category_thingies);
