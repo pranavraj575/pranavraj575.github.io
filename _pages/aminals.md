@@ -89,7 +89,7 @@ pagination:
                     <p class="post-meta">
                       {% if site.display_read_times %} {{ read_time }} min read &nbsp; &middot; &nbsp; {% endif %}
                       <a href="{{ year | prepend: '/aminals/' | relative_url }}">
-                        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+                        {{ site.date_icon }} {{ year }} </a>
                     </p>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ pagination:
       </p>
       <p class="post-tags">
         <a href="{{ year | prepend: '/aminals/' | relative_url }}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+            {{ site.date_icon }} {{ year }} </a>
 
           {% if tags != "" %}
           &nbsp; &middot; &nbsp;
