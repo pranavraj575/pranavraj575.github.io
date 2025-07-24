@@ -380,10 +380,10 @@ for (let category_list of list_of_category_lists){
   //count occurrences of each tag
   countegory_thingies = {};
   for (let cat_egory of category_list){
-    if (!(cat_egory in countegory_thingies)){
-      countegory_thingies[cat_egory] = 0;
+    if (!(cat_egory.id in countegory_thingies)){
+      countegory_thingies[cat_egory.id] = 0;
     }
-    countegory_thingies[cat_egory] += 1;
+    countegory_thingies[cat_egory.id] += 1;
   }
 
   // deduplicate ids
@@ -397,10 +397,8 @@ for (let category_list of list_of_category_lists){
   };
 
   // sort by occurrence
-  category_list.sort(function(a,b){return countegory_thingies[b]-countegory_thingies[a];});
-  for (let cat_egory of category_list){
-    cat_egory.title = cat_egory.title +" "+String(countegory_thingies[cat_egory])
-  }
+  category_list.sort(function(a,b){return countegory_thingies[b.id]-countegory_thingies[a.id];});
+
   // concatenate
   ninja.data = ninja.data.concat(category_list);
 }
