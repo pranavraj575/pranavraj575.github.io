@@ -370,6 +370,15 @@ category_thingies = [
   {%- endfor -%}
 ];
 
+//count occurrences of each tag
+countegory_thingies = {};
+for (i = 0; i < category_thingies.length; i++){
+  if (!(category_thingies[i] in countegory_thingies)){
+    countegory_thingies[category_thingies[i]] = 0;
+  }
+  countegory_thingies[category_thingies[i]] += 1;
+}
+
 // deduplicate ids
 for (i = 0; i < category_thingies.length; i++){
   for (j = i + 1; j < category_thingies.length; j++){
@@ -379,15 +388,6 @@ for (i = 0; i < category_thingies.length; i++){
     }
   }
 };
-
-//count occurrences of each tag
-countegory_thingies = {};
-for (i = 0; i < category_thingies.length; i++){
-  if (!(category_thingies[i] in countegory_thingies)){
-    countegory_thingies[category_thingies[i]] = 0;
-  }
-  countegory_thingies[category_thingies[i]] += 1;
-}
 
 // sort by occurrence
 category_thingies.sort(function(a,b){return countegory_thingies[b]-countegory_thingies[a];});
