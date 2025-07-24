@@ -248,14 +248,14 @@ list_of_category_lists = [[],[],[{id: "category-aminals-sample-posts",
                 window.location.href = "/aminals/category/cat-egory";
               },},],[],];
 
-for (category_list in list_of_category_lists){
+for (let category_list of list_of_category_lists){
   //count occurrences of each tag
   countegory_thingies = {};
-  for (i = 0; i < category_list.length; i++){
-    if (!(category_list[i] in countegory_thingies)){
-      countegory_thingies[category_list[i]] = 0;
+  for (let cat_egory of category_list){
+    if (!(cat_egory in countegory_thingies)){
+      countegory_thingies[cat_egory] = 0;
     }
-    countegory_thingies[category_list[i]] += 1;
+    countegory_thingies[cat_egory] += 1;
   }
 
   // deduplicate ids
