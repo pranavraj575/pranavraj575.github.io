@@ -392,4 +392,5 @@ for (i = 0; i < category_thingies.length; i++){
 // sort by occurrence
 category_thingies.sort(function(a,b){return countegory_thingies[b]-countegory_thingies[a];});
 
-ninja.data.concat(category_thingies);
+// concatenate
+ninja.data = ninja.data.concat(category_thingies);
