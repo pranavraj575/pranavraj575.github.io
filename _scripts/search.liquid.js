@@ -363,7 +363,7 @@ list_of_category_lists = [
             id: "category-{{ this_collection_label }}-{{ title | slugify }}",
             title: '{{ title | escape | emojify | truncatewords: 13 }}',
             description: "{{ category | strip_html | strip_newlines | escape | strip }}",
-            section: "{{site.category_icon}} {{ this_collection_label }} categories",
+            section: "{{ this_collection_label }} categories",
             handler: () => {
               window.location.href = "{{ this_collection_label | append: '/category/' | append: category | relative_url }}";
             },
@@ -379,7 +379,7 @@ list_of_category_lists = [
             id: "tag-{{ this_collection_label }}-{{ title | slugify }}",
             title: '{{ title | escape | emojify | truncatewords: 13 }}',
             description: "{{ tagory | strip_html | strip_newlines | escape | strip }}",
-            section: "{{site.tag_icon}} {{ this_collection_label }} tags",
+            section: "{{ this_collection_label }} tags",
             handler: () => {
               window.location.href = "{{ this_collection_label | append: '/tag/' | append: tagory | relative_url }}";
             },
