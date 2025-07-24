@@ -366,3 +366,13 @@ ninja.data = [
     {%- endfor -%}
   {%- endfor -%}
 ];
+
+// deduplicate ids (from categories/tags potentially)
+for (i = 0; i < ninja.data.length; i++){
+  for (j = i + 1; j < ninja.data.length; j++){
+    if (ninja.data[i].id == ninja.data[j].id){
+      ninja.data.splice(j, 1); // splice removes the spliced element from list for some reason
+      j -= 1;
+    }
+  }
+};
