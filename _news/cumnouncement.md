@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Starting MLD PhD at CMU
+Starting MLD PhD at CMU (hooray!)
