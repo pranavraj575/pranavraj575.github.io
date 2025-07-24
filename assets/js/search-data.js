@@ -214,34 +214,34 @@ ninja.data = [{
       handler: () => {
         setThemeSetting("system");
       },
-    },{id: "category-aminals-cat-egory",
-          title: 'cat-egory',
-          description: "cat-egory",
-          section: "Post categories",handler: () => {
-              window.location.href = "/aminals/category/cat-egory";
-            },},{id: "category-aminals-birb",
-          title: 'birb',
-          description: "birb",
-          section: "Post categories",handler: () => {
-              window.location.href = "/aminals/category/birb";
-            },},{id: "category-aminals-dog-egory",
-          title: 'dog-egory',
-          description: "dog-egory",
-          section: "Post categories",handler: () => {
-              window.location.href = "/aminals/category/dog-egory";
-            },},{id: "category-aminals-cat-egory",
-          title: 'cat-egory',
-          description: "cat-egory",
-          section: "Post categories",handler: () => {
-              window.location.href = "/aminals/category/cat-egory";
-            },},{id: "category-aminals-dog-egory",
-          title: 'dog-egory',
-          description: "dog-egory",
-          section: "Post categories",handler: () => {
-              window.location.href = "/aminals/category/dog-egory";
-            },},{id: "category-aminals-sample-posts",
+    },{id: "category-posts-sample-posts",
           title: 'sample-posts',
           description: "sample-posts",
-          section: "Post categories",handler: () => {
-              window.location.href = "/aminals/category/sample-posts";
+          section: "posts categories",handler: () => {
+              window.location.href = "/posts/category/sample-posts";
+            },},{id: "category-posts-dog-egory",
+          title: 'dog-egory',
+          description: "dog-egory",
+          section: "posts categories",handler: () => {
+              window.location.href = "/posts/category/dog-egory";
+            },},{id: "category-posts-cat-egory",
+          title: 'cat-egory',
+          description: "cat-egory",
+          section: "posts categories",handler: () => {
+              window.location.href = "/posts/category/cat-egory";
+            },},{id: "category-posts-dog-egory",
+          title: 'dog-egory',
+          description: "dog-egory",
+          section: "posts categories",handler: () => {
+              window.location.href = "/posts/category/dog-egory";
+            },},{id: "category-posts-birb",
+          title: 'birb',
+          description: "birb",
+          section: "posts categories",handler: () => {
+              window.location.href = "/posts/category/birb";
+            },},{id: "category-posts-cat-egory",
+          title: 'cat-egory',
+          description: "cat-egory",
+          section: "posts categories",handler: () => {
+              window.location.href = "/posts/category/cat-egory";
             },},];
