@@ -344,8 +344,10 @@ ninja.data = [
     },
   {%- endif -%}
 
-
   {%- for collection in site.collections -%}
+    {%- if collection.label == 'posts' and site.posts_in_search == false -%}
+      {% continue %}
+    {%- endif -%}
     {%- for item in collection.docs -%}
       {%- for category in item.categories -%}
         {
