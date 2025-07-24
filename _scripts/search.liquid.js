@@ -355,7 +355,7 @@ ninja.data = [
           section: "Post categories",
           {%- unless item.inline -%}
             handler: () => {
-              window.location.href = "{{ aminals | append: '/category/' | append: category | relative_url }}";
+              window.location.href = "{{ 'aminals' | append: '/category/' | append: category | relative_url }}";
             },
           {%- endunless -%}
         },
