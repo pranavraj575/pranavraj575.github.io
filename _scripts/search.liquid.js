@@ -325,21 +325,21 @@ ninja.data = [
       },
     },
     {
-      id: 'abomination-theme',
-      title: 'Burn your retinas',
-      description: 'Change the theme of the site to Abomination',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("abomination");
-      },
-    },
-    {
       id: 'system-theme',
       title: 'Use system default theme',
       description: 'Change the theme of the site to System Default',
       section: 'Theme',
       handler: () => {
         setThemeSetting("system");
+      },
+    },
+    {
+      id: 'abomination-theme',
+      title: 'Burn your retinas',
+      description: 'Change the theme of the site to Abomination',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("abomination");
       },
     },
   {%- endif -%}
