@@ -84,7 +84,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/aminals/2025/bird/";
+            window.location.href = "/aminals/2025/birb/";
           
         },
       },{id: "post-roos",
