@@ -214,7 +214,9 @@ ninja.data = [{
       handler: () => {
         setThemeSetting("system");
       },
-    },{id: "category-posts-sample-posts",
+    },];
+
+category_thingies = [{id: "category-posts-sample-posts",
           title: 'sample-posts',
           description: "sample-posts",
           section: "posts categories",handler: () => {
@@ -246,6 +248,7 @@ ninja.data = [{
               window.location.href = "/posts/category/cat-egory";
             },},];
 
+ninja.data.concat(category_thingies);
 // deduplicate ids (from categories/tags potentially)
 for (i = 0; i < ninja.data.length; i++){
   for (j = i + 1; j < ninja.data.length; j++){
