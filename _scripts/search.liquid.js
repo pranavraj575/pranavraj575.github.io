@@ -344,6 +344,9 @@ ninja.data = [
     },
   {%- endif -%}
 
+];
+
+category_thingies = [
   {%- for collection in site.collections -%}
     {%- if collection.label == 'posts' and site.posts_in_search == false -%}
       {% continue %}
@@ -367,6 +370,7 @@ ninja.data = [
   {%- endfor -%}
 ];
 
+ninja.data.concat(category_thingies);
 // deduplicate ids (from categories/tags potentially)
 for (i = 0; i < ninja.data.length; i++){
   for (j = i + 1; j < ninja.data.length; j++){
