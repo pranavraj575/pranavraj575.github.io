@@ -216,36 +216,36 @@ ninja.data = [{
       },
     },];
 
-category_thingies = [{id: "category-posts-sample-posts",
+category_thingies = [{id: "category-aminals-sample-posts",
           title: 'sample-posts',
           description: "sample-posts",
-          section: "posts categories",handler: () => {
-              window.location.href = "/posts/category/sample-posts";
-            },},{id: "category-posts-dog-egory",
+          section: "aminals categories",handler: () => {
+              window.location.href = "/aminals/category/sample-posts";
+            },},{id: "category-aminals-dog-egory",
           title: 'dog-egory',
           description: "dog-egory",
-          section: "posts categories",handler: () => {
-              window.location.href = "/posts/category/dog-egory";
-            },},{id: "category-posts-cat-egory",
+          section: "aminals categories",handler: () => {
+              window.location.href = "/aminals/category/dog-egory";
+            },},{id: "category-aminals-cat-egory",
           title: 'cat-egory',
           description: "cat-egory",
-          section: "posts categories",handler: () => {
-              window.location.href = "/posts/category/cat-egory";
-            },},{id: "category-posts-dog-egory",
+          section: "aminals categories",handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
+            },},{id: "category-aminals-dog-egory",
           title: 'dog-egory',
           description: "dog-egory",
-          section: "posts categories",handler: () => {
-              window.location.href = "/posts/category/dog-egory";
-            },},{id: "category-posts-birb",
+          section: "aminals categories",handler: () => {
+              window.location.href = "/aminals/category/dog-egory";
+            },},{id: "category-aminals-birb",
           title: 'birb',
           description: "birb",
-          section: "posts categories",handler: () => {
-              window.location.href = "/posts/category/birb";
-            },},{id: "category-posts-cat-egory",
+          section: "aminals categories",handler: () => {
+              window.location.href = "/aminals/category/birb";
+            },},{id: "category-aminals-cat-egory",
           title: 'cat-egory',
           description: "cat-egory",
-          section: "posts categories",handler: () => {
-              window.location.href = "/posts/category/cat-egory";
+          section: "aminals categories",handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
             },},];
 
 //count occurrences of each tag
