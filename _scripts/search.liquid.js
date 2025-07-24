@@ -398,7 +398,9 @@ for (let category_list of list_of_category_lists){
 
   // sort by occurrence
   category_list.sort(function(a,b){return countegory_thingies[b]-countegory_thingies[a];});
-
+  for (let cat_egory of category_list){
+    cat_egory.title = cat_egory.title +" "+String(countegory_thingies[cat_egory])
+  }
   // concatenate
   ninja.data = ninja.data.concat(category_list);
 }
