@@ -49,6 +49,7 @@
           {% endif %}
           {% if content.topics %}
             <div class="list-groups">
+              <div class="col-md-12 table-dark" style="margin-bottom:3px;text-align:center"><b>Relevant Coursework</b></div>
               {% for topic in content.topics %}
                 <div class="list-group col-md-6">
                   <table class="table-cv list-group-table">
@@ -66,7 +67,7 @@
                         {% for course in topic.courses %}
                           {% assign i = i | plus: 1 %}
                         {% endfor %}
-                        <td colspan="{{ i }}" class="list-group-category">{{ topic.name }}</td>
+                        <td colspan="{{ i }}" class="list-group-category"><i>{{ topic.name }}</i></td>
                       </tr>
                       {% for course in topic.courses %}
                         <tr>
