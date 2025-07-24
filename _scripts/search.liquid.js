@@ -343,7 +343,6 @@ ninja.data = [
       },
     },
   {%- endif -%}
-
 ];
 
 category_thingies = [
@@ -351,17 +350,22 @@ category_thingies = [
     {%- if collection.label == 'posts' and site.posts_in_search == false -%}
       {% continue %}
     {%- endif -%}
+    {%- if collection.label == 'posts' -%}
+      {%- assign this_collection_label = 'aminals' -%}
+    {%- else -%}
+      {%- assign this_collection_label = collection.label -%}
+    {%- endif -%}
     {%- for item in collection.docs -%}
       {%- for category in item.categories -%}
         {
           {%- assign title = category | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
-          id: "category-{{ collection.label }}-{{ title | slugify }}",
+          id: "category-{{ this_collection_label }}-{{ title | slugify }}",
           title: '{{ title | escape | emojify | truncatewords: 13 }}',
           description: "{{ category | strip_html | strip_newlines | escape | strip }}",
-          section: "{{ collection.label }} categories",
+          section: "{{ this_collection_label }} categories",
           {%- unless item.inline -%}
             handler: () => {
-              window.location.href = "{{ collection.label | append: '/category/' | append: category | relative_url }}";
+              window.location.href = "{{ this_collection_label | append: '/category/' | append: category | relative_url }}";
             },
           {%- endunless -%}
         },
