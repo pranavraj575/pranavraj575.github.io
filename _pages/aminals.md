@@ -38,7 +38,7 @@ pagination:
     <ul class="p-0 m-0">
       {% for tag in site.display_tags %}
         <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/aminals/tag/' | relative_url }}">{{ tag }}</a>
+          {{ site.tag_icon }} <a href="{{ tag | slugify | prepend: '/aminals/tag/' | relative_url }}">{{ tag }}</a>
         </li>
         {% unless forloop.last %}
           <p>&bull;</p>
@@ -158,7 +158,7 @@ pagination:
           &nbsp; &middot; &nbsp;
             {% for tag in post.tags %}
             <a href="{{ tag | slugify | prepend: '/aminals/tag/' | relative_url }}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+              {{ site.tag_icon }} {{ tag }}</a>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}

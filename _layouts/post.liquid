@@ -33,9 +33,9 @@ layout: default
         &nbsp; &middot; &nbsp;
         {% for tag in page.tags %}
           {% if url_beginning == '/aminals/' %}
-            <a href="{{ tag | slugify | prepend: '/aminals/tag/' | relative_url }}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+            <a href="{{ tag | slugify | prepend: '/aminals/tag/' | relative_url }}"> {{ site.tag_icon }} {{ tag }}</a>
           {% else %}
-            <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}
+            {{ site.tag_icon }} {{ tag }}
           {% endif %}
           {% unless forloop.last %}
             &nbsp;

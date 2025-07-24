@@ -81,7 +81,7 @@ layout: default
       {% if tags != '' %}
         &nbsp;&middot;&nbsp;
         {% for tag in page.tags %}
-          <a href="{{ tag | slugify | prepend: '/books/tag/' | relative_url }}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+          <a href="{{ tag | slugify | prepend: '/books/tag/' | relative_url }}"> {{ site.tag_icon }} {{ tag }}</a>
           {% unless forloop.last %}
             &nbsp;
           {% endunless %}
