@@ -344,23 +344,23 @@ ninja.data = [
     },
   {%- endif -%}
 
-  {%- if site.posts_in_search -%}
-    {%- for post in site.posts -%}
-      {%- for category in post.categories -%}
+
+  {%- for collection in site.collections -%}
+    {%- for item in collection.docs -%}
+      {%- for category in item.categories -%}
         {
           {%- assign title = category | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
-          id: "category-aminals-{{ title | slugify }}",
+          id: "category-{{ collection.label }}-{{ title | slugify }}",
           title: '{{ title | escape | emojify | truncatewords: 13 }}',
           description: "{{ category | strip_html | strip_newlines | escape | strip }}",
-          section: "Post categories",
+          section: "{{ collection.label }} categories",
           {%- unless item.inline -%}
             handler: () => {
-              window.location.href = "{{ 'aminals' | append: '/category/' | append: category | relative_url }}";
+              window.location.href = "{{ collection.label | append: '/category/' | append: category | relative_url }}";
             },
           {%- endunless -%}
         },
       {%- endfor -%}
     {%- endfor -%}
-  {%- endif -%}
-
+  {%- endfor -%}
 ];
