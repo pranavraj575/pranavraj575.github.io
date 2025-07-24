@@ -214,4 +214,34 @@ ninja.data = [{
       handler: () => {
         setThemeSetting("system");
       },
-    },];
+    },{id: "category-aminals-cat-egory",
+          title: 'cat-egory',
+          description: "cat-egory",
+          section: "Post categories",handler: () => {
+              window.location.href = "/category/cat-egory";
+            },},{id: "category-aminals-birb",
+          title: 'birb',
+          description: "birb",
+          section: "Post categories",handler: () => {
+              window.location.href = "/category/birb";
+            },},{id: "category-aminals-dog-egory",
+          title: 'dog-egory',
+          description: "dog-egory",
+          section: "Post categories",handler: () => {
+              window.location.href = "/category/dog-egory";
+            },},{id: "category-aminals-cat-egory",
+          title: 'cat-egory',
+          description: "cat-egory",
+          section: "Post categories",handler: () => {
+              window.location.href = "/category/cat-egory";
+            },},{id: "category-aminals-dog-egory",
+          title: 'dog-egory',
+          description: "dog-egory",
+          section: "Post categories",handler: () => {
+              window.location.href = "/category/dog-egory";
+            },},{id: "category-aminals-sample-posts",
+          title: 'sample-posts',
+          description: "sample-posts",
+          section: "Post categories",handler: () => {
+              window.location.href = "/category/sample-posts";
+            },},];
