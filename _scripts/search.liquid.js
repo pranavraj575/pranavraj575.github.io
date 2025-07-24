@@ -364,11 +364,25 @@ list_of_category_lists = [
             title: '{{ title | escape | emojify | truncatewords: 13 }}',
             description: "{{ category | strip_html | strip_newlines | escape | strip }}",
             section: "{{ this_collection_label }} categories",
-            {%- unless item.inline -%}
-              handler: () => {
-                window.location.href = "{{ this_collection_label | append: '/category/' | append: category | relative_url }}";
-              },
-            {%- endunless -%}
+            handler: () => {
+              window.location.href = "{{ this_collection_label | append: '/category/' | append: category | relative_url }}";
+            },
+          },
+        {%- endfor -%}
+      {%- endfor -%}
+    ],
+    [
+      {%- for item in collection.docs -%}
+        {%- for tagory in item.tags -%}
+          {
+            {%- assign title = tagory | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
+            id: "tag-{{ this_collection_label }}-{{ title | slugify }}",
+            title: '{{ title | escape | emojify | truncatewords: 13 }}',
+            description: "{{ tagory | strip_html | strip_newlines | escape | strip }}",
+            section: "{{ this_collection_label }} tags",
+            handler: () => {
+              window.location.href = "{{ this_collection_label | append: '/tag/' | append: tagory | relative_url }}";
+            },
           },
         {%- endfor -%}
       {%- endfor -%}
