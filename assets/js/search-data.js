@@ -221,42 +221,42 @@ list_of_category_lists = [[],
     [],[{id: "category-aminals-sample-posts",
             title: 'sample-posts',
             description: "sample-posts",
-            section: "aminals categories",
+            section: "<i class="fa-solid fa-inbox fa-sm"></i> aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/sample-posts";
             },
           },{id: "category-aminals-dog-egory",
             title: 'dog-egory',
             description: "dog-egory",
-            section: "aminals categories",
+            section: "<i class="fa-solid fa-inbox fa-sm"></i> aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/dog-egory";
             },
           },{id: "category-aminals-cat-egory",
             title: 'cat-egory',
             description: "cat-egory",
-            section: "aminals categories",
+            section: "<i class="fa-solid fa-inbox fa-sm"></i> aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/cat-egory";
             },
           },{id: "category-aminals-dog-egory",
             title: 'dog-egory',
             description: "dog-egory",
-            section: "aminals categories",
+            section: "<i class="fa-solid fa-inbox fa-sm"></i> aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/dog-egory";
             },
           },{id: "category-aminals-birb",
             title: 'birb',
             description: "birb",
-            section: "aminals categories",
+            section: "<i class="fa-solid fa-inbox fa-sm"></i> aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/birb";
             },
           },{id: "category-aminals-cat-egory",
             title: 'cat-egory',
             description: "cat-egory",
-            section: "aminals categories",
+            section: "<i class="fa-solid fa-inbox fa-sm"></i> aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/cat-egory";
             },
@@ -264,14 +264,14 @@ list_of_category_lists = [[],
     [{id: "tag-aminals-formatting",
             title: 'formatting',
             description: "formatting",
-            section: "aminals tags",
+            section: "<i class="fa-solid fa-hashtag fa-sm"></i> aminals tags",
             handler: () => {
               window.location.href = "/aminals/tag/formatting";
             },
           },{id: "tag-aminals-images",
             title: 'images',
             description: "images",
-            section: "aminals tags",
+            section: "<i class="fa-solid fa-hashtag fa-sm"></i> aminals tags",
             handler: () => {
               window.location.href = "/aminals/tag/images";
             },
