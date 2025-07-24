@@ -216,59 +216,61 @@ ninja.data = [{
       },
     },];
 
-category_thingies = [{id: "category-aminals-sample-posts",
-          title: 'sample-posts',
-          description: "sample-posts",
-          section: "aminals categories",handler: () => {
-              window.location.href = "/aminals/category/sample-posts";
-            },},{id: "category-aminals-dog-egory",
-          title: 'dog-egory',
-          description: "dog-egory",
-          section: "aminals categories",handler: () => {
-              window.location.href = "/aminals/category/dog-egory";
-            },},{id: "category-aminals-cat-egory",
-          title: 'cat-egory',
-          description: "cat-egory",
-          section: "aminals categories",handler: () => {
-              window.location.href = "/aminals/category/cat-egory";
-            },},{id: "category-aminals-dog-egory",
-          title: 'dog-egory',
-          description: "dog-egory",
-          section: "aminals categories",handler: () => {
-              window.location.href = "/aminals/category/dog-egory";
-            },},{id: "category-aminals-birb",
-          title: 'birb',
-          description: "birb",
-          section: "aminals categories",handler: () => {
-              window.location.href = "/aminals/category/birb";
-            },},{id: "category-aminals-cat-egory",
-          title: 'cat-egory',
-          description: "cat-egory",
-          section: "aminals categories",handler: () => {
-              window.location.href = "/aminals/category/cat-egory";
-            },},];
+list_of_category_lists = [[],[],[{id: "category-aminals-sample-posts",
+            title: 'sample-posts',
+            description: "sample-posts",
+            section: "aminals categories",handler: () => {
+                window.location.href = "/aminals/category/sample-posts";
+              },},{id: "category-aminals-dog-egory",
+            title: 'dog-egory',
+            description: "dog-egory",
+            section: "aminals categories",handler: () => {
+                window.location.href = "/aminals/category/dog-egory";
+              },},{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",handler: () => {
+                window.location.href = "/aminals/category/cat-egory";
+              },},{id: "category-aminals-dog-egory",
+            title: 'dog-egory',
+            description: "dog-egory",
+            section: "aminals categories",handler: () => {
+                window.location.href = "/aminals/category/dog-egory";
+              },},{id: "category-aminals-birb",
+            title: 'birb',
+            description: "birb",
+            section: "aminals categories",handler: () => {
+                window.location.href = "/aminals/category/birb";
+              },},{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",handler: () => {
+                window.location.href = "/aminals/category/cat-egory";
+              },},],[],];
 
-//count occurrences of each tag
-countegory_thingies = {};
-for (i = 0; i < category_thingies.length; i++){
-  if (!(category_thingies[i] in countegory_thingies)){
-    countegory_thingies[category_thingies[i]] = 0;
-  }
-  countegory_thingies[category_thingies[i]] += 1;
-}
-
-// deduplicate ids
-for (i = 0; i < category_thingies.length; i++){
-  for (j = i + 1; j < category_thingies.length; j++){
-    if (category_thingies[i].id == category_thingies[j].id){
-      category_thingies.splice(j, 1); // splice removes the spliced element from list for some reason
-      j -= 1;
+for (category_list in list_of_category_lists){
+  //count occurrences of each tag
+  countegory_thingies = {};
+  for (i = 0; i < category_list.length; i++){
+    if (!(category_list[i] in countegory_thingies)){
+      countegory_thingies[category_list[i]] = 0;
     }
+    countegory_thingies[category_list[i]] += 1;
   }
-};
 
-// sort by occurrence
-category_thingies.sort(function(a,b){return countegory_thingies[a]-countegory_thingies[b];});
+  // deduplicate ids
+  for (i = 0; i < category_list.length; i++){
+    for (j = i + 1; j < category_list.length; j++){
+      if (category_list[i].id == category_list[j].id){
+        category_list.splice(j, 1); // splice removes the spliced element from list for some reason
+        j -= 1;
+      }
+    }
+  };
 
-// concatenate
-ninja.data = ninja.data.concat(category_thingies);
+  // sort by occurrence
+  category_list.sort(function(a,b){return countegory_thingies[b]-countegory_thingies[a];});
+
+  // concatenate
+  ninja.data = ninja.data.concat(category_list);
+}
