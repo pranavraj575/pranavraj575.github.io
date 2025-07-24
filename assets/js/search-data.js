@@ -211,8 +211,8 @@ ninja.data = [{
       },{id: "news-making-a-website",
           title: 'Making a website',
           description: "",
-          section: "News",},{id: "news-starting-mld-phd-at-cmu",
-          title: 'Starting MLD PhD at CMU',
+          section: "News",},{id: "news-starting-mld-phd-at-cmu-hooray",
+          title: 'Starting MLD PhD at CMU (hooray!)',
           description: "",
           section: "News",},];
 
