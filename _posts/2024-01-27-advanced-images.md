@@ -48,6 +48,11 @@ The images in this post are all zoomable, arranged into different mini-galleries
 <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" /></a>
 <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" data-lightbox="roadtrip"><img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" /></a>
 
+<a href="/assets/img/prof_pic.jpg" data-lightbox="roadtrip"><img src="/assets/img/prof_pic.jpg" /></a>
+<a href="/assets/img/cool_bunny.jpg" data-lightbox="roadtrip"><img src="/assets/img/cool_bunny.jpg" /></a>
+<a href="/assets/img/prof_pic.jpg" data-lightbox="roadtrip"><img src="/assets/img/prof_pic.jpg" /></a>
+
+
 ---
 
 ## [PhotoSwipe](https://photoswipe.com/)
@@ -86,6 +91,40 @@ The images in this post are all zoomable, arranged into different mini-galleries
   </div>
 </div>
 
+<div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+  <a href="/assets/img/cool_bunny.jpg"
+    data-pswp-width="1669"
+    data-pswp-height="2500"
+    target="_blank">
+    <img src="/assets/img/cool_bunny.jpg" alt="" />
+  </a>
+  <!-- cropped thumbnail: -->
+  <a href="/assets/img/prof_pic.jpg"
+    data-pswp-width="1875"
+    data-pswp-height="2500"
+    data-cropped="true"
+    target="_blank">
+    <img src="/assets/img/prof_pic.jpg" alt="" />
+  </a>
+  <!-- data-pswp-src with custom URL in href -->
+  <a href="https://unsplash.com"
+    data-pswp-src="/assets/img/cool_bunny.jpg"
+    data-pswp-width="2500"
+    data-pswp-height="1666"
+    target="_blank">
+    <img src="/assets/img/cool_bunny.jpg" alt="" />
+  </a>
+  <!-- wrapped with any element: -->
+  <div>
+    <a href="/assets/img/prof_pic.jpg"
+      data-pswp-width="2500"
+      data-pswp-height="1667"
+      target="_blank">
+      <img src="/assets/img/prof_pic.jpg" alt="" />
+    </a>
+  </div>
+</div>
+
 ---
 
 ## [Spotlight JS](https://nextapps-de.github.io/spotlight/)
@@ -104,14 +143,14 @@ The images in this post are all zoomable, arranged into different mini-galleries
 </div>
 <!-- Group 2 -->
 <div class="spotlight-group">
-    <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-2500.jpg">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-200.jpg" />
+    <a class="spotlight" href="/assets/img/cool_bunny.jpg">
+        <img src="/assets/img/cool_bunny.jpg" />
     </a>
-    <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-200.jpg" />
+    <a class="spotlight" href="/assets/img/prof_pic.jpg">
+        <img src="/assets/img/prof_pic.jpg" />
     </a>
-    <a class="spotlight" href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg">
-        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" />
+    <a class="spotlight" href="/assets/img/cool_bunny.jpg">
+        <img src="/assets/img/cool_bunny.jpg" />
     </a>
 </div>
 
