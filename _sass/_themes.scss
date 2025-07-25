@@ -245,11 +245,17 @@ html[goose-setting="silly"] {
   #silly-goose {
     display: block;
   }
+  #serious-goose {
+    display: none;
+  }
 }
 
 
 html[goose-setting="serious"] {
   #silly-goose {
     display: none;
+  }
+  #serious-goose {
+    display: block;
   }
 }
