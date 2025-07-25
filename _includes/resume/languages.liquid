@@ -30,7 +30,17 @@
                   &nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
                 {% endif %}
               {% endif %}
-              {{ content.name }}{% if content.fluency %} ({{ content.fluency }}){% endif %}</h6>
+              {% if content.audio %}
+                <div>
+                <button onclick="playAudio()">
+              {% endif %}
+              {{ content.name }}{% if content.fluency %} ({{ content.fluency }}){% endif %}
+              {% if content.audio %}
+                </button>
+                <audio src="{{ content.audio }}" id="audioPlayer></audio>
+                </div>
+              {% endif %}
+              </h6>
             </td>
           </tr>
         </tbody>
