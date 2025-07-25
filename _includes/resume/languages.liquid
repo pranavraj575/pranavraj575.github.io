@@ -31,14 +31,11 @@
                 {% endif %}
               {% endif %}
               {% if content.audio %}
-                <div>
-                <button onclick="playAudio()">
+                <a href="{{ content.audio }}">
               {% endif %}
               {{ content.name }}{% if content.fluency %} ({{ content.fluency }}){% endif %}
               {% if content.audio %}
-                </button>
-                <audio src="{{ content.audio }}" id="audioPlayer></audio>
-                </div>
+                </a>
               {% endif %}
               </h6>
             </td>
