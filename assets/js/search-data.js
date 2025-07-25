@@ -110,7 +110,7 @@ ninja.data = [{
         },{
       id: 'light-theme',
       title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
+      description: 'Change the theme of the site to Light theme',
       section: 'Theme',
       handler: () => {
         setThemeSetting("light");
@@ -119,7 +119,7 @@ ninja.data = [{
     {
       id: 'dark-theme',
       title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
+      description: 'Change the theme of the site to Dark theme',
       section: 'Theme',
       handler: () => {
         setThemeSetting("dark");
@@ -128,7 +128,7 @@ ninja.data = [{
     {
       id: 'system-theme',
       title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
+      description: 'Change the theme of the site to System Default theme',
       section: 'Theme',
       handler: () => {
         setThemeSetting("system");
@@ -137,7 +137,7 @@ ninja.data = [{
     {
       id: 'abomination-theme',
       title: 'Burn your retinas',
-      description: 'Change the theme of the site to Abomination',
+      description: 'Change the theme of the site to Abomination theme',
       section: 'Theme',
       handler: () => {
         setThemeSetting("abomination");
