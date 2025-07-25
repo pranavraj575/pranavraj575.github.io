@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /research-statement
-title: "research&nbsp;statement"
+title: research statement
 excerpt: "past research summary, future research goals"
 author_profile: false
 statement_pdf: research_statement.pdf

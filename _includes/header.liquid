@@ -85,10 +85,10 @@
                   <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                     {% for child in p.children %}
                       {% if child.title == 'divider' %}
-                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-divider{% if child.silly %} silly-goose{% endif %}"></div>
                       {% else %}
                         <a
-                          class="dropdown-item {% if page.title == child.title %}active{% endif %}"
+                          class="dropdown-item{% if page.title == child.title %} active{% endif %}{% if child.silly %} silly-goose{% endif %}"
                           href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}"
                         >
                           {{- child.title -}}
@@ -107,7 +107,7 @@
                   {%- else -%}
                     {%- assign url = p.url -%}
                   {%- endif %}
-                  <a class="nav-link" href="{{ url | relative_url }}">
+                  <a class="nav-link{% if p.silly %} silly-goose{% endif %}" href="{{ url | relative_url }}">
                     {{- p.title }}
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>

@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /social-profiles
-title: "social&nbsp;profiles"
+title: social profiles
 excerpt: "info for socials"
 author_profile: false
 nav: false
