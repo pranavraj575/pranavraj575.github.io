@@ -58,13 +58,6 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/social-profiles";
               },
-            },{id: "dropdown-infinite-load-spell",
-              title: "infinite load spell",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/infinite-loop";
-              },
             },{id: "dropdown-run-3",
               title: "run 3",
               description: "",
