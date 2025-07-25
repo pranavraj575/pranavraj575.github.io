@@ -218,14 +218,7 @@ ninja.data = [{
 
 list_of_category_lists = [[],
     [],[],
-    [],[{id: "category-aminals-sample-posts",
-            title: 'sample-posts',
-            description: "sample-posts",
-            section: "aminals categories",
-            handler: () => {
-              window.location.href = "/aminals/category/sample-posts";
-            },
-          },{id: "category-aminals-dog-egory",
+    [],[{id: "category-aminals-dog-egory",
             title: 'dog-egory',
             description: "dog-egory",
             section: "aminals categories",
@@ -261,21 +254,7 @@ list_of_category_lists = [[],
               window.location.href = "/aminals/category/cat-egory";
             },
           },],
-    [{id: "tag-aminals-formatting",
-            title: 'formatting',
-            description: "formatting",
-            section: "aminals tags",
-            handler: () => {
-              window.location.href = "/aminals/tag/formatting";
-            },
-          },{id: "tag-aminals-images",
-            title: 'images',
-            description: "images",
-            section: "aminals tags",
-            handler: () => {
-              window.location.href = "/aminals/tag/images";
-            },
-          },],[],
+    [],[],
     [],];
 
 for (let category_list of list_of_category_lists){
