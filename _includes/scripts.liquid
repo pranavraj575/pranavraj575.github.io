@@ -336,27 +336,6 @@
 {% endif %}
 
 
-<script>
-  var silly_geese = document.getElementsByClassName("silly-goose");
-  var goose_setting = document.documentElement.getAttribute("goose-setting");
-  for (var i = 0; i < silly_geese.length; i++) {
-    if (goose_setting == "silly"){
-      silly_geese[i].style.display = "block";
-    } else {
-      silly_geese[i].style.display = "none";
-    }
-  }
-
-  var serious_geese = document.getElementsByClassName("serious-goose");
-  for (var i = 0; i < serious_geese.length; i++) {
-    if (goose_setting == "silly"){
-      serious_geese[i].style.display = "none";
-    } else {
-      serious_geese[i].style.display = "block";
-    }
-  }
-</script>
-
 {% if page.expand_all_button %}
   <script>
     var coll = document.getElementsByClassName("my_collapsible");
