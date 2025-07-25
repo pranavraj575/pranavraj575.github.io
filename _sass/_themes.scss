@@ -238,3 +238,18 @@ html[data-theme-setting="abomination"] {
     display: block;
   }
 }
+
+
+
+html[goose-setting="silly"] {
+  #silly-goose {
+    display: block;
+  }
+}
+
+
+html[goose-setting="serious"] {
+  #silly-goose {
+    display: none;
+  }
+}

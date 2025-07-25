@@ -24,6 +24,18 @@ let setThemeSetting = (themeSetting) => {
   document.documentElement.setAttribute("data-theme-setting", themeSetting);
 
   applyTheme();
+  //ACTIVATE SILLY GOOSE MODE, this cannot be turned off
+  if (themeSetting=="abomination"){
+     setGooseSetting("silly");
+  }
+};
+
+// Change the goose setting and apply the goose.
+let setGooseSetting = (gooseSetting) => {
+  localStorage.setItem("goose", gooseSetting);
+
+  document.documentElement.setAttribute("goose-setting", gooseSetting);
+
 };
 
 // Apply the computed dark or light theme to the website.
@@ -265,6 +277,14 @@ let determineThemeSetting = () => {
   }
   return themeSetting;
 };
+// Determine the goose state
+let determineGooseSetting = () => {
+  let gooseSetting = localStorage.getItem("goose");
+  if (gooseSetting != "silly") {
+    gooseSetting = "serious";
+  }
+  return gooseSetting;
+};
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
 // "system", the computed theme is determined based on the user's system preference.
@@ -284,8 +304,10 @@ let determineComputedTheme = () => {
 
 let initTheme = () => {
   let themeSetting = determineThemeSetting();
+  let gooseSetting = determineGooseSetting();
 
   setThemeSetting(themeSetting);
+  setGooseSetting(gooseSetting);
 
   // Add event listener to the theme toggle button.
   document.addEventListener("DOMContentLoaded", function () {
