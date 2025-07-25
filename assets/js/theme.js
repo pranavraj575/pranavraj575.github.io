@@ -32,7 +32,6 @@ let setThemeSetting = (themeSetting) => {
   if (themeSetting=="light"){
      setGooseSetting("serious");
   }
-  gooseActivation();
 };
 
 // Change the goose setting and apply the goose.
@@ -40,7 +39,7 @@ let setGooseSetting = (gooseSetting) => {
   localStorage.setItem("goose", gooseSetting);
 
   document.documentElement.setAttribute("goose-setting", gooseSetting);
-
+  gooseActivation();
 };
 
 // Apply the computed dark or light theme to the website.
