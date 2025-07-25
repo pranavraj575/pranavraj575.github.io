@@ -446,7 +446,8 @@
     },
     {
       "name": "Java",
-      "icon": "☕"
+      "icon": "☕",
+      "ico_icon": "/assets/img/icons/java.png"
     },
     {
       "name": "C++",
