@@ -1127,21 +1127,22 @@ progress::-moz-progress-bar {
 
   .dropdown-item.active,
   .dropdown-item:active {
-    background-color: var(--global-hover-color);
-    color: var(--global-hover-text-color) !important;
+    background-color: var(--global-bg-color);
+    color: var(--global-hover-color) !important;
 
     &:hover {
-      color: var(--global-hover-text-color);
+      color: var(--global-hover-color);
     }
   }
 }
+
 .dropdown-item.active,
   .dropdown-item:active {
     background-color: var(--global-bg-color);
-    color: var(--global-hover-text-color) !important;
+    color: var(--global-hover-color) !important;
 
     &:hover {
-      color: var(--global-hover-text-color);
+      color: var(--global-hover-color);
     }
   }
 
