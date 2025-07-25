@@ -1125,15 +1125,6 @@ progress::-moz-progress-bar {
     }
   }
 
-  .dropdown-item.active,
-  .dropdown-item:active {
-    background-color: var(--global-bg-color);
-    color: var(--global-text-color) !important;
-
-    &:hover {
-      color: var(--global-hover-color);
-    }
-  }
 }
 
 /* Table of Contents */
