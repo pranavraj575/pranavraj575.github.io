@@ -12,9 +12,6 @@ children:
   - title: social profiles
     permalink: /social-profiles
   - title: divider
-  - title: infinite load spell
-    permalink: /infinite-loop
-  - title: divider
     silly: true
   - title: run 3
     permalink: https://www.coolmathgames.com/0-run-3
