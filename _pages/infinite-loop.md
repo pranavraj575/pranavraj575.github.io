@@ -7,9 +7,10 @@ author_profile: false
 redirect_from: 
   - /infinite-loop/
   - /infinite-loop.html
-nav: false
-nav_order: 1
+nav: true
+nav_order: 5
 og_image: /assets/img/cool_bunny.jpg
+silly: true
 ---
 
 # there are bugs in my skin
