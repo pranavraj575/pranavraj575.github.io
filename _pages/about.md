@@ -32,4 +32,5 @@ I am interested in AI/ML, Topology, and long walks on the beach.
 
 Research statement [here](/research-statement).
 
-<a href="/assets/audio/egassem_neddih.mp3" style="text-decoration:none;color:var(--global-text-color)">🪿</a>
+<a href="/assets/audio/egassem_neddih.mp3" style="text-decoration:none;color:var(--global-text-color)">🪿<span class="silly-goose">🪿🪿🪿🪿🪿🪿🪿🪿🪿🪿🪿🪿</span></a>
+<div class="silly-goose">found:"search abomination theme. all will be revealed."</div>
