@@ -5,3 +5,35 @@
 "frick":
   - firstname: ["Florian", "F."]
     url: https://scholar.google.com/citations?user=7G7zH2AAAAAJ
+
+"dhileep":
+  - firstname: ["Karthick"]
+    url: https://scholar.google.com/citations?user=kjfTXEkAAAAJ
+
+"ravi":
+  - firstname: ["Sridhar"]
+    url: https://scholar.google.com/citations?user=ByTaz-kAAAAJ
+
+"kumar":
+  - firstname: ["Deepak Prakash", "Deepak"]
+    url: https://scholar.google.com/citations?user=9fVlgegAAAAJ
+
+"mcguire":
+  - firstname: ["Loy"]
+    url: https://scholar.google.com/citations?user=Qhy9FAMAAAAJ
+
+"darbha":
+  - firstname: ["Swaroop"]
+    url: https://scholar.google.com/citations?user=_7TNmBAAAAAJ
+
+"dasgupta":
+  - firstname: ["Prithviraj"]
+    url: https://scholar.google.com/citations?user=mc__RjcAAAAJ
+
+"garratt":
+  - firstname: ["Matthew"]
+    url: https://scholar.google.com.au/citations?user=4dQ1AtoAAAAJ
+
+"srinivasan":
+  - firstname: ["Mandayam"]
+    url: https://scholar.google.com/citations?user=GQhGyMoAAAAJ
