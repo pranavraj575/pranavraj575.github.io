@@ -31,3 +31,5 @@ latest_posts:
 I am interested in AI/ML, Topology, and long walks on the beach.
 
 Research statement [here](/research-statement).
+
+<a href="/assets/audio/egassem_neddih.mp3" style="text-decoration:none;color:var(--global-text-color)">🪿</a>
