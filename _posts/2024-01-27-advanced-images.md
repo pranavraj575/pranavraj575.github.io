@@ -76,7 +76,7 @@ The images in this post are all zoomable, arranged into different mini-galleries
     data-pswp-width="2500"
     data-pswp-height="1666"
     target="_blank">
-    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt=""  style="display:none"/>
   </a>
   <!-- wrapped with any element: -->
   <div>
@@ -84,7 +84,7 @@ The images in this post are all zoomable, arranged into different mini-galleries
       data-pswp-width="2500"
       data-pswp-height="1667"
       target="_blank">
-      <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
+      <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" style="display:none" />
     </a>
   </div>
 </div>
@@ -120,6 +120,9 @@ The images in this post are all zoomable, arranged into different mini-galleries
       target="_blank">
       <img src="/assets/img/prof_pic.jpg" alt="" />
     </a>
+  </div>
+  <div>
+    {% include figure.liquid loading="eager" path="assets/img/cool_bunny.jpg" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 

@@ -107,7 +107,7 @@
                   {%- else -%}
                     {%- assign url = p.url -%}
                   {%- endif %}
-                  <a class="nav-link{% if p.silly %} silly-goose{% endif %}" href="{{ url | relative_url }}">
+                  <a class="nav-link{% if p.silly %} silly-goose{% endif %}" href="{{ url | relative_url }}" {% if p.silly %}style="display:none"{% endif %}>
                     {{- p.title }}
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>
