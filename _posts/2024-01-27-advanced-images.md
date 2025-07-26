@@ -150,9 +150,7 @@ The images in this post are all zoomable, arranged into different mini-galleries
     <a class="spotlight" href="/assets/img/prof_pic.jpg">
         <img src="/assets/img/prof_pic.jpg" />
     </a>
-    <a class="spotlight" href="/assets/img/cool_bunny.jpg">
-        <img src="/assets/img/cool_bunny.jpg" />
-    </a>
+    {% include magic_image.liquid path="assets/img/cool_bunny.jpg" class="spotlight" %}
 </div>
 
 ---
