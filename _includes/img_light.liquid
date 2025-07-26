@@ -2,7 +2,7 @@
 {% assign parts = include.path | split: '.' %}
 {% assign ext = parts.last %}
 
-<a class="{{ include.class }}" href="{{ include.path }}">
+<a class="{{ include.class }}" href="{{ include.path }}" {% if include.style %}style="{{ include.style }}"{% endif %}>
   {% if site.imagemagick.enabled %}
     {% unless include.avoid_scaling %}
       <source
