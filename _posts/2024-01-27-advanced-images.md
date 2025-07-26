@@ -153,11 +153,11 @@ The images in this post are all zoomable, arranged into different mini-galleries
 </div>
 
 <div class="spotlight-group row mt-3">
-    {% include magic_image.liquid path="assets/img/cool_bunny.jpg" class="col-sm mt-3 mt-md-0" imgclass="spotlight" %}
-    {% include magic_image.liquid path="assets/img/prof_pic.jpg" class="col-sm mt-3 mt-md-0" imgclass="spotlight" %}
-    {% include magic_image.liquid path="assets/img/cool_bunny.jpg" class="col-sm mt-3 mt-md-0" imgclass="spotlight" %}
-    {% include magic_image.liquid path="assets/img/prof_pic.jpg" class="col-sm mt-3 mt-md-0" imgclass="spotlight" %}
-    {% include magic_image.liquid path="assets/img/cool_bunny.jpg" class="col-sm mt-3 mt-md-0" imgclass="spotlight" %}
+    {% include img_light.liquid path="assets/img/cool_bunny.jpg" class="col-sm mt-3 mt-md-0" imgclass="spotlight" %}
+    {% include img_light.liquid path="assets/img/prof_pic.jpg" class="col-sm mt-3 mt-md-0" imgclass="spotlight" %}
+    {% include img_light.liquid path="assets/img/cool_bunny.jpg" class="col-sm mt-3 mt-md-0" imgclass="spotlight" %}
+    {% include img_light.liquid path="assets/img/prof_pic.jpg" class="col-sm mt-3 mt-md-0" imgclass="spotlight" %}
+    {% include img_light.liquid path="assets/img/cool_bunny.jpg" class="col-sm mt-3 mt-md-0" imgclass="spotlight" %}
 </div>
 
 ---
