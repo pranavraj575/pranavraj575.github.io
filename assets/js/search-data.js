@@ -197,17 +197,6 @@ ninja.data = [{
             window.location.href = "/aminals/2025/jinx/";
           
         },
-      },{id: "post-image-test",
-        
-          title: "image test",
-        
-        description: "this is what advanced image components could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/aminals/2024/advanced-images/";
-          
-        },
       },{id: "news-making-a-website",
           title: 'Making a website',
           description: "",
