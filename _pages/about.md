@@ -32,4 +32,4 @@ I am interested in AI/ML, Topology, and long walks on the beach.
 
 Research statement [here](/research-statement).
 
-<a class="silly-goose" href="https://en.wikipedia.org/wiki/Defective_pixel"><img style="position:fixed;bottom:13px;right:7px;z-index:2" src="/assets/img/dead_pixel.png" width="2" height="2"></a>
+<a class="silly-goose" href="https://en.wikipedia.org/wiki/Defective_pixel"><img style="position:fixed;bottom:69%;right:13%;z-index:2" src="/assets/img/dead_pixel.png" width="2" height="2"></a>
