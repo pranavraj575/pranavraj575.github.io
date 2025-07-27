@@ -13,6 +13,11 @@ children:
     permalink: /social-profiles
   - title: divider
     silly: true
+  - title: personal info
+    permalink: /personal-info
+    silly: true
+  - title: divider
+    silly: true
   - title: run 3
     permalink: https://www.coolmathgames.com/0-run-3
     silly: true
