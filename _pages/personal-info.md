@@ -16,7 +16,9 @@ silly: true
 <span>ip address:</span>
 <!-- <p id="ip-address" style="color:var(--success)"></p> -->
 
-<code id="ip-address" style="color:var(--success)"></code>
+<p id="ip-address"
+   style="color:var(--global-theme-color);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Consolas"
+></p>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         fetch("https://api.ipify.org/?format=json")
