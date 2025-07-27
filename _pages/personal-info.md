@@ -2,7 +2,7 @@
 layout: default
 permalink: /personal-info
 title: personal info
-excerpt: "personal information"
+excerpt: "your personal information"
 author_profile: false
 nav: false
 og_image: /assets/img/cool_bunny.jpg
@@ -11,10 +11,10 @@ silly: true
 ---
 
 
-# personal information
+# (your) personal information
 
-<h3>Public IP Address of user is:</h3>
-<p id="ip-address"></p>
+<span>ip address:</span>
+<code id="ip-address" style="color:var(--success)"></code>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         fetch("https://api.ipify.org/?format=json")
