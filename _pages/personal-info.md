@@ -14,7 +14,7 @@ silly: true
 # (your) personal information
 
 <span>ip address:</span>
-<p id="ip-address" style="color:var(--success)></p>
+<p id="ip-address" style="color:var(--success)"></p>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         fetch("https://api.ipify.org/?format=json")
