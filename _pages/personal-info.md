@@ -51,8 +51,7 @@ silly: true
             x.innerHTML = "Geolocation is not supported by this browser.";
         }
         function success(position) {
-            x.innerHTML="Latitude: " + position.coords.latitude + 
-            "<br>Longitude: " + position.coords.longitude;
+            x.innerHTML= position.coords.latitude + ", " + position.coords.longitude;
         }
         function error(error) {
             switch(error.code) {
