@@ -13,12 +13,12 @@ silly: true
 
 # (your) personal information
 
-<span>ip address:</span>
-<!-- <p id="ip-address" style="color:var(--success)"></p> -->
-
-<p id="ip-address"
-   style="color:var(--global-theme-color);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Consolas"
-></p>
+<div>
+    <span>ip address:</span>
+    <span id="ip-address"
+       style="color:var(--global-theme-color);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Consolas"
+    ></span>
+</div>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         fetch("https://api.ipify.org/?format=json")
@@ -27,7 +27,7 @@ silly: true
                 document.getElementById("ip-address").textContent = data.ip;
             })
             .catch(error => {
-                console.error("Error fetching IP address:", error);
+                    document.getElementById("ip-address").textContent = "well hidden";
             });
     });
 </script>
