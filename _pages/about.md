@@ -4,7 +4,6 @@ title: home
 permalink: /
 subtitle: 
 og_image: /assets/img/cool_bunny.jpg
-
 profile:
   align: right
   image: prof_pic.jpg
@@ -26,10 +25,9 @@ latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+remove_dead_pixel: false
 ---
 
 I am interested in AI/ML, Topology, and long walks on the beach.
 
 Research statement [here](/research-statement).
-
-<a class="silly-goose" href="https://en.wikipedia.org/wiki/Defective_pixel"><img style="position:fixed;bottom:69%;right:13%;z-index:2" src="/assets/img/dead_pixel.png" width="2" height="2"></a>

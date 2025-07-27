@@ -6,6 +6,7 @@ description: # publications by categories in reversed chronological order. gener
 nav: true
 nav_order: 1
 og_image: /assets/img/cool_bunny.jpg
+remove_dead_pixel: false
 ---
 
 ## publications

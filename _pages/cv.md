@@ -10,4 +10,5 @@ toc:
   sidebar: left
 expand_all_button: true
 og_image: /assets/img/cool_bunny.jpg
+remove_dead_pixel: false
 ---

@@ -6,6 +6,7 @@ description: github repositories # Edit the `_data/repositories.yml` and change 
 nav: true
 nav_order: 3
 og_image: /assets/img/cool_bunny.jpg
+remove_dead_pixel: false
 ---
 
 {% if site.data.repositories.github_users %}

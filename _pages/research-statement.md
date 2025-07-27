@@ -8,6 +8,7 @@ statement_pdf: research_statement.pdf
 nav: false
 expand_all_button: true
 og_image: /assets/img/cool_bunny.jpg
+remove_dead_pixel: false
 ---
 
 <header class="post-header">
