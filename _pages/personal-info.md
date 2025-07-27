@@ -22,9 +22,9 @@ silly: true
 
 <div>
     <span>location:</span>
-    <p id="locator-hardly-know-her"
+    <span id="locator-hardly-know-her"
        style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Consolas"
-    ></p>
+    ></span>
 </div>
 
 <script>
@@ -50,26 +50,25 @@ silly: true
         } else { 
             x.innerHTML = "Geolocation is not supported by this browser.";
         }
+        function success(position) {
+            x.innerHTML="Latitude: " + position.coords.latitude + 
+            "<br>Longitude: " + position.coords.longitude;
+        }
+        function error(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                  x.innerHTML = "why did you deny that"
+                  break;
+                case error.POSITION_UNAVAILABLE:
+                  x.innerHTML = "location unavailable."
+                  break;
+                case error.TIMEOUT:
+                  x.innerHTML = "respond to the request coward"
+                  break;
+                case error.UNKNOWN_ERROR:
+                  x.innerHTML = "An unknown error occurred."
+                  break;
+                }
+            }
     });
-    function success(position) {
-        x.innerHTML="Latitude: " + position.coords.latitude + 
-        "<br>Longitude: " + position.coords.longitude;
-    }
-
-    function error(error) {
-      switch(error.code) {
-        case error.PERMISSION_DENIED:
-          x.innerHTML = "why did you deny that"
-          break;
-        case error.POSITION_UNAVAILABLE:
-          x.innerHTML = "location unavailable."
-          break;
-        case error.TIMEOUT:
-          x.innerHTML = "respond to the request coward"
-          break;
-        case error.UNKNOWN_ERROR:
-          x.innerHTML = "An unknown error occurred."
-          break;
-      }
-    }
 </script>
