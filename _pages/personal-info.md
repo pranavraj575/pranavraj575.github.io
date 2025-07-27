@@ -20,10 +20,12 @@ silly: true
     ></span>
 </div>
 
-<button onclick="getLocation()">Try It</button>
-
-<p id="locator-hardly-know-her"></p>
-
+<div>
+    <span>location:</span>
+    <span id="locator-hardly-know-her"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Consolas"
+    ></span>
+</div>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
