@@ -16,14 +16,14 @@ silly: true
 <div>
     <span>ip address:</span>
     <span id="ip-address"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Consolas"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:consolas"
     ></span>
 </div>
 
 <div>
     <span>location:</span>
     <span id="locator-hardly-know-her"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Consolas"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:consolas"
     ></span>
 </div>
 
