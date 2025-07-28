@@ -62,7 +62,9 @@ silly: true
                 x.style.color="var(--global-theme-color)";
             })
             .catch(error => {
-                document.getElementById("ipv4-address").textContent = "well hidden";
+                const pee = document.getElementById("ipv4-address");
+                pee.textContent = "well hidden";
+                pee.style.color="var(--danger)";
                 const x = document.getElementById("locator-hardly-know-her-v4");
                 x.innerHTML="well hidden";
                 x.style.color="var(--danger)";
@@ -81,7 +83,9 @@ silly: true
                 x.style.color="var(--global-theme-color)";
             })
             .catch(error => {
-                document.getElementById("ipv6-address").textContent = "well hidden/nonexistent";
+                const pee = document.getElementById("ipv6-address");
+                pee.textContent = "well hidden/nonexistent";
+                pee.style.color="var(--danger)";
                 const x = document.getElementById("locator-hardly-know-her-v6");
                 x.innerHTML="well hidden/nonexistent";
                 x.style.color="var(--danger)";
@@ -109,16 +113,16 @@ silly: true
             x.style.color="var(--danger)";
             switch(error.code) {
                 case error.PERMISSION_DENIED:
-                  x.innerHTML = "why did you deny that"
+                  x.innerHTML = "why did you deny that";
                   break;
                 case error.POSITION_UNAVAILABLE:
-                  x.innerHTML = "location unavailable."
+                  x.innerHTML = "location unavailable";
                   break;
                 case error.TIMEOUT:
-                  x.innerHTML = "respond to the request coward"
+                  x.innerHTML = "respond to the request coward";
                   break;
                 case error.UNKNOWN_ERROR:
-                  x.innerHTML = "An unknown error occurred."
+                  x.innerHTML = "how did you get here";
                   break;
                 }
             }
