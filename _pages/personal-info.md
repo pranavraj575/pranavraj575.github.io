@@ -14,17 +14,24 @@ silly: true
 # (your) personal information
 
 <div>
-    <span>ip address:</span>
-    <span id="ip-address"
+    <span>ipv4 address:</span>
+    <span id="ipv4-address"
        style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:consolas"
-    ></span>
+    >thinking...</span>
+</div>
+
+<div>
+    <span>ipv6 address:</span>
+    <span id="ipv6-address"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:consolas"
+    >thinking...</span>
 </div>
 
 <div>
     <span>location:</span>
     <span id="locator-hardly-know-her"
        style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:consolas"
-    ></span>
+    >thinking...</span>
 </div>
 
 <script>
@@ -32,13 +39,27 @@ silly: true
         fetch("https://api.ipify.org/?format=json")
             .then(response => response.json())
             .then(data => {
-                document.getElementById("ip-address").textContent = data.ip;
+                document.getElementById("ipv4-address").textContent = data.ip;
             })
             .catch(error => {
-                    document.getElementById("ip-address").textContent = "well hidden";
+                    document.getElementById("ipv4-address").textContent = "well hidden";
             });
     });
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetch("https://api6.ipify.org/?format=json")
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("ipv6-address").textContent = data.ip;
+            })
+            .catch(error => {
+                    document.getElementById("ipv6-address").textContent = "well hidden/nonexistent";
+            });
+    });
+</script>
+
 
 
 
