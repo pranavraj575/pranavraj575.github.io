@@ -33,7 +33,9 @@ ninja.data = [
               handler: () => {
                 window.location.href = "{{ url | relative_url }}";
               },
-              silly: {{ child.silly }},
+              {% if child.silly %}
+                silly: true,
+              {% endif %}
             },
           {%- endunless -%}
         {%- endfor -%}
@@ -49,7 +51,9 @@ ninja.data = [
           handler: () => {
             window.location.href = "{{ url | relative_url }}";
           },
-          silly: {{ p.silly }},
+          {% if p.silly %}
+            silly: true,
+          {% endif %}
         },
       {%- endif -%}
     {%- endif -%}
