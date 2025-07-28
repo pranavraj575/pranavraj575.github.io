@@ -20,9 +20,6 @@ ninja.data = [
   {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
   {%- for p in sorted_pages -%}
     {%- if p.nav and p.autogen == null -%}
-      {% if p.silly %}
-        {% continue %}
-      {% endif %}
       {%- if p.dropdown -%}
         {%- for child in p.children -%}
           {%- unless child.title == 'divider' -%}
@@ -36,6 +33,7 @@ ninja.data = [
               handler: () => {
                 window.location.href = "{{ url | relative_url }}";
               },
+              silly: p.silly,
             },
           {%- endunless -%}
         {%- endfor -%}
@@ -418,4 +416,12 @@ for (let category_list of list_of_category_lists){
 
   // concatenate
   ninja.data = ninja.data.concat(category_list);
+
+  // remove silly elements if we are serious geese
+  for (i = 0; i < ninja.data.length; i++){
+    if (category_list[i].silly && determineGooseSetting()=="serious"){
+        category_list.splice(i, 1); // splice removes the spliced element from list for some reason
+        i -= 1;
+    }
+  };
 }
