@@ -16,7 +16,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-          silly: p.silly,
+          silly: ,
         },{id: "nav-cv",
           title: "CV",
           description: "",
@@ -24,7 +24,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-          silly: p.silly,
+          silly: ,
         },{id: "nav-repositories",
           title: "repositories",
           description: "github repositories",
@@ -32,7 +32,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/repos/";
           },
-          silly: p.silly,
+          silly: ,
         },{id: "nav-animal-photos",
           title: "animal photos",
           description: "",
@@ -40,7 +40,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/aminals/";
           },
-          silly: p.silly,
+          silly: ,
         },{id: "nav-infinite-load-spell",
           title: "infinite load spell",
           description: "",
@@ -48,7 +48,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/infinite-loop/";
           },
-          silly: p.silly,
+          silly: true,
         },{id: "dropdown-research-statement",
               title: "research statement",
               description: "",
@@ -56,7 +56,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/research-statement";
               },
-              silly: child.silly,
+              silly: ,
             },{id: "dropdown-social-profiles",
               title: "social profiles",
               description: "",
@@ -64,7 +64,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/social-profiles";
               },
-              silly: child.silly,
+              silly: ,
             },{id: "dropdown-personal-info",
               title: "personal info",
               description: "",
@@ -72,7 +72,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/personal-info";
               },
-              silly: child.silly,
+              silly: true,
             },{id: "dropdown-run-3",
               title: "run 3",
               description: "",
@@ -80,7 +80,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "https://www.coolmathgames.com/0-run-3";
               },
-              silly: child.silly,
+              silly: true,
             },{
           id: 'social-email',
           title: 'email',
