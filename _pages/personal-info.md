@@ -13,7 +13,7 @@ silly: true
 
 # (your) personal information
 
-{% assign cool_codey_style = "background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier,Courier New,Monospace" %}
+{% assign cool_codey_style = "color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier,Courier New,Monospace" %}
 
 <div>
     <span>ipv4 address:</span>
