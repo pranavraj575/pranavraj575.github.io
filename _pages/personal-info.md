@@ -65,7 +65,7 @@ silly: true
                                     const x = document.getElementById("locator-hardly-know-her-v4");
                                     x.innerHTML= lats + ", " + lngs;            
                                }, "jsonp");
-            });
+                }); 
             })
             .catch(error => {
                     document.getElementById("ipv4-address").textContent = "well hidden";
@@ -88,6 +88,7 @@ silly: true
                                     const x = document.getElementById("locator-hardly-know-her-v6");
                                     x.innerHTML= lats + ", " + lngs;            
                                }, "jsonp");
+                }); 
             })
             .catch(error => {
                     document.getElementById("ipv6-address").textContent = "well hidden/nonexistent";
