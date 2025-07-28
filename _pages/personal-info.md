@@ -27,6 +27,14 @@ silly: true
     >thinking...</span>
 </div>
 
+
+<div>
+    <span>location (guess 1):</span>
+    <span id="locator-hardly-know-her-v4"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Courier"
+    >thinking...</span>
+</div>
+
 <div>
     <span>location:</span>
     <span id="locator-hardly-know-her"
@@ -40,6 +48,15 @@ silly: true
             .then(response => response.json())
             .then(data => {
                 document.getElementById("ipv4-address").textContent = data.ip;
+                jQuery(document).ready(function(){
+                    jQuery.get("http://ipinfo.io/"+data.ip, function (response)
+                               {
+                                    var lats = response.loc.split(',')[0]; 
+                                    var lngs = response.loc.split(',')[1];
+                                    const x = document.getElementById("locator-hardly-know-her-v4");
+                                    x.innerHTML= lats + ", " + lngs;            
+                               }, "jsonp");
+            });
             })
             .catch(error => {
                     document.getElementById("ipv4-address").textContent = "well hidden";
