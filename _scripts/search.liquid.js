@@ -424,7 +424,7 @@ for (let category_list of list_of_category_lists){
 
   // remove silly elements if we are serious geese
   for (i = 0; i < ninja.data.length; i++){
-    if (category_list[i].silly && determineGooseSetting()=="serious"){
+    if ("silly" in category_list[i] && category_list[i].silly && determineGooseSetting()=="serious"){
         category_list.splice(i, 1); // splice removes the spliced element from list for some reason
         i -= 1;
     }
