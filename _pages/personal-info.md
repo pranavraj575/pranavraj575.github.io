@@ -16,14 +16,14 @@ silly: true
 <div>
     <span>ipv4 address:</span>
     <span id="ipv4-address"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Courier"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier"
     >thinking...</span>
 </div>
 
 <div>
     <span>ipv6 address:</span>
     <span id="ipv6-address"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Courier"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier"
     >thinking...</span>
 </div>
 
@@ -31,14 +31,21 @@ silly: true
 <div>
     <span>location (guess 1):</span>
     <span id="locator-hardly-know-her-v4"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Courier"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier"
     >thinking...</span>
 </div>
 
 <div>
-    <span>location:</span>
+    <span>location (guess 2):</span>
+    <span id="locator-hardly-know-her-v6"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier"
+    >thinking...</span>
+</div>
+
+<div>
+    <span>location (guess 3):</span>
     <span id="locator-hardly-know-her"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Courier"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier"
     >thinking...</span>
 </div>
 
@@ -60,6 +67,7 @@ silly: true
             })
             .catch(error => {
                     document.getElementById("ipv4-address").textContent = "well hidden";
+                    const x = document.getElementById("locator-hardly-know-her-v4").innerHTML="well hidden";
             });
     });
 </script>
@@ -70,9 +78,18 @@ silly: true
             .then(response => response.json())
             .then(data => {
                 document.getElementById("ipv6-address").textContent = data.ip;
+                jQuery(document).ready(function(){
+                    jQuery.get("http://ipinfo.io/"+data.ip, function (response)
+                               {
+                                    var lats = response.loc.split(',')[0]; 
+                                    var lngs = response.loc.split(',')[1];
+                                    const x = document.getElementById("locator-hardly-know-her-v6");
+                                    x.innerHTML= lats + ", " + lngs;            
+                               }, "jsonp");
             })
             .catch(error => {
                     document.getElementById("ipv6-address").textContent = "well hidden/nonexistent";
+                    const x = document.getElementById("locator-hardly-know-her-v6").innerHTML="well hidden/nonexistent";
             });
     });
 </script>
