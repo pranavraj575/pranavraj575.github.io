@@ -57,15 +57,8 @@ silly: true
             .then(response => response.json())
             .then(data => {
                 document.getElementById("ipv4-address").textContent = data.ip;
-                jQuery(document).ready(function(){
-                    jQuery.get("http://ipinfo.io/"+data.ip, function (response)
-                    {
-                        var lats = response.loc.split(',')[0]; 
-                        var lngs = response.loc.split(',')[1];
-                        const x = document.getElementById("locator-hardly-know-her-v4");
-                        x.innerHTML= lats + ", " + lngs;            
-                    }, "jsonp");
-                }); 
+                const x = document.getElementById("locator-hardly-know-her-v4");
+                x.innerHTML= "<a href=\"http://ipinfo.io/"+data.ip+"\">here</a>";
             })
             .catch(error => {
                     document.getElementById("ipv4-address").textContent = "well hidden";
@@ -80,15 +73,7 @@ silly: true
             .then(response => response.json())
             .then(data => {
                 document.getElementById("ipv6-address").textContent = data.ip;
-                jQuery(document).ready(function(){
-                    jQuery.get("http://ipinfo.io/"+data.ip, function (response)
-                        {
-                            var lats = response.loc.split(',')[0]; 
-                            var lngs = response.loc.split(',')[1];
-                            const x = document.getElementById("locator-hardly-know-her-v6");
-                            x.innerHTML= lats + ", " + lngs;            
-                        }, "jsonp");
-                }); 
+                x.innerHTML= "<a href=\"http://ipinfo.io/"+data.ip+"\">here</a>";
             })
             .catch(error => {
                 document.getElementById("ipv6-address").textContent = "well hidden/nonexistent";
