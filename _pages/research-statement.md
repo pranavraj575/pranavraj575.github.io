@@ -42,7 +42,7 @@ By exploring complexities in both adversarial and cooperative systems, I plan to
     Many of my research projects focus on developing AI agents for competitive settings, providing a foundation for more intricate multiagent interactions.
     <br>
     <br>
-    In the <a href="https://www.ri.cmu.edu/robotics-groups/reliable-autonomous-systems-lab/">Reliable Autonomous Systems Lab (RASL)</a> at Carnegie Mellon University (CMU), I designed AI agents to play Jenga, a non-deterministic, adversarial game.
+    In the <a href="https://www.ri.cmu.edu/robotics-groups/reliable-autonomous-systems-lab/">Reliable Autonomous Systems Lab (RASL)</a> at <a href="https://www.cs.cmu.edu/">Carnegie Mellon University (CMU)</a>, I designed AI agents to play Jenga, a non-deterministic, adversarial game.
     By adapting existing methods like AlphaZero and Monte Carlo Tree Search, I created agents capable of strategically choosing which blocks to remove, keeping the tower stable while making the opponent’s moves difficult.
     <br>
     <br>
