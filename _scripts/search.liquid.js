@@ -20,6 +20,9 @@ ninja.data = [
   {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
   {%- for p in sorted_pages -%}
     {%- if p.nav and p.autogen == null -%}
+      {% if p.silly %}
+        {% continue %}
+      {% endif %}
       {%- if p.dropdown -%}
         {%- for child in p.children -%}
           {%- unless child.title == 'divider' -%}
