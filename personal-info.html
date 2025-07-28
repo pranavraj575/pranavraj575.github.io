@@ -5,13 +5,17 @@
         fetch("https://api.ipify.org/?format=json")
             .then(response => response.json())
             .then(data => {
-                document.getElementById("ipv4-address").textContent = data.ip;
+                const i_p_e_e = document.getElementById("ipv4-address");
+                i_p_e_e.textContent = data.ip;
+                i_p_e_e.style.color="var(--success)";
                 const x = document.getElementById("locator-hardly-know-her-v4");
                 x.innerHTML= "<a href=\"http://ipinfo.io/"+data.ip+"\">here</a>";
                 x.style.color="var(--global-theme-color)";
             })
             .catch(error => {
-                document.getElementById("ipv4-address").textContent = "well hidden";
+                const i_p_e_e = document.getElementById("ipv4-address");
+                i_p_e_e.textContent = "well hidden";
+                i_p_e_e.style.color="var(--danger)";
                 const x = document.getElementById("locator-hardly-know-her-v4");
                 x.innerHTML="well hidden";
                 x.style.color="var(--danger)";
@@ -22,13 +26,17 @@
         fetch("https://api6.ipify.org/?format=json")
             .then(response => response.json())
             .then(data => {
-                document.getElementById("ipv6-address").textContent = data.ip;
+                const i_p_e_e = document.getElementById("ipv6-address");
+                i_p_e_e.textContent = data.ip;
+                i_p_e_e.style.color="var(--success)";
                 const x = document.getElementById("locator-hardly-know-her-v6");
                 x.innerHTML= "<a href=\"http://ipinfo.io/"+data.ip+"\">here</a>";
                 x.style.color="var(--global-theme-color)";
             })
             .catch(error => {
-                document.getElementById("ipv6-address").textContent = "well hidden/nonexistent";
+                const i_p_e_e = document.getElementById("ipv6-address");
+                i_p_e_e.textContent = "well hidden/nonexistent";
+                i_p_e_e.style.color="var(--danger)";
                 const x = document.getElementById("locator-hardly-know-her-v6");
                 x.innerHTML="well hidden/nonexistent";
                 x.style.color="var(--danger)";
@@ -51,16 +59,16 @@
             x.style.color="var(--danger)";
             switch(error.code) {
                 case error.PERMISSION_DENIED:
-                  x.innerHTML = "why did you deny that"
+                  x.innerHTML = "why did you deny that";
                   break;
                 case error.POSITION_UNAVAILABLE:
-                  x.innerHTML = "location unavailable."
+                  x.innerHTML = "location unavailable";
                   break;
                 case error.TIMEOUT:
-                  x.innerHTML = "respond to the request coward"
+                  x.innerHTML = "respond to the request coward";
                   break;
                 case error.UNKNOWN_ERROR:
-                  x.innerHTML = "An unknown error occurred."
+                  x.innerHTML = "how did you get here";
                   break;
                 }
             }
