@@ -37,14 +37,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/aminals/";
           },
-        },{id: "nav-infinite-load-spell",
-          title: "infinite load spell",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/infinite-loop/";
-          },
-        },{id: "dropdown-research-statement",
+        },
+        {id: "dropdown-research-statement",
               title: "research statement",
               description: "",
               section: "Dropdown",
