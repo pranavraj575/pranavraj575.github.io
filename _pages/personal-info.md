@@ -13,19 +13,19 @@ silly: true
 
 # (your) personal information
 
-{% assign cool_codey_style = "color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier,Courier New,Monospace" %}
+{% assign cool_codey_style = "background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier,Courier New,Monospace" %}
 
 <div>
     <span>ipv4 address:</span>
     <span id="ipv4-address"
-       style="{{ cool_codey_style }}"
+       style="color:var(--success);{{ cool_codey_style }}"
     >thinking...</span>
 </div>
 
 <div>
     <span>ipv6 address:</span>
     <span id="ipv6-address"
-       style="{{ cool_codey_style }}"
+       style="color:var(--success);{{ cool_codey_style }}"
     >thinking...</span>
 </div>
 
@@ -47,7 +47,7 @@ silly: true
 <div>
     <span>location (guess 3):</span>
     <span id="locator-hardly-know-her"
-       style="{{ cool_codey_style }}"
+       style="color:var(--success);{{ cool_codey_style }}"
     >thinking...</span>
 </div>
 
