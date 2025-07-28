@@ -16,21 +16,21 @@ silly: true
 <div>
     <span>ipv4 address:</span>
     <span id="ipv4-address"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:consolas"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Courier New"
     >thinking...</span>
 </div>
 
 <div>
     <span>ipv6 address:</span>
     <span id="ipv6-address"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:consolas"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Courier New"
     >thinking...</span>
 </div>
 
 <div>
     <span>location:</span>
     <span id="locator-hardly-know-her"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:consolas"
+       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;font-family:Courier New"
     >thinking...</span>
 </div>
 
