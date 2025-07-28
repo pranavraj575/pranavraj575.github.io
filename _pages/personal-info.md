@@ -56,15 +56,17 @@ silly: true
         fetch("https://api.ipify.org/?format=json")
             .then(response => response.json())
             .then(data => {
-                document.getElementById("ipv4-address").textContent = data.ip;
+                const i_p_e_e = document.getElementById("ipv4-address");
+                i_p_e_e.textContent = data.ip;
+                i_p_e_e.style.color="var(--success)";
                 const x = document.getElementById("locator-hardly-know-her-v4");
                 x.innerHTML= "<a href=\"http://ipinfo.io/"+data.ip+"\">here</a>";
                 x.style.color="var(--global-theme-color)";
             })
             .catch(error => {
-                const pee = document.getElementById("ipv4-address");
-                pee.textContent = "well hidden";
-                pee.style.color="var(--danger)";
+                const i_p_e_e = document.getElementById("ipv4-address");
+                i_p_e_e.textContent = "well hidden";
+                i_p_e_e.style.color="var(--danger)";
                 const x = document.getElementById("locator-hardly-know-her-v4");
                 x.innerHTML="well hidden";
                 x.style.color="var(--danger)";
@@ -77,15 +79,17 @@ silly: true
         fetch("https://api6.ipify.org/?format=json")
             .then(response => response.json())
             .then(data => {
-                document.getElementById("ipv6-address").textContent = data.ip;
+                const i_p_e_e = document.getElementById("ipv6-address");
+                i_p_e_e.textContent = data.ip;
+                i_p_e_e.style.color="var(--success)";
                 const x = document.getElementById("locator-hardly-know-her-v6");
                 x.innerHTML= "<a href=\"http://ipinfo.io/"+data.ip+"\">here</a>";
                 x.style.color="var(--global-theme-color)";
             })
             .catch(error => {
-                const pee = document.getElementById("ipv6-address");
-                pee.textContent = "well hidden/nonexistent";
-                pee.style.color="var(--danger)";
+                const i_p_e_e = document.getElementById("ipv6-address");
+                i_p_e_e.textContent = "well hidden/nonexistent";
+                i_p_e_e.style.color="var(--danger)";
                 const x = document.getElementById("locator-hardly-know-her-v6");
                 x.innerHTML="well hidden/nonexistent";
                 x.style.color="var(--danger)";
