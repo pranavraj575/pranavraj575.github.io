@@ -296,7 +296,7 @@ for (let category_list of list_of_category_lists){
 
   // remove silly elements if we are serious geese
   for (i = 0; i < ninja.data.length; i++){
-    if ("silly" in ninja.data[i] && ninja.data[i].silly && determineGooseSetting()=="serious"){
+    if (ninja.data[i].silly && determineGooseSetting()=="serious"){
         ninja.data.splice(i, 1); // splice removes the spliced element from list for some reason
         i -= 1;
     }
