@@ -18,14 +18,14 @@ silly: true
 <div>
     <span>ipv4 address:</span>
     <span id="ipv4-address"
-       style="color:var(--success);{{ cool_codey_style }}"
+       style="{{ cool_codey_style }}"
     >thinking...</span>
 </div>
 
 <div>
     <span>ipv6 address:</span>
     <span id="ipv6-address"
-       style="color:var(--success);{{ cool_codey_style }}"
+       style="{{ cool_codey_style }}"
     >thinking...</span>
 </div>
 
@@ -47,7 +47,7 @@ silly: true
 <div>
     <span>location (guess 3):</span>
     <span id="locator-hardly-know-her"
-       style="color:var(--success);{{ cool_codey_style }}"
+       style="{{ cool_codey_style }}"
     >thinking...</span>
 </div>
 
@@ -59,10 +59,13 @@ silly: true
                 document.getElementById("ipv4-address").textContent = data.ip;
                 const x = document.getElementById("locator-hardly-know-her-v4");
                 x.innerHTML= "<a href=\"http://ipinfo.io/"+data.ip+"\">here</a>";
+                x.style.color="var(--global-theme-color)";
             })
             .catch(error => {
-                    document.getElementById("ipv4-address").textContent = "well hidden";
-                    document.getElementById("locator-hardly-know-her-v4").innerHTML="well hidden";
+                document.getElementById("ipv4-address").textContent = "well hidden";
+                const x = document.getElementById("locator-hardly-know-her-v4");
+                x.innerHTML="well hidden";
+                x.style.color="var(--danger)";
             });
     });
 </script>
@@ -73,11 +76,15 @@ silly: true
             .then(response => response.json())
             .then(data => {
                 document.getElementById("ipv6-address").textContent = data.ip;
+                const x = document.getElementById("locator-hardly-know-her-v6");
                 x.innerHTML= "<a href=\"http://ipinfo.io/"+data.ip+"\">here</a>";
+                x.style.color="var(--global-theme-color)";
             })
             .catch(error => {
                 document.getElementById("ipv6-address").textContent = "well hidden/nonexistent";
-                document.getElementById("locator-hardly-know-her-v6").innerHTML="well hidden/nonexistent";
+                const x = document.getElementById("locator-hardly-know-her-v6");
+                x.innerHTML="well hidden/nonexistent";
+                x.style.color="var(--danger)";
             });
     });
 </script>
@@ -92,11 +99,14 @@ silly: true
             navigator.geolocation.watchPosition(success, error);
         } else { 
             x.innerHTML = "Geolocation is not supported by this browser.";
+            x.style.color="var(--danger)";
         }
         function success(position) {
             x.innerHTML= position.coords.latitude + ", " + position.coords.longitude;
+            x.style.color="var(--success)";
         }
         function error(error) {
+            x.style.color="var(--danger)";
             switch(error.code) {
                 case error.PERMISSION_DENIED:
                   x.innerHTML = "why did you deny that"
