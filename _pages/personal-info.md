@@ -13,17 +13,19 @@ silly: true
 
 # (your) personal information
 
+{% assign cool_codey_style = "color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier,Courier New,Monospace" %}
+
 <div>
     <span>ipv4 address:</span>
     <span id="ipv4-address"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier"
+       style="{{ cool_codey_style }}"
     >thinking...</span>
 </div>
 
 <div>
     <span>ipv6 address:</span>
     <span id="ipv6-address"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier"
+       style="{{ cool_codey_style }}"
     >thinking...</span>
 </div>
 
@@ -31,21 +33,21 @@ silly: true
 <div>
     <span>location (guess 1):</span>
     <span id="locator-hardly-know-her-v4"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier"
+       style="{{ cool_codey_style }}"
     >thinking...</span>
 </div>
 
 <div>
     <span>location (guess 2):</span>
     <span id="locator-hardly-know-her-v6"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier"
+       style="{{ cool_codey_style }}"
     >thinking...</span>
 </div>
 
 <div>
     <span>location (guess 3):</span>
     <span id="locator-hardly-know-her"
-       style="color:var(--success);background-color:var(--global-code-bg-color);border-radius:3px;padding:3px 3px;padding-bottom:0px;font-family:Courier"
+       style="{{ cool_codey_style }}"
     >thinking...</span>
 </div>
 
