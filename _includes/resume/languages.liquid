@@ -20,22 +20,27 @@
         <tbody>
           <tr>
             <td colspan="1" class="list-group-name">
-              <h6 class="ml-1 ml-md-0" style="font-size: 0.95rem">
-                {% if content.silly_ico_icon %}
-                <img src={{ content.silly_ico_icon }} class="img-fluid silly-goose" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
-                  <span class="serious-goose">
-                {% endif %}
-                  {% if content.ico_icon %}
-                    <img src={{ content.ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
-                  {% else %}
-                    {% if content.icon %}
-                      {{ content.icon }}&nbsp;&nbsp;
-                    {% else %}
-                      &nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
-                    {% endif %}
+              {% if content.silly_ico_icon %}
+                <h6 class="ml-1 ml-md-0 silly-goose" style="font-size: 0.95rem">
+                  <img src={{ content.silly_ico_icon }} class="img-fluid silly-goose" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
+                  {% if content.audio %}
+                    <a href="{{ content.audio }}" style="text-decoration:none;color:var(--global-text-color)">
                   {% endif %}
-                {% if content.silly_ico_icon %}
-                  </span>
+                  {{ content.name }}{% if content.fluency %} ({{ content.fluency }}){% endif %}
+                  {% if content.audio %}
+                    </a>
+                  {% endif %}
+                </h6>
+              {% endif %}
+              <h6 class="ml-1 ml-md-0 {% if content.silly_ico_icon %} serious-goose {% endif %}" style="font-size: 0.95rem">
+                {% if content.ico_icon %}
+                  <img src={{ content.ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
+                {% else %}
+                  {% if content.icon %}
+                    {{ content.icon }}&nbsp;&nbsp;
+                  {% else %}
+                    &nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+                  {% endif %}
                 {% endif %}
                 {% if content.audio %}
                   <a href="{{ content.audio }}" style="text-decoration:none;color:var(--global-text-color)">
