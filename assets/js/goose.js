@@ -9,9 +9,11 @@ let setGooseSetting = (gooseSetting) => {
 
 // Set the number of steps found, apply goose
 let setStepsFound = (steps) => {
-  localStorage.setItem("steps", String(steps));
+  localStorage.setItem("secrets", String(steps));
 
-  document.documentElement.setAttribute("steps-found", String(steps));
+  document.documentElement.setAttribute("secrets-found", String(steps));
+  let gooseSetting = determineGooseSetting(steps);
+  setGooseSetting(gooseSetting);
   gooseActivation();
 };
 
@@ -33,7 +35,7 @@ let determineGooseSetting = (steps) => {
 };
 
 let determineStepsFound = () => {
-  let steps = localStorage.getItem("steps");
+  let steps = localStorage.getItem("secrets");
   if (typeof(steps) == "string") {
     return parseInt(steps);
   }
@@ -67,6 +69,4 @@ let gooseActivation = () => {
 let initGoose = () => {
   let steps = determineStepsFound();
   setStepsFound(steps);
-  let gooseSetting = determineGooseSetting(steps);
-  setGooseSetting(gooseSetting);
 };
