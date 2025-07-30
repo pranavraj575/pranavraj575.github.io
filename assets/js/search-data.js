@@ -230,40 +230,45 @@ ninja.data = [{
 list_of_category_lists = [[],
     [],[],
     [],[{id: "category-aminals-dog-egory",
-            title: determineGooseSetting(determineStepsFound())+'dog-egory',
+            title: 'dog-egory',
             description: "dog-egory",
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/dog-egory";
             },
+            goose:String(determineGooseSetting(determineStepsFound())),
           },{id: "category-aminals-cat-egory",
-            title: determineGooseSetting(determineStepsFound())+'cat-egory',
+            title: 'cat-egory',
             description: "cat-egory",
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/cat-egory";
             },
+            goose:String(determineGooseSetting(determineStepsFound())),
           },{id: "category-aminals-dog-egory",
-            title: determineGooseSetting(determineStepsFound())+'dog-egory',
+            title: 'dog-egory',
             description: "dog-egory",
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/dog-egory";
             },
+            goose:String(determineGooseSetting(determineStepsFound())),
           },{id: "category-aminals-birb",
-            title: determineGooseSetting(determineStepsFound())+'birb',
+            title: 'birb',
             description: "birb",
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/birb";
             },
+            goose:String(determineGooseSetting(determineStepsFound())),
           },{id: "category-aminals-cat-egory",
-            title: determineGooseSetting(determineStepsFound())+'cat-egory',
+            title: 'cat-egory',
             description: "cat-egory",
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/cat-egory";
             },
+            goose:String(determineGooseSetting(determineStepsFound())),
           },],
     [],[],
     [],];
