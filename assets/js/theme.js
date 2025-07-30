@@ -34,13 +34,6 @@ let setThemeSetting = (themeSetting) => {
   }
 };
 
-// Change the goose setting and apply the goose.
-let setGooseSetting = (gooseSetting) => {
-  localStorage.setItem("goose", gooseSetting);
-
-  document.documentElement.setAttribute("goose-setting", gooseSetting);
-  gooseActivation();
-};
 
 // Apply the computed dark or light theme to the website.
 let applyTheme = () => {
@@ -281,35 +274,7 @@ let determineThemeSetting = () => {
   }
   return themeSetting;
 };
-// Determine the goose state
-let determineGooseSetting = () => {
-  let gooseSetting = localStorage.getItem("goose");
-  if (gooseSetting != "silly") {
-    gooseSetting = "serious";
-  }
-  return gooseSetting;
-};
 
-// beauty will be revealed
-let gooseActivation = () => {
-  var silly_geese = document.getElementsByClassName("silly-goose");
-  var goose_setting = document.documentElement.getAttribute("goose-setting");
-  for (var i = 0; i < silly_geese.length; i++) {
-    if (goose_setting == "silly"){
-      silly_geese[i].style.display = "block";
-    } else {
-      silly_geese[i].style.display = "none";
-    }
-  }
-  var serious_geese = document.getElementsByClassName("serious-goose");
-  for (var i = 0; i < serious_geese.length; i++) {
-    if (goose_setting == "silly"){
-      serious_geese[i].style.display = "none";
-    } else {
-      serious_geese[i].style.display = "block";
-    }
-  }
-};
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
 // "system", the computed theme is determined based on the user's system preference.
@@ -329,10 +294,8 @@ let determineComputedTheme = () => {
 
 let initTheme = () => {
   let themeSetting = determineThemeSetting();
-  let gooseSetting = determineGooseSetting();
 
   setThemeSetting(themeSetting);
-  setGooseSetting(gooseSetting);
 
   // Add event listener to the theme toggle button.
   document.addEventListener("DOMContentLoaded", function () {
