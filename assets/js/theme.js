@@ -24,13 +24,13 @@ let setThemeSetting = (themeSetting) => {
   document.documentElement.setAttribute("data-theme-setting", themeSetting);
 
   applyTheme();
-  //ACTIVATE SILLY GOOSE MODE
+  //FOUND SECRET
   if (themeSetting=="abomination"){
-     setGooseSetting("silly");
+     increaseStepsTo(1);
   }
-  //DEACTIVATE SILLY GOOSE MODE
+  //BLINDING
   if (themeSetting=="light"){
-     setGooseSetting("serious");
+     setStepsFound(0);
   }
 };
 

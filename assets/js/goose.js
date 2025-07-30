@@ -1,5 +1,3 @@
-// Has to be in the head tag, otherwise a flicker effect will occur.
-
 
 // Change the goose setting and apply the goose.
 let setGooseSetting = (gooseSetting) => {
@@ -9,13 +7,39 @@ let setGooseSetting = (gooseSetting) => {
   gooseActivation();
 };
 
-// Determine the goose state
-let determineGooseSetting = () => {
-  let gooseSetting = localStorage.getItem("goose");
-  if (gooseSetting != "silly") {
-    gooseSetting = "serious";
+// Set the number of steps found, apply goose
+let setStepsFound = (steps) => {
+  localStorage.setItem("steps", String(steps));
+
+  document.documentElement.setAttribute("steps-found", String(steps));
+  gooseActivation();
+};
+
+// Set steps found to max(stored steps found,steps), apply goose
+let increaseStepsTo = (steps) => {
+  if (determineStepsFound() < steps){
+    setStepsFound(steps);
   }
-  return gooseSetting;
+};
+
+// Determine the goose state
+let determineGooseSetting = (steps) => {
+  if (steps > 0) {
+    return "silly";
+  }
+  else{
+    return "serious";
+  }
+};
+
+let determineStepsFound = () => {
+  let steps = localStorage.getItem("steps");
+  if (typeof(steps) == "string") {
+    return parseInt(steps);
+  }
+  else{
+    return 0;
+  }
 };
 
 // beauty will be revealed
@@ -41,6 +65,8 @@ let gooseActivation = () => {
 
 
 let initGoose = () => {
-  let gooseSetting = determineGooseSetting();
+  let steps = determineStepsFound();
+  setStepsFound(steps);
+  let gooseSetting = determineGooseSetting(steps);
   setGooseSetting(gooseSetting);
 };
