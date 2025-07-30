@@ -367,7 +367,7 @@ list_of_category_lists = [
           {
             {%- assign title = category | newline_to_br | replace: "<br />", " " | replace: "<br/>", " " | strip_html | strip_newlines | escape | strip -%}
             id: "category-{{ this_collection_label }}-{{ title | slugify }}",
-            title: determineGooseSetting(determineStepsFound())+'{{ title | escape | emojify | truncatewords: 13 }}',
+            title: '{{ title | escape | emojify | truncatewords: 13 }}',
             description: "{{ category | strip_html | strip_newlines | escape | strip }}",
             section: "{{ this_collection_label }} categories",
             handler: () => {
