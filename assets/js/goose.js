@@ -40,7 +40,7 @@ let determineStepsFound = () => {
   if (typeof(steps) == "string") {
     return parseInt(steps);
   }
-  else{
+  else {
     return 0;
   }
 };
