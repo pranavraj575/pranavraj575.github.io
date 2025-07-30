@@ -230,35 +230,35 @@ ninja.data = [{
 list_of_category_lists = [[],
     [],[],
     [],[{id: "category-aminals-dog-egory",
-            title: 'dog-egory',
+            title: determineGooseSetting(determineStepsFound())+'dog-egory',
             description: "dog-egory",
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/dog-egory";
             },
           },{id: "category-aminals-cat-egory",
-            title: 'cat-egory',
+            title: determineGooseSetting(determineStepsFound())+'cat-egory',
             description: "cat-egory",
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/cat-egory";
             },
           },{id: "category-aminals-dog-egory",
-            title: 'dog-egory',
+            title: determineGooseSetting(determineStepsFound())+'dog-egory',
             description: "dog-egory",
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/dog-egory";
             },
           },{id: "category-aminals-birb",
-            title: 'birb',
+            title: determineGooseSetting(determineStepsFound())+'birb',
             description: "birb",
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/birb";
             },
           },{id: "category-aminals-cat-egory",
-            title: 'cat-egory',
+            title: determineGooseSetting(determineStepsFound())+'cat-egory',
             description: "cat-egory",
             section: "aminals categories",
             handler: () => {
