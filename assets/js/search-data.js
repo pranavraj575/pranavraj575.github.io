@@ -236,7 +236,6 @@ list_of_category_lists = [[],
             handler: () => {
               window.location.href = "/aminals/category/dog-egory";
             },
-            goose:String(determineGooseSetting(determineStepsFound())),
           },{id: "category-aminals-cat-egory",
             title: 'cat-egory',
             description: "cat-egory",
@@ -244,7 +243,6 @@ list_of_category_lists = [[],
             handler: () => {
               window.location.href = "/aminals/category/cat-egory";
             },
-            goose:String(determineGooseSetting(determineStepsFound())),
           },{id: "category-aminals-dog-egory",
             title: 'dog-egory',
             description: "dog-egory",
@@ -252,7 +250,6 @@ list_of_category_lists = [[],
             handler: () => {
               window.location.href = "/aminals/category/dog-egory";
             },
-            goose:String(determineGooseSetting(determineStepsFound())),
           },{id: "category-aminals-birb",
             title: 'birb',
             description: "birb",
@@ -260,7 +257,6 @@ list_of_category_lists = [[],
             handler: () => {
               window.location.href = "/aminals/category/birb";
             },
-            goose:String(determineGooseSetting(determineStepsFound())),
           },{id: "category-aminals-cat-egory",
             title: 'cat-egory',
             description: "cat-egory",
@@ -268,7 +264,6 @@ list_of_category_lists = [[],
             handler: () => {
               window.location.href = "/aminals/category/cat-egory";
             },
-            goose:String(determineGooseSetting(determineStepsFound())),
           },],
     [],[],
     [],];
