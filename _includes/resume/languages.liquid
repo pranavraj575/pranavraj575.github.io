@@ -32,7 +32,7 @@
                   {% endif %}
                 </h6>
               {% endif %}
-              <h6 class="ml-1 ml-md-0 {% if content.silly_ico_icon %} serious-goose {% endif %}" style="font-size: 0.95rem">
+              <h6 class="ml-1 ml-md-0{% if content.silly_ico_icon %} serious-goose{% endif %}" style="font-size: 0.95rem">
                 {% if content.ico_icon %}
                   <img src={{ content.ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
                 {% else %}
