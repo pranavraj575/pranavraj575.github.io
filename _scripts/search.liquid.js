@@ -373,7 +373,6 @@ list_of_category_lists = [
             handler: () => {
               window.location.href = "{{ this_collection_label | append: '/category/' | append: category | relative_url }}";
             },
-            goose:String(determineGooseSetting(determineStepsFound())),
           },
         {%- endfor -%}
       {%- endfor -%}
