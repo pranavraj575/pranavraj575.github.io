@@ -21,22 +21,30 @@
           <tr>
             <td colspan="1" class="list-group-name">
               <h6 class="ml-1 ml-md-0" style="font-size: 0.95rem">
-              {% if content.ico_icon %}
-                <img src={{ content.ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
-              {% else %}
-                {% if content.icon %}
-                  {{ content.icon }}&nbsp;&nbsp;
-                {% else %}
-                  &nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+                <span>
+                  {% if content.silly_ico_icon %}
+                    {% assign goose_class="serious" %}
+                    <img src={{ content.silly_ico_icon }} class="img-fluid silly" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
+                  {% else %}
+                    {% assign goose_class="" %}
+                  {% endif %}
+                  {% if content.ico_icon %}
+                    <img src={{ content.ico_icon }} class="img-fluid {{goose_class}}" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
+                  {% else %}
+                    {% if content.icon %}
+                      {{ content.icon }}&nbsp;&nbsp;
+                    {% else %}
+                      &nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
+                    {% endif %}
+                  {% endif %}
+                </span>
+                {% if content.audio %}
+                  <a href="{{ content.audio }}" style="text-decoration:none;color:var(--global-text-color)">
                 {% endif %}
-              {% endif %}
-              {% if content.audio %}
-                <a href="{{ content.audio }}" style="text-decoration:none;color:var(--global-text-color)">
-              {% endif %}
-              {{ content.name }}{% if content.fluency %} ({{ content.fluency }}){% endif %}
-              {% if content.audio %}
-                </a>
-              {% endif %}
+                {{ content.name }}{% if content.fluency %} ({{ content.fluency }}){% endif %}
+                {% if content.audio %}
+                  </a>
+                {% endif %}
               </h6>
             </td>
           </tr>

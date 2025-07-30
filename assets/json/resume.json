@@ -458,7 +458,10 @@
       "ico_icon": "/assets/img/icons/octave.png"
     },
     {
-      "name": "SML"
+      "name": "SML",
+      "ico_icon": "/assets/img/icons/sml.png",
+      "silly_ico_icon": "/assets/img/icons/sml.png",
+      "goose": "serious"
     },
     {
       "name": "Golang",
