@@ -15,13 +15,13 @@
     {% endif %}
   {% endif %}
   {% for content in data[1] %}
-    <div class="list-group col-md-{{ language_colwidth }}{% if content.silly_ico_icon %} serious-goose{% endif %}">
+    {% if content.silly_ico_icon %}
+    <div class="list-group col-md-{{ language_colwidth }} silly-goose">
       <table class="table-cv list-group-table">
         <tbody>
           <tr>
             <td colspan="1" class="list-group-name">
-              {% if content.silly_ico_icon %}
-                <h6 class="ml-1 ml-md-0 silly-goose" style="font-size: 0.95rem">
+                <h6 class="ml-1 ml-md-0" style="font-size: 0.95rem">
                   <img src={{ content.silly_ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
                   {% if content.audio %}
                     <a href="{{ content.audio }}" style="text-decoration:none;color:var(--global-text-color)">
@@ -31,7 +31,17 @@
                     </a>
                   {% endif %}
                 </h6>
-              {% endif %}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+    <div class="list-group col-md-{{ language_colwidth }}{% if content.silly_ico_icon %} serious-goose{% endif %}">
+      <table class="table-cv list-group-table">
+        <tbody>
+          <tr>
+            <td colspan="1" class="list-group-name">
               <h6 class="ml-1 ml-md-0" style="font-size: 0.95rem">
                 {% if content.ico_icon %}
                   <img src={{ content.ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
