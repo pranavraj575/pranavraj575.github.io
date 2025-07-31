@@ -10,7 +10,7 @@ remove_dead_pixel: false
 silly: true
 ---
 
-{% assign hidden_style = "color:var(--global-bg-color)-webkit-user-select:none;-ms-user-select:none;user-select:none;" %}
+{% assign hidden_style = "color:var(--global-bg-color);-webkit-user-select:none;-ms-user-select:none;user-select:none;" %}
 
 {% assign head = "NOTHING TO SEE HERE" | split: "" %}
 <h1>{% for h in head %}<span class="unseen" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}</h1>
