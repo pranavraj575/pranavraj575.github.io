@@ -11,11 +11,13 @@ silly: true
 ---
 
 
-<h1 class="unseen" style="color:var(--global-bg-color)">Nothing to see here</h1>
+<h1><span class="unseen" style="color:var(--global-bg-color)">Nothing to see here</span></h1>
 <div>
-  <p class="unseen" style="color:var(--global-bg-color)">thing to see here</p>
-  <p class="unseen" style="color:var(--global-bg-color)">thing to see here2</p>
+  <span class="unseen" style="color:var(--global-bg-color)">thing to see here</span><br>
+  <span class="unseen" style="color:var(--global-bg-color)">thing to see here2</span>
 </div>
+
+
 <script>
   var all_unseen = document.getElementsByClassName("unseen");
   for (var i = 0; i < all_unseen.length; i++) {
