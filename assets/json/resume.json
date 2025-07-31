@@ -459,8 +459,8 @@
     },
     {
       "name": "SML",
-      "ico_icon": "/assets/img/icons/sml.png",
-      "silly_ico_icon": "/assets/img/icons/sillyml.png",
+      "ico_icon": "/assets/img/icons/sillyml.png",
+      "silly_ico_icon": "/assets/img/icons/sml.png",
       "goose": "serious"
     },
     {
