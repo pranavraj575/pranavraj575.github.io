@@ -109,12 +109,12 @@ let gooseActivation = () => {
     }
   }
   var hiddening = document.getElementsByClassName("temp-hide");
-  for (var i = 0; i < hiddening.length; i++) {
+  for (var i = hiddening.length - 1; i >= 0; i--) {
     hiddening[i].style.display = "none";
     hiddening[i].classList.remove("temp-hide");
   }
   var revealing = document.getElementsByClassName("temp-reveal");
-  for (var i = 0; i < revealing.length; i++) {
+  for (var i = revealing.length - 1; i >= 0; i--) {
     revealing[i].style.display = "block";
     revealing[i].classList.remove("temp-reveal");
   }
