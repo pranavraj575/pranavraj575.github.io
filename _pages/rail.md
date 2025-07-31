@@ -14,11 +14,16 @@ silly: true
 
 {% assign head = "NOTHING TO SEE HERE" | split: "" %}
 <h1>{% for h in head %}<span class="unseen" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}</h1>
-{% assign head = "⠞⠓⠊⠝⠛⠀⠞⠕⠀⠎⠑⠑⠀⠓⠑⠗⠑" | split: "" %}
+
+{% assign head = "⠉⠇⠊⠉⠅⠀⠞⠓⠑⠀⠙⠑⠁⠙⠀⠏⠊⠭⠑⠇" | split: "" %}
 <div>
   {% for h in head %}<span class="unseen" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}
 </div>
 
+{% assign head = "⠙⠕⠝⠄⠞⠀⠇⠕⠕⠅⠀⠊⠝⠞⠕⠀⠞⠓⠑⠀⠇⠊⠛⠓⠞" | split: "" %}
+<div>
+  {% for h in head %}<span class="unseen" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}
+</div>
 
 <script>
   var all_unseen = document.getElementsByClassName("unseen");
