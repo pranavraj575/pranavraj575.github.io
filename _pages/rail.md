@@ -12,9 +12,9 @@ silly: true
 
 {% assign hidden_style = "color:var(--global-bg-color)-webkit-user-select:none;-ms-user-select:none;user-select:none;" %}
 
-{% assign head = "Nothing to see here" | split: "" %}
+{% assign head = "NOTHING TO SEE HERE" | split: "" %}
 <h1>{% for h in head %}<span class="unseen" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}</h1>
-{% assign head = "thing to see here" | split: "" %}
+{% assign head = "⠞⠓⠊⠝⠛⠀⠞⠕⠀⠎⠑⠑⠀⠓⠑⠗⠑" | split: "" %}
 <div>
   {% for h in head %}<span class="unseen" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}
 </div>
