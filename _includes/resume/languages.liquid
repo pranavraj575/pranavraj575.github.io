@@ -23,7 +23,7 @@
       {% assign language_body_list = language_body | split: "" %}
       {% assign language_body = "" %}
       {% for c in language_body_list %}
-        {% assign charhere = "<span class='hidden_until_touch' style='color:var(--global-bg-color);-webkit-user-select:none;-ms-user-select:none;user-select:none;'>" %}
+        {% assign charhere = "<span class='hidden_until_touch' style='color:var(--global-card-bg-color);-webkit-user-select:none;-ms-user-select:none;user-select:none;'>" %}
         {% assign charhere = charhere | append: c | append: "</span>" %}
         {% assign language_body = language_body | append: charhere %}
       {% endfor %}
