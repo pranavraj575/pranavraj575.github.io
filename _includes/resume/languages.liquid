@@ -17,7 +17,7 @@
   {% for content in data[1] %}
     {% assign language_body = content.name %}
     {% if content.fluency %}
-      {% assign language_body = language_body | append: " (" | append: {{ content.fluency }} | append: ")"%}
+      {% assign language_body = language_body | append: " (" | append: content.fluency | append: ")"%}
     {% endif %}
     {% if content.blind %}
       {% assign language_body_list = language_body | split: "" %}
