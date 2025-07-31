@@ -19,7 +19,7 @@ silly: true
 <script>
   var all_unseen = document.getElementsByClassName("unseen");
   for (var i = 0; i < all_unseen.length; i++) {
-    all_unseen[i].addEventListener("click", function() {
+    all_unseen[i].addEventListener("mouseover", function() {
       this.style.color="var(--global-text-color)";
     });
   }
