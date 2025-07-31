@@ -54,49 +54,69 @@ let determineStepsFound = () => {
 // if something is labeled reveal-at-<a> and hide-at-<b>, (note, a<b)
 //  it will be hidden with secrets < a, revealed at a<= secrets < b, and hidden with secrets>=b
 
+let markObjectReveal = (elem_tre) => {
+  elem_tre.classList.remove("temp-hide");
+  elem_tre.classList.add("temp-reveal");
+}
+let markObjectHide = (elem_tre) => {
+  elem_tre.classList.remove("temp-reveal");
+  elem_tre.classList.add("temp-hide");
+}
+
 let gooseActivation = () => {
   var secrets_found = determineStepsFound();
   for (var secrets=0; secrets <= numSecrets; secrets++){
     // iterate through everything that is revealed after a certian number of secrets
     var silly_geese = document.getElementsByClassName("reveal-at-"+String(secrets));
+    // iterate through everything that is hidden after a certian number of secrets
+    var serious_geese = document.getElementsByClassName("hide-at-"+String(secrets));
+
     for (var i = 0; i < silly_geese.length; i++) {
       if(secrets <= secrets_found){
         // if the number of secrets found is at least the number of secrets needed, we will reveal silly_geese[i]
-        silly_geese[i].style.display = "block";
+        markObjectReveal(silly_geese[i]);
       }
       else{
         // otherwise, we must hide this goose
-        silly_geese[i].style.display = "none";
+        markObjectHide(silly_geese[i]);
       }
     }
 
-    // iterate through everything that is hidden after a certian number of secrets
-    var serious_geese = document.getElementsByClassName("hide-at-"+String(secrets));
     for (var i = 0; i < serious_geese.length; i++) {
       if(secrets <= secrets_found){
         // if the number of secrets found is at least the number of secrets needed, we will hide serious_geese[i]
-        serious_geese[i].style.display = "none";
+        markObjectHide(serious_geese[i]);
       }
     }
   }
 
   var silly_geese = document.getElementsByClassName("silly-goose");
   var goose_setting = document.documentElement.getAttribute("goose-setting");
+  var serious_geese = document.getElementsByClassName("serious-goose");
 
   for (var i = 0; i < silly_geese.length; i++) {
     if (goose_setting == "silly"){
-      silly_geese[i].style.display = "block";
+      markObjectReveal(silly_geese[i]);
     } else {
-      silly_geese[i].style.display = "none";
+      markObjectHide(silly_geese[i]);
     }
   }
-  var serious_geese = document.getElementsByClassName("serious-goose");
   for (var i = 0; i < serious_geese.length; i++) {
     if (goose_setting == "silly"){
-      serious_geese[i].style.display = "none";
+      markObjectHide(serious_geese[i]);
     } else {
-      serious_geese[i].style.display = "block";
+      markObjectReveal(serious_geese[i]);
     }
+  }
+  var hiddening = document.getElementsByClassName("temp-hide");
+  for (var i = 0; i < hiddening.length; i++) {
+    hiddening[i].style.display = "none";
+    hiddening[i].classList.remove("temp-hide");
+  }
+  var revealing = document.getElementsByClassName("temp-reveal");
+  for (var i = 0; i < revealing.length; i++) {
+    revealing[i].style.display = "block";
+    revealing[i].classList.remove("temp-reveal");
   }
 };
 
