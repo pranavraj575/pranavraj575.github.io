@@ -493,7 +493,8 @@
     {
       "name": "⠃⠗⠁⠊⠇⠇⠑",
       "ico_icon": "/assets/img/icons/UNUNUN.png",
-      "audio": "/assets/audio/UNUNUN.mp3"
+      "audio": "/assets/audio/UNUNUN.mp3",
+      "blind": true
     }
   ]
 }

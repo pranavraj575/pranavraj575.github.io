@@ -13,23 +13,15 @@ silly: true
 {% assign hidden_style = "color:var(--global-bg-color);-webkit-user-select:none;-ms-user-select:none;user-select:none;" %}
 
 {% assign head = "NOTHING TO SEE HERE" | split: "" %}
-<h1>{% for h in head %}<span class="unseen" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}</h1>
+<h1>{% for h in head %}<span class="hidden_until_touch" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}</h1>
 
 {% assign head = "⠉⠇⠊⠉⠅⠀⠞⠓⠑⠀⠙⠑⠁⠙⠀⠏⠊⠭⠑⠇" | split: "" %}
 <div>
-  {% for h in head %}<span class="unseen" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}
+  {% for h in head %}<span class="hidden_until_touch" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}
 </div>
 
 {% assign head = "⠙⠕⠝⠄⠞⠀⠇⠕⠕⠅⠀⠊⠝⠞⠕⠀⠞⠓⠑⠀⠇⠊⠛⠓⠞" | split: "" %}
 <div>
-  {% for h in head %}<span class="unseen" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}
+  {% for h in head %}<span class="hidden_until_touch" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}
 </div>
 
-<script>
-  var all_unseen = document.getElementsByClassName("unseen");
-  for (var i = 0; i < all_unseen.length; i++) {
-    all_unseen[i].addEventListener("mouseover", function() {
-      this.style.color="var(--global-text-color)";
-    });
-  }
-</script>

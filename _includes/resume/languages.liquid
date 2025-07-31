@@ -15,6 +15,19 @@
     {% endif %}
   {% endif %}
   {% for content in data[1] %}
+    {% assign language_body = content.name %}
+    {% if content.fluency %}
+      {% assign language_body = language_body | append: " (" | append: {{ content.fluency }} | append: ")"%}
+    {% endif %}
+    {% if content.blind %}
+      {% assign language_body_list = language_body | split: "" %}
+      {% assign language_body = "" %}
+      {% for c in language_body_list %}
+        {% assign charhere = "<span class=\"hidden_until_touch\" style=\"color:var(--global-bg-color);-webkit-user-select:none;-ms-user-select:none;user-select:none;\">" %}
+        {% assign charhere = charhere | append: c | append: "</span>" %}
+        {% assign language_body = language_body | append: charhere %}
+      {% endfor %}
+    {% endif %}
     {% if content.silly_ico_icon %}
     <div class="list-group col-md-{{ language_colwidth }} silly-goose">
       <table class="table-cv list-group-table">
@@ -26,7 +39,7 @@
                   {% if content.audio %}
                     <a href="{{ content.audio }}" style="text-decoration:none;color:var(--global-text-color)">
                   {% endif %}
-                  {{ content.name }}{% if content.fluency %} ({{ content.fluency }}){% endif %}
+                  {{ language_body }}
                   {% if content.audio %}
                     </a>
                   {% endif %}
@@ -55,7 +68,7 @@
                 {% if content.audio %}
                   <a href="{{ content.audio }}" style="text-decoration:none;color:var(--global-text-color)">
                 {% endif %}
-                {{ content.name }}{% if content.fluency %} ({{ content.fluency }}){% endif %}
+                {{ language_body }}
                 {% if content.audio %}
                   </a>
                 {% endif %}

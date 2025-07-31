@@ -384,3 +384,12 @@
     }
   </script>
 {% endif %}
+
+<script>
+  var all_unseen = document.getElementsByClassName("hidden_until_touch");
+  for (var i = 0; i < all_unseen.length; i++) {
+    all_unseen[i].addEventListener("mouseover", function() {
+      this.style.color="var(--global-text-color)";
+    });
+  }
+</script>
