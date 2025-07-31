@@ -11,7 +11,7 @@ silly: true
 ---
 
 
-# Nothing to see here
+<h1 class="unseen" style="color:var(--global-bg-color)">Nothing to see here</h1>
 <div>
   <p class="unseen" style="color:var(--global-bg-color)">thing to see here</p>
   <p class="unseen" style="color:var(--global-bg-color)">thing to see here2</p>
