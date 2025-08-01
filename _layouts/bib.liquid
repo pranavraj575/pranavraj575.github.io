@@ -154,8 +154,8 @@
             {% assign more_authors_show = more_authors_show | append: ',' %}
           {% endunless %}
         {%- endfor -%}
-        ,
-        <span
+        {% assign more_authors_show = more_authors_show | append: '[contract]' %}
+        , <span
           class="more-authors"
           title="click to view {{ more_authors_hide }}"
           onclick="
