@@ -84,25 +84,26 @@ layout: default
       {% include newsletter.liquid center=true %}
     {% endif %}
   </article>
+  {% assign goose_style = "text-align:center;display:none;cursor:default;color:var(--global-text-color);text-decoration:none;" %}
 
-  <span onclick="increaseStepsTo(1);" class="reveal-at-0 hide-at-1" style="text-align:center;display:none;">
+  <span onclick="increaseStepsTo(1);" class="reveal-at-0 hide-at-1" style="{{ goose_style }}">
     🪿
   </span>
-  <span class="reveal-at-1 hide-at-2" style="text-align:center;display:none;">
+  <span class="reveal-at-1 hide-at-2" style="{{ goose_style }}">
     🪿
-    <a href="/empty-page" style="text-decoration:none;color:var(--global-text-color)">🪿</a>
+    <a href="/empty-page">🪿</a>
   </span>
-  <span class="reveal-at-2 hide-at-3" style="text-align:center;display:none;">
+  <span class="reveal-at-2 hide-at-3" style="{{ goose_style }}">
     🪿
-    <a href="/empty-page" style="text-decoration:none;color:var(--global-text-color)">🪿</a>
-    <a href="/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3" style="text-decoration:none;color:var(--global-text-color)">🪿</a>
-    <a href="/assets/audio/I.-I.-..I.-..II.--I..I.-..I.-..II-...I.II.-.I.I...-I.I.-I.-..I.I-..II.mp3" style="text-decoration:none;color:var(--global-text-color)">🪿</a>
+    <a href="/empty-page">🪿</a>
+    <a href="/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3">🪿</a>
+    <a href="/assets/audio/I.-I.-..I.-..II.--I..I.-..I.-..II-...I.II.-.I.I...-I.I.-I.-..I.I-..II.mp3">🪿</a>
   </span>
-  <span class="silly-goose" style="text-align:center;display:none;">
+  <span class="silly-goose" style="{{ goose_style }}">
     🪿
-    <a href="/empty-page" style="text-decoration:none;color:var(--global-text-color)">🪿</a>
-    <a href="/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3" style="text-decoration:none;color:var(--global-text-color)">🪿</a>
-    <a href="/assets/audio/I.-I.-..I.-..II.--I..I.-..I.-..II-...I.II.-.I.I...-I.I.-I.-..I.I-..II.mp3" style="text-decoration:none;color:var(--global-text-color)">🪿</a>
+    <a href="/empty-page">🪿</a>
+    <a href="/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3">🪿</a>
+    <a href="/assets/audio/I.-I.-..I.-..II.--I..I.-..I.-..II-...I.II.-.I.I...-I.I.-I.-..I.I-..II.mp3">🪿</a>
     🪿
   </span>
 </div>
