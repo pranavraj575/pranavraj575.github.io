@@ -119,7 +119,36 @@
           {% if forloop.last %}
             {% assign more_authors_show = more_authors_show | append: 'and ' %}
           {% endif %}
-          {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+
+          {% assign author_is_self = false %}
+          {%- assign author_last_name = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+          {%- assign author_last_html = author.last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
+          {% if site.scholar.last_name contains author_last_name %}
+            {% if site.scholar.first_name contains author.first %}
+              {% assign author_is_self = true %}
+            {% endif %}
+          {%- endif -%}
+          {% assign coauthor_url = null %}
+          {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
+          {% if site.data.coauthors[clean_last_name] %}
+            {%- for coauthor in site.data.coauthors[clean_last_name] -%}
+              {% if coauthor.firstname contains author.first %}
+                {%- assign coauthor_url = coauthor.url -%}
+                {% break %}
+              {%- endif -%}
+            {% endfor %}
+          {%- endif -%}
+
+          {%- if author_is_self -%}
+            {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+          {%- else -%}
+            {%- if coauthor_url -%}
+              {% assign more_authors_show = more_authors_show | append: author.first | append: 'c' | append: author.last %}
+            {%- else -%}
+              {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+            {% endif %}
+          {%- endif -%}
+
           {% unless forloop.last %}
             {% assign more_authors_show = more_authors_show | append: ',' %}
           {% endunless %}
