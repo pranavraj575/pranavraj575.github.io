@@ -26,7 +26,7 @@ let setThemeSetting = (themeSetting) => {
   applyTheme();
   //FOUND SECRET
   if (themeSetting=="abomination"){
-     increaseStepsTo(1);
+     increaseStepsTo(2);
   }
   //BLINDING
   if (themeSetting=="light"){
