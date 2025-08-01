@@ -164,7 +164,8 @@
               var more_authors_text = element.text() == '{{ more_authors_hide }}' ? '{{ more_authors_show }}' : '{{ more_authors_hide }}';
               var cursorPosition = 0;
               var textAdder = setInterval(function(){
-                if (more_authors_text.charAt(cursorPosition)=='<'){
+                if (cursorPosition+1 < more_authors_text.length && more_authors_text.charAt(cursorPosition+1)=='<'){
+                  cursorPosition++;
                   while (more_authors_text.charAt(cursorPosition)!='>'){
                     cursorPosition++;
                   }
