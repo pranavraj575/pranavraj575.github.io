@@ -154,7 +154,6 @@
             {% assign more_authors_show = more_authors_show | append: ',' %}
           {% endunless %}
         {%- endfor -%}
-        {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
         ,
         <span
           class="more-authors"
