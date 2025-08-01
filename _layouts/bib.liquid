@@ -140,10 +140,11 @@
           {%- endif -%}
 
           {%- if author_is_self -%}
-            {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
+            {% assign more_authors_show = more_authors_show | append: "<em>" | append: author.first | append: ' ' | append: author_last_html | append: "</em>" %}
           {%- else -%}
             {%- if coauthor_url -%}
-              {% assign more_authors_show = more_authors_show | append: author.first | append: 'c' | append: author.last %}
+              {% assign more_authors_show = more_authors_show | append: '<a href=&quot;' | append: coauthor_url | append: '&quot;>' %}
+              {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author_last_html | append: "</a>" %}
             {%- else -%}
               {% assign more_authors_show = more_authors_show | append: author.first | append: ' ' | append: author.last %}
             {% endif %}
