@@ -10,18 +10,18 @@ remove_dead_pixel: false
 silly: true
 ---
 
-{% assign hidden_style = "" %}
-
 <div class="reveal-at-1">
     {% assign head = "NOTHING TO SEE HERE" | split: "" %}
-    <h1>{% for h in head %}<span class="hidden_until_touch" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}</h1>
+    <h1>
+      {% for h in head %}<span class="hidden_until_touch">{{ h }}</span>{% endfor %}
+    </h1>
     {% assign head = "⠎⠑⠁⠗⠉⠓⠀⠁⠃⠕⠍⠊⠝⠁⠞⠊⠕⠝⠀⠞⠓⠑⠍⠑" | split: "" %}
     <div>
-      {% for h in head %}<span class="hidden_until_touch" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}
+      {% for h in head %}<span class="hidden_until_touch">{{ h }}</span>{% endfor %}
     </div>
     {% assign head = "⠙⠕⠝⠄⠞⠀⠇⠕⠕⠅⠀⠊⠝⠞⠕⠀⠞⠓⠑⠀⠇⠊⠛⠓⠞" | split: "" %}
     <div>
-      {% for h in head %}<span class="hidden_until_touch" style="{{ hidden_style }}">{{ h }}</span>{% endfor %}
+      {% for h in head %}<span class="hidden_until_touch">{{ h }}</span>{% endfor %}
     </div>
 </div>
 
