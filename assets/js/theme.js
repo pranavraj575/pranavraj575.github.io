@@ -10,6 +10,9 @@ let toggleThemeSetting = () => {
     setThemeSetting("dark");
   } else if (themeSetting == "dark") {
     setThemeSetting("light");
+    //BLINDING
+    // only triggers when the toggle button is hit, rather than whenever light theme is on
+    setStepsFound(0);
   } else if (themeSetting == "abomination") {
     setThemeSetting("dark");
   } else {
@@ -27,10 +30,6 @@ let setThemeSetting = (themeSetting) => {
   //FOUND SECRET
   if (themeSetting=="abomination"){
      increaseStepsTo(2);
-  }
-  //BLINDING
-  if (themeSetting=="light"){
-     setStepsFound(0);
   }
 };
 
