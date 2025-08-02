@@ -136,6 +136,9 @@ ninja.data = [{
       section: 'Theme',
       handler: () => {
         setThemeSetting("light");
+        // BLINDING
+        // only triggers when the toggle button is hit (or when searched for), rather than whenever light theme is on
+        setStepsFound(0);
       },
     },
     {
