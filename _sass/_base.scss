@@ -185,6 +185,13 @@ ul.task-list input[type="checkbox"] {
   display: none;
 }
 
+.hidden_until_touch {
+  opacity:0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* TODO: end add */
 // Math
 

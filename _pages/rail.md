@@ -10,7 +10,7 @@ remove_dead_pixel: false
 silly: true
 ---
 
-{% assign hidden_style = "color:var(--global-bg-color);-webkit-user-select:none;-ms-user-select:none;user-select:none;" %}
+{% assign hidden_style = "" %}
 
 <div class="reveal-at-1">
     {% assign head = "NOTHING TO SEE HERE" | split: "" %}
