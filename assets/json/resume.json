@@ -319,6 +319,37 @@
   ],
   "experience": [
     {
+      "name": "University of New South Wales",
+      "subname": "Bioengineering Group",
+      "location": "Canberra, Australia",
+      "position": "Researcher",
+      "mentor": "Sridhar Ravi",
+      "dateList": [
+        ["2025-02-04","2025-08-04"]
+      ],
+      "highlights": [
+        "Worked in the Bioengineering Group on project \"Understanding bee visual attention by imitating beehavior\"",
+        "Worked in the Bioengineering Group on project \"Fine Tuning Swimming Locomotion Learned from Mosquito Larvae\""
+      ],
+      "hours": "40"
+    },
+    {
+      "name": "Carnegie Mellon University",
+      "location": "Pittsburgh, USA",
+      "position": "Researcher",
+      "mentor": "Florian Frick; Reid Simmons",
+      "dateList": [
+        ["2021-02-15","2022-05-12"],
+        ["2023-01-17","2024-05-12"]
+      ],
+      "highlights": [
+        "Worked in Department of Mathematical Sciences on project \"Geodesic complexity? It's actually quite simplex\"",
+        "Worked in the Reliable Autonomous Systems Laboratory on project \"Utilizing Sim-to-Real Methods for Training a Robot Arm\"",
+        "Worked in the Reliable Autonomous Systems Laboratory on project \"Creating a Strategic Agent to Play Jenga\""
+      ],
+      "hours": "12"
+    },
+    {
       "name": "U.S. Naval Research Laboratory",
       "location": "Washington, D.C., USA",
       "position": "Researcher",
