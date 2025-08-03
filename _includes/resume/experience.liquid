@@ -12,8 +12,8 @@
                 {% assign temp_date = temp_date | append: datelistitemitem | append: "_" %}
               {% endfor %}
               {% assign temp_date = temp_date | split: "_" %}
-              {% assign startDate = temp_date[0] %}
-              {% assign endDate = temp_date[1] %}
+              {% assign startDate = datelistitem[0] %}
+              {% assign endDate = datelistitem[1] %}
               {% include date.liquid startDate=startDate endDate=endDate range=true %}
 
               {% assign temp_date = date | split: " - " | join: "_" %}
