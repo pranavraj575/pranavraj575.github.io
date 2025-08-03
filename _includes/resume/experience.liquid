@@ -13,7 +13,7 @@
               {% include date.liquid startDate=startDate endDate=endDate range=true %}
 
               {% assign temp_date = date | split: " - " | join: "_" %}
-              {% assign date_list = date_list | append: temp_date | append: "_Present_;" %}
+              {% assign date_list = date_list | append: temp_date | append: ";" %}
             {% endfor %}
           {% else %}
             {% if content.startDate %}
