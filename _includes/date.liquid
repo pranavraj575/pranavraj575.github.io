@@ -1,0 +1,11 @@
+
+{% if include.startDate and include.startDate != '' %}
+    {% assign date = include.startDate | split: '-' | slice: 0, 2 | join: '.' %}
+    {% if include.endDate %}
+        {% assign endDate = include.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
+        {% assign date = date | append: ' - ' %}
+        {% assign date = date | append: endDate %}
+    {% endif %}
+{% else %}
+    {% assign date = null %}
+{% endif %}
