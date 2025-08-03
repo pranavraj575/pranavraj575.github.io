@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
           {% if content.releaseDate %}
-            {% include date.liquid startDate=content.releaseDate range=false %}
+            {% include date.liquid startDate=content.releaseDate range=false writeDay=true %}
           {% else %}
             {% assign date = '' %}
           {% endif %}

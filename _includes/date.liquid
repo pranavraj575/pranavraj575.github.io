@@ -1,8 +1,16 @@
 
 {% if include.startDate and include.startDate != '' %}
-    {% assign date = include.startDate | split: '-' | slice: 0, 2 | join: '.' %}
+    {% if include.writeDay %}
+        {% assign date = include.startDate | split: '-' | join: '.' %}
+    {% else %}
+        {% assign date = include.startDate | split: '-' | slice: 0, 2 | join: '.' %}
+    {% endif %}
     {% if include.range %}
-        {% assign endDate = include.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
+        {% if include.writeDay %}
+            {% assign endDate = include.endDate | split: '-' | join: '.' | default: 'Present' %}
+        {% else %}
+            {% assign endDate = include.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
+        {% endif %}
         {% assign date = date | append: ' - ' %}
         {% assign date = date | append: endDate %}
     {% endif %}
