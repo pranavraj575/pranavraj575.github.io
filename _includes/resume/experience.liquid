@@ -7,7 +7,13 @@
           {% if content.dateList %}
             {% assign date_list = "" %}
             {% for datelistitem in content.dateList %}
-              {% include date.liquid startDate=datelistitem[0] endDate=datelistitem[1] range=true %}
+              {% assign temp_date = "" %}
+              {% for datelistitemitem in datelistitem %}
+                {% assign temp_date = temp_date | append: datelistitemitem | append: "_" %}
+              {% endfor %}
+              {% assign temp_date = temp_date | split: "_" %}
+              {% include date.liquid startDate=temp_date[0] endDate=temp_date[1] range=true %}
+
               {% assign temp_date = date | split: " - " | join: "_" %}
               {% assign date_list = date_list | append: temp_date | append: "_Present_;" %}
             {% endfor %}
