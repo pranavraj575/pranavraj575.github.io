@@ -4,13 +4,37 @@
     <li class="list-group-item">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-          {% if content.startDate %}
-            {% include date.liquid startDate=content.startDate endDate=content.endDate range=true %}
+          {% if content.dateList %}
+            {% assign date_list = "" %}
+            {% for datelistitem in content.dateList %}
+              {% if datelistitem.length == 2 %}
+                 {% for datelistitemitem in datelistitem %}
+                    {% assign date_list = date_list | append: datelistitemitem | append: "_" %}
+                 {% endfor %}
+              {% else %}
+                 {% assign date_list = date_list | append: datelistitem | append: "_Present_" %}
+              {% endif %}
+              {% assign date_list = date_list | append: ";" %}
+            {% endfor %}
           {% else %}
-            {% assign date = '' %}
+            {% if content.startDate %}
+              {% include date.liquid startDate=content.startDate endDate=content.endDate range=true %}
+            {% else %}
+              {% assign date = '' %}
+            {% endif %}
+            {% assign date_list = date | split: " - " | join: "_" | append: ";" %}
           {% endif %}
+          {% assign date_list = date_list | split: ";" %}
           <table class="table-cv">
             <tbody>
+              {% for tempdate in date_list %}
+              <tr>
+                <td>
+                  {% assign display_date = tempdate | split: "_" | join: " - "%}
+                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ display_date }} </span>
+                </td>
+              </tr>
+              {% endfor %}
               <tr>
                 <td>
                   <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ date }} </span>

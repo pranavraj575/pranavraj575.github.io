@@ -322,6 +322,11 @@
       "mentor": "Manoj Agrawal",
       "startDate": "2023-01-24",
       "endDate": "2023-05-12",
+      "dateList": [
+        ["2023-01-24","2023-05-12"],
+        ["2023-01-24","2023-05-12"],
+        ["2023-01-24"]
+      ],
       "highlights": [
         "Created an AI system to automate calling airport TMI events, especially Ground Stops and Ground Delay Programs",
         "Explored Imitation Reinforcement Learning methods to compete against the baseline of training a classifier model",
