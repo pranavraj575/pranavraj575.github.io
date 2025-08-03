@@ -339,8 +339,8 @@
       "position": "Researcher",
       "mentor": "Florian Frick; Reid Simmons",
       "dateList": [
-        ["2021-02-15","2022-05-12"],
-        ["2023-01-17","2024-05-12"]
+        ["2023-01-17","2024-05-12"],
+        ["2021-02-15","2022-05-12"]
       ],
       "highlights": [
         "Worked in Department of Mathematical Sciences on project \"Geodesic complexity? It's actually quite simplex\"",
@@ -355,9 +355,9 @@
       "position": "Researcher",
       "mentor": "Donald Sofge; Laura Hiatt",
       "dateList": [
-        ["2022-05-23","2022-08-12"],
+        ["2024-01-19","2024-10-16"],
         ["2023-05-22","2023-08-11"],
-        ["2024-01-19","2024-10-16"]
+        ["2022-05-23","2022-08-12"]
       ],
       "highlights": [
         "Worked in the Distributed Autonomous Systems Group on project \"Transformer guided coevolution: Team creation in multiagent adversarial games\"",
