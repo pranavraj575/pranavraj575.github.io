@@ -155,6 +155,7 @@
     {
       "name": "Transformer guided coevolution: Team selection in multiagent adversarial games",
       "affiliation": "U.S. Naval Research Laboratory",
+      "subaffiliation": "Distributed Autonomous Systems Group",
       "location": "Washington, D.C., USA",
       "pi": "Donald Sofge; Prithviraj Dasgupta",
       "highlights": [
@@ -203,6 +204,7 @@
     {
       "name": "Learning NEAT Emergent Behavior in Robot Swarms",
       "affiliation": "U.S. Naval Research Laboratory",
+      "subaffiliation": "Distributed Autonomous Systems Group",
       "location": "Washington, D.C., USA",
       "pi": "Donald Sofge",
       "highlights": [
@@ -217,6 +219,7 @@
     {
       "name": "UAV Routing for Enhancing the Performance of a Classifier-in-the-loop",
       "affiliation": "U.S. Naval Research Laboratory",
+      "subaffiliation": "Distributed Autonomous Systems Group",
       "location": "Washington, D.C., USA",
       "pi": "Swaroop Darbha",
       "highlights": [
@@ -231,6 +234,7 @@
     {
       "name": "Comparing Transfer Learning Methods for Continuous Reinforcement Learning",
       "affiliation": "U.S. Naval Research Laboratory",
+      "subaffiliation": "Adaptive Systems Section",
       "location": "Washington, D.C., USA",
       "pi": "Laura Hiatt",
       "highlights": [
@@ -314,6 +318,25 @@
     }
   ],
   "experience": [
+    {
+      "name": "U.S. Naval Research Laboratory",
+      "location": "Washington, D.C., USA",
+      "position": "Researcher",
+      "mentor": "Donald Sofge; Laura Hiatt",
+      "dateList": [
+        ["2022-05-23","2022-08-12"],
+        ["2023-05-22","2023-08-11"],
+        ["2024-01-19","2024-10-16"]
+      ],
+      "highlights": [
+        "Worked in the Distributed Autonomous Systems Group on project \"Transformer guided coevolution: Team creation in multiagent adversarial games\"",
+        "Worked with USNW Canberra on project \"Fine Tuning Swimming Locomotion Learned from Mosquito Larvae\"",
+        "Worked in the Distributed Autonomous Systems Group on project \"Learning NEAT Emergent Behavior in Robot Swarms\"",
+        "Worked with Texas A&M Department of Mechanical Engineering on project \"UAV Routing for Enhancing the Performance of a Classifier-in-the-loop\"",
+        "Worked in the Adaptive Systems Section on project \"Comparing Transfer Learning Methods for Continuous Reinforcement Learning\""
+      ],
+      "hours": "40"
+    },
     {
       "name": "National Aeronautics and Space Administration",
       "subname": "Ames Research Center",
