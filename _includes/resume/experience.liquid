@@ -7,14 +7,10 @@
           {% if content.dateList %}
             {% assign date_list = "" %}
             {% for datelistitem in content.dateList %}
-              {% if datelistitem.length == 2 %}
-                 {% for datelistitemitem in datelistitem %}
-                    {% assign date_list = date_list | append: datelistitemitem | append: "_" %}
-                 {% endfor %}
-              {% else %}
-                 {% assign date_list = date_list | append: datelistitem | append: "_Present_" %}
-              {% endif %}
-              {% assign date_list = date_list | append: ";" %}
+              {% for datelistitemitem in datelistitem %}
+                {% assign date_list = date_list | append: datelistitemitem | append: "_" %}
+              {% endfor %}
+              {% assign date_list = date_list | append: "_Present_;" %}
             {% endfor %}
           {% else %}
             {% if content.startDate %}
@@ -30,7 +26,7 @@
               {% for tempdate in date_list %}
               <tr>
                 <td>
-                  {% assign display_date = tempdate | split: "_" | join: " - "%}
+                  {% assign display_date = tempdate | split: "_" | slice: 0,2 | join: " - "%}
                   <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ display_date }} </span>
                 </td>
               </tr>
