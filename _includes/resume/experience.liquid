@@ -13,6 +13,7 @@
               {% include date.liquid startDate=startDate endDate=endDate range=true %}
 
               {% assign temp_date = date | split: " - " | join: "_" %}
+              {% assign temp_date = temp_date | append: "_test" %}
               {% assign date_list = date_list | append: temp_date | append: ";" %}
             {% endfor %}
           {% else %}
@@ -29,7 +30,7 @@
               {% for tempdate in date_list %}
               <tr>
                 <td>
-                  {% assign display_date = tempdate | split: "_" | slice: 0,2 | join: " - "%}
+                  {% assign display_date = tempdate | split: "_" | slice: 0,2 | join: " - " %}
                   <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ display_date }} </span>
                 </td>
               </tr>
