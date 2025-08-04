@@ -324,9 +324,8 @@
       "location": "Canberra, Australia",
       "position": "Researcher",
       "mentor": "Sridhar Ravi",
-      "dateList": [
-        ["2025-02-04","2025-08-04"]
-      ],
+      "startDate": "2025-02-04",
+      "endDate": "2025-08-04",
       "highlights": [
         "Worked in the Bioengineering Group on project \"Understanding bee visual attention by imitating beehavior\"",
         "Worked in the Bioengineering Group on project \"Fine Tuning Swimming Locomotion Learned from Mosquito Larvae\""
@@ -338,6 +337,8 @@
       "location": "Pittsburgh, USA",
       "position": "Researcher",
       "mentor": "Florian Frick; Reid Simmons",
+      "startDate": "2023-01-17",
+      "endDate": "2024-05-12",
       "dateList": [
         ["2023-01-17","2024-05-12"],
         ["2021-02-15","2022-05-12"]
@@ -354,6 +355,8 @@
       "location": "Washington, D.C., USA",
       "position": "Researcher",
       "mentor": "Donald Sofge; Laura Hiatt",
+      "startDate": "2024-01-19",
+      "endDate": "2024-10-16",
       "dateList": [
         ["2024-01-19","2024-10-16"],
         ["2023-05-22","2023-08-11"],
