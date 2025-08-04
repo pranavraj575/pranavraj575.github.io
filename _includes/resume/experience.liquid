@@ -8,7 +8,7 @@
             {% assign date_list = "" %}
             {% for datelistitem in content.dateList %}
               {% assign temp_date = "" %}
-              {% for tttt in temp_date_list %}
+              {% for tttt in datelistitem %}
                 {% assign temp_date = temp_date | append: tttt | append: "_" %}
               {% endfor %}
               {% assign temp_date = temp_date | split: "_" %}
