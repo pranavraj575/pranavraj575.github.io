@@ -151,7 +151,8 @@
         "Sped up the training process by using a pre-trained deep neural network to accurately predict forces on a robotic swimmer",
         "Compared performance of various architectures, including Deep Neural Networks, Recurrent Neural Networks, and LSTMs"
       ],
-      "startDate": "2024-01-19"
+      "startDate": "2024-01-19",
+      "endDate": "2025-08-04"
     },
     {
       "name": "Transformer guided coevolution: Team selection in multiagent adversarial games",
