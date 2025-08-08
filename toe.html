@@ -155,7 +155,8 @@ let clickedToeSquare = (i,j) => {
             valid = true;
         }
     }
-    if (valid && isNaN(toeboard.result)){
+    // if the player is player 1, and the move is valid, and the game is not over, make the move
+    if (toeboard.player==1 && valid && isNaN(toeboard.result)){
         toeboard.moveMutate(i,j);
         refreshBoard();
         if (isNaN(toeboard.result)){
