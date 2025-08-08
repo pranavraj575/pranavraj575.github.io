@@ -23,7 +23,7 @@ let increaseStepsTo = (steps) => {
   }
 };
 
-let numSecrets = 3;
+let numSecrets = 4;
 
 // Determine the goose state
 let determineGooseSetting = (steps) => {
