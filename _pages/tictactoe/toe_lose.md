@@ -11,3 +11,5 @@ silly: true
 ---
 
 you lost :(
+
+<a href="/toe">try again<a>

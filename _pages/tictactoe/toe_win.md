@@ -13,3 +13,8 @@ silly: true
 you won :)
 
 how did you get here
+
+
+<script>
+    increaseStepsTo(4);
+</script>
