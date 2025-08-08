@@ -187,7 +187,7 @@ let clickedToeSquare = (i,j) => {
         toeboard.moveMutate(i,j);
         refreshBoard();
         if (isNaN(toeboard.result)){
-            var all_opt = toeboard.optimalMoves()[0][0];
+            var all_opt = toeboard.optimalMoves()[0];
             var opt = all_opt[Math.floor(Math.random()*all_opt.length)];
             toeboard.moveMutate(opt[0], opt[1]);
             refreshBoard();
