@@ -10,7 +10,7 @@ remove_dead_pixel: false
 silly: true
 ---
 
-{% assign box_style = "border:1px solid black;height:50px;width:50px;" %}
+{% assign box_style = "border:1px solid var(--global-text-color);height:50px;width:50px;" %}
 
 <table>
     <tr>
@@ -160,17 +160,17 @@ let refreshBoard = () => {
             }
         }
     }
-    if (!isNaN(board.result)){
+    if (!isNaN(toeboard.board.result)){
         setTimeout(function(){
-            if (board.result==0){
+            if (toeboard.board.result==0){
                 //redirect to tie
                 console.log("tie");
             }
-            else if (board.result==-1){
+            else if (toeboard.board.result==-1){
                 //redirect to lose
                 console.log("lose");
             }
-            else if (board.result==1){
+            else if (toeboard.board.result==1){
                 //redirect to win
                 console.log("win");
             }
@@ -185,7 +185,7 @@ let clickedToeSquare = (i,j) => {
             valid = true;
         }
     }
-    if (valid){
+    if (valid and isNaN(toeboard.board.result)){
         toeboard.moveMutate(i,j);
         refreshBoard();
     }
