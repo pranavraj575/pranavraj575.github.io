@@ -134,15 +134,15 @@ let refreshBoard = () => {
         setTimeout(function(){
             if (toeboard.result==0){
                 //redirect to tie
-                window.location.replace("/toe/tie");
+                window.location.href = "/toe/tie";
             }
             else if (toeboard.result==-1){
                 //redirect to lose
-                window.location.replace("/toe/lose");
+                window.location.href = "/toe/lose";
             }
             else if (toeboard.result==1){
                 //redirect to win
-                window.location.replace("/toe/win");
+                window.location.href = "/toe/win";
             }
         },2069);
     }
