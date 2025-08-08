@@ -185,7 +185,7 @@ let clickedToeSquare = (i,j) => {
             valid = true;
         }
     }
-    if (valid and isNaN(toeboard.board.result)){
+    if (valid && isNaN(toeboard.board.result)){
         toeboard.moveMutate(i,j);
         refreshBoard();
     }
