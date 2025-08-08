@@ -160,17 +160,17 @@ let refreshBoard = () => {
             }
         }
     }
-    if (!isNaN(toeboard.board.result)){
+    if (!isNaN(toeboard.result)){
         setTimeout(function(){
-            if (toeboard.board.result==0){
+            if (toeboard.result==0){
                 //redirect to tie
                 window.location.replace("/toe/tie");
             }
-            else if (toeboard.board.result==-1){
+            else if (toeboard.result==-1){
                 //redirect to lose
                 window.location.replace("/toe/lose");
             }
-            else if (toeboard.board.result==1){
+            else if (toeboard.result==1){
                 //redirect to win
                 window.location.replace("/toe/win");
             }
@@ -185,10 +185,10 @@ let clickedToeSquare = (i,j) => {
             valid = true;
         }
     }
-    if (valid && isNaN(toeboard.board.result)){
+    if (valid && isNaN(toeboard.result)){
         toeboard.moveMutate(i,j);
         refreshBoard();
-        if (isNaN(toeboard.board.result)){
+        if (isNaN(toeboard.result)){
             var all_opt = toeboard.optimalMoves()[0][0];
             var opt = all_opt[Math.floor(Math.random()*all_opt.length)];
             toeboard.moveMutate(opt[0], opt[1]);
