@@ -164,15 +164,15 @@ let refreshBoard = () => {
         setTimeout(function(){
             if (toeboard.board.result==0){
                 //redirect to tie
-                console.log("tie");
+                window.location.replace("/toe/tie");
             }
             else if (toeboard.board.result==-1){
                 //redirect to lose
-                console.log("lose");
+                window.location.replace("/toe/lose");
             }
             else if (toeboard.board.result==1){
                 //redirect to win
-                console.log("win");
+                window.location.replace("/toe/win");
             }
         },2069);
     }
