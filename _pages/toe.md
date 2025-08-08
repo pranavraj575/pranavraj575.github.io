@@ -188,6 +188,12 @@ let clickedToeSquare = (i,j) => {
     if (valid && isNaN(toeboard.board.result)){
         toeboard.moveMutate(i,j);
         refreshBoard();
+        if (isNaN(toeboard.board.result)){
+            var all_opt = toeboard.optimalMoves()[0][0];
+            var opt = all_opt[Math.floor(Math.random()*all_opt.length)];
+            toeboard.moveMutate(opt[0], opt[1]);
+            refreshBoard();
+        }
     }
 };
 </script>
