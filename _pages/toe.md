@@ -14,19 +14,19 @@ silly: true
 
 <table>
     <tr>
-        <td style="{{ box_style }}"></td>
-        <td style="{{ box_style }}"></td>
-        <td style="{{ box_style }}"></td>
+        <td id="ttt00" style="{{ box_style }}"></td>
+        <td id="ttt01" style="{{ box_style }}"></td>
+        <td id="ttt02" style="{{ box_style }}"></td>
     </tr>
     <tr>
-        <td style="{{ box_style }}"></td>
-        <td style="{{ box_style }}"></td>
-        <td style="{{ box_style }}"></td>
+        <td id="ttt10" style="{{ box_style }}"></td>
+        <td id="ttt11" style="{{ box_style }}"></td>
+        <td id="ttt12" style="{{ box_style }}"></td>
     </tr>
     <tr>
-        <td style="{{ box_style }}"></td>
-        <td style="{{ box_style }}"></td>
-        <td style="{{ box_style }}"></td>
+        <td id="ttt20" style="{{ box_style }}"></td>
+        <td id="ttt21" style="{{ box_style }}"></td>
+        <td id="ttt22" style="{{ box_style }}"></td>
     </tr>
 </table>
 
@@ -144,5 +144,26 @@ class Toe {
         return [moves, best];
     }
 }
+
+var toeboard = new Toe();
+
+let refreshBoard = () => {
+    for (var i = 0; i<3; i++){
+        for (var j = 0; j<3; j++){
+            const c = toeboard.board[i][j];
+            const sq = document.getElementById("ttt"+String(i)+String(j));
+            if (c==1){
+                sq.textContent = "X";
+            }
+            else if (c==-1){
+                sq.textContent = "O";
+            }
+        }
+    }
+};
+
+let clickedToeSquare = (i,j) => {
+  
+};
 </script>
 
