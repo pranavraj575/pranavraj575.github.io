@@ -33,8 +33,9 @@ silly: true
 <script>
 class Toe {
     constructor(board=[[0,0,0],[0,0,0],[0,0,0]],player=NaN) {
-        this.board=board;
-        if (isNaN(player)){
+        this.board = board;
+        this.player = player;
+        if (isNaN(this.player)){
             var cnt = 0;
             for (var row of this.board){
                 for (var c of row){
@@ -47,9 +48,6 @@ class Toe {
             else {
                 this.player = -1;
             }
-        }
-        else{
-            this.player = player;
         }
     }
     get open_spaces(){
