@@ -10,7 +10,7 @@ remove_dead_pixel: false
 silly: true
 ---
 
-{% assign box_style = "border:1px solid var(--global-text-color);height:50px;width:50px;text-align:center" %}
+{% assign box_style = "font-weight:bold;padding:1px;border:1px solid var(--global-text-color);height:50px;width:50px;text-align:center" %}
 
 <table>
     <tr>
