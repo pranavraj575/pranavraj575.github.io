@@ -113,12 +113,13 @@ class Toe {
         return new Toe(board);
     }
     get string(){
-        s="";
+        var s = "";
         for (var row of this.board){
             for (var c of row){
                 s = s + String(c);
             }
         }
+        return s;
     }
     optimalMoves(){
         // return outcome if every player plays optimally, and the next moves (overall, so if current player is -1, best is -1)
