@@ -106,11 +106,19 @@ layout: default
     <span>🥚</span>
   </span>
   <span class="silly-goose" style="{{ goose_box_style }}">
-    <span class="hidden_until_touch">🎉🎉🎉</span>
+    <span class="celeb" style="opacity:0">🎉🎉🎉</span>
     <span>🪿</span>
     <a href="/empty-page" style="{{ goose_link_style }}">🪿</a>
     <a href="/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3" style="{{ goose_link_style }}">🪿</a>
-    <span>🪿</span>
-    <span class="hidden_until_touch">🎉🎉🎉</span>
+    <span onclick="revealCelebration()">🪿</span>
+    <span class="celeb" style="opacity:0">🎉🎉🎉</span>
   </span>
 </div>
+
+<script>
+    let revealCelebration = () => {
+        for (var c of document.getElementsByClassName("celeb")){
+            c.style.opacity = 1;
+        }
+    };
+</script>
