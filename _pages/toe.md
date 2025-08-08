@@ -14,19 +14,19 @@ silly: true
 
 <table>
     <tr>
-        <td id="ttt00" style="{{ box_style }}"></td>
-        <td id="ttt01" style="{{ box_style }}"></td>
-        <td id="ttt02" style="{{ box_style }}"></td>
+        <td id="ttt00" onclick="clickedToeSquare(0,0)" style="{{ box_style }}"></td>
+        <td id="ttt01" onclick="clickedToeSquare(0,1)" style="{{ box_style }}"></td>
+        <td id="ttt02" onclick="clickedToeSquare(0,2)" style="{{ box_style }}"></td>
     </tr>
     <tr>
-        <td id="ttt10" style="{{ box_style }}"></td>
-        <td id="ttt11" style="{{ box_style }}"></td>
-        <td id="ttt12" style="{{ box_style }}"></td>
+        <td id="ttt10" onclick="clickedToeSquare(1,0)" style="{{ box_style }}"></td>
+        <td id="ttt11" onclick="clickedToeSquare(1,1)" style="{{ box_style }}"></td>
+        <td id="ttt12" onclick="clickedToeSquare(1,2)" style="{{ box_style }}"></td>
     </tr>
     <tr>
-        <td id="ttt20" style="{{ box_style }}"></td>
-        <td id="ttt21" style="{{ box_style }}"></td>
-        <td id="ttt22" style="{{ box_style }}"></td>
+        <td id="ttt20" onclick="clickedToeSquare(2,0)" style="{{ box_style }}"></td>
+        <td id="ttt21" onclick="clickedToeSquare(2,1)" style="{{ box_style }}"></td>
+        <td id="ttt22" onclick="clickedToeSquare(2,2)" style="{{ box_style }}"></td>
     </tr>
 </table>
 
@@ -160,10 +160,35 @@ let refreshBoard = () => {
             }
         }
     }
+    if (!isNaN(board.result)){
+        setTimeout(function(){
+            if (board.result==0){
+                //redirect to tie
+                console.log("tie");
+            }
+            else if (board.result==-1){
+                //redirect to lose
+                console.log("lose");
+            }
+            else if (board.result==1){
+                //redirect to win
+                console.log("win");
+            }
+        },2069);
+    }
 };
 
 let clickedToeSquare = (i,j) => {
-  
+    var valid = false;
+    for (var sq of toeboard.open_spaces){
+        if (sq[0]==i && sq[1]==j){
+            valid = true;
+        }
+    }
+    if (valid){
+        toeboard.moveMutate(i,j);
+        refreshBoard();
+    }
 };
 </script>
 
