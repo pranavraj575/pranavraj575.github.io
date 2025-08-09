@@ -14,6 +14,7 @@ you won :)
 
 how did you get here
 
+<a href="/">go home<a>
 
 <script>
     increaseStepsTo(4);

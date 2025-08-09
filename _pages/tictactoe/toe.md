@@ -12,6 +12,8 @@ silly: true
 
 {% assign box_style = "font-weight:bold;padding:1px;border:1px solid var(--global-text-color);height:50px;width:50px;text-align:center" %}
 
+<h1>tic tac toe against a perfect opponent</h1>
+
 <table>
     <tr style="background-color:var(--global-bg-color)">
         <td class="hover_hardly_knower" id="ttt00" onclick="clickedToeSquare(0,0)" style="{{ box_style }}"></td>
