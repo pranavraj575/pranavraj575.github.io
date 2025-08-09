@@ -13,20 +13,20 @@ silly: true
 {% assign box_style = "font-weight:bold;padding:1px;border:1px solid var(--global-text-color);height:50px;width:50px;text-align:center" %}
 
 <table>
-    <tr>
-        <td id="ttt00" onclick="clickedToeSquare(0,0)" style="{{ box_style }}"></td>
-        <td id="ttt01" onclick="clickedToeSquare(0,1)" style="{{ box_style }}"></td>
-        <td id="ttt02" onclick="clickedToeSquare(0,2)" style="{{ box_style }}"></td>
+    <tr style="background-color:var(--global-bg-color)">
+        <td class="hover_hardly_knower" id="ttt00" onclick="clickedToeSquare(0,0)" style="{{ box_style }}"></td>
+        <td class="hover_hardly_knower" id="ttt01" onclick="clickedToeSquare(0,1)" style="{{ box_style }}"></td>
+        <td class="hover_hardly_knower" id="ttt02" onclick="clickedToeSquare(0,2)" style="{{ box_style }}"></td>
     </tr>
-    <tr>
-        <td id="ttt10" onclick="clickedToeSquare(1,0)" style="{{ box_style }}"></td>
-        <td id="ttt11" onclick="clickedToeSquare(1,1)" style="{{ box_style }}"></td>
-        <td id="ttt12" onclick="clickedToeSquare(1,2)" style="{{ box_style }}"></td>
+    <tr style="background-color:var(--global-bg-color)">
+        <td class="hover_hardly_knower" id="ttt10" onclick="clickedToeSquare(1,0)" style="{{ box_style }}"></td>
+        <td class="hover_hardly_knower" id="ttt11" onclick="clickedToeSquare(1,1)" style="{{ box_style }}"></td>
+        <td class="hover_hardly_knower" id="ttt12" onclick="clickedToeSquare(1,2)" style="{{ box_style }}"></td>
     </tr>
-    <tr>
-        <td id="ttt20" onclick="clickedToeSquare(2,0)" style="{{ box_style }}"></td>
-        <td id="ttt21" onclick="clickedToeSquare(2,1)" style="{{ box_style }}"></td>
-        <td id="ttt22" onclick="clickedToeSquare(2,2)" style="{{ box_style }}"></td>
+    <tr style="background-color:var(--global-bg-color)">
+        <td class="hover_hardly_knower" id="ttt20" onclick="clickedToeSquare(2,0)" style="{{ box_style }}"></td>
+        <td class="hover_hardly_knower" id="ttt21" onclick="clickedToeSquare(2,1)" style="{{ box_style }}"></td>
+        <td class="hover_hardly_knower" id="ttt22" onclick="clickedToeSquare(2,2)" style="{{ box_style }}"></td>
     </tr>
 </table>
 
@@ -172,7 +172,7 @@ let refreshBoard = () => {
                 //redirect to win
                 window.location.href = "/toe/win";
             }
-        },2069);
+        }, 1069);
     }
 };
 

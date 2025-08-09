@@ -162,7 +162,6 @@ ul.task-list input[type="checkbox"] {
   text-align: left;
   outline: none;
 }
-
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .my_collapsible:hover {
   color: var(--global-hover-color);
@@ -192,6 +191,9 @@ ul.task-list input[type="checkbox"] {
   user-select: none;
 }
 
+.hover_hardly_knower:hover{
+  color: var(--global-hover-color);
+}
 /* TODO: end add */
 // Math
 
