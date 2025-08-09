@@ -129,6 +129,12 @@
               "name": "Modern Regression",
               "url": "https://www.stat.cmu.edu/~larry/=stat401/",
               "id": "36-401"
+            },
+            {
+              "name": "<b>Real Anal</b>ysis",
+              "url": "https://www.math.cmu.edu/~jballew/21355Fall2016.html",
+              "id": "21-355",
+              "silly": true
             }
           ]
         },
@@ -140,11 +146,6 @@
               "name": "Quantum Computation",
               "url": "https://www.cs.cmu.edu/~odonnell/quantum18/",
               "id": "15-459"
-            },
-            {
-              "name": "<b>Real Anal</b>ysis",
-              "url": "https://www.math.cmu.edu/~jballew/21355Fall2016.html",
-              "id": "21-355"
             },
             {
               "name": "Star Wars: The Course Awakens",
