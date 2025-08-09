@@ -3,15 +3,24 @@
   {% for content in data[1] %}
     {% assign num_languages = num_languages | plus: 1 %}
   {% endfor %}
-  {% if num_languages < 4 %}
+  {% if include.num_cols %}
+    {% assign num_cols = include.num_cols %}
+  {% else %}
+    {% assign num_cols = 4 %}
+  {% endif %}
+  {% if num_languages < num_cols %}
     {% assign language_colwidth = 12 | divided_by: num_languages %}
   {% else %}
-    {% assign rows_if_three_per_row = num_languages times: 1.0 | divided_by: 3.0 | ceil %}
-    {% assign rows_if_four_per_row = num_languages times: 1.0 | divided_by: 4.0 | ceil %}
-    {% if rows_if_three_per_row <= rows_if_four_per_row %}
-      {% assign language_colwidth = 4 %}
+    {% if num_cols == 4 %}
+        {% assign rows_if_three_per_row = num_languages times: 1.0 | divided_by: 3.0 | ceil %}
+        {% assign rows_if_four_per_row = num_languages times: 1.0 | divided_by: 4.0 | ceil %}
+        {% if rows_if_three_per_row <= rows_if_four_per_row %}
+          {% assign language_colwidth = 4 %}
+        {% else %}
+          {% assign language_colwidth = 3 %}
+        {% endif %}
     {% else %}
-      {% assign language_colwidth = 3 %}
+        {% assign language_colwidth = 12 | divided_by: num_cols %}
     {% endif %}
   {% endif %}
   {% for content in data[1] %}
