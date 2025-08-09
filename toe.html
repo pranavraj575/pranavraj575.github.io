@@ -158,12 +158,16 @@ let clickedToeSquare = (i,j) => {
     // if the player is player 1, and the move is valid, and the game is not over, make the move
     if (toeboard.player==1 && valid && isNaN(toeboard.result)){
         toeboard.moveMutate(i,j);
+        var sq = document.getElementById("ttt"+String(i)+String(j));
+        sq.classList.remove("hover_hardly_knower");
         refreshBoard();
         if (isNaN(toeboard.result)){
             var all_opt = toeboard.optimalMoves()[0];
             var opt = all_opt[Math.floor(Math.random()*all_opt.length)];
             toeboard.moveMutate(opt[0], opt[1]);
             refreshBoard();
+            sq = document.getElementById("ttt"+String(opt[0])+String(opt[1]));
+            sq.classList.remove("hover_hardly_knower");
         }
     }
 };
