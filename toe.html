@@ -131,6 +131,9 @@ let refreshBoard = () => {
         }
     }
     if (!isNaN(toeboard.result)){
+        for (var sq of document.getElementsByClassName("hover_hardly_knower")){
+            sq.classList.remove("hover_hardly_knower");    
+        }
         setTimeout(function(){
             if (toeboard.result==0){
                 //redirect to tie
