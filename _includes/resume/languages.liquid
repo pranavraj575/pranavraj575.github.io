@@ -49,7 +49,7 @@
         <tbody>
           <tr>
             <td colspan="1" class="list-group-name">
-              <h6 class="ml-1 ml-md-0" style="font-size: 0.95rem">
+              <h6 class="ml-1 ml-md-0" style="font-size: 0.95rem"{% if content.audio %} onclick="plAudio({{ content.audio }})"{% endif %}>
                 {% if content.ico_icon %}
                   <img src={{ content.ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
                 {% else %}
@@ -59,13 +59,7 @@
                     &nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
                   {% endif %}
                 {% endif %}
-                {% if content.audio %}
-                  <a href="{{ content.audio }}" style="text-decoration:none;color:var(--global-text-color)">
-                {% endif %}
                 {{ language_body }}
-                {% if content.audio %}
-                  </a>
-                {% endif %}
               </h6>
             </td>
           </tr>
