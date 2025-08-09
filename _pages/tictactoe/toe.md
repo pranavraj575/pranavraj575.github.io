@@ -31,6 +31,8 @@ silly: true
 </table>
 
 <script>
+var toeboard;
+var user_player;
 class Toe {
     constructor(board=[[0,0,0],[0,0,0],[0,0,0]],player=NaN) {
         this.board = board;
@@ -143,17 +145,16 @@ class Toe {
     }
 }
 
-var toeboard = new Toe();
 
 let refreshBoard = () => {
     for (var i = 0; i<3; i++){
         for (var j = 0; j<3; j++){
             const c = toeboard.board[i][j];
             const sq = document.getElementById("ttt"+String(i)+String(j));
-            if (c==1){
+            if (c==user_player){
                 sq.textContent = "X";
             }
-            else if (c==-1){
+            else if (c==-user_player){
                 sq.textContent = "O";
             }
         }
@@ -179,6 +180,17 @@ let refreshBoard = () => {
     }
 };
 
+let autoMove = (first_move=false) => {
+    if (isNaN(toeboard.result)){
+        var all_opt = toeboard.optimalMoves()[0];
+        var opt = all_opt[Math.floor(Math.random()*all_opt.length)];
+        toeboard.moveMutate(opt[0], opt[1]);
+        refreshBoard();
+        var sq = document.getElementById("ttt"+String(opt[0])+String(opt[1]));
+        sq.classList.remove("hover_hardly_knower");
+    }
+}
+
 let clickedToeSquare = (i,j) => {
     var valid = false;
     for (var sq of toeboard.open_spaces){
@@ -186,21 +198,24 @@ let clickedToeSquare = (i,j) => {
             valid = true;
         }
     }
-    // if the player is player 1, and the move is valid, and the game is not over, make the move
-    if (toeboard.player==1 && valid && isNaN(toeboard.result)){
+    // if the player is user_player, and the move is valid, and the game is not over, make the move
+    if (toeboard.player==user_player && valid && isNaN(toeboard.result)){
         toeboard.moveMutate(i,j);
         var sq = document.getElementById("ttt"+String(i)+String(j));
         sq.classList.remove("hover_hardly_knower");
         refreshBoard();
         if (isNaN(toeboard.result)){
-            var all_opt = toeboard.optimalMoves()[0];
-            var opt = all_opt[Math.floor(Math.random()*all_opt.length)];
-            toeboard.moveMutate(opt[0], opt[1]);
-            refreshBoard();
-            sq = document.getElementById("ttt"+String(opt[0])+String(opt[1]));
-            sq.classList.remove("hover_hardly_knower");
+            autoMove();
         }
     }
 };
+
+
+toeboard = new Toe();
+// either 1 or -1
+user_player = Math.floor(Math.random()*2)*2 - 1;
+if (user_player == -1){
+    autoMove(true);
+}
 </script>
 
