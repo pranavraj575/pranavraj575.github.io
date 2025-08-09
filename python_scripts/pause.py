@@ -50,7 +50,29 @@ def tolatex(fn):
             k += 1
         k += 1
         stuff = stuff[:i] + '\\href{' + url + '}{' + stuff[i + k:j] + '}' + stuff[j + 4:]
+    escapes=[]
+    esc=False
+    math_mode=False
+    href_mode=False
+    for i,c in enumerate(stuff):
+        if c=='\\':
+            esc=not esc
 
+        if not esc and c=='$':
+            if i>0 and stuff[i-1]!='$':
+                math_mode=not math_mode
+        if esc and stuff[i:].startswith('\\href{'):
+            href_mode=True
+        if href_mode and not esc and c=='}':
+            href_mode=False
+
+        if c=='_' and not href_mode and not math_mode and not esc:
+            escapes.append(i)
+
+        if esc and c!='\\': # turn off esc mode
+            esc = False
+    for i  in escapes[::-1]:
+        stuff=stuff[:i]+'\\'+stuff[i:]
     f = open(fn, 'w')
     f.write(stuff)
     f.close()
