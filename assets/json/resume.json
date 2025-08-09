@@ -498,31 +498,39 @@
   ],
   "software & tools": [
     {
-      "name": "Pytorch"
+      "name": "Pytorch",
+      "ico_icon": "/assets/img/icons/pytorch.png"
     },
     {
-      "name": "TensorFlow"
+      "name": "TensorFlow",
+      "ico_icon": "/assets/img/icons/tensorflow.png"
     },
     {
-      "name": "OpenAI Gym"
+      "name": "OpenAI Gym",
+      "ico_icon": "/assets/img/icons/gym.png"
     },
     {
       "name": "Stable Baselines"
     },
     {
-      "name": "Git"
+      "name": "Git",
+      "ico_icon": "/assets/img/icons/git.png"
     },
     {
-      "name": "ROS"
+      "name": "ROS",
+      "ico_icon": "/assets/img/icons/ROS.png"
     },
     {
-      "name": "AirSim (Unreal Engine)"
+      "name": "AirSim (Unreal Engine)",
+      "ico_icon": "/assets/img/icons/unreal.png"
     },
     {
-      "name": "Gazebo"
+      "name": "Gazebo",
+      "ico_icon": "/assets/img/icons/gazebo.png"
     },
     {
-      "name": "CoppeliaSim"
+      "name": "CoppeliaSim",
+      "ico_icon": "/assets/img/icons/coppelia.png"
     },
     {
       "name": "MuJoCo"
