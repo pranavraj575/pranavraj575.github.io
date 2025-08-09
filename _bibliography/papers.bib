@@ -16,10 +16,11 @@ eprint={2507.11992},
 archivePrefix={arXiv},
 abbr={arXiv},
 primaryClass={cs.AI},
-url={https://arxiv.org/abs/2507.11992},
-preview={beehavior_attention.gif},
 note={(Preprint)},
+url={https://arxiv.org/abs/2507.11992},
 pdf={Understanding_visual_attention_beehind_bee-inspired_UAV_navigation.pdf},
+preview={beehavior_attention.gif},
+selected={true},
 }
 
 address={Richland, SC},
@@ -42,10 +43,10 @@ abstract={With the increasing number of autonomous platforms in everyday life, f
 pages={2720-2722},
 keywords={multiagent games, sequence generation, team selection},
 preview={berteam_coevolution.gif},
-selected={true},
 url={https://dl.acm.org/doi/10.5555/3709347.3743990},
 pdf={Transformer_Guided_Coevolution_Improved_Team_Formation_in_Multiagent_Adversarial_Games.pdf},
 poster={BERTeam_poster_AAMAS.pdf},
+selected={true},
 }
 \mydate[21]{05}{2025}
 
@@ -54,17 +55,17 @@ author={Pranav Rajbhandari and Sofge, Donald},
 booktitle={2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)},
 abbr={IEEE ROBIO},
 title={Learning NEAT Emergent Behaviors in Robot Swarms},
+abstract={When researching robot swarms, many studies observe complex group behavior emerging from the individual agents' simple local actions. However, the task of learning an individual policy to produce a desired group behavior remains a challenging problem. We present a method of training distributed robotic swarm algorithms to produce emergent behavior. Inspired by the biological evolution of emergent behavior in animals, we use an evolutionary algorithm to train a 'population' of individual behaviors to produce a desired group behavior. We perform experiments using simulations of the Georgia Tech Miniature Autonomous Blimps (GT-MABs) aerial robotics platforms conducted in the CoppeliaSim simulator. Additionally, we test on simulations of Anki Vector robots to display our algorithm's effectiveness on various modes of actuation. We evaluate our algorithm on various tasks where a somewhat complex group behavior is required for success. These tasks include an Area Coverage task and a Wall Climb task. We compare behaviors evolved using our algorithm against designed policies, which we create in order to exhibit the emergent behaviors we desire.},
 year={2024},
 volume={},
 number={},
 pages={414-419},
 keywords={Training;Hands;Biological system modeling;Robot sensing systems;Approximation algorithms;Vectors;Stability analysis;Sensors;Time factors;Tuning},
 doi={10.1109/ROBIO64047.2024.10907512},
-selected={true},
-preview={neat_wall_climb.gif},
 url={https://doi.org/10.1109/ROBIO64047.2024.10907512},
-abstract={When researching robot swarms, many studies observe complex group behavior emerging from the individual agents' simple local actions. However, the task of learning an individual policy to produce a desired group behavior remains a challenging problem. We present a method of training distributed robotic swarm algorithms to produce emergent behavior. Inspired by the biological evolution of emergent behavior in animals, we use an evolutionary algorithm to train a 'population' of individual behaviors to produce a desired group behavior. We perform experiments using simulations of the Georgia Tech Miniature Autonomous Blimps (GT-MABs) aerial robotics platforms conducted in the CoppeliaSim simulator. Additionally, we test on simulations of Anki Vector robots to display our algorithm's effectiveness on various modes of actuation. We evaluate our algorithm on various tasks where a somewhat complex group behavior is required for success. These tasks include an Area Coverage task and a Wall Climb task. We compare behaviors evolved using our algorithm against designed policies, which we create in order to exhibit the emergent behaviors we desire.},
 pdf={Learning_NEAT_Emergent_Behaviors_in_Robot_Swarms.pdf},
+preview={neat_wall_climb.gif},
+selected={true},
 }
 presentation: \mydate[11]{12}{2024}
 
@@ -73,16 +74,16 @@ author={Pranav Rajbhandari and Dhileep, Karthick and Ravi, Sridhar and Sofge, Do
 booktitle={2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)},
 abbr={IEEE ROBIO},
 title={Fine Tuning Swimming Locomotion Learned from Mosquito Larvae},
+abstract={In prior research, we analyzed the backwards swimming motion of mosquito larvae, and created a parametrized approximation in a Computational Fluid Dynamics simulation. Since the parameterized swimming motion is replicated from observed larvae, it is not necessarily the most efficient locomotion. In this project, we further optimize this swimming locomotion for the simulated platform, using Reinforcement Learning to guide local parameter updates. Since the majority of the computation cost arises from the Computational Fluid Dynamics model, we additionally train a deep neural network to replicate the forces acting on the swimmer model. We find that this method is effective at performing local search to improve the parameterized swimming locomotion.},
 year={2024},
 volume={},
 number={},
 pages={2082-2085},
 keywords={Computational fluid dynamics;Computational modeling;Cloning;Kinematics;Artificial neural networks;Reinforcement learning;Search problems;Robots;Tuning;Sports},
 doi={10.1109/ROBIO64047.2024.10907546},
-preview={mosquito_cloned_playthrough.gif},
 url={https://doi.org/10.1109/ROBIO64047.2024.10907546},
-abstract={In prior research, we analyzed the backwards swimming motion of mosquito larvae, and created a parametrized approximation in a Computational Fluid Dynamics simulation. Since the parameterized swimming motion is replicated from observed larvae, it is not necessarily the most efficient locomotion. In this project, we further optimize this swimming locomotion for the simulated platform, using Reinforcement Learning to guide local parameter updates. Since the majority of the computation cost arises from the Computational Fluid Dynamics model, we additionally train a deep neural network to replicate the forces acting on the swimmer model. We find that this method is effective at performing local search to improve the parameterized swimming locomotion.},
 pdf={Fine_Tuning_Swimming_Locomotion_Learned_from_Mosquito_Larvae.pdf},
+preview={mosquito_cloned_playthrough.gif},
 }
 presentation: \mydate[13]{12}{2024}
 
@@ -93,18 +94,18 @@ and McGuire, Loy
 and Darbha, Swaroop
 and Sofge, Donald},
 title={UAV Routing for Enhancing the Performance of a Classifier-in-the-loop},
+abstract={Some human-machine systems are designed so that machines (robots) gather and deliver data to remotely located operators (humans) through an interface to aid them in classification. The performance of a human as a (binary) classifier-in-the-loop is characterized by probabilities of correctly classifying objects (or points of interest) as a true target or a false target. These two probabilities depend on the time spent collecting information at a point of interest (POI), known as dwell time. The information gain associated with collecting information at a POI is then a function of dwell time and discounted by the revisit time, i.e., the duration between consecutive revisits to the same POI, to ensure that the vehicle covers all POIs in a timely manner. The objective of the routing problem for classification is to route the vehicles optimally, which is a discrete problem, and determine the optimal dwell time at each POI, which is a continuous optimization problem, to maximize the total discounted information gain while visiting every POI at least once. Due to the coupled discrete and continuous problem, which makes the problem hard to solve, we make a simplifying assumption that the information gain is discounted exponentially by the revisit time; this assumption enables one to decouple the problem of routing with the problem of determining optimal dwell time at each POI for a single vehicle problem. For the multi-vehicle problem, since the problem involves task partitioning between vehicles in addition to routing and dwell time computation, we provide a fast heuristic to obtain high-quality feasible solutions.},
 journal={Journal of Intelligent & Robotic Systems},
 abbr={JIRS},
 year={2024},
 day={14},
 volume={110},
 number={134},
-abstract={Some human-machine systems are designed so that machines (robots) gather and deliver data to remotely located operators (humans) through an interface to aid them in classification. The performance of a human as a (binary) classifier-in-the-loop is characterized by probabilities of correctly classifying objects (or points of interest) as a true target or a false target. These two probabilities depend on the time spent collecting information at a point of interest (POI), known as dwell time. The information gain associated with collecting information at a POI is then a function of dwell time and discounted by the revisit time, i.e., the duration between consecutive revisits to the same POI, to ensure that the vehicle covers all POIs in a timely manner. The objective of the routing problem for classification is to route the vehicles optimally, which is a discrete problem, and determine the optimal dwell time at each POI, which is a continuous optimization problem, to maximize the total discounted information gain while visiting every POI at least once. Due to the coupled discrete and continuous problem, which makes the problem hard to solve, we make a simplifying assumption that the information gain is discounted exponentially by the revisit time; this assumption enables one to decouple the problem of routing with the problem of determining optimal dwell time at each POI for a single vehicle problem. For the multi-vehicle problem, since the problem involves task partitioning between vehicles in addition to routing and dwell time computation, we provide a fast heuristic to obtain high-quality feasible solutions.},
 issn={1573-0409},
 doi={10.1007/s10846-024-02169-1},
-preview={tsp_real_world_examples.gif},
 url={https://doi.org/10.1007/s10846-024-02169-1},
 pdf={UAV_Routing_for_Enhancing_the_Performance_of_a_Classifier-in-the-loop.pdf},
+preview={tsp_real_world_examples.gif},
 }
 \mydate[14]{09}{2024}
 
@@ -118,9 +119,9 @@ year={2025},
 
 @article{geodesic,
 title={Geodesic complexity? It's actually quite simplex},
+abstract={The geodesic complexity of a length space $X$ quantifies the required number of case distinctions to continuously choose a shortest path connecting any given start and end point. We prove a local lower bound for the geodesic complexity of $X$ obtained by embedding simplices into $X\times X$. We additionally create and prove correctness of an algorithm to find cut loci on surfaces of convex polyhedra, as the structure of a space's cut loci is related to its geodesic complexity. We use these techniques to prove the geodesic complexity of an octahedron is four. Our method is inspired by earlier work of Recio-Mitter and Davis, and thus recovers their results on the geodesic complexity of the $n$-torus and the tetrahedron, respectively.},
 author={Pranav Rajbhandari and Florian Frick},
 note={(In preparation)},
 year={2025},
 preview={geodesic_complexity_octademo.gif},
-abstract={The geodesic complexity of a length space $X$ quantifies the required number of case distinctions to continuously choose a shortest path connecting any given start and end point. We prove a local lower bound for the geodesic complexity of $X$ obtained by embedding simplices into $X\times X$. We additionally create and prove correctness of an algorithm to find cut loci on surfaces of convex polyhedra, as the structure of a space's cut loci is related to its geodesic complexity. We use these techniques to prove the geodesic complexity of an octahedron is four. Our method is inspired by earlier work of Recio-Mitter and Davis, and thus recovers their results on the geodesic complexity of the $n$-torus and the tetrahedron, respectively.},
 }
