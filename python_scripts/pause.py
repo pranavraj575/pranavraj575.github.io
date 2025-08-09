@@ -50,29 +50,29 @@ def tolatex(fn):
             k += 1
         k += 1
         stuff = stuff[:i] + '\\href{' + url + '}{' + stuff[i + k:j] + '}' + stuff[j + 4:]
-    escapes=[]
-    esc=False
-    math_mode=False
-    href_mode=False
-    for i,c in enumerate(stuff):
-        if c=='\\':
-            esc=not esc
+    escapes = []
+    esc = False
+    math_mode = False
+    href_mode = False
+    for i, c in enumerate(stuff):
+        if c == '\\':
+            esc = not esc
 
-        if not esc and c=='$':
-            if i>0 and stuff[i-1]!='$':
-                math_mode=not math_mode
+        if not esc and c == '$':
+            if i > 0 and stuff[i - 1] != '$':
+                math_mode = not math_mode
         if esc and stuff[i:].startswith('\\href{'):
-            href_mode=True
-        if href_mode and not esc and c=='}':
-            href_mode=False
+            href_mode = True
+        if href_mode and not esc and c == '}':
+            href_mode = False
 
-        if c=='_' and not href_mode and not math_mode and not esc:
+        if c == '_' and not href_mode and not math_mode and not esc:
             escapes.append(i)
 
-        if esc and c!='\\': # turn off esc mode
+        if esc and c != '\\':  # turn off esc mode
             esc = False
-    for i  in escapes[::-1]:
-        stuff=stuff[:i]+'\\'+stuff[i:]
+    for i in escapes[::-1]:
+        stuff = stuff[:i] + '\\' + stuff[i:]
     f = open(fn, 'w')
     f.write(stuff)
     f.close()
@@ -82,8 +82,8 @@ def tolatex(fn):
 if 'projects' in cv:
     fn = os.path.join(output_dir, 'projects.tex')
     f = open(fn, 'w')
-    f.write('\\cvsection{Research Projects} % ordered by end date\n\n')
-    f.write('\\begin{cventries}')
+    f.write('\\cvsection{Research Projects} % ordered by start date\n\n')
+    f.write('\\begin{cventries}\n')
     projects = cv['projects']
     projects.sort(key=lambda project: project.get('startDate', '') + project.get('endDate', ''),
                   reverse=True)
@@ -118,10 +118,73 @@ if 'projects' in cv:
         f.write(tab + '\\end{cvitems}\n')
         f.write(tab + '} % description bullet points\n')
 
-        print(project)
         f.write('\n\n')
     f.write('\\end{cventries}\n')
     f.close()
     tolatex(fn)
 else:
     print('projects not in cv')
+
+# experience
+if 'experience' in cv:
+    fn = os.path.join(output_dir, 'experience.tex')
+    f = open(fn, 'w')
+    f.write('\\cvsection{Experience} % ordered by start date\n\n')
+    f.write('\\begin{cventries}\n')
+    experiences = cv['experience']
+    for i in range(len(experiences) - 1, -1, -1):
+        experience = experiences[i]
+        if 'dateList' in experience:
+            experiences.pop(i)
+            if False:
+                for rng in experience['dateList']:
+                    temp = experience.copy()
+                    temp['startDate'] = rng[0]
+                    if len(rng) == 2:
+                        temp['endDate'] = rng[1]
+                    experiences.append(temp)
+    experiences = list(filter(lambda experience: experience.get('in_projects', 'false') == 'false', experiences))
+
+    experiences.sort(key=lambda experience: experience.get('startDate', '') + experience.get('endDate', ''),
+                     reverse=True)
+
+    for experience in experiences:
+        f.write('  \\cventry\n')
+        tab = '    '
+        f.write(tab + '{\\textbf{')
+        if 'subname' in experience:
+            f.write(experience['subname'] + ', ')
+        f.write(experience['name'])
+        f.write('}} % organization\n')
+        f.write(tab + '{' + experience['position'] + '} % job title\n')
+
+        if 'mentor' in experience:
+            f.write(tab + '% mentor: ' + experience['mentor'] + '\n')
+        if 'hours' in experience:
+            f.write(tab + '% ' + experience['hours'] + ' hours/week\n')
+
+        f.write(tab + '{' + experience.get('location', '') + '} % location\n')
+
+        f.write(tab + '{')
+        if 'startDate' in experience:
+            f.write(dateing(experience['startDate']))
+            f.write(' - ')
+            f.write(dateing(experience['endDate']) if 'endDate' in experience else 'Present')
+        f.write('} % date\n')
+
+        f.write(tab + '{\n')
+        f.write(tab + '\\begin{cvitems}\n')
+        descritptions = experience.get('highlights', [])
+        if 'summary' in experience:
+            descritptions = [experience['summary']] + descritptions
+        for desc in descritptions:
+            f.write(tab + '  \\item{' + desc + '}\n')
+        f.write(tab + '\\end{cvitems}\n')
+        f.write(tab + '} % description bullet points\n')
+
+        f.write('\n\n')
+    f.write('\\end{cventries}\n')
+    f.close()
+    tolatex(fn)
+else:
+    print('experience not in cv')
