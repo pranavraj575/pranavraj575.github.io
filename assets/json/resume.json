@@ -336,6 +336,7 @@
       "mentor": "Sridhar Ravi",
       "startDate": "2025-02-04",
       "endDate": "2025-08-04",
+      "in_projects": true,
       "highlights": [
         "Worked in the Bioengineering Group on project \"Understanding bee visual attention by imitating beehavior\"",
         "Worked in the Bioengineering Group on project \"Fine Tuning Swimming Locomotion Learned from Mosquito Larvae\""
@@ -349,6 +350,7 @@
       "mentor": "Florian Frick; Reid Simmons",
       "startDate": "2023-01-17",
       "endDate": "2024-05-12",
+      "in_projects": true,
       "dateList": [
         ["2023-01-17","2024-05-12"],
         ["2021-02-15","2022-05-12"]
@@ -367,6 +369,7 @@
       "mentor": "Donald Sofge; Laura Hiatt",
       "startDate": "2024-01-19",
       "endDate": "2024-10-16",
+      "in_projects": true,
       "dateList": [
         ["2024-01-19","2024-10-16"],
         ["2023-05-22","2023-08-11"],
@@ -421,7 +424,7 @@
       "endDate": "2021-08-20",
       "highlights": [
         "Collaborated with a team of three researchers to develop and maintain an R package for Natural Language Processing",
-        "Utilized Rust’s BERT Natural Language Processing to tokenize and classify strings in R"
+        "Utilized Rust's BERT Natural Language Processing to tokenize and classify strings in R"
       ],
       "hours": "10"
     },
@@ -491,6 +494,41 @@
       "startDate": "2020-08-01",
       "endDate": "2024-05-12",
       "summary": "Volunteer, Member"
+    }
+  ],
+  "software & tools": [
+    {
+      "name": "Pytorch"
+    },
+    {
+      "name": "TensorFlow"
+    },
+    {
+      "name": "OpenAI Gym"
+    },
+    {
+      "name": "Stable Baselines"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "ROS"
+    },
+    {
+      "name": "AirSim (Unreal Engine)"
+    },
+    {
+      "name": "Gazebo"
+    },
+    {
+      "name": "CoppeliaSim"
+    },
+    {
+      "name": "MuJoCo"
+    },
+    {
+      "name": "LaTeX"
     }
   ],
   "languages": [
