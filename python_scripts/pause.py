@@ -173,11 +173,11 @@ if 'experience' in cv:
         f.write('} % date\n')
 
         f.write(tab + '{\n')
-        f.write(tab + '\\begin{cvitems}\n')
-        descritptions = experience.get('highlights', [])
         if 'summary' in experience:
-            descritptions = [experience['summary']] + descritptions
-        for desc in descritptions:
+            f.write(tab +'\\textit{'+ experience['summary'] + '}\n' + tab + '\\vspace{4.0mm}\n')
+        f.write(tab + '\\begin{cvitems}\n')
+
+        for desc in experience.get('highlights', []):
             f.write(tab + '  \\item{' + desc + '}\n')
         f.write(tab + '\\end{cvitems}\n')
         f.write(tab + '} % description bullet points\n')
