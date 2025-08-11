@@ -64,7 +64,7 @@
       {%- else -%}
         <span>
           {{- t_author_first }}
-          {{ ";tst: " | append: author | append: " end;"}}
+          {{ ";tst: " | append: author | append: all_author_names[1] | append: " end;"}}
           {{ author_last_html -}}
         </span>
       {% endif %}
