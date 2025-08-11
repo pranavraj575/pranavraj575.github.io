@@ -68,6 +68,7 @@
         </span>
       {% endif %}
     {%- endif -%}
+    {%- if forloop.last and author_array_limit != author_array_size -%}, {% endif -%}
   {% endfor %}
   {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
@@ -133,7 +134,7 @@
       {% endunless %}
     {%- endfor -%}
     {%- assign more_authors_show = more_authors_show | append: ' [collapse]' -%}
-    , <span
+    <span
       class="more-authors"
       title="click to view {{ more_authors_hide }}"
       onclick="
