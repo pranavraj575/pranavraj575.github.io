@@ -311,6 +311,14 @@
   ],
   "publications": [
     {
+      "name": "Understanding visual attention beehind bee-inspired UAV navigation",
+      "authors": "Pranav Rajbhandari and Abhi Veda and Matthew Garratt and Mandayam Srinivasan and Sridhar Ravi",
+      "publisher": "arXiv",
+      "releaseDate": "2025-07-16",
+      "url": "https://arxiv.org/abs/2507.11992",
+      "note": "(Preprint)"
+    },
+    {
       "name": "Transformer Guided Coevolution: Improved Team Formation in Multiagent Adversarial Games",
       "authors": "Pranav Rajbhandari and Prithviraj Dasgupta and Donald Sofge",
       "publisher": "Proc. of the 24th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2025)",
