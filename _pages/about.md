@@ -9,7 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>ML PhD student</p><br>
+    <p>PhD student</p><br>
+    <p>Machine Learning Department</p><br>
     <p>Carnegie Mellon University</p><br>
     <p>Pittsburgh, USA</p>
 

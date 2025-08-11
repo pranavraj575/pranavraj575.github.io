@@ -620,6 +620,14 @@
     {
       "name": "Matlab",
       "ico_icon": "/assets/img/icons/matlab.png"
+    },
+    {
+      "name": "JavaScript",
+      "ico_icon": "/assets/img/icons/js.png"
+    },
+    {
+      "name": "HTML",
+      "ico_icon": "/assets/img/icons/html.png"
     }
   ],
   "other languages": [
