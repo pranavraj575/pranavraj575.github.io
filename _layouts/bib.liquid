@@ -86,7 +86,9 @@
           {% if forloop.first == false -%}
             {%- if forloop.length > 2 or author_array_size > author_array_limit %}, {% elsif forloop.length == 2 %}  {% endif %}
           {%- endif %}
-          {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
+          {%- if forloop.last -%}
+            {%- if author_array_limit == author_array_size %} and {% else -%}, {% endif -%}
+          {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
           <em>
@@ -100,10 +102,8 @@
               {{ author_last_html -}}
             </a>
           {%- else -%}
-            <span>
               {{- author.first }}
               {{ author_last_html -}}
-            </span>
           {%- endif -%}
         {%- endif -%}
       {% endfor %}
@@ -157,7 +157,7 @@
           {% endunless %}
         {%- endfor -%}
         {%- assign more_authors_show = more_authors_show | append: ' [collapse]' -%}
-        , <span
+        <span
           class="more-authors"
           title="click to view {{ more_authors_hide }}"
           onclick="
