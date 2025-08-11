@@ -18,12 +18,13 @@
     {% else %}
         {% if author contains "," %}
             {% assign all_author_names = author | split: "," %}
-            {% assign t_author_last = all_author_names[0]  | append: ";tst cm;" | append: author | append: ";end;" %}
-            {% assign t_author_first = all_author_names[1] %}
+            {% assign t_author_last = all_author_names[0] %}
+            {% assign t_author_first = all_author_names[1]  | append: ";tst cm;" | append: author | append: ";end;" %}
         {% else %}
             {% assign all_author_names = author | split: " " %}
-            {% assign t_author_last = all_author_names[-1] | append: ";tst sp;" | append: author | append: ";end;" %}
+            {% assign t_author_last = all_author_names[-1] %}
             {% assign t_author_first = all_author_names | slice: 0,-1 | join: " " %}
+            {% assign t_author_first = t_author_first  | append: ";tst sp;" | append: author | append: ";end;" %}
         {% endif %}
     {% endif %}
     {%- assign author_last_name = t_author_last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
