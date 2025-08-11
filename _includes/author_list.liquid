@@ -17,13 +17,13 @@
       {% assign t_author_first = author.first %}
     {% else %}
         {% if author contains "," %}
-            {% assign author = author | split: "," %}
-            {% assign t_author_last = author[0] %}
-            {% assign t_author_first = author[1] %}
+            {% assign all_author_names = author | split: "," %}
+            {% assign t_author_last = all_author_names[0] %}
+            {% assign t_author_first = all_author_names[1] %}
         {% else %}
-            {% assign author = author | split: " " %}
-            {% assign t_author_last = author[-1] %}
-            {% assign t_author_first = author | slice: 0,-1 | join: " " %}
+            {% assign all_author_names = author | split: " " %}
+            {% assign t_author_last = all_author_names[-1] %}
+            {% assign t_author_first = all_author_names | slice: 0,-1 | join: " " %}
         {% endif %}
     {% endif %}
     {%- assign author_last_name = t_author_last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
@@ -82,13 +82,13 @@
         {% assign t_author_first = author.first %}
       {% else %}
           {% if author contains "," %}
-              {% assign author = author | split: "," %}
-              {% assign t_author_last = author[0] %}
-              {% assign t_author_first = author[1] %}
+              {% assign all_author_names = author | split: "," %}
+              {% assign t_author_last = all_author_names[0] %}
+              {% assign t_author_first = all_author_names[1] %}
           {% else %}
-              {% assign author = author | split: " " %}
-              {% assign t_author_last = author[-1] %}
-              {% assign t_author_first = author | slice: 0,-1 | join: " " %}
+              {% assign author = all_author_names | split: " " %}
+              {% assign t_author_last = all_author_names[-1] %}
+              {% assign t_author_first = all_author_names | slice: 0,-1 | join: " " %}
           {% endif %}
       {% endif %}
       {% assign more_authors_show = more_authors_show | append: ' ' %}
