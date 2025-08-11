@@ -38,7 +38,7 @@
             {% endif %}
           </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-            {% assign author_array = content.authors | split: "and" %}
+            {% assign author_array = content.authors | split: " and " %}
             {% include author_list.liquid author_array=author_array annotation=null %}
           </h6>
           <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ content.publisher }}</h6>
