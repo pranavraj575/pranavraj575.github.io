@@ -67,11 +67,11 @@
           {% %}
           TEST
           AUTHOR:
-          {% author %};
+          {{ author }};
           AUTHOR.LAST:
-          {% author.last %};
+          {{ author.last }};
           AUTHOR.LAST.LAST:
-          {% author.last.last %};
+          {{ author.last.last }};
           {% if author.last %};
            runs if AUTHOR.LAST;
           {% endif %}
