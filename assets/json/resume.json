@@ -312,7 +312,7 @@
   "publications": [
     {
       "name": "Understanding visual attention beehind bee-inspired UAV navigation",
-      "authors": "Pranav Rajbhandari and Abhi Veda and Matthew Garratt and Mandayam Srinivasan and Sridhar Ravi",
+      "authors": "Rajbhandari, Pranav and Veda, Abhi and Garratt, Matthew and Srinivasan, Mandayam and Ravi, Sridhar",
       "publisher": "arXiv",
       "releaseDate": "2025-07-16",
       "url": "https://arxiv.org/abs/2507.11992",
@@ -320,28 +320,28 @@
     },
     {
       "name": "Transformer Guided Coevolution: Improved Team Formation in Multiagent Adversarial Games",
-      "authors": "Pranav Rajbhandari and Prithviraj Dasgupta and Donald Sofge",
+      "authors": "Rajbhandari, Pranav and Dasgupta, Prithviraj and Sofge, Donald",
       "publisher": "Proc. of the 24th International Conference on Autonomous Agents and Multiagent Systems (AAMAS 2025)",
       "releaseDate": "2025-05-21",
       "url": "https://dl.acm.org/doi/10.5555/3709347.3743990"
     },
     {
       "name": "Learning NEAT Emergent Behaviors in Robot Swarms",
-      "authors": "Pranav Rajbhandari and Donald Sofge",
+      "authors": "Rajbhandari, Pranav and Sofge, Donald",
       "publisher": "2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
       "releaseDate": "2024-12-11",
       "url": "https://doi.org/10.1109/ROBIO64047.2024.10907512"
     },
     {
       "name": "Fine Tuning Swimming Locomotion Learned from Mosquito Larvae",
-      "authors": "Pranav Rajbhandari and Dhileep, Karthick and Ravi, Sridhar and Sofge, Donald",
+      "authors": "Rajbhandari, Pranav and Dhileep, Karthick and Ravi, Sridhar and Sofge, Donald",
       "publisher": "2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
       "releaseDate": "2024-12-13",
       "url": "https://doi.org/10.1109/ROBIO64047.2024.10907546"
     },
     {
       "name": "UAV Routing for Enhancing the Performance of a Classifier-in-the-loop",
-      "authors": "Kumar, Deepak Prakash and Pranav Rajbhandari and McGuire, Loy and Darbha, Swaroop and Sofge, Donald",
+      "authors": "Kumar, Deepak Prakash and Rajbhandari, Pranav and McGuire, Loy and Darbha, Swaroop and Sofge, Donald",
       "publisher": "2024 IEEE International Conference on Robotics and Biomimetics (ROBIO)",
       "releaseDate": "2024-09-14",
       "url": "https://doi.org/10.1007/s10846-024-02169-1",
@@ -351,21 +351,21 @@
   "presentations": [
     {
       "name": "Learning Emergent Behavior in Robot Swarms with NEAT",
-      "authors": "Pranav Rajbhandari and Donald Sofge",
+      "authors": "Rajbhandari, Pranav and Sofge, Donald",
       "location": "San Diego, USA",
       "publisher": "Naval Applications of Machine Learning",
       "releaseDate": "2024-03-11"
     },
     {
       "name": "Sim-to-real Transfer Reinforcement Learning",
-      "authors": "Pranav Rajbhandari and Sophia Zalewski and Reid Simmons",
+      "authors": "Rajbhandari, Pranav and Zalewski, Sophia and Simmons, Reid",
       "publisher": "Carnegie Mellon University Meeting of the Minds",
       "location": "Pittsburgh, USA",
       "releaseDate": "2023-05-03"
     },
     {
       "name": "Creating Agents to Learn Jenga",
-      "authors": "Pranav Rajbhandari and Reid Simmons",
+      "authors": "Rajbhandari, Pranav and Simmons, Reid",
       "publisher": "Carnegie Mellon University Meeting of the Minds",
       "location": "Pittsburgh, USA",
       "releaseDate": "2022-05-02",
