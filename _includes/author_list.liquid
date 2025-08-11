@@ -65,13 +65,15 @@
         <span>
           {{- t_author_first }}
           TEST
+          NOW ASSIGN AUTHOR TO STRING
+          {% assign author = author | string %}
           AUTHOR:
           {{ author }};
           AUTHOR.LAST:
           {{ author.last }};
           AUTHOR.LAST.LAST:
           {{ author.last.last }};
-          {% if author.last %};
+          {% if author.last %}
            runs if AUTHOR.LAST;
           {% endif %}
           END
