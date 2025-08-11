@@ -12,7 +12,7 @@
 
   {%- for author in include.author_array limit: author_array_limit -%}
     {% assign author_is_self = false %}
-    {% if author.last.last %}{% comment %}if author.last is a string, this runs true{% endcomment %}
+    {% if author.last %}
       {% assign t_author_last = author.last %}
       {% assign t_author_first = author.first %}
     {% else %}
@@ -64,9 +64,21 @@
       {%- else -%}
         <span>
           {{- t_author_first }}
+          {% %}
+          TEST
+          AUTHOR:
+          {% author %};
+          AUTHOR.LAST:
+          {% author.last %};
+          AUTHOR.LAST.LAST:
+          {% author.last.last %};
+          {% if author.last %};
+           runs if AUTHOR.LAST;
+          {% endif %}
+          END
           {{ author_last_html -}}
         </span>
-      {% endif %}
+      {%- endif -%}
     {%- endif -%}
     {%- if forloop.last and author_array_limit != author_array_size -%}, {% endif -%}
   {% endfor %}
@@ -80,7 +92,7 @@
     {%- endif -%}
     {% assign more_authors_show = '' %}
     {%- for author in include.author_array offset: author_array_limit -%}
-      {% if author.last.last %}
+      {% if author.last %}
         {% assign t_author_last = author.last %}
         {% assign t_author_first = author.first %}
       {% else %}
