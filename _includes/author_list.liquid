@@ -18,11 +18,11 @@
     {% else %}
         {% if author contains "," %}
             {% assign all_author_names = author | split: "," %}
-            {% assign t_author_last = all_author_names[0] %}
+            {% assign t_author_last = all_author_names[0]  | append: ";tst cm;" | append: author | append: ";end;" %}
             {% assign t_author_first = all_author_names[1] %}
         {% else %}
             {% assign all_author_names = author | split: " " %}
-            {% assign t_author_last = all_author_names[-1] %}
+            {% assign t_author_last = all_author_names[-1] | append: ";tst sp;" | append: author | append: ";end;" %}
             {% assign t_author_first = all_author_names | slice: 0,-1 | join: " " %}
         {% endif %}
     {% endif %}
@@ -62,8 +62,10 @@
           {{ author_last_html -}}
         </a>
       {%- else -%}
-        {{- t_author_first }}
-        {{ author_last_html -}}
+        <span>
+          {{- t_author_first }}
+          {{ author_last_html -}}
+        </span>
       {% endif %}
     {%- endif -%}
   {% endfor %}
@@ -130,7 +132,7 @@
         {% assign more_authors_show = more_authors_show | append: ',' %}
       {% endunless %}
     {%- endfor -%}
-    {% assign more_authors_show = more_authors_show | append: ' [collapse]' %}
+    {%- assign more_authors_show = more_authors_show | append: ' [collapse]' -%}
     , <span
       class="more-authors"
       title="click to view {{ more_authors_hide }}"
