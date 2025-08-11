@@ -29,7 +29,7 @@
             {%- else -%}
               {%- unless forloop.first -%}
                 {%- assign t_author_first = t_author_first | append: " " -%}
-              {%- endif -%}
+              {%- endunless -%}
               {%- assign t_author_first = t_author_first | append: t_author_name -%}
             {%- endif -%}
         {%- endfor -%}
@@ -106,7 +106,7 @@
               {%- else -%}
                 {%- unless forloop.first -%}
                   {%- assign t_author_first = t_author_first | append: " " -%}
-                {%- endif -%}
+                {%- endunless -%}
                 {%- assign t_author_first = t_author_first | append: t_author_name -%}
               {%- endif -%}
           {%- endfor -%}
