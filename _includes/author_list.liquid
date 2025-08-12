@@ -17,8 +17,8 @@
       {%- assign author_string = author_string | append: chrracter -%}
     {%- endfor -%}
     {%- assign author_string = author_string | split: "," -%}
-    {%- assign t_author_last = author_string[0] -%}
-    {%- assign t_author_first = author_string[1] -%}
+    {%- assign t_author_last = author_string[0] | string -%}
+    {%- assign t_author_first = author_string[1] | string -%}
     {%- assign author_last_name = t_author_last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
     {%- assign author_last_html = t_author_last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
     {% if site.scholar.last_name contains author_last_name %}
