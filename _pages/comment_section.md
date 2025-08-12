@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 permalink: /comment-section
 title: comment section
 date: 2025-04-20 04:20:00-0400
@@ -10,4 +10,4 @@ silly: true
 giscus_comments: true
 ---
 
-Test
+doesnt work, need to set this up with https://giscus.app/
