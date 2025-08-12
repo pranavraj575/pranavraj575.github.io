@@ -3,15 +3,25 @@ generate .tex file from resume
 """
 import os
 import json
+import argparse
 
 DIR = os.path.dirname(os.path.dirname(__file__))
-output_dir = os.path.join(DIR, '.output', 'pause')
-cvdir = os.path.join(DIR, 'assets', 'json', 'resume.json')
-if not os.path.exists(cvdir):
+
+PARSER = argparse.ArgumentParser()
+PARSER.add_argument("--output", action="store", required=False, default=os.path.join(DIR, '.output', 'pause'),
+                    help="directory to store output files")
+PARSER.add_argument("--resume", action="store", required=False,
+                    default=os.path.join(DIR, 'assets', 'json', 'resume.json'),
+                    help="directory to find json file")
+args = PARSER.parse_args()
+
+output_dir = args.output
+pause = args.resume
+if not os.path.exists(pause):
     quit(69)
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
-f = open(cvdir, encoding="utf8")
+f = open(pause, encoding="utf8")
 cv = json.load(f)
 f.close()
 
