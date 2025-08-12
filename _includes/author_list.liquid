@@ -23,23 +23,18 @@
     {%- assign author_last_name = t_author_last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
     {%- assign author_last_html = t_author_last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
     {% if site.scholar.last_name contains author_last_name %}
-      {%- for pot_name in site.scholar.first_name %}
-        {%- if pot_name contains t_author_first %}
-          {%- assign author_is_self = true %}
-        {%- endif -%}
-      {%- endfor -%}
+      {% if site.scholar.first_name contains t_author_first %}
+        {% assign author_is_self = true %}
+      {% endif %}
     {%- endif -%}
     {% assign coauthor_url = null %}
     {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
     {% if site.data.coauthors[clean_last_name] %}
       {%- for coauthor in site.data.coauthors[clean_last_name] -%}
-        {%- for pot_name in coauthor.firstname -%}
-          {% if pot_name contains t_author_first %}
-            {%- assign coauthor_url = coauthor.url -%}
-            {% break %}
-          {%- endif -%}
-          {%- if coauthor_url -%}{%- break -%}{%- endif -%}
-        {%- endfor -%}
+        {% if coauthor.firstname contains t_author_first %}
+          {%- assign coauthor_url = coauthor.url -%}
+          {% break %}
+        {%- endif -%}
       {% endfor %}
     {%- endif -%}
 
@@ -102,23 +97,18 @@
       {%- assign author_last_name = t_author_last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
       {%- assign author_last_html = t_author_last | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
       {% if site.scholar.last_name contains author_last_name %}
-        {%- for pot_name in site.scholar.first_name %}
-          {%- if pot_name contains t_author_first %}
-            {%- assign author_is_self = true %}
-          {%- endif -%}
-        {%- endfor -%}
+        {% if site.scholar.first_name contains t_author_first %}
+          {% assign author_is_self = true %}
+        {% endif %}
       {%- endif -%}
       {% assign coauthor_url = null %}
       {%- assign clean_last_name = author_last_name | downcase | remove_accents -%}
       {% if site.data.coauthors[clean_last_name] %}
         {%- for coauthor in site.data.coauthors[clean_last_name] -%}
-          {%- for pot_name in coauthor.firstname -%}
-            {% if pot_name contains t_author_first %}
-              {%- assign coauthor_url = coauthor.url -%}
-              {% break %}
-            {%- endif -%}
-            {%- if coauthor_url -%}{%- break -%}{%- endif -%}
-          {%- endfor -%}
+          {% if coauthor.firstname contains t_author_first %}
+            {%- assign coauthor_url = coauthor.url -%}
+            {% break %}
+          {%- endif -%}
         {% endfor %}
       {%- endif -%}
 
