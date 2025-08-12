@@ -152,7 +152,7 @@ ul.task-list input[type="checkbox"] {
  /* Style the button that is used to open and close the collapsible content */
 .author {
   a {
-    border-bottom: 1px dashed var(--global-theme-color);
+    // border-bottom: 1px dashed var(--global-theme-color);
 
     &:hover {
       border-bottom-style: solid;
@@ -877,7 +877,7 @@ footer.sticky-bottom {
 
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          // border-bottom: 1px dashed var(--global-theme-color);
 
           &:hover {
             border-bottom-style: solid;
