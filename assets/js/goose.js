@@ -21,6 +21,8 @@ let increaseStepsTo = (steps) => {
   if (determineStepsFound() < steps){
     setStepsFound(steps);
   }
+  // quack no matter what
+  plAudio("/assets/audio/quack.mp3");
 };
 
 let numSecrets = 4;
