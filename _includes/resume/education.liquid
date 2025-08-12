@@ -69,7 +69,7 @@
                   {% for course in topic.courses %}
                     <tr{% if content.silly %}class="silly-goose"{% endif %}>
                       <td></td>
-                      <td class="list-group-name">
+                      <td class="list-group-name"{% if course.id %} title="{{ course.id }}"{% endif %}>
                         {% if course.url %}
                           <a href="{{ course.url }}" style="color:var(--global-text-color)"><b>{{ course.name }}</b></a>
                         {% else %}

@@ -30,7 +30,29 @@
       "url": "https://www.cs.cmu.edu/",
       "area": "Machine Learning",
       "studyType": "PhD",
-      "startDate": "2025-08-16"
+      "startDate": "2025-08-16",
+      "topics": [
+        {
+          "name": "Mathematics",
+          "courses": [
+            {
+              "name": "Computational Game Solving",
+              "url": "https://www.cs.cmu.edu/~sandholm/cs15-888F21/",
+              "id": "15-888"
+            }
+          ]
+        },
+        {
+          "name": "Deep Learning",
+          "courses": [
+            {
+              "name": "Advanced Introduction to Machine Learning",
+              "url": "https://www.cs.cmu.edu/~epxing/Class/10715/",
+              "id": "10-715"
+            }
+          ]
+        }
+      ]
     },
     {
       "institution": "Carnegie Mellon University",
