@@ -59,10 +59,10 @@
           {{- t_author_first }}
             {% if site.scholar.last_name contains author_last_name %}
               {% if site.scholar.first_name contains t_author_first %}
-                {% assign author_is_self = true %}
+                HERE
+              {% else %}
+                {{ site.scholar.first_name }} {{ t_author_first }}
               {% endif %}
-            {% else %}
-             {{ site.scholar.last_name }}{{ author_last_name }}{{ site.scholar.last_name contains author_last_name }}
             {%- endif -%}
           {{ author_last_html -}}
         </span>
