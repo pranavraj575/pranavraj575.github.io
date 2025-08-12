@@ -1,39 +1,53 @@
-"sofge":
-  - firstname: ["Donald", "D."]
-    url: https://scholar.google.com/citations?user=f4hPWTwAAAAJ
 
 "frick":
   - firstname: ["Florian", "F."]
     url: https://scholar.google.com/citations?user=7G7zH2AAAAAJ
 
-"dhileep":
-  - firstname: ["Karthick", "K."]
-    url: https://scholar.google.com/citations?user=kjfTXEkAAAAJ
+"simmons":
+  - firstname: ["Reid", "R.", "Reid Gordon", "Reid G.", "R. G."]
+    url: https://scholar.google.com/citations?user=t-VqN7sAAAAJ
+
+"zalewski":
+  - firstname: ["Sophia", "S."]
+
 
 "ravi":
   - firstname: ["Sridhar", "S."]
     url: https://scholar.google.com/citations?user=ByTaz-kAAAAJ
 
-"kumar":
-  - firstname: ["Deepak Prakash", "Deepak"]
-    url: https://scholar.google.com/citations?user=9fVlgegAAAAJ
-
-"mcguire":
-  - firstname: ["Loy", "L."]
-    url: https://scholar.google.com/citations?user=Qhy9FAMAAAAJ
-
-"darbha":
-  - firstname: ["Swaroop", "S."]
-    url: https://scholar.google.com/citations?user=_7TNmBAAAAAJ
-
-"dasgupta":
-  - firstname: ["Prithviraj", "P."]
-    url: https://scholar.google.com/citations?user=mc__RjcAAAAJ
+"srinivasan":
+  - firstname: ["Mandayam", "M."]
+    url: https://scholar.google.com/citations?user=GQhGyMoAAAAJ
 
 "garratt":
   - firstname: ["Matthew", "M."]
     url: https://scholar.google.com.au/citations?user=4dQ1AtoAAAAJ
 
-"srinivasan":
-  - firstname: ["Mandayam", "M."]
-    url: https://scholar.google.com/citations?user=GQhGyMoAAAAJ
+"dhileep":
+  - firstname: ["Karthick", "K."]
+    url: https://scholar.google.com/citations?user=kjfTXEkAAAAJ
+
+"veda":
+  - firstname: ["Abhi", "A."]
+
+
+"darbha":
+  - firstname: ["Swaroop", "S."]
+    url: https://scholar.google.com/citations?user=_7TNmBAAAAAJ
+
+"kumar":
+  - firstname: ["Deepak Prakash", "Deepak"]
+    url: https://scholar.google.com/citations?user=9fVlgegAAAAJ
+
+
+"sofge":
+  - firstname: ["Donald", "D."]
+    url: https://scholar.google.com/citations?user=f4hPWTwAAAAJ
+
+"dasgupta":
+  - firstname: ["Prithviraj", "P."]
+    url: https://scholar.google.com/citations?user=mc__RjcAAAAJ
+
+"mcguire":
+  - firstname: ["Loy", "L."]
+    url: https://scholar.google.com/citations?user=Qhy9FAMAAAAJ
