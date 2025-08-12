@@ -28,27 +28,27 @@
       "institution": "Carnegie Mellon University",
       "location": "Pittsburgh, USA",
       "url": "https://www.cs.cmu.edu/",
-      "area": "Machine Learning",
+      "area": "Machine Learning Department",
       "studyType": "PhD",
       "startDate": "2025-08-16",
       "topics": [
+        {
+          "name": "Machine Learning",
+          "courses": [
+            {
+              "name": "Advanced Introduction to Machine Learning",
+              "url": "https://www.cs.cmu.edu/~epxing/Class/10715/",
+              "id": "CMU 10-715"
+            }
+          ]
+        },
         {
           "name": "Mathematics",
           "courses": [
             {
               "name": "Computational Game Solving",
               "url": "https://www.cs.cmu.edu/~sandholm/cs15-888F21/",
-              "id": "15-888"
-            }
-          ]
-        },
-        {
-          "name": "Deep Learning",
-          "courses": [
-            {
-              "name": "Advanced Introduction to Machine Learning",
-              "url": "https://www.cs.cmu.edu/~epxing/Class/10715/",
-              "id": "10-715"
+              "id": "CMU 15-888"
             }
           ]
         }
@@ -70,42 +70,42 @@
             {
               "name": "AI: Representation & Problem Solving",
               "url": "https://www.cs.cmu.edu/~./15281/",
-              "id": "15-281"
+              "id": "CMU 15-281"
             },
             {
               "name": "Deep Reinforcement Learning & Control",
               "url": "https://cmudeeprl.github.io/403website_s22/",
-              "id": "10-403"
+              "id": "CMU 10-403"
             },
             {
               "name": "Advanced Deep Learning",
               "url": "https://machinelearningcmu.github.io/S24-10707/",
-              "id": "10-707"
+              "id": "CMU 10-707"
             },
             {
               "name": "Natural Language Processing",
               "url": "https://www.cs.cmu.edu/~ehn/11-611/",
-              "id": "11-611"
+              "id": "CMU 11-611"
             },
             {
               "name": "Convex Optimization",
               "url": "https://www.cmu.edu/mcs/grad/programs/ms-data-analytics/courses/10725-convex-optimization.html",
-              "id": "10-725"
+              "id": "CMU 10-725"
             },
             {
               "name": "Art & Machine Learning",
               "url": "https://sites.google.com/view/artml23s/",
-              "id": "10-615"
+              "id": "CMU 10-615"
             },
             {
               "name": "Autonomous Agents",
               "url": "https://www.cs.cmu.edu/~15482/",
-              "id": "15-482"
+              "id": "CMU 15-482"
             },
             {
               "name": "Search Engines",
               "url": "https://boston.lti.cs.cmu.edu/classes/11-642/",
-              "id": "11-642"
+              "id": "CMU 11-642"
             }
           ]
         },
@@ -115,47 +115,47 @@
             {
               "name": "Algebraic Topology",
               "url": "https://www.math.cmu.edu/~ffrick/syllabus21752.pdf",
-              "id": "21-752"
+              "id": "CMU 21-752"
             },
             {
               "name": "General Topology",
               "url": "https://www.math.cmu.edu/~slepcev/syl_651_16.pdf",
-              "id": "21-651"
+              "id": "CMU 21-651"
             },
             {
               "name": "Dynamics of Polish Groups",
               "url": "https://www.cmu.edu/math/courses/special-topics.html",
-              "id": "21-800"
+              "id": "CMU 21-800"
             },
             {
               "name": "Probabilistic Combinatorics",
               "url": "https://www.coursicle.com/cmu/courses/MSC/21737/",
-              "id": "21-737"
+              "id": "CMU 21-737"
             },
             {
               "name": "Extremal Combinatorics",
               "url": "https://www.math.cmu.edu/~ploh/2022-738.shtml",
-              "id": "21-738"
+              "id": "CMU 21-738"
             },
             {
               "name": "Graph Theory",
               "url": "http://coursecatalog.web.cmu.edu/schools-colleges/melloncollegeofscience/departmentofmathematicalsciences/courses/\\#:~:text=Graph theory uses,50 minute lectures)",
-              "id": "21-484"
+              "id": "CMU 21-484"
             },
             {
               "name": "Game Theory",
               "url": "https://www.coursicle.com/cmu/courses/PHI/80705/",
-              "id": "80-705"
+              "id": "CMU 80-705"
             },
             {
               "name": "Modern Regression",
               "url": "https://www.stat.cmu.edu/~larry/=stat401/",
-              "id": "36-401"
+              "id": "CMU 36-401"
             },
             {
               "name": "<b>Real Anal</b>ysis",
               "url": "https://www.math.cmu.edu/~jballew/21355Fall2016.html",
-              "id": "21-355",
+              "id": "CMU 21-355",
               "silly": true
             }
           ]
@@ -167,12 +167,12 @@
             {
               "name": "Quantum Computation",
               "url": "https://www.cs.cmu.edu/~odonnell/quantum18/",
-              "id": "15-459"
+              "id": "CMU 15-459"
             },
             {
               "name": "Star Wars: The Course Awakens",
               "url": "https://www.coursicle.com/cmu/courses/STU/98288/",
-              "id": "98-288"
+              "id": "CMU 98-288"
             }
           ]
         }

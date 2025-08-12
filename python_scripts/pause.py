@@ -174,7 +174,7 @@ if 'experience' in cv:
 
         f.write(tab + '{\n')
         if 'summary' in experience:
-            f.write(tab +'\\textit{'+ experience['summary'] + '}\n' + tab + '\\vspace{4.0mm}\n')
+            f.write(tab + '\\textit{' + experience['summary'] + '}\n' + tab + '\\vspace{4.0mm}\n')
         f.write(tab + '\\begin{cvitems}\n')
 
         for desc in experience.get('highlights', []):
@@ -188,3 +188,19 @@ if 'experience' in cv:
     tolatex(fn)
 else:
     print('experience not in cv')
+
+# course list
+if 'education' in cv:
+    for education in cv['education']:
+        id = education['studyType'] + ' ' + education['institution']
+        print(id)
+        if 'topics' in education:
+            for topic in education['topics']:
+                if 'silly' not in topic or not topic['silly']:
+                    print('  ', topic['name'])
+                    if 'courses' in topic:
+                        for course in topic['courses']:
+                            if 'silly' not in course or not course['silly']:
+                                print('\t', course['name'])
+        else:
+            print('topics not in', id)
