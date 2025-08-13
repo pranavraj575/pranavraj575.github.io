@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 permalink: /comment-section
 title: comment section
 date: 2025-04-20 04:20:00-0400
