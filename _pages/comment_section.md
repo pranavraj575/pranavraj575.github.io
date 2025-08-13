@@ -11,7 +11,8 @@ giscus_comments: true
 ---
 
 # comment section, be nice
-
-{% if site.giscus and page.giscus_comments %}
-    {% include giscus.liquid %}
-{% endif %}
+<div>
+    {% if site.giscus and page.giscus_comments %}
+        {% include giscus.liquid %}
+    {% endif %}
+</div>
