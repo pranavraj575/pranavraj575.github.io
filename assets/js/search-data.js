@@ -87,6 +87,16 @@ ninja.data = [{
               
                 silly: true,
               
+            },{id: "dropdown-comment-section",
+              title: "comment section",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/comment-section";
+              },
+              
+                silly: true,
+              
             },{
           id: 'social-email',
           title: 'email',
