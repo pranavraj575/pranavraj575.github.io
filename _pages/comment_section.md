@@ -10,7 +10,7 @@ silly: true
 giscus_comments: true
 ---
 
-# comment section, be nice
+# comment section
 <div>
     {% if site.giscus and page.giscus_comments %}
         {% include giscus.liquid %}
