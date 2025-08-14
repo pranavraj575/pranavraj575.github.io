@@ -1,53 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://pranavraj575.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pranavraj575.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-14T19:14:29+00:00</updated><id>https://pranavraj575.github.io/feed.xml</id><title type="html">Pranav Rajbhandari</title><subtitle>help me im trapped in the website</subtitle><entry><title type="html">high-quality wildlife photography</title><link href="https://pranavraj575.github.io/aminals/2025/cat/" rel="alternate" type="text/html" title="high-quality wildlife photography" /><published>2025-07-18T04:20:00+00:00</published><updated>2025-07-18T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/cat</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/cat/"><![CDATA[<h2 id="cat" align="center">cat</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://pranavraj575.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pranavraj575.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-14T19:19:10+00:00</updated><id>https://pranavraj575.github.io/feed.xml</id><title type="html">Pranav Rajbhandari</title><subtitle>help me im trapped in the website</subtitle><entry><title type="html">high-quality wildlife photography</title><link href="https://pranavraj575.github.io/aminals/2025/cat/" rel="alternate" type="text/html" title="high-quality wildlife photography" /><published>2025-07-18T04:20:00+00:00</published><updated>2025-07-18T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/cat</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/cat/"><![CDATA[<h2 id="cat" align="center">cat</h2>
+
+<div class="spotlight-group">
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
     
-      
-        <source class="responsive-img-srcset" srcset="/assets/img/aminals/kitty_cat/ground_car-480.webp 480w,/assets/img/aminals/kitty_cat/ground_car-800.webp 800w,/assets/img/aminals/kitty_cat/ground_car-1400.webp 1400w," type="image/webp" sizes="95vw" />
-      
-    
-    <img src="/assets/img/aminals/kitty_cat/ground_car.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="ground car" data-zoomable="" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
 
+
+
+<a class="col-sm mt-3 mt-md-0" href="assets/img/aminals/kitty_cat/ground_car.jpg">
   
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
     
-      
-        <source class="responsive-img-srcset" srcset="/assets/img/aminals/kitty_cat/tree_car-480.webp 480w,/assets/img/aminals/kitty_cat/tree_car-800.webp 800w,/assets/img/aminals/kitty_cat/tree_car-1400.webp 1400w," type="image/webp" sizes="95vw" />
-      
+      <source class="responsive-img-srcset" srcset="/assets/img/aminals/kitty_cat/ground_car-480.webp 480w,/assets/img/aminals/kitty_cat/ground_car-800.webp 800w,/assets/img/aminals/kitty_cat/ground_car-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
-    <img src="/assets/img/aminals/kitty_cat/tree_car.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="tree car" data-zoomable="" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
   
-</figure>
+  <img src="/assets/img/aminals/kitty_cat/ground_car.jpg" class="spotlight" width="100%" height="auto" title="ground car" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+</a>
 
-    </div>
+    
+
+
+
+<a class="col-sm mt-3 mt-md-0" href="assets/img/aminals/kitty_cat/tree_car.jpg">
+  
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/aminals/kitty_cat/tree_car-480.webp 480w,/assets/img/aminals/kitty_cat/tree_car-800.webp 800w,/assets/img/aminals/kitty_cat/tree_car-1400.webp 1400w," type="image/webp" sizes="95vw" />
+    
+  
+  <img src="/assets/img/aminals/kitty_cat/tree_car.jpg" class="spotlight" width="100%" height="auto" title="tree car" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+</a>
+
+</div>
 </div>]]></content><author><name></name></author><category term="cat-egory" /><summary type="html"><![CDATA[cat]]></summary></entry><entry><title type="html">bird</title><link href="https://pranavraj575.github.io/aminals/2025/birb/" rel="alternate" type="text/html" title="bird" /><published>2025-07-12T04:20:00+00:00</published><updated>2025-07-12T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/birb</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/birb/"><![CDATA[<div class="spotlight-group row mt-3">
   
 
@@ -351,8 +332,9 @@
 </figure>
 
     </div>
-</div>]]></content><author><name></name></author><category term="dog-egory" /><summary type="html"><![CDATA[silly lookin this one went to the gym extended family]]></summary></entry><entry><title type="html">jinx</title><link href="https://pranavraj575.github.io/aminals/2025/jinx/" rel="alternate" type="text/html" title="jinx" /><published>2025-04-20T04:20:00+00:00</published><updated>2025-04-20T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/jinx</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/jinx/"><![CDATA[<div class="serious-goose">
-    <div class="spotlight-group row mt-3">
+</div>]]></content><author><name></name></author><category term="dog-egory" /><summary type="html"><![CDATA[silly lookin this one went to the gym extended family]]></summary></entry><entry><title type="html">jinx</title><link href="https://pranavraj575.github.io/aminals/2025/jinx/" rel="alternate" type="text/html" title="jinx" /><published>2025-04-20T04:20:00+00:00</published><updated>2025-04-20T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/jinx</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/jinx/"><![CDATA[<div class="spotlight-group">
+<div class="serious-goose">
+    <div class="row mt-3">
       
 
 
@@ -363,7 +345,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/suspicious-480.webp 480w,/assets/img/aminals/jinx/suspicious-800.webp 800w,/assets/img/aminals/jinx/suspicious-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/suspicious.jpg" class="spotlight" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/suspicious.jpg" class="spotlight serious-goose" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -376,7 +358,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/beast_with_one_eye-480.webp 480w,/assets/img/aminals/jinx/beast_with_one_eye-800.webp 800w,/assets/img/aminals/jinx/beast_with_one_eye-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/beast_with_one_eye.jpg" class="spotlight" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/beast_with_one_eye.jpg" class="spotlight serious-goose" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -389,7 +371,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/getting_ready-480.webp 480w,/assets/img/aminals/jinx/getting_ready-800.webp 800w,/assets/img/aminals/jinx/getting_ready-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/getting_ready.jpg" class="spotlight" width="100%" height="auto" title="getting ready" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/getting_ready.jpg" class="spotlight serious-goose" width="100%" height="auto" title="getting ready" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -402,14 +384,14 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/umop_3pIsdn-480.webp 480w,/assets/img/aminals/jinx/umop_3pIsdn-800.webp 800w,/assets/img/aminals/jinx/umop_3pIsdn-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/umop_3pIsdn.jpg" class="spotlight" width="100%" height="auto" title="umop 3pIsdn" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/umop_3pIsdn.jpg" class="spotlight serious-goose" width="100%" height="auto" title="umop 3pIsdn" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
     </div>
 </div>
 
 <div class="silly-goose">
-    <div class="spotlight-group row mt-3">
+    <div class="row mt-3">
       
 
 
@@ -420,7 +402,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/suspicious-480.webp 480w,/assets/img/aminals/jinx/suspicious-800.webp 800w,/assets/img/aminals/jinx/suspicious-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/suspicious.jpg" class="spotlight" width="100%" height="auto" title="he knows what you did" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/suspicious.jpg" class="spotlight silly-goose" width="100%" height="auto" title="he knows what you did" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -433,7 +415,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/beast_with_one_eye-480.webp 480w,/assets/img/aminals/jinx/beast_with_one_eye-800.webp 800w,/assets/img/aminals/jinx/beast_with_one_eye-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/beast_with_one_eye.jpg" class="spotlight" width="100%" height="auto" title="eye eno" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/beast_with_one_eye.jpg" class="spotlight silly-goose" width="100%" height="auto" title="eye eno" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -446,7 +428,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/getting_ready-480.webp 480w,/assets/img/aminals/jinx/getting_ready-800.webp 800w,/assets/img/aminals/jinx/getting_ready-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/getting_ready.jpg" class="spotlight" width="100%" height="auto" title="getting ready" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/getting_ready.jpg" class="spotlight silly-goose" width="100%" height="auto" title="getting ready" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -459,14 +441,15 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/umop_3pIsdn-480.webp 480w,/assets/img/aminals/jinx/umop_3pIsdn-800.webp 800w,/assets/img/aminals/jinx/umop_3pIsdn-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/umop_3pIsdn.jpg" class="spotlight" width="100%" height="auto" title="umop 3pIsdn" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/umop_3pIsdn.jpg" class="spotlight silly-goose" width="100%" height="auto" title="umop 3pIsdn" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
     </div>
 </div>
+
 
 <div class="serious-goose">
-    <div class="spotlight-group row mt-3">
+    <div class="row mt-3">
       
 
 
@@ -477,7 +460,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/eepy-480.webp 480w,/assets/img/aminals/jinx/eepy-800.webp 800w,/assets/img/aminals/jinx/eepy-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/eepy.jpg" class="spotlight" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/eepy.jpg" class="spotlight serious-goose" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -490,7 +473,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/chicken-480.webp 480w,/assets/img/aminals/jinx/chicken-800.webp 800w,/assets/img/aminals/jinx/chicken-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/chicken.jpg" class="spotlight" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/chicken.jpg" class="spotlight serious-goose" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -503,7 +486,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/very_dapper-480.webp 480w,/assets/img/aminals/jinx/very_dapper-800.webp 800w,/assets/img/aminals/jinx/very_dapper-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/very_dapper.jpg" class="spotlight" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/very_dapper.jpg" class="spotlight serious-goose" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -516,13 +499,13 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/frolicking-480.webp 480w,/assets/img/aminals/jinx/frolicking-800.webp 800w,/assets/img/aminals/jinx/frolicking-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/frolicking.jpg" class="spotlight" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/frolicking.jpg" class="spotlight serious-goose" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
     </div>
 </div>
 <div class="silly-goose">
-    <div class="spotlight-group row mt-3">
+    <div class="row mt-3">
       
 
 
@@ -533,7 +516,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/eepy-480.webp 480w,/assets/img/aminals/jinx/eepy-800.webp 800w,/assets/img/aminals/jinx/eepy-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/eepy.jpg" class="spotlight" width="100%" height="auto" title="eepy" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/eepy.jpg" class="spotlight silly-goose" width="100%" height="auto" title="eepy" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -546,7 +529,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/chicken-480.webp 480w,/assets/img/aminals/jinx/chicken-800.webp 800w,/assets/img/aminals/jinx/chicken-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/chicken.jpg" class="spotlight" width="100%" height="auto" title="looks like chicken breast" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/chicken.jpg" class="spotlight silly-goose" width="100%" height="auto" title="looks like chicken breast" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -559,7 +542,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/very_dapper-480.webp 480w,/assets/img/aminals/jinx/very_dapper-800.webp 800w,/assets/img/aminals/jinx/very_dapper-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/very_dapper.jpg" class="spotlight" width="100%" height="auto" title="very dapper" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/very_dapper.jpg" class="spotlight silly-goose" width="100%" height="auto" title="very dapper" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -572,7 +555,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/jinx/frolicking-480.webp 480w,/assets/img/aminals/jinx/frolicking-800.webp 800w,/assets/img/aminals/jinx/frolicking-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/jinx/frolicking.jpg" class="spotlight" width="100%" height="auto" title="frolicking in a field" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/jinx/frolicking.jpg" class="spotlight silly-goose" width="100%" height="auto" title="frolicking in a field" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
     </div>
@@ -581,7 +564,8 @@
     puppy photos
 </div>
 
-<div class="spotlight-group row mt-3">
+
+<div class="row mt-3">
   
 
 
@@ -611,6 +595,7 @@
 </div>
 <div class="caption silly-goose">
     yippeeee
+</div>
 </div>]]></content><author><name></name></author><category term="dog-egory" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">meevis</title><link href="https://pranavraj575.github.io/aminals/2025/meebis/" rel="alternate" type="text/html" title="meevis" /><published>2025-04-20T04:20:00+00:00</published><updated>2025-04-20T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/meebis</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/meebis/"><![CDATA[<div class="spotlight-group">
 <div class="row mt-3">
   
