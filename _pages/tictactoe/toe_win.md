@@ -17,10 +17,6 @@ how did you get here
 <a href="/">go home<a>
 
 <script>
-    increaseStepsTo(4);
-</script>
-
-<script>
     document.addEventListener("DOMContentLoaded", function() {
         increaseStepsTo(4);
     });
