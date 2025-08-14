@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://pranavraj575.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pranavraj575.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-14T18:23:21+00:00</updated><id>https://pranavraj575.github.io/feed.xml</id><title type="html">Pranav Rajbhandari</title><subtitle>help me im trapped in the website</subtitle><entry><title type="html">high-quality wildlife photography</title><link href="https://pranavraj575.github.io/aminals/2025/cat/" rel="alternate" type="text/html" title="high-quality wildlife photography" /><published>2025-07-18T04:20:00+00:00</published><updated>2025-07-18T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/cat</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/cat/"><![CDATA[<h2 id="cat" align="center">cat</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://pranavraj575.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pranavraj575.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-14T18:28:29+00:00</updated><id>https://pranavraj575.github.io/feed.xml</id><title type="html">Pranav Rajbhandari</title><subtitle>help me im trapped in the website</subtitle><entry><title type="html">high-quality wildlife photography</title><link href="https://pranavraj575.github.io/aminals/2025/cat/" rel="alternate" type="text/html" title="high-quality wildlife photography" /><published>2025-07-18T04:20:00+00:00</published><updated>2025-07-18T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/cat</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/cat/"><![CDATA[<h2 id="cat" align="center">cat</h2>
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         
@@ -757,9 +757,9 @@
 <div class="caption">
     so i've heard
 </div>
-</div>
+
 <div class="serious-goose">
-    <div class="spotlight-group row mt-3">
+    <div class="row mt-3">
       
 
 
@@ -770,7 +770,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/meebis/well_protected-480.webp 480w,/assets/img/aminals/meebis/well_protected-800.webp 800w,/assets/img/aminals/meebis/well_protected-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/meebis/well_protected.jpg" class="spotlight" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/meebis/well_protected.jpg" class="spotlight serious-goose" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -783,7 +783,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/meebis/yippee-480.webp 480w,/assets/img/aminals/meebis/yippee-800.webp 800w,/assets/img/aminals/meebis/yippee-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/meebis/yippee.jpg" class="spotlight" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/meebis/yippee.jpg" class="spotlight serious-goose" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -796,13 +796,13 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/meebis/ball-480.webp 480w,/assets/img/aminals/meebis/ball-800.webp 800w,/assets/img/aminals/meebis/ball-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/meebis/ball.jpg" class="spotlight" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/meebis/ball.jpg" class="spotlight serious-goose" width="100%" height="auto" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
     </div>
 </div>
 <div class="silly-goose">
-    <div class="spotlight-group row mt-3">
+    <div class="row mt-3">
       
 
 
@@ -813,7 +813,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/meebis/well_protected-480.webp 480w,/assets/img/aminals/meebis/well_protected-800.webp 800w,/assets/img/aminals/meebis/well_protected-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/meebis/well_protected.jpg" class="spotlight" width="100%" height="auto" title="well protected" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/meebis/well_protected.jpg" class="spotlight silly-goose" width="100%" height="auto" title="well protected" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -826,7 +826,7 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/meebis/yippee-480.webp 480w,/assets/img/aminals/meebis/yippee-800.webp 800w,/assets/img/aminals/meebis/yippee-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/meebis/yippee.jpg" class="spotlight" width="100%" height="auto" title="RELEASE ME" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/meebis/yippee.jpg" class="spotlight silly-goose" width="100%" height="auto" title="RELEASE ME" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
       
@@ -839,13 +839,12 @@
       <source class="responsive-img-srcset" srcset="/assets/img/aminals/meebis/ball-480.webp 480w,/assets/img/aminals/meebis/ball-800.webp 800w,/assets/img/aminals/meebis/ball-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/meebis/ball.jpg" class="spotlight" width="100%" height="auto" title="ball" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/meebis/ball.jpg" class="spotlight silly-goose" width="100%" height="auto" title="ball" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
     </div>
 </div>
 
-<div class="spotlight-group">
 <div class="row mt-3">
   
 
@@ -933,4 +932,5 @@
 </a>
 
 </div>
+
 </div>]]></content><author><name></name></author><category term="cat-egory" /><summary type="html"><![CDATA[]]></summary></entry></feed>
