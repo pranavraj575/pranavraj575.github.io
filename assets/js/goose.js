@@ -115,23 +115,23 @@ let gooseActivation = () => {
     hiddening[i].style.display = "none";
     hiddening[i].classList.remove("temp-hide");
     // toggle whether images are shown as well
-    if(hiddening[i].classList.contains("spotlight")){
-        document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
+        if(hiddening[i].classList.contains("spotlight")){
             hiddening[i].classList.remove("spotlight");
             hiddening[i].classList.add("notlight");
-        });
-    }
+        }
+    });
   }
   var revealing = document.getElementsByClassName("temp-reveal");
   for (var i = revealing.length - 1; i >= 0; i--) {
     revealing[i].style.display = "block";
     revealing[i].classList.remove("temp-reveal");
-    if(hiddening[i].classList.contains("notlight")){
-        document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
+        if(hiddening[i].classList.contains("notlight")){
             hiddening[i].classList.remove("notlight");
             hiddening[i].classList.add("spotlight");
-        });
-    }
+        }
+    });
   }
 };
 
