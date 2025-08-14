@@ -110,28 +110,26 @@ let gooseActivation = () => {
       markObjectReveal(serious_geese[i]);
     }
   }
+  // toggle whether images are shown as well
+  for (var grower of document.getElementsByClassName("temp-hide spotlight")){
+    grower.classList.remove("spotlight");
+    grower.classList.add("notlight");
+  }
   var hiddening = document.getElementsByClassName("temp-hide");
   for (var i = hiddening.length - 1; i >= 0; i--) {
     hiddening[i].style.display = "none";
     hiddening[i].classList.remove("temp-hide");
-    // toggle whether images are shown as well
-    document.addEventListener("DOMContentLoaded", function() {
-        if(hiddening[i].classList.contains("spotlight")){
-            hiddening[i].classList.remove("spotlight");
-            hiddening[i].classList.add("notlight");
-        }
-    });
+
+  }
+
+  for (var shower of document.getElementsByClassName("temp-reveal notlight")){
+    shower.classList.remove("notlight");
+    shower.classList.add("spotlight");
   }
   var revealing = document.getElementsByClassName("temp-reveal");
   for (var i = revealing.length - 1; i >= 0; i--) {
     revealing[i].style.display = "block";
     revealing[i].classList.remove("temp-reveal");
-    document.addEventListener("DOMContentLoaded", function() {
-        if(hiddening[i].classList.contains("notlight")){
-            hiddening[i].classList.remove("notlight");
-            hiddening[i].classList.add("spotlight");
-        }
-    });
   }
 };
 
