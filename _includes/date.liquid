@@ -4,7 +4,11 @@
         {% assign date = include.startDate | split: '-' | join: '.' %}
 
         {% assign tempdate = include.startDate | split: '-' %}
-        {% assign date = tempdate | slice: 1,3 | join: '/' %}
+        {% if include.dayFirst %}
+            {% assign date = tempdate | slice: 1,3 | reverse | join: '/' %}
+        {% else %}
+            {% assign date = tempdate | slice: 1,3 | join: '/' %}
+        {% endif %}
         {% assign date = date | append: "/" | append: tempdate[0] %}
     {% else %}
         {% assign date = include.startDate | split: '-' | slice: 0, 2 | join: '.' %}
@@ -18,6 +22,11 @@
                 {% assign endDate = include.endDate | split: '-' | join: '.' | default: 'Present' %}
 
                 {% assign tempdate = include.endDate | split: '-' %}
+                {% if include.dayFirst %}
+                    {% assign endDate = tempdate | slice: 1,3 | reverse | join: '/' %}
+                {% else %}
+                    {% assign endDate = tempdate | slice: 1,3 | join: '/' %}
+                {% endif %}
                 {% assign endDate = tempdate | slice: 1,3 | join: '/' %}
                 {% assign endDate = endDate | append: "/" | append: tempdate[0] %}
             {% else %}
