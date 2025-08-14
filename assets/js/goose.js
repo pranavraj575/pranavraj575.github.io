@@ -110,25 +110,25 @@ let gooseActivation = () => {
       markObjectReveal(serious_geese[i]);
     }
   }
-  // toggle whether images are shown as well
-  var hiddening = document.getElementsByClassName("temp-hide spotlight");
-  for (var i = hiddening.length - 1; i >= 0; i--){
-    hiddening[i].classList.remove("spotlight");
-    hiddening[i].classList.add("notlight");
-  }
-  hiddening = document.getElementsByClassName("temp-hide");
+
+  var hiddening = document.getElementsByClassName("temp-hide");
   for (var i = hiddening.length - 1; i >= 0; i--) {
+    // toggle whether images are shown as well
+    // ORDER MATTERS, once element is removed from classlist, hiddening[i] is null
+    if (hiddening[i].classList.contains("spotlight")){
+        hiddening[i].classList.add("notlight");
+        hiddening[i].classList.remove("spotlight");
+    }
     hiddening[i].style.display = "none";
     hiddening[i].classList.remove("temp-hide");
   }
 
-  var revealing = document.getElementsByClassName("temp-reveal notlight");
-  for (var i = revealing.length - 1; i >= 0; i--){
-    revealing[i].classList.remove("notlight");
-    revealing[i].classList.add("spotlight");
-  }
-  revealing = document.getElementsByClassName("temp-reveal");
+  var revealing = document.getElementsByClassName("temp-reveal");
   for (var i = revealing.length - 1; i >= 0; i--) {
+    if (revealing[i].classList.contains("notlight")){
+        revealing[i].classList.add("spotlight");
+        revealing[i].classList.remove("notlight");
+    }
     revealing[i].style.display = "block";
     revealing[i].classList.remove("temp-reveal");
   }
