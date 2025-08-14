@@ -116,8 +116,10 @@ let gooseActivation = () => {
     hiddening[i].classList.remove("temp-hide");
     // toggle whether images are shown as well
     if(hiddening[i].classList.contains("spotlight")){
-        hiddening[i].classList.remove("spotlight");
-        hiddening[i].classList.add("notlight");
+        document.addEventListener("DOMContentLoaded", function() {
+            hiddening[i].classList.remove("spotlight");
+            hiddening[i].classList.add("notlight");
+        });
     }
   }
   var revealing = document.getElementsByClassName("temp-reveal");
@@ -125,8 +127,10 @@ let gooseActivation = () => {
     revealing[i].style.display = "block";
     revealing[i].classList.remove("temp-reveal");
     if(hiddening[i].classList.contains("notlight")){
-        hiddening[i].classList.remove("notlight");
-        hiddening[i].classList.add("spotlight");
+        document.addEventListener("DOMContentLoaded", function() {
+            hiddening[i].classList.remove("notlight");
+            hiddening[i].classList.add("spotlight");
+        });
     }
   }
 };
