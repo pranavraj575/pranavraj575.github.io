@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://pranavraj575.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pranavraj575.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-14T19:26:03+00:00</updated><id>https://pranavraj575.github.io/feed.xml</id><title type="html">Pranav Rajbhandari</title><subtitle>help me im trapped in the website</subtitle><entry><title type="html">high-quality wildlife photography</title><link href="https://pranavraj575.github.io/aminals/2025/cat/" rel="alternate" type="text/html" title="high-quality wildlife photography" /><published>2025-07-18T04:20:00+00:00</published><updated>2025-07-18T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/cat</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/cat/"><![CDATA[<h2 id="cat" align="center">cat</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://pranavraj575.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pranavraj575.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-14T19:32:06+00:00</updated><id>https://pranavraj575.github.io/feed.xml</id><title type="html">Pranav Rajbhandari</title><subtitle>help me im trapped in the website</subtitle><entry><title type="html">high-quality wildlife photography</title><link href="https://pranavraj575.github.io/aminals/2025/cat/" rel="alternate" type="text/html" title="high-quality wildlife photography" /><published>2025-07-18T04:20:00+00:00</published><updated>2025-07-18T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/cat</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/cat/"><![CDATA[<h2 id="cat" align="center">cat</h2>
 
 <div class="spotlight-group">
 <div class="row mt-3">
@@ -29,7 +29,8 @@
 </a>
 
 </div>
-</div>]]></content><author><name></name></author><category term="cat-egory" /><summary type="html"><![CDATA[cat]]></summary></entry><entry><title type="html">bird</title><link href="https://pranavraj575.github.io/aminals/2025/birb/" rel="alternate" type="text/html" title="bird" /><published>2025-07-12T04:20:00+00:00</published><updated>2025-07-12T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/birb</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/birb/"><![CDATA[<div class="spotlight-group row mt-3">
+</div>]]></content><author><name></name></author><category term="cat-egory" /><summary type="html"><![CDATA[cat]]></summary></entry><entry><title type="html">bird</title><link href="https://pranavraj575.github.io/aminals/2025/birb/" rel="alternate" type="text/html" title="bird" /><published>2025-07-12T04:20:00+00:00</published><updated>2025-07-12T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/birb</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/birb/"><![CDATA[<div class="spotlight-group">
+<div class="row mt-3">
   
 
 
@@ -145,27 +146,17 @@
 
 
 
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      
-        <source class="responsive-img-srcset" srcset="/assets/img/aminals/birb_vogue/extended_family-480.webp 480w,/assets/img/aminals/birb_vogue/extended_family-800.webp 800w,/assets/img/aminals/birb_vogue/extended_family-1400.webp 1400w," type="image/webp" sizes="95vw" />
-      
-    
-    <img src="/assets/img/aminals/birb_vogue/extended_family.jpg" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="extended family" data-zoomable="" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
-  </picture>
-
+<a class="col-sm mt-3 mt-md-0" href="assets/img/aminals/birb_vogue/extended_family.jpg">
   
-    <figcaption class="caption">extended family</figcaption>
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/aminals/birb_vogue/extended_family-480.webp 480w,/assets/img/aminals/birb_vogue/extended_family-800.webp 800w,/assets/img/aminals/birb_vogue/extended_family-1400.webp 1400w," type="image/webp" sizes="95vw" />
+    
   
-</figure>
+  <img src="/assets/img/aminals/birb_vogue/extended_family.jpg" class="spotlight" width="100%" height="auto" title="extended family" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+</a>
 
     </div>
+</div>
 </div>]]></content><author><name></name></author><category term="birb" /><summary type="html"><![CDATA[bird vogue]]></summary></entry><entry><title type="html">roos</title><link href="https://pranavraj575.github.io/aminals/2025/roo/" rel="alternate" type="text/html" title="roos" /><published>2025-06-30T04:20:00+00:00</published><updated>2025-06-30T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/roo</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/roo/"><![CDATA[<div class="spotlight-group">
 <div class="row mt-3">
     
