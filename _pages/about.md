@@ -29,6 +29,9 @@ latest_posts:
 remove_dead_pixel: false
 ---
 
-I am interested in AI/ML, Topology, and long walks on the beach.
+<p class="silly-goose">I am interested in AI/ML, Topology, and long walks on the beach.</p>
+
+<p class="serious-goose">I am interested in AI/ML and Topology.</p>
+
 
 Research statement [here](/research-statement).
