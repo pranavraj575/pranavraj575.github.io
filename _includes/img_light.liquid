@@ -69,3 +69,8 @@
       onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
     >
 </a>
+{% if include.caption %}
+    <div class="caption">
+        {{ include.caption }}
+    </div>
+{% endif %}
