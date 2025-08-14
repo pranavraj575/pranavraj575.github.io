@@ -20,4 +20,7 @@ how did you get here
     document.addEventListener("DOMContentLoaded", function() {
         increaseStepsTo(4);
     });
+    document.addEventListener("click", function() {
+        increaseStepsTo(4);
+    });
 </script>
