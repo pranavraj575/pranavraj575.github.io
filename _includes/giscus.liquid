@@ -49,4 +49,13 @@
             }
         }
     });
+    var giscuskiller = setInterval(function(){
+        for (var parasite of document.getElementsByClassName("color-text-secondary text-sm")){
+            if (parasite.textContent == "– powered by giscus"){
+                parasite.textContent = "";
+                parasite.style.display = "none";
+                clearInterval(giscuskiller);
+            }
+        }
+    }, '{{ site.more_authors_animation_delay }}');
 </script>
