@@ -166,19 +166,19 @@ let refreshBoard = () => {
             sq.classList.remove("hover_hardly_knower");    
         }
         setTimeout(function(){
-            if (toeboard.result==0){
+            if (toeboard.result == 0){
                 //redirect to tie
-                toeGameResult(tied=true);
+                toeGameResult(lost=false, tied=true, won=false);
                 window.location.href = "/toe/tie";
             }
-            else if (toeboard.result==-user_player){
+            else if (toeboard.result == -user_player){
                 //redirect to lose
-                toeGameResult(lost=true);
+                toeGameResult(lost=true, tied=false, won=false);
                 window.location.href = "/toe/lose";
             }
-            else if (toeboard.result==user_player){
+            else if (toeboard.result == user_player){
                 //redirect to win
-                toeGameResult(won=true);
+                toeGameResult(lost=false, tied=false, won=true);
                 window.location.href = "/toe/win";
             }
         }, 1069);

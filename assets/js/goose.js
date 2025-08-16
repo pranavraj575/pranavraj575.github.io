@@ -70,7 +70,7 @@ let toeGameResult = (lost=false, tied=false, won=false) => {
   var arrg = determineToeRecord();
   var losses = arrg[0]
   var ties = arrg[1]
-  var wins = arrg[1]
+  var wins = arrg[2]
   if (tied){
     ties++;
   }

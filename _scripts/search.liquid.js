@@ -301,6 +301,8 @@ ninja.data = [
       section: 'Theme',
       handler: () => {
         setThemeSetting("abomination");
+        //FOUND SECRET
+        increaseStepsTo(2);
       },
     },
   {%- endif -%}

@@ -27,10 +27,6 @@ let setThemeSetting = (themeSetting) => {
   document.documentElement.setAttribute("data-theme-setting", themeSetting);
 
   applyTheme();
-  //FOUND SECRET
-  if (themeSetting=="abomination"){
-     increaseStepsTo(2);
-  }
 };
 
 
