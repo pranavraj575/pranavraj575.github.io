@@ -176,6 +176,8 @@ ninja.data = [{
       section: 'Theme',
       handler: () => {
         setThemeSetting("abomination");
+        //FOUND SECRET
+        increaseStepsTo(2);
       },
     },{id: "post-high-quality-wildlife-photography",
         
