@@ -47,6 +47,45 @@ let determineStepsFound = () => {
   }
 };
 
+let determineToeRecord = () => {
+  let loss_stored = localStorage.getItem("toe_losses");
+  let tie_stored = localStorage.getItem("toe_ties");
+  let wins_stored = localStorage.getItem("toe_wins");
+
+  var losses = 0;
+  var ties = 0;
+  var wins = 0;
+  if (typeof(loss_stored) == "string") {
+    losses = parseInt(loss_stored);
+  }
+  if (typeof(tie_stored) == "string") {
+    ties = parseInt(tie_stored);
+  }
+  if (typeof(wins_stored) == "string") {
+    wins = parseInt(wins_stored);
+  }
+  return [losses, ties, wins]
+};
+let toeGameResult = (lost=false, tied=false, won=false) => {
+  var arrg = determineToeRecord();
+  var losses = arrg[0]
+  var ties = arrg[1]
+  var wins = arrg[1]
+  if (tied){
+    ties++;
+  }
+  if (lost){
+    losses++;
+  }
+  if (won){
+    wins++;
+  }
+  localStorage.setItem("toe_losses", String(losses));
+  localStorage.setItem("toe_ties", String(ties));
+  localStorage.setItem("toe_wins", String(wins));
+};
+
+
 // beauty will be revealed
 // label something silly-goose if it is only revealed when all secrets found
 // label something serious-goose if it is only hidden when all secrets found

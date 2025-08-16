@@ -168,14 +168,17 @@ let refreshBoard = () => {
         setTimeout(function(){
             if (toeboard.result==0){
                 //redirect to tie
+                toeGameResult(tied=true);
                 window.location.href = "/toe/tie";
             }
             else if (toeboard.result==-user_player){
                 //redirect to lose
+                toeGameResult(lost=true);
                 window.location.href = "/toe/lose";
             }
             else if (toeboard.result==user_player){
                 //redirect to win
+                toeGameResult(won=true);
                 window.location.href = "/toe/win";
             }
         }, 1069);
