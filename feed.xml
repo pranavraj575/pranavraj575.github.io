@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://pranavraj575.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pranavraj575.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-16T20:28:03+00:00</updated><id>https://pranavraj575.github.io/feed.xml</id><title type="html">Pranav Rajbhandari</title><subtitle>help me im trapped in the website</subtitle><entry><title type="html">high-quality wildlife photography</title><link href="https://pranavraj575.github.io/aminals/2025/cat/" rel="alternate" type="text/html" title="high-quality wildlife photography" /><published>2025-07-18T04:20:00+00:00</published><updated>2025-07-18T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/cat</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/cat/"><![CDATA[<h2 id="cat" align="center">cat</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://pranavraj575.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://pranavraj575.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2025-08-17T14:52:27+00:00</updated><id>https://pranavraj575.github.io/feed.xml</id><title type="html">Pranav Rajbhandari</title><subtitle>help me im trapped in the website</subtitle><entry><title type="html">high-quality wildlife photography</title><link href="https://pranavraj575.github.io/aminals/2025/cat/" rel="alternate" type="text/html" title="high-quality wildlife photography" /><published>2025-07-18T04:20:00+00:00</published><updated>2025-07-18T04:20:00+00:00</updated><id>https://pranavraj575.github.io/aminals/2025/cat</id><content type="html" xml:base="https://pranavraj575.github.io/aminals/2025/cat/"><![CDATA[<h2 id="cat" align="center">cat</h2>
 
 <div class="spotlight-group">
 <div class="row mt-3">
@@ -648,13 +648,13 @@
 
 
 
-<a class="col-sm mt-3 mt-md-0" href="assets/img/aminals/meebis/so_ive_heard.jpg">
+<a class="col-sm mt-3 mt-md-0" href="assets/img/aminals/meebis/so_ive_heard1.jpg">
   
     
-      <source class="responsive-img-srcset" srcset="/assets/img/aminals/meebis/so_ive_heard-480.webp 480w,/assets/img/aminals/meebis/so_ive_heard-800.webp 800w,/assets/img/aminals/meebis/so_ive_heard-1400.webp 1400w," type="image/webp" sizes="95vw" />
+      <source class="responsive-img-srcset" srcset="/assets/img/aminals/meebis/so_ive_heard1-480.webp 480w,/assets/img/aminals/meebis/so_ive_heard1-800.webp 800w,/assets/img/aminals/meebis/so_ive_heard1-1400.webp 1400w," type="image/webp" sizes="95vw" />
     
   
-  <img src="/assets/img/aminals/meebis/so_ive_heard.jpg" class="spotlight" width="100%" height="auto" title="so i've heard" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+  <img src="/assets/img/aminals/meebis/so_ive_heard1.jpg" class="spotlight" width="100%" height="auto" title="so i've heard" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
   
@@ -668,6 +668,19 @@
     
   
   <img src="/assets/img/aminals/meebis/so_ive_heard2.jpg" class="spotlight" width="100%" height="auto" title="so i've heard" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
+</a>
+
+  
+
+
+
+<a class="col-sm mt-3 mt-md-0" href="assets/img/aminals/meebis/so_ive_heard3.jpg">
+  
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/aminals/meebis/so_ive_heard3-480.webp 480w,/assets/img/aminals/meebis/so_ive_heard3-800.webp 800w,/assets/img/aminals/meebis/so_ive_heard3-1400.webp 1400w," type="image/webp" sizes="95vw" />
+    
+  
+  <img src="/assets/img/aminals/meebis/so_ive_heard3.jpg" class="spotlight" width="100%" height="auto" title="so i've heard" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();" />
 </a>
 
 </div>
