@@ -1,8 +1,13 @@
 {% assign img_path = include.path | remove: '.jpg' | remove: '.jpeg' | remove: '.png' | remove: '.tiff' | remove: '.gif' %}
 {% assign parts = include.path | split: '.' %}
 {% assign ext = parts.last %}
+{% assign curse = include.cursor | default: "pointer" %}
 
-<a class="{{ include.class }}" href="{{ include.path }}" {% if include.style %}style="{{ include.style }}"{% endif %}>
+{% if include.href %}
+  <a class="{{ include.class }}" href="{{ include.path }}" {% if include.style %}style="{{ include.style }}"{% endif %}>
+{% else %}
+  <span class="{{ include.class }}" {% if include.style %}style="{{ include.style }}"{% endif %}>
+{% endif %}
   {% if site.imagemagick.enabled %}
     {% unless include.avoid_scaling %}
       <source
@@ -66,6 +71,11 @@
       {% elsif site.lazy_loading_images %}
         loading="lazy"
       {% endif %}
+      style="cursor:{{ cursor }}"
       onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
     >
-</a>
+{% if include.href %}
+  </a>
+{% else %}
+  </span>
+{% endif %}
