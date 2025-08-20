@@ -179,7 +179,18 @@ ninja.data = [{
         //FOUND SECRET
         increaseStepsTo(2);
       },
-    },{id: "post-high-quality-wildlife-photography",
+    },{id: "post-oh-deer",
+        
+          title: "oh deer",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/oh_deer/";
+          
+        },
+      },{id: "post-high-quality-wildlife-photography",
         
           title: "high-quality wildlife photography",
         
@@ -278,6 +289,13 @@ list_of_category_lists = [[],
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/cat-egory";
+            },
+          },{id: "category-aminals-dog-egory",
+            title: 'dog-egory',
+            description: "dog-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/dog-egory";
             },
           },],
     [],[],
