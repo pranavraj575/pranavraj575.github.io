@@ -257,7 +257,7 @@
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
-        {% assign style_element = "style="border-color:rgba(237,34,36,1);background-color:rgba(237,34,36,.1);" %}
+        {% assign style_element = 'style="border-color:rgba(237,34,36,1);background-color:rgba(237,34,36,.1);"' %}
         {% if entry.pdf contains '://' %}
           <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" {{ style_element }}>PDF</a>
         {% else %}
@@ -280,7 +280,7 @@
         <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" style="border-color:rgba(36,204,69,1);background-color:rgba(36,204,69,.1);">Code</a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
