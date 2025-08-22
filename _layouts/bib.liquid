@@ -257,10 +257,11 @@
         {% endif %}
       {% endif %}
       {% if entry.pdf %}
+        {% assign style_element = "style="border-color:rgba(237,34,36,1);background-color:rgba(237,34,36,.1);" %}
         {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" {{ style_element }}>PDF</a>
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" {{ style_element }}>PDF</a>
         {% endif %}
       {% endif %}
       {% if entry.supp %}
