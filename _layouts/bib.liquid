@@ -283,10 +283,11 @@
         <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button" style="border-color:rgba(36,204,69,1);background-color:rgba(36,204,69,.1);">Code</a>
       {% endif %}
       {% if entry.poster %}
+        {% assign style_element = 'style="border-color:rgba(208,68,35,1);background-color:rgba(208,68,35,.1);"' %}
         {% if entry.poster contains '://' %}
-          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Poster</a>
+          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button" target="_blank" {{ style_element }}>Poster</a>
         {% else %}
-          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Poster</a>
+          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" {{ style_element }}>Poster</a>
         {% endif %}
       {% endif %}
       {% if entry.slides %}
