@@ -290,10 +290,11 @@
         {% endif %}
       {% endif %}
       {% if entry.slides %}
+        {% assign style_element = 'style="border-color:rgba(208,68,35,1);background-color:rgba(208,68,35,.1);"' %}
         {% if entry.slides contains '://' %}
-          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Slides</a>
+          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button" target="_blank" {{ style_element }}>Slides</a>
         {% else %}
-          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Slides</a>
+          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" {{ style_element }}>Slides</a>
         {% endif %}
       {% endif %}
       {% if entry.website %}
