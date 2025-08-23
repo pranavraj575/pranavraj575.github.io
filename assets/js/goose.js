@@ -158,6 +158,9 @@ let gooseActivation = () => {
         hiddening[i].classList.add("notlight");
         hiddening[i].classList.remove("spotlight");
     }
+    if (hiddening[i].style.display){
+        hiddening[i].classList.add("display-style-"+hiddening[i].style.display)
+    }
     hiddening[i].style.display = "none";
     hiddening[i].classList.remove("temp-hide");
   }
@@ -168,7 +171,13 @@ let gooseActivation = () => {
         revealing[i].classList.add("spotlight");
         revealing[i].classList.remove("notlight");
     }
-    revealing[i].style.display = "inline-block";
+    var disp = "inherit";
+    for (var type_style of ["block","inline-block"]){
+        if (revealing[i].classList.contains("display-style-"+type_style)){
+           disp = type_style;
+        }
+    }
+    revealing[i].style.display = disp;
     revealing[i].classList.remove("temp-reveal");
   }
 };
