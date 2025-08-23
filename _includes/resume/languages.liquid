@@ -37,22 +37,6 @@
         {% assign language_body = language_body | append: charhere %}
       {% endfor %}
     {% endif %}
-    {% if content.silly_ico_icon %}
-    <div class="list-group col-md-{{ language_colwidth }} silly-goose">
-      <table class="table-cv list-group-table">
-        <tbody>
-          <tr>
-            <td colspan="1" class="list-group-name">
-                <h6 class="ml-1 ml-md-0" style="font-size: 0.95rem"{% if content.audio %} onclick="plAudio('{{ content.audio }}')"{% endif %}>
-                  <img src={{ content.silly_ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
-                  {{ language_body }}
-                </h6>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    {% endif %}
     <div class="list-group col-md-{{ language_colwidth }}">
       <table class="table-cv list-group-table">
         <tbody>
@@ -60,11 +44,14 @@
             <td colspan="1" class="list-group-name">
               <h6 class="ml-1 ml-md-0" style="font-size: 0.95rem"{% if content.audio %} onclick="plAudio('{{ content.audio }}')"{% endif %}>
                 {% if content.silly_ico_icon %}
-                  <span class="silly-goose display-style-inline-block" style="display:none">
+                  <span class="silly-goose display-style-inline-block" style="width:27px;text-align:center;display:none;">
                     <img src={{ content.silly_ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
                   </span>
                 {% endif %}
-                <span{% if content.silly_ico_icon %} class="serious-goose display-style-inline-block" style="display:none"{% endif %}>
+                <span
+                    {% if content.silly_ico_icon %} class="serious-goose display-style-inline-block"{% endif %}
+                    style=width:27px;text-align:center;{% if content.silly_ico_icon %}display:none;{% endif %}"
+                    >
                   {% if content.ico_icon %}
                     <img src={{ content.ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>&nbsp;&nbsp;
                   {% else %}
