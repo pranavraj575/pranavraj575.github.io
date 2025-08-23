@@ -43,24 +43,24 @@
           <tr>
             <td colspan="1" class="list-group-name">
               <h6 class="ml-1 ml-md-0" style="font-size: 0.95rem"{% if content.audio %} onclick="plAudio('{{ content.audio }}')"{% endif %}>
-                {% if content.silly_ico_icon %}
+                {%- if content.silly_ico_icon -%}
                   <span class="silly-goose display-style-inline-block" style="width:20px;text-align:center;display:none;">
                     <img src={{ content.silly_ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>
                   </span>
-                {% endif %}
+                {%- endif -%}
                 <span
                     {% if content.silly_ico_icon %} class="serious-goose display-style-inline-block"{% endif %}
                     style=width:20px;text-align:center;{% if content.silly_ico_icon %}display:none;{% else %}display:inline-block;{% endif %}"
                     >
-                  {% if content.ico_icon %}
+                  {%- if content.ico_icon -%}
                     <img src={{ content.ico_icon }} class="img-fluid" height="auto" loading="eager" width="19 rem" title={{ content.name }}>
-                  {% else %}
-                    {% if content.icon %}
+                  {%- else -%}
+                    {%- if content.icon -%}
                       {{ content.icon }}
-                    {% else %}
+                    {%- else -%}
                       •
-                    {% endif %}
-                  {% endif %}
+                    {%- endif -%}
+                  {%- endif -%}
                 </span>&nbsp;&nbsp;
                 {{ language_body }}
               </h6>
