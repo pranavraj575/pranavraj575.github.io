@@ -31,7 +31,7 @@ remove_dead_pixel: false
 
 <p class="silly-goose">I am interested in AI/ML, Topology, and long walks on the beach.</p>
 
-<p class="serious-goose">I am interested in AI/ML and Topology.</p>
-
+<p class="serious-goose">I am primarily interested in developing Machine Learning algorithms for strategic scenarios.</p>
+<p class="serious-goose">I am also interested Topology.</p>
 
 Research statement [here](/research-statement).
