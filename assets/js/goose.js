@@ -168,7 +168,7 @@ let gooseActivation = () => {
         revealing[i].classList.add("spotlight");
         revealing[i].classList.remove("notlight");
     }
-    revealing[i].style.display = "block";
+    revealing[i].style.display = "inline-block";
     revealing[i].classList.remove("temp-reveal");
   }
 };
