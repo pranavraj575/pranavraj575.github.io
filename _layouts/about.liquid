@@ -85,49 +85,8 @@ layout: default
     {% endif %}
   </article>
   {% assign goose_link_style = "cursor:default;color:var(--global-text-color);text-decoration:none;" %}
-  {% assign goose_box_style = "cursor:default;text-align:center;display:none;" %}
 
-  <span class="reveal-at-0 hide-at-1" style="{{ goose_box_style }}">
-    <span onclick="increaseStepsTo(1);">🪿</span>
-    <span style="opacity:0">🥚</span>
-    <span style="opacity:0">🥚</span>
-    <span style="opacity:0">🥚</span>
-    <span style="opacity:0">🥚</span>
-  </span>
-  <span class="reveal-at-1 hide-at-2" style="{{ goose_box_style }}">
-    <span onclick="plAudio('/assets/audio/quack.mp3');">🪿</span>
-    <a href="/empty-page" style="{{ goose_link_style }}" onclick="plAudio('/assets/audio/quack.mp3');">🪿</a>
-    <span>🥚</span>
-    <span>🥚</span>
-    <span>🥚</span>
-  </span>
-  <span class="reveal-at-2 hide-at-3" style="{{ goose_box_style }}">
-    <span onclick="plAudio('/assets/audio/quack.mp3');">🪿</span>
-    <a href="/empty-page" style="{{ goose_link_style }}" onclick="plAudio('/assets/audio/quack.mp3');">🪿</a>
-    <a href="/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3" style="{{ goose_link_style }}" onclick="plAudio('/assets/audio/quack.mp3');">🪿</a>
-    <span>🥚</span>
-    <span>🥚</span>
-  </span>
-  <span class="reveal-at-3 hide-at-4" style="{{ goose_box_style }}">
-    <span onclick="plAudio('/assets/audio/quack.mp3');">🪿</span>
-    <a href="/empty-page" style="{{ goose_link_style }}" onclick="plAudio('/assets/audio/quack.mp3');">🪿</a>
-    <a href="/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3" style="{{ goose_link_style }}" onclick="plAudio('/assets/audio/quack.mp3');">🪿</a>
-    <a href="/toe" style="{{ goose_link_style }}" onclick="plAudio('/assets/audio/quack.mp3');">🪿</a>
-    <span>🥚</span>
-  </span>
-  <span class="silly-goose" style="{{ goose_box_style }}">
-    <span class="celeb" style="opacity:0">🎉🎉🎉</span>
-    <span onclick="plAudio('/assets/audio/quack.mp3');">🪿</span>
-    <a href="/empty-page" style="{{ goose_link_style }}" onclick="plAudio('/assets/audio/quack.mp3');">🪿</a>
-    <a href="/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3" style="{{ goose_link_style }}" onclick="plAudio('/assets/audio/quack.mp3');">🪿</a>
-    <a href="/toe" style="{{ goose_link_style }}" onclick="plAudio('/assets/audio/quack.mp3');">🪿</a>
-    <span onclick="revealCelebration()">🪿</span>
-    <span class="celeb" style="opacity:0">🎉🎉🎉</span>
-  </span>
-  <br>
-
-
-  <span style="cursor:default;text-align:center;">
+  <span style="cursor:default;text-align:center;display:block;">
     <span class="celeb" style="opacity:0">🎉🎉🎉</span>
 
     <span onclick="increaseStepsTo(1);">🪿</span>
