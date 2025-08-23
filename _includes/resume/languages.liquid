@@ -42,10 +42,10 @@
         <tbody>
           <tr>
             <td colspan="1" class="list-group-name">
-              <h6 class="ml-1 ml-md-0" style="font-size: 0.95rem"{% if content.audio %} onclick="plAudio('{{ content.audio }}')"{% endif %}>
+              <h6 class="ml-1 ml-md-0" style="font-size:0.95rem"{% if content.audio %} onclick="plAudio('{{ content.audio }}')"{% endif %}>
                 {%- if content.silly_ico_icon -%}
                   <span class="silly-goose display-style-inline-block" style="width:20px;text-align:center;display:none;">
-                    <img src={{ content.silly_ico_icon }} class="img-fluid" loading="eager" title={{ content.name }}>
+                    <img src={{ content.silly_ico_icon }} class="img-fluid" loading="eager" style="height:0.95rem" title={{ content.name }}>
                   </span>
                 {%- endif -%}
                 <span
@@ -53,7 +53,7 @@
                     style=width:20px;text-align:center;{% if content.silly_ico_icon %}display:none;{% else %}display:inline-block;{% endif %}"
                     >
                   {%- if content.ico_icon -%}
-                    <img src={{ content.ico_icon }} class="img-fluid" loading="eager" title={{ content.name }}>
+                    <img src={{ content.ico_icon }} class="img-fluid" style="height:0.95rem" loading="eager" title={{ content.name }}>
                   {%- else -%}
                     {%- if content.icon -%}
                       {{ content.icon }}
