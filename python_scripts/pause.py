@@ -211,6 +211,6 @@ if 'education' in cv:
                     if 'courses' in topic:
                         for course in topic['courses']:
                             if 'silly' not in course or not course['silly']:
-                                print('\t', course['name'])
+                                print('\t', course)
         else:
             print('topics not in', id)
