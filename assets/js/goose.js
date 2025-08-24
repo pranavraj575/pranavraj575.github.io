@@ -172,7 +172,7 @@ let gooseActivation = () => {
         revealing[i].classList.remove("notlight");
     }
     var disp = "inherit";
-    for (var type_style of ["block", "inline-block"]){
+    for (var type_style of ["block", "inline-block", "table-row"]){
         if (revealing[i].classList.contains("display-style-"+type_style)){
            disp = type_style;
         }

@@ -67,7 +67,7 @@
                     <td colspan="{{ i }}" class="list-group-category"><i>{{ topic.name }}</i></td>
                   </tr>
                   {% for course in topic.courses %}
-                    <tr{% if course.silly %} class="silly-goose"{% endif %}>
+                    <tr{% if course.silly %} class="silly-goose display-style-table-row"{% endif %}>
                       <td></td>
                       <td class="list-group-name"{% if course.id %} title="{{ course.id }}"{% endif %}>
                         {% if course.url %}
