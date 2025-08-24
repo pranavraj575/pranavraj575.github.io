@@ -48,8 +48,8 @@
         <div class="list-groups">
           <div class="col-md-12" style="margin-bottom:3px;text-align:center"><b>Relevant Coursework</b></div>
           {% for topic in content.topics %}
-            <div class="list-group col-md-6">
-              <table class="table-cv list-group-table{% if topic.silly %} silly-goose{% endif %}">
+            <div class="list-group col-md-6{% if topic.silly %} silly-goose{% endif %}">
+              <table class="table-cv list-group-table">
                 <tbody>
                   <tr>
                     {% if topic.icon %}
@@ -67,7 +67,7 @@
                     <td colspan="{{ i }}" class="list-group-category"><i>{{ topic.name }}</i></td>
                   </tr>
                   {% for course in topic.courses %}
-                    <tr{% if course.silly %}class="silly-goose"{% endif %}>
+                    <tr{% if course.silly %} class="silly-goose"{% endif %}>
                       <td></td>
                       <td class="list-group-name"{% if course.id %} title="{{ course.id }}"{% endif %}>
                         {% if course.url %}
