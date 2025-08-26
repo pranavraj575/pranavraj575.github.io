@@ -192,7 +192,8 @@
         "Used SHAP values, a tool for explaining model output, to measure visual regions that trained RL agents pay attention to"
       ],
       "startDate": "2025-02-04",
-      "endDate": "2025-08-04"
+      "endDate": "2025-08-04",
+      "logo": "/assets/img/icons/unsw.png"
     },
     {
       "name": "AlephZero: Extending AlphaZero to Infinite Boards",
@@ -220,7 +221,8 @@
         "Compared performance of various architectures, including Deep Neural Networks, Recurrent Neural Networks, and LSTMs"
       ],
       "startDate": "2024-01-19",
-      "endDate": "2025-08-04"
+      "endDate": "2025-08-04",
+      "logo": "/assets/img/icons/unsw.png"
     },
     {
       "name": "Transformer guided coevolution: Team selection in multiagent adversarial games",
@@ -236,7 +238,8 @@
         "Developed and maintained unstable_baselines3, a Python package extending stable_baselines3 to multiagent environments"
       ],
       "startDate": "2024-07-01",
-      "endDate": "2024-10-16"
+      "endDate": "2024-10-16",
+      "logo": "/assets/img/icons/nrl.png"
     },
     {
       "name": "Geodesic complexity? It's actually quite simplex",
@@ -252,7 +255,8 @@
         "Proved existing geodesic complexity bounds in a new way, displaying the utility of our general method"
       ],
       "startDate": "2023-08-28",
-      "endDate": "2024-05-12"
+      "endDate": "2024-05-12",
+      "logo": "/assets/img/icons/cmu.png"
     },
     {
       "name": "Utilizing Sim-to-Real Methods for Training a Robot Arm",
@@ -268,7 +272,8 @@
         "Implemented a training pipeline for a robotic manipulation task, trained in simulation and refined on the real arm"
       ],
       "startDate": "2023-01-17",
-      "endDate": "2024-05-12"
+      "endDate": "2024-05-12",
+      "logo": "/assets/img/icons/cmu.png"
     },
     {
       "name": "Learning NEAT Emergent Behavior in Robot Swarms",
@@ -283,7 +288,8 @@
         "Utilized ROS to handle communication between Python scripts and robotic swarms (both real and simulated)"
       ],
       "startDate": "2023-05-22",
-      "endDate": "2023-08-11"
+      "endDate": "2023-08-11",
+      "logo": "/assets/img/icons/nrl.png"
     },
     {
       "name": "UAV Routing for Enhancing the Performance of a Classifier-in-the-loop",
@@ -298,7 +304,8 @@
         "Tested our algorithm on both generated and real-life problem instances using Julia and the Gurobi optimizer"
       ],
       "startDate": "2023-05-22",
-      "endDate": "2023-08-11"
+      "endDate": "2023-08-11",
+      "logo": "/assets/img/icons/nrl.png"
     },
     {
       "name": "Comparing Transfer Learning Methods for Continuous Reinforcement Learning",
@@ -313,7 +320,8 @@
         "Utilized ROS to handle communication between the robot arm and Python scripts"
       ],
       "startDate": "2022-05-23",
-      "endDate": "2022-08-12"
+      "endDate": "2022-08-12",
+      "logo": "/assets/img/icons/nrl.png"
     },
     {
       "name": "Creating a Strategic Agent to Play Jenga",
@@ -328,7 +336,8 @@
         "Trained the model through repeatedly sampling stabilities of towers with the PyBullet physics engine"
       ],
       "startDate": "2021-02-15",
-      "endDate": "2022-05-12"
+      "endDate": "2022-05-12",
+      "logo": "/assets/img/icons/cmu.png"
     }
   ],
   "publications": [
