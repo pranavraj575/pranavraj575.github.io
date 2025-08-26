@@ -408,7 +408,8 @@
         "Worked in the Bioengineering Group on project \"Understanding visual attention beehind bee-inspired UAV navigation\"",
         "Worked in the Bioengineering Group on project \"Fine Tuning Swimming Locomotion Learned from Mosquito Larvae\""
       ],
-      "hours": "40"
+      "hours": "40",
+      "logo": "/assets/img/icons/unsw.png"
     },
     {
       "name": "Carnegie Mellon University",
@@ -427,7 +428,8 @@
         "Worked in the Reliable Autonomous Systems Laboratory on project \"Utilizing Sim-to-Real Methods for Training a Robot Arm\"",
         "Worked in the Reliable Autonomous Systems Laboratory on project \"Creating a Strategic Agent to Play Jenga\""
       ],
-      "hours": "12"
+      "hours": "12",
+      "logo": "/assets/img/icons/cmu.png"
     },
     {
       "name": "U.S. Naval Research Laboratory",
@@ -464,7 +466,8 @@
         "Explored Imitation Reinforcement Learning methods to compete against the baseline of training a classifier model",
         "Processed historical data and created models to approximate decision processes using Python and R"
       ],
-      "hours": "20"
+      "hours": "20",
+      "logo": "/assets/img/icons/nassa.png"
     },
     {
       "name": "Carnegie Mellon University",
@@ -480,7 +483,8 @@
         "Held office hours to help students understand course material in a one-on-one setting",
         "Created, tested, and graded programming assignments and written homework"
       ],
-      "hours": "15, 10, 10"
+      "hours": "15, 10, 10",
+      "logo": "/assets/img/icons/cmu.png"
     },
     {
       "name": "Carnegie Mellon University",
@@ -493,7 +497,8 @@
         "Collaborated with a team of three researchers to develop and maintain an R package for Natural Language Processing",
         "Utilized Rust's BERT Natural Language Processing to tokenize and classify strings in R"
       ],
-      "hours": "10"
+      "hours": "10",
+      "logo": "/assets/img/icons/cmu.png"
     },
     {
       "name": "Centers for Disease Control and Prevention",
