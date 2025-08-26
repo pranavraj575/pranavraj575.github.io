@@ -342,6 +342,13 @@
   ],
   "publications": [
     {
+      "name": "Geodesic complexity of the octahedron, and an algorithm for cut loci on convex polyhedra",
+      "authors": "Frick, Florian and Rajbhandari, Pranav",
+      "publisher": "arXiv",
+      "releaseDate": "2025-08-00",
+      "note": "(Preprint)"
+    },
+    {
       "name": "Understanding visual attention beehind bee-inspired UAV navigation",
       "authors": "Rajbhandari, Pranav and Veda, Abhi and Garratt, Matthew and Srinivasan, Mandayam and Ravi, Sridhar",
       "publisher": "arXiv",
