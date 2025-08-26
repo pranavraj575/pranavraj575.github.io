@@ -24,7 +24,7 @@ while i < len(img_files_or_dirs):
             for c in os.listdir(item):
                 img_files_or_dirs.append(os.path.join(item, c))
         else:
-            if any(item.endswith(suf) for suf in valid_ends):
+            if any(item.lower().endswith(suf) for suf in valid_ends):
                 img_files.append(item)
     i += 1
 
