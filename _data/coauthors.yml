@@ -1,4 +1,8 @@
 
+"sandholm":
+  - firstname: ["Tuomas","T."]
+    url: https://www.cs.cmu.edu/~sandholm/
+
 "frick":
   - firstname: ["Florian", "F."]
     url: https://www.math.cmu.edu/~ffrick/
