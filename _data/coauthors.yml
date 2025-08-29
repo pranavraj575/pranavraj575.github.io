@@ -1,11 +1,11 @@
 
 "frick":
   - firstname: ["Florian", "F."]
-    url: https://scholar.google.com/citations?user=7G7zH2AAAAAJ
+    url: https://www.math.cmu.edu/~ffrick/
 
 "simmons":
   - firstname: ["Reid", "R.", "Reid Gordon", "Reid G.", "R. G."]
-    url: https://scholar.google.com/citations?user=t-VqN7sAAAAJ
+    url: https://www.cs.cmu.edu/~reids/
 
 "zalewski":
   - firstname: ["Sophia", "S."]
@@ -14,7 +14,7 @@
 
 "ravi":
   - firstname: ["Sridhar", "S."]
-    url: https://scholar.google.com/citations?user=ByTaz-kAAAAJ
+    url: https://www.unsw.edu.au/staff/sridhar-ravi
 
 "srinivasan":
   - firstname: ["Mandayam", "M."]
@@ -22,7 +22,7 @@
 
 "garratt":
   - firstname: ["Matthew", "M."]
-    url: https://scholar.google.com.au/citations?user=4dQ1AtoAAAAJ
+    url: https://research.unsw.edu.au/people/professor-matt-garratt
 
 "dhileep":
   - firstname: ["Karthick", "K."]
@@ -35,7 +35,7 @@
 
 "darbha":
   - firstname: ["Swaroop", "S."]
-    url: https://scholar.google.com/citations?user=_7TNmBAAAAAJ
+    url: https://engineering.tamu.edu/mechanical/profiles/darbha-swaroop.html
 
 "kumar":
   - firstname: ["Deepak Prakash", "Deepak"]
@@ -48,7 +48,7 @@
 
 "dasgupta":
   - firstname: ["Prithviraj", "P."]
-    url: https://scholar.google.com/citations?user=mc__RjcAAAAJ
+    url: https://sites.google.com/view/rajdasgupta/
 
 "mcguire":
   - firstname: ["Loy", "L."]
