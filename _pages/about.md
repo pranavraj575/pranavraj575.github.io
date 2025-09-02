@@ -33,4 +33,4 @@ remove_dead_pixel: false
 
 <p class="serious-goose">I am primarily interested in developing Machine Learning algorithms for strategic scenarios. I am also interested in Topology.</p>
 
-Research statement [here](/research-statement).
+[Research statement here](/research-statement).
