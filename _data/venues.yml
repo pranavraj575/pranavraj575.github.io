@@ -1,13 +1,21 @@
+
+"AAMAS":
+  url: https://www.ifaamas.org/
+  color: "#591777"
+
 "IEEE ROBIO":
   url: https://ieeexplore.ieee.org/xpl/conhome/1000856/all-proceedings
+  color: "#00629B"
 
 "JIRS":
   url: https://link.springer.com/journal/10846
   color: "rgb(0, 21, 255)"
 
-"AAMAS":
-  url: https://www.ifaamas.org/
-  color: "#591777"
+
+"Journal of Applied and Computational Topology":
+  url: https://link.springer.com/journal/41468
+  color: "rgb(255, 191, 0)"
+
 
 "arXiv":
   url: https://arxiv.org/
