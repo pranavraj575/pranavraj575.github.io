@@ -388,11 +388,14 @@
 <script>
   var all_unseen = document.getElementsByClassName("hidden_until_touch");
   for (var i = 0; i < all_unseen.length; i++) {
-    all_unseen[i].addEventListener("mouseover", function() {
-      this.style.opacity = 1;
-      this.style.setProperty("-webkit-user-select", "auto");
-      this.style.setProperty("-ms-user-select", "auto");
-      this.style.setProperty("user-select", "auto");
+    function tadaaaa(target) {
+      target.style.opacity = 1;
+      target.style.setProperty("-webkit-user-select", "auto");
+      target.style.setProperty("-ms-user-select", "auto");
+      target.style.setProperty("user-select", "auto");
+    }
+    all_unseen[i].addEventListener("touchmove", function() {
+      tadaaaa(this);
     });
   }
 </script>
