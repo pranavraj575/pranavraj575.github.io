@@ -7,9 +7,11 @@ first_name: Pranav
 middle_name:
 last_name: Rajbhandari
 contact_note:
-description: help me im trapped in the website # the ">" symbol means to ignore newlines until "footer_text:"
+description: > # the ">" symbol means to ignore newlines until next "<key>:"
+  help me im trapped in the website.
+  this is my personal website
 footer_text: footer hardly know her
-keywords: bean-soup soup ratatouille remy-ratatouille # add your own keywords or leave empty
+keywords: pranav rajbhandari bean-soup soup ratatouille remy-ratatouille # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: cool_bunny.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
