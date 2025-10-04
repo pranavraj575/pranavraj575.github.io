@@ -12,11 +12,6 @@
   color: "rgb(0, 21, 255)"
 
 
-"JACT":
-  url: https://link.springer.com/journal/41468
-  color: "rgb(255, 191, 0)"
-
-
 "arXiv":
   url: https://arxiv.org/
   color: "#b31b1b"

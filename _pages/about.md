@@ -9,7 +9,6 @@ profile:
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>PhD student</p><br>
     <p>Machine Learning Department</p><br>
     <p>Carnegie Mellon University</p><br>
     <p>Pittsburgh, USA</p>
@@ -29,8 +28,11 @@ latest_posts:
 remove_dead_pixel: false
 ---
 
-<p class="silly-goose">I am interested in AI/ML, Topology, and long walks on the beach.</p>
+I am a PhD student at CMU's Machine Learning Department, advised by Prof. Tuomas Sandholm.
+My research is mainly in developing algorithms to solve imperfect information games.
 
-<p class="serious-goose">I am primarily interested in developing Machine Learning algorithms for strategic scenarios. I am also interested in Topology.</p>
+<p class="silly-goose">My general interests are in AI/ML, Topology, and long walks on the beach.</p>
+
+<p class="serious-goose">My general goal is developing Machine Learning algorithms for strategic scenarios. I am also interested in Topology.</p>
 
 [Research statement here](/research-statement).
