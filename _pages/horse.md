@@ -12,24 +12,43 @@ silly: true
 
 <div>
     <button class="button button5" 
-    style="background-color:RED;border: none;color:black;padding: 20px;text-align:center;text-decoration: none; display: inline-block; font-size: 16px;margin: 4px 2px;border-radius:100%"
+    style="background-color:RED;border:black;color:black;padding:20px;
+        text-align:center;text-decoration: none; 
+        display: inline-block; font-size: 16px;
+        margin: 4px 2px;border-radius:100%;padding-top:100%;
+        font-size:69px"
     onclick="REDBUTTON()"
-    >CLICK THIS</button>
+    >
+    <b>CLICK<br>THIS</b></button>
 </div>
 <div id="HORSE_CODE">
 </div>
 
 
 <script>
+    let REVEAL = (thing, stuff) => { 
+        if (thing.length==0){return 0;}
+        c = thing[0];
+        delay = 1000;
+        base = 500;
+        if(c=='.'){delay = base;}
+        else if(c=='-'){delay=3*base;}
+        else{
+            c=' ';
+            delay=3*base;
+            if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=1;}
+        }
+        stuff.textContent = stuff.textContent+c;
+        setTimeout(() => {
+            REVEAL(thing.substring(1),stuff);
+        }, delay);
+    };
+
     let REDBUTTON = () => {
         plAudio("/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3")
         code="-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..";
         const stuff = document.getElementById("HORSE_CODE");
-        for (var c of code){
-            if(c=='.'){}
-            else if(c=='-'){}
-            else{c=' ';}
-            stuff.textContent = stuff.textContent+c;
-        }
+        stuff.textContent = "";
+        REVEAL(code, stuff);
     };
 </script>
