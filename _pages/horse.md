@@ -26,25 +26,27 @@ silly: true
 
 
 <script>
+    base_delay = 200;
     let REVEAL = (thing, stuff) => { 
-        if (thing.length==0){return 0;}
+        if (thing.length==0){BUTTLOCK=false;return 0;}
         c = thing[0];
         delay = 0;
-        base = 100;
-        if(c=='.'){delay = base;}
-        else if(c=='-'){delay=3*base;}
+        if(c=='.'){delay = base_delay;}
+        else if(c=='-'){delay=3*base_delay;}
         else{
             c='&nbsp;';
-            delay=3*base;
-            if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=1;}
+            delay=3*base_delay;
+            if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=base_delay;}
         }
         stuff.innerHTML = stuff.innerHTML+c;
         setTimeout(() => {
             REVEAL(thing.substring(1),stuff);
         }, delay);
     };
-
+    BUTTLOCK=false;
     let REDBUTTON = () => {
+        if(BUTTLOCK){return 0;}
+        BUTTLOCK=true;
         plAudio("/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3")
         code="-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..";
         const stuff = document.getElementById("HORSE_CODE");
