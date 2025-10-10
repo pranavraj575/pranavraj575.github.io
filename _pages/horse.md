@@ -15,7 +15,7 @@ silly: true
     style="background-color:RED;border:black;color:black;padding:20px;
         text-align:center;text-decoration: none; 
         display: inline-block; font-size: 16px;
-        margin: 4px 2px;border-radius:100%;padding-top:100%;
+        margin: 4px 2px;border-radius:100%;
         font-size:69px"
     onclick="REDBUTTON()"
     >
@@ -29,8 +29,8 @@ silly: true
     let REVEAL = (thing, stuff) => { 
         if (thing.length==0){return 0;}
         c = thing[0];
-        delay = 1000;
-        base = 500;
+        delay = 0;
+        base = 100;
         if(c=='.'){delay = base;}
         else if(c=='-'){delay=3*base;}
         else{
