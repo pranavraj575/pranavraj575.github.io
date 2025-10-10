@@ -27,7 +27,7 @@ silly: true
 
 
 <script>
-    base_delay = 200;
+    base_delay = 225;
     let REVEAL = (thing, stuff) => { 
         if (thing.length==0){BUTTLOCK=false;return 0;}
         c = thing[0];
@@ -37,7 +37,7 @@ silly: true
         else{
             c='&nbsp;';
             delay=3*base_delay;
-            if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=base_delay;}
+            if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=2*base_delay;}
         }
         stuff.innerHTML = stuff.innerHTML+c;
         setTimeout(() => {
