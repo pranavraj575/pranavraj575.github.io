@@ -21,7 +21,7 @@ silly: true
     >
     <b>CLICK<br>THIS</b></button>
 </div>
-<div id="HORSE_CODE">
+<div id="HORSE_CODE" style="font-size:31px;">
 </div>
 
 
