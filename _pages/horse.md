@@ -38,7 +38,7 @@ silly: true
             delay=3*base;
             if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=1;}
         }
-        stuff.textContent = stuff.textContent+c;
+        stuff.innerHTML = stuff.innerHTML+c;
         setTimeout(() => {
             REVEAL(thing.substring(1),stuff);
         }, delay);
