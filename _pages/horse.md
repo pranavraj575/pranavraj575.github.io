@@ -34,7 +34,7 @@ silly: true
         if(c=='.'){delay = base;}
         else if(c=='-'){delay=3*base;}
         else{
-            c=' ';
+            c='&nbsp;';
             delay=3*base;
             if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=1;}
         }
