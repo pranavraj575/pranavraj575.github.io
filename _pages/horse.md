@@ -12,10 +12,11 @@ silly: true
 
 <div>
     <button class="button button5" 
-    style="background-color:RED;border:black;color:black;padding:20px;
+    style="background-color:RED;border:black;color:black;padding:30px;
         text-align:center;text-decoration: none; 
         display: inline-block; font-size: 16px;
         margin: 4px 2px;border-radius:100%;
+        position:absolute;left:50%;-ms-transform:translate(-50%, 0%);transform:translate(-50%, 0%);
         font-size:69px"
     onclick="REDBUTTON()"
     >
