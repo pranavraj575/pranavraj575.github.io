@@ -16,7 +16,7 @@ silly: true
         text-align:center;text-decoration: none; 
         display: inline-block; font-size: 16px;
         margin: 4px 2px;border-radius:100%;
-        position:absolute;left:50%;-ms-transform:translate(-50%, 0%);transform:translate(-50%, 0%);
+        position:relative;left:50%;-ms-transform:translate(-50%, 0%);transform:translate(-50%, 0%);
         font-size:69px"
     onclick="REDBUTTON()"
     >
