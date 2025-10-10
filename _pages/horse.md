@@ -27,7 +27,7 @@ silly: true
 
 
 <script>
-    base_delay = 300;
+    base_delay = 200;
     let REVEAL = (thing, stuff) => { 
         if (thing.length==0){BUTTLOCK=false;return 0;}
         c = thing[0];
