@@ -11,7 +11,7 @@ silly: true
 ---
 
 <div>
-    <button class="button button5" 
+    <button id="EVIL_BUTTON" class="button button5" 
     style="background-color:RED;border:black;color:black;padding:30px;
         text-align:center;text-decoration: none; 
         display: inline-block; font-size: 16px;
@@ -42,7 +42,11 @@ silly: true
 <script>
     base_delay = 80;
     let REVEAL = (thing, stuff) => { 
-        if (thing.length==0){BUTTLOCK=false;return 0;}
+        if (thing.length==0){
+            // lock according to delay instead of at end of string
+            // BUTTLOCK=false; 
+            return 0;
+        }
         c = thing[0];
         delay = 0;
         if(c=='.'){delay = 2*base_delay;}
@@ -60,13 +64,24 @@ silly: true
     BUTT_CLICKED=false;
     BUTTLOCK=false;
     let REDBUTTON = () => {
+        if(BUTT_CLICKED){
+            let new_window = open(location, '_self');
+            new_window.close();
+            return false;
+        }
         BUTT_CLICKED=true;
+        const butt = document.getElementById("EVIL_BUTTON");
+        butt.innerHTML="<b>DON'T<br>CLICK</b>";
+        
+        // lock clicking the button for a bit, as opposed to locking at end of message
         if(BUTTLOCK){return 0;}
         BUTTLOCK=true;
+        setTimeout(() => {BUTTLOCK=false;}, 420);
+
         plAudio("/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3")
         code="-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..";
         const stuff = document.getElementById("HORSE_CODE");
-        stuff.textContent = "";
+        stuff.innerHTML = "";
         REVEAL(code, stuff);
     };
 </script>
