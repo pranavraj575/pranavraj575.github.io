@@ -36,8 +36,8 @@ silly: true
         else if(c=='-'){delay=4*base_delay;}
         else{
             c='&nbsp;';
-            delay=12*base_delay;
-            if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=12*base_delay;}
+            delay=16*base_delay;
+            if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=16*base_delay;}
         }
         stuff.innerHTML = stuff.innerHTML+c;
         setTimeout(() => {
