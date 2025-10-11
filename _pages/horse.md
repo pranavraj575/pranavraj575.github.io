@@ -22,9 +22,22 @@ silly: true
     >
     <b>CLICK<br>THIS</b></button>
 </div>
-<div id="HORSE_CODE" style="font-size:31px;">
+<div id="HORSE_CODE" style="font-size:31px;text-align:center">
 </div>
 
+<div class="reveal-at-3">
+    <a href="/">
+        <button class="button button5" 
+        style="background-color:GREEN;border:black;color:black;padding:30px;
+        text-align:center;text-decoration: none; 
+        display: inline-block; font-size: 16px;
+        margin: 4px 2px;border-radius:100%;
+        position:relative;left:50%;-ms-transform:translate(-50%, 0%);transform:translate(-50%, 0%);
+        font-size:69px"
+        >
+        <b>GO<br>HOME</b></button>
+    </a>
+</div>
 
 <script>
     base_delay = 80;
@@ -44,8 +57,10 @@ silly: true
             REVEAL(thing.substring(1),stuff);
         }, delay);
     };
+    BUTT_CLICKED=false;
     BUTTLOCK=false;
     let REDBUTTON = () => {
+        BUTT_CLICKED=true;
         if(BUTTLOCK){return 0;}
         BUTTLOCK=true;
         plAudio("/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3")
