@@ -65,9 +65,7 @@ silly: true
     BUTTLOCK=false;
     let REDBUTTON = () => {
         if(BUTT_CLICKED){
-            let new_window = open(location, '_self');
-            new_window.close();
-            return false;
+            window.location.replace("/infinite-loop");
         }
         BUTT_CLICKED=true;
         const butt = document.getElementById("EVIL_BUTTON");
