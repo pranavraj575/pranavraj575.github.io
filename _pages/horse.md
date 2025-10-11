@@ -37,7 +37,7 @@ silly: true
         else{
             c='&nbsp;';
             delay=3*base_delay;
-            if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=2*base_delay;}
+            if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=5*base_delay;c+="test";}
         }
         stuff.innerHTML = stuff.innerHTML+c;
         setTimeout(() => {
