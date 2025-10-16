@@ -30,8 +30,13 @@
   gooseActivation();
 </script> <script>
   var all_unseen = document.getElementsByClassName("hidden_until_touch");
+  var left_to_reveal = all_unseen.length;
   for (var i = 0; i < all_unseen.length; i++) {
     function tadaaaa(target) {
+      if (target.style.opacity != 1){
+        left_to_reveal--;
+        <!-- newly revealed-->
+      }
       target.style.opacity = 1;
       target.style.setProperty("-webkit-user-select", "auto");
       target.style.setProperty("-ms-user-select", "auto");
