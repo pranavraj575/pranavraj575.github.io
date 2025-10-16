@@ -13,33 +13,33 @@ silly: true
 <div class="reveal-at-1">
     {% assign head = "NOTHING TO SEE HERE" | split: "" %}
     <h1>
-      {% for h in head %}
-        {% if h == " " %}
+      {%- for h in head -%}
+        {%- if h == " " -%}
           <span>{{ h }}</span>
-        {% else %}
+        {%- else -%}
           <span class="hidden_until_touch">{{ h }}</span>
-        {% endif %}
-      {% endfor %}
+        {%- endif -%}
+      {%- endfor -%}
     </h1>
     {% assign head = "⠎⠑⠁⠗⠉⠓⠀⠁⠃⠕⠍⠊⠝⠁⠞⠊⠕⠝⠀⠞⠓⠑⠍⠑" | split: "" %}
     <div>
-      {% for h in head %}
-        {% if h == " " %}
+      {%- for h in head -%}
+        {%- if h == " " -%}
           <span>{{ h }}</span>
-        {% else %}
+        {%- else -%}
           <span class="hidden_until_touch">{{ h }}</span>
-        {% endif %}
-      {% endfor %}
+        {%- endif -%}
+      {%- endfor -%}
     </div>
     {% assign head = "⠙⠕⠝⠄⠞⠀⠇⠕⠕⠅⠀⠊⠝⠞⠕⠀⠞⠓⠑⠀⠇⠊⠛⠓⠞" | split: "" %}
     <div>
-      {% for h in head %}
-        {% if h == " " %}
+      {%- for h in head -%}
+        {%- if h == " " -%}
           <span>{{ h }}</span>
-        {% else %}
+        {%- else -%}
           <span class="hidden_until_touch">{{ h }}</span>
-        {% endif %}
-      {% endfor %}
+        {%- endif -%}
+      {%- endfor -%}
     </div>
     <div class="reveal-at-2"><a href="/">⠛⠕ ⠓⠕⠍⠑</a></div>
     <!--  can just put this text in normally 
