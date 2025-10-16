@@ -23,5 +23,12 @@ silly: true
     <div>
       {% for h in head %}<span class="hidden_until_touch">{{ h }}</span>{% endfor %}
     </div>
+    <div class="reveal-at-2"><a href="/">⠛⠕ ⠓⠕⠍⠑</a></div>
+    <!--  can just put this text in normally 
+    {% assign head = "⠛⠕ ⠓⠕⠍⠑" | split: "" %}
+    <div class="reveal-at-2">
+      {% for h in head %}<span class="hidden_until_touch">{{ h }}</span>{% endfor %}
+    </div>
+    -->
 </div>
 

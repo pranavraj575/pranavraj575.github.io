@@ -67,14 +67,14 @@ silly: true
         if(BUTT_CLICKED){
              window.location.href = "/infinite-loop";
         }
-        BUTT_CLICKED=true;
+        
         const butt = document.getElementById("EVIL_BUTTON");
         butt.innerHTML="<b>DON'T<br>CLICK</b>";
         
         // lock clicking the button for a bit, as opposed to locking at end of message
         if(BUTTLOCK){return 0;}
         BUTTLOCK=true;
-        setTimeout(() => {BUTTLOCK=false;}, 420);
+        setTimeout(() => {BUTTLOCK=false;BUTT_CLICKED=true;}, 420);
 
         plAudio("/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3")
         code="-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..";
