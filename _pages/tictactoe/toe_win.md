@@ -8,6 +8,8 @@ nav: false
 og_image: /assets/img/cool_bunny.jpg
 remove_dead_pixel: false
 silly: true
+redirect_from: 
+  - /toe/won
 ---
 
 you won :)
