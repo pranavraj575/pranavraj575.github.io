@@ -181,7 +181,18 @@ ninja.data = [{
         //FOUND SECRET
         increaseStepsTo(2);
       },
-    },{id: "post-oh-deer",
+    },{id: "post-thanksgiving-miracle",
+        
+          title: "thanksgiving miracle",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/thanksgiving_miracle/";
+          
+        },
+      },{id: "post-oh-deer",
         
           title: "oh deer",
         
