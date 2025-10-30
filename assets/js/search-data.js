@@ -192,6 +192,17 @@ ninja.data = [{
             window.location.href = "/aminals/2025/thanksgiving_miracle/";
           
         },
+      },{id: "post-molly",
+        
+          title: "molly",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/molly/";
+          
+        },
       },{id: "post-oh-deer",
         
           title: "oh deer",
@@ -306,6 +317,13 @@ list_of_category_lists = [[],
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/dog-egory";
+            },
+          },{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
             },
           },],
     [],[],
