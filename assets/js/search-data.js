@@ -181,18 +181,7 @@ ninja.data = [{
         //FOUND SECRET
         increaseStepsTo(2);
       },
-    },{id: "post-thanksgiving-miracle",
-        
-          title: "thanksgiving miracle",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/aminals/2025/thanksgiving_miracle/";
-          
-        },
-      },{id: "post-molly",
+    },{id: "post-molly",
         
           title: "molly",
         
@@ -201,6 +190,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/aminals/2025/molly/";
+          
+        },
+      },{id: "post-thanksgiving-miracle",
+        
+          title: "thanksgiving miracle",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/thanksgiving_miracle/";
           
         },
       },{id: "post-oh-deer",
