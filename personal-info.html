@@ -117,9 +117,12 @@
         var audio=new Audio(url);
         if(update_num_audios){
             document.documentElement.setAttribute('num-audios-playing', num_audios_playing()+1);
-            setTimeout(() => {
-                document.documentElement.setAttribute('num-audios-playing', num_audios_playing()-1);
-            }, audio.duration*1000);
+            <!-- start timer after loading metadata (which includes duration) -->
+            audio.onloadedmetadata = function(){
+                setTimeout(() => {
+                    document.documentElement.setAttribute('num-audios-playing', num_audios_playing()-1);
+                }, audio.duration*1000);
+            }
         }
         audio.currentTime = 0;
         audio.play();
