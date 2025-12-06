@@ -423,11 +423,9 @@
 
     function plAudio(url, update_num_audios=true) {
         if(update_num_audios){
-            pnis = num_audios_playing();
-            document.documentElement.setAttribute('num-audios-playing', pnis+1);
+            document.documentElement.setAttribute('num-audios-playing', num_audios_playing()+1);
             setTimeout(() => {
-            pnis = num_audios_playing();
-            num_audios_playing = Math.max(0,pnis-1);
+                document.documentElement.setAttribute('num-audios-playing', num_audios_playing()-1);
             }, audio.duration*1000);
         }
         var audio=new Audio(url);
