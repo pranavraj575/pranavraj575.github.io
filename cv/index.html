@@ -80,13 +80,13 @@
     }
 
     function plAudio(url, update_num_audios=true) {
+        var audio=new Audio(url);
         if(update_num_audios){
             document.documentElement.setAttribute('num-audios-playing', num_audios_playing()+1);
             setTimeout(() => {
                 document.documentElement.setAttribute('num-audios-playing', num_audios_playing()-1);
             }, audio.duration*1000);
         }
-        var audio=new Audio(url);
         audio.currentTime = 0;
         audio.play();
     }
