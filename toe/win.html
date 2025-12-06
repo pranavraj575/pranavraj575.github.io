@@ -37,20 +37,31 @@
     -->
   }
 </script> <script>
-    num_audios_playing = 0;
+    function num_audios_playing() {
+        pnis = document.documentElement.getAttribute('num-audios-playing');
+        if (typeof(pnis) == "string") {
+            return parseInt(pnis);
+        }
+        else {
+            return 0;
+        }
+    }
+
     function plAudio(url) {
-        num_audios_playing += 1;
+        pnis = num_audios_playing();
+        document.documentElement.setAttribute('num-audios-playing', pnis+1);
         var audio=new Audio(url);
         audio.currentTime = 0;
         setTimeout(() => {
-            num_audios_playing = Math.max(0,num_audios_playing-1);
+            pnis = num_audios_playing();
+            num_audios_playing = Math.max(0,pnis-1);
         }, audio.duration*1000);
         audio.play();
     }
 
     document.addEventListener("click", function() {
         setTimeout(() => {
-            if((num_audios_playing==0) && (document.documentElement.getAttribute("goose-setting")=="silly")){
+            if((num_audios_playing()==0) && (document.documentElement.getAttribute("goose-setting")=="silly")){
                 plAudio('/assets/audio/vine_boom_sh.mp3');
             }
         }, 10);
