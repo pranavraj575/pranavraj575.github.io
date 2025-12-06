@@ -30,10 +30,22 @@
     -->
   }
 </script> <script>
+    num_audios_playing = 0;
     function plAudio(url) {
+        num_audios_playing += 1;
         var audio=new Audio(url);
         audio.currentTime = 0;
+        setTimeout(() => {
+            num_audios_playing = Math.max(0,num_audios_playing-1);
+        }, audio.duration*1000);
         audio.play();
     }
 
+    document.addEventListener("click", function() {
+        setTimeout(() => {
+            if((num_audios_playing==0) && (document.documentElement.getAttribute("goose-setting")=="silly")){
+                plAudio('/assets/audio/vine_boom_sh.mp3');
+            }
+        }, 10);
+    });
 </script> </body> </html>
