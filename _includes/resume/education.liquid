@@ -64,7 +64,9 @@
                     {% for course in topic.courses %}
                       {% assign i = i | plus: 1 %}
                     {% endfor %}
-                    <td colspan="{{ i }}" class="list-group-category"><i>{{ topic.name }}</i></td>
+                    {% if topic.name %}
+                        <td colspan="{{ i }}" class="list-group-category"><i>{{ topic.name }}</i></td>
+                    {% endif %}
                   </tr>
                   {% for course in topic.courses %}
                     <tr{% if course.silly %} class="silly-goose display-style-table-row"{% endif %}>

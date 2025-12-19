@@ -33,22 +33,21 @@
       "startDate": "2025-08-16",
       "topics": [
         {
-          "name": "Machine Learning",
           "courses": [
             {
-              "name": "Advanced Introduction to Machine Learning",
-              "url": "https://www.cs.cmu.edu/~nihars/teaching/10715Fa25.html",
-              "id": "CMU 10-715"
-            }
-          ]
-        },
-        {
-          "name": "Game Theory",
-          "courses": [
+              "name": "Advanced Topics in Machine Learning & Game Theory",
+              "url": "https://feifang.info/advanced-topics-in-machine-learning-and-game-theory-fall-2024/",
+              "id": "CMU 17-759"
+            },
             {
               "name": "Computational Game Solving",
               "url": "https://www.cs.cmu.edu/~sandholm/cs15-888F25/",
               "id": "CMU 15-888"
+            },
+            {
+              "name": "Advanced Introduction to Machine Learning",
+              "url": "https://www.cs.cmu.edu/~nihars/teaching/10715Fa25.html",
+              "id": "CMU 10-715"
             }
           ]
         }
@@ -347,7 +346,7 @@
       "publisher": "arXiv",
       "releaseDate": "2025-08-26",
       "url": "https://arxiv.org/abs/2508.19362",
-      "note": "(Preprint, submitted to Journal of Applied and Computational Topology)"
+      "note": "(Preprint, submitted to Journal of Computational Geometry)"
     },
     {
       "name": "Understanding visual attention beehind bee-inspired UAV navigation",
