@@ -81,10 +81,7 @@
                         <td colspan="{{ i }}" class="list-group-category"><i>{{ topic.name }}</i></td>
                     {% endif %}
                   </tr>
-                  {% if double_width %}<tr><td></td><div class="col-md-6" style="padding-left:0px">{% endif %}
-                  {% assign course_mod2 = 0 %}
                   {% for course in topic.courses %}
-                    {% if double_width %}<div class="col-md-6" style="padding-left:0px">{% endif %}
                     <tr{% if course.silly %} class="silly-goose display-style-table-row"{% endif %}>
                       <td></td>
                       <td class="list-group-name"{% if course.id %} title="{{ course.id }}"{% endif %}>
@@ -95,10 +92,7 @@
                         {% endif %}
                       </td>
                     </tr>
-                    {% assign course_mod2 = 1 | plus: -course_mod2 %}
-                    {% if double_width %}</div>{% endif %}
                   {% endfor %}
-                  {% if double_width %}</div></tr>{% endif %}
                 </tbody>
               </table>
             </div>
