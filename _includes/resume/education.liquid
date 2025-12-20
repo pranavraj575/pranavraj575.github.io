@@ -45,10 +45,23 @@
       </div>
 
       {% if content.topics %}
+        {% assign num_topics = 0 %}
+        {% for topic in content.topics %}
+          {% assign num_topics = num_topics | plus: 1 %}
+        {% endfor %}
+        {% assign topic_width = 6 %}
+        {% if num_topics == 1 %}
+          {% assign topic_width = 12 %}
+        {% endif %}
+        {% if num_topics == 1 %}
+          {% assign double_width = true %}
+        {% else %}
+          {% assign double_width = false %}
+        {% endif %}
         <div class="list-groups">
           <div class="col-md-12" style="margin-bottom:3px;text-align:center"><b>Relevant Coursework</b></div>
           {% for topic in content.topics %}
-            <div class="list-group col-md-6{% if topic.silly %} silly-goose{% endif %}">
+            <div class="list-group col-md-{{ topic_width }}{% if topic.silly %} silly-goose{% endif %}">
               <table class="table-cv list-group-table">
                 <tbody>
                   <tr>
@@ -68,7 +81,10 @@
                         <td colspan="{{ i }}" class="list-group-category"><i>{{ topic.name }}</i></td>
                     {% endif %}
                   </tr>
+                  {% if double_width %}<tr><td></td><div class="col-md-6" style="padding-left:0px">{% endif %}
+                  {% assign course_mod2 = 0 %}
                   {% for course in topic.courses %}
+                    {% if double_width %}<div class="col-md-6" style="padding-left:0px">{% endif %}
                     <tr{% if course.silly %} class="silly-goose display-style-table-row"{% endif %}>
                       <td></td>
                       <td class="list-group-name"{% if course.id %} title="{{ course.id }}"{% endif %}>
@@ -79,7 +95,10 @@
                         {% endif %}
                       </td>
                     </tr>
+                    {% assign course_mod2 = 1 | plus: -course_mod2 %}
+                    {% if double_width %}</div>{% endif %}
                   {% endfor %}
+                  {% if double_width %}</div></tr>{% endif %}
                 </tbody>
               </table>
             </div>
