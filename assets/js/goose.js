@@ -64,7 +64,7 @@ let determineToeRecord = () => {
   if (typeof(wins_stored) == "string") {
     wins = parseInt(wins_stored);
   }
-  return [losses, ties, wins]
+  return [losses, ties, wins, losses+ties+wins]
 };
 let toeGameResult = (lost=false, tied=false, won=false) => {
   var arrg = determineToeRecord();
@@ -87,13 +87,13 @@ let toeGameResult = (lost=false, tied=false, won=false) => {
 
 let toeRevealForFree = () => {
   var arrg = determineToeRecord();
-  for (var k=0;k<3;k++){
-    var thingy=["lose","tie","win"][k];
+  for (var k=0;k<4;k++){
+    var thingy=["losses","ties","wins","games"][k];
     var cnt=arrg[k];
-    stuff=document.getElementsByClassName("reveal-after-"+thingy);
+    stuff=document.getElementsByClassName("reveal-after-toe-"+thingy);
     for (var i=0;i<stuff.length;i++){
       thing=stuff[i];
-      target=parseInt(thing.getAttribute("reveal-counter"));
+      target=parseInt(thing.getAttribute("toe-reveal-counter"));
       if(cnt>=target){
         thing.style.opacity=1;
         target.style.setProperty("-webkit-user-select", "auto");
@@ -149,31 +149,6 @@ let gooseActivation = () => {
     if(secrets <= secrets_found){
       // if the number of secrets found is at least the number of secrets needed, we will hide serious_geese[i]
       markObjectHide(serious_geese[i]);
-    }
-  }
-
-  for (var secrets=0; secrets <= numSecrets; secrets++){
-    // iterate through everything that is revealed after a certian number of secrets
-    var silly_geese = document.getElementsByClassName("reveal-at-"+String(secrets));
-    // iterate through everything that is hidden after a certian number of secrets
-    var serious_geese = document.getElementsByClassName("hide-at-"+String(secrets));
-
-    for (var i = 0; i < silly_geese.length; i++) {
-      if(secrets <= secrets_found){
-        // if the number of secrets found is at least the number of secrets needed, we will reveal silly_geese[i]
-        markObjectReveal(silly_geese[i]);
-      }
-      else{
-        // otherwise, we must hide this goose
-        markObjectHide(silly_geese[i]);
-      }
-    }
-
-    for (var i = 0; i < serious_geese.length; i++) {
-      if(secrets <= secrets_found){
-        // if the number of secrets found is at least the number of secrets needed, we will hide serious_geese[i]
-        markObjectHide(serious_geese[i]);
-      }
     }
   }
 
