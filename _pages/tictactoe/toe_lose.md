@@ -17,11 +17,11 @@ you lost :(
 
 <a href="/toe">try again<a>
 
-<span class="reveal-after-toe-losses" toe-reveal-counter="3">youre not very good at this</span>
+<span class="reveal-after-toe-losses" style="" toe-reveal-counter="3">youre not very good at this</span>
 
-<span class="reveal-after-toe-games" toe-reveal-counter="10">your goal should be to get to the win screen</span><span class="reveal-after-toe-games" toe-reveal-counter="10">, not to win</span>
+<span class="reveal-after-toe-games" style="" toe-reveal-counter="10">your goal should be to get to the win screen</span><span class="reveal-after-toe-games" toe-reveal-counter="15" style="">, not to win</span>
 
-<span class="reveal-after-toe-losses" toe-reveal-counter="69">just give up</span>
+<span class="reveal-after-toe-losses" toe-reveal-counter="69" style="">just give up</span>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {toeRevealForFree();});
