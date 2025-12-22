@@ -68,9 +68,9 @@ let determineToeRecord = () => {
 };
 let toeGameResult = (lost=false, tied=false, won=false) => {
   var arrg = determineToeRecord();
-  var losses = arrg[0]
-  var ties = arrg[1]
-  var wins = arrg[2]
+  var losses = arrg[0];
+  var ties = arrg[1];
+  var wins = arrg[2];
   if (tied){
     ties++;
   }
@@ -83,6 +83,31 @@ let toeGameResult = (lost=false, tied=false, won=false) => {
   localStorage.setItem("toe_losses", String(losses));
   localStorage.setItem("toe_ties", String(ties));
   localStorage.setItem("toe_wins", String(wins));
+};
+
+let toeRevealForFree = () => {
+  var arrg = determineToeRecord();
+  for (var k=0;k<3;k++){
+    var thingy=["lose","tie","win"][k];
+    var cnt=arrg[k];
+    stuff=document.getElementsByClassName("reveal-after-"+thingy);
+    for (var i=0;i<stuff.length;i++){
+      thing=stuff[i];
+      target=parseInt(thing.getAttribute("reveal-counter"));
+      if(cnt>=target){
+        thing.style.opacity=1;
+        target.style.setProperty("-webkit-user-select", "auto");
+        target.style.setProperty("-ms-user-select", "auto");
+        target.style.setProperty("user-select", "auto");
+      }
+      else{
+        thing.style.opacity=0;
+        target.style.setProperty("-webkit-user-select", "none");
+        target.style.setProperty("-ms-user-select", "none");
+        target.style.setProperty("user-select", "none");
+      }
+    }
+  }
 };
 
 

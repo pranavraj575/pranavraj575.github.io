@@ -16,7 +16,10 @@ you won :)
 
 how did you get here
 
-<a href="/">go home<a>
+<a href="/">go home</a>
+
+<span style="color:var(--success)">wins</span>-ties-<span style="color:var(--danger)">losses</span>: 
+<span id="record-wins" style="color:var(--success)"></span>-<span id="record-ties"></span>-<span id="record-losses" style="color:var(--danger)"></span>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -25,4 +28,21 @@ how did you get here
     document.addEventListener("click", function() {
         increaseStepsTo(4);
     });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {toeRevealForFree();});
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const losses = document.getElementById("record-losses");
+    const ties = document.getElementById("record-ties");
+    const wins = document.getElementById("record-wins");
+    var arrg = determineToeRecord();
+    losses.textContent=arrg[0];
+    ties.textContent=arrg[1];
+    wins.textContent=arrg[2];
+  });
 </script>

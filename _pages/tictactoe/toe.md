@@ -224,3 +224,7 @@ if (user_player == -1){
 }
 </script>
 
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {toeRevealForFree();});
+</script>

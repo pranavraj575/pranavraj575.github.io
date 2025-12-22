@@ -13,3 +13,9 @@ silly: true
 you lost :(
 
 <a href="/toe">try again<a>
+
+<span class="reveal-after-lose" reveal-counter="3">u suck</span>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {toeRevealForFree();});
+</script>
