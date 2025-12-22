@@ -10,7 +10,7 @@ remove_dead_pixel: false
 silly: true
 ---
 
-<div class="reveal-at-1">
+<div class="reveal-after-secrets" reveal-counter="1">
     {% assign head = "NOTHING TO SEE HERE" | split: "" %}
     <h1>
       {%- for h in head -%}

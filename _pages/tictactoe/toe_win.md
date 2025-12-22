@@ -18,7 +18,7 @@ how did you get here
 
 <a href="/">go home</a>
 
-<span style="color:var(--success)">wins</span>-ties-<span style="color:var(--danger)">losses</span>: 
+<span style="color:var(--success)">W</span>-T-<span style="color:var(--danger)">L</span>: 
 <span id="record-wins" style="color:var(--success)"></span>-<span id="record-ties"></span>-<span id="record-losses" style="color:var(--danger)"></span>
 
 <script>
