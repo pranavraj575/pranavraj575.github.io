@@ -25,7 +25,7 @@ silly: true
 <div id="HORSE_CODE" style="font-size:31px;text-align:center">
 </div>
 
-<div class="reveal-at-3">
+<div reveal-counter="3" class="reveal-after-secrets">
     <a href="/">
         <button class="button button5" 
         style="background-color:GREEN;border:black;color:black;padding:30px;

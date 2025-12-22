@@ -114,10 +114,10 @@ let toeRevealForFree = () => {
 // beauty will be revealed
 // label something silly-goose if it is only revealed when all secrets found
 // label something serious-goose if it is only hidden when all secrets found
-// label something reveal-at-<num> if it is revealed after finding <num> secrets
-// label something hide-at-<num> if it is hidden after finding <num> secrets
-// silly-goose and serious-goose are equivalent to reveal-at-<numSecrets> and hide-at-<numSecrets>
-// if something is labeled reveal-at-<a> and hide-at-<b>, (note, a<b)
+// label reveal-after-secrets with attribute reveal-counter="<num>" if it is revealed after finding <num> secrets
+// label hide-after-secrets with attribute hide-counter="<num>" if it is hidden after finding <num> secrets
+// silly-goose and serious-goose are equivalent to reveal-counter="<numSecrets>" and hide-counter="<numSecrets>"
+// if something is revealed at a and hidden at b (note, a<b)
 //  it will be hidden with secrets < a, revealed at a<= secrets < b, and hidden with secrets>=b
 
 let markObjectReveal = (elem_tre) => {

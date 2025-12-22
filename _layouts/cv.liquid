@@ -136,6 +136,6 @@ layout: default
   </div>
 {% endunless %}
 {% unless page.remove_dead_pixel %}
-    <img class="reveal-at-2 hide-at-3" onclick="increaseStepsTo(3)" style="cursor:pointer;position:fixed;bottom:69%;right:13%;z-index:1420" src="/assets/img/dead_pixel.png" width="2" height="2">
-    <a class="reveal-at-3" onclick="plAudio('/assets/audio/quack.mp3');" href="https://wikipedia.org/wiki/Defective_pixel"><img style="position:fixed;bottom:69%;right:13%;z-index:1420" src="/assets/img/dead_pixel.png" width="2" height="2"></a>
+  <img reveal-counter="2" hide-counter="3" class="reveal-after-secrets hide-after-secrets" onclick="increaseStepsTo(3)" style="cursor:pointer;position:fixed;bottom:69%;right:13%;z-index:1420" src="/assets/img/dead_pixel.png" width="2" height="2">
+  <a reveal-counter="3" class="reveal-at-secrets" onclick="plAudio('/assets/audio/quack.mp3');" href="https://wikipedia.org/wiki/Defective_pixel"><img style="position:fixed;bottom:69%;right:13%;z-index:1420" src="/assets/img/dead_pixel.png" width="2" height="2"></a>
 {% endunless %}
