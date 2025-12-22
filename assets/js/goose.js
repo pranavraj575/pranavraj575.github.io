@@ -109,7 +109,17 @@ let toeRevealForFree = () => {
     }
   }
 };
-
+let pasteToeRecord = () => {
+  document.addEventListener("DOMContentLoaded", function() {
+    const losses = document.getElementById("record-losses");
+    const ties = document.getElementById("record-ties");
+    const wins = document.getElementById("record-wins");
+    var arrg = determineToeRecord();
+    losses.textContent=arrg[0];
+    ties.textContent=arrg[1];
+    wins.textContent=arrg[2];
+  });
+};
 
 // beauty will be revealed
 // label something silly-goose if it is only revealed when all secrets found

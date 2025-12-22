@@ -16,10 +16,10 @@ you won :)
 
 how did you get here
 
-<a href="/">go home</a>
-
 <span style="color:var(--success)">W</span>-T-<span style="color:var(--danger)">L</span>: 
 <span id="record-wins" style="color:var(--success)"></span>-<span id="record-ties"></span>-<span id="record-losses" style="color:var(--danger)"></span>
+
+<a href="/">go home</a>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -35,14 +35,4 @@ how did you get here
 </script>
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const losses = document.getElementById("record-losses");
-    const ties = document.getElementById("record-ties");
-    const wins = document.getElementById("record-wins");
-    var arrg = determineToeRecord();
-    losses.textContent=arrg[0];
-    ties.textContent=arrg[1];
-    wins.textContent=arrg[2];
-  });
-</script>
+<script>pasteToeRecord();</script>

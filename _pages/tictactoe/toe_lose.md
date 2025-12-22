@@ -12,6 +12,9 @@ silly: true
 
 you lost :(
 
+<span style="color:var(--success)">W</span>-T-<span style="color:var(--danger)">L</span>: 
+<span id="record-wins" style="color:var(--success)"></span>-<span id="record-ties"></span>-<span id="record-losses" style="color:var(--danger)"></span>
+
 <a href="/toe">try again<a>
 
 <span class="reveal-after-toe-losses" toe-reveal-counter="3">youre not very good at this</span>
@@ -23,3 +26,5 @@ you lost :(
 <script>
   document.addEventListener("DOMContentLoaded", function() {toeRevealForFree();});
 </script>
+
+<script>pasteToeRecord();</script>
