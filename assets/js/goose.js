@@ -131,6 +131,27 @@ let markObjectHide = (elem_tre) => {
 
 let gooseActivation = () => {
   var secrets_found = determineStepsFound();
+  var silly_geese = document.getElementsByClassName("reveal-after-secrets");
+  var serious_geese = document.getElementsByClassName("hide-after-secrets");
+  for (var i = 0; i < silly_geese.length; i++) {
+    secrets=parseInt(silly_geese[i].getAttribute("reveal-counter"));
+    if(secrets <= secrets_found){
+      // if the number of secrets found is at least the number of secrets needed, we will reveal silly_geese[i]
+      markObjectReveal(silly_geese[i]);
+    }
+    else{
+      // otherwise, we must hide this goose
+      markObjectHide(silly_geese[i]);
+    }
+  }
+  for (var i = 0; i < serious_geese.length; i++) {
+    secrets=parseInt(serious_geese[i].getAttribute("hide-counter"));
+    if(secrets <= secrets_found){
+      // if the number of secrets found is at least the number of secrets needed, we will hide serious_geese[i]
+      markObjectHide(serious_geese[i]);
+    }
+  }
+
   for (var secrets=0; secrets <= numSecrets; secrets++){
     // iterate through everything that is revealed after a certian number of secrets
     var silly_geese = document.getElementsByClassName("reveal-at-"+String(secrets));

@@ -41,10 +41,10 @@ silly: true
         {%- endif -%}
       {%- endfor -%}
     </div>
-    <div class="reveal-at-2"><a href="/">⠛⠕ ⠓⠕⠍⠑</a></div>
+    <div class="reveal-after-secrets" reveal-counter="2"><a href="/">⠛⠕ ⠓⠕⠍⠑</a></div>
     <!--  can just put this text in normally 
     {% assign head = "⠛⠕ ⠓⠕⠍⠑" | split: "" %}
-    <div class="reveal-at-2">
+    <div class="reveal-after-secrets" reveal-counter="2">
       {% for h in head %}<span class="hidden_until_touch">{{ h }}</span>{% endfor %}
     </div>
     -->
