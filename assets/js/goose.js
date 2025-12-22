@@ -96,15 +96,15 @@ let toeRevealForFree = () => {
       target=parseInt(thing.getAttribute("toe-reveal-counter"));
       if(cnt>=target){
         thing.style.opacity=1;
-        target.style.setProperty("-webkit-user-select", "auto");
-        target.style.setProperty("-ms-user-select", "auto");
-        target.style.setProperty("user-select", "auto");
+        thing.style.setProperty("-webkit-user-select", "auto");
+        thing.style.setProperty("-ms-user-select", "auto");
+        thing.style.setProperty("user-select", "auto");
       }
       else{
         thing.style.opacity=0;
-        target.style.setProperty("-webkit-user-select", "none");
-        target.style.setProperty("-ms-user-select", "none");
-        target.style.setProperty("user-select", "none");
+        thing.style.setProperty("-webkit-user-select", "none");
+        thing.style.setProperty("-ms-user-select", "none");
+        thing.style.setProperty("user-select", "none");
       }
     }
   }
