@@ -71,9 +71,9 @@
                       <tr> <td></td>
                         <td class="list-group-name"{% if course.id %} title="{{ course.id }}"{% endif %}>
                           {% if course.url %}
-                            <a href="{{ course.url }}" style="color:var(--global-text-color)"><b>{{ course.name }}</b></a>
+                            • <a href="{{ course.url }}" style="color:var(--global-text-color)"><b>{{ course.name }}</b></a>
                           {% else %}
-                            <b>{{ course.name }}</b>
+                            • <b>{{ course.name }}</b>
                           {% endif %}
                         </td>
                       </tr>
@@ -105,9 +105,9 @@
                       <td></td>
                       <td class="list-group-name"{% if course.id %} title="{{ course.id }}"{% endif %}>
                         {% if course.url %}
-                          <a href="{{ course.url }}" style="color:var(--global-text-color)"><b>{{ course.name }}</b></a>
+                          • <a href="{{ course.url }}" style="color:var(--global-text-color)"><b>{{ course.name }}</b></a>
                         {% else %}
-                          <b>{{ course.name }}</b>
+                          • <b>{{ course.name }}</b>
                         {% endif %}
                       </td>
                     </tr>
