@@ -62,8 +62,25 @@
           <div class="col-md-12" style="margin-bottom:3px;text-align:center"><b>Relevant Coursework</b></div>
           {% for topic in content.topics %}
             <div class="list-group col-md-{{ topic_width }}{% if topic.silly %} silly-goose{% endif %}">
-              <table class="table-cv list-group-table">
-                <tbody>
+              {% if double_width %}
+              <div class="list-groups col-md-12" style="padding-left: 0px;padding-right: 0px;">
+                <div class="list-group list-group-name col-md-6" style="margin-bottom: 0px;">
+                  <table class="table-cv list-group-table table-dark">
+                    <tr> <td class="list-group-category-icon"></td> </tr>
+                    <tr> <td></td>
+                      <td class="list-group-name"{% if course.id %} title="{{ course.id }}"{% endif %}>
+                        {% if course.url %}
+                          <a href="{{ course.url }}" style="color:var(--global-text-color)"><b>{{ course.name }}</b></a>
+                        {% else %}
+                          <b>{{ course.name }}</b>
+                        {% endif %}
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              {% else %}
+              <table class="table-cv list-group-table"><tbody>
                   <tr>
                     {% if topic.icon %}
                       <td class="list-group-category-icon">
@@ -93,8 +110,8 @@
                       </td>
                     </tr>
                   {% endfor %}
-                </tbody>
-              </table>
+              </tbody></table>
+              {% endif %}
             </div>
           {% endfor %}
         </div>
