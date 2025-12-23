@@ -490,10 +490,13 @@
       "name": "Carnegie Mellon University",
       "location": "Pittsburgh, USA",
       "position": "Teaching Assistant",
-      "mentor": "Stephanie Rosenthal, Irina Gheorghiciuc, Mikael Kuusela",
-      "startDate": "2021-08-23",
-      "endDate": "2022-12-21",
-      "summary": "For <a href=\"https://www.cs.cmu.edu/~15281/\">'AI: Representation and Problem Solving'</a> (3 semesters), <a href=\"https://www.math.cmu.edu/~mradclif/teaching/127S19/syllabus.html\">'Concepts of Mathematics'</a> (1 semester), and <a href=\"https://jshuieh.github.io/syllabus/36218Syllabus.pdf\">'Probability Theory for Computer Scientists'</a> (1 semester)",
+      "mentor": "Tuomas Sandholm, Stephanie Rosenthal, Irina Gheorghiciuc, Mikael Kuusela",
+      "dateList": [
+        ["2021-08-23","2022-12-21"],
+        ["2025-01-25"]
+      ],
+      "notes": "15281 F21-F22 (Stephanie), S25 (Tuomas); 36218 F21 (Kikael); 15127 F22 (Irina);",
+      "summary": "For <a href=\"https://www.cs.cmu.edu/~15281/\">'AI: Representation and Problem Solving'</a> (4 semesters), <a href=\"https://www.math.cmu.edu/~mradclif/teaching/127S19/syllabus.html\">'Concepts of Mathematics'</a> (1 semester), and <a href=\"https://jshuieh.github.io/syllabus/36218Syllabus.pdf\">'Probability Theory for Computer Scientists'</a> (1 semester)",
       "highlights": [
         "Collaborated in a team of up to 10 Teaching Assistants to manage classes of up to 100 students",
         "Planned and led class-wide review sessions, as well as recitations of about 20 students",
