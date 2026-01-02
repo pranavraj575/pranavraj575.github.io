@@ -318,6 +318,13 @@ list_of_category_lists = [[],
             handler: () => {
               window.location.href = "/aminals/category/dog-egory";
             },
+          },{id: "category-aminals-birb",
+            title: 'birb',
+            description: "birb",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/birb";
+            },
           },{id: "category-aminals-cat-egory",
             title: 'cat-egory',
             description: "cat-egory",
