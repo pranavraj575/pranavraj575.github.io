@@ -13,5 +13,5 @@ remove_dead_pixel: false
 # links/contact info
 
 <div>
-  {% include social_list.liquid %}
+  {% include social_table.liquid table=true%}
 </div>
