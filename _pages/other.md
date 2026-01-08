@@ -9,8 +9,8 @@ children:
   - title: research statement
     permalink: /research-statement
   - title: divider
-  - title: social profiles
-    permalink: /social-profiles
+  - title: links/contact info
+    permalink: /links-contact
   - title: divider
     silly: true
   - title: personal info
