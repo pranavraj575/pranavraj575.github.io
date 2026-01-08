@@ -4,7 +4,7 @@
 {% else %}
   {% assign link_sep = " " %}
 {% endif %}
-{% if include.table %}<table>{% endif %}
+{% if include.table %}<table class="table-dark">{% endif %}
   {% for social in site.data.socials %}
     {% if include.table %}<tr><td>{% endif %}
       {% case social[0] %}
