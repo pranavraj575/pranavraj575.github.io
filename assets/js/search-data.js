@@ -59,12 +59,12 @@ ninja.data = [{
                 window.location.href = "/research-statement";
               },
               
-            },{id: "dropdown-social-profiles",
-              title: "social profiles",
+            },{id: "dropdown-links-contact-info",
+              title: "links/contact info",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/social-profiles";
+                window.location.href = "/links-contact";
               },
               
             },{id: "dropdown-personal-info",
