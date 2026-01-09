@@ -19,7 +19,7 @@
         {% when 'discord_id' %}
           <a href="https://discord.com/users/{{ social[1] }}" title="Discord"><i class="fa-brands fa-discord" style="color:var(--global-text-color)"></i></a><br>
         {% when 'email' %}
-          <nobr><span {{ bullet_style }}><i class="fas fa-fw fa-envelope" aria-hidden="true" style="color:#d44638"></i></span>Email:</nobr>{{ link_sep }}<a href="mailto:{{ social[1] | encode_email }}">{{ site.data.socials.silly_email | default: site.data.socials.email }}</a><br>
+          <nobr><span {{ bullet_style }}><i class="fas fa-fw fa-envelope" aria-hidden="true" style="color:#d44638"></i></span>Email:</nobr>{{ link_sep }}<a href="mailto:{{ social[1].normal_email | encode_email }}">{{ social[1].silly_email | default: social[1].normal_email }}</a><br>
         {% when 'facebook_id' %}
           <a href="https://facebook.com/{{ social[1] }}" title="Facebook"><i class="fa-brands fa-facebook" style="color:var(--global-text-color)"></i></a><br>
         {% when 'flickr_id' %}
