@@ -11,7 +11,7 @@
     {% when 'discord_id' %}
       <a href="https://discord.com/users/{{ social[1] }}" title="Discord"><i class="fa-brands fa-discord" style="color:var(--global-text-color)"></i></a>
     {% when 'email' %}
-      <a href="mailto:{{ social[1] | encode_email }}" title="email"><i class="fa-solid fa-envelope" style="color:#d44638"></i></a>
+      <a href="mailto:{{ social[1].normal_email | encode_email }}" title="email"><i class="fa-solid fa-envelope" style="color:#d44638"></i></a>
     {% when 'facebook_id' %}
       <a href="https://facebook.com/{{ social[1] }}" title="Facebook"><i class="fa-brands fa-facebook" style="color:var(--global-text-color)"></i></a>
     {% when 'flickr_id' %}
