@@ -593,6 +593,10 @@
       "ico_icon": "/assets/img/icons/pytorch.png"
     },
     {
+      "name": "JAX",
+      "ico_icon": "/assets/img/icons/jax.png"
+    },
+    {
       "name": "TensorFlow",
       "ico_icon": "/assets/img/icons/tensorflow.png"
     },
