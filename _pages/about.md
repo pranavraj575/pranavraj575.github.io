@@ -28,7 +28,7 @@ latest_posts:
 remove_dead_pixel: false
 ---
 
-I am a PhD student at CMU's Machine Learning Department, advised by Prof. Tuomas Sandholm.
+I am a PhD student at CMU's Machine Learning Department, advised by <a href="https://www.cs.cmu.edu/~sandholm/">Prof. Tuomas Sandholm</a>.
 My research is mainly in developing algorithms to solve imperfect information games.
 
 <p class="silly-goose">My general interests are AI/ML, Topology, and long walks on the beach.</p>
