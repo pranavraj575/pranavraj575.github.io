@@ -1,6 +1,6 @@
 {% assign bullet_style = "style='width:27px;display:inline-block;text-align:center;'"%}
 {% if include.table %}
-  {% assign link_sep = "</nobr></td><td><nobr>" %}
+  {% assign link_sep = "</nobr></td><td>" %}
 {% else %}
   {% assign link_sep = " " %}
 {% endif %}
@@ -118,6 +118,6 @@
           </a><br>
         {% else %}
       {% endcase %}
-    {% if include.table %}</nobr></td></tr>{% endif %}
+    {% if include.table %}</td></tr>{% endif %}
   {% endfor %}
 {% if include.table %}</table>{% endif %}
