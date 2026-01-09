@@ -207,7 +207,7 @@ if 'education' in cv:
         if 'topics' in education:
             for topic in education['topics']:
                 if 'silly' not in topic or not topic['silly']:
-                    print('  ', topic['name'])
+                    print('  ', topic.get('name','unnamed topic'))
                     if 'courses' in topic:
                         for course in topic['courses']:
                             if 'silly' not in course or not course['silly']:
