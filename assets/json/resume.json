@@ -88,7 +88,7 @@
             },
             {
               "name": "Convex Optimization",
-              "url": "https://www.cmu.edu/mcs/grad/programs/ms-data-analytics/courses/10725-convex-optimization.html",
+              "url": "https://sites.google.com/view/107252024s",
               "id": "CMU 10-725"
             },
             {
@@ -128,22 +128,20 @@
             },
             {
               "name": "Probabilistic Combinatorics",
-              "url": "https://www.coursicle.com/cmu/courses/MSC/21737/",
+              "url": "https://www.math.cmu.edu/~tbohman/21-737/probcomb.html",
               "id": "CMU 21-737"
             },
             {
               "name": "Extremal Combinatorics",
-              "url": "https://www.math.cmu.edu/~ploh/2022-738.shtml",
               "id": "CMU 21-738"
             },
             {
               "name": "Graph Theory",
-              "url": "http://coursecatalog.web.cmu.edu/schools-colleges/melloncollegeofscience/departmentofmathematicalsciences/courses/\\#:~:text=Graph theory uses,50 minute lectures)",
+              "url": "https://www.math.cmu.edu/~jmackey/math484/syll_484.html",
               "id": "CMU 21-484"
             },
             {
               "name": "Game Theory",
-              "url": "https://www.coursicle.com/cmu/courses/PHI/80705/",
               "id": "CMU 80-705"
             },
             {
@@ -170,7 +168,6 @@
             },
             {
               "name": "Star Wars: The Course Awakens",
-              "url": "https://www.coursicle.com/cmu/courses/STU/98288/",
               "id": "CMU 98-288"
             }
           ]
