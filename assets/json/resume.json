@@ -601,6 +601,9 @@
       "ico_icon": "/assets/img/icons/tensorflow.png"
     },
     {
+      "name": "OpenSpiel"
+    },
+    {
       "name": "OpenAI Gym",
       "ico_icon": "/assets/img/icons/gym.png"
     },
