@@ -1,12 +1,12 @@
 {% assign bullet_style = "style='width:27px;display:inline-block;text-align:center;'"%}
 {% if include.table %}
-  {% assign link_sep = "</td><td>" %}
+  {% assign link_sep = "</nobr></td><td><nobr>" %}
 {% else %}
   {% assign link_sep = " " %}
 {% endif %}
 {% if include.table %}<table class="table-hover">{% endif %}
   {% for social in site.data.socials %}
-    {% if include.table %}<tr><td style="padding-right: 0.5rem;">{% endif %}
+    {% if include.table %}<tr><td style="padding-right: 0.5rem;"><nobr>{% endif %}
       {% case social[0] %}
         {% when 'acm_id' %}
           <a href="https://dl.acm.org/profile/{{ social[1] }}/" title="ACM DL"><i class="ai ai-acm" style="color:var(--global-text-color)"></i></a><br>
@@ -118,6 +118,6 @@
           </a><br>
         {% else %}
       {% endcase %}
-    {% if include.table %}</td></tr>{% endif %}
+    {% if include.table %}</nobr></td></tr>{% endif %}
   {% endfor %}
 {% if include.table %}</table>{% endif %}
