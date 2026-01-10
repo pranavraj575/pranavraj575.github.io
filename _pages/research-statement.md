@@ -39,7 +39,7 @@ remove_dead_pixel: false
   </p>
 
   <div class="card mt-3 p-3">
-    <h2 class="my_collapsible font-weight-medium">Strategic Agents</h2>
+    <h2 class="my_collapsible font-weight-medium" style="text-indent:0px">Strategic Agents</h2>
     <div class="my_collapsible_content">
       <p>
         Many of my research projects focus on developing AI agents for competitive settings, providing a foundation for more intricate multiagent interactions.
@@ -61,7 +61,7 @@ remove_dead_pixel: false
   </div>
   
   <div class="card mt-3 p-3">
-    <h2 class="my_collapsible font-weight-medium">Multiagent Systems</h2>
+    <h2 class="my_collapsible font-weight-medium" style="text-indent:0px">Multiagent Systems</h2>
     <div class="my_collapsible_content">
       <p>
         While at the Naval Research Laboratory (NRL), I worked on several projects exploring multiagent and swarm control.
@@ -85,7 +85,7 @@ remove_dead_pixel: false
   </div>
   
   <div class="card mt-3 p-3">
-    <h2 class="my_collapsible font-weight-medium">Reinforcement Learning and Robotics</h2>
+    <h2 class="my_collapsible font-weight-medium" style="text-indent:0px">Reinforcement Learning and Robotics</h2>
     <div class="my_collapsible_content">
       <p>
         My research also concerns robotic control through Reinforcement Learning (RL).
@@ -106,14 +106,14 @@ remove_dead_pixel: false
   </div>
 
   <div class="card mt-3 p-3">
-    <h2 class="my_collapsible font-weight-medium">Future Research</h2>
+    <h2 class="my_collapsible font-weight-medium" style="text-indent:0px">Future Research</h2>
     <div class="my_collapsible_content">
       <p>
         My research will focus on enhancing strategic AI’s utility in multiagent systems.
         Broad domains that interest me include adversarial game playing and multiagent cooperation.
       </p>
       <div class="card mt-3 p-3">
-        <h3 class="my_collapsible font-weight-medium">Strategic agents in adversarial settings</h3>
+        <h3 class="my_collapsible font-weight-medium" style="text-indent:0px">Strategic agents in adversarial settings</h3>
         <div class="my_collapsible_content">
           <p>
             Adversarial settings (particularly board games) are commonly used to measure improvements in AI, as they directly compare strategic ability of competitors.
@@ -131,7 +131,7 @@ remove_dead_pixel: false
         </div>
       </div>
       <div class="card mt-3 p-3">
-        <h3 class="my_collapsible font-weight-medium">ML and Game Theory</h3>
+        <h3 class="my_collapsible font-weight-medium" style="text-indent:0px">ML and Game Theory</h3>
         <div class="my_collapsible_content">
           <p>
             Grounding problems in a mathematical framework allows easier theoretical analyses of solutions.
@@ -145,7 +145,7 @@ remove_dead_pixel: false
         </div>
       </div>
       <div class="card mt-3 p-3">
-        <h3 class="my_collapsible font-weight-medium">Cooperation in complex tasks</h3>
+        <h3 class="my_collapsible font-weight-medium" style="text-indent:0px">Cooperation in complex tasks</h3>
         <div class="my_collapsible_content">
           <p>
             As autonomous agents become more common in everyday life, coordination between them will become more useful in solving complex tasks.
@@ -162,7 +162,7 @@ remove_dead_pixel: false
   </div>
 
   <div class="card mt-3 p-3">
-    <h2 class="my_collapsible font-weight-medium">Broader Impact/Significance</h2>
+    <h2 class="my_collapsible font-weight-medium" style="text-indent:0px">Broader Impact/Significance</h2>
     <div class="my_collapsible_content">
       <p>
         My research seeks to improve strategic decision making in multiagent systems, creating well-coordinated and adaptable agents.
