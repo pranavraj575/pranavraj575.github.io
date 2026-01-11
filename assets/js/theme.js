@@ -40,6 +40,7 @@ let applyTheme = () => {
   setHighlight(theme);
   setGiscusTheme(theme);
   setSearchTheme(theme);
+  setSpotlightTheme(theme);
 
   // if mermaid is not defined, do nothing
   if (typeof mermaid !== "undefined") {
@@ -243,6 +244,17 @@ let setVegaLiteTheme = (theme) => {
     }
   });
 };
+
+let setSpotlightTheme = (theme) => {
+  var spotlights = document.getElementsByClassName("spotlight-group");
+  for (var i=0;i<spotlights.length;i++){
+    var thingy = spotlights[i];
+    var stuff = thingy.getAttributeNames();
+    if ((!stuff.includes("data-theme")) && (theme=="light")){
+      thingy.setAttribute("data-theme", "white");
+    }
+  }
+}
 
 let setSearchTheme = (theme) => {
   const ninjaKeys = document.querySelector("ninja-keys");
