@@ -64,7 +64,7 @@ let determineToeRecord = () => {
   if (typeof(wins_stored) == "string") {
     wins = parseInt(wins_stored);
   }
-  return [losses, ties, wins, losses+ties+wins]
+  return [losses, ties, wins, losses+ties+wins,(wins-losses)/(wins+ties+losses)]
 };
 let toeGameResult = (lost=false, tied=false, won=false) => {
   var arrg = determineToeRecord();
@@ -87,24 +87,26 @@ let toeGameResult = (lost=false, tied=false, won=false) => {
 
 let toeRevealForFree = () => {
   var arrg = determineToeRecord();
-  for (var k=0;k<4;k++){
-    var thingy=["losses","ties","wins","games"][k];
+  for (var k=0;k<5;k++){
+    var thingy=["losses","ties","wins","games","score"][k];
     var cnt=arrg[k];
-    stuff=document.getElementsByClassName("reveal-after-toe-"+thingy);
+    stuff = document.getElementsByClassName("reveal-after-toe-"+thingy);
     for (var i=0;i<stuff.length;i++){
       thing=stuff[i];
-      target=parseInt(thing.getAttribute("toe-reveal-counter"));
+      target=parseFloat(thing.getAttribute("toe-reveal-counter"));
       if(cnt>=target){
-        thing.style.opacity=1;
-        thing.style.setProperty("-webkit-user-select", "auto");
-        thing.style.setProperty("-ms-user-select", "auto");
-        thing.style.setProperty("user-select", "auto");
+        markObjectReveal(thing);
       }
       else{
-        thing.style.opacity=0;
-        thing.style.setProperty("-webkit-user-select", "none");
-        thing.style.setProperty("-ms-user-select", "none");
-        thing.style.setProperty("user-select", "none");
+        markObjectHide(thing);
+      }
+    }
+    unstuff = document.getElementsByClassName("hide-after-toe-"+thingy);
+    for (var i=0;i<unstuff.length;i++){
+      thing=unstuff[i];
+      target=parseFloat(thing.getAttribute("toe-reveal-counter"));
+      if(cnt>=target){
+        markObjectHide(thing);
       }
     }
   }
@@ -138,6 +140,39 @@ let markObjectHide = (elem_tre) => {
   elem_tre.classList.remove("temp-reveal");
   elem_tre.classList.add("temp-hide");
 }
+
+let hide_and_reveal = () => {
+  var hiddening = document.getElementsByClassName("temp-hide");
+  for (var i = hiddening.length - 1; i >= 0; i--) {
+    // toggle whether images are shown as well
+    // ORDER MATTERS, once element is removed from classlist, hiddening[i] is null
+    if (hiddening[i].classList.contains("spotlight")){
+        hiddening[i].classList.add("notlight");
+        hiddening[i].classList.remove("spotlight");
+    }
+    if (hiddening[i].style.display){
+        hiddening[i].classList.add("display-style-"+hiddening[i].style.display)
+    }
+    hiddening[i].style.display = "none";
+    hiddening[i].classList.remove("temp-hide");
+  }
+
+  var revealing = document.getElementsByClassName("temp-reveal");
+  for (var i = revealing.length - 1; i >= 0; i--) {
+    if (revealing[i].classList.contains("notlight")){
+        revealing[i].classList.add("spotlight");
+        revealing[i].classList.remove("notlight");
+    }
+    var disp = "inherit";
+    for (var type_style of ["block", "inline-block", "table-row"]){
+        if (revealing[i].classList.contains("display-style-"+type_style)){
+           disp = type_style;
+        }
+    }
+    revealing[i].style.display = disp;
+    revealing[i].classList.remove("temp-reveal");
+  }
+};
 
 let gooseActivation = () => {
   var secrets_found = determineStepsFound();
@@ -180,37 +215,7 @@ let gooseActivation = () => {
       markObjectReveal(serious_geese[i]);
     }
   }
-
-  var hiddening = document.getElementsByClassName("temp-hide");
-  for (var i = hiddening.length - 1; i >= 0; i--) {
-    // toggle whether images are shown as well
-    // ORDER MATTERS, once element is removed from classlist, hiddening[i] is null
-    if (hiddening[i].classList.contains("spotlight")){
-        hiddening[i].classList.add("notlight");
-        hiddening[i].classList.remove("spotlight");
-    }
-    if (hiddening[i].style.display){
-        hiddening[i].classList.add("display-style-"+hiddening[i].style.display)
-    }
-    hiddening[i].style.display = "none";
-    hiddening[i].classList.remove("temp-hide");
-  }
-
-  var revealing = document.getElementsByClassName("temp-reveal");
-  for (var i = revealing.length - 1; i >= 0; i--) {
-    if (revealing[i].classList.contains("notlight")){
-        revealing[i].classList.add("spotlight");
-        revealing[i].classList.remove("notlight");
-    }
-    var disp = "inherit";
-    for (var type_style of ["block", "inline-block", "table-row"]){
-        if (revealing[i].classList.contains("display-style-"+type_style)){
-           disp = type_style;
-        }
-    }
-    revealing[i].style.display = disp;
-    revealing[i].classList.remove("temp-reveal");
-  }
+  hide_and_reveal();
 };
 
 

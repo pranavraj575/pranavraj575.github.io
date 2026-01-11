@@ -17,7 +17,7 @@ you lost :(
 
 <a href="/toe">try again<a>
 
-<span class="reveal-after-toe-losses" toe-reveal-counter="3">youre not very good at this</span>
+<span class="hide-after-toe-score" toe-reveal-counter="-.5">youre not very good at this</span>
 
 <span class="reveal-after-toe-games" toe-reveal-counter="10">your goal should be to get to the win screen</span><span class="reveal-after-toe-games" toe-reveal-counter="15">, not to win</span>
 
