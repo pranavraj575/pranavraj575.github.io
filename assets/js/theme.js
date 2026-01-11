@@ -250,9 +250,17 @@ let setSpotlightTheme = (theme) => {
   for (var i=0;i<spotlights.length;i++){
     var thingy = spotlights[i];
     var stuff = thingy.getAttributeNames();
-    if ((theme=="light") && (thingy.classList.contains("temp-spotlight-theme") || !stuff.includes("data-theme"))){
-      thingy.setAttribute("data-theme", "white");
-      thingy.classList.add("temp-spotlight-theme");
+    if (theme=="light"){
+      if (thingy.classList.contains("temp-spotlight-theme") || !stuff.includes("data-theme")){
+        thingy.setAttribute("data-theme", "white");
+        thingy.classList.add("temp-spotlight-theme");
+      }
+    }
+    else {
+      if (thingy.classList.contains("temp-spotlight-theme")){
+        thingy.removeAttribute("data-theme");
+        thingy.classList.remove("temp-spotlight-theme");
+      }
     }
   }
 }
