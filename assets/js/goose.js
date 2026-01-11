@@ -109,6 +109,7 @@ let toeRevealForFree = () => {
         markObjectHide(thing);
       }
     }
+    hide_and_reveal();
   }
 };
 let pasteToeRecord = () => {
