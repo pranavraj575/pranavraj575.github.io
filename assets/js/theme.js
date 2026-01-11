@@ -250,7 +250,7 @@ let setSpotlightTheme = (theme) => {
   for (var i=0;i<spotlights.length;i++){
     var thingy = spotlights[i];
     var stuff = thingy.getAttributeNames();
-    if ((theme=="light") && (stuff.classList.contains("temp-spotlight-theme") || !stuff.includes("data-theme"))){
+    if ((theme=="light") && (thingy.classList.contains("temp-spotlight-theme") || !stuff.includes("data-theme"))){
       thingy.setAttribute("data-theme", "white");
       thingy.classList.add("temp-spotlight-theme");
     }
