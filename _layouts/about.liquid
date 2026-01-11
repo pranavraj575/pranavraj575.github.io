@@ -28,7 +28,7 @@ layout: default
       30vw, 95vw"{% endcapture %}
           <figure>
             {% include img_light.liquid loading="eager" path=profile_image_path imgclass=profile_image_class
-               sizes=sizes alt=page.profile.image cache_bust=true %}
+               sizes=sizes alt=page.profile.image cache_bust=true cursor="default" %}
           </figure>
         {% endif %}
         {% if page.profile.more_info %}
