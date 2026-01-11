@@ -105,4 +105,16 @@
             }
         }, 10);
     });
+</script> <script>
+  var spotlights = document.getElementsByClassName("spotlight-group");
+  for (var i=0;i<spotlights.length;i++){
+    var thingy = spotlights[i];
+    var stuff = thingy.getAttributeNames();
+    if (!stuff.includes("data-theme")){
+      var them = determineComputedTheme();
+      if (them=="light"){
+        thingy.setAttribute("data-theme","white");
+      }
+    }
+  }
 </script> </body> </html>
