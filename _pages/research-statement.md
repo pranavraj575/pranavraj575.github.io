@@ -24,10 +24,8 @@ remove_dead_pixel: false
         rel="noopener noreferrer"
       ><i class="fa-solid fa-file-pdf" style="padding-right:10px"></i></a>
     {% endif %}
-    Research Statement
-    <div class="float-right expanding-all">
-      expand all
-    </div>
+    <span style="padding-right:20px">Research Statement</span>
+    <div class="float-right expanding-all">expand all</div>
   </h1>
 </header>
 <div style="text-indent:20px">
