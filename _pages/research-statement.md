@@ -13,23 +13,21 @@ remove_dead_pixel: false
 
 <header class="post-header">
   <h1 class="post-title">
+    {% if page.statement_pdf %}
+      <a
+        {% if page.statement_pdf contains '://' %}
+          href="{{ page.statement_pdf }}"
+        {% else %}
+          href="{{ page.statement_pdf | prepend: 'assets/pdf/' | relative_url }}"
+        {% endif %}
+        target="_blank"
+        rel="noopener noreferrer"
+      ><i class="fa-solid fa-file-pdf" style="padding-right:10px"></i></a>
+    {% endif %}
     Research Statement
     <div class="float-right expanding-all">
       expand all
     </div>
-      {% if page.statement_pdf %}
-        <a
-          {% if page.statement_pdf contains '://' %}
-            href="{{ page.statement_pdf }}"
-          {% else %}
-            href="{{ page.statement_pdf | prepend: 'assets/pdf/' | relative_url }}"
-          {% endif %}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa-solid fa-file-pdf float-left" style="padding-right:10px"></i>
-        </a>
-      {% endif %}
   </h1>
 </header>
 <div style="text-indent:20px">
