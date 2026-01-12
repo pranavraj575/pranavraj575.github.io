@@ -50,7 +50,7 @@ My research is mainly in developing algorithms to solve imperfect information ga
           for(var i=0;i<elements.length;i++){
             element=elements[i];
             if(element.classList.contains('reflected')){
-              element.style.transform='matrix(-('+String(c)+'),0,0,1,0,0)';
+              element.style.transform='matrix('+String(-c)+',0,0,1,0,0)';
               if(k==0){
                 element.classList.remove('reflected');
               }
@@ -68,5 +68,5 @@ My research is mainly in developing algorithms to solve imperfect information ga
         }, '{{ site.more_authors_animation_delay }}');
       "
     style="cursor:pointer;color:var(--global-theme-color);"
-  ><b><span class="course-to-reflect" style="display:inline-block">Coursework</span> Reflection</b></span></p>
+  ><b><span class="course-to-reflect" style="display:inline-block;color:var(--global-theme-color);">Coursework</span> Reflection</b></span></p>
 </div>
