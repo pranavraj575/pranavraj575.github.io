@@ -39,7 +39,7 @@ My research is mainly in developing algorithms to solve imperfect information ga
 
 <div class="silly-goose">
   <p>Inspired by <a href="https://seristof.github.io">my friend's</a> website, 
-    I have also included reflections on my <span class="course-to-reflect">coursework</span>:
+    I have also included reflections on my <span class="course-to-reflect" style="display:inline-block">coursework</span>:
     <span onclick="
           var elements = document.getElementsByClassName('course-to-reflect');
           var k = 20;
@@ -65,5 +65,5 @@ My research is mainly in developing algorithms to solve imperfect information ga
           }, 
           '{{ site.more_authors_animation_delay }}');
       "
-  ><b><span class="course-to-reflect">Coursework</span> Reflection</b></span></p>
+  ><b><span class="course-to-reflect" style="display:inline-block">Coursework</span> Reflection</b></span></p>
 </div>
