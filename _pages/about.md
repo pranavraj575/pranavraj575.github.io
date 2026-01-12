@@ -42,17 +42,19 @@ My research is mainly in developing algorithms to solve imperfect information ga
     I have also included reflections on my <span class="course-to-reflect" style="display:inline-block">coursework</span>:
     <span onclick="
           var elements = document.getElementsByClassName('course-to-reflect');
-          var k = 20;
+          var count = 20;
+          var k = count;
           var reflectorhardlyknower = setInterval(function(){
+            var c = (k*2/count)-1;
             for(var i=0;i<elements.length;i++){
               element=elements[i];
               if(element.classList.contains('reflected')){
-                element.style.transform='matrix(1,0,0,1,0,0)';
+                element.style.transform='matrix(-('+String(c)+'),0,0,1,0,0)';
                 if(k==0){
                   element.classList.remove('reflected');
                 }
               } else {
-                element.style.transform='matrix(-1,0,0,1,0,0)';
+                element.style.transform='matrix('+String(c)',0,0,1,0,0)';
                 if(k==0){
                   element.classList.add('reflected');
                 }
