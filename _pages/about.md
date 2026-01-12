@@ -37,7 +37,7 @@ My research is mainly in developing algorithms to solve imperfect information ga
 
 [Research statement here](/research-statement).
 
-<div class="silly-goose">
+<div>
   <p>Inspired by <a href="https://seristof.github.io">my friend's</a> website, 
     I have also included reflections on my <span class="course-to-reflect" style="display:inline-block">coursework</span>:
     <span 
