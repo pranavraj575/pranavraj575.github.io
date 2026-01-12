@@ -42,7 +42,7 @@ My research is mainly in developing algorithms to solve imperfect information ga
     I have also included reflections on my <span class="course-to-reflect">coursework</span>:
     <span onclick="
           var elements = document.getElementsByClassName('course-to-reflect');
-          for(int i=0;i<elements.length;i++){
+          for(var i=0;i<elements.length;i++){
             element=elements[i];
             if(element.classList.contains('reflected')){
               element.style.transform='matrix(1,0,0,1,0,0)';
@@ -51,7 +51,7 @@ My research is mainly in developing algorithms to solve imperfect information ga
               element.style.transform='matrix(-1,0,0,1,0,0)';
               element.classList.add('reflected');
             }
-          };
+          }
       "
   ><b><span class="course-to-reflect">Coursework</span> Reflection</b></span></p>
 </div>
