@@ -51,7 +51,7 @@ My research is mainly in developing algorithms to solve imperfect information ga
               element.style.transform='matrix(-1,0,0,1,0,0)';
               element.classList.add('reflected');
             }
-          }
+          };
       "
   ><b><span class="course-to-reflect">Coursework</span> Reflection</b></span></p>
 </div>
