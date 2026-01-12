@@ -36,3 +36,22 @@ My research is mainly in developing algorithms to solve imperfect information ga
 <p class="serious-goose">My general goal is developing Machine Learning algorithms for strategic scenarios. I am also interested in Topology.</p>
 
 [Research statement here](/research-statement).
+
+<div class="silly-goose">
+  <p>Inspired by <a href="https://seristof.github.io">my friend's</a> website, 
+    I have also included reflections on my <span class="course-to-reflect">coursework</span>:
+    <span onclick="
+          var elements = document.getElementsByClassName('course-to-reflect');
+          for(int i=0;i<elements.length;i++){
+            element=elements[i];
+            if(element.classList.contains('reflected')){
+              element.style.transform='matrix(1,0,0,1,0,0)';
+              element.classList.remove('reflected');
+            } else {
+              element.style.transform='matrix(-1,0,0,1,0,0)';
+              element.classList.add('reflected');
+            }
+          }
+      "
+  ><b><span class="course-to-reflect">Coursework</span> Reflection</b></span></p>
+</div>
