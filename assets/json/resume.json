@@ -626,7 +626,8 @@
     },
     {
       "name": "AirSim (Unreal Engine)",
-      "ico_icon": "/assets/img/icons/unreal.png"
+      "ico_icon": "/assets/img/icons/unreal_black.svg",
+      "ico_icon_dark": "/assets/img/icons/unreal_white.svg"
     },
     {
       "name": "Gazebo",
