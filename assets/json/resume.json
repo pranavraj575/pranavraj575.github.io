@@ -605,11 +605,15 @@
       "name": "OpenSpiel"
     },
     {
-      "name": "OpenAI Gym",
+      "name": "OpenAI Gymnasium",
       "ico_icon": "/assets/img/icons/gym.png"
     },
     {
       "name": "Stable Baselines"
+    },
+    {
+      "name": "Gurobi",
+      "ico_icon": "/assets/img/icons/gurobi.svg"
     },
     {
       "name": "Git",
