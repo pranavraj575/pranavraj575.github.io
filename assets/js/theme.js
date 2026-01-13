@@ -41,7 +41,7 @@ let applyTheme = () => {
   setGiscusTheme(theme);
   setSearchTheme(theme);
   setSpotlightTheme(theme);
-  themeThemedStuff(theme);
+  //themeThemedStuff(theme);
 
   // if mermaid is not defined, do nothing
   if (typeof mermaid !== "undefined") {
