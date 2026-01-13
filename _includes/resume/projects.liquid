@@ -26,7 +26,7 @@
               {% if content.logo %}
                 <tr>
                   <td>
-                    <img src="{{ content.logo }}" class="img-fluid" loading="eager">
+                    <img src="{{ content.logo }}" class="img-fluid" loading="eager" title="{{ content.logo_title | default: content.name }}">
                   </td>
                 </tr>
               {% endif %}

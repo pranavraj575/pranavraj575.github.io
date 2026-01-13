@@ -28,6 +28,7 @@
       "institution": "Carnegie Mellon University",
       "location": "Pittsburgh, USA",
       "url": "https://www.ml.cmu.edu/",
+      "logo": "/assets/img/icons/cmu.png",
       "area": "Machine Learning Department",
       "studyType": "PhD",
       "startDate": "2025-08-16",
@@ -57,6 +58,7 @@
       "institution": "Carnegie Mellon University",
       "location": "Pittsburgh, USA",
       "url": "https://www.cs.cmu.edu/",
+      "logo": "/assets/img/icons/cmu.png",
       "area": "Bachelor of Science in Artificial Intelligence; additional major in Discrete Mathematics and Logic",
       "studyType": "Undergraduate",
       "startDate": "2020-08-01",
@@ -218,7 +220,8 @@
       ],
       "startDate": "2024-01-19",
       "endDate": "2025-08-04",
-      "logo": "/assets/img/icons/unsw.png"
+      "logo": "/assets/img/icons/unsw.png",
+      "logo_title": "University of New South Wales"
     },
     {
       "name": "Transformer guided coevolution: Team selection in multiagent adversarial games",

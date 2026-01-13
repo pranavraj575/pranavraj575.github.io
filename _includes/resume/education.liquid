@@ -24,6 +24,13 @@
                   </td>
                 </tr>
               {% endif %}
+              {% if content.logo %}
+                <tr>
+                  <td>
+                    <img src="{{ content.logo }}" class="img-fluid" loading="eager" title="{{ content.logo_title | default: content.institution }}">
+                  </td>
+                </tr>
+              {% endif %}
             </tbody>
           </table>
         </div>
