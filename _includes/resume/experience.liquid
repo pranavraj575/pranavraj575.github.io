@@ -53,7 +53,7 @@
                 <tr>
                   <td>
                     {% if content.url %}<a href="{{ content.url }}">{% endif %}
-                      <img src="{{ content.logo }}" class="img-fluid" loading="eager" title="{{ content.logo_title | default: content.affiliation }}">
+                      <img src="{{ content.logo }}" class="img-fluid" loading="eager" title="{{ content.logo_title | default: content.name }}">
                     {% if content.url %}</a>{% endif %}
                   </td>
                 </tr>
