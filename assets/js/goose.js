@@ -239,7 +239,7 @@ let themeThemedStuff = (theme) => {
   unstuff = document.getElementsByClassName("non-dark-theme");
   for (var i=0;i<unstuff.length;i++){
     thing=stuff[i];
-    if(them=='dark'){
+    if(theme == 'dark'){
       markObjectHide(thing);
     }
     else{
