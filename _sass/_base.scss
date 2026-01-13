@@ -229,24 +229,31 @@ ul.task-list input[type="checkbox"] {
 }
 
 .reveal-after-toe-losses{
-  opacity:0;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  display: none;
 }
 
 .reveal-after-toe-ties{
-  opacity:0;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  display: none;
+}
+
+.reveal-after-toe-wins{
+  display: none;
 }
 
 .reveal-after-toe-games{
-  opacity:0;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  display: none;
+}
+
+.reveal-after-toe-score{
+  display: none;
+}
+
+.only-dark-theme{
+  display: none;
+}
+
+.non-dark-theme{
+  display: none;
 }
 
 .hover_hardly_knower:hover{
