@@ -591,7 +591,7 @@
   "software & tools": [
     {
       "name": "Pytorch",
-      "ico_icon": "/assets/img/icons/pytorch.png"
+      "ico_icon": "/assets/img/icons/pytorch.svg"
     },
     {
       "name": "JAX",
@@ -618,11 +618,12 @@
     },
     {
       "name": "Git",
-      "ico_icon": "/assets/img/icons/git.png"
+      "ico_icon": "/assets/img/icons/git.svg"
     },
     {
       "name": "ROS",
-      "ico_icon": "/assets/img/icons/ROS.png"
+      "ico_icon": "/assets/img/icons/ROS.svg",
+      "ico_icon_dark": "/assets/img/icons/ROS_white.svg"
     },
     {
       "name": "AirSim (Unreal Engine)",
@@ -631,7 +632,7 @@
     },
     {
       "name": "Gazebo",
-      "ico_icon": "/assets/img/icons/gazebo.png"
+      "ico_icon": "/assets/img/icons/gazebo.svg"
     },
     {
       "name": "CoppeliaSim",
@@ -652,7 +653,7 @@
     },
     {
       "name": "Julia",
-      "ico_icon": "/assets/img/icons/julia.png"
+      "ico_icon": "/assets/img/icons/julia.svg"
     },
     {
       "name": "Mathematica",
@@ -665,11 +666,11 @@
     {
       "name": "Java",
       "icon": "☕",
-      "ico_icon": "/assets/img/icons/java.png"
+      "ico_icon": "/assets/img/icons/java.svg"
     },
     {
       "name": "C++",
-      "ico_icon": "/assets/img/icons/cpp.png"
+      "ico_icon": "/assets/img/icons/cpp.svg"
     },
     {
       "name": "Ocatave",
@@ -691,11 +692,11 @@
     },
     {
       "name": "JavaScript",
-      "ico_icon": "/assets/img/icons/js.png"
+      "ico_icon": "/assets/img/icons/js.svg"
     },
     {
       "name": "HTML",
-      "ico_icon": "/assets/img/icons/html.png"
+      "ico_icon": "/assets/img/icons/html.svg"
     }
   ],
   "other languages": [
