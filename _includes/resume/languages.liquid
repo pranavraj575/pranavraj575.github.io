@@ -53,7 +53,12 @@
                     style=width:20px;text-align:center;{% if content.silly_ico_icon %}display:none;{% else %}display:inline-block;{% endif %}"
                     >
                   {%- if content.ico_icon -%}
-                    <img src={{ content.ico_icon }} class="img-fluid" style="height:0.95rem" loading="eager" title={{ content.name }}>
+                    {%- if content.ico_icon_dark -%}
+                      <img src={{ content.ico_icon_dark }} class="img-fluid only-dark-theme" style="height:0.95rem" loading="eager" title={{ content.name }}>
+                      <img src={{ content.ico_icon }} class="img-fluid non-dark-theme" style="height:0.95rem" loading="eager" title={{ content.name }}>
+                    {%- else -%}
+                      <img src={{ content.ico_icon }} class="img-fluid" style="height:0.95rem" loading="eager" title={{ content.name }}>
+                    {%- endif -%}
                   {%- else -%}
                     {%- if content.icon -%}
                       {{ content.icon }}

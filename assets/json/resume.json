@@ -606,7 +606,8 @@
     },
     {
       "name": "OpenAI Gymnasium",
-      "ico_icon": "/assets/img/icons/gym.png"
+      "ico_icon": "/assets/img/icons/gymnasium_black.svg",
+      "ico_icon_dark": "/assets/img/icons/gymnasium_white.svg"
     },
     {
       "name": "Stable Baselines"
