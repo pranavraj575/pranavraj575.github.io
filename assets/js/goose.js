@@ -170,7 +170,7 @@ let hide_and_reveal = () => {
       revealing[i].removeAttribute("stored_display_style");
     }
     else {
-      revealing[i].style.removeProperty("display");
+      revealing[i].style.display = "inherit";
     }
     revealing[i].classList.remove("temp-reveal");
   }
