@@ -167,7 +167,6 @@ let hide_and_reveal = () => {
 
     if (revealing[i].hasAttribute("stored_display_style")){
       revealing[i].style.display = revealing[i].getAttribute("stored_display_style");
-      revealing[i].removeAttribute("stored_display_style");
     }
     else {
       revealing[i].style.display = "inherit";
