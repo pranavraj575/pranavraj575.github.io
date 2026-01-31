@@ -19,7 +19,7 @@ you lost :(
 
 <span class="hide-after-toe-score" toe-reveal-counter="-.5">youre not very good at this</span>
 
-<span class="reveal-after-toe-games display-style-inline-block" toe-reveal-counter="6">your goal should be to get to the win screen</span><span class="reveal-after-toe-games display-style-inline-block" toe-reveal-counter="9" style="display:inline-block;">, not to win</span>
+<span class="reveal-after-toe-games display-style-inline-block" toe-reveal-counter="6">your goal should be to get to the win screen</span><span class="reveal-after-toe-games display-style-inline-block" toe-reveal-counter="9">, not to win</span>
 
 <span class="reveal-after-toe-losses" toe-reveal-counter="69">just give up</span>
 
