@@ -64,7 +64,7 @@ let determineToeRecord = () => {
   if (typeof(wins_stored) == "string") {
     wins = parseInt(wins_stored);
   }
-  return [losses, ties, wins, losses+ties+wins,(wins-losses)/(wins+ties+losses)]
+  return [losses, ties, wins, losses+ties+wins,(wins-losses)/Math.max(1, wins+ties+losses)]
 };
 let toeGameResult = (lost=false, tied=false, won=false) => {
   var arrg = determineToeRecord();
