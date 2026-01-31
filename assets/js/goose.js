@@ -108,6 +108,9 @@ let toeRevealForFree = () => {
       if(cnt>=target){
         markObjectHide(thing);
       }
+      else{
+        markObjectReveal(thing);
+      }
     }
     hide_and_reveal();
   }
@@ -142,22 +145,8 @@ let markObjectHide = (elem_tre) => {
   elem_tre.classList.add("temp-hide");
 }
 
+// hiding is stronger, is something is marked to be hid, it always will be
 let hide_and_reveal = () => {
-  var hiddening = document.getElementsByClassName("temp-hide");
-  for (var i = hiddening.length - 1; i >= 0; i--) {
-    // toggle whether images are shown as well
-    // ORDER MATTERS, once element is removed from classlist, hiddening[i] is null
-    if (hiddening[i].classList.contains("spotlight")){
-        hiddening[i].classList.add("notlight");
-        hiddening[i].classList.remove("spotlight");
-    }
-    if (hiddening[i].style.display){
-        hiddening[i].classList.add("display-style-"+hiddening[i].style.display)
-    }
-    hiddening[i].style.display = "none";
-    hiddening[i].classList.remove("temp-hide");
-  }
-
   var revealing = document.getElementsByClassName("temp-reveal");
   for (var i = revealing.length - 1; i >= 0; i--) {
     if (revealing[i].classList.contains("notlight")){
@@ -173,8 +162,26 @@ let hide_and_reveal = () => {
     revealing[i].style.display = disp;
     revealing[i].classList.remove("temp-reveal");
   }
-};
 
+  var hiddening = document.getElementsByClassName("temp-hide");
+  for (var i = hiddening.length - 1; i >= 0; i--) {
+    // toggle whether images are shown as well
+    // ORDER MATTERS, once element is removed from classlist, hiddening[i] is null
+    if (hiddening[i].classList.contains("spotlight")){
+        hiddening[i].classList.add("notlight");
+        hiddening[i].classList.remove("spotlight");
+    }
+    if (hiddening[i].style.display){
+        hiddening[i].classList.add("display-style-"+hiddening[i].style.display)
+    }
+    hiddening[i].style.display = "none";
+    hiddening[i].classList.remove("temp-hide");
+  }
+};
+// note that hiding is stronger, if we mark an object as both hide and reveal, it will be hidden
+// if we want to hide an object unless a value is in a certian range, this is easy
+//  (hide if less than a, reveal if greater; hide if greater than b, reveal if less) -> reveals only if between a and b
+//  hiding only in a certian range is harder, will need to make two copies
 let gooseActivation = () => {
   var secrets_found = determineStepsFound();
   var silly_geese = document.getElementsByClassName("reveal-after-secrets");
@@ -195,6 +202,10 @@ let gooseActivation = () => {
     if(secrets <= secrets_found){
       // if the number of secrets found is at least the number of secrets needed, we will hide serious_geese[i]
       markObjectHide(serious_geese[i]);
+    }
+    else{
+      // otherwise, we will reveal this goose
+      markObjectReveal(serious_geese[i]);
     }
   }
 
