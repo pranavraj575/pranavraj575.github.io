@@ -136,10 +136,13 @@ let pasteToeRecord = () => {
 // if something is revealed at a and hidden at b (note, a<b)
 //  it will be hidden with secrets < a, revealed at a<= secrets < b, and hidden with secrets>=b
 
+// reveal is weaker
 let markObjectReveal = (elem_tre) => {
-  elem_tre.classList.remove("temp-hide");
-  elem_tre.classList.add("temp-reveal");
+  if (!elem_tre.classList.contains("temp-hide")){
+    elem_tre.classList.add("temp-reveal");
+  }
 }
+// hide is stronger
 let markObjectHide = (elem_tre) => {
   elem_tre.classList.remove("temp-reveal");
   elem_tre.classList.add("temp-hide");
