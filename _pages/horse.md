@@ -41,13 +41,16 @@ silly: true
 
 <script>
     base_delay = 80;
-    let REVEAL = (thing, stuff) => { 
-        if (thing.length==0){
+    let format_horse_code = (thing) => {
+      return thing;
+    }
+    let REVEAL = (thing, stuff, i=0) => { 
+        if (thing.length==i){
             // lock according to delay instead of at end of string
             // BUTTLOCK=false; 
             return 0;
         }
-        c = thing[0];
+        c = thing[i];
         delay = 0;
         if(c=='.'){delay = 2*base_delay;}
         else if(c=='-'){delay=4*base_delay;}
@@ -56,9 +59,9 @@ silly: true
             delay=16*base_delay;
             if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=16*base_delay;}
         }
-        stuff.innerHTML = stuff.innerHTML+c;
+        stuff.innerHTML = format_horse_code(thing.slice(0, i+1));
         setTimeout(() => {
-            REVEAL(thing.substring(1),stuff);
+            REVEAL(thing,stuff,i+1);
         }, delay);
     };
     BUTT_CLICKED=false;
@@ -78,6 +81,7 @@ silly: true
 
         plAudio("/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3")
         code="-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..";
+        code = code.replaceAll("I"," ");
         const stuff = document.getElementById("HORSE_CODE");
         stuff.innerHTML = "";
         REVEAL(code, stuff);
