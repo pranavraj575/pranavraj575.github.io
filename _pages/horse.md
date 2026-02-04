@@ -42,7 +42,7 @@ silly: true
 <script>
     base_delay = 80;
     let format_horse_code = (thing) => {
-      return thing;
+      return thing.replaceAll("I","&nbsp;");;
     }
     let REVEAL = (thing, stuff, i=0) => { 
         if (thing.length==i){
@@ -81,7 +81,6 @@ silly: true
 
         plAudio("/assets/audio/I-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..II.mp3")
         code="-.-.I.-..I..I-.-.I-.-II-I....I.II-..I.I.-I-..II.--.I..I-..-I.I.-..";
-        code = code.replaceAll("I"," ");
         const stuff = document.getElementById("HORSE_CODE");
         stuff.innerHTML = "";
         REVEAL(code, stuff);
