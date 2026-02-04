@@ -42,7 +42,10 @@ silly: true
 <script>
     base_delay = 70;
     let format_horse_code = (thing) => {
-      return thing.replaceAll("I","&nbsp;");;
+      thing = thing.replaceAll("I","&nbsp;");
+      thing = "<nobr>"+thing+"</nobr>";
+      thing = thing.replaceAll("&nbsp;&nbsp;","&nbsp;</nobr> <nobr>");
+      return thing;
     }
     let REVEAL = (thing, stuff, i=0) => { 
         if (thing.length==i){
