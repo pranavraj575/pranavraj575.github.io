@@ -40,7 +40,7 @@ silly: true
 </div>
 
 <script>
-    base_delay = 80;
+    base_delay = 40;
     let format_horse_code = (thing) => {
       return thing.replaceAll("I","&nbsp;");;
     }
@@ -57,7 +57,7 @@ silly: true
         else{
             c='&nbsp;';
             delay=16*base_delay;
-            if(thing.length>i+1 && !(thing[i+1]=='.' || thing[i+1]=='-')){delay+=16*base_delay;}
+            if(thing.length>i+1 && !(thing[i+1]=='.' || thing[i+1]=='-')){delay+=8*base_delay;}
         }
         stuff.innerHTML = format_horse_code(thing.slice(0, i+1));
         setTimeout(() => {
