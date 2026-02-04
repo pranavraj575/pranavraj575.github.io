@@ -57,7 +57,7 @@ silly: true
         else{
             c='&nbsp;';
             delay=16*base_delay;
-            if(thing.length>1 && !(thing[1]=='.' || thing[1]=='-')){delay+=16*base_delay;}
+            if(thing.length>i+1 && !(thing[i+1]=='.' || thing[i+1]=='-')){delay+=16*base_delay;}
         }
         stuff.innerHTML = format_horse_code(thing.slice(0, i+1));
         setTimeout(() => {
