@@ -24,7 +24,7 @@
     {% endif %}
   {% endif %}
   {% for content in data[1] %}
-    {% assign language_body = content.name %}
+    {% assign language_body = content.name | replace: " ", "&nbsp;" %}
     {% if content.fluency %}
       {% assign language_body = language_body | append: " (" | append: content.fluency | append: ")"%}
     {% endif %}
