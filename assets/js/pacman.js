@@ -1,7 +1,5 @@
 let minIntervalSec = 100
 let maxIntervalSec = 400
-// let minIntervalSec = 1
-// let maxIntervalSec = 3
 
 
 if (document.readyState == 'loading') {
@@ -21,28 +19,10 @@ function initializeCallbacks() {
 
 function getRandomIntervalTime() {
     let randTimeMillisec = Math.floor(((maxIntervalSec-minIntervalSec)*Math.random()+minIntervalSec)*1000)
-    //console.log(`Random Pacman interval: ${randTimeMillisec/1000} s`)
     return randTimeMillisec
 }
 
 function addPacman() {
-    //console.log('Adding Pacman')
-    /* Programatically adding the following HTML:
-
-        <div class="pacman">
-            <svg viewBox="-1.05 -1.05 2.1 2.1" xmlns="http://www.w3.org/2000/svg">
-                <!-- Animate path going from +\-40 degrees down to zero and back-->
-                <path d="" fill="yellow" stroke="black" stroke-width="0.05">
-                    <animate attributeName="d" dur="0.5s" repeatCount="indefinite"
-                        values="M0 0 L0.766 0.643 A1 1 0 1 1 0.766 -0.643 Z;
-                                M0 0 L0.940 0.342 A1 1 0 1 1 0.940 -0.342 Z;
-                                M0 0 L1.000 0.000 A1 1 0 1 1 1.000  0.000 Z;
-                                M0 0 L0.940 0.342 A1 1 0 1 1 0.940 -0.342 Z;
-                                M0 0 L0.766 0.643 A1 1 0 1 1 0.766 -0.643 Z" />
-                </path>
-            </svg>
-        </div>
-    */
     let pacmanDiv = document.createElement('div')
     pacmanDiv.classList.add('pacman')
 
@@ -95,7 +75,6 @@ function addPacman() {
 }
 
 function addGhost() {
-    //console.log('Adding Ghost')
 
     // Ghost colors
     let ghostColorClasses = ['ghost-red',
@@ -246,22 +225,30 @@ function addGhost() {
     ghostDiv.addEventListener('animationend', removeGhost)
 }
 
+
+function addPacguy(){
+  if (Math.random()<0.169){
+    addPacman();
+  }
+  else{
+    addGhost();
+  }
+}
+
 function removePacman() {
-    //console.log('Removing Pacman')
     let pacmanDiv = document.querySelector('.pacman')
     if (pacmanDiv) {
         pacmanDiv.remove()
     }
 
-    setTimeout(addGhost, getRandomIntervalTime())
+    //setTimeout(addGhost, getRandomIntervalTime())
 }
 
 function removeGhost() {
-    //console.log('Removing Ghost')
     let ghostDiv = document.querySelector('.pacman')
     if (ghostDiv) {
         ghostDiv.remove()
     }
 
-    setTimeout(addPacman, getRandomIntervalTime())
+    //setTimeout(addPacman, getRandomIntervalTime())
 }
