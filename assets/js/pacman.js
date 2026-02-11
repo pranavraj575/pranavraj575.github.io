@@ -21,7 +21,7 @@ function initializeCallbacks() {
 
 function getRandomIntervalTime() {
     let randTimeMillisec = Math.floor(((maxIntervalSec-minIntervalSec)*Math.random()+minIntervalSec)*1000)
-    console.log(`Random Pacman interval: ${randTimeMillisec/1000} s`)
+    //console.log(`Random Pacman interval: ${randTimeMillisec/1000} s`)
     return randTimeMillisec
 }
 

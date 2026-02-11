@@ -1,0 +1,73 @@
+/* Define ghost colors */
+.ghost-red {
+  fill: #E50000;
+}
+.ghost-blue {
+  fill: #004CE5;
+}
+.ghost-orange {
+  fill: #F96811;
+}
+.ghost-cyan {
+  fill: #19BFB2;
+}
+.ghost-yellow-orange {
+  fill: #FF9900;
+}
+.ghost-purple {
+  fill: #6621E8;
+}
+
+.pacman {
+  position: fixed;
+  top: 30%;
+  width: 50px;
+  height: 50px;
+  left: -50px;
+  background-color: none;
+  /* animation: pacmain-right 5s linear; */
+  animation: pacman-peaking 20s linear;
+}
+
+@keyframes pacman-right {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 110%;
+  }
+}
+
+/* Animation to have pacman poke its head out */
+@keyframes pacman-peaking {
+  0% {
+    left: -50px;
+  }
+  5% {
+    left: -30px;
+  }
+  25% {
+    left: -30px;
+  }
+  27% {
+    left: -50px;
+  }
+  50% {
+    left: -50px;
+  }
+  56% {
+    left: -15px;
+  }
+  65% {
+    left: -15px;
+  }
+  68% {
+    left: -50px;
+  }
+  75% {
+    left: -50px;
+  }
+  100% {
+    left: 110%;
+  }
+}
