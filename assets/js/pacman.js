@@ -5,10 +5,10 @@ let maxIntervalSec = 400
 
 
 if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', initialize)
+    //document.addEventListener('DOMContentLoaded', initialize)
 }
 else {
-    initialize()
+    //initialize()
 }
 
 function initialize() {
@@ -26,7 +26,7 @@ function getRandomIntervalTime() {
 }
 
 function addPacman() {
-    console.log('Adding Pacman')
+    //console.log('Adding Pacman')
     /* Programatically adding the following HTML:
 
         <div class="pacman">
@@ -95,7 +95,7 @@ function addPacman() {
 }
 
 function addGhost() {
-    console.log('Adding Ghost')
+    //console.log('Adding Ghost')
 
     // Ghost colors
     let ghostColorClasses = ['ghost-red',
@@ -247,7 +247,7 @@ function addGhost() {
 }
 
 function removePacman() {
-    console.log('Removing Pacman')
+    //console.log('Removing Pacman')
     let pacmanDiv = document.querySelector('.pacman')
     if (pacmanDiv) {
         pacmanDiv.remove()
@@ -257,7 +257,7 @@ function removePacman() {
 }
 
 function removeGhost() {
-    console.log('Removing Ghost')
+    //console.log('Removing Ghost')
     let ghostDiv = document.querySelector('.pacman')
     if (ghostDiv) {
         ghostDiv.remove()
