@@ -77,15 +77,18 @@ function addPacman() {
 function addGhost() {
 
     // Ghost colors
-    let ghostColorClasses = ['ghost-red',
+    let ghostColorClasses = [
+        'ghost-red',
         'ghost-blue',
         'ghost-orange',
         'ghost-cyan',
         'ghost-yellow-orange',
-        'ghost-purple']
+        'ghost-purple',
+        'ghost-spooked',
+        ]
 
     let ghostColor = ghostColorClasses[Math.floor(Math.random() * ghostColorClasses.length)]
-
+    let spooked = (ghostColor == 'ghost-spooked')
     // Ghost shape
 
     let numLegs = 3
@@ -112,9 +115,7 @@ function addGhost() {
     ghostBodyPathStr += `L${ghostLeft} ${legTop} `
 
     // Legs
-
     ghostLegs1 = `L${ghostLeft} ${legBottom} L${ghostLeft+footSize/2} ${legBottom} L${ghostLeft+legGap/2} ${legTop} L${ghostLeft+legGap-footSize/2} ${legBottom} L${ghostLeft+legGap+footSize/2} ${legBottom} L0 ${legTop} L${ghostLeft+2*legGap-footSize/2} ${legBottom} L${ghostLeft+2*legGap+footSize/2} ${legBottom} L${ghostRight-legGap/2} ${legTop} L${ghostRight-footSize/2} ${legBottom} L${ghostRight} ${legBottom} `
-
     ghostLegs2 = `L${ghostLeft+legGap/2-footSize/2} ${legBottom} L${ghostLeft+legGap/2+footSize/2} ${legBottom} L${ghostLeft+legGap} ${legTop} L${0-footSize/2} ${legBottom} L${0+footSize/2} ${legBottom} L${ghostRight-legGap} ${legTop} L${ghostRight-legGap/2-footSize/2} ${legBottom} L${ghostRight-legGap/2+footSize/2} ${legBottom} `
 
     let ghostWalk1 = ghostBodyPathStr + ghostLegs1 + 'Z'
@@ -160,6 +161,34 @@ function addGhost() {
 
     let eyeColor = 'white'
     let pupilColor = 'black'
+
+    // mouth
+    let mouthHeight=legHeight/2
+    let mouthBottom=(eyeOffsetY+legBottom)/2 - mouthHeight/2
+    let mouthTop=mouthBottom-mouthHeight
+    let mouthScale=0.8
+    if (spooked){
+        pupilColor="#fab9b0";
+        eyeRadiusX=0;
+        eyeRadiusY=0;
+        eyeShift = 0;
+        let mouth = document.createElementNS('http://www.w3.org/2000/svg', 'path')
+
+        let coords = `M ${ghostLeft*mouthScale} ${mouthBottom}`;
+        coords += ` L ${(ghostLeft+legGap/2)*mouthScale} ${mouthTop}`;
+        coords += ` L ${(ghostLeft+legGap)*mouthScale} ${mouthBottom}`;
+        coords += ` L 0 ${mouthTop}`;
+        coords += ` L ${(ghostLeft+2*legGap)*mouthScale} ${mouthBottom}`;
+        coords += ` L ${(ghostRight-legGap/2)*mouthScale} ${mouthTop} `;
+        coords += ` L ${(ghostRight)*mouthScale} ${mouthBottom}`;
+
+        mouth.setAttribute('stroke', pupilColor)
+        mouth.setAttribute('stroke-width', '.069')
+        mouth.setAttribute('d', coords);
+
+        mouth.setAttribute('fill', "none");
+        svg.appendChild(mouth)
+    }
 
     let dx = 0
     let dy = 0
