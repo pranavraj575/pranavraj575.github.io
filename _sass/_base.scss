@@ -308,28 +308,44 @@ ul.task-list input[type="checkbox"] {
   fill: #2121FF;
 }
 
-.pacman {
+
+.pacman-eastward {
   position: fixed;
   top: 30%;
   width: 50px;
   height: 50px;
   left: -50px;
   background-color: none;
-}
-
-.pacman-eastward {
   animation: pacman-peaking-e 20s linear;
 }
 
 .pacman-westward {
+  position: fixed;
+  top: 30%;
+  width: 50px;
+  height: 50px;
+  left: -50px;
+  background-color: none;
   animation: pacman-peaking-w 20s linear;
 }
 
 .pacman-northward {
+  position: fixed;
+  top: 30%;
+  width: 50px;
+  height: 50px;
+  left: -50px;
+  background-color: none;
   animation: pacman-peaking-n 20s linear;
 }
 
 .pacman-southward {
+  position: fixed;
+  top: 30%;
+  width: 50px;
+  height: 50px;
+  left: -50px;
+  background-color: none;
   animation: pacman-peaking-s 20s linear;
 }
 
