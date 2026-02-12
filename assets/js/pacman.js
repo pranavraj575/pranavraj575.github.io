@@ -45,7 +45,6 @@ function getAgentDiv(dir='east'){
 }
 
 function addPacman() {
-
     let dir = getRandomDirection()
     let pacmanDiv = getAgentDiv(dir)
     if (dir == 'north') {
@@ -107,7 +106,6 @@ function addPacman() {
 }
 
 function addGhost() {
-
     // Ghost colors
     let ghostColorClasses = [
         'ghost-red',
