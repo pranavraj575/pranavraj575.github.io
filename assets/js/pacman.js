@@ -31,7 +31,7 @@ function getRandomDirection() {
 function getAgentDiv(dir='east'){
     let agentDiv = document.createElement('div')
     agentDiv.classList.add('pacman')
-    agentDiv.classList.add(dir+'ward')
+    agentDiv.classList.add('pacman-'+dir+'ward')
 
     // Add random position
     let prop = Math.floor(Math.random() * 100)

@@ -29,16 +29,20 @@
   left: -50px;
   background-color: none;
 }
-.eastward {
+
+.pacman-eastward {
   animation: pacman-peaking-e 20s linear;
 }
-.westward {
+
+.pacman-westward {
   animation: pacman-peaking-w 20s linear;
 }
-.northward {
+
+.pacman-northward {
   animation: pacman-peaking-n 20s linear;
 }
-.southward {
+
+.pacman-southward {
   animation: pacman-peaking-s 20s linear;
 }
 
