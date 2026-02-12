@@ -30,24 +30,8 @@
   background-color: none;
 }
 
-.pacman-eastward {
-  animation: pacman-peaking-e 20s linear;
-}
-
-.pacman-westward {
-  animation: pacman-peaking-w 20s linear;
-}
-
-.pacman-northward {
-  animation: pacman-peaking-n 20s linear;
-}
-
-.pacman-southward {
-  animation: pacman-peaking-s 20s linear;
-}
-
 /* Animation to have pacman poke its head out */
-@keyframes pacman-peaking-e {
+@keyframes pacman-peaking-east {
   0% {
     left: -50px;
   }
@@ -81,7 +65,7 @@
 }
 
 
-@keyframes pacman-peaking-w {
+@keyframes pacman-peaking-west {
   0% {
     left: 100%;
   }
@@ -115,7 +99,7 @@
 }
 
 
-@keyframes pacman-peaking-s {
+@keyframes pacman-peaking-south {
   0% {
     top: -50px;
   }
@@ -149,7 +133,7 @@
 }
 
 
-@keyframes pacman-peaking-n {
+@keyframes pacman-peaking-north {
   0% {
     top: 100%;
   }

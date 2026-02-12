@@ -31,16 +31,25 @@ function getRandomDirection() {
 function getAgentDiv(dir='east'){
     let agentDiv = document.createElement('div')
     agentDiv.classList.add('pacman')
-    agentDiv.classList.add('pacman-'+dir+'ward')
 
     // Add random position
+    // also add animation
+
     let prop = Math.floor(Math.random() * 100)
-    if (dir == 'north' || dir == 'south') {
-        agentDiv.style.left = `${prop}vh`
-    }
-    else {
+    if (dir=='east'){
         agentDiv.style.top = `${prop}vh`
     }
+    else if (dir=='north'){
+        agentDiv.style.left = `${prop}vh`
+    }
+    else if (dir=='west'){
+        agentDiv.style.top = `${prop}vh`
+    }
+    else {
+        agentDiv.style.left = `${prop}vh`
+    }
+    agentDiv.style.animation = "pacman-peaking-"+dir+" 20s linear"
+
     return agentDiv
 }
 

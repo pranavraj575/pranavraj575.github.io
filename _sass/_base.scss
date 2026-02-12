@@ -308,49 +308,17 @@ ul.task-list input[type="checkbox"] {
   fill: #2121FF;
 }
 
-
-.pacman-eastward {
+.pacman {
   position: fixed;
   top: 30%;
   width: 50px;
   height: 50px;
   left: -50px;
   background-color: none;
-  animation: pacman-peaking-e 20s linear;
-}
-
-.pacman-westward {
-  position: fixed;
-  top: 30%;
-  width: 50px;
-  height: 50px;
-  left: -50px;
-  background-color: none;
-  animation: pacman-peaking-w 20s linear;
-}
-
-.pacman-northward {
-  position: fixed;
-  top: 30%;
-  width: 50px;
-  height: 50px;
-  left: -50px;
-  background-color: none;
-  animation: pacman-peaking-n 20s linear;
-}
-
-.pacman-southward {
-  position: fixed;
-  top: 30%;
-  width: 50px;
-  height: 50px;
-  left: -50px;
-  background-color: none;
-  animation: pacman-peaking-s 20s linear;
 }
 
 /* Animation to have pacman poke its head out */
-@keyframes pacman-peaking-e {
+@keyframes pacman-peaking-east {
   0% {
     left: -50px;
   }
@@ -384,7 +352,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 
-@keyframes pacman-peaking-w {
+@keyframes pacman-peaking-west {
   0% {
     left: 100%;
   }
@@ -418,7 +386,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 
-@keyframes pacman-peaking-s {
+@keyframes pacman-peaking-south {
   0% {
     top: -50px;
   }
@@ -452,7 +420,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 
-@keyframes pacman-peaking-n {
+@keyframes pacman-peaking-north {
   0% {
     top: 100%;
   }
