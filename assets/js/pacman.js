@@ -22,9 +22,44 @@ function getRandomIntervalTime() {
     return randTimeMillisec
 }
 
+function getRandomDirection() {
+    let dirs = ['east','north','west','south'];
+    return dirs[Math.floor(Math.random() * dirs.length)]
+}
+
+//common code in ghost and pacman
+function getAgentDiv(dir='east'){
+    let agentDiv = document.createElement('div')
+    agentDiv.classList.add('pacman')
+    agentDiv.classList.add(dir+'ward')
+
+    // Add random position
+    let prop = Math.floor(Math.random() * 100)
+    if (dir == 'north' || dir == 'south') {
+        agentDiv.style.left = `${prop}vh`
+    }
+    else {
+        agentDiv.style.top = `${prop}vh`
+    }
+    return agentDiv
+}
+
 function addPacman() {
-    let pacmanDiv = document.createElement('div')
-    pacmanDiv.classList.add('pacman')
+
+    let dir = getRandomDirection()
+    let pacmanDiv = getAgentDiv(dir)
+    if (dir == 'north') {
+        pacmanDiv.style.transform='matrix(0,-1,1,0,0,0)'
+    }
+    else if (dir == 'south') {
+        pacmanDiv.style.transform='matrix(0,1,1,0,0,0)'
+    }
+    else if (dir == 'east') {
+        pacmanDiv.style.transform='matrix(1,0,0,1,0,0)'
+    }
+    else if (dir == 'west') {
+        pacmanDiv.style.transform='matrix(-1,0,0,1,0,0)'
+    }
 
     let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
     svg.setAttribute('viewBox', '-1.05 -1.05 2.1 2.1')
@@ -62,9 +97,6 @@ function addPacman() {
     svg.appendChild(pacmanPath)
     pacmanDiv.appendChild(svg)
 
-    // Add random vertical position to pacman
-    let top = Math.floor(Math.random() * 100)
-    pacmanDiv.style.top = `${top}vh`
 
     // // Add pacman behind all other elements in body
     // document.body.insertBefore(pacmanDiv, document.body.firstChild)
@@ -88,6 +120,8 @@ function addGhost() {
         ]
 
     let ghostColor = ghostColorClasses[Math.floor(Math.random() * ghostColorClasses.length)]
+    let dir = getRandomDirection()
+    let ghostDiv = getAgentDiv(dir)
     let spooked = (ghostColor == 'ghost-spooked')
     // Ghost shape
 
@@ -121,9 +155,6 @@ function addGhost() {
     let ghostWalk1 = ghostBodyPathStr + ghostLegs1 + 'Z'
     let ghostWalk2 = ghostBodyPathStr + ghostLegs2 + 'Z'
 
-    let ghostDiv = document.createElement('div')
-    ghostDiv.classList.add('pacman')
-
     let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
     svg.setAttribute('viewBox', '-1.05 -1.05 2.1 2.1')
 
@@ -149,9 +180,6 @@ function addGhost() {
 
 
     // Eyes
-
-    let dir = 'East'
-
     let eyeOffsetX = 0.27
     let eyeOffsetY = 0.15
     let eyeRadiusX = 0.2
@@ -193,16 +221,16 @@ function addGhost() {
     let dx = 0
     let dy = 0
 
-    if (dir == 'North') {
+    if (dir == 'north') {
         dy = -eyeShift
     }
-    else if (dir == 'South') {
+    else if (dir == 'south') {
         dy = eyeShift
     }
-    else if (dir == 'East') {
+    else if (dir == 'east') {
         dx = eyeShift
     }
-    else if (dir == 'West') {
+    else if (dir == 'west') {
         dx = -eyeShift
     }
 
@@ -233,7 +261,6 @@ function addGhost() {
     rightPupil.setAttribute('cy', `${-eyeOffsetY+dy}`)
     rightPupil.setAttribute('r', pupilRadius)
     rightPupil.setAttribute('fill', pupilColor)
-    // rightPupil.setAttribute('stroke', pupilColor)
 
     svg.appendChild(leftEye)
     svg.appendChild(rightEye)
@@ -241,10 +268,6 @@ function addGhost() {
     svg.appendChild(rightPupil)
 
     ghostDiv.appendChild(svg)
-
-    // Add random vertical position to ghost
-    let top = Math.floor(Math.random() * 100)
-    ghostDiv.style.top = `${top}vh`
 
     // // Add ghost behind all other elements in body
     // document.body.insertBefore(ghostDiv, document.body.firstChild)
