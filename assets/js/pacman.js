@@ -102,7 +102,7 @@ function addPacman() {
     // Add pacman on top of all other elements in body
     document.body.appendChild(pacmanDiv)
 
-    pacmanDiv.addEventListener('animationend', removePacman)
+    pacmanDiv.addEventListener('animationend', function(){this.remove()})
 }
 
 function addGhost() {
@@ -272,7 +272,7 @@ function addGhost() {
     // Add ghost on top of all other elements in body
     document.body.appendChild(ghostDiv)
 
-    ghostDiv.addEventListener('animationend', removeGhost)
+    ghostDiv.addEventListener('animationend', function(){this.remove()})
 }
 
 
@@ -283,22 +283,4 @@ function addPacguy(){
   else{
     addGhost();
   }
-}
-
-function removePacman() {
-    let pacmanDiv = document.querySelector('.pacman')
-    if (pacmanDiv) {
-        pacmanDiv.remove()
-    }
-
-    //setTimeout(addGhost, getRandomIntervalTime())
-}
-
-function removeGhost() {
-    let ghostDiv = document.querySelector('.pacman')
-    if (ghostDiv) {
-        ghostDiv.remove()
-    }
-
-    //setTimeout(addPacman, getRandomIntervalTime())
 }
