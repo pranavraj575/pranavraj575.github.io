@@ -316,15 +316,19 @@ ul.task-list input[type="checkbox"] {
   left: -50px;
   background-color: none;
 }
+
 .eastward {
   animation: pacman-peaking-e 20s linear;
 }
+
 .westward {
   animation: pacman-peaking-w 20s linear;
 }
+
 .northward {
   animation: pacman-peaking-n 20s linear;
 }
+
 .southward {
   animation: pacman-peaking-s 20s linear;
 }
