@@ -1,24 +1,17 @@
-let minIntervalSec = 100
-let maxIntervalSec = 400
+let pacminIntervalSec = 100
+let pacmaxIntervalSec = 200
 
-
-if (document.readyState == 'loading') {
-    //document.addEventListener('DOMContentLoaded', initialize)
-}
-else {
-    //initialize()
-}
-
-function initialize() {
-    initializeCallbacks()
-}
-
-function initializeCallbacks() {
-    setTimeout(addPacman, getRandomIntervalTime())
+function pacMania() {
+    setTimeout(function(){
+        if(document.documentElement.getAttribute('goose-setting')=='silly'){
+          addPacguy();
+        }
+        pacMania();
+      }, getRandomIntervalTime())
 }
 
 function getRandomIntervalTime() {
-    let randTimeMillisec = Math.floor(((maxIntervalSec-minIntervalSec)*Math.random()+minIntervalSec)*1000)
+    let randTimeMillisec = Math.floor(((pacmaxIntervalSec-pacminIntervalSec)*Math.random()+pacminIntervalSec)*1000)
     return randTimeMillisec
 }
 
