@@ -277,32 +277,6 @@ let setSearchTheme = (theme) => {
   }
 };
 
-
-
-let themeThemedStuff = (theme) => {
-  stuff = document.getElementsByClassName("only-dark-theme");
-  for (var i=0;i<stuff.length;i++){
-    thing = stuff[i];
-    if(theme == 'dark'){
-      markObjectReveal(thing);
-    }
-    else{
-      markObjectHide(thing);
-    }
-  }
-  unstuff = document.getElementsByClassName("non-dark-theme");
-  for (var i=0;i<unstuff.length;i++){
-    thing=unstuff[i];
-    if(theme == 'dark'){
-      markObjectHide(thing);
-    }
-    else{
-      markObjectReveal(thing);
-    }
-  }
-  hide_and_reveal();
-};
-
 let transTheme = () => {
   document.documentElement.classList.add("transition");
   window.setTimeout(() => {

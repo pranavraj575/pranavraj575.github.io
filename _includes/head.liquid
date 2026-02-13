@@ -82,6 +82,17 @@
   >
 {% endif %}
 
+
+<!-- Goose Mode -->
+<script src="{{ '/assets/js/goose.js' | relative_url | bust_file_cache }}"></script>
+{% if site.enable_goose_mode %}
+  <script>
+    initGoose();
+  </script>
+{% endif %}
+<script src="{{ '/assets/js/pacman.js' | relative_url | bust_file_cache }}"></script>
+
+
 <!-- Dark Mode -->
 <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
 {% if site.enable_darkmode %}
@@ -96,15 +107,6 @@
     initTheme();
   </script>
 {% endif %}
-
-<!-- Goose Mode -->
-<script src="{{ '/assets/js/goose.js' | relative_url | bust_file_cache }}"></script>
-{% if site.enable_goose_mode %}
-  <script>
-    initGoose();
-  </script>
-{% endif %}
-<script src="{{ '/assets/js/pacman.js' | relative_url | bust_file_cache }}"></script>
 
 {% if page.code_diff %}
   <!-- diff2html -->
