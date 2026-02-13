@@ -98,11 +98,7 @@ function addPacman() {
     svg.appendChild(pacmanPath)
     pacmanDiv.appendChild(svg)
 
-
-    // // Add pacman behind all other elements in body
-    // document.body.insertBefore(pacmanDiv, document.body.firstChild)
-    // Add pacman on top of all other elements in body
-    document.body.appendChild(pacmanDiv)
+    addAgenttoDoc(pacmanDiv);
 
     pacmanDiv.addEventListener('animationend', function(){this.remove()})
 }
@@ -269,12 +265,17 @@ function addGhost() {
 
     ghostDiv.appendChild(svg)
 
-    // // Add ghost behind all other elements in body
-    // document.body.insertBefore(ghostDiv, document.body.firstChild)
-    // Add ghost on top of all other elements in body
-    document.body.appendChild(ghostDiv)
+    addAgenttoDoc(ghostDiv);
 
     ghostDiv.addEventListener('animationend', function(){this.remove()})
+}
+
+function addAgenttoDoc(agentDiv){
+
+    // // Add agent behind all other elements in body
+    document.body.insertBefore(agentDiv, document.body.firstChild)
+    // Add agent on top of all other elements in body
+    // document.body.appendChild(agentDiv)
 }
 
 
