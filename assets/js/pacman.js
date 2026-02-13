@@ -273,9 +273,9 @@ function addGhost() {
 function addAgenttoDoc(agentDiv){
 
     // // Add agent behind all other elements in body
-    document.body.insertBefore(agentDiv, document.body.firstChild)
+    // document.body.insertBefore(agentDiv, document.body.firstChild)
     // Add agent on top of all other elements in body
-    // document.body.appendChild(agentDiv)
+    document.body.appendChild(agentDiv)
 }
 
 
