@@ -450,9 +450,9 @@
 
 <script>
 if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', pacMania)
+    document.addEventListener('DOMContentLoaded', function(){addPacguy(respawn=true,delay=true);})
 }
 else {
-    pacMania()
+    addPacguy(respawn=true,delay=true);
 }
 </script>

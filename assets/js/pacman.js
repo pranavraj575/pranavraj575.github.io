@@ -1,14 +1,5 @@
-let pacminIntervalSec = 100
-let pacmaxIntervalSec = 200
-
-function pacMania() {
-    setTimeout(function(){
-        if(document.documentElement.getAttribute('goose-setting')=='silly'){
-          addPacguy();
-        }
-        pacMania();
-      }, getRandomIntervalTime())
-}
+let pacminIntervalSec = 1
+let pacmaxIntervalSec = 2
 
 function getRandomIntervalTime() {
     let randTimeMillisec = Math.floor(((pacmaxIntervalSec-pacminIntervalSec)*Math.random()+pacminIntervalSec)*1000)
@@ -21,9 +12,12 @@ function getRandomDirection() {
 }
 
 //common code in ghost and pacman
-function getAgentDiv(dir='east'){
+function getAgentDiv(dir='east', respawn=false){
     let agentDiv = document.createElement('div')
     agentDiv.classList.add('pacman')
+    if (respawn){
+      agentDiv.classList.add('respawn');
+    }
 
     // Add random position
     // also add animation
@@ -46,9 +40,9 @@ function getAgentDiv(dir='east'){
     return agentDiv
 }
 
-function addPacman() {
+function addPacman(respawn=false) {
     let dir = getRandomDirection()
-    let pacmanDiv = getAgentDiv(dir)
+    let pacmanDiv = getAgentDiv(dir,respawn=respawn)
     if (dir == 'north') {
         pacmanDiv.style.transform='matrix(0,-1,1,0,0,0)'
     }
@@ -100,10 +94,10 @@ function addPacman() {
 
     addAgenttoDoc(pacmanDiv);
 
-    pacmanDiv.addEventListener('animationend', function(){this.remove()})
+    pacmanDiv.addEventListener('animationend', removePacguy)
 }
 
-function addGhost() {
+function addGhost(respawn=false) {
     // Ghost colors
     let ghostColorClasses = [
         'ghost-red',
@@ -117,7 +111,7 @@ function addGhost() {
 
     let ghostColor = ghostColorClasses[Math.floor(Math.random() * ghostColorClasses.length)]
     let dir = getRandomDirection()
-    let ghostDiv = getAgentDiv(dir)
+    let ghostDiv = getAgentDiv(dir,respawn=respawn)
     let spooked = (ghostColor == 'ghost-spooked')
     // Ghost shape
 
@@ -267,7 +261,7 @@ function addGhost() {
 
     addAgenttoDoc(ghostDiv);
 
-    ghostDiv.addEventListener('animationend', function(){this.remove()})
+    ghostDiv.addEventListener('animationend', removePacguy)
 }
 
 function addAgenttoDoc(agentDiv){
@@ -278,12 +272,23 @@ function addAgenttoDoc(agentDiv){
     document.body.appendChild(agentDiv)
 }
 
+function removePacguy(){
+  if (this.classList.contains('respawn')){
+    addPacguy(respawn=true, delay=true);
+  }
+  this.remove();
+}
 
-function addPacguy(){
-  if (Math.random()<0.169){
-    addPacman();
+function addPacguy(respawn=false,delay=false){
+  if (delay){
+    setTimeout(function(){addPacguy(respawn=respawn,delay=false)}, getRandomIntervalTime())
   }
   else{
-    addGhost();
+    if (Math.random()<0.169){
+      addPacman(respawn);
+    }
+    else{
+      addGhost(respawn);
+    }
   }
 }
