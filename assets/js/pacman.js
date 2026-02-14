@@ -1,5 +1,5 @@
-let pacminIntervalSec = 1
-let pacmaxIntervalSec = 2
+let pacminIntervalSec = 69
+let pacmaxIntervalSec = 200
 
 function getRandomIntervalTime() {
     let randTimeMillisec = Math.floor(((pacmaxIntervalSec-pacminIntervalSec)*Math.random()+pacminIntervalSec)*1000)

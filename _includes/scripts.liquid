@@ -449,10 +449,13 @@
 </script>
 
 <script>
-if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', function(){addPacguy(respawn=true,delay=true);})
-}
-else {
+
+if(document.documentElement.getAttribute('goose-setting')=='silly'){
+  if (document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', function(){addPacguy(respawn=true, delay=true);})
+  }
+  else {
     addPacguy(respawn=true,delay=true);
+  }
 }
 </script>
