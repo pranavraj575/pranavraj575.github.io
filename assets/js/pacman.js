@@ -284,7 +284,7 @@ function addPacguy(respawn=false,delay=false){
     setTimeout(function(){addPacguy(respawn=respawn,delay=false)}, getRandomIntervalTime())
   }
   else{
-    if (Math.random()<0.169){
+    if (Math.random()<0.042069){
       addPacman(respawn);
     }
     else{
