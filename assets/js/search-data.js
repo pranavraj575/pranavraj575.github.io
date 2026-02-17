@@ -269,6 +269,17 @@ ninja.data = [{
             window.location.href = "/aminals/2025/jinx/";
           
         },
+      },{id: "post-ralph",
+        
+          title: "ralph",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2024/ralph/";
+          
+        },
       },{id: "news-making-a-website",
           title: 'Making a website',
           description: "",
@@ -276,7 +287,14 @@ ninja.data = [{
 
 list_of_category_lists = [[],
     [],[],
-    [],[{id: "category-aminals-dog-egory",
+    [],[{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
+            },
+          },{id: "category-aminals-dog-egory",
             title: 'dog-egory',
             description: "dog-egory",
             section: "aminals categories",
