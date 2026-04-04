@@ -1,0 +1,36 @@
+<html>
+  <body>
+    <center>
+      <h1>Codenames Project</h1>
+      <h2 id="authors"><span>Maxwell Jones</span>; <span>Pranav Rajbhandari</span>; <span>Fiona Xie</span></h2>
+      <br />
+      <img src="/assets/img/cool_bunny.jpg">
+    </center>
+  </body>
+</html>
+
+<script>
+  function permute_children(element){
+    indices=[];
+    for (i=0;i<element.childElementCount;i++){
+      indices.push(i);
+    }
+    inner_htmls=[];
+    for (i=0;i<element.childElementCount;i++){
+      random_idx=indices.splice(Math.floor(Math.random()*indices.length),1)[0];
+      inner_htmls.push(element.children[random_idx].innerHTML);
+    }
+
+    for (i=0;i<element.childElementCount;i++){
+      element.children[i].innerHTML=inner_htmls[i];
+    }
+  }
+
+  function loop_permute_children(element,delay=50){
+    permute_children(element);
+    setTimeout(function(){loop_permute_children(element,delay=delay)}, delay);
+  }
+
+  loop_permute_children(document.getElementById("authors"))
+</script>
+
