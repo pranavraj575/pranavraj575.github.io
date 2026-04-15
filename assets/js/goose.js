@@ -262,3 +262,27 @@ let themeThemedStuff = (theme) => {
   }
   hide_and_reveal();
 };
+
+
+let permute_children = (element) => {
+  indices=[];
+  for (i=0;i<element.childElementCount;i++){
+    indices.push(i);
+  }
+  inner_htmls=[];
+  for (i=0;i<element.childElementCount;i++){
+    random_idx=indices.splice(Math.floor(Math.random()*indices.length),1)[0];
+    inner_htmls.push(element.children[random_idx].innerHTML);
+  }
+
+  for (i=0;i<element.childElementCount;i++){
+    element.children[i].innerHTML=inner_htmls[i];
+  }
+}
+
+let loop_permute_children = (element, delay, check_silly=false) => {
+  if (!check_silly || (document.documentElement.getAttribute("goose-setting")=="silly")){
+    permute_children(element);
+  }
+  setTimeout(function(){loop_permute_children(element,delay=delay)}, delay, check_silly=check_silly);
+}
