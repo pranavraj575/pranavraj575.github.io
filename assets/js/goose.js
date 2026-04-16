@@ -90,7 +90,9 @@ let toeRevealForFree = () => {
   for (var k=0;k<5;k++){
     var thingy=["losses","ties","wins","games","score"][k];
     var cnt=arrg[k];
-    for (var thing of document.getElementsByClassName("reveal-after-toe-"+thingy)){
+    stuff = document.getElementsByClassName("reveal-after-toe-"+thingy);
+    for (var i=0;i<stuff.length;i++){
+      thing=stuff[i];
       target=parseFloat(thing.getAttribute("toe-reveal-counter"));
       if(cnt>=target){
         markObjectReveal(thing);
@@ -99,7 +101,9 @@ let toeRevealForFree = () => {
         markObjectHide(thing);
       }
     }
-    for (var thing of document.getElementsByClassName("hide-after-toe-"+thingy)){
+    unstuff = document.getElementsByClassName("hide-after-toe-"+thingy);
+    for (var i=0;i<unstuff.length;i++){
+      thing=unstuff[i];
       target=parseFloat(thing.getAttribute("toe-reveal-counter"));
       if(cnt>=target){
         markObjectHide(thing);
@@ -183,43 +187,47 @@ let hide_and_reveal = () => {
 //  hiding only in a certian range is harder, will need to make two copies
 let gooseActivation = () => {
   var secrets_found = determineStepsFound();
-  for (var goose of document.getElementsByClassName("reveal-after-secrets")) {
-    secrets=parseInt(goose.getAttribute("reveal-counter"));
+  var silly_geese = document.getElementsByClassName("reveal-after-secrets");
+  var serious_geese = document.getElementsByClassName("hide-after-secrets");
+  for (var i = 0; i < silly_geese.length; i++) {
+    secrets=parseInt(silly_geese[i].getAttribute("reveal-counter"));
     if(secrets <= secrets_found){
       // if the number of secrets found is at least the number of secrets needed, we will reveal silly_geese[i]
-      markObjectReveal(goose);
+      markObjectReveal(silly_geese[i]);
     }
     else{
       // otherwise, we must hide this goose
-      markObjectHide(goose);
+      markObjectHide(silly_geese[i]);
     }
   }
-  for (var goose of document.getElementsByClassName("serious-goose") {
-    secrets=parseInt(goose.getAttribute("hide-counter"));
+  for (var i = 0; i < serious_geese.length; i++) {
+    secrets=parseInt(serious_geese[i].getAttribute("hide-counter"));
     if(secrets <= secrets_found){
       // if the number of secrets found is at least the number of secrets needed, we will hide serious_geese[i]
-      markObjectHide(goose);
+      markObjectHide(serious_geese[i]);
     }
     else{
       // otherwise, we will reveal this goose
-      markObjectReveal(goose);
+      markObjectReveal(serious_geese[i]);
     }
   }
 
+  var silly_geese = document.getElementsByClassName("silly-goose");
   var goose_setting = document.documentElement.getAttribute("goose-setting");
+  var serious_geese = document.getElementsByClassName("serious-goose");
 
-  for (var goose of document.getElementsByClassName("silly-goose")) {
+  for (var i = 0; i < silly_geese.length; i++) {
     if (goose_setting == "silly"){
-      markObjectReveal(goose);
+      markObjectReveal(silly_geese[i]);
     } else {
-      markObjectHide(goose);
+      markObjectHide(silly_geese[i]);
     }
   }
-  for (var goose of document.getElementsByClassName("serious-goose")) {
+  for (var i = 0; i < serious_geese.length; i++) {
     if (goose_setting == "silly"){
-      markObjectHide(goose);
+      markObjectHide(serious_geese[i]);
     } else {
-      markObjectReveal(goose);
+      markObjectReveal(serious_geese[i]);
     }
   }
   hide_and_reveal();
@@ -232,7 +240,9 @@ let initGoose = () => {
 };
 
 let themeThemedStuff = (theme) => {
-  for (var thing of document.getElementsByClassName("only-dark-theme")){
+  stuff = document.getElementsByClassName("only-dark-theme");
+  for (var i=0;i<stuff.length;i++){
+    thing = stuff[i];
     if(theme == 'dark'){
       markObjectReveal(thing);
     }
@@ -240,7 +250,9 @@ let themeThemedStuff = (theme) => {
       markObjectHide(thing);
     }
   }
-  for (var thing of document.getElementsByClassName("non-dark-theme")){
+  unstuff = document.getElementsByClassName("non-dark-theme");
+  for (var i=0;i<unstuff.length;i++){
+    thing=unstuff[i];
     if(theme == 'dark'){
       markObjectHide(thing);
     }
