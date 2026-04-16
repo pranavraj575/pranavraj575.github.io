@@ -247,9 +247,7 @@ let setVegaLiteTheme = (theme) => {
 };
 
 let setSpotlightTheme = (theme) => {
-  var spotlights = document.getElementsByClassName("spotlight-group");
-  for (var i=0;i<spotlights.length;i++){
-    var thingy = spotlights[i];
+  for (var thingy of document.getElementsByClassName("spotlight-group")){
     var stuff = thingy.getAttributeNames();
     if (theme=="light"){
       if (thingy.classList.contains("temp-spotlight-theme") || !stuff.includes("data-theme")){
