@@ -248,8 +248,7 @@ let themeThemedStuff = (theme) => {
       markObjectHide(thing);
     }
   }
-  unstuff = document.getElementsByClassName("non-dark-theme");
-  for (var i=0;i<unstuff.length;i++){
+  for (var thing of document.getElementsByClassName("non-dark-theme")){
     thing=unstuff[i];
     if(theme == 'dark'){
       markObjectHide(thing);
