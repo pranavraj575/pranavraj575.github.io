@@ -84,7 +84,7 @@ if(document.documentElement.getAttribute('goose-setting')=='silly'){
       for (permutator of document.getElementsByClassName(prefix+"permute-children")) {
         repeat_after=-1;
         if (permutator.hasAttribute(prefix+"permute-repeat-after")){
-          repeat_after = parseInt(permutatorgetAttribute(prefix+"permute-repeat-after"));
+          repeat_after = parseInt(permutator.getAttribute(prefix+"permute-repeat-after"));
         }
         permute_children(permutator, repeat_after);
       }
