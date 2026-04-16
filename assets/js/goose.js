@@ -90,9 +90,7 @@ let toeRevealForFree = () => {
   for (var k=0;k<5;k++){
     var thingy=["losses","ties","wins","games","score"][k];
     var cnt=arrg[k];
-    stuff = document.getElementsByClassName("reveal-after-toe-"+thingy);
-    for (var i=0;i<stuff.length;i++){
-      thing=stuff[i];
+    for (var thing of document.getElementsByClassName("reveal-after-toe-"+thingy)){
       target=parseFloat(thing.getAttribute("toe-reveal-counter"));
       if(cnt>=target){
         markObjectReveal(thing);
@@ -101,9 +99,7 @@ let toeRevealForFree = () => {
         markObjectHide(thing);
       }
     }
-    unstuff = document.getElementsByClassName("hide-after-toe-"+thingy);
-    for (var i=0;i<unstuff.length;i++){
-      thing=unstuff[i];
+    for (var thing of document.getElementsByClassName("hide-after-toe-"+thingy)){
       target=parseFloat(thing.getAttribute("toe-reveal-counter"));
       if(cnt>=target){
         markObjectHide(thing);
