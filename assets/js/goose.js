@@ -240,9 +240,7 @@ let initGoose = () => {
 };
 
 let themeThemedStuff = (theme) => {
-  stuff = document.getElementsByClassName("only-dark-theme");
-  for (var i=0;i<stuff.length;i++){
-    thing = stuff[i];
+  for (var thing of document.getElementsByClassName("only-dark-theme")){
     if(theme == 'dark'){
       markObjectReveal(thing);
     }
