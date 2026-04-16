@@ -463,13 +463,18 @@ if(document.documentElement.getAttribute('goose-setting')=='silly'){
 
 
 <script>
-  var permutators = document.getElementsByClassName("permute-children");
-  for (var i = 0; i < permutators.length; i++) {
-    delay=69;
-    check_silly=permutators[i].classList.contains("silly-permute");
-    if (permutators[i].hasAttribute("permute-delay")){
-      delay=parseInt(permutators[i].getAttribute("permute-delay"));
+  for (prefix of ["","silly","serious"]){
+    if ((prefix=="") || (document.documentElement.getAttribute('goose-setting')==prefix)){
+      if (prefix!=""){
+        prefix=prefix+"-"
+      }
+      for (permutator of document.getElementsByClassName(prefix+"permute-children")) {
+        repeat_after=-1;
+        if (permutator.hasAttribute(prefix+"permute-repeat-after")){
+          repeat_after = parseInt(permutatorgetAttribute(prefix+"permute-repeat-after"));
+        }
+        permute_children(permutator, repeat_after);
+      }
     }
-    loop_permute_children(permutators[i],delay,check_silly=check_silly);
   }
 </script>

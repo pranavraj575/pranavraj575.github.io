@@ -264,7 +264,7 @@ let themeThemedStuff = (theme) => {
 };
 
 
-let permute_children = (element) => {
+let permute_children_help = (element) => {
   indices=[];
   for (i=0;i<element.childElementCount;i++){
     indices.push(i);
@@ -280,9 +280,9 @@ let permute_children = (element) => {
   }
 }
 
-let loop_permute_children = (element, delay, check_silly=false) => {
-  if (!check_silly || (document.documentElement.getAttribute("goose-setting")=="silly")){
-    permute_children(element);
+let permute_children = (element, repeat_after=-1) => {
+  permute_children_help(element);
+  if (repeat_after >= 0){
+    setTimeout(function(){permute_children(element,repeat_after=repeat_after)}, repeat_after);
   }
-  setTimeout(function(){loop_permute_children(element,delay=delay)}, delay, check_silly=check_silly);
 }

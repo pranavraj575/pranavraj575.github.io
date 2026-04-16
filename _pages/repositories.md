@@ -41,7 +41,7 @@ remove_dead_pixel: false
 
 ## github repositories
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center permute-children silly-permute" permute-delay="2000">
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center silly-permute-children" silly-permute-repeat-after="6969">
   {% for repo in site.data.repositories.github_repos %}
     {% include repository/repo.liquid repository=repo %}
   {% endfor %}
