@@ -105,7 +105,7 @@ remove_dead_pixel: false
 
 {% endif %}
 
-  <ul class="post-list">
+  <ul class="post-list permute-children" permute-delay="69420">
 
     {% if page.pagination.enabled %}
       {% assign postlist = paginator.posts %}
