@@ -66,7 +66,7 @@ remove_dead_pixel: false
 </svg>
           <span class="color-fg-default text-bold mr-1">Python</span>
           <span>100.0%</span></td></tr></tbody></table> </td> </tr>
-            <tr>  </tr>
+            <tr> {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/sperners_lemon/refs/heads/main/img/sample_2_simplex.png" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="https://raw.githubusercontent.com/pranavraj575/sperners_lemon/refs/heads/main/img/sample_2_simplex.png" %}" </tr>
         </tbody>
     </table> 
 </div></a></div>
