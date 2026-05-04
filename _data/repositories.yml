@@ -16,5 +16,5 @@ github_repo_images:
     image: https://raw.githubusercontent.com/pranavraj575/aleph0_game/refs/heads/main/images/sample_large_jenga_game.gif
   - name: pranavraj575/BERTeam
     image: /assets/img/publication_preview/berteam_coevolution.gif
-  - name: sperners_lemon
+  - name: pranavraj575/sperners_lemon
     image: https://raw.githubusercontent.com/pranavraj575/sperners_lemon/refs/heads/main/img/sample_2_simplex.png
