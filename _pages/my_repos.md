@@ -11,7 +11,7 @@ remove_dead_pixel: false
 ## github repositories
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center silly-permute-children list-groups" silly-permute-repeat-after="6969">
 <div class="list-group col-md-6"><a href="https://github.com/pranavraj575/polyhedra_cut_locus" style="text-decoration:none;">
-<div class="card mt-3 p-3">
+<div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
     <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
         <tbody>
             <tr> <td class="p-1 pl-2 font-weight-bold"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> pranavraj575/polyhedra_cut_locus </b></td> </tr> 
@@ -25,7 +25,7 @@ remove_dead_pixel: false
     </table> 
 </div></a></div>
 <div class="list-group col-md-6"><a href="https://github.com/pranavraj575/aleph0_game" style="text-decoration:none;">
-<div class="card mt-3 p-3">
+<div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
     <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
         <tbody>
             <tr> <td class="p-1 pl-2 font-weight-bold"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> pranavraj575/aleph0_game </b></td> </tr> 
@@ -39,7 +39,7 @@ remove_dead_pixel: false
     </table> 
 </div></a></div>
 <div class="list-group col-md-6"><a href="https://github.com/pranavraj575/BERTeam" style="text-decoration:none;">
-<div class="card mt-3 p-3">
+<div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
     <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
         <tbody>
             <tr> <td class="p-1 pl-2 font-weight-bold"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> pranavraj575/BERTeam </b></td> </tr> 
@@ -53,7 +53,7 @@ remove_dead_pixel: false
     </table> 
 </div></a></div>
 <div class="list-group col-md-6"><a href="https://github.com/pranavraj575/sperners_lemon" style="text-decoration:none;">
-<div class="card mt-3 p-3">
+<div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
     <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
         <tbody>
             <tr> <td class="p-1 pl-2 font-weight-bold"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> pranavraj575/sperners_lemon </b></td> </tr> 
