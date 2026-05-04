@@ -72,12 +72,12 @@ for repo in data['github_repos']:
             thing = '{%' \
                     ' include figure.liquid' \
                     ' loading="eager"' \
-                    f' path={img_src}' \
+                    f' path="{img_src}"' \
                     ' sizes = "200px"' \
                     ' class="preview z-depth-1"' \
                     ' zoomable=true' \
                     ' avoid_scaling=true' \
-                    f' alt={img_src}' \
+                    f' alt="{img_src}"' \
                     ' %}"'
         print(thing)
         full_thing = full_thing.replace("MAYBE_IMAGE", thing)
