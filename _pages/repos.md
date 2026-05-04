@@ -9,7 +9,7 @@ og_image: /assets/img/cool_bunny.jpg
 remove_dead_pixel: false
 ---
 ## github repositories
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center silly-permute-children list-groups" silly-permute-repeat-after="6969">
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center permute-children list-groups">
 <div class="list-group col-md-6">
 <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
     <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
