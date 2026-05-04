@@ -4,11 +4,11 @@ import yaml
 
 DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-with open(os.path.join(DIR, '_data', 'repositories.yml'), 'r') as f:
+with open(os.path.join(DIR, "_data", "repositories.yml"), "r") as f:
     data = yaml.safe_load(f)
 repo_to_img = dict()
-for item in data['github_repo_images']:
-    repo_to_img[item['name']] = item['image']
+for item in data["github_repo_images"]:
+    repo_to_img[item["name"]] = item["image"]
 repo_html = """
 <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
     <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
@@ -20,73 +20,82 @@ repo_html = """
         </tbody>
     </table> 
 </div>"""
-generated_stuff = ''
-for repo in data['github_repos']:
-    print('reading', repo)
-    url = f'https://github.com/{repo}'
+generated_stuff = ""
+for repo in data["github_repos"]:
+    print("reading", repo)
+    url = f"https://github.com/{repo}"
     response = requests.get(url)
 
     s = response.text
     # get description from description meta tag
     description = None
-    while '<meta' in s:
-        s = s[s.index('<meta'):]
-        meta_tag = s[:1 + s.index('>')]
-        s = s[1 + s.index('>'):]
+    while "<meta" in s:
+        s = s[s.index("<meta") :]
+        meta_tag = s[: 1 + s.index(">")]
+        s = s[1 + s.index(">") :]
         if 'name="description"' in meta_tag:
-            description = meta_tag[meta_tag.index('content="') + 9:]
+            description = meta_tag[meta_tag.index('content="') + 9 :]
             if f' - {repo}"' in description:
-                description = description[:description.index(f' - {repo}"')]
+                description = description[: description.index(f' - {repo}"')]
             else:
-                description = 'no description provided'
+                description = "no description provided"
     # get languages list from html
     # pattern is <div ...> <h2 class="h4 tmp-mb-3">Languages</h2> .... </div>
-    temp = response.text[response.text.index('<h2 class="h4 tmp-mb-3">Languages</h2>'):]
+    temp = response.text[response.text.index('<h2 class="h4 tmp-mb-3">Languages</h2>') :]
     i = 0
-    while temp[:i].count('</div') <= temp[:i].count('<div'):
+    while temp[:i].count("</div") <= temp[:i].count("<div"):
         i += 1
     languages_html_og = temp[:i]
-    languages_html_og = languages_html_og[languages_html_og.index('<ul'):languages_html_og.index('</ul>') + 5]
-    fill = languages_html_og[languages_html_og.index('style="color:') + len('style="color:'):]
-    fill = fill[:fill.index(';')]
-    languages_html_og = languages_html_og.replace('></path>', f' fill="{fill}"></path>')
+    languages_html_og = languages_html_og[languages_html_og.index("<ul") : languages_html_og.index("</ul>") + 5]
+    fill = languages_html_og[languages_html_og.index('style="color:') + len('style="color:') :]
+    fill = fill[: fill.index(";")]
+    languages_html_og = languages_html_og.replace("></path>", f' fill="{fill}"></path>')
 
     temp = languages_html_og
     languages = []
     while '<li class="d-inline">' in temp:
-        temp = temp[temp.index('<li class="d-inline">') + len('<li class="d-inline">'):]
-        temp = temp[:temp.index('</li>')].strip()
+        temp = temp[temp.index('<li class="d-inline">') + len('<li class="d-inline">') :]
+        temp = temp[: temp.index("</li>")].strip()
         # remove <a> tag
-        temp = temp[temp[1:].index('>') + 2:temp.index('</a>')].strip()
+        temp = temp[temp[1:].index(">") + 2 : temp.index("</a>")].strip()
         languages.append(temp)
-    languages_html = '<table><tbody><tr><td>' + '</td><td>'.join(languages) + '</td></tr></tbody></table>'
+    languages_html = "<table><tbody><tr><td>" + "</td><td>".join(languages) + "</td></tr></tbody></table>"
 
-    full_thing = repo_html.replace("TITLE", repo).replace("DESCRIPTION", description).replace("LANGUAGES",
-                                                                                              languages_html).replace("URL",url)
+    full_thing = (
+        repo_html.replace("TITLE", repo)
+        .replace("DESCRIPTION", description)
+        .replace("LANGUAGES", languages_html)
+        .replace("URL", url)
+    )
     if repo in repo_to_img:
         img_src = repo_to_img[repo]
-        thing = '{%' \
-                ' include figure.liquid' \
-                ' loading="eager"' \
-                f' path="{img_src}"' \
-                ' sizes = "200px"' \
-                ' class="preview z-depth-1"' \
-                ' zoomable=true' \
-                ' avoid_scaling=true' \
-                f' alt="{img_src}"' \
-                ' %}'
+        thing = (
+            "{%"
+            " include figure.liquid"
+            ' loading="eager"'
+            f' path="{img_src}"'
+            ' sizes = "200px"'
+            ' class="preview z-depth-1"'
+            " zoomable=true"
+            " avoid_scaling=true"
+            f' alt="{img_src}"'
+            " %}"
+        )
         full_thing = full_thing.replace("MAYBE_IMAGE", thing)
     else:
-        full_thing = full_thing.replace("MAYBE_IMAGE", '')
+        full_thing = full_thing.replace("MAYBE_IMAGE", "")
     full_thing = f'<div class="list-group col-md-6">{full_thing}</div>\n'
     generated_stuff += full_thing
-generated_stuff = (f'<div class="repositories d-flex flex-wrap flex-md-row '
-                   f'flex-column justify-content-between align-items-center '
-                   f'silly-permute-children list-groups" '
-                   f'silly-permute-repeat-after="6969">\n{generated_stuff}\n</div>')
+generated_stuff = (
+    f'<div class="repositories d-flex flex-wrap flex-md-row '
+    f"flex-column justify-content-between align-items-center "
+    f'silly-permute-children list-groups" '
+    f'silly-permute-repeat-after="6969">\n{generated_stuff}\n</div>'
+)
 print(generated_stuff)
 
-page = """---
+page = (
+    """---
 layout: page # DONT EDIT THIS FILE DIRECLTY! this was generated with repos.py, edit that instead
 permalink: /repos/
 title: repositories
@@ -97,6 +106,8 @@ og_image: /assets/img/cool_bunny.jpg
 remove_dead_pixel: false
 ---
 ## github repositories
-""" + generated_stuff
-with open(os.path.join(DIR, "_pages", "repos.md"), 'w', encoding='utf-8') as f:
+"""
+    + generated_stuff
+)
+with open(os.path.join(DIR, "_pages", "repos.md"), "w", encoding="utf-8") as f:
     f.write(page)
