@@ -89,8 +89,7 @@ for repo in data["github_repos"]:
 generated_stuff = (
     f'<div class="repositories d-flex flex-wrap flex-md-row '
     f"flex-column justify-content-between align-items-center "
-    f'silly-permute-children list-groups" '
-    f'silly-permute-repeat-after="6969">\n{generated_stuff}\n</div>'
+    f'permute-children list-groups">\n{generated_stuff}\n</div>'
 )
 print(generated_stuff)
 
