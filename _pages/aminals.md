@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /aminals/
-title: "animal photos"
+title: "animals"
 nav: true
 nav_order: 4
 og_image: /assets/img/cool_bunny.jpg
