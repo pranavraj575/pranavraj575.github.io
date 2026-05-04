@@ -288,7 +288,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/aminals/2019/peak/";
+            window.location.href = "/aminals/2019/everest/";
           
         },
       },{id: "news-making-a-website",
