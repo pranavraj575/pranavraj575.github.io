@@ -74,7 +74,7 @@ for repo in data['github_repos']:
                 ' zoomable=true' \
                 ' avoid_scaling=true' \
                 f' alt="{img_src}"' \
-                ' %}"'
+                ' %}'
         full_thing = full_thing.replace("MAYBE_IMAGE", thing)
     else:
         full_thing = full_thing.replace("MAYBE_IMAGE", '')
@@ -98,5 +98,5 @@ remove_dead_pixel: false
 ---
 ## github repositories
 """ + generated_stuff
-with open(os.path.join(DIR, "_pages", "my_repos.md"), 'w', encoding='utf-8') as f:
+with open(os.path.join(DIR, "_pages", "repos.md"), 'w', encoding='utf-8') as f:
     f.write(page)
