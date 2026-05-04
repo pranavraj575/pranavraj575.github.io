@@ -16,7 +16,7 @@ repo_html = """
             <tr> <td class="p-1 pl-2 font-weight-bold"><a href="URL"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> TITLE </b></a></td></tr> 
             <tr> <td class="p-1 pl-2 text"> DESCRIPTION </td> </tr>
             <tr> <td class="p-1 pl-2 text"> LANGUAGES </td> </tr>
-            <tr> MAYBE_IMAGE </tr>
+            MAYBE_IMAGE
         </tbody>
     </table> 
 </div>"""
@@ -70,7 +70,7 @@ for repo in data["github_repos"]:
     if repo in repo_to_img:
         img_src = repo_to_img[repo]
         thing = (
-            "{%"
+            "<tr>{%"
             " include figure.liquid"
             ' loading="eager"'
             f' path="{img_src}"'
@@ -79,7 +79,7 @@ for repo in data["github_repos"]:
             " zoomable=true"
             " avoid_scaling=true"
             f' alt="{img_src}"'
-            " %}"
+            " %}</tr>"
         )
         full_thing = full_thing.replace("MAYBE_IMAGE", thing)
     else:
