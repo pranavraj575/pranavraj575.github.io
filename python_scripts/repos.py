@@ -31,7 +31,10 @@ for repo in data['github_repos']:
         s = s[1 + s.index('>'):]
         if 'name="description"' in meta_tag:
             description = meta_tag[meta_tag.index('content="') + 9:]
-            description = description[:description.index(f' - {repo}"')]
+            if f' - {repo}"' in description:
+                description = description[:description.index(f' - {repo}"')]
+            else:
+                description = 'no description provided'
     # get languages list from html
     # pattern is <div ...> <h2 class="h4 tmp-mb-3">Languages</h2> .... </div>
     temp = response.text[response.text.index('<h2 class="h4 tmp-mb-3">Languages</h2>'):]
