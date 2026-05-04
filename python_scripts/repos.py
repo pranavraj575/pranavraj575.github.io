@@ -13,7 +13,7 @@ repo_html = """
 <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
     <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
         <tbody>
-            <tr> <td class="p-1 pl-2 font-weight-bold"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> TITLE </b></td> </tr> 
+            <tr> <td class="p-1 pl-2 font-weight-bold"><a href="URL" style="text-decoration:none;"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> TITLE </b></a></td></tr> 
             <tr> <td class="p-1 pl-2 text"> DESCRIPTION </td> </tr>
             <tr> <td class="p-1 pl-2 text"> LANGUAGES </td> </tr>
             <tr> MAYBE_IMAGE </tr>
@@ -62,7 +62,7 @@ for repo in data['github_repos']:
     languages_html = '<table><tbody><tr><td>' + '</td><td>'.join(languages) + '</td></tr></tbody></table>'
 
     full_thing = repo_html.replace("TITLE", repo).replace("DESCRIPTION", description).replace("LANGUAGES",
-                                                                                              languages_html)
+                                                                                              languages_html).replace("URL",url)
     if repo in repo_to_img:
         img_src = repo_to_img[repo]
         thing = '{%' \
@@ -78,7 +78,7 @@ for repo in data['github_repos']:
         full_thing = full_thing.replace("MAYBE_IMAGE", thing)
     else:
         full_thing = full_thing.replace("MAYBE_IMAGE", '')
-    full_thing = f'<div class="list-group col-md-6"><a href="{url}" style="text-decoration:none;">{full_thing}</a></div>\n'
+    full_thing = f'<div class="list-group col-md-6">{full_thing}</div>\n'
     generated_stuff += full_thing
 generated_stuff = (f'<div class="repositories d-flex flex-wrap flex-md-row '
                    f'flex-column justify-content-between align-items-center '
