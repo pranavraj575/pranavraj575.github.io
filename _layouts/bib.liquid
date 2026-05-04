@@ -27,21 +27,21 @@
       {% endif %}
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1" src="{{ entry.preview }}">
+          {% assign entry_path = entry.preview %}
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
-          {%
-            include figure.liquid
-            loading="eager"
-            path=entry_path
-            sizes = "200px"
-            class="preview z-depth-1"
-            zoomable=true
-            avoid_scaling=true
-            alt=entry.preview
-            title=entry.title
-          %}
         {% endif %}
+        {%
+          include figure.liquid
+          loading="eager"
+          path=entry_path
+          sizes = "200px"
+          class="preview z-depth-1"
+          zoomable=true
+          avoid_scaling=true
+          alt=entry.preview
+          title=entry.title
+        %}
       {% endif %}
     </div>
   {% endif %}
