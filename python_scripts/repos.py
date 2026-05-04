@@ -16,7 +16,7 @@ repo_html = """
             <tr> <td class="p-1 pl-2 font-weight-bold"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> TITLE </b></td> </tr> 
             <tr> <td class="p-1 pl-2 text"> DESCRIPTION </td> </tr>
             <tr> <td class="p-1 pl-2 text"> LANGUAGES </td> </tr>
-            MAYBE_IMAGE
+            <tr> MAYBE_IMAGE </tr>
         </tbody>
     </table> 
 </div>"""
