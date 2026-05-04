@@ -33,8 +33,8 @@ ninja.data = [{
             window.location.href = "/repos/";
           },
           
-        },{id: "nav-animal-photos",
-          title: "animal photos",
+        },{id: "nav-animals",
+          title: "animals",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -280,6 +280,17 @@ ninja.data = [{
             window.location.href = "/aminals/2024/ralph/";
           
         },
+      },{id: "post-its-peak",
+        
+          title: "its peak",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2019/peak/";
+          
+        },
       },{id: "news-making-a-website",
           title: 'Making a website',
           description: "",
@@ -287,7 +298,21 @@ ninja.data = [{
 
 list_of_category_lists = [[],
     [],[],
-    [],[{id: "category-aminals-cat-egory",
+    [],[{id: "category-aminals-dog-egory",
+            title: 'dog-egory',
+            description: "dog-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/dog-egory";
+            },
+          },{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
+            },
+          },{id: "category-aminals-cat-egory",
             title: 'cat-egory',
             description: "cat-egory",
             section: "aminals categories",
