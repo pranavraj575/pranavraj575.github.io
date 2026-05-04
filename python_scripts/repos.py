@@ -65,21 +65,16 @@ for repo in data['github_repos']:
                                                                                               languages_html)
     if repo in repo_to_img:
         img_src = repo_to_img[repo]
-        print(img_src)
-        if '://' in img_src:
-            thing = '<img class="preview z-depth-1" src="' + img_src + '">'
-        else:
-            thing = '{%' \
-                    ' include figure.liquid' \
-                    ' loading="eager"' \
-                    f' path="{img_src}"' \
-                    ' sizes = "200px"' \
-                    ' class="preview z-depth-1"' \
-                    ' zoomable=true' \
-                    ' avoid_scaling=true' \
-                    f' alt="{img_src}"' \
-                    ' %}"'
-        print(thing)
+        thing = '{%' \
+                ' include figure.liquid' \
+                ' loading="eager"' \
+                f' path="{img_src}"' \
+                ' sizes = "200px"' \
+                ' class="preview z-depth-1"' \
+                ' zoomable=true' \
+                ' avoid_scaling=true' \
+                f' alt="{img_src}"' \
+                ' %}"'
         full_thing = full_thing.replace("MAYBE_IMAGE", thing)
     else:
         full_thing = full_thing.replace("MAYBE_IMAGE", '')
