@@ -13,7 +13,7 @@ repo_html = """
 <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
     <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
         <tbody>
-            <tr> <td class="p-1 pl-2 font-weight-bold"><a href="URL" style="text-decoration:none;"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> TITLE </b></a></td></tr> 
+            <tr> <td class="p-1 pl-2 font-weight-bold"><a href="URL"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> TITLE </b></a></td></tr> 
             <tr> <td class="p-1 pl-2 text"> DESCRIPTION </td> </tr>
             <tr> <td class="p-1 pl-2 text"> LANGUAGES </td> </tr>
             <tr> MAYBE_IMAGE </tr>
