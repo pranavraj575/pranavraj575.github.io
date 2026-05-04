@@ -1,6 +1,6 @@
 ---
-layout: page
-permalink: /my-repos/
+layout: page # DONT EDIT THIS FILE DIRECLTY! this was generated with repos.py, edit that instead
+permalink: /repos/
 title: repositories
 description: github repositories # Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
 nav: true
