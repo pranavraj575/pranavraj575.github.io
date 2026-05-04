@@ -5,15 +5,19 @@ from PIL import Image
 import numpy as np
 
 PARSER = argparse.ArgumentParser()
-PARSER.add_argument('--img-files-or-dirs', nargs='*', required=True,
-                    help='image to remove metadata of or dirs to search for all images'
-                    )
+PARSER.add_argument(
+    "--img-files-or-dirs",
+    nargs="*",
+    required=True,
+    help="image to remove metadata of or dirs to search for all images",
+)
 args = PARSER.parse_args()
 
-valid_ends = ['.jpg',
-              '.png',
-              '.jpeg',
-              ]
+valid_ends = [
+    ".jpg",
+    ".png",
+    ".jpeg",
+]
 img_files = []
 i = 0
 img_files_or_dirs = args.img_files_or_dirs
