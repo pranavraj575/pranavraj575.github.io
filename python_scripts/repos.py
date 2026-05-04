@@ -7,7 +7,7 @@ DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 with open(os.path.join(DIR, '_data', 'repositories.yml'), 'r') as f:
     data = yaml.safe_load(f)
 repo_html = """
-<div class="card mt-3 p-3">
+<div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
     <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
         <tbody>
             <tr> <td class="p-1 pl-2 font-weight-bold"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> TITLE </b></td> </tr> 
