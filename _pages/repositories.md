@@ -1,10 +1,9 @@
 ---
 layout: page
-permalink: /repos/
+permalink: /repos-old/
 title: repositories
 description: github repositories # Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
-nav: true
-nav_order: 3
+nav: false
 og_image: /assets/img/cool_bunny.jpg
 remove_dead_pixel: false
 ---
