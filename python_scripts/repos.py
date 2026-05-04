@@ -10,7 +10,7 @@ repo_html = """
 <div class="card mt-3 p-3">
     <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
         <tbody>
-            <tr> <td class="p-1 pl-2 font-weight-bold"><b> TITLE </b></td> </tr> 
+            <tr> <td class="p-1 pl-2 font-weight-bold"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> TITLE </b></td> </tr> 
             <tr> <td class="p-1 pl-2 text"> DESCRIPTION </td> </tr>
             <tr> <td class="p-1 pl-2 text"> LANGUAGES </td> </tr>
         </tbody>
@@ -59,7 +59,7 @@ for repo in data['github_repos']:
 
     full_thing = repo_html.replace("TITLE", repo).replace("DESCRIPTION", description).replace("LANGUAGES",
                                                                                               languages_html)
-    full_thing = f'<div class="list-group col-md-6"><a href="{url}">{full_thing}</a></div>\n'
+    full_thing = f'<div class="list-group col-md-6"><a href="{url}" style="text-decoration:none;">{full_thing}</a></div>\n'
     generated_stuff += full_thing
 generated_stuff = (f'<div class="repositories d-flex flex-wrap flex-md-row '
                    f'flex-column justify-content-between align-items-center '
