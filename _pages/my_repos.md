@@ -21,6 +21,7 @@ remove_dead_pixel: false
 </svg>
           <span class="color-fg-default text-bold mr-1">Python</span>
           <span>100.0%</span></td></tr></tbody></table> </td> </tr>
+            <img class="preview z-depth-1" src="https://raw.githubusercontent.com/pranavraj575/polyhedra_cut_locus/refs/heads/main/images/octahedron/voronoi_star_demo.gif">
         </tbody>
     </table> 
 </div></a></div>
@@ -35,6 +36,7 @@ remove_dead_pixel: false
 </svg>
           <span class="color-fg-default text-bold mr-1">Python</span>
           <span>100.0%</span></td></tr></tbody></table> </td> </tr>
+            <img class="preview z-depth-1" src="https://raw.githubusercontent.com/pranavraj575/aleph0_game/refs/heads/main/images/sample_large_jenga_game.gif">
         </tbody>
     </table> 
 </div></a></div>
@@ -49,6 +51,7 @@ remove_dead_pixel: false
 </svg>
           <span class="color-fg-default text-bold mr-1">Python</span>
           <span>100.0%</span></td></tr></tbody></table> </td> </tr>
+            {% include figure.liquid loading="eager" path=/assets/img/publication_preview/berteam_coevolution.gif sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt=/assets/img/publication_preview/berteam_coevolution.gif %}"
         </tbody>
     </table> 
 </div></a></div>
@@ -63,6 +66,7 @@ remove_dead_pixel: false
 </svg>
           <span class="color-fg-default text-bold mr-1">Python</span>
           <span>100.0%</span></td></tr></tbody></table> </td> </tr>
+            
         </tbody>
     </table> 
 </div></a></div>

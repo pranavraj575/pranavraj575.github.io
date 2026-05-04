@@ -6,6 +6,9 @@ DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 with open(os.path.join(DIR, '_data', 'repositories.yml'), 'r') as f:
     data = yaml.safe_load(f)
+repo_to_img = dict()
+for item in data['github_repo_images']:
+    repo_to_img[item['name']] = item['image']
 repo_html = """
 <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
     <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
@@ -13,6 +16,7 @@ repo_html = """
             <tr> <td class="p-1 pl-2 font-weight-bold"><i class="fa-brands fa-github" style="color:#420dab"></i>&nbsp;<b> TITLE </b></td> </tr> 
             <tr> <td class="p-1 pl-2 text"> DESCRIPTION </td> </tr>
             <tr> <td class="p-1 pl-2 text"> LANGUAGES </td> </tr>
+            MAYBE_IMAGE
         </tbody>
     </table> 
 </div>"""
@@ -59,6 +63,26 @@ for repo in data['github_repos']:
 
     full_thing = repo_html.replace("TITLE", repo).replace("DESCRIPTION", description).replace("LANGUAGES",
                                                                                               languages_html)
+    if repo in repo_to_img:
+        img_src = repo_to_img[repo]
+        print(img_src)
+        if '://' in img_src:
+            thing = '<img class="preview z-depth-1" src="' + img_src + '">'
+        else:
+            thing = '{%' \
+                    ' include figure.liquid' \
+                    ' loading="eager"' \
+                    f' path={img_src}' \
+                    ' sizes = "200px"' \
+                    ' class="preview z-depth-1"' \
+                    ' zoomable=true' \
+                    ' avoid_scaling=true' \
+                    f' alt={img_src}' \
+                    ' %}"'
+        print(thing)
+        full_thing = full_thing.replace("MAYBE_IMAGE", thing)
+    else:
+        full_thing = full_thing.replace("MAYBE_IMAGE", '')
     full_thing = f'<div class="list-group col-md-6"><a href="{url}" style="text-decoration:none;">{full_thing}</a></div>\n'
     generated_stuff += full_thing
 generated_stuff = (f'<div class="repositories d-flex flex-wrap flex-md-row '
