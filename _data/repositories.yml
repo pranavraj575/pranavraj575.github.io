@@ -8,6 +8,7 @@ github_repos:
   - pranavraj575/aleph0_game
   - pranavraj575/BERTeam
   - pranavraj575/sperners_lemon
+  - pranavraj575/config_networks
 
 github_repo_images:
   - name: pranavraj575/polyhedra_cut_locus
