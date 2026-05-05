@@ -15,17 +15,17 @@ icon = """<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" 
 </svg>"""
 repo_html = (
     """
-<div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
-    <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
-        <tbody>
-            <tr> <td class="p-1 pl-2 font-weight-bold">"""
+    <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
+        <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
+            <tbody>
+                <tr> <td class="p-1 pl-2 font-weight-bold">"""
     + icon
-    + """&nbsp;&nbsp;<a href="URL"><b>TITLE</b></a></td></tr> 
+    + """&nbsp;<a href="URL"><b>TITLE</b></a></td></tr> 
             <tr> <td class="p-1 pl-2 text"> DESCRIPTION </td> </tr>
             <tr> <td class="p-1 pl-2 text"> LANGUAGES </td> </tr>
             MAYBE_IMAGE
         </tbody>
-    </table> 
+    </table>
 </div>"""
 )
 generated_stuff = ""
@@ -103,17 +103,17 @@ print(generated_stuff)
 
 page = (
     """---
-layout: page # DONT EDIT THIS FILE DIRECLTY! this was generated with repos.py, edit that instead
-permalink: /repos/
-title: repositories
-description: github repositories # Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
-nav: true
-nav_order: 3
-og_image: /assets/img/cool_bunny.jpg
-remove_dead_pixel: false
----
-## github repositories
-"""
+    layout: page # DONT EDIT THIS FILE DIRECLTY! this was generated with repos.py, edit that instead
+    permalink: /repos/
+    title: repositories
+    description: github repositories # Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+    nav: true
+    nav_order: 3
+    og_image: /assets/img/cool_bunny.jpg
+    remove_dead_pixel: false
+    ---
+    ## github repositories
+    """
     + generated_stuff
 )
 with open(os.path.join(DIR, "_pages", "repos.md"), "w", encoding="utf-8") as f:
