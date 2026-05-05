@@ -25,6 +25,14 @@ ninja.data = [{
             window.location.href = "/cv/";
           },
           
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "github repositories",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repos/";
+          },
+          
         },{id: "nav-animals",
           title: "animals",
           description: "",

@@ -9,25 +9,25 @@ with open(os.path.join(DIR, "_data", "repositories.yml"), "r") as f:
 repo_to_img = dict()
 for item in data["github_repo_images"]:
     repo_to_img[item["name"]] = item["image"]
-# icon="""<i class="fa-brands fa-github" style="color:#420dab"></i>"""
-icon = """<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 tmp-mr-1">
-    <path fill="var(--global-tip-block)" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
-</svg>"""
-repo_html = (
-    """
-    <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">
-        <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark"> 
-            <tbody>
-                <tr> <td class="p-1 pl-2 font-weight-bold">"""
-    + icon
-    + """&nbsp;<a href="URL"><b>TITLE</b></a></td></tr> 
-            <tr> <td class="p-1 pl-2 text"> DESCRIPTION </td> </tr>
-            <tr> <td class="p-1 pl-2 text"> LANGUAGES </td> </tr>
-            MAYBE_IMAGE
-        </tbody>
-    </table>
-</div>"""
+# icon="<i class="fa-brands fa-github" style="color:#420dab"></i>"
+icon = (
+    '<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 tmp-mr-1">'
+    '<path fill="var(--global-tip-block)" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>'
+    "</svg>"
 )
+repo_html = (
+    '<div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);">\n'
+    '    <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark">\n'
+    "        <tbody>\n"
+    '            <tr> <td class="p-1 pl-2 font-weight-bold">' + icon + '&nbsp;<a href="URL"><b>TITLE</b></a></td></tr>\n'
+    '            <tr> <td class="p-1 pl-2 text"> DESCRIPTION </td> </tr>\n'
+    '            <tr> <td class="p-1 pl-2 text"> LANGUAGES </td> </tr>\n'
+    "            MAYBE_IMAGE\n"
+    "        </tbody>\n"
+    "    </table>\n"
+    "</div>"
+)
+
 generated_stuff = ""
 for repo in data["github_repos"]:
     print("reading", repo)
@@ -66,6 +66,12 @@ for repo in data["github_repos"]:
         temp = temp[: temp.index("</li>")].strip()
         # remove <a> tag
         temp = temp[temp[1:].index(">") + 2 : temp.index("</a>")].strip()
+
+        # remove line breaks
+        temp = temp.replace("\n", " ")
+        # remove double whitespace
+        while "  " in temp:
+            temp = temp.replace("  ", " ")
         languages.append(temp)
     languages_html = "<table><tbody><tr><td>" + "</td><td>".join(languages) + "</td></tr></tbody></table>"
 
@@ -92,29 +98,28 @@ for repo in data["github_repos"]:
         full_thing = full_thing.replace("MAYBE_IMAGE", thing)
     else:
         full_thing = full_thing.replace("MAYBE_IMAGE", "")
-    full_thing = f'<div class="list-group col-md-6">{full_thing}</div>\n'
+    full_thing = f'<div class="list-group col-md-6">\n    {full_thing.replace("\n", "\n    ")}\n</div>\n'
     generated_stuff += full_thing
 generated_stuff = (
     f'<div class="repositories d-flex flex-wrap flex-md-row '
     f"flex-column justify-content-between align-items-center "
-    f'permute-children list-groups">\n{generated_stuff}\n</div>'
+    f'permute-children list-groups">\n    {generated_stuff.replace("\n", "\n    ")}\n</div>'
 )
 print(generated_stuff)
 
 page = (
-    """---
-    layout: page # DONT EDIT THIS FILE DIRECLTY! this was generated with repos.py, edit that instead
-    permalink: /repos/
-    title: repositories
-    description: github repositories # Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
-    nav: true
-    nav_order: 3
-    og_image: /assets/img/cool_bunny.jpg
-    remove_dead_pixel: false
-    ---
-    ## github repositories
-    """
-    + generated_stuff
+    "---\n"
+    "layout: page # DONT EDIT THIS FILE DIRECLTY! this was generated with repos.py, edit that instead\n"
+    "permalink: /repos/\n"
+    "title: repositories\n"
+    "description: github repositories # Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.\n"
+    "nav: true\n"
+    "nav_order: 3\n"
+    "og_image: /assets/img/cool_bunny.jpg\n"
+    "remove_dead_pixel: false\n"
+    "---\n"
+    "## github repositories\n" + generated_stuff
 )
+
 with open(os.path.join(DIR, "_pages", "repos.md"), "w", encoding="utf-8") as f:
     f.write(page)
