@@ -58,5 +58,4 @@ remove_dead_pixel: false
             </table>
         </div>
     </div>
-    
 </div>

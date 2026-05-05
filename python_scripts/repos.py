@@ -103,7 +103,7 @@ for repo in data["github_repos"]:
 generated_stuff = (
     f'<div class="repositories d-flex flex-wrap flex-md-row '
     f"flex-column justify-content-between align-items-center "
-    f'permute-children list-groups">\n    {generated_stuff.replace("\n", "\n    ")}\n</div>'
+    f'permute-children list-groups">\n    {generated_stuff.replace("\n", "\n    ").strip()}\n</div>\n'
 )
 print(generated_stuff)
 
