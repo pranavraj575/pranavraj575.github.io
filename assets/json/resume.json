@@ -493,8 +493,8 @@
       "mentor": "Tuomas Sandholm, Stephanie Rosenthal, Irina Gheorghiciuc, Mikael Kuusela",
       "startDate": "2026-01-05",
       "dateList": [
-        ["2026-01-05"],
-        ["2021-08-23","2022-12-21"]
+        ["2026-01-05", "2026-05-06"],
+        ["2021-08-23", "2022-12-21"]
       ],
       "notes": "15281 S26 (Tuomas), F21-F22 (Stephanie); 36218 F21 (Mikael); 15127 F22 (Irina);",
       "summary": "For <a href=\"https://www.cs.cmu.edu/~15281/\">'AI: Representation and Problem Solving'</a> (4 semesters), <a href=\"https://www.math.cmu.edu/~mradclif/teaching/127S19/syllabus.html\">'Concepts of Mathematics'</a> (1 semester), and <a href=\"https://jshuieh.github.io/syllabus/36218Syllabus.pdf\">'Probability Theory for Computer Scientists'</a> (1 semester)",
