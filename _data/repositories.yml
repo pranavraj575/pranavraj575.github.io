@@ -18,6 +18,6 @@ github_repo_images:
   - name: pranavraj575/BERTeam
     image: /assets/img/publication_preview/berteam_coevolution.gif
   - name: pranavraj575/sperners_lemon
-    image: https://raw.githubusercontent.com/pranavraj575/sperners_lemon/refs/heads/main/img/sample_2_simplex.png
+    image: https://raw.githubusercontent.com/pranavraj575/sperners_lemon/refs/heads/main/img/sperners_lemon.gif
   - name: pranavraj575/config_networks
     image: https://raw.githubusercontent.com/pranavraj575/config_networks/main/images/visualize_small_split_recombine_cnn.gif
