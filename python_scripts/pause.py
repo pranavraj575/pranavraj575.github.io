@@ -154,17 +154,6 @@ if "experience" in cv:
     f.write("\\cvsection{Experience} % ordered by start date\n\n")
     f.write("\\begin{cventries}\n")
     experiences = cv["experience"]
-    for i in range(len(experiences) - 1, -1, -1):
-        experience = experiences[i]
-        if "dateList" in experience:
-            experiences.pop(i)
-            if False:
-                for rng in experience["dateList"]:
-                    temp = experience.copy()
-                    temp["startDate"] = rng[0]
-                    if len(rng) == 2:
-                        temp["endDate"] = rng[1]
-                    experiences.append(temp)
     experiences = list(
         filter(
             lambda experience: experience.get("in_projects", "false") == "false",
@@ -195,10 +184,20 @@ if "experience" in cv:
         f.write(tab + "{" + experience.get("location", "") + "} % location\n")
 
         f.write(tab + "{")
-        if "startDate" in experience:
-            f.write(dateing(experience["startDate"]))
+
+        def write_date(start, end=None):
+            f.write(dateing(start))
             f.write(" - ")
-            f.write(dateing(experience["endDate"]) if "endDate" in experience else "Present")
+            f.write(dateing(end) if end is not None else "Present")
+
+        if "dateList" in experience:
+            for rng in experience["dateList"][:-1]:
+                write_date(*rng)
+                f.write("\\newline\n")
+            write_date(*experience["dateList"][-1])
+        else:
+            if "startDate" in experience:
+                write_date(experience["startDate"], experience.get("endDate", None))
         f.write("} % date\n")
 
         f.write(tab + "{\n")
