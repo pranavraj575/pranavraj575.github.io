@@ -570,21 +570,27 @@
   ],
   "activities": [
     {
-      "name": "Carnegie Mellon University Econ-CS Seminar Series",
+      "name": "CMU Econ-CS Seminar Series",
       "location": "Pittsburgh, USA",
       "startDate": "2025-08-01",
       "summary": "Member",
       "url": "https://cmueconcs.github.io/"
     },
     {
-      "name": "Carnegie Mellon University Super Informal Topology Discussion Group",
+      "name": "CMQ+",
+      "location": "Pittsburgh, USA",
+      "startDate": "2025-08-01",
+      "summary": "Member"
+    },
+    {
+      "name": "CMU Super Informal Topology Discussion Group",
       "location": "Pittsburgh, USA",
       "startDate": "2023-08-01",
       "endDate": "2024-05-12",
       "summary": "Presenter, Member"
     },
     {
-      "name": "Carnegie Mellon University Track & Field",
+      "name": "CMU Track & Field",
       "location": "Pittsburgh, USA",
       "startDate": "2020-08-01",
       "endDate": "2024-05-12",
@@ -592,7 +598,7 @@
       "url": "https://athletics.cmu.edu/sports/mtrack/2023-24/bios/rajbhandari_pranav_4k5t"
     },
     {
-      "name": "Carnegie Mellon University PRISM Club",
+      "name": "CMU PRISM Club",
       "location": "Pittsburgh, USA",
       "startDate": "2020-08-01",
       "endDate": "2024-05-12",
