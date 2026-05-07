@@ -437,8 +437,8 @@
       "endDate": "2024-05-12",
       "in_projects": true,
       "dateList": [
-        ["2023-01-17","2024-05-12"],
-        ["2021-02-15","2022-05-12"]
+        ["2023-01-17", "2024-05-12"],
+        ["2021-02-15", "2022-05-12"]
       ],
       "highlights": [
         "Worked in Department of Mathematical Sciences on project \"Geodesic complexity? It's actually quite simplex\"",
@@ -457,9 +457,9 @@
       "endDate": "2024-10-16",
       "in_projects": true,
       "dateList": [
-        ["2024-01-19","2024-10-16"],
-        ["2023-05-22","2023-08-11"],
-        ["2022-05-23","2022-08-12"]
+        ["2024-01-19", "2024-10-16"],
+        ["2023-05-22", "2023-08-11"],
+        ["2022-05-23", "2022-08-12"]
       ],
       "highlights": [
         "Worked in the Distributed Autonomous Systems Group on project \"Transformer guided coevolution: Team selection in multiagent adversarial games\"",
