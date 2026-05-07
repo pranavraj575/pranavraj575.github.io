@@ -546,22 +546,26 @@
     {
       "title": "Dean’s List, High Honors (8 semesters)",
       "date": "2024-05-12",
-      "awarder": "Carnegie Mellon University"
+      "awarder": "Carnegie Mellon University",
+      "url": "https://www.cs.cmu.edu/education/undergraduate/deans-list"
     },
     {
       "title": "Senior Leadership Recognition Award",
       "date": "2024-05-10",
-      "awarder": "Carnegie Mellon University"
+      "awarder": "Carnegie Mellon University",
+      "url": "https://www.cmu.edu/student-affairs/celd/leadership-development/senior-leadership"
     },
     {
       "title": "Dr. William Brown Academic Achievement Award",
       "date": "2024-05-01",
-      "awarder": "Carnegie Mellon University"
+      "awarder": "Carnegie Mellon University",
+      "url":"https://athletics.cmu.edu/generalnews/2023-2024/banquet2024#:~:text=Pranav%20Rajbhandari"
     },
     {
       "title": "Tartan Leaders of Tomorrow",
       "date": "2024-05-01",
-      "awarder": "Carnegie Mellon University"
+      "awarder": "Carnegie Mellon University",
+      "url": "https://athletics.cmu.edu/athletics/tartanleaders/index"
     },
     {
       "title": "Winner of AI/ML Innovation Challenge",
