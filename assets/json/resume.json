@@ -425,7 +425,8 @@
         "Worked in the Bioengineering Group on project \"Fine Tuning Swimming Locomotion Learned from Mosquito Larvae\""
       ],
       "hours": "40",
-      "logo": "/assets/img/icons/unsw.png"
+      "logo": "/assets/img/icons/unsw.png",
+      "name_url": "https://www.bioeng-unsw.com/"
     },
     {
       "name": "Carnegie Mellon University",
@@ -468,7 +469,8 @@
         "Worked in the Adaptive Systems Section on project \"Comparing Transfer Learning Methods for Continuous Reinforcement Learning\""
       ],
       "hours": "40",
-      "logo": "/assets/img/icons/nrl_blue.png"
+      "logo": "/assets/img/icons/nrl_blue.png",
+      "name_url": "https://www.nrl.navy.mil/"
     },
     {
       "name": "National Aeronautics and Space Administration",
@@ -484,7 +486,8 @@
         "Processed historical data and created models to approximate decision processes using Python and R"
       ],
       "hours": "20",
-      "logo": "/assets/img/icons/nassa.png"
+      "logo": "/assets/img/icons/nassa.png",
+      "name_url": "https://www.nasa.gov/ames/"
     },
     {
       "name": "Carnegie Mellon University",
