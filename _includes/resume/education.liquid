@@ -80,7 +80,7 @@
                       <tr> <td></td>
                         {% assign hover_title = "" %}
                         {% if course.id %}{% assign hover_title = course.id %}{% endif %}
-                        {% if course.semester %}{% assign hover_title = hover_title | append: "(" | append: course.semester | append: ")" %}{% endif %}
+                        {% if course.semester %}{% assign hover_title = hover_title | append: " (" | append: course.semester | append: ")" %}{% endif %}
                         <td class="list-group-name"{% if hover_title %} title="{{ hover_title }}"{% endif %}>
                           {% if course.url %}
                             • <a href="{{ course.url }}" style="color:var(--global-text-color)"><b>{{ course.name }}</b></a>
@@ -115,7 +115,10 @@
                   {% for course in topic.courses %}
                     <tr{% if course.silly %} class="silly-goose display-style-table-row"{% endif %}>
                       <td></td>
-                      <td class="list-group-name"{% if course.id %} title="{{ course.id }}"{% endif %}>
+                      {% assign hover_title = "" %}
+                      {% if course.id %}{% assign hover_title = course.id %}{% endif %}
+                      {% if course.semester %}{% assign hover_title = hover_title | append: " (" | append: course.semester | append: ")" %}{% endif %}
+                      <td class="list-group-name"{% if hover_title %} title="{{ hover_title }}"{% endif %}>
                         {% if course.url %}
                           • <a href="{{ course.url }}" style="color:var(--global-text-color)"><b>{{ course.name }}</b></a>
                         {% else %}
