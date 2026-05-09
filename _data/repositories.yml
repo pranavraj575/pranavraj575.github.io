@@ -4,12 +4,12 @@ github_users:
 repo_description_lines_max: 4
 
 github_repos:
-  - pranavraj575/polyhedra_cut_locus
+  - pranavraj575/big-dcop
   - pranavraj575/aleph0_game
-  - pranavraj575/BERTeam
+  - pranavraj575/polyhedra_cut_locus
   - pranavraj575/sperners_lemon
   - pranavraj575/config_networks
-  - pranavraj575/big-dcop
+  - pranavraj575/BERTeam
 
 github_repo_images:
   - name: pranavraj575/polyhedra_cut_locus
