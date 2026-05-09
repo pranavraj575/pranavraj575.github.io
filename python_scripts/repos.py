@@ -36,7 +36,7 @@ for repo in data["github_repos"]:
 
     s = response.text
     # get description from description meta tag
-    description = None
+    description = ""
     while "<meta" in s:
         s = s[s.index("<meta") :]
         meta_tag = s[: 1 + s.index(">")]
@@ -59,21 +59,24 @@ for repo in data["github_repos"]:
     fill = fill[: fill.index(";")]
     languages_html_og = languages_html_og.replace("></path>", f' fill="{fill}"></path>')
 
-    temp = languages_html_og
     languages = []
-    while '<li class="d-inline">' in temp:
-        temp = temp[temp.index('<li class="d-inline">') + len('<li class="d-inline">') :]
-        temp = temp[: temp.index("</li>")].strip()
-        # remove <a> tag
-        if "</a>" in temp:
-            temp = temp[temp[1:].index(">") + 2 : temp.index("</a>")].strip()
+    # split by list elements
+    for item in languages_html_og.split('</li>')[:-1]:
+        # start where the dot is next to languages, signified by svg
+        item=item[item.index('<svg '):].strip()
+        # remove the last tag (either is </a> or </span>
+        assert item.endswith('>'),item
+        while not item.endswith('</'):
+            item=item[:-1]
+        item=item[:-2]
 
         # remove line breaks
-        temp = temp.replace("\n", " ")
+        item = item.replace("\n", " ")
         # remove double whitespace
-        while "  " in temp:
-            temp = temp.replace("  ", " ")
-        languages.append(temp)
+        while "  " in item:
+            item = item.replace("  ", " ")
+        languages.append(item)
+
     languages_html = "<table><tbody><tr><td>" + "</td><td>".join(languages) + "</td></tr></tbody></table>"
 
     full_thing = (
