@@ -71,6 +71,7 @@ for repo in data["github_repos"]:
         fill = item[item.index('style="color:') + len('style="color:') :]
         fill = fill[: fill.index(";")]
         item = item.replace("></path>", f' fill="{fill}"></path>')
+        item = item.replace("<svg ", "<span><svg ").replace("</svg>", "</svg></span>")
 
         # remove line breaks
         item = item.replace("\n", " ")
