@@ -11,7 +11,7 @@ function getRandomDirection() {
     return dirs[Math.floor(Math.random() * dirs.length)]
 }
 
-//common code in ghost and pacman
+//common code in both ghost and pacman
 function getAgentDiv(dir='east', respawn=false){
     let agentDiv = document.createElement('div')
     agentDiv.classList.add('pacman')
