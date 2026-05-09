@@ -79,14 +79,18 @@ for repo in data["github_repos"]:
         while "  " in item:
             item = item.replace("  ", " ")
         languages.append(item)
-    if len(languages)==1:
-        width=12
-    elif len(languages)==3 or len(languages)>4:
-        width=4
+    if len(languages) == 1:
+        width = 12
+    elif len(languages) == 3 or len(languages) > 4:
+        width = 4
     else:
-        width=6
+        width = 6
 
-    languages_html = f'<div class="list-groups"> <div class="list-group col-md-{width}" style="margin-bottom:0px">' + f'</div><div class="list-group col-md-{width}" style="margin-bottom:0px">'.join(languages) + "</div></div>"
+    languages_html = (
+        f'<div class="list-groups"> <div class="list-group col-md-{width}" style="margin-bottom:0px">'
+        + f'</div><div class="list-group col-md-{width}" style="margin-bottom:0px">'.join(languages)
+        + "</div></div>"
+    )
 
     full_thing = (
         repo_html.replace("TITLE", repo)
