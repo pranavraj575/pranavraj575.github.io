@@ -65,7 +65,8 @@ for repo in data["github_repos"]:
         temp = temp[temp.index('<li class="d-inline">') + len('<li class="d-inline">') :]
         temp = temp[: temp.index("</li>")].strip()
         # remove <a> tag
-        temp = temp[temp[1:].index(">") + 2 : temp.index("</a>")].strip()
+        if "</a>" in temp:
+            temp = temp[temp[1:].index(">") + 2 : temp.index("</a>")].strip()
 
         # remove line breaks
         temp = temp.replace("\n", " ")
@@ -105,7 +106,6 @@ generated_stuff = (
     f"flex-column justify-content-between align-items-center "
     f'permute-children list-groups">\n    {generated_stuff.replace("\n", "\n    ").strip()}\n</div>\n'
 )
-print(generated_stuff)
 
 page = (
     "---\n"
