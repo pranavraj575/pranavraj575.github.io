@@ -10,6 +10,7 @@ github_repos:
   - pranavraj575/sperners_lemon
   - pranavraj575/config_networks
   - pranavraj575/BERTeam
+  - pranavraj575/UAV_routing_classification
 
 github_repo_images:
   - name: pranavraj575/polyhedra_cut_locus
@@ -24,3 +25,5 @@ github_repo_images:
     image: https://raw.githubusercontent.com/pranavraj575/config_networks/main/images/visualize_small_split_recombine_cnn.gif
   - name: pranavraj575/big-dcop
     image: https://raw.githubusercontent.com/pranavraj575/big-dcop/master/output/graph_color_gifs_readme/RM.gif
+  - name: pranavraj575/UAV_routing_classification
+    image: https://raw.githubusercontent.com/pranavraj575/UAV_routing_classification/main/map_generation/tsp_real_world_examples.gif
