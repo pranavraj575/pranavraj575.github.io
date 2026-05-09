@@ -55,20 +55,22 @@ for repo in data["github_repos"]:
         i += 1
     languages_html_og = temp[:i]
     languages_html_og = languages_html_og[languages_html_og.index("<ul") : languages_html_og.index("</ul>") + 5]
-    fill = languages_html_og[languages_html_og.index('style="color:') + len('style="color:') :]
-    fill = fill[: fill.index(";")]
-    languages_html_og = languages_html_og.replace("></path>", f' fill="{fill}"></path>')
 
     languages = []
     # split by list elements
-    for item in languages_html_og.split('</li>')[:-1]:
-        # start where the dot is next to languages, signified by svg
-        item=item[item.index('<svg '):].strip()
-        # remove the last tag (either is </a> or </span>
-        assert item.endswith('>'),item
-        while not item.endswith('</'):
-            item=item[:-1]
-        item=item[:-2]
+    for item in languages_html_og.split("</li>")[:-1]:
+        # start with start of list item, remove this tag
+        item = item[item.index("<li") + 3 :]
+        while item.index(">") < item.index("<"):
+            item = item[1:]
+
+        item = item.replace("<a ", "<span ").replace("</a>", "</span>").strip()
+        assert item.startswith("<span ")
+        item = item[:6] + 'style="margin-right: 16px;" ' + item[6:]
+
+        fill = item[item.index('style="color:') + len('style="color:') :]
+        fill = fill[: fill.index(";")]
+        item = item.replace("></path>", f' fill="{fill}"></path>')
 
         # remove line breaks
         item = item.replace("\n", " ")
