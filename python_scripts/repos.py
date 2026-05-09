@@ -36,7 +36,7 @@ for repo in data["github_repos"]:
 
     s = response.text
     # get description from description meta tag
-    description = None
+    description = ""
     while "<meta" in s:
         s = s[s.index("<meta") :]
         meta_tag = s[: 1 + s.index(">")]
