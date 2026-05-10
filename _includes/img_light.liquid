@@ -5,7 +5,8 @@
 {% assign attribute_list = "" %}
 
 {% if include.attributes %}
-  {% for attrib in include.attributes | split: ";;" %}
+  {% assign attributes = include.attributes | split: ";;" %}
+  {% for attrib in attributes %}
     {% assign attribute_list = attribute_list | append: " " | append: attrib %}
   {% endfor %}
 {% endif %}
