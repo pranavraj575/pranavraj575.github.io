@@ -55,7 +55,7 @@ layout: default
 {% else %}
   <div class="post">
     <header class="post-header">
-      <h1 class="post-title">
+      <h1 class="post-title" style="display:flex;">
         {% if page.cv_pdf %}
           <a
             {% if page.cv_pdf contains '://' %}
@@ -68,7 +68,7 @@ layout: default
           ><i class="fa-solid fa-file-pdf" style="padding-right:10px"></i></a>
         {% endif %}
         <span style="padding-right:20px">{{ page.title }}</span>
-        <div class="float-right expanding-all">expand all</div>
+        <div class="expanding-all" style="text-align:right;flex-grow:1;">expand all</div>
       </h1>
       {% if page.description %}
         <p class="post-description">{{ page.description }}</p>
