@@ -12,7 +12,7 @@ remove_dead_pixel: false
 ---
 
 <header class="post-header">
-  <h1 class="post-title" style="display:flex-inline;">
+  <h1 class="post-title" style="display:flex;">
     {% if page.statement_pdf %}
       <a
         {% if page.statement_pdf contains '://' %}
