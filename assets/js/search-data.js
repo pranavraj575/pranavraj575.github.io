@@ -77,16 +77,6 @@ ninja.data = [{
               
                 silly: true,
               
-            },{id: "dropdown-run-3",
-              title: "run 3",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "https://www.coolmathgames.com/0-run-3";
-              },
-              
-                silly: true,
-              
             },{id: "dropdown-comment-section",
               title: "comment section",
               description: "",
