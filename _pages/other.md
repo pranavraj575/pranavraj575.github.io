@@ -18,11 +18,6 @@ children:
     silly: true
   - title: divider
     silly: true
-  - title: run 3
-    permalink: https://www.coolmathgames.com/0-run-3
-    silly: true
-  - title: divider
-    silly: true
   - title: comment section
     permalink: /comment-section
     silly: true
