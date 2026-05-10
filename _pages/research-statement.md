@@ -12,7 +12,7 @@ remove_dead_pixel: false
 ---
 
 <header class="post-header">
-  <h1 class="post-title">
+  <h1 class="post-title" style="display:flex;">
     {% if page.statement_pdf %}
       <a
         {% if page.statement_pdf contains '://' %}
@@ -25,7 +25,7 @@ remove_dead_pixel: false
       ><i class="fa-solid fa-file-pdf" style="padding-right:10px"></i></a>
     {% endif %}
     <span style="padding-right:20px">Research Statement</span>
-    <div class="float-right expanding-all">expand all</div>
+    <div class="expanding-all" style="text-align:right;flex-grow:1;">expand all</div>
   </h1>
 </header>
 <div style="text-indent:20px">
