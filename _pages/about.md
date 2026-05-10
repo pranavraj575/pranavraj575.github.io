@@ -47,8 +47,7 @@ My research is mainly in developing algorithms to solve imperfect information ga
       var k = count;
       var reflectorhardlyknower = setInterval(function(){
           var c = (k*2/count)-1;
-          for(var i=0;i<elements.length;i++){
-            element=elements[i];
+          for(var element of elements){
             if(element.classList.contains('reflected')){
               element.style.transform='matrix('+String(-c)+',0,0,1,0,0)';
               if(k==0){
