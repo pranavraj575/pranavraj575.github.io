@@ -7,7 +7,7 @@ var elements = document.getElementsByClassName('spinny');
 var theta = 0;
 var spinnor = setInterval(function(){
     for(var element of elements){
-      element.style.transform='matrix('+String(Math.sqrt(2)*Math.cos(theta))+','+String(-Math.sqrt(2)*Math.sin(theta))+','+String(Math.sqrt(2)*Math.sin(theta))+','+String(Math.sqrt(2)*Math.cos(theta))+',0,0)';
+      element.style.transform='matrix('+String(Math.sqrt(1/2)*Math.cos(theta))+','+String(-Math.sqrt(1/2)*Math.sin(theta))+','+String(Math.sqrt(1/2)*Math.sin(theta))+','+String(Math.sqrt(1/2)*Math.cos(theta))+',0,0)';
       theta-=.0169;
     }
   }, '10');
