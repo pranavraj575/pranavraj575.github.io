@@ -115,6 +115,10 @@ for repo in data["github_repos"]:
         full_thing = full_thing.replace("MAYBE_IMAGE", thing)
     else:
         full_thing = full_thing.replace("MAYBE_IMAGE", "")
+    # clear any empty lines
+    while " \n" in full_thing:
+        full_thing = full_thing.replace(" \n", "\n")
+    full_thing = full_thing.replace("\n\n", "\n")
     full_thing = f'<div class="list-group col-md-6">\n    {full_thing.replace("\n", "\n    ")}\n</div>\n'
     generated_stuff += full_thing
 generated_stuff = (
