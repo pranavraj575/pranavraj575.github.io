@@ -1,6 +1,6 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for content in data[1] %}
-    <li class="list-group-item {% if content.silly %}silly-goose{% endif %}" style="display:block;">
+    <li class="list-group-item display-style-block {% if content.silly %}silly-goose{% endif %}" style="display:block;">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
           {% if content.dateList %}
