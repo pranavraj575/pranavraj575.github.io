@@ -712,7 +712,7 @@
   "languages": [
     {
       "name": "Python",
-      "icon": "🐍",
+      "icon": "\uD83D\uDC0D",
       "ico_icon": "/assets/img/icons/python.png"
     },
     {
@@ -725,11 +725,11 @@
     },
     {
       "name": "R",
-      "icon": "🏴‍☠️"
+      "icon": "\uD83C\uDFF4\u200D\u2620\uFE0F"
     },
     {
       "name": "Java",
-      "icon": "☕",
+      "icon": "\u2615",
       "ico_icon": "/assets/img/icons/java.svg"
     },
     {
@@ -748,7 +748,7 @@
     },
     {
       "name": "Golang",
-      "icon": "🦫"
+      "icon": "\uD83E\uDDAB"
     },
     {
       "name": "Matlab",
