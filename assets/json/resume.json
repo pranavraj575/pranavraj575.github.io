@@ -566,6 +566,13 @@
   ],
   "awards": [
     {
+      "title": "Horsle first try",
+      "date": "2026-04-20",
+      "awarder": "Horsle",
+      "silly": true,
+      "url": "https://cabletwo.net/horsle/"
+    },
+    {
       "title": "Dean’s List, High Honors",
       "date": "2024-05-12",
       "dateList": [

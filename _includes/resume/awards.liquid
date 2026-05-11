@@ -1,9 +1,8 @@
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for content in data[1] %}
-    <li class="list-group-item">
+    <li class="list-group-item {% if content.silly %}silly-goose{% endif %}">
       <div class="row">
         <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
-
           {% if content.dateList %}
             {% assign date_list = "" %}
             {% for datelistitem in content.dateList %}
