@@ -17,6 +17,7 @@ icon = (
 )
 repo_html = (
     '<div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);">\n'
+    "    MAYBE_IMAGE\n"
     '    <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark">\n'
     "        <tbody>\n"
     '            <tr> <td class="p-1 pl-2 font-weight-bold">' + icon + '&nbsp;<a href="URL"><b>TITLE</b></a></td></tr>\n'
@@ -24,7 +25,6 @@ repo_html = (
     '            <tr> <td class="p-1 pl-2 text"> LANGUAGES </td> </tr>\n'
     "        </tbody>\n"
     "    </table>\n"
-    "    MAYBE_IMAGE\n"
     "</div>"
 )
 
