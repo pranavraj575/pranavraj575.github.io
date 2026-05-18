@@ -420,7 +420,8 @@
       "authors": "Rajbhandari, Pranav and Sofge, Donald",
       "location": "San Diego, USA",
       "publisher": "Naval Applications of Machine Learning",
-      "releaseDate": "2024-03-11"
+      "releaseDate": "2024-03-11",
+      "preview": "neat_wall_climb.gif"
     },
     {
       "name": "Sim-to-real Transfer Reinforcement Learning",
