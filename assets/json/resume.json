@@ -416,6 +416,13 @@
   ],
   "presentations": [
     {
+      "name": "Geodesic complexity of the octahedron",
+      "authors": "Rajbhandari, Pranav and Frick, Florian",
+      "location": "Pittsburgh, USA",
+      "publisher": "Combinatorics at the Confluence",
+      "releaseDate": "2026-07-20"
+    },
+    {
       "name": "Learning Emergent Behavior in Robot Swarms with NEAT",
       "authors": "Rajbhandari, Pranav and Sofge, Donald",
       "location": "San Diego, USA",
