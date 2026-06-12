@@ -171,7 +171,29 @@ ninja.data = [{
         //FOUND SECRET
         increaseStepsTo(2);
       },
-    },{id: "post-molly",
+    },{id: "post-cat",
+        
+          title: "cat",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2026/kitty_cat/";
+          
+        },
+      },{id: "post-baby-dragon",
+        
+          title: "baby dragon",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2026/baby_dragon/";
+          
+        },
+      },{id: "post-molly",
         
           title: "molly",
         
@@ -357,6 +379,13 @@ list_of_category_lists = [[],
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/birb";
+            },
+          },{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
             },
           },{id: "category-aminals-cat-egory",
             title: 'cat-egory',
