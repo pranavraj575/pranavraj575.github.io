@@ -9,7 +9,7 @@ pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 10
+  per_page: 69
   sort_field: date
   sort_reverse: true
   trail:
