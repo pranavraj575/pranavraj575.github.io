@@ -59,6 +59,9 @@ on:
       - "!FAQ.md"
       - "!INSTALL.md"
       - "!README.md"
+  workflow_run:
+    workflows: [Update repos]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
