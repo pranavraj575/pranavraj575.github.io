@@ -8,7 +8,7 @@ nav_order: 3
 og_image: /assets/img/cool_bunny.jpg
 remove_dead_pixel: false
 ---
-## github repositoriees
+## github repositories
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center permute-children list-groups">
     <div class="list-group col-md-6">
         <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);">
