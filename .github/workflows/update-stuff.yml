@@ -39,7 +39,7 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          git add _pages/repos.md
+          git add -f _pages/repos.md
           git diff --staged --quiet || (
             echo "📤 Committing and pushing changes..."
             git commit -m "Update repos"
