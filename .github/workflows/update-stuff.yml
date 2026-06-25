@@ -45,3 +45,9 @@ jobs:
             git commit -m "Update repos"
             git push
           )
+      
+      - name: Trigger workflow
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: update-stuff.yml
+          ref: main
