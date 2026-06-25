@@ -45,9 +45,20 @@ jobs:
             git commit -m "Update repos"
             git push
           )
+      - name: Generate GitHub App token
+        id: generate_token
+        uses: actions/create-github-app-token@v3
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          # By default the token is scoped to the current repository only.
+          # When dispatching to a different repository, scope it explicitly:
+          # owner: pranavraj575
+          # repositories: pranavraj575.github.io
       
       - name: Trigger workflow
         uses: benc-uk/workflow-dispatch@v1
         with:
-          workflow: update-stuff.yml
+          workflow: deploy.yml
+          token: ${{ steps.generate_token.outputs.token }}
           ref: main
