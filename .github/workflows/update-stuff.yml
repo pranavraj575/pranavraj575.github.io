@@ -1,4 +1,4 @@
-name: Update Google Scholar Citations
+name: Update repos
 
 on:
   schedule:
@@ -11,7 +11,7 @@ permissions:
   contents: write
   
 jobs:
-  update-citations:
+  update-repos:
     runs-on: ubuntu-latest
 
     steps:
