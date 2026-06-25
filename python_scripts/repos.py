@@ -138,7 +138,7 @@ page = (
     "og_image: /assets/img/cool_bunny.jpg\n"
     "remove_dead_pixel: false\n"
     "---\n"
-    "## github repositories\n" + generated_stuff
+    "## github repositoriees\n" + generated_stuff
 )
 
 with open(os.path.join(DIR, "_pages", "repos.md"), "w", encoding="utf-8") as f:
