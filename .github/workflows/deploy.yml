@@ -91,10 +91,10 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-      - name: HELLP HELP MEEE 🍆
-        run: |
-          pip3 install --upgrade requests pyyaml
-          python3 python_scripts/repos.py
+      #- name: HELLP HELP MEEE 🍆
+      #  run: |
+      #    pip3 install --upgrade requests pyyaml
+      #    python3 python_scripts/repos.py
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
