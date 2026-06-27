@@ -2,10 +2,7 @@ name: Update repos
 
 on:
   schedule:
-    - cron: "0 0 * * 1" # Monday
-    - cron: "0 0 * * 3" # Wednesday
-    - cron: "0 0 * * 5" # Friday
-    - cron: "30 4 * * 5" # Friday
+    - cron: "20 4 * * *"
   workflow_dispatch:
 
 permissions:
