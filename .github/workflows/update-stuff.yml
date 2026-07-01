@@ -1,8 +1,8 @@
-name: Update repos
+name: Update stuff
 
 on:
   schedule:
-    - cron: "20 4 * * *"
+    - cron: "20 4 * * 5"
   workflow_dispatch:
 
 permissions:
