@@ -13,9 +13,9 @@ images:
 
 <div class="spotlight-group">
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/jurassic.jpg" class="col img-spacing mt-3 mt-md-0" imgclass="spotlight" title="jurassic park" %}
-  {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/rock_concert.jpg" class="col img-spacing mt-3 mt-md-0" imgclass="spotlight" title="rock concert" %}
-  {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/river.jpg" class="col img-spacing mt-3 mt-md-0" imgclass="spotlight" title="marinating" %}
-  {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/goose.jpg" class="col img-spacing mt-3 mt-md-0" imgclass="spotlight" title="weird breed of turkey" %}
+  {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/jurassic.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="jurassic park" %}
+  {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/rock_concert.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="rock concert" %}
+  {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/river.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="marinating" %}
+  {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/goose.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="weird breed of turkey" %}
 </div>
 </div>

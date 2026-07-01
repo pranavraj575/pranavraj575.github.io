@@ -18,7 +18,7 @@ layout: default
   <article class="archive">
     <div class="table-responsive">
       <table class="table table-sm table-borderless">
-        <tbody>
+        <tbody class="silly-permute-children">
           {% for document in page.documents %}
             <tr>
               <th scope="row">{{ document.date | date: '%b %d, %Y' }}</th>
