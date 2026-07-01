@@ -60,7 +60,7 @@ on:
       - "!INSTALL.md"
       - "!README.md"
   workflow_run:
-    workflows: [Update repos]
+    workflows: [Update stuff]
     types: [completed]
   workflow_dispatch:
 
