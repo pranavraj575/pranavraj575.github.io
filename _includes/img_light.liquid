@@ -39,6 +39,10 @@
       {% if include.imgclass %}
         class="{{ include.imgclass }}"
       {% endif %}
+      style="{{ include.imgstyle }}"
+      {% if include.imgstyle %}
+        style="{{ include.imgstyle }}"
+      {% endif %}
       {% if include.width %}
         width="{{ include.width }}"
       {% else %}
@@ -48,9 +52,6 @@
         height="{{ include.height }}"
       {% else %}
         height="auto"
-      {% endif %}
-      {% if include.imgstyle %}
-        style="{{ include.imgstyle }}"
       {% endif %}
       {% if include.alt %}
         alt="{{ include.alt }}"
