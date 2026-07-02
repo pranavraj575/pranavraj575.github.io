@@ -14,7 +14,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/baby_dragon/bb_dragon_0.jpg" class="col img-spacing mt-3 mt-md-0 display-style-inline-block" imgclass="spotlight" title="baby dragon" %}
   <div class="col img-spacing mt-3 mt-md-0">
     {% include img_light.liquid path="assets/img/aminals/baby_dragon/bb_dragon_1.jpg" class="col img-spacing mt-3 mt-md-0 display-style-inline-block" imgclass="spotlight" title="baby dragon" %}
-    {% include img_light.liquid path="assets/img/aminals/baby_dragon/bb_dragon_2.jpg" class="col img-spacing mt-3 mt-md-0 display-style-inline-block" imgclass="spotlight" title="baby dragon" imgstyle="-1rem" %}
+    {% include img_light.liquid path="assets/img/aminals/baby_dragon/bb_dragon_2.jpg" class="col img-spacing mt-3 mt-md-0 display-style-inline-block" imgclass="spotlight" title="baby dragon" imgstyle="margin-top:-1rem" %}
   </div>
 </div>
 </div>
