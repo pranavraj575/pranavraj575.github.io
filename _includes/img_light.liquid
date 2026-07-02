@@ -49,7 +49,7 @@
       {% else %}
         height="auto"
       {% endif %}
-      {% if include['min-width'] or include['min-height'] or include['max-width'] or include['max-height'] or include.imgstyle %}
+      {% if include['min-width'] or include['min-height'] or include['max-width'] or include['max-height'] or include['imgstyle'] %}
         style="
           {% if include['min-width'] %}
             min-width: {{ include.min-width }};
@@ -63,7 +63,7 @@
           {% if include['max-height'] %}
             max-height: {{ include.max-height }};
           {% endif %}
-          {% if include.imgstyle %}
+          {% if include['imgstyle'] %}
             {{ include.imgstyle }}
           {% endif %}
         "
