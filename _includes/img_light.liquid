@@ -39,9 +39,10 @@
       {% if include.imgclass %}
         class="{{ include.imgclass }}"
       {% endif %}
-      style="{{ include.imgstyle }}"
       {% if include.imgstyle %}
-        style="{{ include.imgstyle }}"
+        style="cursor:{{ curse }}; {{ include.imgstyle }}"
+      {% else %}
+        style="cursor:{{ curse }}"
       {% endif %}
       {% if include.width %}
         width="{{ include.width }}"
@@ -67,7 +68,6 @@
       {% elsif site.lazy_loading_images %}
         loading="lazy"
       {% endif %}
-      style="cursor:{{ curse }}"
       onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
     >
 {% if include.href %}
