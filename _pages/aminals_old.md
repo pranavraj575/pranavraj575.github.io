@@ -7,7 +7,7 @@ nav_order: 4
 og_image: /assets/img/cool_bunny.jpg
 pagination:
   enabled: true
-  collection: aminals
+  collection: posts
   permalink: /page/:num/
   per_page: 69
   sort_field: date
@@ -17,7 +17,7 @@ pagination:
     after: 3 # The number of links after the current page
 remove_dead_pixel: false
 ---
-TEST2
+
 <div class="post">
 
 <!--
@@ -32,7 +32,7 @@ TEST2
   </div>
 {% endif %}
 -->
-
+TEST
 {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
 
   <div class="tag-category-list">
