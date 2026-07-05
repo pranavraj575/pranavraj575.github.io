@@ -41,14 +41,6 @@ ninja.data = [{
             window.location.href = "/aminals/";
           },
           
-        },{id: "nav-animals",
-          title: "animals",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/aminals/";
-          },
-          
         },{id: "nav-infinite-load-spell",
           title: "infinite load spell",
           description: "",
