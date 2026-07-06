@@ -7,7 +7,7 @@ nav_order: 4
 og_image: /assets/img/cool_bunny.jpg
 pagination:
   enabled: true
-  collection: aminals # THIS WAS CHANGED
+  collection: posts
   permalink: /page/:num/
   per_page: 69
   sort_field: date
