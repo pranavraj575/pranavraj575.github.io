@@ -65,6 +65,10 @@
       this.ship.thrust();
     }.bind(this));
 
+    kd.DOWN.down(function() {
+      this.ship.brake();
+    }.bind(this));
+
     kd.SPACE.press(function() {
       this.ship.fireBullet();
     }.bind(this));
