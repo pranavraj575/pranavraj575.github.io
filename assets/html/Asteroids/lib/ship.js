@@ -10,8 +10,8 @@
     this.canvas = canvas;
     this.velocity = [0, 0];
     this.position = [512, 384];
-    this.i_bounds = [-28, 1026];
-    this.j_bounds = [-28, 770];
+    this.x_bounds = [-28, 1026];
+    this.y_bounds = [-28, 770];
     this.pointingAt = [0, -1];
     this.rotation = 90 * Math.PI / 180;
     this.bullets = [];
@@ -20,8 +20,9 @@
     this.shipinvImg = new Image();
     this.shipinvImg.src = 'vendor/ship_inv.png';
     // 0 for boundary, 1 for connection with no flip, -1 for connection with flip
-    this.topology = [-1,-1];
+    this.topology = [0,1];
     this.inverted = false;
+    this.speed_cap=20;
   };
 
   Ship.prototype.fireBullet = function() {
@@ -40,12 +41,12 @@
     for (var dim=0; dim < 2; dim++){
       var other_dim = 1-dim;
       if (dim==0){
-        var bounds=this.i_bounds;
-        var other_bounds = this.j_bounds;
+        var bounds=this.x_bounds;
+        var other_bounds = this.y_bounds;
       }
       else{
-        var bounds=this.j_bounds;
-        var other_bounds =this.i_bounds;
+        var bounds=this.y_bounds;
+        var other_bounds =this.x_bounds;
       }
 
       if(this.topology[dim]==1 || this.topology[dim]==-1){
@@ -172,11 +173,11 @@
 
     for (var i = 0; i < 2; i++) {
       this.velocity[i] += this.pointingAt[i] * 0.12;
-      if (Math.abs(this.velocity[i]) > 6.5) {
-        if (this.velocity[i] > 1) {
-          this.velocity[i] = 6.5;
+      if (Math.abs(this.velocity[i]) > this.speed_cap) {
+        if (this.velocity[i] > 0) {
+          this.velocity[i] = this.speed_cap;
         } else {
-          this.velocity[i] = -6.5;
+          this.velocity[i] = -this.speed_cap;
         }
       }
     }

@@ -11,7 +11,9 @@
     this.type = options.type;
     this.size = (this.type * 30).toString();
     this.shape = this.randomShape();
-
+    this.x_bounds=[-45,1070];
+    this.y_bounds=[-45,770];
+    this.topology = [0,1];
   };
 
   var sndLarge = new Audio('audio/bangLarge.wav');
@@ -56,19 +58,44 @@
   };
 
   Asteroid.prototype.move = function() {
-    this.position[0] += this.velocityVector[0];
-    this.position[1] += this.velocityVector[1];
 
-    if (this.position[1] > 810) {
-      this.position[1] = -40;
-    } else if (this.position[1] < -42) {
-      this.position[1] = 765;
+    for (var i = 0; i < 2; i++) {
+      this.position[i] += this.velocityVector[i];
     }
 
-    if (this.position[0] > 1070) {
-      this.position[0] = -45;
-    } else if (this.position[0] < -46) {
-      this.position[0] = 1069;
+    for (var dim=0; dim < 2; dim++){
+      var other_dim = 1-dim;
+      if (dim==0){
+        var bounds=this.x_bounds;
+        var other_bounds = this.y_bounds;
+      }
+      else{
+        var bounds=this.y_bounds;
+        var other_bounds =this.x_bounds;
+      }
+
+      if(this.topology[dim]==1 || this.topology[dim]==-1){
+        var trans = false;
+        if (this.position[dim] < bounds[0] && this.velocityVector[dim] < 0) {
+          this.position[dim] = bounds[1];
+          trans = true;
+        }  else if (this.position[dim] > bounds[1] && this.velocityVector[dim] > 0) {
+          this.position[dim] = bounds[0];
+          trans = true;
+        }
+        if (trans && this.topology[dim]==-1){
+          this.inverted=!this.inverted;
+          this.position[other_dim] = other_bounds[1]-(this.position[other_dim]-other_bounds[0]);
+          this.velocityVector[other_dim] = -this.velocityVector[other_dim];
+        }
+      } else {
+        // topology[1] is 0, we simply rebound
+        if ((this.position[dim] < bounds[0] && this.velocityVector[dim] < 0) ||
+            this.position[dim] > bounds[1] && this.velocityVector[dim] > 0
+            ){
+          this.velocityVector[dim]= -this.velocityVector[dim];
+        }
+      }
     }
 
     return this;
