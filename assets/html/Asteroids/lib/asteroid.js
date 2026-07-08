@@ -13,7 +13,7 @@
     this.shape = this.randomShape();
     this.x_bounds=[-45,1070];
     this.y_bounds=[-45,770];
-    this.topology = [0,1];
+    this.topology=options.topology;
   };
 
   var sndLarge = new Audio('audio/bangLarge.wav');
@@ -38,6 +38,18 @@
     ctx.fillStyle = 'white';
     ctx.fillText(this.shape, this.position[0] - this.type * 10.5,
       this.position[1] + this.type * 10.5);
+    for(var dim=0; dim<2; dim++){
+      if(this.topology[dim] == 1){//TODO: -1
+        for(var dir=-1; dir<=1; dir+=2){
+          bounds=[this.x_bounds,this.y_bounds][dim]
+          shift=[0,0]
+          shift[dim]=dir*(bounds[1]-bounds[0])
+
+          ctx.fillText(this.shape, this.position[0] - this.type * 10.5 + shift[0],
+          this.position[1] + this.type * 10.5 + shift[1]);
+        }
+      }
+    }
   };
 
   Asteroid.prototype.initialVelocity = function() {
@@ -65,14 +77,8 @@
 
     for (var dim=0; dim < 2; dim++){
       var other_dim = 1-dim;
-      if (dim==0){
-        var bounds=this.x_bounds;
-        var other_bounds = this.y_bounds;
-      }
-      else{
-        var bounds=this.y_bounds;
-        var other_bounds =this.x_bounds;
-      }
+      var bounds = [this.x_bounds, this.y_bounds][dim]
+      var other_bounds = [this.x_bounds, this.y_bounds][other_dim]
 
       if(this.topology[dim]==1 || this.topology[dim]==-1){
         var trans = false;

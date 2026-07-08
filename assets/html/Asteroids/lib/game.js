@@ -4,6 +4,7 @@
   }
 
   var Game = Asteroids.Game = function(canvas, gameStart) {
+    this.topology=[0,1];
     this.gameStart = gameStart;
     this.canvas = canvas;
     this.requestAsteroids = true;
@@ -17,7 +18,9 @@
     this.points = 0;
     this.round = 0;
     this.lives = 3;
-    this.ship = new Asteroids.Ship(this.canvas);
+    // 0 for boundary, 1 for connection with no flip, -1 for connection with flip
+
+    this.ship = new Asteroids.Ship(this.canvas,this.topology);
     this.asteroids = [];
     this.collision = new Asteroids.Collision(this);
     this.requestAsteroids = true;
@@ -86,6 +89,7 @@
         this.asteroids.push(new Asteroids.Asteroid({
           canvas: this.canvas,
           type: 3,
+          topology: this.topology,
         }));
       }
       this.requestAsteroids = true;

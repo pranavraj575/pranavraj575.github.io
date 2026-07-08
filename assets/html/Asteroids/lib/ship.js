@@ -3,7 +3,7 @@
     window.Asteroids = {};
   }
 
-  var Ship = Asteroids.Ship = function(canvas) {
+  var Ship = Asteroids.Ship = function(canvas,topology) {
     this.hide = false;
     this.invulnerable = false;
     this.canFire = true;
@@ -19,8 +19,8 @@
     this.shipImg.src = 'vendor/ship.png';
     this.shipinvImg = new Image();
     this.shipinvImg.src = 'vendor/ship_inv.png';
-    // 0 for boundary, 1 for connection with no flip, -1 for connection with flip
-    this.topology = [0,1];
+
+    this.topology = topology;
     this.inverted = false;
     this.speed_cap=20;
   };
@@ -40,14 +40,8 @@
 
     for (var dim=0; dim < 2; dim++){
       var other_dim = 1-dim;
-      if (dim==0){
-        var bounds=this.x_bounds;
-        var other_bounds = this.y_bounds;
-      }
-      else{
-        var bounds=this.y_bounds;
-        var other_bounds =this.x_bounds;
-      }
+      var bounds = [this.x_bounds, this.y_bounds][dim]
+      var other_bounds = [this.x_bounds, this.y_bounds][other_dim]
 
       if(this.topology[dim]==1 || this.topology[dim]==-1){
         var trans = false;

@@ -50,7 +50,8 @@
           canvas: this.canvas,
           type: type,
           velMult: 4 - type,
-          position: position.slice(0)
+          position: position.slice(0),
+          topology:this.game.topology,
         }));
       }
     }
