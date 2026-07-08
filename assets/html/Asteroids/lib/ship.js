@@ -64,7 +64,12 @@
     ctx.save();
     ctx.translate(this.position[0], this.position[1]);
     ctx.rotate(this.rotation * -1);
-    ctx.drawImage(this.shipImg, -16, -16, 44, 32);
+    if (this.invulnerable){
+      ctx.drawImage(this.shipinvImg, -16, -16, 44, 32);
+    }
+    else {
+      ctx.drawImage(this.shipImg, -16, -16, 44, 32);
+    }
     ctx.restore();
   };
 
@@ -97,16 +102,16 @@
 
   Ship.prototype.resetShip = function() {
     this.invulnerable = true;
-    var resetting = setInterval(function() {
+   /* var resetting = setInterval(function() {
       if (this.hide === false) {
         this.hide = true;
       } else {
         this.hide = false;
       }
-    }.bind(this), 200);
+    }.bind(this), 200);*/
 
     setTimeout(function() {
-      clearInterval(resetting);
+      //clearInterval(resetting);
       this.invulnerable = false;
       this.hide = false;
     }.bind(this), 2000);
