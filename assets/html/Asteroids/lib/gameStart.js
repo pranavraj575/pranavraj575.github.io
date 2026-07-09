@@ -109,6 +109,16 @@
     document.getElementById("toppy").innerHTML="Topology: "+this.get_topology_name();
 
     var ctx = this.canvas.getContext('2d');
+
+    /*ctx.save();
+    ctx.translate(512,520);
+    ctx.font="15px vector_battleregular"
+    ctx.color="white";
+    ctx.textAlign = "center";
+    ctx.fillText("Topology: "+this.get_topology_name(), 0,0);
+    ctx.restore();*/
+
+    var ctx = this.canvas.getContext('2d');
     ctx.save();
     ctx.translate(512,590);
     //ctx.rotate(rot * -1);
