@@ -13,6 +13,11 @@ children:
     permalink: /links-contact
   - title: divider
     silly: true
+  - title: assteroids
+    permalink: /assets/html/assteroids
+    silly: true
+  - title: divider
+    silly: true
   - title: personal info
     permalink: /personal-info
     silly: true
