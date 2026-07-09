@@ -16,18 +16,20 @@
   };
 
   Collision.prototype.asteroidCollision = function() {
-    for (var i = 0; i < this.asteroids.length; i++) {
-      for (var j = 0; j < this.bullets.length; j++) {
-        if (this.euclidean(this.asteroids[i].position,
-            this.bullets[j].position) < this.asteroids[i].size / 3 + 5) {
-          this.game.assignPoints(this.asteroids[i]);
-          var type = this.asteroids[i].type - 1;
-          var position = this.asteroids[i].position;
-          this.explodeSound(this.asteroids[i]);
-          this.asteroids.splice(i, 1);
-          this.bullets.splice(j, 1);
-          this.makeBrokenAsteroid(type, position);
-          break;
+    if (this.game.active){
+      for (var i = 0; i < this.asteroids.length; i++) {
+        for (var j = 0; j < this.bullets.length; j++) {
+          if (this.euclidean(this.asteroids[i].position,
+              this.bullets[j].position) < this.asteroids[i].size / 3 + 5) {
+            this.game.assignPoints(this.asteroids[i]);
+            var type = this.asteroids[i].type - 1;
+            var position = this.asteroids[i].position;
+            this.explodeSound(this.asteroids[i]);
+            this.asteroids.splice(i, 1);
+            this.bullets.splice(j, 1);
+            this.makeBrokenAsteroid(type, position);
+            break;
+          }
         }
       }
     }
