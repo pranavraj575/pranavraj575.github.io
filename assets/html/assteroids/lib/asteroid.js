@@ -14,6 +14,7 @@
     this.x_bounds = [0, 1024];
     this.y_bounds = [0, 768];
     this.topology=options.topology;
+    this.inverted=false;
   };
 
   var sndLarge = new Audio('audio/bangLarge.wav');

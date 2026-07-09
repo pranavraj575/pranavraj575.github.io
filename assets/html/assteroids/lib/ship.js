@@ -75,7 +75,7 @@
   Ship.prototype.moveBullets = function() {
     for (var i = this.bullets.length-1; i >= 0; i--) {
       this.bullets[i].move();
-      if (this.bullets[i].life<=0){
+      if (this.bullets[i].life==0){
         this.bullets.splice(i, 1);
       }
     }

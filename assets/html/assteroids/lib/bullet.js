@@ -3,10 +3,11 @@
     window.Asteroids = {};
   }
 
-  var Bullet = Asteroids.Bullet = function(position, direction, canvas, velocity,topology) {
+  var Bullet = Asteroids.Bullet = function(position, direction, canvas, velocity, topology) {
     var keep_ship_velocity=true;
     var bulletspeed=15;
-    this.life=42;
+    this.life=-1;
+    this.max_life=42;
     this.x_bounds = [0, 1024];
     this.y_bounds = [0, 768];
     this.topology=topology
@@ -70,7 +71,12 @@
     var ctx = this.canvas.getContext('2d');
     ctx.beginPath();
     ctx.moveTo(this.position[0], this.position[1]);
-    size=.5+this.life/42;
+    if (this.life<0){
+      size=1;
+    }
+    else{
+      size=.5+this.life/this.max_life;
+    }
     ctx.ellipse(this.position[0], this.position[1], size*Math.max(this.speed/3,1), size, this.orientation, 0, 2*Math.PI)
     ctx.lineWidth = 1;
     ctx.strokeStyle = 'white';

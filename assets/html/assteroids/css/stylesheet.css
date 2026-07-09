@@ -51,7 +51,7 @@ canvas {
 #start {
   text-align: center;
   position: relative;
-  top: 325px;
+  top: 345px;
   font-size: 21px;
   letter-spacing: 5px;
   z-index: 1;
@@ -75,8 +75,9 @@ canvas {
 #credits {
   text-align: center;
   position: relative;
-  top: 670px;
+  top: 0px;
   font-size: 15px;
+  font-weight: 900;
   letter-spacing: 2px;
   z-index: 1;
 }

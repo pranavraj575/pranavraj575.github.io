@@ -7,8 +7,6 @@
     this.playedOnce = false;
     this.canvas = canvas;
     this.start();
-    $('#game-over').toggle();
-
   };
 
   GameStart.prototype.get_topology_idx = function() {
@@ -23,7 +21,7 @@
   }
 
   GameStart.prototype.get_topology_name = function() {
-    return ["square","cylinder","cylinder","mobius strip","mobius strip","torus","klien bottle","klien bottle","RP2"][this.get_topology_idx()%9];
+    return ["square (boring)","cylinder","cylinder","m\u00F6bius strip","m\u00F6bius strip","torus","klien bottle","klien bottle","RP2"][this.get_topology_idx()%9];
   }
   GameStart.prototype.start = function() {
     this.keyHandler();
@@ -35,16 +33,18 @@
       this.welcomeLoop();
     }
     else{
-      this.renderTopologyMenuLoop();
+      this.renderMenuLoop(true);
+
     }
   };
 
   GameStart.prototype.endGame = function() {
     this.playedOnce = true;
-    setTimeout(function() {
+    this.start();
+    /*setTimeout(function() {
       $('#start').toggle();
       this.start();
-    }.bind(this), 3000);
+    }.bind(this), 3000);*/
   };
 
   var listener = new window.keypress.Listener();
@@ -69,34 +69,21 @@
   };
 
   GameStart.prototype.removeTitles = function() {
-    $('#title').hide();
     $('#start').hide();
     $('#instructions').hide();
     $('#credits').hide();
-    $('#toppy').hide();
-    $('#toppy2').hide();
   };
 
   GameStart.prototype.gameOver = function() {
     this.start();
-    $('#game-over').show();
-
   };
 
   GameStart.prototype.gameOverText = function() {
-    $('#game-over').toggle();
-  };
-
-  GameStart.prototype.title = function() {
-    var ctx = this.canvas.getContext('2d');
-    ctx.font = '32px vector_battleregular';
-    ctx.fillStyle = 'white';
-    ctx.fillText("ASTEROIDS", 337, 200);
   };
 
   var requestId;
 
-  GameStart.prototype.renderTopologyMenu = function(i) {
+  GameStart.prototype.renderMenu = function(gameover) {
     toppyImg = new Image();
     toppyImg.src = ['vendor/square.png',
     'vendor/cylinder.png','vendor/cylinder2.png',
@@ -106,17 +93,19 @@
     'vendor/rp2.png',
     ][this.get_topology_idx()%9];
 
-    document.getElementById("toppy").innerHTML="Topology: "+this.get_topology_name();
 
     var ctx = this.canvas.getContext('2d');
 
-    /*ctx.save();
+    ctx.save();
     ctx.translate(512,520);
-    ctx.font="15px vector_battleregular"
-    ctx.color="white";
+    ctx.font="bold 17px vector_battleregular"
+    ctx.fillStyle="white"
+    ctx.strokeStyle = "white";
+    ctx.fontWeight = "40"
+    ctx.letterSpacing = "3px"
     ctx.textAlign = "center";
-    ctx.fillText("Topology: "+this.get_topology_name(), 0,0);
-    ctx.restore();*/
+    this.fillThickly(ctx,"Topology: "+this.get_topology_name(),.25)
+    ctx.restore();
 
     var ctx = this.canvas.getContext('2d');
     ctx.save();
@@ -125,10 +114,54 @@
     ctx.drawImage(toppyImg, -50, -50, 100, 100);
     ctx.restore();
 
-    $('#toppy').show();
-    $('#toppy2').show();
+
+    ctx.save();
+    ctx.translate(512,666);
+    ctx.font="bold 17px vector_battleregular"
+    ctx.fillStyle="white"
+    ctx.strokeStyle = "white";
+    ctx.letterSpacing = "3px"
+    ctx.textAlign = "center";
+    this.fillThickly(ctx,"(press T to change)",.25)
+    ctx.restore();
 
     this.game.borderHints(this.get_topology());
+
+    if(gameover){
+      ctx.save();
+      ctx.translate(512,210);
+      ctx.font="bold 50px vector_battleregular";
+      ctx.fillStyle="white"
+      ctx.strokeStyle = "white";
+      ctx.letterSpacing = "25px";
+      ctx.textAlign = "center";
+      this.fillThickly(ctx,"Game over");
+      ctx.restore();
+    }
+
+
+    ctx.save();
+    ctx.translate(512,265);
+    if(gameover){
+      ctx.translate(0,60);
+    }
+    ctx.font="bold 23px vector_battleregular";
+    if (isNaN(this.alpha)){
+      this.alpha= 1.
+      this.gradient=-.034
+    }
+    ctx.fillStyle="rgba(255, 255, 255, "+this.alpha+")"
+    this.alpha+=this.gradient
+    this.alpha=Math.min(Math.max(this.alpha,0),1);
+    if (this.alpha==1 || this.alpha==0){
+      this.gradient=-this.gradient;
+    }
+
+    ctx.strokeStyle = "white";
+    ctx.letterSpacing = "3px";
+    ctx.textAlign = "center";
+    this.fillThickly(ctx,"Press enter to play",.25);
+    ctx.restore();
   };
   GameStart.prototype.welcomeLoop = function() {
     requestId = window.requestAnimationFrame(this.welcomeLoop.bind(this));
@@ -138,12 +171,44 @@
     for (var i = 0; i < this.game.asteroids.length; i++) {
       this.game.asteroids[i].move().render();
     }
-    this.renderTopologyMenu();
-  };
 
-  GameStart.prototype.renderTopologyMenuLoop = function() {
-    requestId = window.requestAnimationFrame(this.renderTopologyMenuLoop.bind(this));
-    this.renderTopologyMenu();
+    var ctx = this.canvas.getContext('2d');
+    ctx.save();
+    ctx.translate(512,220);
+    ctx.font="bold 50px vector_battleregular";
+    ctx.fillStyle="white"
+    ctx.strokeStyle = "white";
+    ctx.letterSpacing = "25px";
+    ctx.textAlign = "center";
+    this.fillThickly(ctx,"Asteroids");
+    ctx.restore();
+
+
+    ctx.save();
+    ctx.translate(512,370);
+    ctx.font="bold 20px vector_battleregular"
+    ctx.fillStyle="white"
+    ctx.strokeStyle = "white";
+    ctx.letterSpacing = "1px"
+    ctx.textAlign = "center";
+    this.fillThickly(ctx,"Move: \u2190 \u2191 \u2192 \u2193 Fire: space",.3);
+    ctx.restore();
+
+
+    this.renderMenu();
+  };
+  GameStart.prototype.fillThickly = function(ctx,text,scale=.5) {
+    ctx.fillText(text, 0,0);
+    ctx.fillText(text, 0,scale);
+    ctx.fillText(text, 0,2*scale);
+    ctx.fillText(text, 0,-scale);
+    ctx.fillText(text, 0,-2*scale);
+    ctx.fillText(text, scale,0);
+    ctx.fillText(text, -scale,0);
+  };
+  GameStart.prototype.renderMenuLoop = function(gameover=false) {
+    requestId = window.requestAnimationFrame(this.renderMenuLoop.bind(this));
+    this.renderMenu(gameover);
   };
 
   GameStart.prototype.inc_topology = function(i) {
