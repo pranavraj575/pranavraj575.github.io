@@ -4,7 +4,7 @@
   }
 
   var Game = Asteroids.Game = function(canvas, gameStart) {
-    this.topology=[0,1];
+    this.topology=[0,-1];
     this.gameStart = gameStart;
     this.canvas = canvas;
     this.requestAsteroids = true;
@@ -111,8 +111,6 @@
     if (this.gameStart.flash === true) {
       this.gameStart.welcome();
     }
-
-
 
     this.collision.removeCollided();
     this.makeAsteroids();

@@ -28,11 +28,12 @@
   Ship.prototype.fireBullet = function() {
     if (this.canFire) {
       this.bullets.push(new Asteroids.Bullet(this.position,
-        this.pointingAt, this.canvas, this.velocity));
+        this.pointingAt, this.canvas, this.velocity,this.topology));
     }
   };
 
   Ship.prototype.move = function() {
+    console.log(this.rotation);
 
     for (var i = 0; i < 2; i++) {
       this.position[i] += this.velocity[i];
@@ -56,6 +57,8 @@
           this.inverted=!this.inverted;
           this.position[other_dim] = other_bounds[1]-(this.position[other_dim]-other_bounds[0]);
           this.velocity[other_dim] = -this.velocity[other_dim];
+          this.pointingAt[other_dim] = -this.pointingAt[other_dim];
+          this.rotation = Math.atan2(-this.pointingAt[1],this.pointingAt[0]);
         }
       } else {
         // topology[1] is 0, we simply rebound
@@ -71,8 +74,11 @@
   };
 
   Ship.prototype.moveBullets = function() {
-    for (var i = 0; i < this.bullets.length; i++) {
+    for (var i = this.bullets.length-1; i >= 0; i--) {
       this.bullets[i].move();
+      if (this.bullets[i].life<=0){
+        this.bullets.splice(i, 1);
+      }
     }
 
     return this;
