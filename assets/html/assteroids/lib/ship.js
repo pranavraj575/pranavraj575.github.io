@@ -3,10 +3,18 @@
     window.Asteroids = {};
   }
 
-  var Ship = Asteroids.Ship = function(canvas,topology) {
+  var Ship = Asteroids.Ship = function(canvas,topology,friendly_fire) {
     this.hide = false;
     this.invulnerable = false;
     this.canFire = true;
+    this.max_bullets=13;
+    this.friendly_fire=friendly_fire;
+    if(this.friendly_fire){
+      this.bullet_life=-1;
+    } else{
+      this.bullet_life=42;
+    }
+
     this.canvas = canvas;
     this.velocity = [0, 0];
     this.position = [512, 384];
@@ -25,10 +33,18 @@
     this.speed_cap=20;
   };
 
+  Ship.prototype.update_friendly_fire= function(friendly_fire){
+    this.friendly_fire=friendly_fire;
+    if(this.friendly_fire){
+      this.bullet_life=-1;
+    } else{
+      this.bullet_life=42;
+    }
+  }
   Ship.prototype.fireBullet = function() {
-    if (this.canFire) {
+    if (this.canFire && this.bullets.length<this.max_bullets) {
       this.bullets.push(new Asteroids.Bullet(this.position,
-        this.pointingAt, this.canvas, this.velocity,this.topology));
+        this.pointingAt, this.canvas, this.velocity,this.topology,this.bullet_life,this.friendly_fire));
     }
   };
 
@@ -191,7 +207,7 @@
     return this;
   };
 
-  Ship.prototype.resetShip = function() {
+  Ship.prototype.resetShip = function(resetpos=true) {
     this.invulnerable = true;
    /* var resetting = setInterval(function() {
       if (this.hide === false) {
@@ -206,12 +222,13 @@
       this.invulnerable = false;
       this.hide = false;
     }.bind(this), 2000);
-
-    this.position = [512, 384];
-    this.pointingAt = [0, -1];
-    this.rotation = 90 * Math.PI / 180;
-    this.velocity = [0, 0];
-    this.inverted=false;
+    if (resetpos){
+      this.position = [512, 384];
+      this.pointingAt = [0, -1];
+      this.rotation = 90 * Math.PI / 180;
+      this.velocity = [0, 0];
+      this.inverted=false;
+    }
   };
 
   Ship.prototype.showLives = function(posX, posY) {

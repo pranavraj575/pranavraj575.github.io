@@ -5,6 +5,7 @@
 
   var Game = Asteroids.Game = function(canvas, gameStart, options) {
     this.topology=options.topology;
+    this.friendly_fire = options.friendly_fire;
     this.gameStart = gameStart;
     this.canvas = canvas;
     this.requestAsteroids = true;
@@ -22,7 +23,7 @@
     this.lives = 3;
     // 0 for boundary, 1 for connection with no flip, -1 for connection with flip
 
-    this.ship = new Asteroids.Ship(this.canvas,this.topology);
+    this.ship = new Asteroids.Ship(this.canvas,this.topology,this.friendly_fire);
     this.asteroids = [];
     this.collision = new Asteroids.Collision(this);
     this.requestAsteroids = true;
@@ -133,7 +134,7 @@
     var number = num || 4 + this.round * 2;
     if (this.asteroids.length === 0 && this.requestAsteroids) {
       if (this.ship) {
-        this.ship.resetShip();
+        this.ship.resetShip(false);
       }
       this.requestAsteroids = false;
       for (var i = 0; i < number; i++) {
@@ -177,6 +178,7 @@
 
     requestId = window.requestAnimationFrame(this.refresh.bind(this));
     this.showPoints();
+    this.showBullets();
     this.showLives();
     this.checkGameOver();
   };
@@ -190,13 +192,19 @@
     }
   };
   Game.prototype.update_topology= function(topology){
-  this.topology=topology;
-  for (var i = 0; i < this.asteroids.length; i++) {
-      this.asteroids[i].topology=topology;
+    this.topology=topology;
+    for (var i = 0; i < this.asteroids.length; i++) {
+        this.asteroids[i].topology=topology;
+      }
+    if (!isNaN(this.ship)){
+      this.ship.topology=topology;
     }
-  if (!isNaN(this.ship)){
-    this.ship.topology=topology;
   }
+  Game.prototype.update_friendly_fire= function(friendly_fire){
+    this.friendly_fire=friendly_fire;
+    if (!isNaN(this.ship)){
+      this.ship.update_friendly_fire(friendly_fire);
+    }
   }
   Game.prototype.remove = function() {
     window.cancelAnimationFrame(requestId);
@@ -218,6 +226,16 @@
     ctx.font = '32px vector_battleregular';
     ctx.fillStyle = 'white';
     ctx.fillText(this.points, 150, 45);
+  };
+  Game.prototype.showBullets = function() {
+    var ctx = this.canvas.getContext('2d');
+    ctx.font = '32px vector_battleregular';
+    ctx.fillStyle = 'white';
+    ctx.fillText(this.ship.max_bullets-this.ship.bullets.length, 10, 750);
+    ctx.fillText(this.ship.max_bullets-this.ship.bullets.length, 10.5, 750);
+    ctx.fillText(this.ship.max_bullets-this.ship.bullets.length, 9.5, 750);
+    ctx.fillText(this.ship.max_bullets-this.ship.bullets.length, 10, 750.5);
+    ctx.fillText(this.ship.max_bullets-this.ship.bullets.length, 10, 749.5);
   };
 
 

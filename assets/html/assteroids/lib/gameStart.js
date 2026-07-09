@@ -15,6 +15,12 @@
     }
     return this.topology_idx;
   }
+  GameStart.prototype.get_friendly_fire = function() {
+    if(isNaN(this.friendly_fire)){
+      this.friendly_fire=false;
+    }
+    return this.friendly_fire;
+  }
 
   GameStart.prototype.get_topology = function() {
     return [[0,0],[0,1],[1,0],[0,-1],[-1,0],[1,1],[1,-1],[-1,1],[-1,-1]][this.get_topology_idx()%9];
@@ -28,6 +34,7 @@
 
     this.game = new Asteroids.Game(this.canvas, this, {
           topology: this.get_topology(),
+          friendly_fire:this.get_friendly_fire(),
         });
     if (!this.playedOnce) {
       this.welcomeLoop();
@@ -64,6 +71,11 @@
     kd.T.press(function() {
       if(!this.game.active){
         this.inc_topology(1);
+      }
+    }.bind(this));
+    kd.F.press(function() {
+      if(!this.game.active){
+        this.toggle_friendly_fire();
       }
     }.bind(this));
   };
@@ -123,6 +135,25 @@
     ctx.letterSpacing = "3px"
     ctx.textAlign = "center";
     this.fillThickly(ctx,"(press T to change)",.25)
+    ctx.restore();
+
+    ctx.save();
+    ctx.translate(512,710);
+    ctx.font="bold 17px vector_battleregular"
+    ctx.fillStyle="white"
+    ctx.letterSpacing = "3px"
+    ctx.textAlign = "center";
+    var ff="Friendly fire: "
+    if (this.get_friendly_fire()){
+      ff=ff+"ON";
+      ctx.strokeStyle = "red";
+      ctx.fillStyle="red"
+    } else{
+      ff=ff+"OFF";
+      ctx.strokeStyle = "white";
+    }
+    ff=ff+" (F to toggle)"
+    this.fillThickly(ctx,ff,.25)
     ctx.restore();
 
     this.game.borderHints(this.get_topology());
@@ -214,6 +245,11 @@
   GameStart.prototype.inc_topology = function(i) {
     this.topology_idx=this.get_topology_idx()+i;
     this.game.update_topology(this.get_topology());
+  };
+
+  GameStart.prototype.toggle_friendly_fire = function(i) {
+    this.friendly_fire=!this.get_friendly_fire();
+    this.game.update_friendly_fire(this.get_friendly_fire());
   };
 
 })();

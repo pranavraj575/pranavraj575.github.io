@@ -33,8 +33,8 @@
     }
   };
 
-  Collision.prototype.explodeSound = function(asteroid) {
-    if (asteroid.type === 3) {
+  Collision.prototype.explodeSound = function(asteroid=NaN) {
+    if (isNaN(asteroid) || asteroid.type === 3) {
       this.sndLarge.play();
     } else if (asteroid.type === 2) {
       this.sndMedium.play();
@@ -71,9 +71,29 @@
   };
 
   Collision.prototype.shipCollision = function() {
+    var dead=false;
+    var murderer=NaN;
     for (var i = 0; i < this.asteroids.length; i++) {
       if (this.euclidean(this.asteroids[i].position, this.ship.position) < this.asteroids[i].size / 3 + 16) {
-        this.explodeSound(this.asteroids[i]);
+        dead=true;
+        murderer=this.asteroids[i];
+        break;
+      }
+    }
+    if (!dead){
+      for (var j = 0; j < this.bullets.length; j++) {
+        if (this.bullets[j].friendly_fire && this.bullets[j].max_life-this.bullets[j].life>10){
+          if (this.euclidean(this.ship.position,
+            this.bullets[j].position) < 20) {
+            dead=true;
+            this.bullets.splice(j, 1);
+            break;
+          }
+        }
+      }
+    }
+    if (dead){
+      this.explodeSound(murderer);
         this.ship.hide = true;
         this.ship.canFire = false;
         this.game.lives -= 1;
@@ -84,7 +104,6 @@
             this.ship.canFire = true;
           }.bind(this), 1000);
         }
-      }
     }
   };
 })();
