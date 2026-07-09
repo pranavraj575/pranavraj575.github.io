@@ -3,16 +3,18 @@
     window.Asteroids = {};
   }
 
-  var Game = Asteroids.Game = function(canvas, gameStart) {
-    this.topology=[1,-1];
+  var Game = Asteroids.Game = function(canvas, gameStart, options) {
+    this.topology=options.topology;
     this.gameStart = gameStart;
     this.canvas = canvas;
     this.requestAsteroids = true;
     this.asteroids = [];
     this.round = 0;
+    this.active=false;
   };
 
   Game.prototype.start = function() {
+    this.active=true;
     this.gameOverText = false;
     this.keyDownHandler();
     this.points = 0;
@@ -135,9 +137,18 @@
       this.gameStart.endGame();
       this.gameStart.gameOverText();
       this.gameOverText = true;
+      this.active=false;
     }
   };
-
+  Game.prototype.update_topology= function(topology){
+  this.topology=topology;
+  for (var i = 0; i < this.asteroids.length; i++) {
+      this.asteroids[i].topology=topology;
+    }
+  if (!isNaN(this.ship)){
+    this.ship.topology=topology;
+  }
+  }
   Game.prototype.remove = function() {
     window.cancelAnimationFrame(requestId);
   };
@@ -152,10 +163,13 @@
     }
   };
 
+
   Game.prototype.showPoints = function() {
     var ctx = this.canvas.getContext('2d');
     ctx.font = '32px vector_battleregular';
     ctx.fillStyle = 'white';
     ctx.fillText(this.points, 150, 45);
   };
+
+
 })();

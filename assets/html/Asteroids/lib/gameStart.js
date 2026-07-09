@@ -10,11 +10,25 @@
     $('#game-over').toggle();
 
   };
+  GameStart.prototype.get_topology = function() {
+    if(isNaN(this.topology_idx)){
+      this.topology_idx=0;
+    }
+    return [[0,0],[0,1],[1,0],[0,-1],[-1,0],[1,1],[1,-1],[-1,1],[-1,-1]][this.topology_idx%9];
+  }
 
+  GameStart.prototype.get_topology_name = function() {
+    if(isNaN(this.topology_idx)){
+      this.topology_idx=0;
+    }
+    return ["square","cylinder","cylinder","mobius strip","mobius strip","torus","klien bottle","klien bottle","RP2"][this.topology_idx%9];
+  }
   GameStart.prototype.start = function() {
     this.keyHandler();
 
-    this.game = new Asteroids.Game(this.canvas, this);
+    this.game = new Asteroids.Game(this.canvas, this, {
+          topology: this.get_topology(),
+        });
     if (!this.playedOnce) {
       this.welcomeLoop();
     }
@@ -40,6 +54,12 @@
       this.game.start();
       $('#game-over').hide();
       listener.reset();
+    }.bind(this));
+
+    kd.T.press(function() {
+      if(!this.game.active){
+        this.inc_topology(1);
+      }
     }.bind(this));
   };
 
@@ -76,5 +96,14 @@
     for (var i = 0; i < this.game.asteroids.length; i++) {
       this.game.asteroids[i].move().render();
     }
+  };
+  GameStart.prototype.inc_topology = function(i) {
+    if(isNaN(this.topology_idx)){
+      this.topology_idx=0;
+    }
+    this.topology_idx+=i;
+    this.game.update_topology(this.get_topology());
+
+    console.log(this.get_topology_name());
   };
 })();
