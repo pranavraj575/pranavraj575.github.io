@@ -24,9 +24,9 @@
     this.rotation = 90 * Math.PI / 180;
     this.bullets = [];
     this.shipImg = new Image();
-    this.shipImg.src = 'vendor/ship.png';
+    this.shipImg.src = 'img/ship.png';
     this.shipinvImg = new Image();
-    this.shipinvImg.src = 'vendor/ship_inv.png';
+    this.shipinvImg.src = 'img/ship_inv.png';
 
     this.topology = topology;
     this.inverted = false;

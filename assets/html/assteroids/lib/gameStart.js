@@ -97,12 +97,12 @@
 
   GameStart.prototype.renderMenu = function(gameover) {
     toppyImg = new Image();
-    toppyImg.src = ['vendor/square.png',
-    'vendor/cylinder.png','vendor/cylinder2.png',
-    'vendor/mobius.png','vendor/mobius2.png',
-    'vendor/torus.png',
-    'vendor/klien.png','vendor/klien2.png',
-    'vendor/rp2.png',
+    toppyImg.src = ['img/square.png',
+    'img/cylinder.png','img/cylinder2.png',
+    'img/mobius.png','img/mobius2.png',
+    'img/torus.png',
+    'img/klien.png','img/klien2.png',
+    'img/rp2.png',
     ][this.get_topology_idx()%9];
 
 
