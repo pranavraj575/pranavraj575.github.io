@@ -67,6 +67,16 @@ ninja.data = [{
                 window.location.href = "/links-contact";
               },
               
+            },{id: "dropdown-assteroids",
+              title: "assteroids",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/assets/html/assteroids";
+              },
+              
+                silly: true,
+              
             },{id: "dropdown-personal-info",
               title: "personal info",
               description: "",
