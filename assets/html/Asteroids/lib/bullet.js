@@ -71,7 +71,8 @@
     var ctx = this.canvas.getContext('2d');
     ctx.beginPath();
     ctx.moveTo(this.position[0], this.position[1]);
-    ctx.ellipse(this.position[0], this.position[1], Math.max(this.speed/3,1), 1, this.orientation, 0, 2*Math.PI)
+    size=.5+this.life/42;
+    ctx.ellipse(this.position[0], this.position[1], size*Math.max(this.speed/3,1), size, this.orientation, 0, 2*Math.PI)
     ctx.lineWidth = 1;
     ctx.strokeStyle = 'white';
     ctx.stroke();
