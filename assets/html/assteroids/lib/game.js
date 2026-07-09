@@ -55,7 +55,56 @@
     ctx.lineWidth = '3';
     ctx.strokeStyle = 'white';
     ctx.stroke();
+    if (this.active){
+      this.borderHints(this.topology);
+    }
+
   };
+  Game.prototype.borderHints = function(topology){
+    ht=13;
+    lnth=20;
+    cnt=1;
+    for (dim=0;dim<2;dim++){
+      dim_max=[1024,768][1-dim];
+      if (topology[1-dim]==0){
+        continue;
+      }
+      for (d_0=0;d_0<=dim_max;d_0+=dim_max){
+        if (d_0==0){
+          d_p=d_0 + ht;
+          dir=1;
+        }
+        else{
+          d_p=d_0 - ht;
+          dir=topology[1-dim];
+        }
+        var ctx = this.canvas.getContext('2d');
+        ctx.beginPath();
+        pos=[512, 384]
+        pos[1-dim]=d_0;
+        ctx.moveTo(pos[0],pos[1]);
+        pos[1-dim]=d_p;
+        ctx.lineTo(pos[0],pos[1]);
+        pos[dim]+=dir*lnth;
+        pos[1-dim]=d_0;
+        ctx.lineTo(pos[0],pos[1]);
+        if (cnt>1){
+          pos=[512, 384];
+          pos[1-dim]=d_0;
+          ctx.lineTo(pos[0],pos[1]);
+          pos[dim]-=dir*lnth;
+          pos[1-dim]=d_p;
+          ctx.lineTo(pos[0],pos[1]);
+          pos[1-dim]=d_0;
+          ctx.lineTo(pos[0],pos[1]);
+        }
+
+        ctx.fillStyle='green';
+        ctx.fill();
+      }
+      cnt++;
+    }
+  }
 
   Game.prototype.keyDownHandler = function() {
     kd.LEFT.down(function() {

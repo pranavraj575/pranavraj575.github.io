@@ -127,6 +127,8 @@
 
     $('#toppy').show();
     $('#toppy2').show();
+
+    this.game.borderHints(this.get_topology());
   };
   GameStart.prototype.welcomeLoop = function() {
     requestId = window.requestAnimationFrame(this.welcomeLoop.bind(this));
