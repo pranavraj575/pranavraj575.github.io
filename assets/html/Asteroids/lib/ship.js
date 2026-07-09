@@ -10,8 +10,8 @@
     this.canvas = canvas;
     this.velocity = [0, 0];
     this.position = [512, 384];
-    this.x_bounds = [-28, 1026];
-    this.y_bounds = [-28, 770];
+    this.x_bounds = [0, 1024];
+    this.y_bounds = [0, 768];
     this.pointingAt = [0, -1];
     this.rotation = 90 * Math.PI / 180;
     this.bullets = [];
@@ -33,7 +33,6 @@
   };
 
   Ship.prototype.move = function() {
-    console.log(this.rotation);
 
     for (var i = 0; i < 2; i++) {
       this.position[i] += this.velocity[i];
@@ -90,17 +89,68 @@
   };
 
   Ship.prototype.render = function() {
-    var ctx = this.canvas.getContext('2d');
-    ctx.save();
-    ctx.translate(this.position[0], this.position[1]);
-    ctx.rotate(this.rotation * -1);
-    if (this.invulnerable){
-      ctx.drawImage(this.shipinvImg, -16, -16, 44, 32);
+
+    var stuff=[];
+    stuff.push([this.position[0],this.position[1],this.rotation])
+
+    if (this.topology[0]==1){
+      stuff.push([this.position[0]+(this.x_bounds[1]-this.x_bounds[0]),this.position[1],this.rotation]);
+      stuff.push([this.position[0]-(this.x_bounds[1]-this.x_bounds[0]),this.position[1],this.rotation]);
+    } else if (this.topology[0]==-1){
+      var temp = this.y_bounds[1]-(this.position[1]-this.y_bounds[0]);
+      var rot = Math.atan2(this.pointingAt[1],this.pointingAt[0]);
+      stuff.push([this.position[0]+(this.x_bounds[1]-this.x_bounds[0]), temp,rot]);
+      stuff.push([this.position[0]-(this.x_bounds[1]-this.x_bounds[0]), temp,rot]);
     }
-    else {
-      ctx.drawImage(this.shipImg, -16, -16, 44, 32);
+    if (this.topology[1]==1){
+      stuff.push([this.position[0],this.position[1]+(this.y_bounds[1]-this.y_bounds[0]),this.rotation]);
+      stuff.push([this.position[0],this.position[1]-(this.y_bounds[1]-this.y_bounds[0]),this.rotation]);
+    } else if (this.topology[1]==-1){
+      var temp = this.x_bounds[1]-(this.position[0]-this.x_bounds[0]);
+      var rot = Math.atan2(-this.pointingAt[1],-this.pointingAt[0]);
+      stuff.push([temp,this.position[1]+(this.y_bounds[1]-this.y_bounds[0]),rot]);
+      stuff.push([temp,this.position[1]-(this.y_bounds[1]-this.y_bounds[0]),rot]);
     }
-    ctx.restore();
+    if (this.topology[0]*this.topology[1]!=0){
+      for(var x_shift=-1; x_shift<=1; x_shift+=2){
+        for(var y_shift=-1; y_shift<=1; y_shift+=2){
+          pointer=[this.pointingAt[0],this.pointingAt[1]];
+          pos=[this.position[0],this.position[1]];
+          if (this.topology[0]==1){
+            pos[0]+=x_shift*(this.x_bounds[1]-this.x_bounds[0]);
+          } else if (this.topology[0]==-1){
+            pos[0]+=x_shift*(this.x_bounds[1]-this.x_bounds[0]);
+            pos[1]=this.y_bounds[1]-(pos[1]-this.y_bounds[0]);
+            pointer[1]=-pointer[1];
+          }
+          if (this.topology[1]==1){
+            pos[1]+=y_shift*(this.y_bounds[1]-this.y_bounds[0]);
+          } else if (this.topology[0]==-1){
+            pos[1]+=y_shift*(this.y_bounds[1]-this.y_bounds[0]);
+            pos[0]=this.x_bounds[1]-(pos[0]-this.x_bounds[0]);
+            pointer[0]=-pointer[0];
+          }
+          stuff.push([pos[0],pos[1],Math.atan2(-pointer[1],pointer[0])]);
+        }
+      }
+    }
+
+    for(var i=0; i<stuff.length; i++){
+      pos=[stuff[i][0],stuff[i][1]];
+      rot=stuff[i][2];
+      var ctx = this.canvas.getContext('2d');
+      ctx.save();
+      ctx.translate(pos[0], pos[1]);
+      ctx.rotate(rot * -1);
+      if (this.invulnerable){
+        ctx.drawImage(this.shipinvImg, -16, -16, 44, 32);
+      }
+      else {
+        ctx.drawImage(this.shipImg, -16, -16, 44, 32);
+      }
+      ctx.restore();
+    }
+
   };
 
   Ship.prototype.rotateLeft = function() {

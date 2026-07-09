@@ -7,8 +7,8 @@
     var keep_ship_velocity=true;
     var bulletspeed=15;
     this.life=42;
-    this.x_bounds = [-28, 1026];
-    this.y_bounds = [-28, 770];
+    this.x_bounds = [0, 1024];
+    this.y_bounds = [0, 768];
     this.topology=topology
 
     var snd = new Audio('audio/fire.wav');
@@ -23,7 +23,6 @@
       }
     }
     this.speed=Math.sqrt(Math.pow(this.velocity[0],2)+Math.pow(this.velocity[1],2));
-    console.log(this.speed);
     this.orientation = Math.atan2(this.velocity[1],this.velocity[0])
   };
 

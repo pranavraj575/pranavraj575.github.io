@@ -11,8 +11,8 @@
     this.type = options.type;
     this.size = (this.type * 30).toString();
     this.shape = this.randomShape();
-    this.x_bounds=[-45,1070];
-    this.y_bounds=[-45,770];
+    this.x_bounds = [0, 1024];
+    this.y_bounds = [0, 768];
     this.topology=options.topology;
   };
 
@@ -33,22 +33,64 @@
   };
 
   Asteroid.prototype.render = function() {
-    var ctx = this.canvas.getContext('2d');
-    ctx.font = this.size + 'px vector_battleregular';
-    ctx.fillStyle = 'white';
-    ctx.fillText(this.shape, this.position[0] - this.type * 10.5,
-      this.position[1] + this.type * 10.5);
-    for(var dim=0; dim<2; dim++){
-      if(this.topology[dim] == 1){//TODO: -1
-        for(var dir=-1; dir<=1; dir+=2){
-          bounds=[this.x_bounds,this.y_bounds][dim]
-          shift=[0,0]
-          shift[dim]=dir*(bounds[1]-bounds[0])
 
-          ctx.fillText(this.shape, this.position[0] - this.type * 10.5 + shift[0],
-          this.position[1] + this.type * 10.5 + shift[1]);
+
+    var stuff=[];
+    stuff.push([this.position[0],this.position[1],0])
+    pointingAt=[0,1];
+
+    if (this.topology[0]==1){
+      stuff.push([this.position[0]+(this.x_bounds[1]-this.x_bounds[0]),this.position[1],0]);
+      stuff.push([this.position[0]-(this.x_bounds[1]-this.x_bounds[0]),this.position[1],0]);
+    } else if (this.topology[0]==-1){
+      var temp = this.y_bounds[1]-(this.position[1]-this.y_bounds[0]);
+      var rot = Math.atan2(pointingAt[1],pointingAt[0]);
+      stuff.push([this.position[0]+(this.x_bounds[1]-this.x_bounds[0]), temp,rot]);
+      stuff.push([this.position[0]-(this.x_bounds[1]-this.x_bounds[0]), temp,rot]);
+    }
+    if (this.topology[1]==1){
+      stuff.push([this.position[0],this.position[1]+(this.y_bounds[1]-this.y_bounds[0]),0]);
+      stuff.push([this.position[0],this.position[1]-(this.y_bounds[1]-this.y_bounds[0]),0]);
+    } else if (this.topology[1]==-1){
+      var temp = this.x_bounds[1]-(this.position[0]-this.x_bounds[0]);
+      var rot = Math.atan2(-pointingAt[1],-pointingAt[0]);
+      stuff.push([temp,this.position[1]+(this.y_bounds[1]-this.y_bounds[0]),rot]);
+      stuff.push([temp,this.position[1]-(this.y_bounds[1]-this.y_bounds[0]),rot]);
+    }
+    if (this.topology[0]*this.topology[1]!=0){
+      for(var x_shift=-1; x_shift<=1; x_shift+=2){
+        for(var y_shift=-1; y_shift<=1; y_shift+=2){
+          pointer=[0,1];
+          pos=[this.position[0],this.position[1]];
+          if (this.topology[0]==1){
+            pos[0]+=x_shift*(this.x_bounds[1]-this.x_bounds[0]);
+          } else if (this.topology[0]==-1){
+            pos[0]+=x_shift*(this.x_bounds[1]-this.x_bounds[0]);
+            pos[1]=this.y_bounds[1]-(pos[1]-this.y_bounds[0]);
+            pointer[1]=-pointer[1];
+          }
+          if (this.topology[1]==1){
+            pos[1]+=y_shift*(this.y_bounds[1]-this.y_bounds[0]);
+          } else if (this.topology[0]==-1){
+            pos[1]+=y_shift*(this.y_bounds[1]-this.y_bounds[0]);
+            pos[0]=this.x_bounds[1]-(pos[0]-this.x_bounds[0]);
+            pointer[0]=-pointer[0];
+          }
+          stuff.push([pos[0],pos[1],Math.atan2(-pointer[1],pointer[0])]);
         }
       }
+    }
+
+    for(var i=0; i<stuff.length; i++){
+      pos=[stuff[i][0],stuff[i][1]];
+      rot=stuff[i][2];
+
+      var ctx = this.canvas.getContext('2d');
+      ctx.font = this.size + 'px vector_battleregular';
+      ctx.fillStyle = 'white';
+      ctx.fillText(this.shape, pos[0] - this.type * 10.5,
+        pos[1] + this.type * 10.5);
+      // ctx.restore();
     }
   };
 
