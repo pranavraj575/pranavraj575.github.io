@@ -10,18 +10,20 @@
     $('#game-over').toggle();
 
   };
-  GameStart.prototype.get_topology = function() {
+
+  GameStart.prototype.get_topology_idx = function() {
     if(isNaN(this.topology_idx)){
       this.topology_idx=0;
     }
-    return [[0,0],[0,1],[1,0],[0,-1],[-1,0],[1,1],[1,-1],[-1,1],[-1,-1]][this.topology_idx%9];
+    return this.topology_idx;
+  }
+
+  GameStart.prototype.get_topology = function() {
+    return [[0,0],[0,1],[1,0],[0,-1],[-1,0],[1,1],[1,-1],[-1,1],[-1,-1]][this.get_topology_idx()%9];
   }
 
   GameStart.prototype.get_topology_name = function() {
-    if(isNaN(this.topology_idx)){
-      this.topology_idx=0;
-    }
-    return ["square","cylinder","cylinder","mobius strip","mobius strip","torus","klien bottle","klien bottle","RP2"][this.topology_idx%9];
+    return ["square","cylinder","cylinder","mobius strip","mobius strip","torus","klien bottle","klien bottle","RP2"][this.get_topology_idx()%9];
   }
   GameStart.prototype.start = function() {
     this.keyHandler();
@@ -68,6 +70,8 @@
     $('#start').hide();
     $('#instructions').hide();
     $('#credits').hide();
+    $('#toppy').hide();
+    $('#toppy2').hide();
   };
 
   GameStart.prototype.gameOver = function() {
@@ -96,14 +100,27 @@
     for (var i = 0; i < this.game.asteroids.length; i++) {
       this.game.asteroids[i].move().render();
     }
+
+    this.shipImg = new Image();
+    this.shipImg.src = ['vendor/square.png',
+    'vendor/cylinder.png','vendor/cylinder2.png',
+    'vendor/mobius.png','vendor/mobius2.png',
+    'vendor/torus.png',
+    'vendor/klien.png','vendor/klien2.png',
+    'vendor/rp2.png',
+    ][this.get_topology_idx()%9];
+
+    document.getElementById("toppy").innerHTML="Topology: "+this.get_topology_name();
+
+    var ctx = this.canvas.getContext('2d');
+    ctx.save();
+    ctx.translate(512,590);
+    //ctx.rotate(rot * -1);
+    ctx.drawImage(this.shipImg, -50, -50, 100, 100);
+    ctx.restore();
   };
   GameStart.prototype.inc_topology = function(i) {
-    if(isNaN(this.topology_idx)){
-      this.topology_idx=0;
-    }
-    this.topology_idx+=i;
+    this.topology_idx=this.get_topology_idx()+i;
     this.game.update_topology(this.get_topology());
-
-    console.log(this.get_topology_name());
   };
 })();

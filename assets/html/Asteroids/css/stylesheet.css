@@ -80,6 +80,22 @@ canvas {
   letter-spacing: 2px;
   z-index: 1;
 }
+#toppy {
+  text-align: center;
+  position: relative;
+  top: 500px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+#toppy2 {
+  text-align: center;
+  position: relative;
+  top: 640px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  z-index: 1;
+}
 
 @-moz-keyframes blink {
   from {
