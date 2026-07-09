@@ -34,6 +34,9 @@
     if (!this.playedOnce) {
       this.welcomeLoop();
     }
+    else{
+      this.renderTopologyMenuLoop();
+    }
   };
 
   GameStart.prototype.endGame = function() {
@@ -77,6 +80,7 @@
   GameStart.prototype.gameOver = function() {
     this.start();
     $('#game-over').show();
+
   };
 
   GameStart.prototype.gameOverText = function() {
@@ -92,17 +96,9 @@
 
   var requestId;
 
-  GameStart.prototype.welcomeLoop = function() {
-    requestId = window.requestAnimationFrame(this.welcomeLoop.bind(this));
-    this.game.drawBackground();
-    this.game.drawBorder();
-    this.game.makeAsteroids(12);
-    for (var i = 0; i < this.game.asteroids.length; i++) {
-      this.game.asteroids[i].move().render();
-    }
-
-    this.shipImg = new Image();
-    this.shipImg.src = ['vendor/square.png',
+  GameStart.prototype.renderTopologyMenu = function(i) {
+    toppyImg = new Image();
+    toppyImg.src = ['vendor/square.png',
     'vendor/cylinder.png','vendor/cylinder2.png',
     'vendor/mobius.png','vendor/mobius2.png',
     'vendor/torus.png',
@@ -116,11 +112,31 @@
     ctx.save();
     ctx.translate(512,590);
     //ctx.rotate(rot * -1);
-    ctx.drawImage(this.shipImg, -50, -50, 100, 100);
+    ctx.drawImage(toppyImg, -50, -50, 100, 100);
     ctx.restore();
+
+    $('#toppy').show();
+    $('#toppy2').show();
   };
+  GameStart.prototype.welcomeLoop = function() {
+    requestId = window.requestAnimationFrame(this.welcomeLoop.bind(this));
+    this.game.drawBackground();
+    this.game.drawBorder();
+    this.game.makeAsteroids(12);
+    for (var i = 0; i < this.game.asteroids.length; i++) {
+      this.game.asteroids[i].move().render();
+    }
+    this.renderTopologyMenu();
+  };
+
+  GameStart.prototype.renderTopologyMenuLoop = function() {
+    requestId = window.requestAnimationFrame(this.renderTopologyMenuLoop.bind(this));
+    this.renderTopologyMenu();
+  };
+
   GameStart.prototype.inc_topology = function(i) {
     this.topology_idx=this.get_topology_idx()+i;
     this.game.update_topology(this.get_topology());
   };
+
 })();
