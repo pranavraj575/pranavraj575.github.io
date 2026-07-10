@@ -78,6 +78,9 @@
         this.toggle_friendly_fire();
       }
     }.bind(this));
+    kd.Q.press(function() {
+      window.location.href = "../../..";
+    }.bind(this));
   };
 
   GameStart.prototype.removeTitles = function() {
@@ -154,6 +157,15 @@
     }
     ff=ff+" (F to toggle)"
     this.fillThickly(ctx,ff,.25)
+    ctx.restore();
+
+    ctx.save();
+    ctx.translate(512,750);
+    ctx.font="bold 17px vector_battleregular"
+    ctx.fillStyle="white"
+    ctx.letterSpacing = "3px"
+    ctx.textAlign = "center";
+    this.fillThickly(ctx,"Q to quit",.25)
     ctx.restore();
 
     this.game.borderHints(this.get_topology());
