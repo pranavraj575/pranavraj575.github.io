@@ -81,9 +81,14 @@
     ctx.ellipse(this.position[0], this.position[1], size*Math.max(this.speed/3,1), size, this.orientation, 0, 2*Math.PI)
     ctx.lineWidth = 1;
     if (this.friendly_fire){
-      ctx.strokeStyle = 'red';
+      if(this.max_life-this.life>10){
+        ctx.strokeStyle = 'red';
+      }
+      else{
+        ctx.strokeStyle = 'red';
+      }
       ctx.fillStyle = 'red';
-    }else{
+    } else{
       ctx.strokeStyle = 'white';
       ctx.fillStyle = 'white';
     }

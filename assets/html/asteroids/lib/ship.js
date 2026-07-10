@@ -159,11 +159,26 @@
       ctx.translate(pos[0], pos[1]);
       ctx.rotate(rot * -1);
       if (this.invulnerable){
-        ctx.drawImage(this.shipinvImg, -16, -16, 44, 32);
+        ctx.strokeStyle = 'green';
+        ctx.fillStyle='white';
+        //ctx.drawImage(this.shipinvImg, -16, -16, 44, 32);
       }
       else {
-        ctx.drawImage(this.shipImg, -16, -16, 44, 32);
+        ctx.fillStyle='white';
+        //ctx.drawImage(this.shipImg, -16, -16, 44, 32);
       }
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(16,0);
+      ctx.lineTo(-13,-10);
+      ctx.lineTo(-8,-6);
+      ctx.lineTo(-8,6);
+      ctx.lineTo(-13,10);
+      ctx.lineTo(16,0);
+      if (this.invulnerable){
+        ctx.stroke();
+      }
+      ctx.fill();
       ctx.restore();
     }
 
