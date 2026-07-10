@@ -64,7 +64,7 @@
         if (this.position[dim] < bounds[0] && this.velocity[dim] < 0) {
           this.position[dim] = bounds[1];
           trans = true;
-        }  else if (this.position[dim] > bounds[1] && this.velocity[dim] > 0) {
+        } else if (this.position[dim] > bounds[1] && this.velocity[dim] > 0) {
           this.position[dim] = bounds[0];
           trans = true;
         }
@@ -81,6 +81,8 @@
             this.position[dim] > bounds[1] && this.velocity[dim] > 0
             ){
           this.velocity[dim]= -this.velocity[dim];
+          // force ship in bounds
+          this.position[dim]=Math.min(Math.max(this.position[dim],bounds[0]),bounds[1]);
         }
       }
     }
