@@ -6,6 +6,7 @@ excerpt: "what"
 author_profile: false
 redirect_from: 
   - /assets/html/assteroids
+  - /assets/html/assteroids/
   - /assets/html/assteroids.html
 nav: false
 og_image: /assets/img/cool_bunny.jpg
