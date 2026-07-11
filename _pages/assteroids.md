@@ -6,6 +6,7 @@ excerpt: "what"
 author_profile: false
 redirect_from: 
   - /asteroids
+  - /asteroids/
   - /assets/html/assteroids
   - /assets/html/assteroids/
   - /assets/html/assteroids.html
