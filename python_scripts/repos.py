@@ -83,7 +83,7 @@ for repo in data["github_repos"]:
         if len(languages) == 1:
             width = 12
             batch = 1
-        elif any(any(l in ll for ll in languages[:3]) for l in long_languages):
+        elif any(any(l in ll for ll in languages[:3]) for l in long_languages) or len(languages) == 2:
             width = 6
             batch = 2
         else:
