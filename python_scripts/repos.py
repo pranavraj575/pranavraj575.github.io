@@ -36,17 +36,15 @@ for repo in data["github_repos"]:
 
     s = response.text
     # get description from description meta tag
-    description = ""
+    description = "no description provided"
     while "<meta" in s:
         s = s[s.index("<meta") :]
         meta_tag = s[: 1 + s.index(">")]
         s = s[1 + s.index(">") :]
-        if 'name="description"' in meta_tag:
-            description = meta_tag[meta_tag.index('content="') + 9 :]
-            if f' - {repo}"' in description:
-                description = description[: description.index(f' - {repo}"')]
-            else:
-                description = "no description provided"
+        if 'property="og:title"' in meta_tag:
+            st_str = f'content="GitHub - {repo}: '
+            if st_str in meta_tag:
+                description = meta_tag[meta_tag.index(st_str) + len(st_str) : meta_tag.index('" />')]
     # get languages list from html
     # pattern is <div ...> <h2 class="h4 tmp-mb-3">Languages</h2> .... </div>
     temp = response.text[response.text.index('<h2 class="h4 tmp-mb-3">Languages</h2>') :]
