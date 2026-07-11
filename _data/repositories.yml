@@ -12,6 +12,7 @@ github_repos:
 # topology
   - pranavraj575/polyhedra_cut_locus
   - pranavraj575/sperners_lemon
+  - pranavraj575/asteroids
 # routing
   - pranavraj575/UAV_routing_classification
 
