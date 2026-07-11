@@ -5,6 +5,7 @@ title: assteroids
 excerpt: "what"
 author_profile: false
 redirect_from: 
+  - /asteroids
   - /assets/html/assteroids
   - /assets/html/assteroids/
   - /assets/html/assteroids.html
