@@ -5,11 +5,8 @@ title: assteroids
 excerpt: "what"
 author_profile: false
 redirect_from: 
-  - /asteroids
-  - /asteroids/
   - /assets/html/assteroids
   - /assets/html/assteroids.html
-  - /assets/html/asteroids.html
 nav: false
 og_image: /assets/img/cool_bunny.jpg
 ---
