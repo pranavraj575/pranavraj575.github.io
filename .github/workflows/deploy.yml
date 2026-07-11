@@ -74,6 +74,9 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+      - name: Check out (youre doing what??)
+        run: |
+          git submodule update --init --recursive
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
