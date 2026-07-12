@@ -18,5 +18,5 @@ Sending to asteroids game
   <meta http-equiv="refresh" content="0; url=/assets/html/asteroids" />
   <p><a href="/assets/html/asteroids">redirect</a></p>
 </html>
-<span style="display: inline-block; transform: matrix(-.420, 0, 0, .420, 0, 0);">there are bugs in my skin</span>
+<span style="opacity:.42069;display: inline-block; transform: matrix(-.42069, 0, 0, .42069, 0, 0);">there are bugs in my skin</span>
 
