@@ -13,10 +13,10 @@ redirect_from:
 nav: false
 og_image: /assets/img/cool_bunny.jpg
 ---
-# there are bugs in my skin
-
+Sending to asteroids game
 <html>
   <meta http-equiv="refresh" content="0; url=/assets/html/asteroids" />
   <p><a href="/assets/html/asteroids">redirect</a></p>
 </html>
+<span style="display: inline-block; transform: matrix(-.420, 0, 0, .420, 0, 0);">there are bugs in my skin</span>
 
