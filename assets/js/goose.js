@@ -1,4 +1,3 @@
-
 // Change the goose setting and apply the goose.
 let setGooseSetting = (gooseSetting) => {
   localStorage.setItem("goose", gooseSetting);
@@ -18,7 +17,7 @@ let setStepsFound = (steps) => {
 
 // Set steps found to max(stored steps found,steps), apply goose
 let increaseStepsTo = (steps) => {
-  if (determineStepsFound() < steps){
+  if (determineStepsFound() < steps) {
     setStepsFound(steps);
   }
   // quack no matter what
@@ -32,7 +31,7 @@ let determineGooseSetting = (steps) => {
   if (steps >= numSecrets) {
     return "silly";
   }
-  else{
+  else {
     return "serious";
   }
 };
@@ -64,20 +63,20 @@ let determineToeRecord = () => {
   if (typeof(wins_stored) == "string") {
     wins = parseInt(wins_stored);
   }
-  return [losses, ties, wins, losses+ties+wins,(wins-losses)/Math.max(1, wins+ties+losses)]
+  return[losses, ties, wins, losses + ties + wins, (wins - losses) / Math.max(1, wins + ties + losses)]
 };
-let toeGameResult = (lost=false, tied=false, won=false) => {
+let toeGameResult = (lost = false, tied = false, won = false) => {
   var arrg = determineToeRecord();
   var losses = arrg[0];
   var ties = arrg[1];
   var wins = arrg[2];
-  if (tied){
+  if (tied) {
     ties++;
   }
-  if (lost){
+  if (lost) {
     losses++;
   }
-  if (won){
+  if (won) {
     wins++;
   }
   localStorage.setItem("toe_losses", String(losses));
@@ -87,24 +86,24 @@ let toeGameResult = (lost=false, tied=false, won=false) => {
 
 let toeRevealForFree = () => {
   var arrg = determineToeRecord();
-  for (var k=0;k<5;k++){
-    var thingy=["losses","ties","wins","games","score"][k];
-    var cnt=arrg[k];
-    for (var thing of document.getElementsByClassName("reveal-after-toe-"+thingy)){
-      target=parseFloat(thing.getAttribute("toe-reveal-counter"));
-      if(cnt>=target){
+  for (var k = 0; k < 5; k++) {
+    var thingy = ["losses", "ties", "wins", "games", "score"][k];
+    var cnt = arrg[k];
+    for (var thing of document.getElementsByClassName("reveal-after-toe-" + thingy)) {
+      target = parseFloat(thing.getAttribute("toe-reveal-counter"));
+      if (cnt >= target) {
         markObjectReveal(thing);
       }
-      else{
+      else {
         markObjectHide(thing);
       }
     }
-    for (var thing of document.getElementsByClassName("hide-after-toe-"+thingy)){
-      target=parseFloat(thing.getAttribute("toe-reveal-counter"));
-      if(cnt>=target){
+    for (var thing of document.getElementsByClassName("hide-after-toe-" + thingy)) {
+      target = parseFloat(thing.getAttribute("toe-reveal-counter"));
+      if (cnt >= target) {
         markObjectHide(thing);
       }
-      else{
+      else {
         markObjectReveal(thing);
       }
     }
@@ -117,9 +116,9 @@ let pasteToeRecord = () => {
     const ties = document.getElementById("record-ties");
     const wins = document.getElementById("record-wins");
     var arrg = determineToeRecord();
-    losses.textContent=arrg[0];
-    ties.textContent=arrg[1];
-    wins.textContent=arrg[2];
+    losses.textContent = arrg[0];
+    ties.textContent = arrg[1];
+    wins.textContent = arrg[2];
   });
 };
 
@@ -131,10 +130,9 @@ let pasteToeRecord = () => {
 // silly-goose and serious-goose are equivalent to reveal-counter="<numSecrets>" and hide-counter="<numSecrets>"
 // if something is revealed at a and hidden at b (note, a<b)
 //  it will be hidden with secrets < a, revealed at a<= secrets < b, and hidden with secrets>=b
-
 // reveal is weaker
 let markObjectReveal = (elem_tre) => {
-  if (!elem_tre.classList.contains("temp-hide")){
+  if (!elem_tre.classList.contains("temp-hide")) {
     elem_tre.classList.add("temp-reveal");
   }
 }
@@ -148,15 +146,15 @@ let markObjectHide = (elem_tre) => {
 let hide_and_reveal = () => {
   var revealing = document.getElementsByClassName("temp-reveal");
   for (var i = revealing.length - 1; i >= 0; i--) {
-    if (revealing[i].classList.contains("notlight")){
-        revealing[i].classList.add("spotlight");
-        revealing[i].classList.remove("notlight");
+    if (revealing[i].classList.contains("notlight")) {
+      revealing[i].classList.add("spotlight");
+      revealing[i].classList.remove("notlight");
     }
     var disp = "inherit";
-    for (var type_style of ["block", "inline-block", "table-row"]){
-        if (revealing[i].classList.contains("display-style-"+type_style)){
-           disp = type_style;
-        }
+    for (var type_style of["block", "inline-block", "table-row"]) {
+      if (revealing[i].classList.contains("display-style-" + type_style)) {
+        disp = type_style;
+      }
     }
     revealing[i].style.display = disp;
     revealing[i].classList.remove("temp-reveal");
@@ -166,12 +164,12 @@ let hide_and_reveal = () => {
   for (var i = hiddening.length - 1; i >= 0; i--) {
     // toggle whether images are shown as well
     // ORDER MATTERS, once element is removed from classlist, hiddening[i] is null
-    if (hiddening[i].classList.contains("spotlight")){
-        hiddening[i].classList.add("notlight");
-        hiddening[i].classList.remove("spotlight");
+    if (hiddening[i].classList.contains("spotlight")) {
+      hiddening[i].classList.add("notlight");
+      hiddening[i].classList.remove("spotlight");
     }
-    if (hiddening[i].style.display){
-        hiddening[i].classList.add("display-style-"+hiddening[i].style.display)
+    if (hiddening[i].style.display) {
+      hiddening[i].classList.add("display-style-" + hiddening[i].style.display)
     }
     hiddening[i].style.display = "none";
     hiddening[i].classList.remove("temp-hide");
@@ -184,23 +182,23 @@ let hide_and_reveal = () => {
 let gooseActivation = () => {
   var secrets_found = determineStepsFound();
   for (var goose of document.getElementsByClassName("reveal-after-secrets")) {
-    secrets=parseInt(goose.getAttribute("reveal-counter"));
-    if(secrets <= secrets_found){
+    secrets = parseInt(goose.getAttribute("reveal-counter"));
+    if (secrets <= secrets_found) {
       // if the number of secrets found is at least the number of secrets needed, we will reveal silly_geese[i]
       markObjectReveal(goose);
     }
-    else{
+    else {
       // otherwise, we must hide this goose
       markObjectHide(goose);
     }
   }
   for (var goose of document.getElementsByClassName("hide-after-secrets")) {
-    secrets=parseInt(goose.getAttribute("hide-counter"));
-    if(secrets <= secrets_found){
+    secrets = parseInt(goose.getAttribute("hide-counter"));
+    if (secrets <= secrets_found) {
       // if the number of secrets found is at least the number of secrets needed, we will hide serious_geese[i]
       markObjectHide(goose);
     }
-    else{
+    else {
       // otherwise, we will reveal this goose
       markObjectReveal(goose);
     }
@@ -209,14 +207,14 @@ let gooseActivation = () => {
   var goose_setting = document.documentElement.getAttribute("goose-setting");
 
   for (var goose of document.getElementsByClassName("silly-goose")) {
-    if (goose_setting == "silly"){
+    if (goose_setting == "silly") {
       markObjectReveal(goose);
     } else {
       markObjectHide(goose);
     }
   }
   for (var goose of document.getElementsByClassName("serious-goose")) {
-    if (goose_setting == "silly"){
+    if (goose_setting == "silly") {
       markObjectHide(goose);
     } else {
       markObjectReveal(goose);
@@ -224,7 +222,6 @@ let gooseActivation = () => {
   }
   hide_and_reveal();
 };
-
 
 let initGoose = () => {
   let steps = determineStepsFound();
@@ -232,45 +229,47 @@ let initGoose = () => {
 };
 
 let themeThemedStuff = (theme) => {
-  for (var thing of document.getElementsByClassName("only-dark-theme")){
-    if(theme == 'dark'){
+  for (var thing of document.getElementsByClassName("only-dark-theme")) {
+    if (theme == 'dark') {
       markObjectReveal(thing);
     }
-    else{
+    else {
       markObjectHide(thing);
     }
   }
-  for (var thing of document.getElementsByClassName("non-dark-theme")){
-    if(theme == 'dark'){
+  for (var thing of document.getElementsByClassName("non-dark-theme")) {
+    if (theme == 'dark') {
       markObjectHide(thing);
     }
-    else{
+    else {
       markObjectReveal(thing);
     }
   }
   hide_and_reveal();
 };
 
-
 let permute_children_help = (element) => {
-  indices=[];
-  for (i=0;i<element.childElementCount;i++){
+  indices = [];
+  for (i = 0; i < element.childElementCount; i++) {
     indices.push(i);
   }
-  inner_htmls=[];
-  for (i=0;i<element.childElementCount;i++){
-    random_idx=indices.splice(Math.floor(Math.random()*indices.length),1)[0];
+  inner_htmls = [];
+  for (i = 0; i < element.childElementCount; i++) {
+    random_idx = indices.splice(Math.floor(Math.random() * indices.length), 1)[0];
     inner_htmls.push(element.children[random_idx].innerHTML);
   }
 
-  for (i=0;i<element.childElementCount;i++){
-    element.children[i].innerHTML=inner_htmls[i];
+  for (i = 0; i < element.childElementCount; i++) {
+    element.children[i].innerHTML = inner_htmls[i];
   }
 }
 
-let permute_children = (element, repeat_after=-1) => {
+let permute_children = (element, repeat_after = -1) => {
   permute_children_help(element);
-  if (repeat_after >= 0){
-    setTimeout(function(){permute_children(element,repeat_after=repeat_after)}, repeat_after);
+  if (repeat_after >= 0) {
+    setTimeout(function() {
+      permute_children(element, repeat_after = repeat_after)
+    },
+    repeat_after);
   }
 }
