@@ -1,499 +1,293 @@
-let pacminIntervalSec = 69;
-let pacmaxIntervalSec = 200;
+let pacminIntervalSec = 69
+let pacmaxIntervalSec = 200
 
 function getRandomIntervalTime() {
-  let randTimeMillisec = Math.floor(((pacmaxIntervalSec - pacminIntervalSec) * Math.random() + pacminIntervalSec) * 1000)
-  return randTimeMillisec;
+    let randTimeMillisec = Math.floor(((pacmaxIntervalSec-pacminIntervalSec)*Math.random()+pacminIntervalSec)*1000)
+    return randTimeMillisec
 }
 
 function getRandomDirection() {
-  let dirs = ['east', 'north', 'west', 'south'];
-  return dirs[Math.floor(Math.random() * dirs.length)];
+    let dirs = ['east','north','west','south'];
+    return dirs[Math.floor(Math.random() * dirs.length)]
 }
 
 //common code in ghost and pacman
-function getAgentDiv(dir = 'east', respawn = false) {
-  let agentDiv = document.createElement('div');
-  agentDiv.classList.add('pacman');
-  if (respawn) {
-    agentDiv.classList.add('respawn');
-  }
+function getAgentDiv(dir='east', respawn=false){
+    let agentDiv = document.createElement('div')
+    agentDiv.classList.add('pacman')
+    if (respawn){
+      agentDiv.classList.add('respawn');
+    }
 
-  // Add random position
-  // also add animation
-  let prop = Math.floor(Math.random() * 100)
-  if (dir == 'east') {
-    agentDiv.style.top = `$ {
-      prop
+    // Add random position
+    // also add animation
+
+    let prop = Math.floor(Math.random() * 100)
+    if (dir=='east'){
+        agentDiv.style.top = `${prop}vh`
     }
-    vh`
-  }
-  else if (dir == 'north') {
-    agentDiv.style.left = `$ {
-      prop
+    else if (dir=='north'){
+        agentDiv.style.left = `${prop}vh`
     }
-    vh`
-  }
-  else if (dir == 'west') {
-    agentDiv.style.top = `$ {
-      prop
+    else if (dir=='west'){
+        agentDiv.style.top = `${prop}vh`
     }
-    vh`
-  }
-  else {
-    agentDiv.style.left = `$ {
-      prop
+    else {
+        agentDiv.style.left = `${prop}vh`
     }
-    vh`
-  }
-  agentDiv.style.animation = "pacman-peaking-" + dir + " 20s linear"
-  agentDiv.setAttribute("onclick", "window.location.href = 'https://pacmanonline.org/game';")
-  return agentDiv
+    agentDiv.style.animation = "pacman-peaking-"+dir+" 20s linear"
+    agentDiv.setAttribute("onclick", "window.location.href = 'https://pacmanonline.org/game';")
+    return agentDiv
 }
 
-function addPacman(respawn = false) {
-  let dir = getRandomDirection()
-  let pacmanDiv = getAgentDiv(dir, respawn = respawn)
-  if (dir == 'north') {
-    pacmanDiv.style.transform = 'matrix(0,-1,1,0,0,0)'
-  }
-  else if (dir == 'south') {
-    pacmanDiv.style.transform = 'matrix(0,1,1,0,0,0)'
-  }
-  else if (dir == 'east') {
-    pacmanDiv.style.transform = 'matrix(1,0,0,1,0,0)'
-  }
-  else if (dir == 'west') {
-    pacmanDiv.style.transform = 'matrix(-1,0,0,1,0,0)'
-  }
-
-  let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
-  svg.setAttribute('viewBox', '-1.05 -1.05 2.1 2.1')
-
-  let pacmanPath = document.createElementNS('http://www.w3.org/2000/svg', 'path')
-  pacmanPath.setAttribute('fill', 'yellow')
-  pacmanPath.setAttribute('stroke', 'black')
-  pacmanPath.setAttribute('stroke-width', '0.05')
-  pacmanPath.setAttribute('d', '')
-
-  let chompAnimation = document.createElementNS('http://www.w3.org/2000/svg', 'animate')
-  chompAnimation.setAttribute('attributeName', 'd')
-  chompAnimation.setAttribute('dur', '0.5s')
-  chompAnimation.setAttribute('repeatCount', 'indefinite')
-
-  let mouthAngle = 40
-  let numAngles = 2
-  let deltaAngle = mouthAngle / numAngles
-
-  // Start with middle of animation (closed mouth)
-  let keyPointsStr = 'M0 0 L1.000 0.000 A1 1 0 1 1 1.000  0.000 Z;'
-  for (let i = 1; i <= numAngles; i++) {
-    let angleDeg = i * deltaAngle
-    let x = Math.cos(angleDeg * Math.PI / 180)
-    let y = Math.sin(angleDeg * Math.PI / 180)
-
-    // Add angle both before and after current values
-    keyPoint = `M0 0 L$ {
-      x.toFixed(3)
+function addPacman(respawn=false) {
+    let dir = getRandomDirection()
+    let pacmanDiv = getAgentDiv(dir,respawn=respawn)
+    if (dir == 'north') {
+        pacmanDiv.style.transform='matrix(0,-1,1,0,0,0)'
     }
-    $ {
-      y.toFixed(3)
+    else if (dir == 'south') {
+        pacmanDiv.style.transform='matrix(0,1,1,0,0,0)'
     }
-    A1 1 0 1 1 $ {
-      x.toFixed(3)
-    } - $ {
-      y.toFixed(3)
+    else if (dir == 'east') {
+        pacmanDiv.style.transform='matrix(1,0,0,1,0,0)'
     }
-    Z;`
-    keyPointsStr = keyPoint + keyPointsStr
-    keyPointsStr = keyPointsStr + keyPoint
-  }
-  chompAnimation.setAttribute('values', keyPointsStr)
+    else if (dir == 'west') {
+        pacmanDiv.style.transform='matrix(-1,0,0,1,0,0)'
+    }
 
-  pacmanPath.appendChild(chompAnimation)
-  svg.appendChild(pacmanPath)
-  pacmanDiv.appendChild(svg)
+    let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
+    svg.setAttribute('viewBox', '-1.05 -1.05 2.1 2.1')
 
-  addAgenttoDoc(pacmanDiv);
+    let pacmanPath = document.createElementNS('http://www.w3.org/2000/svg', 'path')
+    pacmanPath.setAttribute('fill', 'yellow')
+    pacmanPath.setAttribute('stroke', 'black')
+    pacmanPath.setAttribute('stroke-width', '0.05')
+    pacmanPath.setAttribute('d', '')
 
-  pacmanDiv.addEventListener('animationend', removePacguy)
+    let chompAnimation = document.createElementNS('http://www.w3.org/2000/svg', 'animate')
+    chompAnimation.setAttribute('attributeName', 'd')
+    chompAnimation.setAttribute('dur', '0.5s')
+    chompAnimation.setAttribute('repeatCount', 'indefinite')
+
+    let mouthAngle = 40
+    let numAngles = 2
+    let deltaAngle = mouthAngle / numAngles
+
+    // Start with middle of animation (closed mouth)
+    let keyPointsStr = 'M0 0 L1.000 0.000 A1 1 0 1 1 1.000  0.000 Z;'
+    for (let i = 1; i <= numAngles; i++) {
+        let angleDeg = i*deltaAngle
+        let x = Math.cos(angleDeg * Math.PI / 180)
+        let y = Math.sin(angleDeg * Math.PI / 180)
+
+        // Add angle both before and after current values
+        keyPoint = `M0 0 L${x.toFixed(3)} ${y.toFixed(3)} A1 1 0 1 1 ${x.toFixed(3)} -${y.toFixed(3)} Z;`
+        keyPointsStr = keyPoint + keyPointsStr
+        keyPointsStr = keyPointsStr + keyPoint
+    }
+    chompAnimation.setAttribute('values', keyPointsStr)
+
+    pacmanPath.appendChild(chompAnimation)
+    svg.appendChild(pacmanPath)
+    pacmanDiv.appendChild(svg)
+
+    addAgenttoDoc(pacmanDiv);
+
+    pacmanDiv.addEventListener('animationend', removePacguy)
 }
 
-function addGhost(respawn = false) {
-  // Ghost colors
-  let ghostColorClasses = ['ghost-red', 'ghost-blue', 'ghost-orange', 'ghost-cyan', 'ghost-yellow-orange', 'ghost-purple', 'ghost-spooked', ]
+function addGhost(respawn=false) {
+    // Ghost colors
+    let ghostColorClasses = [
+        'ghost-red',
+        'ghost-blue',
+        'ghost-orange',
+        'ghost-cyan',
+        'ghost-yellow-orange',
+        'ghost-purple',
+        'ghost-spooked',
+        ]
 
-  let ghostColor = ghostColorClasses[Math.floor(Math.random() * ghostColorClasses.length)]
-  let dir = getRandomDirection()
-  let ghostDiv = getAgentDiv(dir, respawn = respawn)
-  let spooked = (ghostColor == 'ghost-spooked')
-  // Ghost shape
-  let numLegs = 3
-  let bodyWidth = 1.5
-  let ghostMargin = 0.25
-  let ghostLeft = -1 + ghostMargin
-  let ghostRight = 1 - ghostMargin
-  let ghostTop = -1 + ghostMargin
+    let ghostColor = ghostColorClasses[Math.floor(Math.random() * ghostColorClasses.length)]
+    let dir = getRandomDirection()
+    let ghostDiv = getAgentDiv(dir,respawn=respawn)
+    let spooked = (ghostColor == 'ghost-spooked')
+    // Ghost shape
 
-  let shoulderRadius = 0.75
+    let numLegs = 3
+    let bodyWidth = 1.5
+    let ghostMargin = 0.25
+    let ghostLeft = -1+ghostMargin
+    let ghostRight = 1-ghostMargin
+    let ghostTop = -1+ghostMargin
 
-  // Legs
-  let footSize = 0.1
-  let legGap = bodyWidth / numLegs
-  let legHeight = legGap / 2
-  let legBottom = 1 - ghostMargin
-  let legTop = legBottom - legHeight
+    let shoulderRadius = 0.75
 
-  // Body
-  let ghostBodyPathStr = `M$ {
-    ghostRight
-  }
-  $ {
-    legTop
-  }
-  L$ {
-    ghostRight
-  }
-  $ {
-    ghostTop + shoulderRadius
-  }`
-  ghostBodyPathStr += `A $ {
-    shoulderRadius
-  }
-  $ {
-    shoulderRadius
-  }
-  0 0 0 $ {
-    ghostRight - shoulderRadius
-  }
-  $ {
-    ghostTop
-  }`
-  ghostBodyPathStr += `L$ {
-    ghostLeft + shoulderRadius
-  }
-  $ {
-    ghostTop
-  }`
-  ghostBodyPathStr += `A $ {
-    shoulderRadius
-  }
-  $ {
-    shoulderRadius
-  }
-  0 0 0 $ {
-    ghostLeft
-  }
-  $ {
-    ghostTop + shoulderRadius
-  }`
-  ghostBodyPathStr += `L$ {
-    ghostLeft
-  }
-  $ {
-    legTop
-  }`
+    // Legs
+    let footSize = 0.1
+    let legGap = bodyWidth/numLegs
+    let legHeight = legGap/2
+    let legBottom = 1-ghostMargin
+    let legTop = legBottom-legHeight
 
-  // Legs
-  ghostLegs1 = `L$ {
-    ghostLeft
-  }
-  $ {
-    legBottom
-  }
-  L$ {
-    ghostLeft + footSize / 2
-  }
-  $ {
-    legBottom
-  }
-  L$ {
-    ghostLeft + legGap / 2
-  }
-  $ {
-    legTop
-  }
-  L$ {
-    ghostLeft + legGap - footSize / 2
-  }
-  $ {
-    legBottom
-  }
-  L$ {
-    ghostLeft + legGap + footSize / 2
-  }
-  $ {
-    legBottom
-  }
-  L0 $ {
-    legTop
-  }
-  L$ {
-    ghostLeft + 2 * legGap - footSize / 2
-  }
-  $ {
-    legBottom
-  }
-  L$ {
-    ghostLeft + 2 * legGap + footSize / 2
-  }
-  $ {
-    legBottom
-  }
-  L$ {
-    ghostRight - legGap / 2
-  }
-  $ {
-    legTop
-  }
-  L$ {
-    ghostRight - footSize / 2
-  }
-  $ {
-    legBottom
-  }
-  L$ {
-    ghostRight
-  }
-  $ {
-    legBottom
-  }`
-  ghostLegs2 = `L$ {
-    ghostLeft + legGap / 2 - footSize / 2
-  }
-  $ {
-    legBottom
-  }
-  L$ {
-    ghostLeft + legGap / 2 + footSize / 2
-  }
-  $ {
-    legBottom
-  }
-  L$ {
-    ghostLeft + legGap
-  }
-  $ {
-    legTop
-  }
-  L$ {
-    0 - footSize / 2
-  }
-  $ {
-    legBottom
-  }
-  L$ {
-    0 + footSize / 2
-  }
-  $ {
-    legBottom
-  }
-  L$ {
-    ghostRight - legGap
-  }
-  $ {
-    legTop
-  }
-  L$ {
-    ghostRight - legGap / 2 - footSize / 2
-  }
-  $ {
-    legBottom
-  }
-  L$ {
-    ghostRight - legGap / 2 + footSize / 2
-  }
-  $ {
-    legBottom
-  }`
+    // Body
+    let ghostBodyPathStr = `M${ghostRight} ${legTop} L${ghostRight} ${ghostTop+shoulderRadius} `
+    ghostBodyPathStr += `A ${shoulderRadius} ${shoulderRadius} 0 0 0 ${ghostRight-shoulderRadius} ${ghostTop} `
+    ghostBodyPathStr += `L${ghostLeft+shoulderRadius} ${ghostTop} `
+    ghostBodyPathStr += `A ${shoulderRadius} ${shoulderRadius} 0 0 0 ${ghostLeft} ${ghostTop+shoulderRadius} `
+    ghostBodyPathStr += `L${ghostLeft} ${legTop} `
 
-  let ghostWalk1 = ghostBodyPathStr + ghostLegs1 + 'Z'
-  let ghostWalk2 = ghostBodyPathStr + ghostLegs2 + 'Z'
+    // Legs
+    ghostLegs1 = `L${ghostLeft} ${legBottom} L${ghostLeft+footSize/2} ${legBottom} L${ghostLeft+legGap/2} ${legTop} L${ghostLeft+legGap-footSize/2} ${legBottom} L${ghostLeft+legGap+footSize/2} ${legBottom} L0 ${legTop} L${ghostLeft+2*legGap-footSize/2} ${legBottom} L${ghostLeft+2*legGap+footSize/2} ${legBottom} L${ghostRight-legGap/2} ${legTop} L${ghostRight-footSize/2} ${legBottom} L${ghostRight} ${legBottom} `
+    ghostLegs2 = `L${ghostLeft+legGap/2-footSize/2} ${legBottom} L${ghostLeft+legGap/2+footSize/2} ${legBottom} L${ghostLeft+legGap} ${legTop} L${0-footSize/2} ${legBottom} L${0+footSize/2} ${legBottom} L${ghostRight-legGap} ${legTop} L${ghostRight-legGap/2-footSize/2} ${legBottom} L${ghostRight-legGap/2+footSize/2} ${legBottom} `
 
-  let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
-  svg.setAttribute('viewBox', '-1.05 -1.05 2.1 2.1')
+    let ghostWalk1 = ghostBodyPathStr + ghostLegs1 + 'Z'
+    let ghostWalk2 = ghostBodyPathStr + ghostLegs2 + 'Z'
 
-  let ghostBody = document.createElementNS('http://www.w3.org/2000/svg', 'path')
-  ghostBody.setAttribute('stroke', 'black')
-  ghostBody.setAttribute('stroke-width', '0.05')
-  ghostBody.setAttribute('stroke-linejoin', 'round')
-  ghostBody.classList.add(ghostColor)
+    let svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg')
+    svg.setAttribute('viewBox', '-1.05 -1.05 2.1 2.1')
 
-  // // Not animated
-  // ghostPath.setAttribute('d', ghostWalk1)
-  let walkAnimation = document.createElementNS('http://www.w3.org/2000/svg', 'animate')
-  walkAnimation.setAttribute('attributeName', 'd')
-  walkAnimation.setAttribute('dur', '0.3s')
-  walkAnimation.setAttribute('repeatCount', 'indefinite')
+    let ghostBody = document.createElementNS('http://www.w3.org/2000/svg', 'path')
+    ghostBody.setAttribute('stroke', 'black')
+    ghostBody.setAttribute('stroke-width', '0.05')
+    ghostBody.setAttribute('stroke-linejoin', 'round')
+    ghostBody.classList.add(ghostColor)
 
-  let keyPointsStr = ghostWalk1 + ';' + ghostWalk2
-  walkAnimation.setAttribute('values', keyPointsStr)
+    // // Not animated
+    // ghostPath.setAttribute('d', ghostWalk1)
 
-  ghostBody.appendChild(walkAnimation)
-  svg.appendChild(ghostBody)
+    let walkAnimation = document.createElementNS('http://www.w3.org/2000/svg', 'animate')
+    walkAnimation.setAttribute('attributeName', 'd')
+    walkAnimation.setAttribute('dur', '0.3s')
+    walkAnimation.setAttribute('repeatCount', 'indefinite')
 
-  // Eyes
-  let eyeOffsetX = 0.27
-  let eyeOffsetY = 0.15
-  let eyeRadiusX = 0.2
-  let eyeRadiusY = 0.28
-  let pupilRadius = 0.12
-  let eyeShift = 0.24
+    let keyPointsStr = ghostWalk1 + ';' + ghostWalk2
+    walkAnimation.setAttribute('values', keyPointsStr)
 
-  let eyeColor = 'white'
-  let pupilColor = 'black'
+    ghostBody.appendChild(walkAnimation)
+    svg.appendChild(ghostBody)
 
-  // mouth
-  let mouthHeight = legHeight / 2
-  let mouthBottom = (eyeOffsetY + legBottom) / 2 - mouthHeight / 2
-  let mouthTop = mouthBottom - mouthHeight
-  let mouthScale = 0.8
-  if (spooked) {
-    pupilColor = "#fab9b0";
-    eyeRadiusX = 0;
-    eyeRadiusY = 0;
-    eyeShift = 0;
-    let mouth = document.createElementNS('http://www.w3.org/2000/svg', 'path')
 
-    let coords = `M $ {
-      ghostLeft * mouthScale
+    // Eyes
+    let eyeOffsetX = 0.27
+    let eyeOffsetY = 0.15
+    let eyeRadiusX = 0.2
+    let eyeRadiusY = 0.28
+    let pupilRadius = 0.12
+    let eyeShift = 0.24
+
+    let eyeColor = 'white'
+    let pupilColor = 'black'
+
+    // mouth
+    let mouthHeight=legHeight/2
+    let mouthBottom=(eyeOffsetY+legBottom)/2 - mouthHeight/2
+    let mouthTop=mouthBottom-mouthHeight
+    let mouthScale=0.8
+    if (spooked){
+        pupilColor="#fab9b0";
+        eyeRadiusX=0;
+        eyeRadiusY=0;
+        eyeShift = 0;
+        let mouth = document.createElementNS('http://www.w3.org/2000/svg', 'path')
+
+        let coords = `M ${ghostLeft*mouthScale} ${mouthBottom}`;
+        coords += ` L ${(ghostLeft+legGap/2)*mouthScale} ${mouthTop}`;
+        coords += ` L ${(ghostLeft+legGap)*mouthScale} ${mouthBottom}`;
+        coords += ` L 0 ${mouthTop}`;
+        coords += ` L ${(ghostLeft+2*legGap)*mouthScale} ${mouthBottom}`;
+        coords += ` L ${(ghostRight-legGap/2)*mouthScale} ${mouthTop} `;
+        coords += ` L ${(ghostRight)*mouthScale} ${mouthBottom}`;
+
+        mouth.setAttribute('stroke', pupilColor)
+        mouth.setAttribute('stroke-width', '.069')
+        mouth.setAttribute('d', coords);
+
+        mouth.setAttribute('fill', "none");
+        svg.appendChild(mouth)
     }
-    $ {
-      mouthBottom
-    }`;
-    coords += `L $ {
-      (ghostLeft + legGap / 2) * mouthScale
+
+    let dx = 0
+    let dy = 0
+
+    if (dir == 'north') {
+        dy = -eyeShift
     }
-    $ {
-      mouthTop
-    }`;
-    coords += `L $ {
-      (ghostLeft + legGap) * mouthScale
+    else if (dir == 'south') {
+        dy = eyeShift
     }
-    $ {
-      mouthBottom
-    }`;
-    coords += `L 0 $ {
-      mouthTop
-    }`;
-    coords += `L $ {
-      (ghostLeft + 2 * legGap) * mouthScale
+    else if (dir == 'east') {
+        dx = eyeShift
     }
-    $ {
-      mouthBottom
-    }`;
-    coords += `L $ {
-      (ghostRight - legGap / 2) * mouthScale
+    else if (dir == 'west') {
+        dx = -eyeShift
     }
-    $ {
-      mouthTop
-    }`;
-    coords += `L $ {
-      (ghostRight) * mouthScale
-    }
-    $ {
-      mouthBottom
-    }`;
 
-    mouth.setAttribute('stroke', pupilColor)
-    mouth.setAttribute('stroke-width', '.069')
-    mouth.setAttribute('d', coords);
+    let leftEye = document.createElementNS('http://www.w3.org/2000/svg', 'ellipse')
+    leftEye.setAttribute('cx', `${-eyeOffsetX+dx/1.5}`)
+    leftEye.setAttribute('cy', `${-eyeOffsetY+dy/1.5}`)
+    leftEye.setAttribute('rx', eyeRadiusX)
+    leftEye.setAttribute('ry', eyeRadiusY)
+    leftEye.setAttribute('fill', eyeColor)
 
-    mouth.setAttribute('fill', "none");
-    svg.appendChild(mouth)
-  }
+    let rightEye = document.createElementNS('http://www.w3.org/2000/svg', 'ellipse')
+    rightEye.setAttribute('cx', `${eyeOffsetX+dx/1.5}`)
+    rightEye.setAttribute('cy', `${-eyeOffsetY+dy/1.5}`)
+    rightEye.setAttribute('rx', eyeRadiusX)
+    rightEye.setAttribute('ry', eyeRadiusY)
+    rightEye.setAttribute('fill', eyeColor)
+    // rightEye.setAttribute('stroke', eyeColor)
 
-  let dx = 0
-  let dy = 0
+    let leftPupil = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
+    leftPupil.setAttribute('cx', `${-eyeOffsetX+dx}`)
+    leftPupil.setAttribute('cy', `${-eyeOffsetY+dy}`)
+    leftPupil.setAttribute('r', pupilRadius)
+    leftPupil.setAttribute('fill', pupilColor)
+    // leftPupil.setAttribute('stroke', pupilColor)
 
-  if (dir == 'north') {
-    dy = -eyeShift
-  }
-  else if (dir == 'south') {
-    dy = eyeShift
-  }
-  else if (dir == 'east') {
-    dx = eyeShift
-  }
-  else if (dir == 'west') {
-    dx = -eyeShift
-  }
+    let rightPupil = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
+    rightPupil.setAttribute('cx', `${eyeOffsetX+dx}`)
+    rightPupil.setAttribute('cy', `${-eyeOffsetY+dy}`)
+    rightPupil.setAttribute('r', pupilRadius)
+    rightPupil.setAttribute('fill', pupilColor)
 
-  let leftEye = document.createElementNS('http://www.w3.org/2000/svg', 'ellipse')
-  leftEye.setAttribute('cx', `$ { - eyeOffsetX + dx / 1.5
-  }`)
-  leftEye.setAttribute('cy', `$ { - eyeOffsetY + dy / 1.5
-  }`)
-  leftEye.setAttribute('rx', eyeRadiusX)
-  leftEye.setAttribute('ry', eyeRadiusY)
-  leftEye.setAttribute('fill', eyeColor)
+    svg.appendChild(leftEye)
+    svg.appendChild(rightEye)
+    svg.appendChild(leftPupil)
+    svg.appendChild(rightPupil)
 
-  let rightEye = document.createElementNS('http://www.w3.org/2000/svg', 'ellipse')
-  rightEye.setAttribute('cx', `$ {
-    eyeOffsetX + dx / 1.5
-  }`)
-  rightEye.setAttribute('cy', `$ { - eyeOffsetY + dy / 1.5
-  }`)
-  rightEye.setAttribute('rx', eyeRadiusX)
-  rightEye.setAttribute('ry', eyeRadiusY)
-  rightEye.setAttribute('fill', eyeColor)
-  // rightEye.setAttribute('stroke', eyeColor)
-  let leftPupil = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
-  leftPupil.setAttribute('cx', `$ { - eyeOffsetX + dx
-  }`)
-  leftPupil.setAttribute('cy', `$ { - eyeOffsetY + dy
-  }`)
-  leftPupil.setAttribute('r', pupilRadius)
-  leftPupil.setAttribute('fill', pupilColor)
-  // leftPupil.setAttribute('stroke', pupilColor)
-  let rightPupil = document.createElementNS('http://www.w3.org/2000/svg', 'circle')
-  rightPupil.setAttribute('cx', `$ {
-    eyeOffsetX + dx
-  }`)
-  rightPupil.setAttribute('cy', `$ { - eyeOffsetY + dy
-  }`)
-  rightPupil.setAttribute('r', pupilRadius)
-  rightPupil.setAttribute('fill', pupilColor)
+    ghostDiv.appendChild(svg)
 
-  svg.appendChild(leftEye)
-  svg.appendChild(rightEye)
-  svg.appendChild(leftPupil)
-  svg.appendChild(rightPupil)
+    addAgenttoDoc(ghostDiv);
 
-  ghostDiv.appendChild(svg)
-
-  addAgenttoDoc(ghostDiv);
-
-  ghostDiv.addEventListener('animationend', removePacguy)
+    ghostDiv.addEventListener('animationend', removePacguy)
 }
 
-function addAgenttoDoc(agentDiv) {
+function addAgenttoDoc(agentDiv){
 
-  // // Add agent behind all other elements in body
-  // document.body.insertBefore(agentDiv, document.body.firstChild)
-  // Add agent on top of all other elements in body
-  document.body.appendChild(agentDiv)
+    // // Add agent behind all other elements in body
+    // document.body.insertBefore(agentDiv, document.body.firstChild)
+    // Add agent on top of all other elements in body
+    document.body.appendChild(agentDiv)
 }
 
-function removePacguy() {
-  if (this.classList.contains('respawn')) {
-    addPacguy(respawn = true, delay = true);
+function removePacguy(){
+  if (this.classList.contains('respawn')){
+    addPacguy(respawn=true, delay=true);
   }
   this.remove();
 }
 
-function addPacguy(respawn = false, delay = false) {
-  if (delay) {
-    setTimeout(function() {
-      addPacguy(respawn = respawn, delay = false)
-    },
-    getRandomIntervalTime())
+function addPacguy(respawn=false,delay=false){
+  if (delay){
+    setTimeout(function(){addPacguy(respawn=respawn,delay=false)}, getRandomIntervalTime())
   }
-  else {
-    if (Math.random() < 0.042069) {
+  else{
+    if (Math.random()<0.042069){
       addPacman(respawn);
     }
-    else {
+    else{
       addGhost(respawn);
     }
   }
