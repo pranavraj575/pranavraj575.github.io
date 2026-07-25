@@ -16,13 +16,13 @@ icon = (
     "</svg>"
 )
 repo_html = (
-    '<div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);">\n'
+    '<div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);" EXTRA_ATTRIBUTES>\n'
     "    MAYBE_IMAGE\n"
     '    <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark">\n'
     "        <tbody>\n"
     '            <tr> <td class="p-1 pl-2 font-weight-bold">' + icon + '&nbsp;<a href="URL"><b>TITLE</b></a></td></tr>\n'
     '            <tr> <td class="p-1 pl-2 text"> DESCRIPTION </td> </tr>\n'
-    '            <tr> <td class="p-1 pl-2 text"> LANGUAGES </td> </tr>\n'
+    "            LANGUAGES \n"
     "        </tbody>\n"
     "    </table>\n"
     "</div>"
@@ -47,58 +47,61 @@ for repo in data["github_repos"]:
                 description = meta_tag[meta_tag.index(st_str) + len(st_str) : meta_tag.index('" />')]
     # get languages list from html
     # pattern is <div ...> <h2 class="h4 tmp-mb-3">Languages</h2> .... </div>
-    temp = response.text[response.text.index('<h2 class="h4 tmp-mb-3">Languages</h2>') :]
-    i = 0
-    while temp[:i].count("</div") <= temp[:i].count("<div"):
-        i += 1
-    languages_html_og = temp[:i]
-    languages_html_og = languages_html_og[languages_html_og.index("<ul") : languages_html_og.index("</ul>") + 5]
+    if '<h2 class="h4 tmp-mb-3">Languages</h2>' in response.text:
+        temp = response.text[response.text.index('<h2 class="h4 tmp-mb-3">Languages</h2>') :]
+        i = 0
+        while temp[:i].count("</div") <= temp[:i].count("<div"):
+            i += 1
+        languages_html_og = temp[:i]
+        languages_html_og = languages_html_og[languages_html_og.index("<ul") : languages_html_og.index("</ul>") + 5]
 
-    languages = []
-    # split by list elements
-    for item in languages_html_og.split("</li>")[:-1]:
-        # start with start of list item, remove this tag
-        item = item[item.index("<li") + 3 :]
-        while item.index(">") < item.index("<"):
-            item = item[1:]
+        languages = []
+        # split by list elements
+        for item in languages_html_og.split("</li>")[:-1]:
+            # start with start of list item, remove this tag
+            item = item[item.index("<li") + 3 :]
+            while item.index(">") < item.index("<"):
+                item = item[1:]
 
-        item = item.replace("<a ", "<span ").replace("</a>", "</span>").strip()
-        assert item.startswith("<span ")
-        item = item[:6] + 'style="margin-right: 16px;" ' + item[6:]
+            item = item.replace("<a ", "<span ").replace("</a>", "</span>").strip()
+            assert item.startswith("<span ")
+            item = item[:6] + 'style="margin-right: 16px;" ' + item[6:]
 
-        fill = item[item.index('style="color:') + len('style="color:') :]
-        fill = fill[: fill.index(";")]
-        item = item.replace("></path>", f' fill="{fill}"></path>')
-        item = item.replace("<svg ", "<span><svg ").replace("</svg>", "</svg></span>")
+            fill = item[item.index('style="color:') + len('style="color:') :]
+            fill = fill[: fill.index(";")]
+            item = item.replace("></path>", f' fill="{fill}"></path>')
+            item = item.replace("<svg ", "<span><svg ").replace("</svg>", "</svg></span>")
 
-        # remove line breaks
-        item = item.replace("\n", " ")
-        # remove double whitespace
-        while "  " in item:
-            item = item.replace("  ", " ")
-        languages.append(item)
-    languages_html = '<div class="list-groups">'
-    long_languages = ("JavaScript",)
-    while languages:
-        if len(languages) == 1:
-            width = 12
-            batch = 1
-        elif any(any(l in ll for ll in languages[:3]) for l in long_languages) or len(languages) == 2:
-            width = 6
-            batch = 2
-        else:
-            batch = 3
-            width = 4
+            # remove line breaks
+            item = item.replace("\n", " ")
+            # remove double whitespace
+            while "  " in item:
+                item = item.replace("  ", " ")
+            languages.append(item)
+        languages_html = '<div class="list-groups">'
+        long_languages = ("JavaScript",)
+        while languages:
+            if len(languages) == 1:
+                width = 12
+                batch = 1
+            elif any(any(l in ll for ll in languages[:3]) for l in long_languages) or len(languages) == 2:
+                width = 6
+                batch = 2
+            else:
+                batch = 3
+                width = 4
 
-        for _ in range(batch):
-            languages_html = (
-                languages_html + f' <div class="list-group col-md-{width}" style="margin-bottom:0px">{languages.pop(0)}</div>'
-            )
-            if not languages:
-                break
+            for _ in range(batch):
+                languages_html = (
+                    languages_html + f' <div class="list-group col-md-{width}" style="margin-bottom:0px">{languages.pop(0)}</div>'
+                )
+                if not languages:
+                    break
 
-    languages_html += "</div>"
-
+        languages_html += "</div>"
+        languages_html = '<tr> <td class="p-1 pl-2 text"> ' + languages_html + " </td> </tr>"
+    else:
+        languages_html = ""
     full_thing = (
         repo_html.replace("TITLE", repo)
         .replace("DESCRIPTION", description)
@@ -122,6 +125,10 @@ for repo in data["github_repos"]:
         full_thing = full_thing.replace("MAYBE_IMAGE", thing)
     else:
         full_thing = full_thing.replace("MAYBE_IMAGE", "")
+    if repo == "pranavraj575/asteroids":
+        full_thing = full_thing.replace("EXTRA_ATTRIBUTES", 'onclick="Aster();"')
+    else:
+        full_thing = full_thing.replace("EXTRA_ATTRIBUTES", "")
     # clear any empty lines
     while " \n" in full_thing:
         full_thing = full_thing.replace(" \n", "\n")
