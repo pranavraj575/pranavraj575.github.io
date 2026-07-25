@@ -31,20 +31,12 @@ repo_html = (
 generated_stuff = ""
 for repo in data["github_repos"]:
     print("reading", repo)
-    url = f"https://github.com/{repo}"
-    response = requests.get(url)
+    main_json = requests.get(f"https://api.github.com/repos/{repo}").json()
 
-    s = response.text
-    # get description from description meta tag
-    description = "no description provided"
-    while "<meta" in s:
-        s = s[s.index("<meta") :]
-        meta_tag = s[: 1 + s.index(">")]
-        s = s[1 + s.index(">") :]
-        if 'property="og:title"' in meta_tag:
-            st_str = f'content="GitHub - {repo}: '
-            if st_str in meta_tag:
-                description = meta_tag[meta_tag.index(st_str) + len(st_str) : meta_tag.index('" />')]
+    # get description from api call
+    description = main_json.get("description", "no description provided")
+    if description is None:
+        description = "no description provided"
     # get languages list from api call
     mx_nm = 6
     long_languages = ("JavaScript",)
@@ -102,11 +94,12 @@ for repo in data["github_repos"]:
             )
             if not keys:
                 break
+
     full_thing = (
         repo_html.replace("TITLE", repo)
         .replace("DESCRIPTION", description)
         .replace("LANGUAGES", languages_html)
-        .replace("URL", url)
+        .replace("URL", f"https://github.com/{repo}")
     )
     if repo in repo_to_img:
         img_src = repo_to_img[repo]
