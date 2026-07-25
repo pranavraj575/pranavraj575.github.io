@@ -292,3 +292,62 @@ function addPacguy(respawn=false,delay=false){
     }
   }
 }
+
+
+function addAsteroid(respawn=false,delay=false){
+  if (delay){
+    setTimeout(function(){addAsteroid(respawn=respawn,delay=false)}, getRandomIntervalTime());
+  }
+  else{
+    Aster();
+    addAsteroid(respawn=respawn,delay=true);
+  }
+}
+
+
+function Aster() {
+  let asteroid=document.createElement('div');
+  let aaa = document.createElement('a');
+  aaa.href="/assteroids";
+  time=3000+Math.random()*3000;
+  aster=Math.floor(Math.random()*3);
+
+  asteroid.style.position="fixed";
+  x_pos=[-10,110];
+  y_pos=[-10,110];
+  arr= [x_pos,y_pos][Math.floor(Math.random()*2)];
+  arr[0]=Math.random()*100;
+  arr[1]=Math.random()*100;
+
+  asteroid.style.top=y_pos[0]+"%";
+  asteroid.style.left=x_pos[0]+"%";
+  asteroid.animate(
+    [
+      {
+        top:y_pos[0]+"%",
+        left:x_pos[0]+"%",
+      },
+      {
+        top:y_pos[1]+"%",
+        left:x_pos[1]+"%",
+      },
+    ],
+    time,
+  );
+
+  asteroid_img = document.createElement('img');
+  asteroid_img.src="/assets/img/stuff/asteroid"+aster+".png";
+  asteroid_img.classList.add("only-dark-theme");
+  aaa.appendChild(asteroid_img);
+
+  asteroid_img = document.createElement('img');
+  asteroid_img.src="/assets/img/stuff/asteroid"+aster+"_dark.png";
+  asteroid_img.classList.add("non-dark-theme");
+  aaa.appendChild(asteroid_img);
+
+  asteroid.appendChild(aaa);
+
+  document.body.appendChild(asteroid);
+  applyTheme();
+  setTimeout(function(){asteroid.remove();}, time);
+}
