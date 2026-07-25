@@ -151,11 +151,14 @@ let hide_and_reveal = () => {
       revealing[i].classList.remove("notlight");
     }
     var disp = "inherit";
-    for (var type_style of["block", "inline-block", "table-row"]) {
+    if (revealing[i].hasAttribute('display-style')){
+      disp=revealing[i].getAttribute('display-style');
+    }
+    /*for (var type_style of["block", "inline-block", "table-row"]) {
       if (revealing[i].classList.contains("display-style-" + type_style)) {
         disp = type_style;
       }
-    }
+    }*/
     revealing[i].style.display = disp;
     revealing[i].classList.remove("temp-reveal");
   }
@@ -170,6 +173,7 @@ let hide_and_reveal = () => {
     }
     if (hiddening[i].style.display) {
       hiddening[i].classList.add("display-style-" + hiddening[i].style.display)
+      hiddening[i].setAttribute('display-style',hiddening[i].style.display)
     }
     hiddening[i].style.display = "none";
     hiddening[i].classList.remove("temp-hide");
