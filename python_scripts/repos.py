@@ -70,6 +70,14 @@ for repo in data["github_repos"]:
     if sum(vp for _, vp in languages.items()) < 0.9995:
         languages["Other"] = 1 - sum(vp for _, vp in languages.items())
     languages = {k: round(v * 100, 1) for k, v in languages.items()}
+    for lg in sorted(languages.keys(), key=lambda lg: -languages[lg]):
+        if sum(vp for _, vp in languages.items()) == 100:
+            break
+
+        if sum(vp for _, vp in languages.items()) < 100:
+            languages[lg] += 0.1
+        else:
+            languages[lg] -= 0.1
 
     languages_html = ""
     keys = sorted(languages.keys(), key=lambda lg: -languages[lg])
