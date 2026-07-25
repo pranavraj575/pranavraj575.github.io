@@ -113,7 +113,7 @@
                     {% endif %}
                   </tr>
                   {% for course in topic.courses %}
-                    <tr{% if course.silly %} class="silly-goose display-style-table-row"{% endif %}>
+                    <tr{% if course.silly %} class="silly-goose"{% endif %}  display-style="table-row">
                       <td></td>
                       {% assign hover_title = "" %}
                       {% if course.id %}{% assign hover_title = course.id %}{% endif %}
