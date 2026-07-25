@@ -172,7 +172,7 @@ let hide_and_reveal = () => {
       hiddening[i].classList.remove("spotlight");
     }
     if (hiddening[i].style.display) {
-      hiddening[i].classList.add("display-style-" + hiddening[i].style.display)
+      //hiddening[i].classList.add("display-style-" + hiddening[i].style.display)
       hiddening[i].setAttribute('display-style',hiddening[i].style.display)
     }
     hiddening[i].style.display = "none";
