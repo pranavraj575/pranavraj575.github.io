@@ -310,7 +310,7 @@ function Aster() {
   let aaa = document.createElement('a');
   aaa.href="/assteroids";
   time=3000+Math.random()*3000;
-  aster=Math.floor(Math.random()*3);
+  aster=Math.floor(Math.random()*5);
 
   asteroid.style.position="fixed";
   x_pos=[-10,110];
