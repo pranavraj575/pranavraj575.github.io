@@ -22,7 +22,7 @@ repo_html = (
     "        <tbody>\n"
     '            <tr> <td class="p-1 pl-2 font-weight-bold">' + icon + '&nbsp;<a href="URL"><b>TITLE</b></a></td></tr>\n'
     '            <tr> <td class="p-1 pl-2 text"> DESCRIPTION </td> </tr>\n'
-    "            LANGUAGES \n"
+    '            <tr> <td class="p-1 pl-2 text"> <div class="list-groups"> LANGUAGES </div> </td> </tr> \n'
     "        </tbody>\n"
     "    </table>\n"
     "</div>"
@@ -45,63 +45,55 @@ for repo in data["github_repos"]:
             st_str = f'content="GitHub - {repo}: '
             if st_str in meta_tag:
                 description = meta_tag[meta_tag.index(st_str) + len(st_str) : meta_tag.index('" />')]
-    # get languages list from html
-    # pattern is <div ...> <h2 class="h4 tmp-mb-3">Languages</h2> .... </div>
-    if '<h2 class="h4 tmp-mb-3">Languages</h2>' in response.text:
-        temp = response.text[response.text.index('<h2 class="h4 tmp-mb-3">Languages</h2>') :]
-        i = 0
-        while temp[:i].count("</div") <= temp[:i].count("<div"):
-            i += 1
-        languages_html_og = temp[:i]
-        languages_html_og = languages_html_og[languages_html_og.index("<ul") : languages_html_og.index("</ul>") + 5]
+    # get languages list from api call
+    mx_nm = 6
+    long_languages = ("JavaScript",)
+    lang_to_color = {
+        "JavaScript": "rgb(241, 224, 90)",
+        "Julia": "rgb(162, 112, 186)",
+        "Python": "rgb(53, 114, 165)",
+        "TypeSpec": "rgb(74, 54, 101)",
+        "HTML": "rgb(227, 76, 38)",
+        "CSS": "rgb(102, 51, 153)",
+        "Other": "rgb(237, 237, 237)",
+        "Shell": "rgb(137, 224, 81)",
+    }
+    languages = requests.get(f"https://api.github.com/repos/{repo}/languages").json()
 
-        languages = []
-        # split by list elements
-        for item in languages_html_og.split("</li>")[:-1]:
-            # start with start of list item, remove this tag
-            item = item[item.index("<li") + 3 :]
-            while item.index(">") < item.index("<"):
-                item = item[1:]
+    languages = {k: v / sum(vp for _, vp in languages.items()) for k, v in languages.items()}
+    if len(languages) > mx_nm:
+        keys = sorted(languages.keys(), key=lambda lg: -languages[lg])
+        languages = {k: languages[k] for k in keys[: mx_nm - 1]}
+    sml_langages = {k: v for k, v in languages.items() if v < 0.0005}
+    if len(sml_langages) > 1:
+        languages = {k: v for k, v in languages.items() if v >= 0.0005}
+    if sum(vp for _, vp in languages.items()) < 0.9995:
+        languages["Other"] = 1 - sum(vp for _, vp in languages.items())
+    languages = {k: round(v * 100, 1) for k, v in languages.items()}
 
-            item = item.replace("<a ", "<span ").replace("</a>", "</span>").strip()
-            assert item.startswith("<span ")
-            item = item[:6] + 'style="margin-right: 16px;" ' + item[6:]
+    languages_html = ""
+    keys = sorted(languages.keys(), key=lambda lg: -languages[lg])
+    while keys:
+        if len(keys) == 1:
+            width = 12
+            batch = 1
+        elif any(any(l in ll for ll in keys[:3]) for l in long_languages) or len(keys) == 2:
+            width = 6
+            batch = 2
+        else:
+            batch = 3
+            width = 4
 
-            fill = item[item.index('style="color:') + len('style="color:') :]
-            fill = fill[: fill.index(";")]
-            item = item.replace("></path>", f' fill="{fill}"></path>')
-            item = item.replace("<svg ", "<span><svg ").replace("</svg>", "</svg></span>")
+        for _ in range(batch):
+            lg = keys.pop(0)
+            col = lang_to_color.get(lg, "#000000")
 
-            # remove line breaks
-            item = item.replace("\n", " ")
-            # remove double whitespace
-            while "  " in item:
-                item = item.replace("  ", " ")
-            languages.append(item)
-        languages_html = '<div class="list-groups">'
-        long_languages = ("JavaScript",)
-        while languages:
-            if len(languages) == 1:
-                width = 12
-                batch = 1
-            elif any(any(l in ll for ll in languages[:3]) for l in long_languages) or len(languages) == 2:
-                width = 6
-                batch = 2
-            else:
-                batch = 3
-                width = 4
-
-            for _ in range(batch):
-                languages_html = (
-                    languages_html + f' <div class="list-group col-md-{width}" style="margin-bottom:0px">{languages.pop(0)}</div>'
-                )
-                if not languages:
-                    break
-
-        languages_html += "</div>"
-        languages_html = '<tr> <td class="p-1 pl-2 text"> ' + languages_html + " </td> </tr>"
-    else:
-        languages_html = ""
+            inner_stuff = f'<span style="margin-right: 16px;display:inline-flex;" class="d-inline-flex flex-items-center flex-nowrap text-small tmp-mr-3"> <span><svg style="color:{col};" aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-dot-fill mr-2 tmp-mr-2"> <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z" fill="{col}"></path> </svg></span> <span class="color-fg-default text-bold mr-1">{lg}</span> <span>{languages[lg]}%</span> </span>'
+            languages_html = (
+                languages_html + f' <div class="list-group col-md-{width}" style="margin-bottom:0px">{inner_stuff}</div>'
+            )
+            if not keys:
+                break
     full_thing = (
         repo_html.replace("TITLE", repo)
         .replace("DESCRIPTION", description)
