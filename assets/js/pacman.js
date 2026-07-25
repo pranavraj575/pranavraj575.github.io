@@ -315,12 +315,20 @@ function Aster() {
   asteroid.style.position="fixed";
   x_pos=[-10,110];
   y_pos=[-10,110];
-  arr= [x_pos,y_pos][Math.floor(Math.random()*2)];
+  dm=Math.floor(Math.random()*2);
+  arr= [x_pos,y_pos][dm];
   arr[0]=Math.random()*100;
   arr[1]=Math.random()*100;
+  if (Math.random()<.5){
+    arr=[x_pos,y_pos][1-dm];
+    arr[0]=110;
+    arr[1]=-10;
+  }
 
-  asteroid.style.top=y_pos[0]+"%";
-  asteroid.style.left=x_pos[0]+"%";
+  asteroid.style.top="-100%";
+  asteroid.style.left="-100%";
+  asteroid.style.transform="translate(-50%, -50%)";
+
   asteroid.animate(
     [
       {
@@ -334,15 +342,17 @@ function Aster() {
     ],
     time,
   );
-
+  wdth=69+Math.random()*131
   asteroid_img = document.createElement('img');
   asteroid_img.src="/assets/img/stuff/asteroid"+aster+".png";
   asteroid_img.classList.add("only-dark-theme");
+  asteroid_img.style.width=wdth+"px";
   aaa.appendChild(asteroid_img);
 
   asteroid_img = document.createElement('img');
   asteroid_img.src="/assets/img/stuff/asteroid"+aster+"_dark.png";
   asteroid_img.classList.add("non-dark-theme");
+  asteroid_img.style.width=wdth+"px";
   aaa.appendChild(asteroid_img);
 
   asteroid.appendChild(aaa);
