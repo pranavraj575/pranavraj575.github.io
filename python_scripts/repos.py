@@ -72,7 +72,7 @@ for repo in data["github_repos"]:
             languages[lg] -= 0.1
 
     languages_html = ""
-    keys = sorted(languages.keys(), key=lambda lg: -languages[lg])
+    keys = sorted(languages.keys(), key=lambda lg: 69 if lg == "Other" else -languages[lg])
     while keys:
         if len(keys) == 1:
             width = 12
