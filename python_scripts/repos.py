@@ -37,6 +37,8 @@ for repo in data["github_repos"]:
     description = main_json.get("description", "no description provided")
     if description is None:
         description = "no description provided"
+    if repo == "pranavraj575/pranavraj575.github.io" and description == "no description provided":
+        description = "You're looking at it"
     # get languages list from api call
     mx_nm = 8
     long_languages = ("JavaScript",)
@@ -78,27 +80,21 @@ for repo in data["github_repos"]:
     languages = {k: round(v, 1) for k, v in languages.items()}
     languages_html = ""
     keys = sorted(languages.keys(), key=lambda lg: 69 if lg == "Other" else -languages[lg])
+    if any(l in keys for l in long_languages):
+        width = 6
+    else:
+        width = 4
     while keys:
         if len(keys) == 1:
             width = 12
-            batch = 1
-        elif any(any(l in ll for ll in keys[:3]) for l in long_languages) or len(keys) == 2:
-            width = 6
-            batch = 2
-        else:
-            batch = 3
-            width = 4
 
-        for _ in range(batch):
-            lg = keys.pop(0)
-            col = lang_to_color.get(lg, "#000000")
+        lg = keys.pop(0)
+        col = lang_to_color.get(lg, "#000000")
 
-            inner_stuff = f'<span style="margin-right: 16px;display:inline-flex;" class="d-inline-flex flex-items-center flex-nowrap text-small tmp-mr-3"> <span><svg style="color:{col};" aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-dot-fill mr-2 tmp-mr-2"> <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z" fill="{col}"></path> </svg></span> <span class="color-fg-default text-bold mr-1">{lg}</span> <span>{languages[lg]}%</span> </span>'
-            languages_html = (
-                languages_html + f' <div class="list-group col-md-{width}" style="margin-bottom:0px">{inner_stuff}</div>'
-            )
-            if not keys:
-                break
+        inner_stuff = f'<span style="margin-right: 16px;display:inline-flex;" class="d-inline-flex flex-items-center flex-nowrap text-small tmp-mr-3"> <span><svg style="color:{col};" aria-hidden="true" data-component="Octicon" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-dot-fill mr-2 tmp-mr-2"> <path d="M8 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z" fill="{col}"></path> </svg></span> <span class="color-fg-default text-bold mr-1">{lg}</span> <span>{languages[lg]}%</span> </span>'
+        languages_html = languages_html + f' <div class="list-group col-md-{width}" style="margin-bottom:0px">{inner_stuff}</div>'
+        if not keys:
+            break
 
     full_thing = (
         repo_html.replace("TITLE", repo)
@@ -121,6 +117,8 @@ for repo in data["github_repos"]:
             " %}"
         )
         full_thing = full_thing.replace("MAYBE_IMAGE", thing)
+    elif repo == "pranavraj575/pranavraj575.github.io":
+        full_thing = full_thing.replace("MAYBE_IMAGE", "")
     else:
         full_thing = full_thing.replace("MAYBE_IMAGE", "")
     if repo == "pranavraj575/asteroids":
