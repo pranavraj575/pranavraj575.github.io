@@ -75,7 +75,7 @@ for repo in data["github_repos"]:
         else:
             languages[lg] -= 0.1
 
-    languages = {k: round(v * 100, 1) for k, v in languages.items()}
+    languages = {k: round(v, 1) for k, v in languages.items()}
     languages_html = ""
     keys = sorted(languages.keys(), key=lambda lg: 69 if lg == "Other" else -languages[lg])
     while keys:
