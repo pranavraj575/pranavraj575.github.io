@@ -4,6 +4,7 @@ github_users:
 repo_description_lines_max: 4
 
 github_repos:
+  - pranavraj575/pranavraj575.github.io
 # game theory/ML
   - pranavraj575/big-dcop
   - pranavraj575/aleph0_game

@@ -38,7 +38,7 @@ for repo in data["github_repos"]:
     if description is None:
         description = "no description provided"
     # get languages list from api call
-    mx_nm = 6
+    mx_nm = 8
     long_languages = ("JavaScript",)
     lang_to_color = {
         "JavaScript": "rgb(241, 224, 90)",
@@ -49,6 +49,10 @@ for repo in data["github_repos"]:
         "CSS": "rgb(102, 51, 153)",
         "Other": "rgb(237, 237, 237)",
         "Shell": "rgb(137, 224, 81)",
+        "TeX":"rgb(61, 97, 23)",
+        "Ruby":"rgb(112, 21, 22)",
+        "SCSS":"rgb(198, 83, 140)",
+        "Liquid":"rgb(103, 184, 222)",
     }
     languages = requests.get(f"https://api.github.com/repos/{repo}/languages").json()
 
