@@ -85,9 +85,6 @@ for repo in data["github_repos"]:
     else:
         width = 4
     while keys:
-        if len(keys) == 1:
-            width = 12
-
         lg = keys.pop(0)
         col = lang_to_color.get(lg, "#000000")
 
