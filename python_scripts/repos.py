@@ -49,10 +49,10 @@ for repo in data["github_repos"]:
         "CSS": "rgb(102, 51, 153)",
         "Other": "rgb(237, 237, 237)",
         "Shell": "rgb(137, 224, 81)",
-        "TeX":"rgb(61, 97, 23)",
-        "Ruby":"rgb(112, 21, 22)",
-        "SCSS":"rgb(198, 83, 140)",
-        "Liquid":"rgb(103, 184, 222)",
+        "TeX": "rgb(61, 97, 23)",
+        "Ruby": "rgb(112, 21, 22)",
+        "SCSS": "rgb(198, 83, 140)",
+        "Liquid": "rgb(103, 184, 222)",
     }
     languages = requests.get(f"https://api.github.com/repos/{repo}/languages").json()
 
@@ -67,7 +67,7 @@ for repo in data["github_repos"]:
         languages["Other"] = 1 - sum(vp for _, vp in languages.items())
     languages = {k: round(v * 100, 1) for k, v in languages.items()}
     for lg in sorted(languages.keys(), key=lambda lg: -languages[lg]):
-        if sum(vp for _, vp in languages.items()) == 100:
+        if round(sum(vp for _, vp in languages.items()), 1) == 100:
             break
 
         if sum(vp for _, vp in languages.items()) < 100:
@@ -75,6 +75,7 @@ for repo in data["github_repos"]:
         else:
             languages[lg] -= 0.1
 
+    languages = {k: round(v * 100, 1) for k, v in languages.items()}
     languages_html = ""
     keys = sorted(languages.keys(), key=lambda lg: 69 if lg == "Other" else -languages[lg])
     while keys:
