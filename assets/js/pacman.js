@@ -27,13 +27,13 @@ function getAgentDiv(dir='east', respawn=false){
         agentDiv.style.top = `${prop}vh`
     }
     else if (dir=='north'){
-        agentDiv.style.left = `${prop}vh`
+        agentDiv.style.left = `${prop}vw`
     }
     else if (dir=='west'){
         agentDiv.style.top = `${prop}vh`
     }
     else {
-        agentDiv.style.left = `${prop}vh`
+        agentDiv.style.left = `${prop}vw`
     }
     agentDiv.style.animation = "pacman-peaking-"+dir+" 20s linear"
     agentDiv.setAttribute("onclick", "window.location.href = 'https://pacmanonline.org/game';")
