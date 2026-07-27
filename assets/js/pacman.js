@@ -329,7 +329,7 @@ function Aster() {
   asteroid.style.left="-100%";
   asteroid.style.transform="translate(-50%, -50%)";
 
-  asteroid.animate(
+  anim=asteroid.animate(
     [
       {
         top:y_pos[0]+"%",
@@ -342,6 +342,7 @@ function Aster() {
     ],
     time,
   );
+  anim.addEventListener('finish', function(){asteroid.remove();})
   wdth=69+Math.random()*131
   asteroid_img = document.createElement('img');
   asteroid_img.src="/assets/img/stuff/asteroid"+aster+".png";
@@ -359,5 +360,4 @@ function Aster() {
 
   document.body.appendChild(asteroid);
   applyTheme();
-  setTimeout(function(){asteroid.remove();}, time);
 }
