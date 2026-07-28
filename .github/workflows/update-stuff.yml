@@ -38,7 +38,7 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          git add -f _pages/repos.md
+          git add _pages/repos.md
           git diff --staged --quiet || (
             echo "📤 Committing and pushing changes..."
             git commit -m "auto update repos"
@@ -79,7 +79,7 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          git add -f assets/img/stuff/repo_screenshot.png
+          git add assets/img/stuff/repo_screenshot.png
           git diff --staged --quiet || (
             echo "📤 Committing and pushing changes..."
             git commit -m "recursion recursion recursion recursion recursion recursion recursion"
