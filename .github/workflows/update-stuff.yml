@@ -34,7 +34,7 @@ jobs:
           pip3 install --upgrade playwright
           playwright install
           python3 python_scripts/recursive_ss.py
-          python3 python_scripts\clear_metadata.py --img assets\img\stuff\repo_screenshot.png
+          python3 python_scripts/clear_metadata.py --img assets/img/stuff/repo_screenshot.png
 
       - name: Configure Git
         run: |
