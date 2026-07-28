@@ -29,6 +29,13 @@ jobs:
           pip3 install --upgrade requests pyyaml
           python3 python_scripts/repos.py
 
+      - name: recursion recursion recursion recursion
+        run: |
+          pip3 install --upgrade playwright
+          playwright install
+          python3 python_scripts/recursive_ss.py
+          python3 python_scripts\clear_metadata.py --img assets\img\stuff\repo_screenshot.png
+
       - name: Configure Git
         run: |
           git config --local user.email "pranavraj575@gmail.com"
