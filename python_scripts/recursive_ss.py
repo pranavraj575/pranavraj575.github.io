@@ -31,8 +31,7 @@ with sync_playwright() as p:
     thing.scroll_into_view_if_needed()
 
     # let any animations pass
-    time.sleep(1)
-
-    print("screening my shot")
+    print("getting the good cycle")
+    time.sleep(20)
     page.screenshot(path=os.path.join(DIR, "assets", "img", "stuff", "repo_screenshot.png"), full_page=False)
     browser.close()
