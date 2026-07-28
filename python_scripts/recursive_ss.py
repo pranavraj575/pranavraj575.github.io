@@ -3,12 +3,6 @@ import time
 import os
 
 
-def ctrl(k):
-    page.keyboard.down("Control")
-    page.keyboard.press(k)
-    page.keyboard.up("Control")
-
-
 def press(keys, delay=0.1):
     for k in keys:
         page.keyboard.press(k)
@@ -23,14 +17,16 @@ with sync_playwright() as p:
     page.goto("https://pranavraj575.github.io/repos")
 
     # turn on dark mode
-    ctrl("K")
+    page.keyboard.down("Control")
+    page.keyboard.press("k")
+    page.keyboard.up("Control")
     press("dark")
     page.keyboard.press("Enter")
 
     # scroll to self reference
-    # thing=page.get_by_text("You're looking at it")
     thing = page.get_by_text("pranavraj575/pranavraj575.github.io")
     thing.scroll_into_view_if_needed()
+
     # let any animations pass
     time.sleep(1)
 
