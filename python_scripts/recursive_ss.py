@@ -29,6 +29,7 @@ with sync_playwright() as p:
     print("scrolling to recursion")
     thing = page.get_by_text("pranavraj575/pranavraj575.github.io")
     thing.scroll_into_view_if_needed()
+    # page.mouse.wheel(0,-69)
 
     # let any animations pass
     print("getting the good cycle")
