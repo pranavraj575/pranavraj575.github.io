@@ -1,4 +1,4 @@
-
+# CMU
 "sandholm":
   - firstname: ["Tuomas", "T."]
     url: https://www.cs.cmu.edu/~sandholm/
@@ -15,7 +15,12 @@
   - firstname: ["Sophia", "S."]
     url: https://www.runnerspace.com/video.php?video_id=285092
 
+"zilberstein":
+  - firstname: ["Itai","I."]
+    url: https://www.cs.cmu.edu/~izilbers/
 
+
+# UNSW
 "ravi":
   - firstname: ["Sridhar", "S."]
     url: https://www.unsw.edu.au/staff/sridhar-ravi
@@ -37,15 +42,13 @@
     url: https://linkedin.com/in/abhi-veda
 
 
-"darbha":
-  - firstname: ["Swaroop", "S."]
-    url: https://engineering.tamu.edu/mechanical/profiles/darbha-swaroop.html
-
-"kumar":
-  - firstname: ["Deepak Prakash", "Deepak"]
-    url: https://scholar.google.com/citations?user=9fVlgegAAAAJ
+# NASA
+"chien":
+  - firstname: ["Steve", "S."]
+    url: https://ai.jpl.nasa.gov/public/people/chien/
 
 
+# NRL
 "sofge":
   - firstname: ["Donald", "D."]
     url: https://scholar.google.com/citations?user=f4hPWTwAAAAJ
@@ -57,3 +60,13 @@
 "mcguire":
   - firstname: ["Loy", "L."]
     url: https://scholar.google.com/citations?user=Qhy9FAMAAAAJ
+
+
+# TA&M
+"darbha":
+  - firstname: ["Swaroop", "S."]
+    url: https://engineering.tamu.edu/mechanical/profiles/darbha-swaroop.html
+
+"kumar":
+  - firstname: ["Deepak Prakash", "Deepak"]
+    url: https://scholar.google.com/citations?user=9fVlgegAAAAJ
