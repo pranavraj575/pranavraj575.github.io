@@ -24,6 +24,7 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
+
       - name: HELLP HELP MEEE 🍆
         run: |
           pip3 install --upgrade requests pyyaml
@@ -44,7 +45,7 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          git add -f _pages/repos.md
+          git add -f _pages/repos.md assets/img/stuff/repo_screenshot.png
           git diff --staged --quiet || (
             echo "📤 Committing and pushing changes..."
             git commit -m "Update repos"
