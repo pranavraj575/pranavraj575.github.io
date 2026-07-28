@@ -31,7 +31,7 @@ jobs:
 
       - name: recursion recursion recursion recursion
         run: |
-          pip3 install --upgrade playwright
+          pip3 install --upgrade playwright Pillow
           playwright install
           python3 python_scripts/recursive_ss.py
           python3 python_scripts/clear_metadata.py --img assets/img/stuff/repo_screenshot.png
