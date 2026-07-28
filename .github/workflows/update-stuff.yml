@@ -30,7 +30,38 @@ jobs:
           pip3 install --upgrade requests pyyaml
           python3 python_scripts/repos.py
 
-      - name: recursion recursion recursion recursion
+      - name: Configure Git
+        run: |
+          git config --local user.email "pranavraj575@gmail.com"
+          git config --local user.name "evil pranav"
+          echo "🔧 Git configured."
+
+      - name: Commit and push if changed
+        run: |
+          git add -f _pages/repos.md
+          git diff --staged --quiet || (
+            echo "📤 Committing and pushing changes..."
+            git commit -m "auto update repos"
+            git push
+          )
+
+  update-recursive-ss:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      # See docs/CUSTOMIZE.md for details on how to set up PAT for triggering subsequent workflows
+      #        with:
+      #          token: ${{ secrets.PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip" # caching pip dependencies
+
+      - name: recursion recursion recursion recursion recursion recursion recursion
         run: |
           pip3 install --upgrade numpy Pillow playwright
           playwright install
@@ -45,9 +76,9 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          git add -f _pages/repos.md assets/img/stuff/repo_screenshot.png
+          git add -f assets/img/stuff/repo_screenshot.png
           git diff --staged --quiet || (
             echo "📤 Committing and pushing changes..."
-            git commit -m "Update repos"
+            git commit -m "recursion recursion recursion recursion recursion recursion recursion"
             git push
           )
