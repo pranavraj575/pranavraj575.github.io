@@ -30,11 +30,11 @@ jobs:
           pip3 install --upgrade requests pyyaml
           python3 python_scripts/repos.py
 
-      - name: Configure Git
+      - name: Configure Git (i hardly know her)
         run: |
           git config --local user.email "pranavraj575@gmail.com"
           git config --local user.name "evil pranav"
-          echo "🔧 Git configured."
+          echo "🔧 Git configured  (i hardly know her)."
 
       - name: Commit and push if changed
         run: |
@@ -66,13 +66,16 @@ jobs:
           pip3 install --upgrade numpy Pillow playwright
           playwright install
           python3 python_scripts/recursive_ss.py
+
+      - name: cleaning img
+        run: |
           python3 python_scripts/clear_metadata.py --img assets/img/stuff/repo_screenshot.png
 
-      - name: Configure Git
+      - name: Configure Git (i hardly know her)
         run: |
           git config --local user.email "pranavraj575@gmail.com"
           git config --local user.name "evil pranav"
-          echo "🔧 Git configured."
+          echo "🔧 Git configured (i hardly know her)."
 
       - name: Commit and push if changed
         run: |
