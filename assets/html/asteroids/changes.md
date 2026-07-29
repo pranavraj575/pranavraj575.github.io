@@ -4,4 +4,5 @@
 * Brakes: to make controls slightly less annoying, added a braking button (&#8595;) that behaves exactly like thrusting in the direction opposite your motion.
 * Asteroids: Added larger sizes of asteroids
 * Powerups: added piercing shots, 1ups, shield bash
+* High score: tracks local high score (unique for each game mode)
 * Misc: there are a few visual changes/changes in mechanics (e.g. bullets also obey the topology, ship appearance, point system, etc.)

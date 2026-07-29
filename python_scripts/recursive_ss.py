@@ -29,10 +29,10 @@ with sync_playwright() as p:
     print("scrolling to recursion")
     thing = page.get_by_text("pranavraj575/pranavraj575.github.io")
     thing.scroll_into_view_if_needed()
+    # page.mouse.wheel(0,-69)
 
     # let any animations pass
-    time.sleep(1)
-
-    print("screening my shot")
+    print("getting the good cycle")
+    time.sleep(20)
     page.screenshot(path=os.path.join(DIR, "assets", "img", "stuff", "repo_screenshot.png"), full_page=False)
     browser.close()
