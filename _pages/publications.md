@@ -23,8 +23,8 @@ remove_dead_pixel: false
   {% endfor %}
 </div>
 {% assign thingies = "code,poster" | split: ',' %}
-<div class="card mt-3 p-3">
-  <h5 class="my_collapsible font-weight-medium">filters</h5>
+<div class="card">
+  <h5 class="my_collapsible font-weight-medium">venues</h5>
   <div class="list-groups my_collapsible_content" style="padding-top:13px"> 
     {% for thing in thingies %}
       <div class="list-group col-md-2" style="margin-bottom:0px;">
