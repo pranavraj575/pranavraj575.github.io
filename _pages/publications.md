@@ -16,8 +16,7 @@ remove_dead_pixel: false
   {% for thing in thingies %}
     <div class="list-group col-md-4" style="margin-bottom:0px;">
       <span class="filter-span">
-        <input class="filt-unioner" type="checkbox" name="{{ thing }}" value="{{ thing }}" checked>
-        <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;">&nbsp;Include {{ thing }}</label>
+        <input class="filt-unioner" type="checkbox" name="{{ thing }}" value="{{ thing }}" checked><label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;">&nbsp;Include {{ thing }}</label>
       </span>
     </div> 
   {% endfor %}
@@ -29,8 +28,7 @@ remove_dead_pixel: false
     {% for thing in thingies %}
       <div class="list-group col-md-2" style="margin-bottom:0px;">
         <span class="filter-span">
-          <input class="filterer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
-          <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;">&nbsp;{{ thing }}</label>
+          <input class="filterer" type="checkbox" name="{{ thing }}" value="{{ thing }}"><label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;">&nbsp;{{ thing }}</label>
         </span>
       </div>
     {% endfor %}
@@ -47,8 +45,7 @@ remove_dead_pixel: false
       {% endif %}
       <div class="list-group col-md-{{ width }}" style="margin-bottom:0px;">
         <span class="filter-span">
-          <input class="filterer venuer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
-          <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;">&nbsp;{{ thing }}</label>
+          <input class="filterer venuer" type="checkbox" name="{{ thing }}" value="{{ thing }}"><label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;">&nbsp;{{ thing }}</label>
         </span>
       </div> 
     {% endfor %}
