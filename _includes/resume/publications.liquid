@@ -10,7 +10,7 @@
             {% assign date = '' %}
           {% endif %}
           <!-- <table class="table-cv"> -->
-          <table class="table-cv" style="display:inline-block">
+          <table class="table-cv" {% if data[0] == 'publications' %} style="display:inline-block"{% endif %}>
             <tbody>
               <tr>
                 <td>
