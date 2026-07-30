@@ -11,13 +11,21 @@ remove_dead_pixel: false
 
 ## publications
 
-{% assign thingies = "publications,presentations" | split: ',' %}
+{% assign thingies = "code,poster" | split: ',' %}
 <div class="list-groups" style="padding-top:13px"> 
   {% for thing in thingies %}
     <div class="list-group col-md-2" style="margin-bottom:0px;">
       <span>
         <input class="filterer" type="checkbox" name="{{ thing }}" value="{{ thing }}" checked>
-        <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing | capitalize }}</label>
+        <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing }}</label>
+      </span>
+    </div> 
+  {% endfor %}
+  {% for thing in site.data.venues %}
+    <div class="list-group col-md-2" style="margin-bottom:0px;">
+      <span>
+        <input class="filterer" type="checkbox" name="{{ thing }}" value="{{ thing }}" checked>
+        <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing }}</label>
       </span>
     </div> 
   {% endfor %}
