@@ -420,7 +420,8 @@
       "authors": "Rajbhandari, Pranav and Frick, Florian",
       "location": "Pittsburgh, USA",
       "publisher": "Combinatorics at the Confluence",
-      "releaseDate": "2026-07-20"
+      "releaseDate": "2026-07-20",
+      "url": "https://combcon.github.io/"
     },
     {
       "name": "Learning Emergent Behavior in Robot Swarms with NEAT",
