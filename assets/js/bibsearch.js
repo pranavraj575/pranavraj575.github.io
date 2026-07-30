@@ -26,27 +26,36 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
     // filter with the check boxes as well
-    document.getElementsByClassName("filterer").forEach((element, index) => {
-      if (element.checked){
-        document.querySelectorAll(".bibliography > li").forEach((el, ix) => {
-          const text = el.innerText.toLowerCase();
-          if (text.indexOf(element.name.toLowerCase()) == -1) {
-            el.classList.add("unloaded");
+    for (filt_type of ["filterer-type","filterer-venue", "filt-unioner"]){
+      document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
+      var filter_this_way=false;
+      document.getElementsByClassName(filt_type).forEach((element, index) => {
+        if (element.checked){
+          filter_this_way=true;
+        }
+      });
+      if (filt_type=="filt-unioner"){
+        filter_this_way=true;
+      }
+      if (filter_this_way){
+        document.getElementsByClassName(filt_type).forEach((element, index) => {
+          if (element.checked){
+            document.querySelectorAll(".bibliography > li").forEach((el, ix) => {
+              if (filt_type=="filt-unioner"){
+                if(el.querySelector("div").classList.contains("category-"+element.name.replace(" ","-"))){
+                  el.classList.remove("mark-unloaded");
+                }
+              } else{
+                const text = el.innerText.toLowerCase();
+                if (text.indexOf(element.name.toLowerCase()) == -1) {
+                  el.classList.remove("mark-unloaded");
+                }
+              }
+            });
           }
         });
       }
-    });
-
-    document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
-    document.getElementsByClassName("filt-unioner").forEach((element, index) => {
-      if (element.checked){
-        document.querySelectorAll(".bibliography > li").forEach((el, ix) => {
-          if(el.querySelector("div").classList.contains("category-"+element.name.replace(" ","-"))){
-            el.classList.remove("mark-unloaded");
-          }
-        });
-      }
-    });
+    }
     document.getElementsByClassName("mark-unloaded").forEach((element) => {element.classList.add("unloaded");});
     document.querySelectorAll(".bibliography > li").forEach((element) => element.classList.remove("mark-unloaded"));
 
