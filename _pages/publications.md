@@ -23,7 +23,11 @@ remove_dead_pixel: false
   {% endfor %}
   {% for dic_item in site.data.venues %}
     {% assign thing = dic_item[0] %}
-    <div class="list-group col-md-2" style="margin-bottom:0px;">
+    {% assign width = "2" %}
+    {% if thing.size>10 %}
+      {% assign width = "4" %}
+    {% endif %}
+    <div class="list-group col-md-{{ width }}" style="margin-bottom:0px;">
       <span class="filter-span">
         <input class="filterer venuer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
         <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing }}</label>
