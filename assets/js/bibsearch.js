@@ -8,12 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // highlight-search-term
     if (CSS.highlights) {
       const nonMatchingElements = highlightSearchTerm({ search: searchTerm, selector: ".bibliography > li" });
-      if (nonMatchingElements == null) {
+      //if (nonMatchingElements == null) {
         //return;
+      //}
+      if (nonMatchingElements != null) {
+        nonMatchingElements.forEach((element) => {
+          element.classList.add("unloaded");
+        });
       }
-      nonMatchingElements.forEach((element) => {
-        element.classList.add("unloaded");
-      });
     } else {
       // Simply add unloaded class to all non-matching items if Browser does not support CSS highlights
       document.querySelectorAll(".bibliography > li").forEach((element, index) => {
