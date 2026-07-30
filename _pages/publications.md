@@ -24,7 +24,7 @@ remove_dead_pixel: false
 </div>
 {% assign thingies = "code,poster" | split: ',' %}
 <div class="card">
-  <h5 class="my_collapsible font-weight-medium">venues</h5>
+  <h5 class="my_collapsible font-weight-medium">type</h5>
   <div class="list-groups my_collapsible_content" style="padding-top:13px"> 
     {% for thing in thingies %}
       <div class="list-group col-md-2" style="margin-bottom:0px;">
@@ -32,8 +32,13 @@ remove_dead_pixel: false
           <input class="filterer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
           <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing }}</label>
         </span>
-      </div> 
+      </div>
     {% endfor %}
+  </div>
+</div>
+<div class="card">
+  <h5 class="my_collapsible font-weight-medium">venues</h5>
+  <div class="list-groups my_collapsible_content" style="padding-top:13px">
     {% for dic_item in site.data.venues %}
       {% assign thing = dic_item[0] %}
       {% assign width = "2" %}
