@@ -363,6 +363,14 @@
   ],
   "publications": [
     {
+      "name": "Distributed Constraint Optimization via Online Learning and Iterative Pricing with Application to Large-Scale Satellite Scheduling",
+      "authors": "Itai Zilberstein and Pranav Rajbhandari and Steve Chien and Tuomas Sandholm",
+      "publisher": "arXiv",
+      "releaseDate": "2026-07-28",
+      "url": "https://arxiv.org/abs/2607.25835",
+      "preview": "https://raw.githubusercontent.com/pranavraj575/big-dcop/master/output/graph_color_gifs_readme/RM.gif"
+    },
+    {
       "name": "Geodesic complexity of the octahedron, and an algorithm for cut loci on convex polyhedra",
       "authors": "Frick, Florian and Rajbhandari, Pranav",
       "publisher": "arXiv",
