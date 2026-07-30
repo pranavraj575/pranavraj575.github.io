@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
               } else{
                 const text = el.innerText.toLowerCase();
-                if (text.indexOf(element.name.toLowerCase()) == -1) {
+                if (text.indexOf(element.name.toLowerCase()) > -1) {
                   el.classList.remove("mark-unloaded");
                 }
               }
