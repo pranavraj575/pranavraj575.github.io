@@ -10,19 +10,17 @@ remove_dead_pixel: false
 ---
 
 ## publications
+
+{% assign thingies = "publications,presentations" | split: ',' %}
 <div class="list-groups" style="padding-top:13px"> 
-  <div class="list-group col-md-2" style="margin-bottom:0px;">
-    <span>
-      <input type="checkbox" name="publications" value="Publications" checked>
-      <label for="publications" onclick="e=document.getElementsByName('publications')[0];e.checked=!e.checked;"> Publications</label>
-    </span>
-  </div> 
-  <div class="list-group col-md-2" style="margin-bottom:0px;">
-    <span>
-      <input type="checkbox" name="presentations" value="Presentations" checked>
-      <label for="presentations" onclick="e=document.getElementsByName('presentations')[0];e.checked=!e.checked;">> Presentations</label>
-    </span>
-  </div>
+  {% for thing in thingies %}
+    <div class="list-group col-md-2" style="margin-bottom:0px;">
+      <span>
+        <input type="checkbox" name="{{ thing }}" value="{{ thing }}" checked>
+        <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing | capitalize }}</label>
+      </span>
+    </div> 
+  {% endfor %}
 </div>
 
 <!-- _pages/publications.md -->
