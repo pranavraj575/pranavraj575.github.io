@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // filter with the check boxes as well
     for (var filt_type of ["filterer-type", "filterer-venue", "filt-unioner"]){
-      document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
       var filter_this_way=false;
       var stuff=document.getElementsByClassName(filt_type)
       for (var i=0;i<stuff.length;i++){
@@ -39,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
         filter_this_way=true;
       }
       if (filter_this_way){
+        document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
         document.getElementsByClassName(filt_type).forEach((element, index) => {
           if (element.checked){
             document.querySelectorAll(".bibliography > li").forEach((el, ix) => {
@@ -55,9 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
             });
           }
         });
+        document.getElementsByClassName("mark-unloaded").forEach((element) => {element.classList.add("unloaded");});
+        document.querySelectorAll(".bibliography > li").forEach((element) => element.classList.remove("mark-unloaded"));
       }
-      document.getElementsByClassName("mark-unloaded").forEach((element) => {element.classList.add("unloaded");});
-      document.querySelectorAll(".bibliography > li").forEach((element) => element.classList.remove("mark-unloaded"));
     }
 
     document.querySelectorAll("h2.bibliography").forEach(function (element) {
