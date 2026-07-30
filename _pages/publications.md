@@ -10,6 +10,20 @@ remove_dead_pixel: false
 ---
 
 ## publications
+<div class="list-groups" style="padding-top:13px"> 
+  <div class="list-group col-md-2" style="margin-bottom:0px;">
+    <span>
+      <input type="checkbox" name="publications" value="Publications" checked>
+      <label for="publications" onclick="e=document.getElementsByName('publications')[0];e.checked=!e.checked;"> Publications</label>
+    </span>
+  </div> 
+  <div class="list-group col-md-2" style="margin-bottom:0px;">
+    <span>
+      <input type="checkbox" name="presentations" value="Presentations" checked>
+      <label for="presentations" onclick="e=document.getElementsByName('presentations')[0];e.checked=!e.checked;">> Presentations</label>
+    </span>
+  </div>
+</div>
 
 <!-- _pages/publications.md -->
 
