@@ -34,7 +34,7 @@ remove_dead_pixel: false
     {% endfor %}
     <div class="list-group col-md-12" style="margin-bottom:0px;">
       <span class="filter-span" style="cursor:pointer;">
-        <span onclick="document.getElementsByClass('filterer-type').forEach((element) => {element.checked=false;});">clear selection</span>
+        <span onclick="document.getElementsByClassName('filterer-type').forEach((element) => {element.checked=false;});">clear selection</span>
       </span>
     </div>
   </div>
@@ -56,7 +56,7 @@ remove_dead_pixel: false
     {% endfor %}
     <div class="list-group col-md-12" style="margin-bottom:0px;">
       <span class="filter-span" style="cursor:pointer;">
-        <span onclick="document.getElementsByClass('filterer-venue').forEach((element) => {element.checked=false;});">clear selection</span>
+        <span onclick="document.getElementsByClassName('filterer-venue').forEach((element) => {element.checked=false;});">clear selection</span>
       </span>
     </div>
   </div>
