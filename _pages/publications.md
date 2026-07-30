@@ -23,31 +23,32 @@ remove_dead_pixel: false
   {% endfor %}
 </div>
 {% assign thingies = "code,poster" | split: ',' %}
-<h5 class="my_collapsible font-weight-medium">filters</h5>
-<div class="list-groups my_collapsible_content" style="padding-top:13px"> 
-  {% for thing in thingies %}
-    <div class="list-group col-md-2" style="margin-bottom:0px;">
-      <span class="filter-span">
-        <input class="filterer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
-        <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing }}</label>
-      </span>
-    </div> 
-  {% endfor %}
-  {% for dic_item in site.data.venues %}
-    {% assign thing = dic_item[0] %}
-    {% assign width = "2" %}
-    {% if thing.size>10 %}
-      {% assign width = "4" %}
-    {% endif %}
-    <div class="list-group col-md-{{ width }}" style="margin-bottom:0px;">
-      <span class="filter-span">
-        <input class="filterer venuer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
-        <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing }}</label>
-      </span>
-    </div> 
-  {% endfor %}
+<div class="card mt-3 p-3">
+  <h5 class="my_collapsible font-weight-medium">filters</h5>
+  <div class="list-groups my_collapsible_content" style="padding-top:13px"> 
+    {% for thing in thingies %}
+      <div class="list-group col-md-2" style="margin-bottom:0px;">
+        <span class="filter-span">
+          <input class="filterer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
+          <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing }}</label>
+        </span>
+      </div> 
+    {% endfor %}
+    {% for dic_item in site.data.venues %}
+      {% assign thing = dic_item[0] %}
+      {% assign width = "2" %}
+      {% if thing.size>10 %}
+        {% assign width = "4" %}
+      {% endif %}
+      <div class="list-group col-md-{{ width }}" style="margin-bottom:0px;">
+        <span class="filter-span">
+          <input class="filterer venuer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
+          <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing }}</label>
+        </span>
+      </div> 
+    {% endfor %}
+  </div>
 </div>
-
 <!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->
