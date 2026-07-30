@@ -41,8 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementsByClassName("filt-unioner").forEach((element, index) => {
       if (element.checked){
         document.querySelectorAll(".bibliography > li").forEach((el, ix) => {
-          const text = el.innerText.toLowerCase();
-          if (text.indexOf(element.name.toLowerCase()) == -1) {
+          if(el.querySelector("div").classList.contains(element.name)){
             el.classList.remove("mark-unloaded");
           }
         });
