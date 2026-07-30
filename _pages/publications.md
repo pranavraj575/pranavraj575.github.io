@@ -25,7 +25,7 @@ remove_dead_pixel: false
     {% assign thing = dic_item[0] %}
     <div class="list-group col-md-2" style="margin-bottom:0px;">
       <span>
-        <input class="filterer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
+        <input class="filterer venuer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
         <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing }}</label>
       </span>
     </div> 
