@@ -2,7 +2,8 @@
   {% for content in data[1] %}
     <li class="list-group-item {% if content.silly %}silly-goose{% endif %}" display-style="block" style="display:block;">
       <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+        <!-- <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column"> -->
+        <div class="col col-md-2 text-center date-column">
           {% if content.dateList %}
             {% assign date_list = "" %}
             {% for datelistitem in content.dateList %}
