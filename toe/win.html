@@ -24,7 +24,7 @@
     coll[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var my_collapsible_content = this.nextElementSibling;
-      if (my_collapsible_content.style.display === "none") {
+      if (this.classList.contains("active")) {
         my_collapsible_content.style.display = "inherit";
       } else {
         my_collapsible_content.style.display = "none";
