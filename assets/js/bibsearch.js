@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (CSS.highlights) {
       const nonMatchingElements = highlightSearchTerm({ search: searchTerm, selector: ".bibliography > li" });
       if (nonMatchingElements == null) {
-        return;
+        //return;
       }
       nonMatchingElements.forEach((element) => {
         element.classList.add("unloaded");
