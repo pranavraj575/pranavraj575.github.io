@@ -15,7 +15,7 @@ remove_dead_pixel: false
 <div class="list-groups" style="padding-top:13px"> 
   {% for thing in thingies %}
     <div class="list-group col-md-2" style="margin-bottom:0px;">
-      <span>
+      <span class="filter-span">
         <input class="filterer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
         <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing }}</label>
       </span>
@@ -24,7 +24,7 @@ remove_dead_pixel: false
   {% for dic_item in site.data.venues %}
     {% assign thing = dic_item[0] %}
     <div class="list-group col-md-2" style="margin-bottom:0px;">
-      <span>
+      <span class="filter-span">
         <input class="filterer venuer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
         <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing }}</label>
       </span>
