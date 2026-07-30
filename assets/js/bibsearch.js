@@ -56,9 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       }
+      document.getElementsByClassName("mark-unloaded").forEach((element) => {element.classList.add("unloaded");});
+      document.querySelectorAll(".bibliography > li").forEach((element) => element.classList.remove("mark-unloaded"));
     }
-    document.getElementsByClassName("mark-unloaded").forEach((element) => {element.classList.add("unloaded");});
-    document.querySelectorAll(".bibliography > li").forEach((element) => element.classList.remove("mark-unloaded"));
 
     document.querySelectorAll("h2.bibliography").forEach(function (element) {
       let iterator = element.nextElementSibling; // get next sibling element after h2, which can be h3 or ol
