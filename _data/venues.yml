@@ -7,6 +7,10 @@
   url: https://www.ifaamas.org/
   color: "#591777"
 
+"Combinatorics at the Confluence":
+  url: https://combcon.github.io/
+  color: "#0E4B58"
+
 "IEEE ROBIO":
   url: https://ieeexplore.ieee.org/xpl/conhome/1000856/all-proceedings
   color: "#00629B"
@@ -15,11 +19,6 @@
   url: https://link.springer.com/journal/10846
   color: "rgb(0, 21, 255)"
 
-
 "arXiv":
   url: https://arxiv.org/
   color: "#b31b1b"
-
-"Combinatorics at the Confluence":
-  url: https://combcon.github.io/
-  color: "#0E4B58"
