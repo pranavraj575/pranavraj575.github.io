@@ -22,6 +22,17 @@ document.addEventListener("DOMContentLoaded", function () {
           element.classList.add("unloaded");
         }
       });
+      // filter with the check boxes as well
+      document.getElementsByClassName("filterer").forEach((element, index) => {
+        if (element.checked){
+          document.querySelectorAll(".bibliography > li").forEach((element, index) => {
+            const text = element.innerText.toLowerCase();
+            if (text.indexOf(element.name) == -1) {
+              element.classList.add("unloaded");
+            }
+          });
+        }
+      });
     }
 
     document.querySelectorAll("h2.bibliography").forEach(function (element) {
