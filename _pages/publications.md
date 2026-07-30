@@ -14,7 +14,7 @@ remove_dead_pixel: false
 {% assign thingies = "publications,presentations" | split: ',' %}
 <div class="list-groups my_collapsible_content" style="padding-top:13px"> 
   {% for thing in thingies %}
-    <div class="list-group col-md-2" style="margin-bottom:0px;">
+    <div class="list-group col-md-4" style="margin-bottom:0px;">
       <span class="filter-span">
         <input class="filt-unioner" type="checkbox" name="{{ thing }}" value="{{ thing }}" checked>
         <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> Include {{ thing }}</label>
@@ -36,7 +36,7 @@ remove_dead_pixel: false
     {% endfor %}
   </div>
 </div>
-<div class="card">
+<div class="card mt-3" style="margin-bottom:1rem !important">
   <h5 class="my_collapsible font-weight-medium">venues</h5>
   <div class="list-groups my_collapsible_content" style="padding-top:13px">
     {% for dic_item in site.data.venues %}
