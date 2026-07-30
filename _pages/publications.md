@@ -11,7 +11,7 @@ remove_dead_pixel: false
 
 ## publications
 
-{% assign thingies = "publications,presentations,preprints" | split: ',' %}
+{% assign thingies = "publications,poster presentations,preprints" | split: ',' %}
 <div class="list-groups" style="padding-top:13px;"> 
   {% for thing in thingies %}
     <div class="list-group col-md-4" style="margin-bottom:0px;">
