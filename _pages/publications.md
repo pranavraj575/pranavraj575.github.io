@@ -15,10 +15,10 @@ remove_dead_pixel: false
 <div class="list-groups" style="padding-top:13px;"> 
   {% for thing in thingies %}
     <div class="list-group col-md-4" style="margin-bottom:0px;">
-      <span class="filter-span">
+      <span class="filter-span" style="cursor:pointer;">
         <input {% if thing!='poster presentations'%} checked{% endif %} class="filt-unioner" type="checkbox" name="{{ thing }}" value="{{ thing }}" ><label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;">&nbsp;Include {{ thing }}</label>
       </span>
-    </div> 
+    </div>
   {% endfor %}
 </div>
 {% assign thingies = "code,poster" | split: ',' %}
@@ -27,11 +27,16 @@ remove_dead_pixel: false
   <div class="list-groups my_collapsible_content" style="padding-top:13px;display:none;"> 
     {% for thing in thingies %}
       <div class="list-group col-md-2" style="margin-bottom:0px;">
-        <span class="filter-span">
+        <span class="filter-span" style="cursor:pointer;">
           <input class="filterer-type" type="checkbox" name="{{ thing }}" value="{{ thing }}"><label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;">&nbsp;{{ thing }}</label>
         </span>
       </div>
     {% endfor %}
+    <div class="list-group col-md-12" style="margin-bottom:0px;">
+      <span class="filter-span" style="cursor:pointer;">
+        <span onclick="document.getElementsByClass('filterer-type').forEach((element) => {element.checked=false;});">clear selection</span>
+      </span>
+    </div>
   </div>
 </div>
 <div class="card mt-3" style="margin-bottom:1rem !important">
@@ -44,7 +49,7 @@ remove_dead_pixel: false
         {% assign width = "4" %}
       {% endif %}
       <div class="list-group col-md-{{ width }}" style="margin-bottom:0px;">
-        <span class="filter-span">
+        <span class="filter-span" style="cursor:pointer;">
           <input class="filterer-venue" type="checkbox" name="{{ thing }}" value="{{ thing }}"><label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;">&nbsp;{{ thing }}</label>
         </span>
       </div> 
