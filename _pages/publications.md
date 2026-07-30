@@ -11,6 +11,17 @@ remove_dead_pixel: false
 
 ## publications
 
+{% assign thingies = "publications,presentations" | split: ',' %}
+<div class="list-groups my_collapsible_content" style="padding-top:13px"> 
+  {% for thing in thingies %}
+    <div class="list-group col-md-2" style="margin-bottom:0px;">
+      <span class="filter-span">
+        <input class="filt-unioner" type="checkbox" name="{{ thing }}" value="{{ thing }}">
+        <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing }}</label>
+      </span>
+    </div> 
+  {% endfor %}
+</div>
 {% assign thingies = "code,poster" | split: ',' %}
 <h5 class="my_collapsible font-weight-medium">filters</h5>
 <div class="list-groups my_collapsible_content" style="padding-top:13px"> 
