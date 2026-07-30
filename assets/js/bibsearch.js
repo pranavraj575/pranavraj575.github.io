@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (var filt_type of ["filterer-type", "filterer-venue", "filt-unioner"]){
       document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
       var filter_this_way=false;
-      stuff=document.getElementsByClassName(filt_type)
+      var stuff=document.getElementsByClassName(filt_type)
       for (var i=0;i<stuff.length;i++){
         if (stuff[i].checked){
           filter_this_way=true;
