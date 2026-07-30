@@ -12,7 +12,8 @@ remove_dead_pixel: false
 ## publications
 
 {% assign thingies = "code,poster" | split: ',' %}
-<div class="list-groups" style="padding-top:13px"> 
+<h5 class="my_collapsible font-weight-medium">filters</h5>
+<div class="list-groups my_collapsible_content" style="padding-top:13px"> 
   {% for thing in thingies %}
     <div class="list-group col-md-2" style="margin-bottom:0px;">
       <span class="filter-span">
