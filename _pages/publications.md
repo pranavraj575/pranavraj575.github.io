@@ -54,6 +54,11 @@ remove_dead_pixel: false
         </span>
       </div> 
     {% endfor %}
+    <div class="list-group col-md-12" style="margin-bottom:0px;">
+      <span class="filter-span" style="cursor:pointer;">
+        <span onclick="document.getElementsByClass('filterer-venue').forEach((element) => {element.checked=false;});">clear selection</span>
+      </span>
+    </div>
   </div>
 </div>
 <!-- _pages/publications.md -->
