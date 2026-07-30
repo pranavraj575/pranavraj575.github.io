@@ -12,7 +12,7 @@ remove_dead_pixel: false
 ## publications
 
 {% assign thingies = "publications,presentations" | split: ',' %}
-<div class="list-groups my_collapsible_content" style="padding-top:13px"> 
+<div class="list-groups" style="padding-top:13px;"> 
   {% for thing in thingies %}
     <div class="list-group col-md-4" style="margin-bottom:0px;">
       <span class="filter-span">
@@ -25,7 +25,7 @@ remove_dead_pixel: false
 {% assign thingies = "code,poster" | split: ',' %}
 <div class="card">
   <h5 class="my_collapsible font-weight-medium">type</h5>
-  <div class="list-groups my_collapsible_content" style="padding-top:13px"> 
+  <div class="list-groups my_collapsible_content" style="padding-top:13px;display:none;"> 
     {% for thing in thingies %}
       <div class="list-group col-md-2" style="margin-bottom:0px;">
         <span class="filter-span">
@@ -38,7 +38,7 @@ remove_dead_pixel: false
 </div>
 <div class="card mt-3" style="margin-bottom:1rem !important">
   <h5 class="my_collapsible font-weight-medium">venues</h5>
-  <div class="list-groups my_collapsible_content" style="padding-top:13px">
+  <div class="list-groups my_collapsible_content" style="padding-top:13px;display:none;">
     {% for dic_item in site.data.venues %}
       {% assign thing = dic_item[0] %}
       {% assign width = "2" %}
