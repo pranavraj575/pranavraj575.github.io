@@ -16,7 +16,7 @@ remove_dead_pixel: false
   {% for thing in thingies %}
     <div class="list-group col-md-2" style="margin-bottom:0px;">
       <span>
-        <input type="checkbox" name="{{ thing }}" value="{{ thing }}" checked>
+        <input class="filterer" type="checkbox" name="{{ thing }}" value="{{ thing }}" checked>
         <label for="{{ thing }}" onclick="e=document.getElementsByName('{{ thing }}')[0];e.checked=!e.checked;"> {{ thing | capitalize }}</label>
       </span>
     </div> 
