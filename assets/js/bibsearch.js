@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
     // filter with the check boxes as well
-    for (filt_type of ["filterer-type","filterer-venue", "filt-unioner"]){
+    for (filt_type of ["filterer-type", "filterer-venue", "filt-unioner"]){
       document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
       var filter_this_way=false;
       document.getElementsByClassName(filt_type).forEach((element, index) => {
