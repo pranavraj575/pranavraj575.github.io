@@ -1,6 +1,9 @@
 ---
 ---
-<div class="row {% if entry.is_publication %} publications {% endif %} {% if entry.is_presentation %} presentations {% endif %}">
+<div class="row
+    {% if entry.is_preprint %} preprints {% endif %}
+    {% if entry.is_publication %} publications {% endif %}
+    {% if entry.is_presentation %} presentations {% endif %}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
