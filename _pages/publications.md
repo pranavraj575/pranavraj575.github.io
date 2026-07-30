@@ -21,7 +21,8 @@ remove_dead_pixel: false
       </span>
     </div> 
   {% endfor %}
-  {% for thing,value in site.data.venues %}
+  {% for dic_item in site.data.venues %}
+    {% assign thing = dic_item[0] %}
     <div class="list-group col-md-2" style="margin-bottom:0px;">
       <span>
         <input class="filterer" type="checkbox" name="{{ thing }}" value="{{ thing }}">
