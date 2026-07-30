@@ -24,12 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
     // filter with the check boxes as well
-    console.log('running check');
     document.getElementsByClassName("filterer").forEach((element, index) => {
       if (element.checked){
         document.querySelectorAll(".bibliography > li").forEach((el, ix) => {
           const text = el.innerText.toLowerCase();
-          if (text.indexOf(element.name) == -1) {
+          if (text.indexOf(element.name.toLowerCase()) == -1) {
             el.classList.add("unloaded");
           }
         });
