@@ -37,16 +37,19 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
+    document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
     document.getElementsByClassName("filt-unioner").forEach((element, index) => {
-      if (!element.checked){
+      if (element.checked){
         document.querySelectorAll(".bibliography > li").forEach((el, ix) => {
           const text = el.innerText.toLowerCase();
-          if (text.indexOf(element.name.toLowerCase()) > -1) {
-            el.classList.add("unloaded");
+          if (text.indexOf(element.name.toLowerCase()) == -1) {
+            el.classList.remove("mark-unloaded");
           }
         });
       }
     });
+    document.getElementsByClassName("mark-unloaded").forEach((element) => {element.classList.add("unloaded");});
+    document.querySelectorAll(".bibliography > li").forEach((element) => element.classList.remove("mark-unloaded"));
 
     document.querySelectorAll("h2.bibliography").forEach(function (element) {
       let iterator = element.nextElementSibling; // get next sibling element after h2, which can be h3 or ol
