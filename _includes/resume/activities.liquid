@@ -2,9 +2,10 @@
   {% for content in data[1] %}
     <li class="list-group-item">
       <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column">
+        <!-- <div class="col-xs-2 cl-sm-2 col-md-2 text-center date-column"> -->
+        <div class="col col-md-2 text-center date-column">
           {% include date.liquid startDate=content.startDate endDate=content.endDate range=true %}
-          <table class="table-cv">
+          <table class="table-cv" style="display:inline-block">
             <tbody>
               <tr>
                 <td>
