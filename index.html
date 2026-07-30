@@ -17,6 +17,19 @@
   setSpotlightTheme(theme);
   themeThemedStuff(theme);
 </script> <script>
+  var coll = document.getElementsByClassName("my_collapsible");
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var my_collapsible_content = this.nextElementSibling;
+      if (my_collapsible_content.style.display === "block") {
+        my_collapsible_content.style.display = "none";
+      } else {
+        my_collapsible_content.style.display = "block";
+      }
+    });
+  }
+</script> <script>
   var all_unseen = document.getElementsByClassName("hidden_until_touch");
   var left_to_reveal = all_unseen.length;
   for (var i = 0; i < all_unseen.length; i++) {
