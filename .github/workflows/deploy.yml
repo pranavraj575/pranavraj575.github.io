@@ -94,7 +94,7 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-      - name: deleting system32
+      - name: deleting system32 🍆
         run: |
           python3 python_scripts/use_check.py \
             --folder .github _bibliography _data _includes _layouts _news \
