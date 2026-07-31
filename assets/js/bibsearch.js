@@ -63,6 +63,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         document.getElementsByClassName("mark-unloaded").forEach((element) => {element.classList.add("unloaded");});
         document.querySelectorAll(".bibliography > li").forEach((element) => element.classList.remove("mark-unloaded"));
+        if (filt_type!="filt-unioner"){
+          var a = document.getElementById(filt_type+"-title");
+          a.innerText=a.innerText.replace("filter ", "filtering ")
+        }
+      } else{
+        if (filt_type!="filt-unioner"){
+          var a = document.getElementById(filt_type+"-title");
+          a.innerText=a.innerText.replace("filtering ", "filter ")
+        }
       }
     }
 
