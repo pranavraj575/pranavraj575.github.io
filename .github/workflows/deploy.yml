@@ -98,8 +98,9 @@ jobs:
         run: |
           python3 python_scripts/use_check.py \
             --folder .github _bibliography _data _includes _layouts _news \
-              _pages _plugins _posts _sass _scripts assets bin python_scripts _config.yml README.md \
-            --file assets/img \
+                _pages _plugins _posts _sass _scripts assets bin python_scripts _config.yml README.md \
+            --file assets/img assets/audio assets/json \
+                assets/html/asteroids/img assets/html/asteroids/audio assets/video assets/pdf \
             --remove
       - name: Install and Build 🔧
         run: |
