@@ -349,9 +349,22 @@
     coll[i].addEventListener("click", function() {
       this.classList.toggle("active");
       var my_collapsible_content = this.nextElementSibling;
+
+      var dsp;
       if (this.classList.contains("active")) {
-        my_collapsible_content.style.display = "inherit";
+        if (my_collapsible_content.hasAttribute('collapse-display-style')){
+          dsp=y_collapsible_content.getAttribute('collapse-display-style');
+        } else{
+          dsp="inherit"
+        }
+        my_collapsible_content.style.display = dsp;
       } else {
+        if('dislpay' in my_collapsible_content.style){
+          dsp = my_collapsible_content.style.display;
+        } else{
+          dsp='inherit';
+        }
+        my_collapsible_content.setAttribute('collapse-display-style',dsp);
         my_collapsible_content.style.display = "none";
       }
     });
@@ -375,10 +388,21 @@
           if (coll[j].classList.contains("active") == all_expanded){
             coll[j].classList.toggle("active");
             var my_collapsible_content = coll[j].nextElementSibling;
-
+            var dsp;
             if (coll[j].classList.contains("active")) {
-              my_collapsible_content.style.display = "inherit";
+              if (my_collapsible_content.hasAttribute('collapse-display-style')){
+                dsp=y_collapsible_content.getAttribute('collapse-display-style');
+              } else{
+                dsp="inherit"
+              }
+              my_collapsible_content.style.display = dsp;
             } else {
+              if('dislpay' in my_collapsible_content.style){
+                dsp = my_collapsible_content.style.display;
+              } else{
+                dsp='inherit';
+              }
+              my_collapsible_content.setAttribute('collapse-display-style',dsp);
               my_collapsible_content.style.display = "none";
             }
           }
