@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   el.classList.remove("mark-unloaded");
                 }
               } else if(filt_type=="filterer-type") {
-                for (var lnk of el.querySelector(".links > a")){
+                for (var lnk of el.querySelectorAll(".links > a")){
                   if (lnk.innerText.toLowerCase()==element.name.toLowerCase()){
                     el.classList.remove("mark-unloaded");
                   }
