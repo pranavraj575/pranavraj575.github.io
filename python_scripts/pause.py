@@ -100,6 +100,7 @@ def tolatex(fn):
 
 # projects
 if "projects" in cv:
+    print("writing to projects.tex")
     fn = os.path.join(output_dir, "projects.tex")
     f = open(fn, "w")
     f.write("\\cvsection{Research Projects} % ordered by start date\n\n")
@@ -149,6 +150,7 @@ else:
 
 # experience
 if "experience" in cv:
+    print("writing to experience.tex")
     fn = os.path.join(output_dir, "experience.tex")
     f = open(fn, "w")
     f.write("\\cvsection{Experience} % ordered by start date\n\n")
