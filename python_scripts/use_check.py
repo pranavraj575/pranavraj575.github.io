@@ -14,6 +14,11 @@ PARSER.add_argument(
     required=True,
     help="folders to check references in",
 )
+PARSER.add_argument(
+    "--remove-unused",
+    action="store_true",
+    help="whether to remove unused files",
+)
 failed_formats = set()
 args = PARSER.parse_args()
 
@@ -53,3 +58,6 @@ used = list(filter(lambda f: any(recurse_search(dd, os.path.basename(f), [os.pat
 unused = sorted(list(set(files).difference(used)), key=lambda f: files.index(f))
 print("USED", *used, sep="\n\t")
 print("UNUSED", *unused, sep="\n\t")
+if args.remove_unused:
+    for f in unused:
+        os.remove(f)
