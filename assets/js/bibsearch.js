@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // filter with the check boxes as well
     for (var filt_type of ["filterer-type", "filterer-venue", "filt-unioner"]){
       var filter_this_way=false;
-      var stuff=document.getElementsByClassName(filt_type)
+      var stuff=document.getElementsByClassName(filt_type);
       for (var i=0;i<stuff.length;i++){
         if (stuff[i].checked){
           filter_this_way=true;
@@ -61,8 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
             });
           }
         });
-        document.getElementsByClassName("mark-unloaded").forEach((element) => {element.classList.add("unloaded");});
-        document.querySelectorAll(".bibliography > li").forEach((element) => element.classList.remove("mark-unloaded"));
+        document.querySelectorAll(".bibliography, .mark-unloaded").forEach((element) => {
+          element.classList.remove("mark-unloaded");
+          element.classList.add("unloaded");
+        });
         if (filt_type!="filt-unioner"){
           var a = document.getElementById(filt_type+"-title");
           a.innerText=a.innerText.replace("filter ", "filtering ")
