@@ -74,12 +74,14 @@
         }
         my_collapsible_content.style.display = dsp;
       } else {
-        if('dislpay' in my_collapsible_content.style){
+        if('display' in my_collapsible_content.style){
           dsp = my_collapsible_content.style.display;
         } else{
           dsp='block';
         }
-        my_collapsible_content.setAttribute('collapse-display-style',dsp);
+        if(!my_collapsible_content.hasAttribute('collapse-display-style')){
+          my_collapsible_content.setAttribute('collapse-display-style',dsp);
+        }
         my_collapsible_content.style.display = "none";
       }
     });
