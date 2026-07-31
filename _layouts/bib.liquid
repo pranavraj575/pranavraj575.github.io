@@ -32,6 +32,7 @@
         {% else %}
           {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
         {% endif %}
+        {% assign splt = entry.preview | split: "/" %}
         {%
           include figure.liquid
           loading="eager"
@@ -40,7 +41,7 @@
           class="preview z-depth-1"
           zoomable=true
           avoid_scaling=true
-          alt=entry.preview
+          alt=splt[-1]
           title=entry.title
         %}
       {% endif %}
