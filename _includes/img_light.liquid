@@ -3,6 +3,7 @@
 {% assign ext = parts.last %}
 {% assign curse = include.cursor | default: "pointer" %}
 {% assign attribute_list = "" %}
+{% assign emt = include.element | default: "span" %}
 
 {% if include.attributes %}
   {% assign attributes = include.attributes | split: ";;" %}
@@ -14,7 +15,7 @@
 {% if include.href %}
   <a class="{{ include.class }}" href="{{ include.path }}" style="{{ include.style }}" {{ attribute_list }}>
 {% else %}
-  <span class="{{ include.class }}" style="{{ include.style }}" {{ attribute_list }}>
+  <{{ emt }} class="{{ include.class }}" style="{{ include.style }}" {{ attribute_list }}>
 {% endif %}
   {% if site.imagemagick.enabled %}
     {% unless include.avoid_scaling %}
@@ -73,5 +74,5 @@
 {% if include.href %}
   </a>
 {% else %}
-  </span>
+  </{{ emt }}>
 {% endif %}
