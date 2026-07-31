@@ -46,10 +46,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 if(el.querySelector("div").classList.contains("category-"+element.name.replace(" ","-"))){
                   el.classList.remove("mark-unloaded");
                 }
-              } else{
-                const text = el.innerText.toLowerCase();
-                if (text.indexOf(element.name.toLowerCase()) > -1) {
+              } else if(filt_type=="filterer-venue"){
+                const abr=el.querySelector("abbr");
+                if(abr!=null && abr.innerText==element.name){
                   el.classList.remove("mark-unloaded");
+                }
+              } else if(filt_type=="filterer-type") {
+                for (var lnk of el.querySelector(".links > a")){
+                  if (lnk.innerText.toLowerCase()==element.name.toLowerCase()){
+                    el.classList.remove("mark-unloaded");
+                  }
                 }
               }
             });
