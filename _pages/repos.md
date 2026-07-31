@@ -12,7 +12,7 @@ remove_dead_pixel: false
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center permute-children list-groups">
     <div class="list-group col-md-6">
         <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);" >
-            {% include figure.liquid loading="eager" path="/assets/img/stuff/repo_screenshot.png" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="/assets/img/stuff/repo_screenshot.png" %}
+            {% include figure.liquid loading="eager" path="/assets/img/stuff/repo_screenshot.png" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="repo_screenshot.png" %}
             <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark">
                 <tbody>
                     <tr> <td class="p-1 pl-2 font-weight-bold"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 tmp-mr-1"><path fill="var(--global-tip-block)" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>&nbsp;<a href="https://github.com/pranavraj575/pranavraj575.github.io"><b>pranavraj575/pranavraj575.github.io</b></a></td></tr>
@@ -24,7 +24,7 @@ remove_dead_pixel: false
     </div>
     <div class="list-group col-md-6">
         <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);" >
-            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/big-dcop/master/output/graph_color_gifs_readme/RM.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="https://raw.githubusercontent.com/pranavraj575/big-dcop/master/output/graph_color_gifs_readme/RM.gif" %}
+            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/big-dcop/master/output/graph_color_gifs_readme/RM.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="RM.gif" %}
             <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark">
                 <tbody>
                     <tr> <td class="p-1 pl-2 font-weight-bold"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 tmp-mr-1"><path fill="var(--global-tip-block)" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>&nbsp;<a href="https://github.com/pranavraj575/big-dcop"><b>pranavraj575/big-dcop</b></a></td></tr>
@@ -36,7 +36,7 @@ remove_dead_pixel: false
     </div>
     <div class="list-group col-md-6">
         <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);" >
-            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/aleph0_game/main/images/sample_large_jenga_game.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="https://raw.githubusercontent.com/pranavraj575/aleph0_game/main/images/sample_large_jenga_game.gif" %}
+            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/aleph0_game/main/images/sample_large_jenga_game.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="sample_large_jenga_game.gif" %}
             <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark">
                 <tbody>
                     <tr> <td class="p-1 pl-2 font-weight-bold"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 tmp-mr-1"><path fill="var(--global-tip-block)" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>&nbsp;<a href="https://github.com/pranavraj575/aleph0_game"><b>pranavraj575/aleph0_game</b></a></td></tr>
@@ -48,7 +48,7 @@ remove_dead_pixel: false
     </div>
     <div class="list-group col-md-6">
         <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);" >
-            {% include figure.liquid loading="eager" path="/assets/img/publication_preview/berteam_coevolution.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="/assets/img/publication_preview/berteam_coevolution.gif" %}
+            {% include figure.liquid loading="eager" path="/assets/img/publication_preview/berteam_coevolution.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="berteam_coevolution.gif" %}
             <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark">
                 <tbody>
                     <tr> <td class="p-1 pl-2 font-weight-bold"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 tmp-mr-1"><path fill="var(--global-tip-block)" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>&nbsp;<a href="https://github.com/pranavraj575/BERTeam"><b>pranavraj575/BERTeam</b></a></td></tr>
@@ -60,7 +60,7 @@ remove_dead_pixel: false
     </div>
     <div class="list-group col-md-6">
         <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);" >
-            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/config_networks/main/images/visualize_small_split_recombine_cnn.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="https://raw.githubusercontent.com/pranavraj575/config_networks/main/images/visualize_small_split_recombine_cnn.gif" %}
+            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/config_networks/main/images/visualize_small_split_recombine_cnn.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="visualize_small_split_recombine_cnn.gif" %}
             <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark">
                 <tbody>
                     <tr> <td class="p-1 pl-2 font-weight-bold"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 tmp-mr-1"><path fill="var(--global-tip-block)" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>&nbsp;<a href="https://github.com/pranavraj575/config_networks"><b>pranavraj575/config_networks</b></a></td></tr>
@@ -72,7 +72,7 @@ remove_dead_pixel: false
     </div>
     <div class="list-group col-md-6">
         <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);" >
-            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/polyhedra_cut_locus/main/images/octahedron/voronoi_star_demo.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="https://raw.githubusercontent.com/pranavraj575/polyhedra_cut_locus/main/images/octahedron/voronoi_star_demo.gif" %}
+            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/polyhedra_cut_locus/main/images/octahedron/voronoi_star_demo.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="voronoi_star_demo.gif" %}
             <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark">
                 <tbody>
                     <tr> <td class="p-1 pl-2 font-weight-bold"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 tmp-mr-1"><path fill="var(--global-tip-block)" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>&nbsp;<a href="https://github.com/pranavraj575/polyhedra_cut_locus"><b>pranavraj575/polyhedra_cut_locus</b></a></td></tr>
@@ -84,7 +84,7 @@ remove_dead_pixel: false
     </div>
     <div class="list-group col-md-6">
         <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);" >
-            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/sperners_lemon/main/img/sperners_lemon.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="https://raw.githubusercontent.com/pranavraj575/sperners_lemon/main/img/sperners_lemon.gif" %}
+            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/sperners_lemon/main/img/sperners_lemon.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="sperners_lemon.gif" %}
             <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark">
                 <tbody>
                     <tr> <td class="p-1 pl-2 font-weight-bold"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 tmp-mr-1"><path fill="var(--global-tip-block)" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>&nbsp;<a href="https://github.com/pranavraj575/sperners_lemon"><b>pranavraj575/sperners_lemon</b></a></td></tr>
@@ -96,7 +96,7 @@ remove_dead_pixel: false
     </div>
     <div class="list-group col-md-6">
         <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);" onclick="Aster();">
-            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/asteroids/master/display/playing.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="https://raw.githubusercontent.com/pranavraj575/asteroids/master/display/playing.gif" %}
+            {% include figure.liquid loading="eager" path="/assets/html/asteroids/display/gameplay.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="gameplay.gif" %}
             <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark">
                 <tbody>
                     <tr> <td class="p-1 pl-2 font-weight-bold"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 tmp-mr-1"><path fill="var(--global-tip-block)" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>&nbsp;<a href="https://github.com/pranavraj575/asteroids"><b>pranavraj575/asteroids</b></a></td></tr>
@@ -108,7 +108,7 @@ remove_dead_pixel: false
     </div>
     <div class="list-group col-md-6">
         <div class="card mt-3 p-3" style="border-radius:1rem;border:1px solid var(--global-text-color);background:var(--global-pure-theme-color);" >
-            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/UAV_routing_classification/main/map_generation/tsp_real_world_examples.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="https://raw.githubusercontent.com/pranavraj575/UAV_routing_classification/main/map_generation/tsp_real_world_examples.gif" %}
+            {% include figure.liquid loading="eager" path="https://raw.githubusercontent.com/pranavraj575/UAV_routing_classification/main/map_generation/tsp_real_world_examples.gif" sizes = "200px" class="preview z-depth-1" zoomable=true avoid_scaling=true alt="tsp_real_world_examples.gif" %}
             <table class="table table-cv table-sm table-borderless table-responsive table-cv-map table-dark">
                 <tbody>
                     <tr> <td class="p-1 pl-2 font-weight-bold"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo mr-1 tmp-mr-1"><path fill="var(--global-tip-block)" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path></svg>&nbsp;<a href="https://github.com/pranavraj575/UAV_routing_classification"><b>pranavraj575/UAV_routing_classification</b></a></td></tr>
