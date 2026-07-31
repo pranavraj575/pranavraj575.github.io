@@ -35,7 +35,7 @@ github_repo_images: # If left out for a repo, it will look boring but still be f
   - name: pranavraj575/sperners_lemon
     image: https://raw.githubusercontent.com/pranavraj575/sperners_lemon/main/img/sperners_lemon.gif
   - name: pranavraj575/asteroids
-    image: https://raw.githubusercontent.com/pranavraj575/asteroids/master/display/playing.gif
+    image: https://raw.githubusercontent.com/pranavraj575/asteroids/master/display/gameplay.gif
 # routing
   - name: pranavraj575/UAV_routing_classification
     image: https://raw.githubusercontent.com/pranavraj575/UAV_routing_classification/main/map_generation/tsp_real_world_examples.gif
