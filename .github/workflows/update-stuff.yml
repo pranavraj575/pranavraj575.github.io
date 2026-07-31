@@ -38,11 +38,11 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          git pull
           git add _pages/repos.md
           git diff --staged --quiet || (
             echo "📤 Committing and pushing changes..."
             git commit -m "auto update repos"
+            git pull
             git push
           )
 
@@ -80,10 +80,10 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          git pull
           git add assets/img/stuff/repo_screenshot.png
           git diff --staged --quiet || (
             echo "📤 Committing and pushing changes..."
             git commit -m "recursion recursion recursion recursion recursion recursion recursion"
+            git pull
             git push
           )
