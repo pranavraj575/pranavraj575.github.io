@@ -110,7 +110,7 @@ for repo in data["github_repos"]:
             ' class="preview z-depth-1"'
             " zoomable=true"
             " avoid_scaling=true"
-            f' alt="{img_src}"'
+            f' alt="{img_src[img_src.rindex("/") + 1 :]}"'
             " %}"
         )
         full_thing = full_thing.replace("MAYBE_IMAGE", thing)
