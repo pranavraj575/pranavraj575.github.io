@@ -2,7 +2,7 @@
 
 [play here](http://pranavraj575.github.io/assets/html/assteroids)
 
-<img src="https://github.com/pranavraj575/asteroids/blob/master/display/playing.gif">
+<img src="https://github.com/pranavraj575/asteroids/blob/master/display/gameplay.gif">
 
 [Changes from original repo](https://github.com/pranavraj575/asteroids/blob/master/changes.md)
 
