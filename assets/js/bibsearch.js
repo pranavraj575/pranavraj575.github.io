@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const updateInputField = () => {
     const hashValue = decodeURIComponent(window.location.hash.substring(1)); // Remove the '#' character
-    document.getElementById("bibsearch").value = hashValue;
+    // document.getElementById("bibsearch").value = hashValue; // why do this?
     filterItems(hashValue);
   };
 
