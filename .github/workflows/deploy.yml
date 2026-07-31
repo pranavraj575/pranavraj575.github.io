@@ -94,10 +94,13 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-      #- name: HELLP HELP MEEE 🍆
-      #  run: |
-      #    pip3 install --upgrade requests pyyaml
-      #    python3 python_scripts/repos.py
+      - name: deleting system32
+        run: |
+          python3 python_scripts/use_check.py \
+            --folder .github _bibliography _data _includes _layouts _news \
+              _pages _plugins _posts _sass _scripts assets bin python_scripts _config.yml README.md \
+            --file assets/img \
+            --remove
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
