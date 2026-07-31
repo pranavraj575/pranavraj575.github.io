@@ -33,7 +33,7 @@ github_repo_images: # If left out for a repo, it will look boring but still be f
   - name: pranavraj575/polyhedra_cut_locus
     image: https://raw.githubusercontent.com/pranavraj575/polyhedra_cut_locus/main/images/octahedron/voronoi_star_demo.gif
   - name: pranavraj575/sperners_lemon
-    image: https://raw.githubusercontent.com/pranavraj575/sperners_lemon/main/img/sperners_lemon.gif
+    image: /assets/img/publication_preview/sperners_lemon.gif
   - name: pranavraj575/asteroids
     image: /assets/html/asteroids/display/gameplay.gif
 # routing
