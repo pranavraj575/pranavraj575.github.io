@@ -124,10 +124,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   window.addEventListener("hashchange", updateInputField); // Update the filter when the hash changes
-  document.getElementsByClassName("filterer-venue").forEach((element) => {
-    console.log(element);
-    bibs=document.querySelectorAll(".bibliography > li");
-    keep=false;
+
+  document.querySelectorAll(".filterer-venue").forEach((element) => {
+    var bibs=document.querySelectorAll(".bibliography .unloaded > li, .bibliography > li");
+    var keep=false;
     for (var bb of bibs){
       var abr=bb.querySelector("abbr");
       if(abr!=null && abr.innerText==element.name){
