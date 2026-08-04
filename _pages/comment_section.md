@@ -18,7 +18,14 @@ giscus_comments: true
 </div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".gsc-left-header").forEach((element)=>{element.remove()})
-  });
+  var clear_giscus = setInterval(function(){
+    var elements=document.getElementsByClassName("gsc-left-header");
+    if (elements.length>0){
+      for(var i=0; i<elements.length;i++){
+        elements[i].remove();
+      }
+      clearInterval(clear_giscus);
+    }
+  console.log("HERE");
+  }, 10);
 </script>
