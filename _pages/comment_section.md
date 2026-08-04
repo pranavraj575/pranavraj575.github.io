@@ -16,15 +16,3 @@ giscus_comments: true
         {% include giscus.liquid %}
     {% endif %}
 </div>
-
-<script>
-  var clear_giscus = setInterval(function(){
-    var elements=document.getElementsByClassName("gsc-left-header");
-    if (elements.length>0){
-      for(var i=0; i<elements.length;i++){
-        elements[i].remove();
-      }
-      clearInterval(clear_giscus);
-    }
-  }, 10);
-</script>
