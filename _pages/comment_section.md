@@ -16,3 +16,9 @@ giscus_comments: true
         {% include giscus.liquid %}
     {% endif %}
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".gsc-left-header").forEach((element)=>{element.remove()})
+  });
+</script>
