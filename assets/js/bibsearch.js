@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
     if (!keep){
-      element.parentElement.parentElement.classList.add("unloaded");
+      element.parentElement.parentElement.style.display="none";
     }
   });
 
