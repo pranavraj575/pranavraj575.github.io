@@ -130,8 +130,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var keep=false;
     for (var bb of bibs){
       var abr=bb.querySelector("abbr");
-      if(abr!=null && abr.innerText==element.name){
+      if(abr!=null && (abr.innerText==element.name || abr.innerText == " "+element.name+" ")){
         keep=true;
+        break;
       }
     }
     if (!keep){
