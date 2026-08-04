@@ -11,7 +11,7 @@ redirect_from:
   - /assets/html/assteroids/
   - /assets/html/assteroids.html
 nav: false
-og_image: /assets/img/cool_bunny.jpg
+og_image: /assets/html/asteroids/img/torus.ico
 ---
 Sending to asteroids game
 <html>
