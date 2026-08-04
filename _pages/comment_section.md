@@ -26,6 +26,5 @@ giscus_comments: true
       }
       clearInterval(clear_giscus);
     }
-  console.log("HERE");
   }, 10);
 </script>
