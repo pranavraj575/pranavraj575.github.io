@@ -28,7 +28,7 @@ jobs:
       - name: HELLP HELP MEEE 🍆
         run: |
           pip3 install --upgrade requests pyyaml
-          python3 python_scripts/repos.py
+          python3 _python_scripts/repos.py
 
       - name: Configure Git (i hardly know her)
         run: |
@@ -67,11 +67,11 @@ jobs:
         run: |
           pip3 install --upgrade numpy Pillow playwright
           playwright install
-          python3 python_scripts/recursive_ss.py
+          python3 _python_scripts/recursive_ss.py
 
       - name: cleaning img
         run: |
-          python3 python_scripts/clear_metadata.py --img assets/img/stuff/repo_screenshot.png
+          python3 _python_scripts/clear_metadata.py --img assets/img/stuff/repo_screenshot.png
 
       - name: Configure Git (i hardly know her)
         run: |
