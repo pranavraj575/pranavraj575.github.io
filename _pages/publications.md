@@ -21,7 +21,7 @@ remove_dead_pixel: false
     </div>
   {% endfor %}
 </div>
-{% assign thingies = "code,poster" | split: ',' %}
+{% assign thingies = "DOI,poster,code" | split: ',' %}
 <div class="card">
   <h5 id="filterer-type-title" class="my_collapsible font-weight-medium">filter by attributes</h5>
   <div class="list-groups my_collapsible_content" style="padding-top:13px;display:none;" collapse-display-style="inherit"> 
