@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if(filt_type=="filterer-type") {
           additional_filter=" includes "+additional_filter;
         }
-        filter_str+="<span style='white-space:nowrap'>"+additional_filter+"</span> &#x2227; ";
+        filter_str+="<span>"+additional_filter+"</span> &#x2227; ";
 
         document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
         document.getElementsByClassName(filt_type).forEach((element, index) => {
