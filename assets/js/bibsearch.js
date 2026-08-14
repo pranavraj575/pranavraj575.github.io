@@ -50,7 +50,8 @@ document.addEventListener("DOMContentLoaded", function () {
             additional_filter+=stuff[i].name + "&#x2228;";
           }
         }
-        filter_str+="&#x2227;("+additional_filter+")";
+        additional_filter=additional_filter.substring(0,additional_filter.length-8)
+        filter_str+="("+additional_filter+")&#x2227;";
 
         document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
         document.getElementsByClassName(filt_type).forEach((element, index) => {
@@ -90,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     }
+    filter_str=filter_str.substring(0,filter_str.length-8)
     document.getElementById("filter-string").innerText=filter_str;
     document.querySelectorAll("h2.bibliography").forEach(function (element) {
       let iterator = element.nextElementSibling; // get next sibling element after h2, which can be h3 or ol
