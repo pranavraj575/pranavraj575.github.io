@@ -65,7 +65,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         if (filt_type=="filt-unioner"){
-          additional_filter=" is a "+additional_filter;
+          if (cnt>0){
+            additional_filter=" is a "+additional_filter;
+          }
         } else if(filt_type=="filterer-venue"){
           additional_filter=" presented at "+additional_filter;
         } else if(filt_type=="filterer-type") {
