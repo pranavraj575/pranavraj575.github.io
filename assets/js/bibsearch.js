@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var filter_str="";
     }
 
-    for (var filt_type of ["filterer-type", "filterer-venue", "filt-unioner"]){
+    for (var filt_type of ["filt-unioner", "filterer-type", "filterer-venue"]){
       var filter_this_way=false;
       var stuff=document.getElementsByClassName(filt_type);
       for (var i=0;i<stuff.length;i++){
@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
         var additional_filter="";
         for (var i=0;i<stuff.length;i++){
           if (stuff[i].checked){
-            additional_filter+=stuff[i].name + "&#x2228;";
+            additional_filter+=stuff[i].name + " &#x2228; ";
           }
         }
-        additional_filter=additional_filter.substring(0,additional_filter.length-8)
+        additional_filter=additional_filter.substring(0,additional_filter.length-10)
         if (! additional_filter){
           additional_filter="&#8869;"
         }
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
     filter_str=filter_str.substring(0,filter_str.length-8)
-    document.getElementById("filter-string").innerText=filter_str;
+    document.getElementById("filter-string").innerHTML=filter_str;
     document.querySelectorAll("h2.bibliography").forEach(function (element) {
       let iterator = element.nextElementSibling; // get next sibling element after h2, which can be h3 or ol
       let hideFirstGroupingElement = true;
