@@ -26,6 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
     // filter with the check boxes as well
+    if(search_term){
+      var filter_str="&#x2227;";
+    } else{
+      var filter_str="";
+    }
+
     for (var filt_type of ["filterer-type", "filterer-venue", "filt-unioner"]){
       var filter_this_way=false;
       var stuff=document.getElementsByClassName(filt_type);
@@ -38,6 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
         filter_this_way=true;
       }
       if (filter_this_way){
+        var additional_filter="";
+        for (var i=0;i<stuff.length;i++){
+          if (stuff[i].checked){
+            additional_filter+=stuff[i].name + "&#x2228;";
+          }
+        }
+        filter_str+="&#x2227;("+additional_filter+")";
+
         document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
         document.getElementsByClassName(filt_type).forEach((element, index) => {
           if (element.checked){
@@ -61,8 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
           }
         });
-
-
 
         document.getElementsByClassName("mark-unloaded").forEach((element) => {element.classList.add("unloaded");});
         document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.remove("mark-unloaded")});
