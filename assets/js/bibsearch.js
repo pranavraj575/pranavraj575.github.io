@@ -51,6 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         }
         additional_filter=additional_filter.substring(0,additional_filter.length-8)
+        if (! additional_filter){
+          additional_filter="&#8869;"
+        }
         filter_str+="("+additional_filter+")&#x2227;";
 
         document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
