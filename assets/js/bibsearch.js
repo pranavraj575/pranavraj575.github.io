@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     }
-
+    document.getElementById("filter-string").innerText=filter_str;
     document.querySelectorAll("h2.bibliography").forEach(function (element) {
       let iterator = element.nextElementSibling; // get next sibling element after h2, which can be h3 or ol
       let hideFirstGroupingElement = true;
