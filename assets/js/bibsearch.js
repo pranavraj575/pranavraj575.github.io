@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // filter with the check boxes as well
     if(searchTerm){
-      var filter_str="&#x2227;";
+      var filter_str="&#x2227; ";
     } else{
       var filter_str="";
     }
@@ -66,12 +66,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (filt_type=="filt-unioner"){
           if (cnt>0){
-            additional_filter=" is a "+additional_filter;
+            additional_filter="is a "+additional_filter;
           }
         } else if(filt_type=="filterer-venue"){
-          additional_filter=" presented at "+additional_filter;
+          additional_filter="presented at "+additional_filter;
         } else if(filt_type=="filterer-type") {
-          additional_filter=" includes "+additional_filter;
+          additional_filter="includes "+additional_filter;
         }
         filter_str+="<span style='display:inline-block'>"+additional_filter+"</span> &#x2227; ";
 
