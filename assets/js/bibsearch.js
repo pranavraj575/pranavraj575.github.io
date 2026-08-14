@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
     // filter with the check boxes as well
-    if(search_term){
+    if(searchTerm){
       var filter_str="&#x2227;";
     } else{
       var filter_str="";
