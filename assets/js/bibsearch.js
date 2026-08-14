@@ -51,10 +51,17 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         }
         additional_filter=additional_filter.substring(0,additional_filter.length-10)
-        if (! additional_filter){
+        if (!additional_filter){
           additional_filter="&#8869;"
         }
-        filter_str+="("+additional_filter+")&#x2227;";
+        if (filt_type=="filt-unioner"){
+          filter_str+=" is a "
+        } else if(filt_type=="filterer-venue"){
+          filter_str+=" presented at "
+        } else if(filt_type=="filterer-type") {
+          filter_str+=" includes "
+        }
+        filter_str+="("+additional_filter+") &#x2227; ";
 
         document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
         document.getElementsByClassName(filt_type).forEach((element, index) => {
@@ -94,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     }
-    filter_str=filter_str.substring(0,filter_str.length-8)
+    filter_str=filter_str.substring(0,filter_str.length-10)
     document.getElementById("filter-string").innerHTML=filter_str;
     document.querySelectorAll("h2.bibliography").forEach(function (element) {
       let iterator = element.nextElementSibling; // get next sibling element after h2, which can be h3 or ol
