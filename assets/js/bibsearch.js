@@ -45,23 +45,33 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       if (filter_this_way){
         var additional_filter="";
+        var cnt=0;
         for (var i=0;i<stuff.length;i++){
           if (stuff[i].checked){
-            additional_filter+=stuff[i].name + " &#x2228; ";
+            cnt+=1;
+            var ttta=stuff[i].name;
+            if (filt_type=="filt-unioner"){
+              ttta=ttta.substring(0,ttta.length-1);
+            }
+            additional_filter+=ttta + " &#x2228; ";
           }
         }
         additional_filter=additional_filter.substring(0,additional_filter.length-10)
-        if (!additional_filter){
+        if (cnt==0){
           additional_filter="&#8869;"
+        } else if(cnt>1){
+         additional_filter="("+additional_filter+")"
         }
+
+
         if (filt_type=="filt-unioner"){
-          filter_str+=" is a "
+          additional_filter=" is a "+additional_filter;
         } else if(filt_type=="filterer-venue"){
-          filter_str+=" presented at "
+          additional_filter=" presented at "+additional_filter;
         } else if(filt_type=="filterer-type") {
-          filter_str+=" includes "
+          additional_filter=" includes "+additional_filter;
         }
-        filter_str+="("+additional_filter+") &#x2227; ";
+        filter_str+=additional_filter+" &#x2227; ";
 
         document.querySelectorAll(".bibliography > li").forEach((element) => {element.classList.add("mark-unloaded")});
         document.getElementsByClassName(filt_type).forEach((element, index) => {
