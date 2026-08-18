@@ -1,6 +1,3 @@
 [submodule "assets/html/asteroids"]
 	path = assets/html/asteroids
 	url = https://github.com/pranavraj575/asteroids
-[submodule "assets/html/15281"]
-	path = assets/html/15281
-	url = https://github.com/pranavraj575/15281_site
