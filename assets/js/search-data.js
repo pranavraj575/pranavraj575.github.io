@@ -302,6 +302,17 @@ ninja.data = [{
             window.location.href = "/aminals/2025/jinx/";
           
         },
+      },{id: "post-thailand",
+        
+          title: "thailand",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2024/thai/";
+          
+        },
       },{id: "post-ralph",
         
           title: "RALPH!!!",
@@ -337,6 +348,13 @@ list_of_category_lists = [[],
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/dog-egory";
+            },
+          },{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
             },
           },{id: "category-aminals-cat-egory",
             title: 'cat-egory',
