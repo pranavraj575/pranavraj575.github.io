@@ -24,7 +24,6 @@ args = PARSER.parse_args()
 
 
 def recurse_search(path, string, ignore=None):
-
     if ignore is None:
         ignore = []
     if os.path.isdir(path):
