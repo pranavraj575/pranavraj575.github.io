@@ -78,6 +78,7 @@ for repo in data["github_repos"]:
             languages[lg] -= 0.1
 
     languages = {k: round(v, 1) for k, v in languages.items()}
+    languages = {k: int(v) if int(v) == v else v for k, v in languages.items()}
     languages_html = ""
     keys = sorted(languages.keys(), key=lambda lg: 69 if lg == "Other" else -languages[lg])
     if any(l in keys for l in long_languages):
