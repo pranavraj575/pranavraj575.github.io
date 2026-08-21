@@ -311,7 +311,7 @@ function Aster() {
   aaa.href="/assteroids";
   time=3000+Math.random()*3000;
   aster=Math.floor(Math.random()*5);
-  // chooses uniformly at random between asteroid0.png, asteroid1.png, asteroid2.png,asteroid3.png, asteroid4.png
+  // chooses uniformly at random between asteroid0.png, asteroid1.png, asteroid2.png, asteroid3.png, asteroid4.png
   // also adds asteroid0_dark.png, asteroid1_dark.png, asteroid2_dark.png,asteroid3_dark.png, asteroid4_dark.png
 
   asteroid.style.position="fixed";
@@ -345,6 +345,7 @@ function Aster() {
     time,
   );
   anim.addEventListener('finish', function(){asteroid.remove();})
+  setTimeout(function(){asteroid.remove();}, time*2);
   wdth=69+Math.random()*131
   asteroid_img = document.createElement('img');
   asteroid_img.src="/assets/img/stuff/asteroid"+aster+".png";
