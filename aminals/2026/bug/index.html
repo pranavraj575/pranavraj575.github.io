@@ -16,7 +16,9 @@
   }
   function craig(duration=100){
     if (document.documentElement.getAttribute("goose-setting") == "silly"){
-      document.getElementById("craigory").style.display="inherit";
+      var crg=document.getElementById("craigory");
+      crg.style.display="inherit";
+      crg.style.opacity=1;
       setTimeout(fade_out_craig, duration); 
     }
   }
