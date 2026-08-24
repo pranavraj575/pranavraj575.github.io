@@ -39,26 +39,30 @@
               "name": "Advanced Topics in Machine Learning & Game Theory",
               "url": "https://feifang.info/advanced-topics-in-machine-learning-and-game-theory-spring-2026/",
               "id": "CMU 17-759",
-              "semester": "Spring 2026"
+              "semester": "Spring 2026",
+              "professor": "Fei Fang"
             },
             {
               "name": "Computational Game Solving",
               "url": "https://www.cs.cmu.edu/~sandholm/cs15-888F25/",
               "id": "CMU 15-888",
-              "semester": "Fall 2025"
+              "semester": "Fall 2025",
+              "professor": "Tuomas Sandholm"
             },
             {
               "name": "Advanced Introduction to Machine Learning",
               "url": "https://www.cs.cmu.edu/~nihars/teaching/10715Fa25.html",
               "id": "CMU 10-715",
-              "semester": "Fall 2025"
+              "semester": "Fall 2025",
+              "professor": "Nihar Shah"
             },
             {
               "name": "Intermediate Statistics",
               "url": "https://www.stat.cmu.edu/~larry/=stat705",
               "id": "CMU 36-705",
               "semester": "Fall 2026",
-              "include": true
+              "professor": "Larry Wasserman",
+              "include": false
             }
           ]
         }
@@ -82,49 +86,57 @@
               "name": "AI: Representation & Problem Solving",
               "url": "https://www.cs.cmu.edu/~./15281/",
               "id": "CMU 15-281",
-              "semester": "Spring 2021"
+              "semester": "Spring 2021",
+              "professor": "Pat Virtue"
             },
             {
               "name": "Deep Reinforcement Learning & Control",
               "url": "https://cmudeeprl.github.io/403website_s22/",
               "id": "CMU 10-403",
-              "semester": "Spring 2022"
+              "semester": "Spring 2022",
+              "professor": "Katerina Fragkiadaki"
             },
             {
               "name": "Advanced Deep Learning",
               "url": "https://machinelearningcmu.github.io/S24-10707/",
               "id": "CMU 10-707",
-              "semester": "Spring 2024"
+              "semester": "Spring 2024",
+              "professor": "Ruslan Salakhutdinov"
             },
             {
               "name": "Natural Language Processing",
               "url": "https://www.cs.cmu.edu/~ehn/11-611/",
               "id": "CMU 11-611",
-              "semester": "Fall 2022"
+              "semester": "Fall 2022",
+              "professor": "David Mortensen"
             },
             {
               "name": "Convex Optimization",
               "url": "https://sites.google.com/view/107252024s",
               "id": "CMU 10-725",
-              "semester": "Fall 2022"
+              "semester": "Fall 2022",
+              "professor": "Yuanzhi Li"
             },
             {
               "name": "Art & Machine Learning",
               "url": "https://sites.google.com/view/artml23s/",
               "id": "CMU 10-615",
-              "semester": "Spring 2023"
+              "semester": "Spring 2023",
+              "professor": "Eunsu Kang"
             },
             {
               "name": "Autonomous Agents",
               "url": "https://www.cs.cmu.edu/~15482/",
               "id": "CMU 15-482",
-              "semester": "Fall 2021"
+              "semester": "Fall 2021",
+              "professor": "Reid Simmons & Stephanie Rosenthal"
             },
             {
               "name": "Search Engines",
               "url": "https://boston.lti.cs.cmu.edu/classes/11-642/",
               "id": "CMU 11-642",
-              "semester": "Spring 2024"
+              "semester": "Spring 2024",
+              "professor": "Jamie Callan"
             }
           ]
         },
@@ -135,54 +147,63 @@
               "name": "Algebraic Topology",
               "url": "https://www.math.cmu.edu/~ffrick/syllabus21752.pdf",
               "id": "CMU 21-752",
-              "semester": "Spring 2024"
+              "semester": "Spring 2024",
+              "professor": "Florian Frick"
             },
             {
               "name": "General Topology",
               "url": "https://www.math.cmu.edu/~slepcev/syl_651_16.pdf",
               "id": "CMU 21-651",
-              "semester": "Fall 2022"
+              "semester": "Fall 2022",
+              "professor": "Florian Frick"
             },
             {
               "name": "Dynamics of Polish Groups",
               "url": "https://www.cmu.edu/math/courses/special-topics.html",
               "id": "CMU 21-800",
-              "semester": "Fall 2023"
+              "semester": "Fall 2023",
+              "professor": "Aristotelis Panagiotopoulos"
             },
             {
               "name": "Probabilistic Combinatorics",
               "url": "https://www.math.cmu.edu/~tbohman/21-737/probcomb.html",
               "id": "CMU 21-737",
-              "semester": "Spring 2023"
+              "semester": "Spring 2023",
+              "professor": "Prasad Tetali"
             },
             {
               "name": "Extremal Combinatorics",
               "id": "CMU 21-738",
-              "semester": "Spring 2024"
+              "semester": "Spring 2024",
+              "professor": "Po-Shen Loh"
             },
             {
               "name": "Graph Theory",
               "url": "https://www.math.cmu.edu/~jmackey/math484/syll_484.html",
               "id": "CMU 21-484",
-              "semester": "Spring 2023"
+              "semester": "Spring 2023",
+              "professor": ""
             },
             {
               "name": "Game Theory",
               "id": "CMU 80-705",
-              "semester": "Spring 2023"
+              "semester": "Spring 2023",
+              "professor": "Adam Bjorndahl"
             },
             {
               "name": "Modern Regression",
               "url": "https://www.stat.cmu.edu/~larry/=stat401/",
               "id": "CMU 36-401",
-              "semester": "Spring 2021"
+              "semester": "Spring 2021",
+              "professor": "Larry Wasserman"
             },
             {
               "name": "<b>Real Anal</b>ysis",
               "url": "https://www.math.cmu.edu/~jballew/21355Fall2016.html",
               "id": "CMU 21-355",
               "silly": true,
-              "semester": "Spring 2022"
+              "semester": "Spring 2022",
+              "professor": "Robin Neumayer"
             }
           ]
         },
@@ -194,12 +215,14 @@
               "name": "Quantum Computation",
               "url": "https://www.cs.cmu.edu/~odonnell/quantum18/",
               "id": "CMU 15-459",
-              "semester": "Fall 2022"
+              "semester": "Fall 2022",
+              "professor": "Ryan O'Donnell"
             },
             {
               "name": "Star Wars: The Course Awakens",
               "id": "CMU 98-288",
-              "semester": "Spring 2023"
+              "semester": "Spring 2023",
+              "professor": "Charlotte Murphy"
             }
           ]
         }
