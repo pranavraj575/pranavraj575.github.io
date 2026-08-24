@@ -52,6 +52,13 @@
               "url": "https://www.cs.cmu.edu/~nihars/teaching/10715Fa25.html",
               "id": "CMU 10-715",
               "semester": "Fall 2025"
+            },
+            {
+              "name": "Intermediate Statistics",
+              "url": "https://www.stat.cmu.edu/~larry/=stat705",
+              "id": "CMU 36-705",
+              "semester": "Fall 2026",
+              "include": true
             }
           ]
         }
