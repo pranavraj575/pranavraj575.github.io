@@ -251,6 +251,20 @@
               "semester": "Fall 2023",
               "professor": "James Cummings",
               "include": false
+            },
+            {
+              "name": "Multidimensional Calculus",
+              "id": "CMU 21-268",
+              "semester": "Fall 2021",
+              "professor": "Giovanni Leoni",
+              "include": false
+            },
+            {
+              "name": "Matrices and Linear Transformations",
+              "id": "CMU 21-241",
+              "semester": "Fall 2020",
+              "professor": "David Offner",
+              "include": false
             }
           ]
         },
