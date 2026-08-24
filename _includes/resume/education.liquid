@@ -82,7 +82,7 @@
                             {% assign hover_title = "" %}
                             {% if course.id %}{% assign hover_title = course.id %}{% endif %}
                             {% if course.semester or course.professor %}
-                              {% assign hover_title = hover_title | append: " (" | append: course.semester %}
+                              {% assign hover_title = hover_title | append: " (" %}
                               {% if course.semester %}{% assign hover_title = hover_title | append: course.semester %}{% endif %}
                               {% if course.semester and course.professor %}{% assign hover_title = hover_title | append: ", " %}{% endif %}
                               {% if course.professor %}{% assign hover_title = hover_title | append: course.professor %}{% endif %}
