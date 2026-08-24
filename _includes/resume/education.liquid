@@ -113,7 +113,8 @@
                     {% endif %}
                   </tr>
                   {% for course in topic.courses %}
-                    {% if course.include | default: true, allow_false: true %}
+                    {% assign temp = course.include | default: true, allow_false: true %}
+                    {% if temp %}
                       <tr{% if course.silly %} class="silly-goose"{% endif %}  display-style="table-row">
                         <td></td>
                         {% assign hover_title = "" %}
