@@ -137,6 +137,14 @@
               "id": "CMU 11-642",
               "semester": "Spring 2024",
               "professor": "Jamie Callan"
+            },
+            {
+              "name": "Introduction to Machine Learning ",
+              "url": "https://www.cs.cmu.edu/~10315/",
+              "id": "CMU 10-315",
+              "semester": "Spring 2021",
+              "professor": "Nina Balcan",
+              "include": false
             }
           ]
         },
