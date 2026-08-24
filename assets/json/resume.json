@@ -62,7 +62,7 @@
               "id": "CMU 36-705",
               "semester": "Fall 2026",
               "professor": "Larry Wasserman",
-              "include": false
+              "include": true
             }
           ]
         }
