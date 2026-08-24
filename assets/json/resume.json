@@ -139,7 +139,7 @@
               "professor": "Jamie Callan"
             },
             {
-              "name": "Introduction to Machine Learning ",
+              "name": "Introduction to Machine Learning",
               "url": "https://www.cs.cmu.edu/~10315/",
               "id": "CMU 10-315",
               "semester": "Spring 2021",
@@ -212,6 +212,45 @@
               "silly": true,
               "semester": "Spring 2022",
               "professor": "Robin Neumayer"
+            },
+            {
+              "name": "Mathematical Foundations for Computer Science",
+              "url": "https://www.math.cmu.edu/~jmackey/151_128/welcome.html",
+              "id": "CMU 15-151",
+              "semester": "Fall 2020",
+              "professor": "John Mackey",
+              "include": false
+            },
+            {
+              "name": "Algebraic Structures",
+              "url": "https://www.borisbukh.org/AlgebraicStructures21/",
+              "id": "CMU 21-373",
+              "semester": "Fall 2021",
+              "professor": "Irina Gheorghiciuc",
+              "include": false
+            },
+            {
+              "name": "Linear Algebra",
+              "url": "https://www.math.cmu.edu/users/handron/21_341/text.html",
+              "id": "CMU 21-341",
+              "semester": "Spring 2024",
+              "professor": "James Cummings",
+              "include": false
+            },
+            {
+              "name": "Combinatorics",
+              "url": "https://www.math.cmu.edu/~jmackey/math301/syll.html",
+              "id": "CMU 21-301",
+              "semester": "Spring 2022",
+              "professor": "Irina Gheorghiciuc",
+              "include": false
+            },
+            {
+              "name": "Basic Logic",
+              "id": "CMU 21-300",
+              "semester": "Fall 2023",
+              "professor": "James Cummings",
+              "include": false
             }
           ]
         },
