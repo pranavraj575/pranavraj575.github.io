@@ -32,6 +32,14 @@
                 {% assign date_list = date | split: " - " | join: "_" | append: ";" %}
               {% endif %}
               {% assign date_list = date_list | split: ";" %}
+              {% for tempdate in date_list %}
+              <tr>
+                <td>
+                  {% assign display_date = tempdate | split: "_" | slice: 0,2 | join: " - " %}
+                  <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ display_date }} </span>
+                </td>
+              </tr>
+              {% endfor %}
               <tr>
                 <td>
                   {% if date %}
