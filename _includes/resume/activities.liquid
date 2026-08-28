@@ -10,32 +10,28 @@
               {% if content.dateList %}
                 {% assign date_list = "" %}
                 {% for datelistitem in content.dateList %}
-                  {% include date.liquid startDate=datelistitem range=false writeDay=true %}
-                  {% assign date_list = date_list | append: date | append: ";" %}
+                  {% assign temp_date = "" %}
+                  {% for tttt in datelistitem %}
+                    {% assign temp_date = temp_date | append: tttt | append: "_" %}
+                  {% endfor %}
+                  {% assign temp_date = temp_date | split: "_" %}
+                  {% assign startDate = temp_date[0] %}
+                  {% assign endDate = temp_date[1] %}
+
+                  {% include date.liquid startDate=startDate endDate=endDate range=true %}
+
+                  {% assign temp_date = date | split: " - " | join: "_" %}
+                  {% assign date_list = date_list | append: temp_date | append: ";" %}
                 {% endfor %}
               {% else %}
-                {% if content.date %}
-                  {% include date.liquid startDate=content.date range=false writeDay=true %}
-                  {% assign date_list = date | append: ";" %}
+                {% if content.startDate %}
+                  {% include date.liquid startDate=content.startDate endDate=content.endDate range=true %}
                 {% else %}
                   {% assign date = '' %}
                 {% endif %}
+                {% assign date_list = date | split: " - " | join: "_" | append: ";" %}
               {% endif %}
-              {% if date_list %}
-                <tr>
-                    <td>
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> HERE {{ date_list }} </span>
-                    </td>
-                  </tr>
-                {% assign date_list = date_list | split: ";" %}
-                {% for tempdate in date_list %}
-                  <tr>
-                    <td>
-                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ tempdate }} </span>
-                    </td>
-                  </tr>
-                {% endfor %}
-              {% endif %}
+              {% assign date_list = date_list | split: ";" %}
               <tr>
                 <td>
                   {% if date %}
