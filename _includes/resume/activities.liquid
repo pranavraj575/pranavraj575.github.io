@@ -7,6 +7,35 @@
           {% include date.liquid startDate=content.startDate endDate=content.endDate range=true %}
           <table class="table-cv" style="display:inline-block">
             <tbody>
+              {% if content.dateList %}
+                {% assign date_list = "" %}
+                {% for datelistitem in content.dateList %}
+                  {% include date.liquid startDate=datelistitem range=false writeDay=true %}
+                  {% assign date_list = date_list | append: date | append: ";" %}
+                {% endfor %}
+              {% else %}
+                {% if content.date %}
+                  {% include date.liquid startDate=content.date range=false writeDay=true %}
+                  {% assign date_list = date | append: ";" %}
+                {% else %}
+                  {% assign date = '' %}
+                {% endif %}
+              {% endif %}
+              {% if date_list %}
+                <tr>
+                    <td>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> HERE {{ date_list }} </span>
+                    </td>
+                  </tr>
+                {% assign date_list = date_list | split: ";" %}
+                {% for tempdate in date_list %}
+                  <tr>
+                    <td>
+                      <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ tempdate }} </span>
+                    </td>
+                  </tr>
+                {% endfor %}
+              {% endif %}
               <tr>
                 <td>
                   {% if date %}

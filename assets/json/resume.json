@@ -748,7 +748,11 @@
       "location": "Pittsburgh, USA",
       "startDate": "2023-08-01",
       "endDate": "2024-05-12",
-      "summary": "Presenter, Member"
+      "summary": "Presenter, Member",
+      "dateList": [
+        ["2023-01-17", "2024-05-12"],
+        ["2021-02-15", "2022-05-12"]
+      ]
     },
     {
       "name": "CMU Track & Field",
