@@ -31,9 +31,9 @@ remove_dead_pixel: false
 I am a PhD student at CMU's Machine Learning Department, advised by <a href="https://www.cs.cmu.edu/~sandholm/">Prof. Tuomas Sandholm</a>.
 My current research is focused on developing algorithms to solve large-scale imperfect information games.
 
-<p class="silly-goose">My general interests are AI/ML, Topology, and long walks on the beach.</p>
+<p class="silly-goose">I am interested in AI/ML, Topology, and long walks on the beach.</p>
 
-<p class="serious-goose">My general interests lie in the disjoint union of developing Machine Learning algorithms for strategic scenarios, and Topology/discrete mathematics.</p>
+<p class="serious-goose">My general interests lie in the disjoint union of Machine Learning algorithms for strategic scenarios, and Topology/discrete mathematics.</p>
 
 [Research statement here](/research-statement).
 
