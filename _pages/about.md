@@ -33,7 +33,7 @@ My current research is focused on developing algorithms to solve large-scale imp
 
 <p class="silly-goose">I am interested in AI/ML, Topology, and long walks on the beach.</p>
 
-<p class="serious-goose">My general interests lie in the disjoint union of Machine Learning algorithms for strategic scenarios, and Topology/discrete mathematics.</p>
+<p class="serious-goose">My interests are in the disjoint union of Machine Learning algorithms for strategic scenarios, and Topology/discrete mathematics.</p>
 
 [Research statement here](/research-statement).
 
