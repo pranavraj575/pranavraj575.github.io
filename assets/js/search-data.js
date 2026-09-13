@@ -214,6 +214,17 @@ ninja.data = [{
             window.location.href = "/aminals/2026/baby_dragon/";
           
         },
+      },{id: "post-sssnake",
+        
+          title: "sssnake",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2026/snake/";
+          
+        },
       },{id: "post-molly",
         
           title: "molly",
