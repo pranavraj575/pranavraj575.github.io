@@ -89,6 +89,7 @@ blog_name: bloghaj # blog_name will be displayed in your blog page
 blog_description: desc in config
 permalink: /aminals/:year/:title/
 lsi: false # produce an index for related posts
+future: true # does this allow publishing future posts?
 
 # Pagination
 pagination:
