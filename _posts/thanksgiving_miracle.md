@@ -1,7 +1,7 @@
 ---
 layout: post
 title: thanksgiving miracle
-date: 2025-10-15 04:20:00
+date: 2025-11-27 04:20:00
 categories: birb
 thumbnail: assets/img/aminals/thanksgiving_miracle/jurassic.jpg
 featured: false
