@@ -181,7 +181,18 @@ ninja.data = [{
         //FOUND SECRET
         increaseStepsTo(2);
       },
-    },{id: "post-cat",
+    },{id: "post-sssnake",
+        
+          title: "sssnake",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2026/snake/";
+          
+        },
+      },{id: "post-cat",
         
           title: "cat",
         
