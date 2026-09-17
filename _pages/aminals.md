@@ -124,7 +124,7 @@ remove_dead_pixel: false
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
 
-    <li style="padding-bottom: 1rem;">
+    <li style="padding-bottom: 1rem;padding-top: 1.5rem;">
 
 {% if post.thumbnail %}
 
