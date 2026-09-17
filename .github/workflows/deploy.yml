@@ -96,6 +96,7 @@ jobs:
           value: ${{ github.repository }}
       - name: deleting system32 🍆
         run: |
+          pip3 install --upgrade pyyaml
           python3 _python_scripts/use_check.py \
             --folder .github _bibliography _data _includes _layouts _news \
                 _pages _plugins _posts _sass _scripts assets bin _python_scripts _config.yml README.md \
