@@ -181,7 +181,117 @@ ninja.data = [{
         //FOUND SECRET
         increaseStepsTo(2);
       },
-    },{id: "post-meevis",
+    },{id: "post-sssnake",
+        
+          title: "sssnake",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2026/snake/";
+          
+        },
+      },{id: "post-cat",
+        
+          title: "cat",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2026/kitty_cat/";
+          
+        },
+      },{id: "post-is-this-guy-bugging-you",
+        
+          title: "is this guy bugging you",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2026/bug/";
+          
+        },
+      },{id: "post-baby-dragon",
+        
+          title: "baby dragon",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2026/baby_dragon/";
+          
+        },
+      },{id: "post-thanksgiving-miracle",
+        
+          title: "thanksgiving miracle",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/thanksgiving_miracle/";
+          
+        },
+      },{id: "post-molly",
+        
+          title: "molly",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/molly/";
+          
+        },
+      },{id: "post-oh-deer",
+        
+          title: "oh deer",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/oh_deer/";
+          
+        },
+      },{id: "post-high-quality-wildlife-photography",
+        
+          title: "high-quality wildlife photography",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/cat/";
+          
+        },
+      },{id: "post-bird",
+        
+          title: "bird",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/birb/";
+          
+        },
+      },{id: "post-roos",
+        
+          title: "roos",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/roo/";
+          
+        },
+      },{id: "post-meevis",
         
           title: "meevis",
         
@@ -192,6 +302,50 @@ ninja.data = [{
             window.location.href = "/aminals/2025/meebis/";
           
         },
+      },{id: "post-jinx",
+        
+          title: "jinx",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/jinx/";
+          
+        },
+      },{id: "post-thailand",
+        
+          title: "thailand",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2024/thai/";
+          
+        },
+      },{id: "post-ralph",
+        
+          title: "RALPH!!!",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2024/ralph/";
+          
+        },
+      },{id: "post-its-peak",
+        
+          title: "its peak",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2019/everest/";
+          
+        },
       },{id: "news-making-a-website",
           title: 'Making a website',
           description: "",
@@ -199,7 +353,91 @@ ninja.data = [{
 
 list_of_category_lists = [[],
     [],[],
-    [],[{id: "category-aminals-cat-egory",
+    [],[{id: "category-aminals-dog-egory",
+            title: 'dog-egory',
+            description: "dog-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/dog-egory";
+            },
+          },{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
+            },
+          },{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
+            },
+          },{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
+            },
+          },{id: "category-aminals-dog-egory",
+            title: 'dog-egory',
+            description: "dog-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/dog-egory";
+            },
+          },{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
+            },
+          },{id: "category-aminals-dog-egory",
+            title: 'dog-egory',
+            description: "dog-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/dog-egory";
+            },
+          },{id: "category-aminals-birb",
+            title: 'birb',
+            description: "birb",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/birb";
+            },
+          },{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
+            },
+          },{id: "category-aminals-dog-egory",
+            title: 'dog-egory',
+            description: "dog-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/dog-egory";
+            },
+          },{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
+            },
+          },{id: "category-aminals-birb",
+            title: 'birb',
+            description: "birb",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/birb";
+            },
+          },{id: "category-aminals-cat-egory",
             title: 'cat-egory',
             description: "cat-egory",
             section: "aminals categories",
