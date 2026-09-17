@@ -102,6 +102,7 @@ jobs:
             --file assets/img assets/audio assets/json \
                 assets/html/asteroids/img assets/html/asteroids/audio assets/video assets/pdf \
             --remove
+          python3 _python_scripts/post_names.py --files _posts/*.md --rename
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
