@@ -181,14 +181,32 @@ ninja.data = [{
         //FOUND SECRET
         increaseStepsTo(2);
       },
-    },{id: "news-making-a-website",
+    },{id: "post-meevis",
+        
+          title: "meevis",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2025/meebis/";
+          
+        },
+      },{id: "news-making-a-website",
           title: 'Making a website',
           description: "",
           section: "News",},];
 
 list_of_category_lists = [[],
     [],[],
-    [],[],
+    [],[{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
+            },
+          },],
     [],[],
     [],];
 
