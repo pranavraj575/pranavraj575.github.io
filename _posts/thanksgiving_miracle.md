@@ -14,8 +14,13 @@ images:
 <div class="spotlight-group">
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/jurassic.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="jurassic park" %}
+  <div class="col mt-0" style="padding-left: 0px;padding-right: 0px;">
+    {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/river.jpg"      class="col img-spacing mt-0" imgclass="spotlight" imgstyle="margin-top:0px !important" title="marinating" %}
+    {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/mmm_dinner.jpg" class="col img-spacing mt-0" imgclass="spotlight" imgstyle="margin-top:-1rem" %}
+  </div>
   {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/rock_concert.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="rock concert" %}
-  {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/river.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="marinating" %}
+</div>
+<div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/thanksgiving_miracle/goose.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="weird breed of turkey" %}
 </div>
 </div>
