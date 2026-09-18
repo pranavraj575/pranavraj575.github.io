@@ -44,9 +44,9 @@ for img_file in img_files:
     new_metadata = img.getexif()
     if args.force_replace or og_metadata != new_metadata:
         if og_metadata != new_metadata:
-            print(f"removed {og_metadata} => {new_metadata}")
+            print(f'cleaned "{img_file}": {og_metadata} => {new_metadata}')
         else:
-            print(f"replacing img even though no detected change in metadata: {new_metadata}")
+            print(f'replacing "{img_file}" even though no detected change in metadata: {new_metadata}')
         img.save(img_file)
     else:
-        print(f"skipping since no removable metadata detected: {new_metadata}")
+        print(f'skipping "{img_file}" since no removable metadata detected: {new_metadata}')
