@@ -11,6 +11,9 @@ PARSER.add_argument(
     required=True,
     help="image to remove metadata of or dirs to search for all images",
 )
+PARSER.add_argument(
+    "--force-replace", action="store_true", help="always replace image, regardless of if we detect removed metadata"
+)
 args = PARSER.parse_args()
 
 valid_ends = [
@@ -33,7 +36,18 @@ while i < len(img_files_or_dirs):
     i += 1
 
 for img_file in img_files:
-    print(img_file)
-    img_arr = np.asarray(Image.open(img_file))
+    print(f'checking "{img_file}"')
+    og_image = Image.open(img_file)
+    img_arr = np.asarray(og_image)
     img = Image.fromarray(img_arr)
-    img.save(img_file)
+
+    og_metadata = og_image.getexif()
+    new_metadata = img.getexif()
+    if args.force_replace or og_metadata != new_metadata:
+        if og_metadata != new_metadata:
+            print(f"removed {og_metadata} => {new_metadata}")
+        else:
+            print(f"replacing img even though no detected change in metadata: {new_metadata}")
+        img.save(img_file)
+    else:
+        print(f"skipping since no removable metadata detected: {new_metadata}")
