@@ -11,19 +11,19 @@ images:
 
 <div class="spotlight-group">
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/molly/goofy_lookin.jpg" title="confused" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/deep_sea_creature.jpg" title="deep sea creature" class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/goofy_lookin.jpg"      class="col img-spacing mt-0" imgclass="spotlight" title="confused" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/deep_sea_creature.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="deep sea creature" %}
   {% include img_light.liquid path="assets/img/aminals/molly/purr.jpg" title="purr" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/cadvent_catlendar.jpg" title="catvent calendar" class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/cadvent_catlendar.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="catvent calendar" %}
 </div>
 
 <div class="row mt-2">
   <div class="col img-spacing mt-0">
-    {% include img_light.liquid path="assets/img/aminals/molly/vogue0.jpg" title="vogue" class="col img-spacing mt-0" imgclass="spotlight" %}
-    {% include img_light.liquid path="assets/img/aminals/molly/vogue1.jpg" title="vogue" class="col img-spacing mt-0" imgstyle="margin-top:-1rem" imgclass="spotlight" %}
+    {% include img_light.liquid path="assets/img/aminals/molly/vogue0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="vogue" %}
+    {% include img_light.liquid path="assets/img/aminals/molly/vogue1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="vogue" imgstyle="margin-top:-1rem" %}
   </div>
-  {% include img_light.liquid path="assets/img/aminals/molly/cat_walk.png" title="cat walk" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/biig_stretch.jpg" title="big stretch" class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/cat_walk.png"      class="col img-spacing mt-0" imgclass="spotlight" title="cat walk" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/biig_stretch.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="big stretch" %}
   <div class="col mt-0" style="padding-left: 0px;padding-right: 0px;">
     {% include img_light.liquid path="assets/img/aminals/molly/sphinx.jpg" title="sphinx" class="col img-spacing mt-0" style="margin-top:0px !important" imgclass="spotlight" %}
     {% include img_light.liquid path="assets/img/aminals/molly/doing_work.jpg" title="doing work" class="col img-spacing mt-0" imgstyle="margin-top:-1rem" imgclass="spotlight" %}

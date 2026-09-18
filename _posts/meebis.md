@@ -13,31 +13,31 @@ images:
 
 <div class="spotlight-group">
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/meebis/cool_meebis.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="cool" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/unfocussed.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="very polite" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/colonP.jpg" class="col img-spacing mt-0" imgclass="spotlight" title=":P" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/fnaf.jpg" class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" style="-ms-flex:0 0 40%;flex:0 0 40%; max-width:40%;display:block;" attributes='display-style="block"' %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/fnaf.jpg" class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="FNAF gameplay" caption="FNAF gameplay" style="-ms-flex:0 0 40%;flex:0 0 40%; max-width:40%;display:block;" attributes='display-style="block"' %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/cool_meebis.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="cool" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/unfocussed.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="very polite" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/colonP.jpg"       class="col img-spacing mt-0" imgclass="spotlight" title=":P" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/fnaf.jpg"         class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" style="-ms-flex:0 0 40%;flex:0 0 40%; max-width:40%;display:block;" attributes='display-style="block"' %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/fnaf.jpg"         class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="FNAF gameplay" caption="FNAF gameplay" style="-ms-flex:0 0 40%;flex:0 0 40%; max-width:40%;display:block;" attributes='display-style="block"' %}
 </div>
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/meebis/angry_neighbor.jpg" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/wink.gif" class="col img-spacing mt-0" imgclass="spotlight" title=";)" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/awoken_from_slumber.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="awoken from slumber" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/sleepy_neighbor.jpg" class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/angry_neighbor.jpg"       class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/wink.gif"                 class="col img-spacing mt-0" imgclass="spotlight" title=";)" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/awoken_from_slumber.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="awoken from slumber" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/sleepy_neighbor.jpg"      class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
 
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/meebis/vogue.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="angry" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/hungry.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="hungry" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/eepy.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="eepy" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/vogue.jpg"    class="col img-spacing mt-0" imgclass="spotlight" title="angry" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/hungry.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="hungry" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/eepy.jpg"     class="col img-spacing mt-0" imgclass="spotlight" title="eepy" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/gruntled.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="gruntled" %}
 </div>
 
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/disassembled.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="disassembled" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/dismantle.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="dismantled" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/scoliosis.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="scoliosis?" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/terminal.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="i'm afraid it's terminal?" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/dismantle.jpg"    class="col img-spacing mt-0" imgclass="spotlight" title="dismantled" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/scoliosis.jpg"    class="col img-spacing mt-0" imgclass="spotlight" title="scoliosis?" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/terminal.jpg"     class="col img-spacing mt-0" imgclass="spotlight" title="i'm afraid it's terminal?" %}
 </div>
 
 <div class="row mt-3">
@@ -80,12 +80,12 @@ images:
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/well_protected.jpg" class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/well_protected.jpg" class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="well protected" caption="well protected" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/yippee.jpg" class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/yippee.jpg" class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="RELEASE ME" caption="RELEASE ME" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/ball.jpg" class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/ball.jpg" class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="ball 1" caption="ball 1" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/void.jpg" class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/void.jpg" class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="ball 2" caption="ball 2" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/yippee.jpg"         class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/yippee.jpg"         class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="RELEASE ME" caption="RELEASE ME" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/ball.jpg"           class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/ball.jpg"           class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="ball 1" caption="ball 1" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/void.jpg"           class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/void.jpg"           class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="ball 2" caption="ball 2" %}
 </div>
 
 <div class="row mt-3">
@@ -111,12 +111,12 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/scheming.jpg" class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" style="display:block;" attributes='display-style="block"' %}
   {% include img_light.liquid path="assets/img/aminals/meebis/scheming.jpg" class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="scheming" style="display:block;" attributes='display-style="block"' %}
   <div class="col img-spacing mt-0">
-    {% include img_light.liquid path="assets/img/aminals/meebis/rotisserie.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="rotisserie" %}
-    {% include img_light.liquid path="assets/img/aminals/meebis/rotisserie2.jpg" class="col img-spacing mt-0" imgstyle="margin-top:-1rem" imgclass="spotlight" title="rotisserie" %}
+    {% include img_light.liquid path="assets/img/aminals/meebis/rotisserie.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="rotisserie" %}
+    {% include img_light.liquid path="assets/img/aminals/meebis/rotisserie2.jpg"  class="col img-spacing mt-0" imgstyle="margin-top:-1rem" imgclass="spotlight" title="rotisserie" %}
   </div>
   <div class="col img-spacing mt-0">
-    {% include img_light.liquid path="assets/img/aminals/meebis/vamp.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="vampire" %}
-    {% include img_light.liquid path="assets/img/aminals/meebis/suspicious_hovercraft.jpg" class="col img-spacing mt-0" imgstyle="margin-top:-1rem" imgclass="spotlight" title="suspicious" %}
+    {% include img_light.liquid path="assets/img/aminals/meebis/vamp.jpg"                   class="col img-spacing mt-0" imgclass="spotlight" title="vampire" %}
+    {% include img_light.liquid path="assets/img/aminals/meebis/suspicious_hovercraft.jpg"  class="col img-spacing mt-0" imgstyle="margin-top:-1rem" imgclass="spotlight" title="suspicious" %}
   </div>
   {% include img_light.liquid path="assets/img/aminals/meebis/shrimple_as_that.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="shrimple as that" %}
 </div>
@@ -139,9 +139,9 @@ images:
 
 
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/meebis/boing.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="boing" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/boingg.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="boingg" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/boinggg.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="boinggg" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/boing.jpg"    class="col img-spacing mt-0" imgclass="spotlight" title="boing" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/boingg.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="boingg" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/boinggg.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="boinggg" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/boingggg.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="boingggg" %}
 </div>
 <div class="caption silly-goose">
@@ -151,19 +151,19 @@ images:
 
 
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/meebis/rock_face.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="🤨" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/sniff.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sniff" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/rock_face.jpg"        class="col img-spacing mt-0" imgclass="spotlight" title="🤨" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/sniff.jpg"            class="col img-spacing mt-0" imgclass="spotlight" title="sniff" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/VAMPIRE_no_fangs.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="VAMPIRE" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/VAMPIRE.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="VAMPIRE" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/VAMPIRE.jpg"          class="col img-spacing mt-0" imgclass="spotlight" title="VAMPIRE" %}
 </div>
 
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/tongue.jpg" class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/tongue.jpg" class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="😛" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/BP.jpg" class="col img-spacing mt-0" imgclass="spotlight" title=":P" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/yawwn.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sleepy" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/tree.jpg" class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/tree.jpg" class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="laws enforced by sniper" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/BP.jpg"     class="col img-spacing mt-0" imgclass="spotlight" title=":P" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/yawwn.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="sleepy" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/tree.jpg"   class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/tree.jpg"   class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="laws enforced by sniper" %}
 </div>
 </div>
 

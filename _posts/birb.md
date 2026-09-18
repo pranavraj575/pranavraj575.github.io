@@ -19,18 +19,16 @@ images:
   {% include img_light.liquid path="assets/img/aminals/birb_vogue/slay3.jpg" title="slay" class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/birb_vogue/head_tilt.jpg" title="shaft studio" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/birb_vogue/yak0.jpg" title="yak" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/birb_vogue/yak1.jpg" title="yak" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/birb_vogue/yak2.jpg" title="yak" class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/birb_vogue/head_tilt.jpg"  title="shaft studio"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/birb_vogue/yak0.jpg"       title="yak"           class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/birb_vogue/yak1.jpg"       title="yak"           class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/birb_vogue/yak2.jpg"       title="yak"           class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
 <div class="caption silly-goose">
   bird vogue
 </div>
 
 <div class="row mt-3">
-    <div class="col img-spacing mt-0">
-        {% include img_light.liquid path="assets/img/aminals/birb_vogue/extended_family.jpg" title="extended family" caption="extended family" class="col img-spacing mt-0" imgclass="spotlight" %}
-    </div>
+  {% include img_light.liquid path="assets/img/aminals/birb_vogue/extended_family.jpg" title="extended family" caption="extended family" class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
 </div>
