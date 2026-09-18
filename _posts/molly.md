@@ -25,32 +25,32 @@ images:
   {% include img_light.liquid path="assets/img/aminals/molly/cat_walk.png"      class="col img-spacing mt-0" imgclass="spotlight" title="cat walk" %}
   {% include img_light.liquid path="assets/img/aminals/molly/biig_stretch.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="big stretch" %}
   <div class="col mt-0" style="padding-left: 0px;padding-right: 0px;">
-    {% include img_light.liquid path="assets/img/aminals/molly/sphinx.jpg" title="sphinx" class="col img-spacing mt-0" style="margin-top:0px !important" imgclass="spotlight" %}
-    {% include img_light.liquid path="assets/img/aminals/molly/doing_work.jpg" title="doing work" class="col img-spacing mt-0" imgstyle="margin-top:-1rem" imgclass="spotlight" %}
-    {% include img_light.liquid path="assets/img/aminals/molly/eating_soup.jpg" title="eating soup" class="col img-spacing mt-0" imgstyle="margin-top:-1rem" imgclass="spotlight" %}
+    {% include img_light.liquid path="assets/img/aminals/molly/sphinx.jpg"      class="col img-spacing mt-0" imgclass="spotlight" title="sphinx"      style="margin-top:0px !important"%}
+    {% include img_light.liquid path="assets/img/aminals/molly/doing_work.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="doing work"  imgstyle="margin-top:-1rem" %}
+    {% include img_light.liquid path="assets/img/aminals/molly/eating_soup.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="eating soup" imgstyle="margin-top:-1rem" %}
   </div>
 </div>
 
 <div class="row mt-0">
-  {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car0.jpg" title="how did she get up there" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car1.jpg" title="how did she get up there" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car2.jpg" title="how did she get up there" class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="how did she get up there" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="how did she get up there" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="how did she get up there" %}
 </div>
 <div class="caption silly-goose">
     cieling car
 </div>
 
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/molly/cryptid.jpg" title="cryptid" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/hungry.jpg" title="hungry" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/chair_loaf.jpg" title="chair loave" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/totem.jpg" title="totem" class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/totem.jpg" title="totem of undying" class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/cryptid.jpg"     class="col img-spacing mt-0"                imgclass="spotlight"                title="cryptid" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/hungry.jpg"      class="col img-spacing mt-0"                imgclass="spotlight"                title="hungry" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/chair_loaf.jpg"  class="col img-spacing mt-0"                imgclass="spotlight"                title="chair loave" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/totem.jpg"       class="col img-spacing mt-0 serious-goose"  imgclass="spotlight serious-goose"  title="totem" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/totem.jpg"       class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose"    title="totem of undying" %}
 </div>
 
 <div class="row mt-2">
-  {% include img_light.liquid path="assets/img/aminals/molly/freshening_up.jpg" title="freshening up" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/let_that_sink_in.jpg" title="let that sink in" class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/freshening_up.jpg"     class="col img-spacing mt-0" imgclass="spotlight" title="freshening up" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/let_that_sink_in.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="let that sink in"%}
 </div>
 <div class="caption">
     let that sink in

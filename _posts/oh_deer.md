@@ -13,15 +13,15 @@ images:
 
 <div class="spotlight-group">
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/oh_deer/fam.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="my deer family" %}
-  {% include img_light.liquid path="assets/img/aminals/oh_deer/mmm_branch.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="theres a branch right deer" %}
-  {% include img_light.liquid path="assets/img/aminals/oh_deer/sniff.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="what is up deer" %}
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/fam.jpg"         class="col img-spacing mt-0" imgclass="spotlight" title="my deer family" %}
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/mmm_branch.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="theres a branch right deer" %}
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/sniff.jpg"       class="col img-spacing mt-0" imgclass="spotlight" title="what is up deer" %}
 </div>
 
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/oh_deer/deerly_departed.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="the deerly departed" %}
-  {% include img_light.liquid path="assets/img/aminals/oh_deer/mr_staff.jpg" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/oh_deer/well_lit.jpg" class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/mr_staff.jpg"        class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/well_lit.jpg"        class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
 
 <div class="row mt-3">
@@ -35,11 +35,11 @@ images:
 </div>
 
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/oh_deer/pointer_dawg.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="taking a closer look" %}
-  {% include img_light.liquid path="assets/img/aminals/oh_deer/mr_sniff.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="taking a closer look" %}
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/pointer_dawg.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="taking a closer look" %}
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/mr_sniff.jpg"      class="col img-spacing mt-0" imgclass="spotlight" title="taking a closer look" %}
   <div class="col img-spacing mt-0">
-    {% include img_light.liquid path="assets/img/aminals/oh_deer/tiptoe.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sneaking away" %}
-    {% include img_light.liquid path="assets/img/aminals/oh_deer/odd_pose.jpg" class="col img-spacing mt-0" imgclass="spotlight" imgstyle="margin-top:-1rem;"%}
+    {% include img_light.liquid path="assets/img/aminals/oh_deer/tiptoe.jpg"    class="col img-spacing mt-0" imgclass="spotlight" title="sneaking away" %}
+    {% include img_light.liquid path="assets/img/aminals/oh_deer/odd_pose.jpg"  class="col img-spacing mt-0" imgclass="spotlight" imgstyle="margin-top:-1rem;"%}
   </div>
 </div>
 <div class="caption silly-goose">
