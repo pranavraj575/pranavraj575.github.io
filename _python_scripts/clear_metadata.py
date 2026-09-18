@@ -40,7 +40,6 @@ for img_file in img_files:
     og_image = Image.open(img_file)
     img_arr = np.asarray(og_image)
     img = Image.fromarray(img_arr)
-
     og_metadata = og_image.getexif()
     new_metadata = img.getexif()
     if args.force_replace or og_metadata != new_metadata:
