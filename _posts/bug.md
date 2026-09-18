@@ -15,7 +15,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bug/bug_in_code1.jpg"  class="col img-spacing mt-3 mt-md-0"  attributes='display-style="inline-block"' imgclass="spotlight" title="bug in my code" %}
   {% include img_light.liquid path="assets/img/aminals/bug/puter_bug.jpg"     class="col img-spacing mt-3 mt-md-0"  attributes='display-style="inline-block"' imgclass="spotlight" title="hes on the web" %}
 </div>
-<div class="caption">
+<div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
   found a bug in my code
 </div>
 

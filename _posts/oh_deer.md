@@ -30,7 +30,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/oh_deer/trying_to_pet2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="doesnt like pets deer" %}
   {% include img_light.liquid path="assets/img/aminals/oh_deer/trying_to_pet3.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="doesnt like pets deer" %}
 </div>
-<div class="caption silly-goose">
+<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
   tried to pet her
 </div>
 
@@ -42,7 +42,7 @@ images:
     {% include img_light.liquid path="assets/img/aminals/oh_deer/odd_pose.jpg"  class="col img-spacing mt-0" imgclass="spotlight" imgstyle="margin-top:-1rem;"%}
   </div>
 </div>
-<div class="caption silly-goose">
+<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
   tried to pet her (slightly more successful)
 </div>
 

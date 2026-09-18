@@ -24,7 +24,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/birb_vogue/yak1.jpg"       title="yak"           class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/birb_vogue/yak2.jpg"       title="yak"           class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
-<div class="caption silly-goose">
+<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
   bird vogue
 </div>
 
