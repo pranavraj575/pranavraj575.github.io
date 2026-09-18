@@ -36,7 +36,6 @@ while i < len(img_files_or_dirs):
     i += 1
 
 for img_file in img_files:
-    print(f'checking "{img_file}"')
     og_image = Image.open(img_file)
     img_arr = np.asarray(og_image)
     img = Image.fromarray(img_arr)
