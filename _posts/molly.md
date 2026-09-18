@@ -36,7 +36,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="how did she get up there" %}
   {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="how did she get up there" %}
 </div>
-<div class="caption silly-goose">
+<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     cieling car
 </div>
 
@@ -52,7 +52,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/molly/freshening_up.jpg"     class="col img-spacing mt-0" imgclass="spotlight" title="freshening up" %}
   {% include img_light.liquid path="assets/img/aminals/molly/let_that_sink_in.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="let that sink in"%}
 </div>
-<div class="caption">
+<div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     let that sink in
 </div>
 <div class="row mt-2">

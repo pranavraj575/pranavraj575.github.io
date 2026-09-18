@@ -24,7 +24,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/roos/boing_boing_boing1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="where are his arms?" %}
   {% include img_light.liquid path="assets/img/aminals/roos/boing_boing_boing2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="hovercraft" %}
 </div>
-<div class="caption silly-goose">
+<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     boing boing boing
 </div>
 

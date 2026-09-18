@@ -17,7 +17,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/unfocussed.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="very polite" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/colonP.jpg"       class="col img-spacing mt-0" imgclass="spotlight" title=":P" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/fnaf.jpg"         class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" style="-ms-flex:0 0 40%;flex:0 0 40%; max-width:40%;display:block;" attributes='display-style="block"' %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/fnaf.jpg"         class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="FNAF gameplay" caption="FNAF gameplay" style="-ms-flex:0 0 40%;flex:0 0 40%; max-width:40%;display:block;" attributes='display-style="block"' %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/fnaf.jpg"         class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="FNAF gameplay" style="-ms-flex:0 0 40%;flex:0 0 40%; max-width:40%;display:block;" attributes='display-style="block"' %}
 </div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/angry_neighbor.jpg"       class="col img-spacing mt-0" imgclass="spotlight" %}
@@ -58,10 +58,10 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/drinking.jpg" class="col img-spacing mt-3 silly-goose" imgclass="spotlight silly-goose" title="drinking" style="-ms-flex:0 0 30%;flex:0 0 30%; max-width:30%;display:block;" attributes='display-style="block"' %}
   {% include img_light.liquid path="assets/img/aminals/meebis/drinking.jpg" class="col img-spacing mt-3 serious-goose" imgclass="spotlight serious-goose" style="-ms-flex:0 0 30%;flex:0 0 30%; max-width:30%;display:block;" attributes='display-style="block"' %}
 </div>
-<div class="caption serious-goose">
+<div class="caption serious-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     sitting
 </div>
-<div class="caption silly-goose">
+<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     sitting weird
 </div>
 
@@ -73,19 +73,19 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard4.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard5.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" %}
 </div>
-<div class="caption">
+<div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     so i've heard
 </div>
 
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/meebis/well_protected.jpg" class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/well_protected.jpg" class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="well protected" caption="well protected" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/yippee.jpg"         class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/yippee.jpg"         class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="RELEASE ME" caption="RELEASE ME" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/ball.jpg"           class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/ball.jpg"           class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="ball 1" caption="ball 1" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/void.jpg"           class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/void.jpg"           class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="ball 2" caption="ball 2" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/well_protected.jpg" class="col img-spacing mt-0 serious-goose"  imgclass="spotlight serious-goose" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/well_protected.jpg" class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose" title="well protected" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/yippee.jpg"         class="col img-spacing mt-0 serious-goose"  imgclass="spotlight serious-goose" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/yippee.jpg"         class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose" title="RELEASE ME" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/ball.jpg"           class="col img-spacing mt-0 serious-goose"  imgclass="spotlight serious-goose" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/ball.jpg"           class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose" title="ball 1" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/void.jpg"           class="col img-spacing mt-0 serious-goose"  imgclass="spotlight serious-goose" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/void.jpg"           class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose" title="ball 2" %}
 </div>
 
 <div class="row mt-3">
@@ -103,7 +103,7 @@ images:
     {% include img_light.liquid element="div" path="assets/img/aminals/meebis/snail4.jpg" class="col img-spacing mt-0 spinny" imgclass="spotlight" title="snail" attributes='spinny-scale="0.7071067811865476";;spinny-speed-boost="-1"' %}
   </div>
 </div>
-<div class="caption">
+<div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     snail
 </div>
 
@@ -133,7 +133,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/ATTACK1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="ATTACK" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/ATTACK2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="ATTACK" %}
 </div>
-<div class="caption silly-goose">
+<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     ruthless attack
 </div>
 
@@ -144,7 +144,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/boinggg.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="boinggg" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/boingggg.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="boingggg" %}
 </div>
-<div class="caption silly-goose">
+<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     boinggg (meevis in the spring)
 </div>
 
