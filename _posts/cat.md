@@ -9,7 +9,7 @@ images:
   spotlight: true
 ---
 
-<h3 id="cat" align="center">cat</h3>
+<h3 align="center">cat</h3>
 
 <div class="spotlight-group">
 <div class="row mt-3">

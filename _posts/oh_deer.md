@@ -9,7 +9,7 @@ images:
   spotlight: true
 ---
 
-<h2 id="cat" align="center" class="silly-goose">weird dog</h2>
+<h2 align="center" class="silly-goose">weird dog</h2>
 
 <div class="spotlight-group">
 <div class="row mt-3">
@@ -51,6 +51,11 @@ images:
   {% include img_light.liquid path="assets/img/aminals/oh_deer/catch_up0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="wait for me!" %}
   {% include img_light.liquid path="assets/img/aminals/oh_deer/catch_up1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="wait for me!" %}
   {% include img_light.liquid path="assets/img/aminals/oh_deer/catch_up2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="wait for me!" %}
-  {% include img_light.liquid path="assets/img/aminals/oh_deer/to_car0.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="driving home" %}
 </div>
+
+<div class="row mt-3">
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/to_car0.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="driving home" %}
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/to_car1.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="driving home" %}
+</div>
+
 </div>

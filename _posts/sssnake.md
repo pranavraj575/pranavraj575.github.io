@@ -14,9 +14,9 @@ images:
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/snake/dc_long.jpg" class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 47%;flex:0 0 47%; max-width:47%;" %}
   <div class="col mt-0" style="padding-left: 0px;padding-right: 0px;">
-    {% include img_light.liquid path="assets/img/aminals/snake/frick0.jpg" class="col img-spacing mt-0" imgclass="spotlight"  imgstyle="margin-top:0px !important" %}
-    {% include img_light.liquid path="assets/img/aminals/snake/frick1.jpg" class="col img-spacing mt-0" imgclass="spotlight"  imgstyle="margin-top:-1rem"%}
-    {% include img_light.liquid path="assets/img/aminals/snake/dc_bb.jpg" class="col img-spacing mt-0" imgclass="spotlight"   imgstyle="margin-top:-1rem"%}
+    {% include img_light.liquid path="assets/img/aminals/snake/frick0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" imgstyle="margin-top:0px !important" %}
+    {% include img_light.liquid path="assets/img/aminals/snake/frick1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" imgstyle="margin-top:-1rem"%}
+    {% include img_light.liquid path="assets/img/aminals/snake/dc_bb.jpg"   class="col img-spacing mt-0" imgclass="spotlight" imgstyle="margin-top:-1rem"%}
   </div>
 </div>
 </div>

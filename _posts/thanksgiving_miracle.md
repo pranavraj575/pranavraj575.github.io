@@ -9,7 +9,7 @@ images:
   spotlight: true
 ---
 
-<h2 id="cat" align="center" class="silly-goose">a mid-run snack</h2>
+<h2 align="center" class="silly-goose">a mid-run snack</h2>
 
 <div class="spotlight-group">
 <div class="row mt-3">
