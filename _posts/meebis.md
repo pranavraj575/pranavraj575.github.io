@@ -169,6 +169,7 @@ images:
 
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/yawn.gif" class="col img-spacing mt-0" imgclass="spotlight" title="sleepy"%}
+  {% include img_light.liquid path="assets/img/aminals/meebis/cannibalism.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="cannibalism"%}
 </div>
 <script>
 var elements = document.getElementsByClassName('spinny');
