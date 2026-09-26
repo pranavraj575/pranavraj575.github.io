@@ -128,7 +128,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/tortured3.jpg" class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
 
-<div class="row mt-0 silly-goose" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
+<div class="row mt-0 silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/ATTACK0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="ATTACK" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/ATTACK1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="ATTACK" %}
