@@ -64,6 +64,6 @@ images:
 </div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/jinx/beach_day.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="beach day" %}
-  {% include img_light.liquid path="assets/img/aminals/jinx/his_house.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="in his house" style="-ms-flex:0 0 30%;flex:0 0 30%; max-width:30%;display:block;" %}
+  {% include img_light.liquid path="assets/img/aminals/jinx/his_house.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="in his house" style="-ms-flex:0 0 35%;flex:0 0 35%; max-width:35%;display:block;" %}
 </div>
 </div>
