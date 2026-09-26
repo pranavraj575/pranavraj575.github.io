@@ -19,7 +19,7 @@ images:
   found a bug in my code
 </div>
 
-<div class="row mt-3">
+<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   {% include img_light.liquid path="assets/img/aminals/bug/CUTE.jpg"            class="col img-spacing mt-3 mt-md-0"  attributes='display-style="inline-block"' imgclass="spotlight" title="&#x205E;3" %}  
   {% include img_light.liquid path="assets/img/aminals/bug/house_centipede.jpg" class="col img-spacing mt-3 mt-md-0"  attributes='display-style="inline-block"' imgclass="spotlight" title="is this guy bugging you" %}
   {% include img_light.liquid path="assets/img/aminals/bug/mountian_spider.jpg" class="col img-spacing mt-3 mt-md-0"  attributes='display-style="inline-block"' imgclass="spotlight" title="is this guy bugging you" %}

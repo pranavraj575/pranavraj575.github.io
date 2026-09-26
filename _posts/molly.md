@@ -31,6 +31,7 @@ images:
   </div>
 </div>
 
+<div class="row mt-0 silly-goose" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
 <div class="row mt-0">
   {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="how did she get up there" %}
   {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="how did she get up there" %}
@@ -48,7 +49,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/molly/totem.jpg"       class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose"    title="totem of undying" %}
 </div>
 
-<div class="row mt-2">
+<div class="row mt-2" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   {% include img_light.liquid path="assets/img/aminals/molly/freshening_up.jpg"     class="col img-spacing mt-0" imgclass="spotlight" title="freshening up" %}
   {% include img_light.liquid path="assets/img/aminals/molly/let_that_sink_in.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="let that sink in"%}
 </div>

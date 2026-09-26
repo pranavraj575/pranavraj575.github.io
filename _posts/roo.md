@@ -19,6 +19,8 @@ images:
   {% include img_light.liquid path="assets/img/aminals/roos/beefy.jpg" class="col img-spacing mt-0 serious-goose" attributes='display-style="inline-block"' imgclass="spotlight serious-goose" %}
   {% include img_light.liquid path="assets/img/aminals/roos/beefy.jpg" class="col img-spacing mt-0 silly-goose"   attributes='display-style="inline-block"' imgclass="spotlight silly-goose"    title="this one went to the gym" %}
 </div>
+
+<div class="row mt-0 silly-goose" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
 <div class="row mt-0">
   {% include img_light.liquid path="assets/img/aminals/roos/boing_boing_boing0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="boing boing boing" %}
   {% include img_light.liquid path="assets/img/aminals/roos/boing_boing_boing1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="where are his arms?" %}

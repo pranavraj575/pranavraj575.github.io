@@ -40,7 +40,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/terminal.jpg"     class="col img-spacing mt-0" imgclass="spotlight" title="i'm afraid it's terminal?" %}
 </div>
 
-<div class="row mt-3">
+<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   <div class="col mt-0">
     <div class="row mt-3">
       {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" %}
@@ -88,7 +88,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/void.jpg"           class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose" title="ball 2" %}
 </div>
 
-<div class="row mt-3">
+<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   <div class="col img-spacing mt-0">
     {% include img_light.liquid element="div" path="assets/img/aminals/meebis/snail0.jpg" class="col img-spacing mt-0 spinny" imgclass="spotlight" title="snail" attributes='spinny-scale="0.7071067811865476";;spinny-speed-boost="1"' %}
   </div>
@@ -128,6 +128,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/tortured3.jpg" class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
 
+<div class="row mt-0 silly-goose" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/ATTACK0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="ATTACK" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/ATTACK1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="ATTACK" %}
@@ -136,7 +137,6 @@ images:
 <div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     ruthless attack
 </div>
-
 
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/boing.jpg"    class="col img-spacing mt-0" imgclass="spotlight" title="boing" %}

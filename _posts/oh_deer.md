@@ -24,6 +24,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/oh_deer/well_lit.jpg"        class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
 
+<div class="row mt-0 silly-goose" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/oh_deer/trying_to_pet0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="doesnt like pets deer" %}
   {% include img_light.liquid path="assets/img/aminals/oh_deer/trying_to_pet1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="doesnt like pets deer" %}
@@ -34,6 +35,7 @@ images:
   tried to pet her
 </div>
 
+<div class="row mt-0 silly-goose" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/oh_deer/pointer_dawg.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="taking a closer look" %}
   {% include img_light.liquid path="assets/img/aminals/oh_deer/mr_sniff.jpg"      class="col img-spacing mt-0" imgclass="spotlight" title="taking a closer look" %}
