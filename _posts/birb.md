@@ -19,7 +19,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/birb_vogue/slay2.jpg" title="slay" class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/birb_vogue/slay3.jpg" title="slay" class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
-<div class="row mt-3">
+<div class="row mt-2">
   {% include img_light.liquid path="assets/img/aminals/birb_vogue/head_tilt.jpg"  title="shaft studio"  class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/birb_vogue/yak0.jpg"       title="yak"           class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/birb_vogue/yak1.jpg"       title="yak"           class="col img-spacing mt-0" imgclass="spotlight" %}
