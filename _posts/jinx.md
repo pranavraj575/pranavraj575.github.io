@@ -54,7 +54,7 @@ images:
     yippeeee
 </div>
 
-<div class="row mt-0 serious-goose" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
+<div class="row mt-0 serious-goose" style="border-bottom:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/jinx/festive0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="festive" %}
   {% include img_light.liquid path="assets/img/aminals/jinx/festive1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="festive" %}
