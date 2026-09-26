@@ -55,8 +55,8 @@ images:
       {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird8.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" %}
     </div>
   </div>
-  {% include img_light.liquid path="assets/img/aminals/meebis/drinking.jpg" class="col img-spacing mt-3 silly-goose" imgclass="spotlight silly-goose" title="drinking" style="-ms-flex:0 0 30%;flex:0 0 30%; max-width:30%;display:block;" attributes='display-style="block"' %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/drinking.jpg" class="col img-spacing mt-3 serious-goose" imgclass="spotlight serious-goose" style="-ms-flex:0 0 30%;flex:0 0 30%; max-width:30%;display:block;" attributes='display-style="block"' %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/drinking.jpg" class="col img-spacing mt-3 silly-goose"    imgclass="spotlight silly-goose" title="drinking" style="-ms-flex:0 0 31%;flex:0 0 31%; max-width:31%;display:block;" attributes='display-style="block"' %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/drinking.jpg" class="col img-spacing mt-3 serious-goose"  imgclass="spotlight serious-goose"                style="-ms-flex:0 0 31%;flex:0 0 31%; max-width:31%;display:block;" attributes='display-style="block"' %}
 </div>
 <div class="caption serious-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     sitting
