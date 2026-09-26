@@ -12,7 +12,7 @@ images:
 <div class="spotlight-group">
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/baby_dragon/bb_dragon_0.jpg" class="col img-spacing mt-3 mt-md-0" attributes='display-style="inline-block"' imgclass="spotlight" title="baby dragon" %}
-  <div class="col img-spacing mt-3 mt-md-0">
+  <div class="col img-spacing mt-3 mt-md-0" style="-ms-flex:0 0 47%;flex:0 0 47%; max-width:47%;">
     {% include img_light.liquid path="assets/img/aminals/baby_dragon/bb_dragon_1.jpg" class="col img-spacing mt-3 mt-md-0" attributes='display-style="inline-block"' imgclass="spotlight" title="baby dragon" %}
     {% include img_light.liquid path="assets/img/aminals/baby_dragon/bb_dragon_2.jpg" class="col img-spacing mt-3 mt-md-0" attributes='display-style="inline-block"' imgclass="spotlight" title="baby dragon" imgstyle="margin-top:-1rem" %}
   </div>
