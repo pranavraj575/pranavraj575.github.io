@@ -16,8 +16,8 @@ images:
     {% include img_light.liquid path="assets/img/aminals/roos/silly_lookin.jpg"     class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose"    title="silly lookin" style="margin-bottom:2%  !important" attributes='display-style="inline-block"' %}
     {% include img_light.liquid path="assets/img/aminals/roos/extended_family.jpg"  class="col img-spacing mt-0"                imgclass="spotlight"                title="extended family" %}
   </div>
-  {% include img_light.liquid path="assets/img/aminals/roos/beefy.jpg" class="col img-spacing mt-0 serious-goose" attributes='display-style="inline-block"' imgclass="spotlight serious-goose" %}
-  {% include img_light.liquid path="assets/img/aminals/roos/beefy.jpg" class="col img-spacing mt-0 silly-goose"   attributes='display-style="inline-block"' imgclass="spotlight silly-goose"    title="this one went to the gym" %}
+  {% include img_light.liquid path="assets/img/aminals/roos/beefy.jpg" class="col img-spacing mt-0 serious-goose" attributes='display-style="inline-block"' imgclass="spotlight serious-goose" style="display:inline-block;-ms-flex:0 0 53%;flex:0 0 53%; max-width:53%;" attributes='display-style="inline-block"' %}
+  {% include img_light.liquid path="assets/img/aminals/roos/beefy.jpg" class="col img-spacing mt-0 silly-goose"   attributes='display-style="inline-block"' imgclass="spotlight silly-goose"   style="display:inline-block;-ms-flex:0 0 53%;flex:0 0 53%; max-width:53%;" attributes='display-style="inline-block"' title="this one went to the gym" %}
 </div>
 
 <div class="row mt-0 silly-goose" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
