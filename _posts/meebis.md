@@ -40,7 +40,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/terminal.jpg"     class="col img-spacing mt-0" imgclass="spotlight" title="i'm afraid it's terminal?" %}
 </div>
 
-<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
+<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);">
   <div class="col mt-0">
     <div class="row mt-3">
       {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" %}
