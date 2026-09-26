@@ -13,11 +13,11 @@ images:
 
 <div class="spotlight-group">
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/meebis/cool_meebis.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="cool" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/unfocussed.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="very polite" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/colonP.jpg"       class="col img-spacing mt-0" imgclass="spotlight" title=":P" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/fnaf.jpg"         class="col img-spacing mt-0 serious-goose" imgclass="spotlight serious-goose" style="-ms-flex:0 0 40%;flex:0 0 40%; max-width:40%;display:block;" attributes='display-style="block"' %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/fnaf.jpg"         class="col img-spacing mt-0 silly-goose" imgclass="spotlight silly-goose" title="FNAF gameplay" style="-ms-flex:0 0 40%;flex:0 0 40%; max-width:40%;display:block;" attributes='display-style="block"' %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/cool_meebis.jpg"  class="col img-spacing mt-0"                imgclass="spotlight"              title="cool" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/unfocussed.jpg"   class="col img-spacing mt-0"                imgclass="spotlight"              title="very polite"   style="-ms-flex:0 0 17%;flex:0 0 17%; max-width:17%;display:block;" attributes='display-style="block"' %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/colonP.jpg"       class="col img-spacing mt-0"                imgclass="spotlight"              title=":P"            style="-ms-flex:0 0 25%;flex:0 0 25%; max-width:25%;display:block;" attributes='display-style="block"' %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/fnaf.jpg"         class="col img-spacing mt-0 serious-goose"  imgclass="spotlight serious-goose"                      style="-ms-flex:0 0 37%;flex:0 0 37%; max-width:37%;display:block;" attributes='display-style="block"' %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/fnaf.jpg"         class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose"  title="FNAF gameplay" style="-ms-flex:0 0 37%;flex:0 0 37%; max-width:37%;display:block;" attributes='display-style="block"' %}
 </div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/angry_neighbor.jpg"       class="col img-spacing mt-0" imgclass="spotlight" %}
