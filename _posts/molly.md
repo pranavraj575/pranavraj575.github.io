@@ -51,7 +51,7 @@ images:
 
 <div class="row mt-2" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   {% include img_light.liquid path="assets/img/aminals/molly/freshening_up.jpg"     class="col img-spacing mt-0" imgclass="spotlight" title="freshening up" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/let_that_sink_in.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="let that sink in"%}
+  {% include img_light.liquid path="assets/img/aminals/molly/let_that_sink_in.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="let that sink in" style="-ms-flex:0 0 38%;flex:0 0 38%; max-width:38%;display:block;" attributes='display-style="block"'%}
 </div>
 <div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     let that sink in
