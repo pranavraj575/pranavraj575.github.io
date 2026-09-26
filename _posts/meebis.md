@@ -48,7 +48,7 @@ images:
       {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird3.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" %}
       {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird4.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" %}
     </div>
-    <div class="row mt-3">
+    <div class="row mt-2">
       {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird5.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" %}
       {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird6.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" %}
       {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird7.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" %}
