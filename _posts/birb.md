@@ -12,7 +12,7 @@ images:
 
 
 <div class="spotlight-group">
-<div class="row mt-0 silly-goose" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
+<div class="row mt-0 silly-goose" style="border-bottom:1px solid var(--global-divider-color);"></div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/birb_vogue/slay0.jpg" title="slay" class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/birb_vogue/slay1.jpg" title="slay" class="col img-spacing mt-0" imgclass="spotlight" %}
