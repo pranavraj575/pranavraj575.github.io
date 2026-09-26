@@ -22,7 +22,7 @@ images:
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/angry_neighbor.jpg"       class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/wink.gif"                 class="col img-spacing mt-0" imgclass="spotlight" title=";)" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/awoken_from_slumber.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="awoken from slumber" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/awoken_from_slumber.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="awoken from slumber" style="-ms-flex:0 0 15%;flex:0 0 15%; max-width:15%;display:block;" attributes='display-style="block"'%}
   {% include img_light.liquid path="assets/img/aminals/meebis/sleepy_neighbor.jpg"      class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
 
