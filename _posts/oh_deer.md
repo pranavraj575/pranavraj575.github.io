@@ -38,7 +38,7 @@ images:
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/oh_deer/pointer_dawg.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="taking a closer look" %}
   {% include img_light.liquid path="assets/img/aminals/oh_deer/mr_sniff.jpg"      class="col img-spacing mt-0" imgclass="spotlight" title="taking a closer look" %}
-  <div class="col img-spacing mt-0">
+  <div class="col img-spacing mt-0" style="-ms-flex:0 0 28%;flex:0 0 28%; max-width:28%;display:block;" attributes='display-style="block"'>
     {% include img_light.liquid path="assets/img/aminals/oh_deer/tiptoe.jpg"    class="col img-spacing mt-0" imgclass="spotlight" title="sneaking away" %}
     {% include img_light.liquid path="assets/img/aminals/oh_deer/odd_pose.jpg"  class="col img-spacing mt-0" imgclass="spotlight" imgstyle="margin-top:-1rem;"%}
   </div>
