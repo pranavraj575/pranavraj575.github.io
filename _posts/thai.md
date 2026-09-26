@@ -10,7 +10,7 @@ images:
 ---
 
 <div class="spotlight-group">
-<div class="row mt-0 silly-goose" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
+<div class="row mt-0 silly-goose" style="border-top:1px solid var(--global-divider-color);"></div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/thai/alcoholic0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="bartender" %}
   {% include img_light.liquid path="assets/img/aminals/thai/alcoholic1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="bartender" %}
