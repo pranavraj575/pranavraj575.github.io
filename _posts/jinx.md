@@ -22,7 +22,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/jinx/umop_3pIsdn.jpg"    class="col img-spacing mt-0"                imgclass="spotlight"              title="umop 3pIsdn" %}
 </div>
 
-<div class="row mt-3">
+<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   {% include img_light.liquid path="assets/img/aminals/jinx/very_dapper.jpg"  class="col img-spacing mt-0 serious-goose"  imgclass="spotlight serious-goose"  style="display:block;" attributes='display-style="block"' %}
   {% include img_light.liquid path="assets/img/aminals/jinx/very_dapper.jpg"  class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose"    style="display:block;" attributes='display-style="block"' title="very dapper" %}
   {% include img_light.liquid path="assets/img/aminals/jinx/chicken.jpg"      class="col img-spacing mt-0 serious-goose"  imgclass="spotlight serious-goose"  style="display:block;" attributes='display-style="block"' %}
