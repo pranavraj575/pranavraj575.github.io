@@ -88,7 +88,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/void.jpg"           class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose" title="ball 2" %}
 </div>
 
-<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
+<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);">
   <div class="col img-spacing mt-0">
     {% include img_light.liquid element="div" path="assets/img/aminals/meebis/snail0.jpg" class="col img-spacing mt-0 spinny" imgclass="spotlight" title="snail" attributes='spinny-scale="0.7071067811865476";;spinny-speed-boost="1"' %}
   </div>
