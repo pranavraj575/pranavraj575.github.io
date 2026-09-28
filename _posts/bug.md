@@ -56,13 +56,12 @@ images:
     }
   }
   function craig(duration=100){
-    if (document.documentElement.getAttribute("goose-setting") == "silly"){
-      var crg=document.getElementById("craigory");
-      crg.style.display="inherit";
-      crg.style.opacity=1;
-      if (!fading_out_craig){
-        setTimeout(fade_out_craig, duration);
-      }
+    // if (document.documentElement.getAttribute("goose-setting") == "silly"){}
+    var crg=document.getElementById("craigory");
+    crg.style.display="inherit";
+    crg.style.opacity=1;
+    if (!fading_out_craig){
+      setTimeout(fade_out_craig, duration);
     }
   }
   document.addEventListener("mousemove", craig);
