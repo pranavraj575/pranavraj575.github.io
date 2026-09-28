@@ -11,7 +11,7 @@ images:
 
 <div class="spotlight-group">
 <div class="row mt-3">
-  <div class="col img-spacing mt-0">
+  <div class="col img-spacing mt-0" style="-ms-flex:0 0 19%;flex:0 0 19%; max-width:19%;">
     {% include img_light.liquid path="assets/img/aminals/jinx/school_picture_day.jpg" class="col img-spacing mt-0" title="school picture day"                         imgclass="spotlight" %}
     {% include img_light.liquid path="assets/img/aminals/jinx/suspicious.jpg"         class="col img-spacing mt-0 serious-goose" style="margin-top:-1rem !important;" imgclass="spotlight serious-goose" %}
     {% include img_light.liquid path="assets/img/aminals/jinx/suspicious.jpg"         class="col img-spacing mt-0 silly-goose" style="margin-top:-1rem !important;"   imgclass="spotlight silly-goose" title="he knows what you did" %}
