@@ -66,5 +66,5 @@ images:
   }
   document.addEventListener("mousemove", craig);
   document.addEventListener("scroll", craig);
-  document.addEventListener("DOMContentLoaded", craig);
+  // document.addEventListener("DOMContentLoaded", craig);
 </script>
