@@ -23,8 +23,8 @@ images:
     {% include img_light.liquid path="assets/img/aminals/molly/vogue1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="vogue" imgstyle="margin-top:-1rem" %}
   </div>
   {% include img_light.liquid path="assets/img/aminals/molly/cat_walk.png"      class="col img-spacing mt-0" imgclass="spotlight" title="cat walk" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/biig_stretch.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="big stretch" %}
-  <div class="col mt-0" style="padding-left: 0px;padding-right: 0px;">
+  {% include img_light.liquid path="assets/img/aminals/molly/biig_stretch.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="big stretch" style="-ms-flex:0 0 29.5%;flex:0 0 29.5%; max-width:29.5%;" %}
+  <div class="col mt-0" style="padding-left: 0px;padding-right: 0px;-ms-flex:0 0 24.4%;flex:0 0 24.4%; max-width:24.4%;">
     {% include img_light.liquid path="assets/img/aminals/molly/sphinx.jpg"      class="col img-spacing mt-0" imgclass="spotlight" title="sphinx"      style="margin-top:0px !important"%}
     {% include img_light.liquid path="assets/img/aminals/molly/doing_work.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="doing work"  imgstyle="margin-top:-1rem" %}
     {% include img_light.liquid path="assets/img/aminals/molly/eating_soup.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="eating soup" imgstyle="margin-top:-1rem" %}
@@ -51,7 +51,7 @@ images:
 
 <div class="row mt-2" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   {% include img_light.liquid path="assets/img/aminals/molly/freshening_up.jpg"     class="col img-spacing mt-0" imgclass="spotlight" title="freshening up" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/let_that_sink_in.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="let that sink in" style="-ms-flex:0 0 38%;flex:0 0 38%; max-width:38%;display:block;" attributes='display-style="block"'%}
+  {% include img_light.liquid path="assets/img/aminals/molly/let_that_sink_in.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="let that sink in" style="-ms-flex:0 0 38%;flex:0 0 38%; max-width:38%;display:block;" attributes='display-style="block"' %}
 </div>
 <div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     let that sink in
