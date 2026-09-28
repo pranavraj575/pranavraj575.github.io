@@ -4,6 +4,7 @@ title: jinx
 date: 2025-04-20 04:20:00
 categories: dog-egory
 thumbnail: assets/img/aminals/jinx/very_dapper.jpg
+icon: assets/html/asteroids/img/torus.ico
 featured: false
 images:
   spotlight: true
