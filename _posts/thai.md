@@ -14,7 +14,7 @@ images:
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/thai/alcoholic0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="bartender" %}
   {% include img_light.liquid path="assets/img/aminals/thai/alcoholic1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="bartender" %}
-  {% include img_light.liquid path="assets/img/aminals/thai/alcoholic2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="bartender (daytime)" %}
+  {% include img_light.liquid path="assets/img/aminals/thai/alcoholic2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="bartender (daytime)" style="-ms-flex:0 0 45%;flex:0 0 45%; max-width:45%;"%}
 </div>
 <div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     bartender
