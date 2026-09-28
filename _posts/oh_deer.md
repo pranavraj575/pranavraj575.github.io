@@ -4,6 +4,7 @@ title: oh deer
 date: 2025-08-19 04:20:00
 categories: dog-egory
 thumbnail: assets/img/aminals/oh_deer/deerly_departed.jpg
+swap_ico: true
 featured: false
 images:
   spotlight: true

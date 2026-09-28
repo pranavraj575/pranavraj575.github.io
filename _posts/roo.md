@@ -4,6 +4,7 @@ title: roos
 date: 2025-06-30 04:20:00
 categories: dog-egory
 thumbnail: assets/img/aminals/roos/silly_lookin.jpg
+swap_ico: true
 images:
   spotlight: true
 ---

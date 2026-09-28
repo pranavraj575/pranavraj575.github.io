@@ -4,6 +4,7 @@ title: RALPH!!!
 date: 2024-04-20 04:20:00
 categories: cat-egory
 thumbnail: assets/img/aminals/ralph/ralphin_it_0.jpg
+swap_ico: true
 featured: false
 images:
   spotlight: true

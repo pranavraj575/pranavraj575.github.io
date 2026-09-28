@@ -4,6 +4,7 @@ title: baby dragon
 date: 2026-04-20 04:20:00
 # categories:
 thumbnail: assets/img/aminals/baby_dragon/bb_dragon_0.jpg
+swap_ico: true
 images:
   spotlight: true
 ---

@@ -4,6 +4,7 @@ title: thailand
 date: 2024-12-13 04:20:00
 categories: cat-egory
 thumbnail: assets/img/aminals/thai/alcoholic1.jpg
+swap_ico: true
 featured: false
 images:
   spotlight: true

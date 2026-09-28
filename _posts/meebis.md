@@ -4,6 +4,7 @@ title: meevis
 date: 2025-04-20 04:20:00
 categories: cat-egory
 thumbnail: assets/img/aminals/meebis/wink.gif
+swap_ico: true
 featured: false
 images:
   spotlight: true

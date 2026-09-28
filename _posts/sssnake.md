@@ -3,6 +3,7 @@ layout: post
 title: sssnake
 date: 2026-10-31 04:20:00
 thumbnail: assets/img/aminals/snake/frick0.jpg
+swap_ico: true
 featured: false
 images:
   spotlight: true

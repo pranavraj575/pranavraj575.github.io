@@ -4,6 +4,7 @@ title: bird
 date: 2025-07-12 04:20:00
 categories: birb
 thumbnail: assets/img/aminals/birb_vogue/yak2.jpg
+swap_ico: true
 featured: false
 images:
   spotlight: true

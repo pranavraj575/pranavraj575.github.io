@@ -4,6 +4,7 @@ title: cat
 date: 2026-04-20 04:20:00
 categories: cat-egory
 thumbnail: assets/img/aminals/kitty_cat_real/kitty_cat_1.jpg
+swap_ico: true
 images:
   spotlight: true
 ---

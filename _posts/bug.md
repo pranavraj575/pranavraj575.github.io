@@ -4,6 +4,7 @@ title: is this guy bugging you
 date: 2026-04-20 04:20:00
 # categories:
 thumbnail: assets/img/aminals/bug/hornet_silksong.jpg
+swap_ico: true
 images:
   spotlight: true
 ---
