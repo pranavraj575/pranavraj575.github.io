@@ -25,7 +25,7 @@ images:
     {% include img_light.liquid path="assets/img/aminals/thai/creature.jpg"                 class="col img-spacing mt-0" imgclass="spotlight" %}
     {% include img_light.liquid path="assets/img/aminals/thai/for_whom_the_bell_tolls.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   </div>
-  {% include img_light.liquid path="assets/img/aminals/thai/.jpg" class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 45%;flex:0 0 45%; max-width:45%;" %}
+  {% include img_light.liquid path="assets/img/aminals/thai/beast.jpg" class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 45%;flex:0 0 45%; max-width:45%;" %}
   <div class="col img-spacing mt-0">
     {% include img_light.liquid path="assets/img/aminals/thai/launderer.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="busy laundering" %}
     {% include img_light.liquid path="assets/img/aminals/thai/mondays.jpg"    class="col img-spacing mt-0" imgclass="spotlight" title="he hates mondays" %}
