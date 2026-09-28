@@ -33,7 +33,7 @@ images:
 
 <div class="row mt-0 silly-goose" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
 <div class="row mt-0">
-  {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="how did she get up there" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="how did she get up there" style="-ms-flex:0 0 27.5%;flex:0 0 27.5%; max-width:27.5%;" %}
   {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="how did she get up there" %}
   {% include img_light.liquid path="assets/img/aminals/molly/ceiling_car2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="how did she get up there" %}
 </div>
