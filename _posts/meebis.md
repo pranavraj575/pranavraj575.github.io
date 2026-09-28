@@ -114,7 +114,7 @@ images:
     {% include img_light.liquid path="assets/img/aminals/meebis/rotisserie.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="rotisserie" %}
     {% include img_light.liquid path="assets/img/aminals/meebis/rotisserie2.jpg"  class="col img-spacing mt-0" imgstyle="margin-top:-1rem" imgclass="spotlight" title="rotisserie" %}
   </div>
-  <div class="col img-spacing mt-0">
+  <div class="col img-spacing mt-0" style="-ms-flex:0 0 21%;flex:0 0 21%; max-width:21%;">
     {% include img_light.liquid path="assets/img/aminals/meebis/vamp.jpg"                   class="col img-spacing mt-0" imgclass="spotlight" title="vampire" %}
     {% include img_light.liquid path="assets/img/aminals/meebis/suspicious_hovercraft.jpg"  class="col img-spacing mt-0" imgstyle="margin-top:-1rem" imgclass="spotlight" title="suspicious" %}
   </div>
