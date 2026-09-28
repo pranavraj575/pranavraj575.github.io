@@ -25,6 +25,7 @@ for fn in args.files:
     if "thumbnail" in d and d.get("swap_ico", False):
         img = Image.open(d["thumbnail"])
         new_ico_fn = f"{d['thumbnail'][: d['thumbnail'].rindex(os.path.extsep)]}.ico"
+        print(f"adding ico {new_ico_fn} for {fn}")
         img.save(new_ico_fn, format="ICO", sizes=[tuple(args.quality)])
 
         with open(fn) as f:
@@ -35,5 +36,6 @@ for fn in args.files:
             r = r.replace("\nswap_ico: ", "\nswap_ico:")
 
         new_pg = r.replace("\nswap_ico:true", f"\nicon: {new_ico_fn}")
+        print(f"rewriting {fn}")
         with open(fn, "w") as f:
             f.write(new_pg)
