@@ -42,11 +42,11 @@ images:
 </div>
 
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/molly/cryptid.jpg"     class="col img-spacing mt-0"                imgclass="spotlight"                title="cryptid" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/cryptid.jpg"     class="col img-spacing mt-0"                imgclass="spotlight"                title="cryptid"           style="-ms-flex:0 0 30%;flex:0 0 30%; max-width:30%;display:block;" attributes='display-style="block"' %}
   {% include img_light.liquid path="assets/img/aminals/molly/hungry.jpg"      class="col img-spacing mt-0"                imgclass="spotlight"                title="hungry" %}
   {% include img_light.liquid path="assets/img/aminals/molly/chair_loaf.jpg"  class="col img-spacing mt-0"                imgclass="spotlight"                title="chair loave" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/totem.jpg"       class="col img-spacing mt-0 serious-goose"  imgclass="spotlight serious-goose"  title="totem" %}
-  {% include img_light.liquid path="assets/img/aminals/molly/totem.jpg"       class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose"    title="totem of undying" %}
+  {% include img_light.liquid path="assets/img/aminals/molly/totem.jpg"       class="col img-spacing mt-0 serious-goose"  imgclass="spotlight serious-goose"  title="totem"             style="-ms-flex:0 0 20%;flex:0 0 20%; max-width:20%;display:block;" attributes='display-style="block"' %}
+  {% include img_light.liquid path="assets/img/aminals/molly/totem.jpg"       class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose"    title="totem of undying"  style="-ms-flex:0 0 20%;flex:0 0 20%; max-width:20%;display:block;" attributes='display-style="block"' %}
 </div>
 
 <div class="row mt-2" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
