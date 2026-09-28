@@ -15,7 +15,7 @@ PARSER.add_argument(
     nargs=2,
     type=int,
     required=False,
-    default=[100, 100],
+    default=[64, 64],
     help="quality of saved ico",
 )
 args = PARSER.parse_args()
