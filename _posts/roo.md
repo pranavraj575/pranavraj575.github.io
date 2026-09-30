@@ -26,7 +26,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/roos/boing_boing_boing0.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="boing boing boing" %}
   {% include img_light.liquid path="assets/img/aminals/roos/boing_boing_boing1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="where are his arms?" %}
   {% include img_light.liquid path="assets/img/aminals/roos/boing_boing_boing2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="hovercraft" %}
-  {% include img_light.liquid path="assets/img/aminals/roos/boing_boing_boing.gif"  class="col img-spacing mt-0" imgclass="spotlight" title="boing boing boing" %}
+  {% include img_light.liquid path="assets/img/aminals/roos/boing_boing_boing.gif"  class="col img-spacing mt-0" imgclass="spotlight" title="boing boing boing" style="display:inline-block;-ms-flex:0 0 34%;flex:0 0 34%; max-width:34%;" %}
 </div>
 <div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     boing boing boing
