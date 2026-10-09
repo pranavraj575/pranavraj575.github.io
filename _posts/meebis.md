@@ -174,7 +174,7 @@ images:
 </div>
 
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/meebis/shadow_charger.gif"     class="col img-spacing mt-0" imgclass="spotlight" title="i am the night" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/shadow_charger.jpg"     class="col img-spacing mt-0" imgclass="spotlight" title="i am the night" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/sleepiest_soldier.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="i am the night (sleepy edition)" %}
 </div>
 <script>
