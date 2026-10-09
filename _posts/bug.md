@@ -33,8 +33,15 @@ images:
 </div>
 
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/bug/wolf0.jpg"      class="col img-spacing mt-3 mt-md-0"  attributes='display-style="inline-block"' imgclass="spotlight" title="is this guy bugging you" %}
-  {% include img_light.liquid path="assets/img/aminals/bug/wolf1.jpg"      class="col img-spacing mt-3 mt-md-0"  attributes='display-style="inline-block"' imgclass="spotlight" title="is this guy bugging you" %}
+  {% include img_light.liquid path="assets/img/aminals/bug/wolf0.jpg" class="col img-spacing mt-3 mt-md-0"  attributes='display-style="inline-block"' imgclass="spotlight" title="is this guy bugging you" %}
+  {% include img_light.liquid path="assets/img/aminals/bug/wolf1.jpg" class="col img-spacing mt-3 mt-md-0"  attributes='display-style="inline-block"' imgclass="spotlight" title="is this guy bugging you" %}
+</div>
+<div class="row mt-3">
+  {% include img_light.liquid path="assets/img/aminals/bug/jumper_hardly0.jpg" class="col img-spacing mt-3 mt-md-0 serious-goose" imgclass="spotlight serious-goose"  attributes='display-style="inline-block"' title="jumping spider"  %}
+  {% include img_light.liquid path="assets/img/aminals/bug/jumper_hardly0.jpg" class="col img-spacing mt-0 mt-md-0 silly-goose"   imgclass="spotlight silly-goose"    attributes='display-style="inline-block"' title="jumping spider (hardly know her)" %}
+  {% include img_light.liquid path="assets/img/aminals/bug/jumper_hardly1.jpg" class="col img-spacing mt-3 mt-md-0 serious-goose" imgclass="spotlight serious-goose"  attributes='display-style="inline-block"' title="jumping spider" %}
+  {% include img_light.liquid path="assets/img/aminals/bug/jumper_hardly1.jpg" class="col img-spacing mt-3 mt-md-0 silly-goose"   imgclass="spotlight silly-goose"    attributes='display-style="inline-block"' title="jumping spider  (hardly know her)" %}
+
 </div>
 
 </div>
