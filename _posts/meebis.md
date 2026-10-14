@@ -73,8 +73,8 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard3.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" %}
 </div>
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard4.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard5.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" style="-ms-flex:0 0 21%;flex:0 0 21%; max-width:21%;" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard4.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" style="-ms-flex:0 0 32.5%;flex:0 0 32.5%; max-width:32.5%;" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard5.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" style="-ms-flex:0 0 24.5%;flex:0 0 24.5%; max-width:24.5%;" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard6.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" %}
 </div>
 <div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
