@@ -71,8 +71,11 @@ images:
   {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard3.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" %}
+</div>
+<div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard4.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard5.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/so_ive_heard6.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="so i've heard" %}
 </div>
 <div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     so i've heard
