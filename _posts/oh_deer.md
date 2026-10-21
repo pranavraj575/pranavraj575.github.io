@@ -60,4 +60,19 @@ images:
   {% include img_light.liquid path="assets/img/aminals/oh_deer/to_car1.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="driving home" %}
 </div>
 
+<div class="row mt-0 silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
+<div class="row mt-3">
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/horny0.jpg"   class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/horny1.jpg"   class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/horny2.jpg"   class="col img-spacing mt-0" imgclass="spotlight" %}
+</div>
+<div class="row mt-0">
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/horny3.jpg"   class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/horny4.jpg"   class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/oh_deer/horny5.jpg"   class="col img-spacing mt-0" imgclass="spotlight" %}
+</div>
+<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
+  horn
+</div>
+
 </div>
