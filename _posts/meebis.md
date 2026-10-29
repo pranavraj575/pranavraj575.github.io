@@ -143,10 +143,11 @@ images:
 </div>
 
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/meebis/boing.jpg"    class="col img-spacing mt-0" imgclass="spotlight" title="boing" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/boingg.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="boingg" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/boinggg.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="boinggg" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/boingggg.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="boingggg" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/boing.jpg"      class="col img-spacing mt-0" imgclass="spotlight" title="boing" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/boingg.jpg"     class="col img-spacing mt-0" imgclass="spotlight" title="boingg" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/boinggg.jpg"    class="col img-spacing mt-0" imgclass="spotlight" title="boinggg" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/boingggg.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="boingggg" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/boinggggg.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="boinggggg" %}
 </div>
 <div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     boinggg (meevis in the spring)
@@ -180,6 +181,7 @@ images:
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/yawn.gif"         class="col img-spacing mt-0" imgclass="spotlight" title="sleepy" style="-ms-flex:0 0 69%;flex:0 0 69%; max-width:69%;display:block;" %}
   {% include img_light.liquid path="assets/img/aminals/meebis/cannibalism.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="cannibalism" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/scrunkly.jpg"     class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
 
 <script>
