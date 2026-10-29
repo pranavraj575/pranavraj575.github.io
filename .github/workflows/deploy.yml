@@ -80,7 +80,7 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5" # "3.3" for latest patch
+          ruby-version: "3.3.5" # "3.3" for ubuntu-latest which is 26
           bundler-cache: true
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
