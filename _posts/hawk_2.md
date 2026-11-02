@@ -47,7 +47,7 @@ images:
 
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/hawk_2/wired.jpg" class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/hawk_2/120_degree.jpg" class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/hawk_2/120_degree.jpg" class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 27%;flex:0 0 27%; max-width:27%;" %}
   {% include img_light.liquid path="assets/img/aminals/hawk_2/great_hair.jpg" title="great hair" class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
 
