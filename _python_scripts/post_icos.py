@@ -36,7 +36,11 @@ for fn in args.files:
         while "\nswap_ico: " in r:
             r = r.replace("\nswap_ico: ", "\nswap_ico:")
 
-        new_pg = r.replace("\nswap_ico:true", f"\nicon: {new_ico_fn}")
+        r = r.replace("\nswap_ico:true", f"\nicon: {new_ico_fn}")
+        if "icon_unconverted" in d:
+            temp = r[r.index("\nicon_unconverted") + 1 :]
+            r = r[: r.index("\nicon_unconverted")] + r[r.index("\nicon_unconverted") + 1 + temp.index("\n") :]
+
         print(f"rewriting {fn}")
         with open(fn, "w") as f:
-            f.write(new_pg)
+            f.write(r)
