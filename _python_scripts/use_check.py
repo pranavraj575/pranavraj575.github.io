@@ -56,7 +56,7 @@ while i < len(files):
 used = list(filter(lambda f: any(recurse_search(dd, os.path.basename(f), [os.path.basename(f)]) for dd in args.folders), files))
 unused = sorted(list(set(files).difference(used)), key=lambda f: files.index(f))
 print("USED", *used, sep="\n\t")
-print("UNUSED", *unused, sep="\n\t")
+print("UNUSED" + ("(deleting)" if args.remove_unused else ""), *unused, sep="\n\t")
 if args.remove_unused:
     for f in unused:
         os.remove(f)
