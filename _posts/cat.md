@@ -4,7 +4,8 @@ title: high-quality wildlife photography
 date: 2025-07-18 04:20:00
 categories: cat-egory
 thumbnail: assets/img/aminals/kitty_cat/ground_car.jpg
-icon: 🐍
+icon_unconverted: assets/img/aminals/kitty_cat/car_ico.jpg
+swap_ico: true
 featured: false
 images:
   spotlight: true
