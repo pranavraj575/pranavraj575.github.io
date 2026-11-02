@@ -22,9 +22,10 @@ args = PARSER.parse_args()
 for fn in args.files:
     with open(fn) as f:
         d = next(yaml.safe_load_all(f))
-    if "thumbnail" in d and d.get("swap_ico", False):
-        img = Image.open(d["thumbnail"])
-        new_ico_fn = f"{d['thumbnail'][: d['thumbnail'].rindex(os.path.extsep)]}.ico"
+    if ("thumbnail" in d or "icon_unconverted" in d) and d.get("swap_ico", False):
+        unconverted_name = d.get("icon_unconverted", d["thumbnail"])
+        img = Image.open(unconverted_name)
+        new_ico_fn = f"{unconverted_name[: unconverted_name.rindex(os.path.extsep)]}.ico"
         print(f"adding ico {new_ico_fn} for {fn}")
         img.save(new_ico_fn, format="ICO", sizes=[tuple(args.quality)])
 
