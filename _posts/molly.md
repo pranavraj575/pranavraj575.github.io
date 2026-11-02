@@ -4,6 +4,7 @@ title: molly
 date: 2025-10-31 04:20:00
 categories: cat-egory
 thumbnail: assets/img/aminals/molly/cryptid.jpg
+icon_unconverted: assets/img/aminals/molly/deep_sea_ico.jpg
 swap_ico: true
 featured: false
 images:

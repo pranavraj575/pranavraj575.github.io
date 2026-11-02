@@ -4,7 +4,7 @@ title: hawk 2
 date: 2026-10-31 04:20:00
 categories: birb
 thumbnail: assets/img/aminals/hawk_2/severe_ball_contact.jpg
-icon_unconverted: assets/img/aminals/hawk_2/severe_ball_contact.jpg
+icon_unconverted: assets/img/aminals/hawk_2/severe_flight.jpg
 swap_ico: true
 featured: false
 images:

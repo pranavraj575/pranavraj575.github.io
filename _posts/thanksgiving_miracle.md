@@ -4,6 +4,7 @@ title: thanksgiving miracle
 date: 2025-11-27 04:20:00
 categories: birb
 thumbnail: assets/img/aminals/thanksgiving_miracle/jurassic.jpg
+icon_unconverted: assets/img/aminals/thanksgiving_miracle/thanksgiving_ico.jpg
 swap_ico: true
 featured: false
 images:
