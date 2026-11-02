@@ -27,8 +27,8 @@ images:
   ball contact
 </div>
 
-<div class="row mt-0 serious-goose" style="border-bottom:1px solid var(--global-divider-color);"></div>
-<div class="row mt-3">
+<div class="row mt-2 serious-goose" style="border-bottom:1px solid var(--global-divider-color);"></div>
+<div class="row mt-2">
   {% include img_light.liquid path="assets/img/aminals/hawk_2/FLIGHT0.jpg" title="FLIGHT" class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/hawk_2/FLIGHT1.jpg" title="FLIGHT" class="col img-spacing mt-0" imgclass="spotlight" %}
 </div>
