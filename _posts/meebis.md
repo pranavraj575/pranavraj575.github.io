@@ -181,7 +181,7 @@ images:
 
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/meebis/scrunkly.jpg"     class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/princess.jpg"     class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 33%;flex:0 0 33%; max-width:33%;display:block;" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/princess.jpg"     class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 30%;flex:0 0 30%; max-width:30%;display:block;" %}
 </div>
 <div class="row mt-2">
   {% include img_light.liquid path="assets/img/aminals/meebis/yawn.gif"         class="col img-spacing mt-0" imgclass="spotlight" title="sleepy" style="-ms-flex:0 0 69%;flex:0 0 69%; max-width:69%;display:block;" %}
