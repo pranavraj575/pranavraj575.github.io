@@ -43,13 +43,13 @@ images:
 </div>
 
 
-<div class="row mt-3">
+<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);">
   {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/drinking.jpg" class="col img-spacing mt-3 silly-goose"    imgclass="spotlight silly-goose" title="drinking" style="display:block;" attributes='display-style="block"' %}
-  {% include img_light.liquid path="assets/img/aminals/meebis/drinking.jpg" class="col img-spacing mt-3 serious-goose"  imgclass="spotlight serious-goose"                style="display:block;" attributes='display-style="block"' %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/drinking.jpg" class="col img-spacing mt-0 silly-goose"    imgclass="spotlight silly-goose" title="drinking" style="-ms-flex:0 0 30%;flex:0 0 30%; max-width:30%;display:block;" attributes='display-style="block"' %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/drinking.jpg" class="col img-spacing mt-0 serious-goose"  imgclass="spotlight serious-goose"                style="-ms-flex:0 0 30%;flex:0 0 30%; max-width:30%;display:block;" attributes='display-style="block"' %}
   {% include img_light.liquid path="assets/img/aminals/meebis/box.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="boxing" %}
 </div>
-<div class="row mt-2" style="border-top:1px solid var(--global-divider-color);">
+<div class="row mt-2">
   <div class="col mt-0">
     <div class="row mt-3">
       {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird3.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" %}
@@ -62,7 +62,7 @@ images:
       {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird8.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" %}
     </div>
   </div>
-  {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" %}
+  {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird2.jpg" class="col img-spacing mt-3" imgclass="spotlight" title="sitting weird" style="-ms-flex:0 0 40.5%;flex:0 0 40.5%; max-width:40.5%;display:block;" %}
 </div>
 <div class="caption serious-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     sitting
