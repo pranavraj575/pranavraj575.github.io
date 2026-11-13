@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CROW EVENT
-date: 2026-04-20 04:20:00
+date: 2026-10-31 04:20:00
 categories: birb
 thumbnail: assets/img/aminals/crow_event/crow_event2.jpg
 icon: 🐦‍⬛
