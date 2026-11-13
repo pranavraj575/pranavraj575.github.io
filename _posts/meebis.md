@@ -64,10 +64,7 @@ images:
   </div>
   {% include img_light.liquid path="assets/img/aminals/meebis/sitting_weird2.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="sitting weird" style="-ms-flex:0 0 40.5%;flex:0 0 40.5%; max-width:40.5%;display:block;" %}
 </div>
-<div class="caption serious-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
-    sitting
-</div>
-<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
+<div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     sitting weird
 </div>
 
