@@ -214,6 +214,17 @@ ninja.data = [{
             window.location.href = "/aminals/2026/kitty_cat/";
           
         },
+      },{id: "post-crow-event",
+        
+          title: "CROW EVENT",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2026/crow_event/";
+          
+        },
       },{id: "post-is-this-guy-bugging-you",
         
           title: "is this guy bugging you",
@@ -440,6 +451,13 @@ list_of_category_lists = [[],
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/cat-egory";
+            },
+          },{id: "category-aminals-birb",
+            title: 'birb',
+            description: "birb",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/birb";
             },
           },{id: "category-aminals-birb",
             title: 'birb',
