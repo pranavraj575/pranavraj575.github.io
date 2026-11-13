@@ -203,17 +203,6 @@ ninja.data = [{
             window.location.href = "/aminals/2026/hawk_2/";
           
         },
-      },{id: "post-cat",
-        
-          title: "cat",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/aminals/2026/kitty_cat/";
-          
-        },
       },{id: "post-crow-event",
         
           title: "CROW EVENT",
@@ -223,6 +212,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/aminals/2026/crow_event/";
+          
+        },
+      },{id: "post-cat",
+        
+          title: "cat",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2026/kitty_cat/";
           
         },
       },{id: "post-is-this-guy-bugging-you",
@@ -459,19 +459,19 @@ list_of_category_lists = [[],
             handler: () => {
               window.location.href = "/aminals/category/birb";
             },
-          },{id: "category-aminals-birb",
-            title: 'birb',
-            description: "birb",
-            section: "aminals categories",
-            handler: () => {
-              window.location.href = "/aminals/category/birb";
-            },
           },{id: "category-aminals-cat-egory",
             title: 'cat-egory',
             description: "cat-egory",
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/cat-egory";
+            },
+          },{id: "category-aminals-birb",
+            title: 'birb',
+            description: "birb",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/birb";
             },
           },{id: "category-aminals-birb",
             title: 'birb',
