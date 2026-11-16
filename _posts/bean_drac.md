@@ -40,7 +40,7 @@ images:
     <a href="https://en.wikipedia.org/wiki/Kukur_Tihar">kukur tihar</a> (cat edition)
 </div>
 
-<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
+<div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="beanventure" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="beanventure" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure_snowy.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="beanventure (snowy)" %}
