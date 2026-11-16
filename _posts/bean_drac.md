@@ -50,8 +50,6 @@ images:
     bean on his adventure
 </div>
 
-
-
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="👁️👅👁️" %}
@@ -62,6 +60,18 @@ images:
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_bean.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac (couch destroyer 1)" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_drac.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac (couch destroyer 2)" %}
+</div>
+
+<div class="row mt-3">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_tower0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac in tower" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_tower1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac in tower" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_tower2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac in tower" %}
+</div>
+<div class="row mt-2">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_tower0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean in tower" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_tower1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean in tower" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_tower2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean in tower" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_tower3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean in tower" %}
 </div>
 
 </div>
