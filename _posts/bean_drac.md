@@ -11,8 +11,8 @@ images:
 
 <div class="spotlight-group">
 <div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/brothers_rat_hunt0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="rat hunt" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/brothers_rat_hunt1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="rat hunt" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/brothers_rat_hunt0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="rat hunt" %}
 </div>
 
 <div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
