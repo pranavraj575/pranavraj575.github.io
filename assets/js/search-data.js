@@ -214,6 +214,17 @@ ninja.data = [{
             window.location.href = "/aminals/2026/crow_event/";
           
         },
+      },{id: "post-bean-amp-drac",
+        
+          title: "bean &amp; drac",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/aminals/2026/bean_drac/";
+          
+        },
       },{id: "post-cat",
         
           title: "cat",
@@ -458,6 +469,13 @@ list_of_category_lists = [[],
             section: "aminals categories",
             handler: () => {
               window.location.href = "/aminals/category/birb";
+            },
+          },{id: "category-aminals-cat-egory",
+            title: 'cat-egory',
+            description: "cat-egory",
+            section: "aminals categories",
+            handler: () => {
+              window.location.href = "/aminals/category/cat-egory";
             },
           },{id: "category-aminals-cat-egory",
             title: 'cat-egory',
