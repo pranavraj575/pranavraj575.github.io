@@ -58,7 +58,7 @@ images:
 </div>
 
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_bean.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac (couch destroyer 1)" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_bean.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean (couch destroyer 1)" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_drac.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac (couch destroyer 2)" %}
 </div>
 
