@@ -72,6 +72,7 @@ images:
     feather (herdly know her)
 </div>
 
+<div class="row mt-0 silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_chunky.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm fish" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chunky.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm kibble" style="-ms-flex:0 0 36%;flex:0 0 36%; max-width:36%;" %}
