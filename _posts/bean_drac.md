@@ -130,14 +130,14 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 37%;flex:0 0 37%; max-width:37%;" %}
 </div>
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_posed.jpg"  class="col mt-0" imgclass="spotlight" style="-ms-flex:0 0 30%;flex:0 0 30%; max-width:30%;"  %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_posed.jpg"  class="col mt-0" imgclass="spotlight" style="-ms-flex:0 0 24%;flex:0 0 24%; max-width:24%;"  %}
   <div class="col img-spacing mt-0">
     <div class="row mt-0">
       {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_pfp.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
       {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_seal.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 40%;flex:0 0 40%; max-width:40%;" %}
       {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_table.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
     </div>
-    <div class="row mt-3">
+    <div class="row mt-2">
       {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_double.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 25%;flex:0 0 25%; max-width:25%;" %}
       {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_floor0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 40%;flex:0 0 40%; max-width:40%;" %}
       {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_floor1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
