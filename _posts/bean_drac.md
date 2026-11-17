@@ -117,6 +117,10 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard4.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="sniff" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard5.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
 </div>
+<div class="row mt-2">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_close0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_close1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+</div>
 <div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     how have you bean
 </div>
