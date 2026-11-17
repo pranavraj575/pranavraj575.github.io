@@ -90,6 +90,9 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_chunky.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm fish" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chunky.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm kibble" style="-ms-flex:0 0 36%;flex:0 0 36%; max-width:36%;" %}
 </div>
+<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
+    ravenous
+</div>
 
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/brothers_floor.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
@@ -111,6 +114,9 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard4.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="sniff" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard5.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
+</div>
+<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
+    how have you bean
 </div>
 
 <div class="row mt-3">
