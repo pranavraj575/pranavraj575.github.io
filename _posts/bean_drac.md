@@ -95,22 +95,22 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_close0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_close0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 43%;flex:0 0 43%; max-width:43%;" %}
 </div>
 <div class="row mt-2">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard4.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="sniff" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard5.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_close1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_close1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 37%;flex:0 0 37%; max-width:37%;" %}
 </div>
 <div class="row mt-2">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_sleepy0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_smiley.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_vampire1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="dressed as his brother" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_floor0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="very round" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_floor0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="very round" style="-ms-flex:0 0 43%;flex:0 0 43%; max-width:43%;" %}
 </div>
 <div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
-    how have you bean
+    how have you bean?
 </div>
 
 <div class="row mt-3">
