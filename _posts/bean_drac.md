@@ -22,7 +22,7 @@ images:
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/tihar_brothers0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean & drac tihar" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/tihar_brothers1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean & drac tihar" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/tihar_brothers2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean & drac tihar" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/tihar_brothers2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean & drac tihar" style="-ms-flex:0 0 28%;flex:0 0 28%; max-width:28%;" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/tihar_brothers3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean & drac tihar" %}
 </div>
 <div class="row mt-2">
