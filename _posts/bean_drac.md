@@ -76,7 +76,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_chunky.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm fish" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chunky.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm kibble" style="-ms-flex:0 0 36%;flex:0 0 36%; max-width:36%;" %}
 </div>
-<div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
+<div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     ravenous
 </div>
 
@@ -85,7 +85,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_flopped.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 22%;flex:0 0 22%; max-width:22%;" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_floor1.jpg"  class="col img-spacing mt-0" imgclass="spotlight"  style="-ms-flex:0 0 50%;flex:0 0 50%; max-width:50%;" %}
 </div>
-<div class="row mt-3">
+<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_carpenter.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="sabeana carpenter" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_basket.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean basket" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_box.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean box" %}
