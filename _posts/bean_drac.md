@@ -138,8 +138,8 @@ images:
       {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_table.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
     </div>
     <div class="row mt-3">
-      {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_double.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-      {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_floor0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+      {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_double.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 25%;flex:0 0 25%; max-width:25%;" %}
+      {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_floor0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 40%;flex:0 0 40%; max-width:40%;" %}
       {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_floor1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
       {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_churu0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm churu" %}
     </div>
