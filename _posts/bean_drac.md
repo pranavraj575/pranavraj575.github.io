@@ -4,6 +4,8 @@ title: bean & drac
 date: 2026-10-31 04:20:00
 categories: cat-egory
 thumbnail: assets/img/aminals/bean_drac/brothers_rat_hunt0.jpg
+icon_unconverted: assets/img/aminals/bean_drac/drac_ico.jpg
+swap_ico: true
 featured: false
 images:
   spotlight: true
