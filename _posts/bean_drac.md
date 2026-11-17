@@ -54,7 +54,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="👁️👅👁️" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 37%;flex:0 0 37%; max-width:37%;" %}
 </div>
 
 <div class="row mt-3">
@@ -62,7 +62,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_drac.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac (couch destroyer 2)" %}
 </div>
 
-<div class="row mt-3">
+<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_tower0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac in tower" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_tower1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac in tower" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_tower2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac in tower" %}
@@ -70,8 +70,12 @@ images:
 <div class="row mt-2">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_tower0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean in tower" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_tower1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean in tower" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_tower2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean in tower" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_tower3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean in tower" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_tower2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean in tower" style="-ms-flex:0 0 23%;flex:0 0 23%; max-width:23%;" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_tower3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean in tower" style="-ms-flex:0 0 41%;flex:0 0 41%; max-width:41%;" %}
+</div>
+
+<div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
+    neighborhood watch
 </div>
 
 </div>
