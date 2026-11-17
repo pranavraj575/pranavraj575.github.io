@@ -92,6 +92,11 @@ images:
 </div>
 
 <div class="row mt-3">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/brothers_floor.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_flopped.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_floor1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+</div>
+<div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_carpenter.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="sabeana carpenter" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_basket.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean basket" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_box.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean box" %}
@@ -113,6 +118,12 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_seal.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_posed.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_table.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+</div>
+<div class="row mt-2">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_double.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_floor0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_floor1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_churu0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm churu" %}
 </div>
 
 </div>
