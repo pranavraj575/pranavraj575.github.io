@@ -82,8 +82,8 @@ images:
 
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/brothers_floor.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_flopped.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_floor1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_flopped.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 22%;flex:0 0 22%; max-width:22%;" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_floor1.jpg"  class="col img-spacing mt-0" imgclass="spotlight"  style="-ms-flex:0 0 50%;flex:0 0 50%; max-width:50%;" %}
 </div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_carpenter.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="sabeana carpenter" %}
