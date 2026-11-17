@@ -121,6 +121,9 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_close0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_close1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_sleepy0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_smiley.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_vampire1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="dressed as his brother" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_floor0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="very round" %}
 </div>
 <div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     how have you bean
