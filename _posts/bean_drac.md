@@ -78,4 +78,19 @@ images:
     neighborhood watch
 </div>
 
+<div class="row mt-3">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_carpenter.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="sabeana carpenter" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_box.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean box" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_basket.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean basket" %}
+</div>
+<div class="row mt-2">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
+</div>
+<div class="row mt-2">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard4.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="sniff" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard5.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
+</div>
 </div>
