@@ -131,15 +131,17 @@ images:
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_posed.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   <div class="col img-spacing mt-0">
-    {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_pfp.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-    {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_seal.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-    {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_table.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-  </div>
-  <div class="col img-spacing mt-0"> 
-    {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_double.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-    {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_floor0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-    {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_floor1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-    {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_churu0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm churu" %}
+    <div class="row mt-3">
+      {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_pfp.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+      {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_seal.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+      {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_table.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+    </div>
+    <div class="row mt-3">
+      {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_double.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+      {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_floor0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+      {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_floor1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+      {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_churu0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm churu" %}
+    </div>
   </div>
 </div>
 
