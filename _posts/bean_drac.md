@@ -66,7 +66,7 @@ images:
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_feather0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm feather" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_feather1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm feather" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_feather.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="offended" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_feather.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="offended"  style="-ms-flex:0 0 27%;flex:0 0 27%; max-width:27%;" %}
 </div>
 <div class="caption silly-goose" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     feather (herdly know her)
