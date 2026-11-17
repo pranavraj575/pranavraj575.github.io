@@ -73,9 +73,13 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_tower2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean in tower" style="-ms-flex:0 0 23%;flex:0 0 23%; max-width:23%;" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_tower3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean in tower" style="-ms-flex:0 0 41%;flex:0 0 41%; max-width:41%;" %}
 </div>
-
 <div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     neighborhood watch
+</div>
+
+<div class="row mt-3">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_chunky.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm fish" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chunky.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="mmm kibble" %}
 </div>
 
 <div class="row mt-3">
@@ -93,4 +97,12 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard4.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="sniff" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard5.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
 </div>
+
+<div class="row mt-3">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_pfp.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_seal.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_posed.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_table.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+</div>
+
 </div>
