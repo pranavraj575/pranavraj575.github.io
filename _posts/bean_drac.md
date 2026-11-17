@@ -89,8 +89,8 @@ images:
 <div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_carpenter.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="sabeana carpenter" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_basket.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean basket" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_box.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean box" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_colon3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title=":3" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_box.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean box" style="-ms-flex:0 0 33%;flex:0 0 33%; max-width:33%;" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_colon3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title=":3" style="-ms-flex:0 0 33%;flex:0 0 33%; max-width:33%;" %}
 </div>
 <div class="row mt-2">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_soiveheard0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="so ive heard" %}
