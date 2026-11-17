@@ -35,26 +35,8 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/tihar_drac0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac tihar" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/tihar_drac1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac tihar" %}
 </div>
-
 <div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     <a href="https://en.wikipedia.org/wiki/Kukur_Tihar">kukur tihar</a> (cat edition)
-</div>
-
-<div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="beanventure" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="beanventure" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure_snowy.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="beanventure (snowy)" %}
-</div>
-
-<div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
-    bean on his adventure
-</div>
-
-<div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="👁️👅👁️" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 37%;flex:0 0 37%; max-width:37%;" %}
 </div>
 
 <div class="row mt-3">
@@ -62,7 +44,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_drac.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac (couch destroyer 2)" %}
 </div>
 
-<div class="row mt-3">
+<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_watch.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean" %}
   <div class="col img-spacing mt-0">
     {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_tower0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac in tower" %}
@@ -129,6 +111,21 @@ images:
     how have you bean
 </div>
 
+<div class="row mt-3">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="beanventure" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="beanventure" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure_snowy.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="beanventure (snowy)" %}
+</div>
+<div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
+    bean on his adventure
+</div>
+
+<div class="row mt-3">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="👁️👅👁️" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 37%;flex:0 0 37%; max-width:37%;" %}
+</div>
 <div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_posed.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   <div class="col img-spacing mt-0">
