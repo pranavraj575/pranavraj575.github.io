@@ -14,22 +14,22 @@ images:
 <div class="list-groups" style="padding-top:13px;"> 
     <div class="list-group col-md-3" style="margin-bottom:0px;">
       <span class="filter-span" style="cursor:pointer;" onclick="swtch('bean');">
-        <input id="bean-box" style="cursor:pointer;" autocomplete="off" checked  type="radio" name="bean" value="bean" ><label style="cursor:pointer;" for="bean">&nbsp;Bean</label>
+        <input id="bean-box" style="cursor:pointer;" autocomplete="off"         type="radio" name="bean"  value="bean" ><label style="cursor:pointer;" for="bean">&nbsp;Bean</label>
       </span>
     </div>
     <div class="list-group col-md-3" style="margin-bottom:0px;">
       <span class="filter-span" style="cursor:pointer;" onclick="swtch('drac');">
-        <input id="drac-box" style="cursor:pointer;" autocomplete="off" checked  type="radio" name="drac" value="drac" ><label style="cursor:pointer;" for="drac">&nbsp;Drac</label>
+        <input id="drac-box" style="cursor:pointer;" autocomplete="off"         type="radio" name="drac"  value="drac" ><label style="cursor:pointer;" for="drac">&nbsp;Drac</label>
       </span>
     </div>
     <div class="list-group col-md-3" style="margin-bottom:0px;">
       <span class="filter-span" style="cursor:pointer;" onclick="swtch('both');">
-        <input id="both-box" style="cursor:pointer;" autocomplete="off" checked  type="radio" name="both" value="both" ><label style="cursor:pointer;" for="both">&nbsp;Both</label>
+        <input id="both-box" style="cursor:pointer;" autocomplete="off"         type="radio" name="both"  value="both" ><label style="cursor:pointer;" for="both">&nbsp;Both</label>
       </span>
     </div>
     <div class="list-group col-md-3" style="margin-bottom:0px;">
       <span class="filter-span" style="cursor:pointer;" onclick="swtch('all');">
-        <input id="all-box" style="cursor:pointer;" autocomplete="off" checked  type="radio" name="all" value="all" ><label style="cursor:pointer;" for="all">&nbsp;All</label>
+        <input id="all-box" style="cursor:pointer;" autocomplete="off" checked  type="radio" name="all"   value="all" > <label style="cursor:pointer;" for="all">&nbsp;All</label>
       </span>
     </div>
 </div>
@@ -69,7 +69,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_drac.jpg"  class="col img-spacing mt-0 drac" imgclass="spotlight" title="drac (couch destroyer 2)" %}
 </div>
 
-<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
+<div class="row mt-3 bean drac" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_watch.jpg"  class="col img-spacing mt-0 bean" imgclass="spotlight" title="bean" style="-ms-flex:0 0 27%;flex:0 0 27%; max-width:27%;" %}
   <div class="col mt-0">
     <div class="row mt-0 drac">
