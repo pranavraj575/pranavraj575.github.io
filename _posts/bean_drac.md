@@ -65,8 +65,8 @@ images:
 </div>
 
 <div class="row mt-3">
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_bean.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="bean (couch destroyer 1)" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_drac.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="drac (couch destroyer 2)" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_bean.jpg"  class="col img-spacing mt-0 bean" imgclass="spotlight" title="bean (couch destroyer 1)" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_drac.jpg"  class="col img-spacing mt-0 drac" imgclass="spotlight" title="drac (couch destroyer 2)" %}
 </div>
 
 <div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
@@ -187,6 +187,10 @@ let swtch = (tag) => {
       hide_img(element);
     }
   }
+  for (t of ['bean', 'drac', 'both', 'all']){
+    document.getElementById(t+'-box').checked=false;
+  }
+  document.getElementById(tag+'-box').checked=true;
 };
 
 let hide_img = (element) => {
