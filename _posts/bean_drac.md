@@ -195,7 +195,7 @@ let swtch = (tag) => {
   if (tag=='bean' || tag=='drac'){
     title.innerHTML=" "+tag+" | Pranav Rajbhandari "
   } else {
-    title.innerHTML=" bean &amp; dracc | Pranav Rajbhandari "
+    title.innerHTML=" bean &amp; drac | Pranav Rajbhandari "
   }
 };
 
