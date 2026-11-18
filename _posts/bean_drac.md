@@ -240,4 +240,8 @@ let reveal_img = (element) => {
     }
   }
 };
+
+title=document.getElementsByClassName("post-title");
+title.innerHTML="<span class='bean both'>bean</span><span class='both'> & </span><span class='drac both'>drac</span>"
+
 </script>
