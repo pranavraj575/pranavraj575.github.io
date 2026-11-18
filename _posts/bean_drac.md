@@ -11,7 +11,7 @@ images:
   spotlight: true
 ---
 
-<div class="list-groups" style="padding-top:13px;"> 
+<div class="list-groups"> 
     <div class="list-group col-md-3" style="margin-bottom:0px;">
       <span class="filter-span" style="cursor:pointer;" onclick="swtch('bean');">
         <input id="bean-box" style="cursor:pointer;" autocomplete="off"         type="radio" name="bean"  value="bean" ><label style="cursor:pointer;" for="bean">&nbsp;bean</label>
