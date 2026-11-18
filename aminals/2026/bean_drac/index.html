@@ -20,6 +20,12 @@ let swtch = (tag) => {
     document.getElementById(t+'-box').checked=false;
   }
   document.getElementById(tag+'-box').checked=true;
+  title=document.getElementsByTagName('title')[0];
+  if (tag=='bean' || tag=='drac'){
+    title.innerHTML=" "+tag+" | Pranav Rajbhandari "
+  } else {
+    title.innerHTML=" bean &amp; dracc | Pranav Rajbhandari "
+  }
 };
 
 let hide_img = (element) => {
