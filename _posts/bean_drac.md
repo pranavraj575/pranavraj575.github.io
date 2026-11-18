@@ -145,7 +145,7 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure_snowy.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="beanventure (snowy)" %}
 </div>
 <div class="caption bean" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
-    bean on his adventure
+    bean on adventure
 </div>
 
 <div class="row mt-3 drac">
