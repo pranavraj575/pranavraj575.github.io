@@ -83,7 +83,7 @@ images:
     ravenous
 </div>
 
-<div class="row mt-3">
+<div class="row mt-3 bean">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/brothers_floor.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_flopped.jpg"    class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 22%;flex:0 0 22%; max-width:22%;" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_floor1.jpg"     class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 50%;flex:0 0 50%; max-width:50%;" %}
@@ -112,26 +112,26 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_vampire1.jpg" class="col img-spacing mt-0" imgclass="spotlight" title="dressed as his brother" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_floor0.jpg"   class="col img-spacing mt-0" imgclass="spotlight" title="very round" style="-ms-flex:0 0 43%;flex:0 0 43%; max-width:43%;" %}
 </div>
-<div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
+<div class="caption bean" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     how have you bean?
 </div>
 
-<div class="row mt-3">
+<div class="row mt-3 bean">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure0.jpg"       class="col img-spacing mt-0" imgclass="spotlight" title="beanventure" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure1.jpg"       class="col img-spacing mt-0" imgclass="spotlight" title="beanventure" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_adventure_snowy.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="beanventure (snowy)" %}
 </div>
-<div class="caption" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
+<div class="caption bean" style="border-bottom:1px solid var(--global-divider-color);padding-bottom: 1rem;">
     bean on his adventure
 </div>
 
-<div class="row mt-3">
+<div class="row mt-3 drac">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair0.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair1.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="👁️👅👁️" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair2.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_chair3.jpg"  class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 37%;flex:0 0 37%; max-width:37%;" %}
 </div>
-<div class="row mt-2">
+<div class="row mt-2 drac">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_posed.jpg"      class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 21.5%;flex:0 0 21.5%; max-width:21.5%;"  %}
   <div class="col mt-0">
     <div class="row mt-0">
@@ -149,3 +149,53 @@ images:
 </div>
 
 </div>
+
+<script>
+let hide_img = (element) => {
+  if (element.tagName=="SPAN" || element.tagName=="DIV"){
+    if (element.style.display && element.style.display !="none") {
+      element.setAttribute('display-style',element.style.display)
+    }
+    element.style.display="none";
+    for (child of element.children){
+      hide_img(child);
+    }
+  }
+  else if (element.tagName=="IMG"){
+    if (element.classList.contains('spotlight')){
+      element.classList.remove("spotlight");
+      element.classList.add("notlight-bd");
+    }
+  }
+  else {
+    for (child of element.children){
+      hide_img(child);
+    }
+  }
+};
+
+let reveal_img = (element) => {
+  if ((element.tagName=="SPAN" || element.tagName=="DIV") && element.style.display =="none"){
+    if (element.hasAttribute('display-style')) {
+      element.style.display=element.getAttribute('display-style')
+    }
+    else{
+      element.style.removeProperty('display');
+    }
+    for (child of element.children){
+      reveal_img(child);
+    }
+  }
+  else if (element.tagName=="IMG"){
+    if (element.classList.contains('notlight-bd')){
+      element.classList.remove("notlight-bd");
+      element.classList.add("spotlight");
+    }
+  }
+  else {
+    for (child of element.children){
+      reveal_img(child);
+    }
+  }
+};
+</script>
