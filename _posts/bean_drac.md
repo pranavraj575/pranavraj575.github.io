@@ -151,6 +151,23 @@ images:
 </div>
 
 <script>
+
+let switch(tag) => {
+  stuff=Array.from(document.getElementsByClassName("bean")).concat(
+      Array.from(document.getElementsByClassName("drac"))
+      ).concat(
+      Array.from(document.getElementsByClassName("both"))
+      )
+  for (element of stuff){
+    if (element.classList.contains(tag)){
+      reveal_img(element);
+    } 
+    else {
+      hide_img(element);
+    }
+  }
+};
+
 let hide_img = (element) => {
   if (element.tagName=="SPAN" || element.tagName=="DIV"){
     if (element.style.display && element.style.display !="none") {
