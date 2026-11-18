@@ -12,22 +12,22 @@ images:
 ---
 
 <div class="list-groups"> 
-    <div class="list-group col-md-3" style="margin-bottom:0px;">
+    <div class="list-group col" style="margin-bottom:0px;">
       <span class="filter-span" style="cursor:pointer;" onclick="swtch('bean');">
         <input id="bean-box" style="cursor:pointer;" autocomplete="off"         type="radio" name="bean"  value="bean" ><label style="cursor:pointer;" for="bean">&nbsp;bean</label>
       </span>
     </div>
-    <div class="list-group col-md-3" style="margin-bottom:0px;">
+    <div class="list-group col" style="margin-bottom:0px;">
       <span class="filter-span" style="cursor:pointer;" onclick="swtch('drac');">
         <input id="drac-box" style="cursor:pointer;" autocomplete="off"         type="radio" name="drac"  value="drac" ><label style="cursor:pointer;" for="drac">&nbsp;drac</label>
       </span>
     </div>
-    <div class="list-group col-md-3" style="margin-bottom:0px;">
+    <div class="list-group col" style="margin-bottom:0px;">
       <span class="filter-span" style="cursor:pointer;" onclick="swtch('both');">
         <input id="both-box" style="cursor:pointer;" autocomplete="off"         type="radio" name="both"  value="both" ><label style="cursor:pointer;" for="both">&nbsp;both</label>
       </span>
     </div>
-    <div class="list-group col-md-3" style="margin-bottom:0px;">
+    <div class="list-group col" style="margin-bottom:0px;">
       <span class="filter-span" style="cursor:pointer;" onclick="swtch('all');">
         <input id="all-box" style="cursor:pointer;" autocomplete="off" checked  type="radio" name="all"   value="all" > <label style="cursor:pointer;" for="all">&nbsp;all</label>
       </span>
