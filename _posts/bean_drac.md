@@ -106,10 +106,10 @@ images:
     ravenous
 </div>
 
-<div class="row mt-3 bean">
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/brothers_floor.jpg"  class="col img-spacing mt-0" imgclass="spotlight" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_flopped.jpg"    class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 22%;flex:0 0 22%; max-width:22%;" %}
-  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_floor1.jpg"     class="col img-spacing mt-0" imgclass="spotlight" style="-ms-flex:0 0 50%;flex:0 0 50%; max-width:50%;" %}
+<div class="row mt-3">
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/brothers_floor.jpg"  class="col img-spacing mt-0 both" imgclass="spotlight" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/drac_flopped.jpg"    class="col img-spacing mt-0 drac" imgclass="spotlight" style="-ms-flex:0 0 22%;flex:0 0 22%; max-width:22%;" %}
+  {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_floor1.jpg"     class="col img-spacing mt-0 bean" imgclass="spotlight" style="-ms-flex:0 0 50%;flex:0 0 50%; max-width:50%;" %}
 </div>
 <div class="row mt-3 bean" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_carpenter.jpg"  class="col img-spacing mt-0" imgclass="spotlight" title="sabeana carpenter" %}
