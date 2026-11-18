@@ -11,6 +11,29 @@ images:
   spotlight: true
 ---
 
+<div class="list-groups" style="padding-top:13px;"> 
+    <div class="list-group col-md-3" style="margin-bottom:0px;">
+      <span class="filter-span" style="cursor:pointer;" onclick="swtch('bean');">
+        <input style="cursor:pointer;" autocomplete="off" checked  type="checkbox" name="bean" value="bean" ><label style="cursor:pointer;" for="bean">&nbsp;Bean</label>
+      </span>
+    </div>
+    <div class="list-group col-md-3" style="margin-bottom:0px;">
+      <span class="filter-span" style="cursor:pointer;" onclick="swtch('drac');">
+        <input style="cursor:pointer;" autocomplete="off" checked  type="checkbox" name="drac" value="drac" ><label style="cursor:pointer;" for="drac">&nbsp;Drac</label>
+      </span>
+    </div>
+    <div class="list-group col-md-3" style="margin-bottom:0px;">
+      <span class="filter-span" style="cursor:pointer;" onclick="swtch('both');">
+        <input style="cursor:pointer;" autocomplete="off" checked  type="checkbox" name="both" value="both" ><label style="cursor:pointer;" for="both">&nbsp;Both</label>
+      </span>
+    </div>
+    <div class="list-group col-md-3" style="margin-bottom:0px;">
+      <span class="filter-span" style="cursor:pointer;" onclick="swtch('all');">
+        <input style="cursor:pointer;" autocomplete="off" checked  type="checkbox" name="all" value="all" ><label style="cursor:pointer;" for="all">&nbsp;All</label>
+      </span>
+    </div>
+</div>
+
 <div class="spotlight-group">
 <div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/brothers_rat_hunt1.jpg"  class="col img-spacing mt-0 both" imgclass="spotlight" title="rat hunt" %}
@@ -152,14 +175,12 @@ images:
 
 <script>
 
-let switch(tag) => {
+let swtch(tag) => {
   stuff=Array.from(document.getElementsByClassName("bean")).concat(
-      Array.from(document.getElementsByClassName("drac"))
-      ).concat(
-      Array.from(document.getElementsByClassName("both"))
-      )
+      Array.from(document.getElementsByClassName("drac"))).concat(
+      Array.from(document.getElementsByClassName("both")))
   for (element of stuff){
-    if (element.classList.contains(tag)){
+    if (element.classList.contains(tag) || tag== "all"){
       reveal_img(element);
     } 
     else {
