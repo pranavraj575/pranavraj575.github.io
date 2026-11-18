@@ -175,10 +175,10 @@ images:
 
 <script>
 
-let swtch(tag) => {
+let swtch = (tag) => {
   stuff=Array.from(document.getElementsByClassName("bean")).concat(
       Array.from(document.getElementsByClassName("drac"))).concat(
-      Array.from(document.getElementsByClassName("both")))
+      Array.from(document.getElementsByClassName("both")));
   for (element of stuff){
     if (element.classList.contains(tag) || tag== "all"){
       reveal_img(element);
