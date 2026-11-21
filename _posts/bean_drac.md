@@ -69,7 +69,9 @@ images:
   {% include img_light.liquid path="assets/img/aminals/bean_drac/destroyer_drac.jpg"  class="col img-spacing mt-0 drac" imgclass="spotlight" title="drac (couch destroyer 2)" %}
 </div>
 
-<div class="row mt-3" style="border-top:1px solid var(--global-divider-color);padding-top: 1rem;">
+
+<div class="row mt-0 bean drac" style="border-bottom:1px solid var(--global-divider-color);padding-top: 1rem;"></div>
+<div class="row mt-3">
   {% include img_light.liquid path="assets/img/aminals/bean_drac/bean_watch.jpg"  class="col img-spacing mt-0 bean" imgclass="spotlight" title="bean" style="-ms-flex:0 0 27%;flex:0 0 27%; max-width:27%;" %}
   <div class="col mt-0">
     <div class="row mt-0 drac" style="margin-bottom: .5rem">
